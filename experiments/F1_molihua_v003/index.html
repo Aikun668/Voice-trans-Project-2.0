@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Jade · F1 茉莉花试听 v0.3</title>
+<style>
+body{font:16px/1.7 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:740px;margin:32px auto;padding:0 20px}
+h1{font-size:26px}h2{font-size:19px;margin:0 0 12px}section{background:white;border:1px solid #dce0e6;border-radius:12px;padding:20px;margin:16px 0}
+audio{width:100%}a{color:#2953a6}.note{color:#525d70}p{margin:8px 0}
+</style>
+<h1>Jade · F1 茉莉花试听 v0.3</h1>
+<p>同一段 13.01 秒录音，三个版本已匹配响度。先听原音，再比较两档处理。</p>
+<p class="note">技术检查通过 ≠ 更好听。请用同一副耳机、固定系统音量试听。开始播放另一版本时，会暂停上一版本，接着同一时间点播放。</p>
+<section><h2>01 · 原音（只匹配音量）</h2><audio controls preload="metadata" src="01_before_matched.wav"></audio><p><a href="01_before_matched.wav" download>保存 WAV</a> · -18.00 LUFS</p></section>
+<section><h2>02 · 本轮增强档</h2><audio controls preload="metadata" src="02_F1_light.wav"></audio><p><a href="02_F1_light.wav" download>保存 WAV</a> · -18.00 LUFS</p></section>
+<section><h2>03 · 本轮更强档</h2><audio controls preload="metadata" src="03_F1_strong.wav"></audio><p><a href="03_F1_strong.wav" download>保存 WAV</a> · -18.00 LUFS</p></section>
+<section><h2>上一轮强档（基准）</h2><audio controls preload="metadata" src="05_previous_v2_strong.wav"></audio></section><section><h2>同一句连续对照：原音 → 上轮强档 → 本轮增强 → 本轮更强</h2><p>每段 3 秒，间隔 0.35 秒；建议先听这条，再听上面的完整版。</p><audio controls preload="metadata" src="04_same_phrase_ABC.wav" data-montage="true"></audio></section><section><h2>这一轮请判断</h2>
+<p>你更喜欢哪版？是否更舒服、更饱满，还是变闷、变薄？咬字和情绪起伏是否还自然？</p>
+<p>约 0.9–6.5 秒、7.1–12.1 秒是主要演唱段，首尾及停顿都保留了。</p>
+<p class="note">可回复：偏好 01/02/03/无明显区别；问题时间点；具体听感。</p>
+<p><a href="00_original.wav" download>保存未调音量的原始副本（较响）</a> · <a href="qa_report.json">技术检查数据</a></p>
+</section>
+<script>
+let active = null;
+document.querySelectorAll('audio').forEach(player => {
+  player.addEventListener('play', () => {
+    if (active && active !== player) {
+      const position = active.ended || active.dataset.montage || player.dataset.montage ? 0 : active.currentTime;
+      active.pause();
+      player.currentTime = Math.min(position, player.duration || position);
+    }
+    active = player;
+  });
+});
+</script></html>

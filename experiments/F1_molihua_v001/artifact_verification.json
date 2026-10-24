@@ -1,0 +1,37 @@
+{
+  "source_sha256_unchanged": true,
+  "files": [
+    {
+      "file": "01_before_matched.wav",
+      "full_decode_matches_pcm": true,
+      "current_qa_pass": true,
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -7.59,
+        "loudness_range_lu": 2.9
+      }
+    },
+    {
+      "file": "02_F1_light.wav",
+      "full_decode_matches_pcm": true,
+      "current_qa_pass": true,
+      "loudness": {
+        "integrated_lufs": -17.99,
+        "true_peak_dbtp": -6.12,
+        "loudness_range_lu": 2.5
+      }
+    },
+    {
+      "file": "03_F1_medium.wav",
+      "full_decode_matches_pcm": true,
+      "current_qa_pass": true,
+      "loudness": {
+        "integrated_lufs": -18.01,
+        "true_peak_dbtp": -5.12,
+        "loudness_range_lu": 2.4
+      }
+    }
+  ],
+  "F1 Light_residual_fraction_after_best_gain_fit": 0.26793494478210267,
+  "F1 Medium_residual_fraction_after_best_gain_fit": 0.3203611504679032
+}
