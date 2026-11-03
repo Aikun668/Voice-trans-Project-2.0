@@ -13,12 +13,15 @@ f2/outputs/
 # --- lean remote for CloudAgent (2026-11-03) ---
 .venv-sep/
 .venv-tools/
+.venv-womende-v002/
 .trae-html-share-packages/
 third_party_neuralsvb/
 neuralsvb_f1/**/checkpoints/
 f2/outputs/
 f1_adaptive_v0/outputs/
 experiments/**/audio/
+!experiments/WOMENDE_FOCUS_2026-11-03_v002/audio/
+!experiments/WOMENDE_FOCUS_2026-11-03_v002/audio/**
 experiments/**/work/
 experiments/**/.ruff_cache/
 experiments/**/__pycache__/
