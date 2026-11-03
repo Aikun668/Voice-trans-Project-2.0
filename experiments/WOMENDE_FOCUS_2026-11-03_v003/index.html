@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>我们的歌 · 第 3 轮</title>
+<style>
+body{font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif;background:#f4f5f7;color:#1f2430;max-width:860px;margin:24px auto;padding:0 18px}
+h1{font-size:23px;margin-bottom:4px}.sub{color:#667085;font-size:14px}
+.card{background:#fff;border:1px solid #dde1e8;border-radius:10px;padding:16px 18px;margin:14px 0}
+.info{background:#eef4ff;border-color:#bcd0fb}
+.switch{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.switch button{border:1px solid #b8c2d4;background:#f7f9fc;border-radius:7px;padding:8px 13px;font-size:14.5px;cursor:pointer}
+.switch button.on{background:#3a6ff7;color:#fff;border-color:#3a6ff7}
+.desc{font-size:14px;color:#4a5466;margin:6px 0 0;min-height:44px}
+.q{font-weight:650;margin:14px 0 6px}
+.opts label{display:block;margin:3px 0;font-size:14.5px;cursor:pointer}
+textarea{width:100%;box-sizing:border-box;min-height:44px;border:1px solid #cfd5df;border-radius:6px;padding:6px;font:14px system-ui}
+#export{min-height:140px;font-family:Consolas,monospace;font-size:13px}
+.big{font-size:16px;padding:10px 18px;background:#3a6ff7;color:#fff;border:0;border-radius:8px;cursor:pointer}
+audio{width:100%}
+</style>
+</head>
+<body>
+<h1>我们的歌 · 薄音版 · 第 3 轮</h1>
+<p class="sub">2026-11-03 · 只有这一首 · 四版都大约 <b>-13 LUFS</b>，真峰值不超过 -1 dB · 我没法听，结论要你来选</p>
+
+<div class="card info">
+<p style="margin:0 0 8px">请用耳机。音量调到舒服之后不要再改。点下面的名字会换版本，<b>从当前进度接着放</b>。</p>
+<p style="margin:0 0 8px">歌大约 14 秒。四个版本来回听，请控制在 <b>10 分钟</b>以内。</p>
+<p style="margin:0 0 8px">上一轮你说四版都还不行，像是声音变大，没有音带更有劲的感觉；空旷几乎听不出了。你另外指出：更早那版「升高大约三个半音，再补谐波」还是可以的，就是有点空旷。这一轮把那一版拿回来，③ 在它后面加上收字尾。</p>
+<p style="margin:0">升高音高是单独一步。补谐波和收字尾不负责改音高。拿不准时先对比 ② 和 ③。</p>
+</div>
+
+<div class="card">
+<div class="switch">
+ <button data-src="audio/anchor.wav" data-desc="只把音量拉到和其他三版一样响，再做限幅。没有升调，没有补谐波。">① 原音·同样响</button>
+ <button data-src="audio/op_replay.wav" data-desc="你指出还可以的那版：整体升高大约三个半音，再只在唱出来的音上补谐波。没有收字尾。响度和另外三版一样。">② 上次有力那版</button>
+ <button data-src="audio/op_a.wav" data-desc="和②同样的升调、同样的补谐波，再加上成品链，把字尾压住。用来看空旷会不会少。">③ 上次有力那版 + 收字尾</button>
+ <button data-src="audio/k400_tilt_a.wav" data-desc="补谐波和收字尾与③相同，调再高大约一个半音。用来试上限，听会不会嗲。">④ 再高一点</button>
+</div>
+<audio id="p" controls preload="metadata"></audio>
+<p class="desc" id="pd"></p>
+
+<div class="q">1. 哪一版最有力，像音带更有劲，而不只是声音变大？</div>
+<div class="opts" data-q="哪版最有力">
+ <label><input type="radio" name="a" value="① 原音·同样响">① 原音·同样响</label>
+ <label><input type="radio" name="a" value="② 上次有力那版">② 上次有力那版</label>
+ <label><input type="radio" name="a" value="③ 上次有力那版 + 收字尾">③ 上次有力那版 + 收字尾</label>
+ <label><input type="radio" name="a" value="④ 再高一点">④ 再高一点</label>
+ <label><input type="radio" name="a" value="都还是只像变大">都还是只像变大</label>
+ <label><input type="radio" name="a" value="都还不行">都还不行</label>
+</div>
+
+<div class="q">2. 空旷比②（上次那版）少了吗？</div>
+<div class="opts" data-q="空旷比上次那版">
+ <label><input type="radio" name="b" value="少了，几乎听不出">少了，几乎听不出</label>
+ <label><input type="radio" name="b" value="少了一点">少了一点</label>
+ <label><input type="radio" name="b" value="和②差不多">和②差不多</label>
+ <label><input type="radio" name="b" value="更空了">更空了</label>
+</div>
+
+<div class="q">3. ④ 再高一点，会不会嗲？</div>
+<div class="opts" data-q="再高一点会不会嗲">
+ <label><input type="radio" name="c" value="没有">没有</label>
+ <label><input type="radio" name="c" value="有一点，但还能接受">有一点，但还能接受</label>
+ <label><input type="radio" name="c" value="变嗲了，不能用">变嗲了，不能用</label>
+ <label><input type="radio" name="c" value="和③差不多">和③差不多</label>
+</div>
+
+<textarea data-q="补充" placeholder="补充：哪几秒有问题，或者用你自己的话说"></textarea>
+<p><button class="big" id="gen" type="button">生成答案</button></p>
+<textarea id="export" readonly placeholder="点「生成答案」后，这里的文字可以复制回去"></textarea>
+</div>
+
+<script>
+const sw=document.querySelector('.switch'), a=document.getElementById('p'), d=document.getElementById('pd');
+const btns=[...sw.querySelectorAll('button')];
+const go=(b,keep)=>{const t=a.currentTime||0,pl=!a.paused;btns.forEach(x=>x.classList.toggle('on',x===b));a.src=b.dataset.src;d.textContent=b.dataset.desc;
+ if(keep)a.addEventListener('loadedmetadata',()=>{a.currentTime=Math.min(t,Math.max(a.duration-0.05,0));if(pl)a.play();},{once:true});};
+btns.forEach(b=>b.addEventListener('click',()=>go(b,true)));go(btns[0],false);
+document.getElementById('gen').addEventListener('click',()=>{
+ const out=['【我们的歌 第3轮反馈 2026-11-03】'];
+ document.querySelectorAll('[data-q]').forEach(el=>{const v=el.tagName==='TEXTAREA'?el.value.trim():[...el.querySelectorAll('input:checked')].map(i=>i.value).join('；');out.push(el.dataset.q+'：'+(v||'（未答）'));});
+ const ex=document.getElementById('export');ex.value=out.join('\n');ex.select();});
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+praat-parselmouth==0.4.7
+pedalboard==0.9.26
+soundfile==0.14.0
+scipy==1.18.1
+numpy==2.5.4
