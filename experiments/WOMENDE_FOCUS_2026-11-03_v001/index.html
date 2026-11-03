@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>我们的歌 · 定点：发声力度</title>
+<style>
+body{font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif;background:#f4f5f7;color:#1f2430;max-width:860px;margin:24px auto;padding:0 18px}
+h1{font-size:23px;margin-bottom:4px}.sub{color:#667085;font-size:14px}
+.card{background:#fff;border:1px solid #dde1e8;border-radius:10px;padding:16px 18px;margin:14px 0}
+.info{background:#eef4ff;border-color:#bcd0fb}
+.switch{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.switch button{border:1px solid #b8c2d4;background:#f7f9fc;border-radius:7px;padding:8px 13px;font-size:14.5px;cursor:pointer}
+.switch button.on{background:#3a6ff7;color:#fff;border-color:#3a6ff7}
+.switch .ref{border-style:dashed}
+.desc{font-size:14px;color:#4a5466;margin:6px 0 0;min-height:44px}
+.q{font-weight:650;margin:14px 0 6px}
+.opts label{display:inline-block;margin:3px 14px 3px 0;font-size:14.5px;cursor:pointer}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #dde1e8;padding:6px 8px;text-align:left}th{background:#eef1f6}
+textarea{width:100%;box-sizing:border-box;min-height:44px;border:1px solid #cfd5df;border-radius:6px;padding:6px;font:14px system-ui}
+#export{min-height:120px;font-family:Consolas,monospace;font-size:13px}
+.big{font-size:16px;padding:10px 18px;background:#3a6ff7;color:#fff;border:0;border-radius:8px;cursor:pointer}
+audio{width:100%}
+</style>
+</head>
+<body>
+<h1>我们的歌 · 薄音版 · 定点：发声力度</h1>
+<p class="sub">2026-11-03 · 只有这一首 · 全部 <b>同样响（-18.5 LUFS）</b>，所以听到的差别都不是音量 · 我没法直接听，结论要你来判断</p>
+
+<div class="card info">
+<b>和原唱比，到底差在哪（测量）</b>
+<table>
+<tr><th></th><th>薄音版</th><th>你的正常版</th><th>王力宏</th></tr>
+<tr><td>音高</td><td><b>136 Hz</b></td><td>158 Hz</td><td>160 Hz</td></tr>
+<tr><td>高次谐波能量（越高越"用力"）</td><td><b>−27.4 dB</b></td><td>−16.1 dB</td><td>−16.8~−17.7 dB</td></tr>
+<tr><td>漏气程度</td><td>不差</td><td>不差</td><td>不差</td></tr>
+</table>
+<p style="margin:8px 0 0">两个具体差距：① 薄音版<b>低了约 3 个半音</b>，同一段旋律你唱低了；② 声带用力时会产生的<b>高次谐波少了约 11 dB</b>。你的正常版在这两项上已经和王力宏差不多。
+以前的 EQ 是整段一起抬，连气声、齿音也抬了，所以听起来只是"更亮、更大"。这次<b>只抬"唱出来的元音"的谐波</b>，气声、辅音、齿音都不动（实测齿音指标不变）。</p>
+</div>
+
+<div class="card">
+<div class="switch" data-player="p">
+ <button data-src="audio/thin.wav" data-desc="你的薄音版，没有处理">① 薄音版</button>
+ <button data-src="audio/c1_tilt.wav" data-desc="候选1：只在元音上补高次谐波（原调不变）。补到了安全上限 15 dB，差距从 11.4 dB 缩到 3.9 dB（缩小约 2/3）">② 候选1：补谐波</button>
+ <button data-src="audio/c2_keyup_tilt.wav" data-desc="候选2：先整体升 3.1 个半音到你正常版的调，再补谐波（同候选1）">③ 候选2：升调+补谐波</button>
+ <button data-src="audio/keyup_only.wav" data-desc="诊断用：只升调，不补谐波。用来分清③的变化是来自升调还是补谐波">④ 只升调（诊断）</button>
+ <button class="ref" data-src="audio/normal.wav" data-desc="参考：你自己的正常版（不同的一次演唱，按位置切换时字对不齐）">⑤ 你的正常版</button>
+ <button class="ref" data-src="audio/wang.wav" data-desc="参考：王力宏原唱人声里对应的那段（15.5–29.1 秒，Demucs 分离，带混响，比你高约 3.5 个半音）">⑥ 王力宏</button>
+</div>
+<audio id="p" controls preload="metadata"></audio><p class="desc" id="pd"></p>
+
+<div class="q">1. ② 候选1（只补谐波）跟 ① 比：</div>
+<div class="opts" data-q="候选1补谐波">
+ <label><input type="radio" name="a" value="更有力/更实了，不只是变亮">更有力、更实了，不只是变亮</label>
+ <label><input type="radio" name="a" value="只是更亮/更尖">只是更亮/更尖</label>
+ <label><input type="radio" name="a" value="有毛刺/沙/电音">有毛刺/沙/电音</label>
+ <label><input type="radio" name="a" value="听不出区别">听不出区别</label>
+</div>
+<div class="q">2. ③ 候选2（升调+补谐波）：</div>
+<div class="opts" data-q="候选2升调补谐波">
+ <label><input type="radio" name="b" value="最接近正常版/有力">最接近正常版、最有力</label>
+ <label><input type="radio" name="b" value="有力了但不像我/变嗲">有力了，但不像我/变嗲</label>
+ <label><input type="radio" name="b" value="和②差不多">和②差不多</label>
+ <label><input type="radio" name="b" value="更差">更差</label>
+</div>
+<div class="q">3. （可选）④ 只升调：有没有"更有力"？</div>
+<div class="opts" data-q="只升调">
+ <label><input type="radio" name="c" value="升调本身就更有力">升调本身就更有力</label>
+ <label><input type="radio" name="c" value="升调后反而更软/嗲">升调后反而更软/嗲</label>
+ <label><input type="radio" name="c" value="差不多">差不多</label>
+</div>
+<textarea data-q="补充" placeholder="补充：哪几秒有问题，或者用你自己的话说差在哪"></textarea>
+<p><button class="big" id="gen">生成答案</button></p>
+<textarea id="export" readonly></textarea>
+</div>
+
+<script>
+const sw=document.querySelector('.switch'), a=document.getElementById('p'), d=document.getElementById('pd');
+const btns=[...sw.querySelectorAll('button')];
+const go=(b,keep)=>{const t=a.currentTime||0,pl=!a.paused;btns.forEach(x=>x.classList.toggle('on',x===b));a.src=b.dataset.src;d.textContent=b.dataset.desc;
+ if(keep)a.addEventListener('loadedmetadata',()=>{a.currentTime=Math.min(t,Math.max(a.duration-0.05,0));if(pl)a.play();},{once:true});};
+btns.forEach(b=>b.addEventListener('click',()=>go(b,true)));go(btns[0],false);
+document.getElementById('gen').addEventListener('click',()=>{
+ const out=['【我们的歌 定点反馈 2026-11-03】'];
+ document.querySelectorAll('[data-q]').forEach(el=>{const v=el.tagName==='TEXTAREA'?el.value.trim():[...el.querySelectorAll('input:checked')].map(i=>i.value).join('；');out.push(el.dataset.q+'：'+(v||'（未答）'));});
+ const ex=document.getElementById('export');ex.value=out.join('\n');ex.select();});
+</script>
+</body>
+</html>

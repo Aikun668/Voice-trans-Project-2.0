@@ -1,0 +1,53 @@
+{
+  "target_alpha_db": -16.05,
+  "orig_alpha_db": -27.43,
+  "keyup_alpha_db": -28.02,
+  "c1": {
+    "slope_db_per_oct": 7.992,
+    "alpha_db": -19.98,
+    "max_gain_db": 15.0
+  },
+  "c2": {
+    "slope_db_per_oct": 7.992,
+    "alpha_db": -20.11,
+    "key_up_cents": 310,
+    "max_gain_db": 15.0
+  },
+  "levels": [
+    {
+      "file": "thin.wav",
+      "gain_db": 6.3,
+      "lufs": -18.5,
+      "true_peak": -2.5,
+      "samples": 669696
+    },
+    {
+      "file": "normal.wav",
+      "gain_db": -1.0,
+      "lufs": -18.5,
+      "true_peak": -5.4,
+      "samples": 673536
+    },
+    {
+      "file": "c1_tilt.wav",
+      "gain_db": 5.9,
+      "lufs": -18.5,
+      "true_peak": -1.6,
+      "samples": 669696
+    },
+    {
+      "file": "c2_keyup_tilt.wav",
+      "gain_db": 6.2,
+      "lufs": -18.5,
+      "true_peak": -1.4,
+      "samples": 669696
+    },
+    {
+      "file": "keyup_only.wav",
+      "gain_db": 6.6,
+      "lufs": -18.5,
+      "true_peak": -2.3,
+      "samples": 669696
+    }
+  ]
+}

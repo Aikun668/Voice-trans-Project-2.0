@@ -1,0 +1,38 @@
+{
+  "薄音版": {
+    "F0_median_Hz": 136.2,
+    "H1-H2_dB": 4.6,
+    "H1-A3_dB": 37.09,
+    "alpha_ratio_dB": -27.43,
+    "HNR_dB": 19.67,
+    "CPPS_dB": 7.15,
+    "frames": 886
+  },
+  "正常版": {
+    "F0_median_Hz": 158.4,
+    "H1-H2_dB": 2.45,
+    "H1-A3_dB": 24.43,
+    "alpha_ratio_dB": -16.05,
+    "HNR_dB": 16.54,
+    "CPPS_dB": 9.24,
+    "frames": 878
+  },
+  "王力宏(对应薄音段)": {
+    "F0_median_Hz": 159.8,
+    "H1-H2_dB": 6.78,
+    "H1-A3_dB": 27.38,
+    "alpha_ratio_dB": -17.67,
+    "HNR_dB": 14.99,
+    "CPPS_dB": 8.57,
+    "frames": 988
+  },
+  "王力宏(对应正常段)": {
+    "F0_median_Hz": 160.2,
+    "H1-H2_dB": 6.54,
+    "H1-A3_dB": 26.37,
+    "alpha_ratio_dB": -16.84,
+    "HNR_dB": 12.93,
+    "CPPS_dB": 7.03,
+    "frames": 978
+  }
+}

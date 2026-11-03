@@ -129,3 +129,23 @@ def test_v2_real_singing_has_tonal_separation_at_matched_loudness(tmp_path):
     assert max(item["loudness"]["integrated_lufs"] for item in report["outputs"]) - min(
         item["loudness"]["integrated_lufs"] for item in report["outputs"]) <= 0.3
     assert (tmp_path / "v2/04_same_phrase_ABC.wav").exists()
+
+
+def test_v4_candidates_recover_dullness_and_ablations_isolate_stages(tmp_path):
+    # Regression for Jade's v0.3 feedback: better, but slightly dull. Measurements only.
+    from f1_poc import experiment
+    source = ROOT / "test_dataset/my_singing/molihua_normal.wav"
+    if not source.exists():
+        pytest.skip("Local singing fixture is unavailable")
+    report = experiment(source, tmp_path / "v4", profile="v4")
+    assert report["technical_pass"], report["errors"]
+    outputs = {item["file"].split("_", 1)[1].removesuffix(".wav"): item for item in report["outputs"]}
+    assert len(report["outputs"]) == 8
+    assert len({item["sha256"] for item in report["outputs"]}) == 8
+    band = lambda key, name: outputs[key]["comparison"]["relative_band_change_db"][name]
+    for candidate in ("v04_candidate_A_narrow900", "v04_candidate_B_cut450"):
+        assert band(candidate, "mid_500_3000") > band("v03_light_baseline", "mid_500_3000") + 1
+        assert band(candidate, "presence_3000_8000") > band("v03_light_baseline", "presence_3000_8000") + 1
+    assert band("ablation_only_highshelf", "presence_3000_8000") < -1.5
+    assert abs(band("ablation_only_compressor", "presence_3000_8000")) < 1.5
+    assert (tmp_path / "v4/index.html").exists()

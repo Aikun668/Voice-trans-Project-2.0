@@ -1,6 +1,69 @@
-# F1 音色美化 PoC · Jade
+> **2026-11-03：现行路线、目标与交接见 [docs/ROADMAP.md](docs/ROADMAP.md)；规则入口见 [AGENTS.md](AGENTS.md)。下方内容为历史记录。**
 
-当前试听：`experiments/F1_molihua_v003/index.html`（第三版，增强档与更强档）。
+# F1 当前主线：自适应分析与决策 V0
+
+2026-10-27 重启基线：**原音WAV → 特征分析 → 有界规则 → Pedalboard DSP → 等响A/B/C**。不训练、不找预训练权重、不重建人声。
+
+运行与规则统一看 **[新V0说明](f1_adaptive_v0/README.md)**；旧路线状态看 **[收尾记录](docs/F1_REBASE_2026-10-27.md)**。
+
+当前自动处理只有温和压缩；自动EQ关闭，去齿音未实现。新代码 f1_adaptive_v0/，新环境 .venv-f1-adaptive/。两条实录工程通过，听感仍待Jade。尚无稳定美化或F2组合通过结论。
+
+```powershell
+.\.venv-f1-adaptive\Scripts\python.exe f1_adaptive_v0/run.py --input test_dataset/my_singing/shige_normal.wav --output f1_adaptive_v0/outputs/new-run
+.\.venv-f1-adaptive\Scripts\python.exe -m pytest f1_adaptive_v0/tests -q
+```
+
+**以下全部为重启前历史记录**，其中“当前试听”等字样保留原文，不代表现在主线。完整旧README备份：docs/archive/README_before_adaptive_v0_2026-10-27.md。
+
+---
+
+# 历史：F1 音色美化 PoC · Jade
+
+当前试听：`experiments/F1_S1_density_v001/index.html`（功能锚定后的第一步：单项密度实验）。
+规则见 `AGENTS.md`，功能锚定图见 `docs/F1_FEATURE_MAP.md` / `docs/F1_FEATURE_MAP.html`。
+只复用 Pedalboard Distortion 验证轻谐波处理，不额外叠加 EQ、压缩器或其他美化模块。
+输入电平校准、处理分支增益补偿、原音混合与响度匹配是适配层，不是自行实现新的处理内核。
+主素材：本人 shige_medium.wav。原音、温和、较明显三条；听感仍为 pending_jade。
+反馈好则换素材复验；副作用或无收益最多一次有依据的修订，随后保留或更换候选，详见规则文件。
+
+```powershell
+python -m venv --system-site-packages .venv-f1
+./.venv-f1/Scripts/python.exe -m pip install --only-binary=:all: --no-deps -r requirements-f1.txt
+./.venv-f1/Scripts/python.exe f1_density.py --out experiments/F1_S1_density_v002
+./.venv-f1/Scripts/python.exe -m pytest -q
+```
+
+旧的跑调素材对照：`experiments/F1_offpitch_v001/index.html`。
+使用本人《是谁在唱歌》中度/严重版，以及新换的网络 GTSinger 女中音《十年》。
+只换素材，v0.5 两档参数与上轮正常素材实验完全一致；未做输入电平适配，也不修正跑调。
+全部原始文件保留，网络录音另转测试副本。各条内部匹配响度，技术检查与人工听感验收分开。
+
+```powershell
+python transfer_f1.py --dataset offpitch --out experiments/F1_offpitch_v002
+```
+
+上一轮试听：`experiments/F1_transfer_v002/index.html`（正常演唱素材）。
+固定 v0.5 两档，使用本人 shige_normal、zuixuan_normal，以及网络 GTSinger 女中音《告白气球》。
+网络原始 48 kHz / 24-bit WAV 保留，另转为 44.1 kHz / 16-bit 测试副本。
+各首内部匹配响度，原音与处理版比较；网络女声不是本人音色目标。
+女声仍沿用 60–500 Hz 粗略诊断，不能由此确认完整音高范围保留。
+每条提供完整原音与两档处理、同一句连续对照；此轮不按新素材重新调参。
+首次迁移试跑 `F1_transfer_v001` 中的 v0.3 旧基准触发动态变化拦截，记录保留，v002 不交付旧基准。
+
+```powershell
+python transfer_f1.py --out experiments/F1_transfer_v003
+```
+
+茉莉花第五版：`experiments/F1_molihua_v005/index.html`（清晰方向：明显处理、强处理）。
+v0.4 人工反馈：除 v0.3 基准略闷、很认真听有一点区别外，其余基本与原音无区别，暂未选出通过版本。
+v0.5 不继续堆低频或整体压暗，改为 650 Hz 削减与 2 kHz 提升，两档压缩均减轻到 2:1。
+这仍是候选，需判断改善是否更易感知、有无变尖变薄；本轮后换另外两条本人录音验证。
+
+```powershell
+python f1_poc.py test_dataset/my_singing/molihua_normal.wav --profile v5 --out experiments/F1_molihua_v006
+```
+
+第三版试听：`experiments/F1_molihua_v003/index.html`（增强档与更强档）。
 Jade 对第二版强档反馈：认真听可辨认，感觉略有改善；第三版沿此方向加强。
 第三版同时提供上轮强档作基准、四段同句连续对照。更强不代表已经更好。
 

@@ -1,0 +1,2 @@
+# Isolated S1 feature-reference experiment; do not replace the existing environment.
+pedalboard==0.9.26
