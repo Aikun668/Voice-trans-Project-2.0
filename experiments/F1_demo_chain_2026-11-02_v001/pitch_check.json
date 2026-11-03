@@ -1,0 +1,50 @@
+[
+  {
+    "file": "gyjyn_v1",
+    "voiced_overlap": 0.993,
+    "median_cents": -0.01,
+    "p95_abs_cents": 10.9
+  },
+  {
+    "file": "gyjyn_v2",
+    "voiced_overlap": 0.978,
+    "median_cents": 0.27,
+    "p95_abs_cents": 19.0
+  },
+  {
+    "file": "pingfan_v1",
+    "voiced_overlap": 0.987,
+    "median_cents": 0.08,
+    "p95_abs_cents": 10.6
+  },
+  {
+    "file": "pingfan_v2",
+    "voiced_overlap": 0.961,
+    "median_cents": 0.35,
+    "p95_abs_cents": 16.5
+  },
+  {
+    "file": "womende_v1",
+    "voiced_overlap": 0.976,
+    "median_cents": 0.12,
+    "p95_abs_cents": 18.1
+  },
+  {
+    "file": "womende_v2",
+    "voiced_overlap": 0.952,
+    "median_cents": -0.01,
+    "p95_abs_cents": 28.8
+  },
+  {
+    "file": "yasu_v1",
+    "voiced_overlap": 0.991,
+    "median_cents": 0.07,
+    "p95_abs_cents": 10.9
+  },
+  {
+    "file": "yasu_v2",
+    "voiced_overlap": 0.972,
+    "median_cents": 0.16,
+    "p95_abs_cents": 37.7
+  }
+]
