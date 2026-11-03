@@ -22,6 +22,8 @@ f1_adaptive_v0/outputs/
 experiments/**/audio/
 !experiments/WOMENDE_FOCUS_2026-11-03_v002/audio/
 !experiments/WOMENDE_FOCUS_2026-11-03_v002/audio/**
+!experiments/WOMENDE_FOCUS_2026-11-03_v003/audio/
+!experiments/WOMENDE_FOCUS_2026-11-03_v003/audio/**
 experiments/**/work/
 experiments/**/.ruff_cache/
 experiments/**/__pycache__/
