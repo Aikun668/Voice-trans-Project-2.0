@@ -45,5 +45,7 @@ test_dataset/**/*.flac
 !test_dataset/my_singing/rerecord_2026-11-04_f2/wav/**
 !test_dataset/my_singing/rerecord_2026-11-04_f2/raw/
 !test_dataset/my_singing/rerecord_2026-11-04_f2/raw/**
+!test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/
+!test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/**
 !test_dataset/reference/
 !test_dataset/reference/**
