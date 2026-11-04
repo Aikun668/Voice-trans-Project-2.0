@@ -6,7 +6,7 @@
 
 ## 当前状态（一句话）
 
-P0 未停。《我们的歌》v002：空旷几乎没了，四版都还不行，听感像声音增大、没有音带能力感。Jade 纠正：接回 v001 候选2（升约 310 音分 + 补谐波；那版可以，只是有点空旷），再叠 A 链。当前是 WOMENDE_FOCUS v003。老师 demo 等 Jade 点名「可以给老师」后再做。
+P0 未停。《我们的歌》v004 已产出，听感 pending_jade。v003 的判定：A 链叠在升调+补谐波上，空旷没有少。本轮只在 v001 候选2 后面补 2500 Hz presence（③ +6 dB，④ +12 dB，Q=1.4），不削 250 Hz 以下，不用 chain_dry。老师 demo 仍等 Jade 点名「可以给老师」后再做。
 
 ## 硬规则（任何时候都适用）
 
@@ -32,4 +32,5 @@ P0 未停。《我们的歌》v002：空旷几乎没了，四版都还不行，�
 | 有参考修音 | f2/poc_phase4c.py（拖音版）/ poc_phase4b.py |
 | 共振峰上移（S45） | experiments/F1_demo_chain_2026-11-02_v003/formant_shift.py |
 | 声源 / 力度测量 | experiments/WOMENDE_FOCUS_2026-11-03_v001/measure_source.py |
+| 本轮 presence（v004，听感未答） | experiments/WOMENDE_FOCUS_2026-11-04_v004/ |
 | 原唱参考与对齐区间 | ROADMAP §9.2 |

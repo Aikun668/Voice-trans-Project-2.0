@@ -1,0 +1,494 @@
+{
+  "round": "WOMENDE_FOCUS_2026-11-04_v004",
+  "listening": "pending_jade",
+  "agent_cannot_hear": true,
+  "technical_pass": true,
+  "source": {
+    "path": "test_dataset/f1_dataset_v2/A_thin/self/wav/我们的歌-薄音版.wav",
+    "sha256": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+    "sha16": "6923e1e390604a80",
+    "hash_unchanged": true,
+    "samples": 669696,
+    "sample_rate": 48000,
+    "duration_s": 13.952
+  },
+  "diagnosis": {
+    "cause": "ROADMAP §3.1 原因A：手机录音相对录音室人声，125–200 Hz 多 7–10 dB，2–3 kHz 少约 18 dB",
+    "guard": "EQ 不削 250 Hz 以下。本轮滤波器中心都在 2500 Hz，增益为正。",
+    "not_the_lever": "不用 v003 的 chain_dry / decay_guard 当空旷主药",
+    "partial_step_db": {
+      "moderate_over_about_18db": 6.0,
+      "strong_over_about_18db": 12.0
+    }
+  },
+  "v001_c2_lock": {
+    "module": "experiments/WOMENDE_FOCUS_2026-11-03_v001/harmonic_tilt.py",
+    "report": "experiments/WOMENDE_FOCUS_2026-11-03_v001/report.json",
+    "slope_db_per_oct": 7.992,
+    "max_gain_db": 15.0,
+    "key_up_cents": 310,
+    "f_start_hz": 700.0,
+    "f_full_hz": 5000.0,
+    "f_fade_hz": 10000.0,
+    "sigma_f0": 0.12,
+    "nfft": 2048,
+    "hop": 256,
+    "alpha": {
+      "v001_c2_alpha_db": -20.11,
+      "replay_310_alpha_db": -20.11,
+      "delta_db": 0.0,
+      "tolerance_db": 1.0,
+      "stage": "harmonic_tilt output, before presence EQ"
+    },
+    "shift_lock": {
+      "file": "experiments/WOMENDE_FOCUS_2026-11-03_v001/work/thin_keyup.wav",
+      "max_abs_diff_vs_fresh_shift": 2.5e-05,
+      "correlation_vs_fresh_shift": 1.0
+    },
+    "note": "②③④ 的升调直接用 v001 work/thin_keyup.wav。斜率用 v001 report 的 c2，不重新求解。alpha 在 presence EQ 之前核对。"
+  },
+  "v003_replay_lock": {
+    "file": "experiments/WOMENDE_FOCUS_2026-11-03_v003/audio/op_replay.wav",
+    "sample_rate": 48000,
+    "samples": 669696,
+    "correlation": 1.0
+  },
+  "presence_eq": {
+    "moderate": {
+      "name": "moderate",
+      "bands": [
+        {
+          "hz": 2500.0,
+          "gain_db": 6.0,
+          "q": 1.4,
+          "role": "2–3 kHz 主抬升"
+        }
+      ],
+      "sample_rate": 48000,
+      "impulse_delay_samples": 0,
+      "curve_db": {
+        "100": 0.005,
+        "200": 0.021,
+        "250": 0.033,
+        "500": 0.137,
+        "1000": 0.645,
+        "1500": 1.865,
+        "1600": 2.241,
+        "2000": 4.219,
+        "2500": 6.0,
+        "3000": 4.66,
+        "3500": 3.041,
+        "3600": 2.797,
+        "4000": 2.043,
+        "8000": 0.303
+      },
+      "below_250_min_db": 0.0,
+      "below_250_max_db": 0.033,
+      "curve_min_db": 0.0,
+      "sine_gain_db": {
+        "200.0": 0.021,
+        "2500.0": 6.0
+      },
+      "failures": []
+    },
+    "strong": {
+      "name": "strong",
+      "bands": [
+        {
+          "hz": 2500.0,
+          "gain_db": 12.0,
+          "q": 1.4,
+          "role": "2–3 kHz 主抬升，增益为③的两倍"
+        }
+      ],
+      "sample_rate": 48000,
+      "impulse_delay_samples": 0,
+      "curve_db": {
+        "100": 0.013,
+        "200": 0.052,
+        "250": 0.082,
+        "500": 0.337,
+        "1000": 1.495,
+        "1500": 3.928,
+        "1600": 4.626,
+        "2000": 8.23,
+        "2500": 12.0,
+        "3000": 9.077,
+        "3500": 6.074,
+        "3600": 5.634,
+        "4000": 4.26,
+        "8000": 0.727
+      },
+      "below_250_min_db": 0.0,
+      "below_250_max_db": 0.082,
+      "curve_min_db": 0.0,
+      "sine_gain_db": {
+        "200.0": 0.052,
+        "2500.0": 12.0
+      },
+      "failures": []
+    }
+  },
+  "presence_f0_vs_tilt": {
+    "moderate": {
+      "median_cents": 0.04,
+      "voiced_overlap": 0.9877,
+      "frames_both": 961
+    },
+    "strong": {
+      "median_cents": 0.09,
+      "voiced_overlap": 0.964,
+      "frames_both": 938
+    },
+    "max_abs_cents": 5.0
+  },
+  "pitch_precheck": {
+    "ok": true,
+    "ceilings_agree": true,
+    "tracks": {
+      "600": {
+        "voiced_frames": 997,
+        "median_hz": 136.96,
+        "p95_hz": 167.93,
+        "p99_hz": 183.41,
+        "max_hz": 224.23
+      },
+      "800": {
+        "voiced_frames": 997,
+        "median_hz": 136.96,
+        "p95_hz": 167.93,
+        "p99_hz": 183.41,
+        "max_hz": 224.23
+      }
+    },
+    "shifts": [
+      {
+        "cents": 310.0,
+        "factor": 1.1961,
+        "projected_p99_hz": 219.38,
+        "projected_max_hz": 268.2,
+        "frames_over_600": 0,
+        "longest_run_frames": 0,
+        "blocked": false
+      },
+      {
+        "cents": 400.0,
+        "factor": 1.2599,
+        "projected_p99_hz": 231.08,
+        "projected_max_hz": 282.51,
+        "frames_over_600": 0,
+        "longest_run_frames": 0,
+        "blocked": false
+      }
+    ],
+    "note": ""
+  },
+  "not_applied": [
+    "chain_dry",
+    "decay_guard",
+    "reverb",
+    "double_track",
+    "hard_pitch_snap",
+    "harmonic_exciter",
+    "cut_below_250_hz"
+  ],
+  "f1_does_not_change_pitch": true,
+  "f2k_switch": "① 关。②③④ +310 音分（v001 文件）。产品默认仍是关。presence EQ 不改音高。",
+  "targets": {
+    "lufs": -13.0,
+    "true_peak_dbtp_max": -1.0,
+    "lufs_abs_tolerance": 0.4,
+    "shift_error_cents_max": 5.0,
+    "voiced_overlap_min": 0.95,
+    "presence_f0_median_abs_cents_max": 5.0,
+    "alpha_abs_delta_max_db": 1.0,
+    "below_250_hz_gain_db": [
+      -0.25,
+      0.5
+    ]
+  },
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "reuse": {
+    "pedalboard": "0.9.26",
+    "parselmouth": "0.4.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "soundfile": "0.14.0",
+    "pedalboard_project": "https://github.com/spotify/pedalboard",
+    "pedalboard_license": "GPL-3.0",
+    "parselmouth_project": "https://github.com/YannickJadoul/Parselmouth",
+    "parselmouth_license": "GPL-3.0",
+    "interface": "pedalboard.PeakFilter; F1 v001 master/tp_limit/ebur; v001 harmonic_tilt.process"
+  },
+  "versions": [
+    {
+      "id": "anchor",
+      "file": "anchor.wav",
+      "name": "原音·同样响",
+      "f2k_cents": 0.0,
+      "f2k_switch": "off",
+      "chain": "master_only",
+      "uses_harmonic_tilt": false,
+      "uses_a_chain": false,
+      "uses_presence_eq": false,
+      "presence_setting": null,
+      "presence_bands": [],
+      "samples": 669696,
+      "samples_match": true,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "lufs_meter": "ffmpeg ebur128",
+      "master": {
+        "path": "v001.master",
+        "internal_ceil_dbtp": -1.3,
+        "master_gain_db": 12.8,
+        "internal_lufs": -13.1,
+        "internal_true_peak_dbtp": -1.3,
+        "pre_master_peak_dbfs": -8.8,
+        "limited_peak_dbfs": -1.31
+      },
+      "floor_lift_db": 1.4,
+      "tail_p10_lift_db": 1.1,
+      "band_power_db": {
+        "125-200": 62.365,
+        "50-250": 59.977,
+        "1000-2000": 33.543,
+        "2000-3000": 27.088,
+        "3000-4000": 24.553
+      },
+      "pitch_vs_source": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.13,
+        "cents_p95": 0.34,
+        "p95_abs_cents": 0.53,
+        "frames_both": 997,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 0.53,
+        "frames_abs_error_over_20_cents": 0.004
+      },
+      "sha256": "ed7c1d12bbe0db6c2646d312942a2932a18951806856aae878cdf2d7e53f3c1c",
+      "technical_pass": true,
+      "failures": [],
+      "listening": "pending_jade",
+      "band_delta_vs_replay_db": {
+        "125-200": -1.781,
+        "50-250": -0.014,
+        "1000-2000": -4.815,
+        "2000-3000": -8.272,
+        "3000-4000": -6.175,
+        "2000-3000_minus_50-250": -8.258
+      },
+      "correlation_vs_replay": -0.000601
+    },
+    {
+      "id": "op_replay",
+      "file": "op_replay.wav",
+      "name": "上次有力那版",
+      "f2k_cents": 310.0,
+      "f2k_switch": "on",
+      "chain": "v001 thin_keyup → harmonic_tilt(slope locked) → master",
+      "uses_harmonic_tilt": true,
+      "uses_a_chain": false,
+      "uses_presence_eq": false,
+      "presence_setting": null,
+      "presence_bands": [],
+      "samples": 669696,
+      "samples_match": true,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "lufs_meter": "ffmpeg ebur128",
+      "master": {
+        "path": "v001.master",
+        "internal_ceil_dbtp": -1.3,
+        "master_gain_db": 13.4,
+        "internal_lufs": -13.1,
+        "internal_true_peak_dbtp": -1.3,
+        "pre_master_peak_dbfs": -7.61,
+        "limited_peak_dbfs": -1.31
+      },
+      "floor_lift_db": 2.32,
+      "tail_p10_lift_db": 2.02,
+      "band_power_db": {
+        "125-200": 64.146,
+        "50-250": 59.991,
+        "1000-2000": 38.358,
+        "2000-3000": 35.36,
+        "3000-4000": 30.728
+      },
+      "pitch_vs_source": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.53,
+        "cents_p05": 289.69,
+        "cents_p95": 324.96,
+        "p95_abs_cents": 324.96,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.14,
+        "frames_abs_error_over_20_cents": 0.0825
+      },
+      "sha256": "dab42f74cbc5d0a0081e8aa44ba8dd36ff9a3e08c3159496aeb86a873e8d6ffa",
+      "technical_pass": true,
+      "failures": [],
+      "listening": "pending_jade",
+      "band_delta_vs_replay_db": {
+        "125-200": 0.0,
+        "50-250": 0.0,
+        "1000-2000": 0.0,
+        "2000-3000": 0.0,
+        "3000-4000": 0.0,
+        "2000-3000_minus_50-250": 0.0
+      },
+      "correlation_vs_replay": 1.0
+    },
+    {
+      "id": "presence",
+      "file": "presence.wav",
+      "name": "有力 + 补中高频",
+      "f2k_cents": 310.0,
+      "f2k_switch": "on",
+      "chain": "v001 thin_keyup → harmonic_tilt(slope locked) → presence_eq moderate → master",
+      "uses_harmonic_tilt": true,
+      "uses_a_chain": false,
+      "uses_presence_eq": true,
+      "presence_setting": "moderate",
+      "presence_bands": [
+        {
+          "hz": 2500.0,
+          "gain_db": 6.0,
+          "q": 1.4,
+          "role": "2–3 kHz 主抬升"
+        }
+      ],
+      "samples": 669696,
+      "samples_match": true,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "lufs_meter": "ffmpeg ebur128",
+      "master": {
+        "path": "v001.master",
+        "internal_ceil_dbtp": -1.3,
+        "master_gain_db": 13.8,
+        "internal_lufs": -13.1,
+        "internal_true_peak_dbtp": -1.3,
+        "pre_master_peak_dbfs": -5.75,
+        "limited_peak_dbfs": -1.31
+      },
+      "floor_lift_db": 3.98,
+      "tail_p10_lift_db": 3.56,
+      "band_power_db": {
+        "125-200": 63.777,
+        "50-250": 59.629,
+        "1000-2000": 39.285,
+        "2000-3000": 39.574,
+        "3000-4000": 33.57
+      },
+      "pitch_vs_source": {
+        "voiced_overlap": 0.996,
+        "median_cents": 310.55,
+        "cents_p05": 290.23,
+        "cents_p95": 327.02,
+        "p95_abs_cents": 327.02,
+        "frames_both": 993,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.64,
+        "frames_abs_error_over_20_cents": 0.0866
+      },
+      "sha256": "e731bbcf1d6cce84a4e06502ebbbd7f7a19fe1cdeb51d7b2966406d77ee022c5",
+      "technical_pass": true,
+      "failures": [],
+      "listening": "pending_jade",
+      "band_delta_vs_replay_db": {
+        "125-200": -0.369,
+        "50-250": -0.362,
+        "1000-2000": 0.927,
+        "2000-3000": 4.214,
+        "3000-4000": 2.842,
+        "2000-3000_minus_50-250": 4.576
+      },
+      "correlation_vs_replay": 0.991102
+    },
+    {
+      "id": "presence_strong",
+      "file": "presence_strong.wav",
+      "name": "有力 + 更强补中高",
+      "f2k_cents": 310.0,
+      "f2k_switch": "on",
+      "chain": "v001 thin_keyup → harmonic_tilt(slope locked) → presence_eq strong → master",
+      "uses_harmonic_tilt": true,
+      "uses_a_chain": false,
+      "uses_presence_eq": true,
+      "presence_setting": "strong",
+      "presence_bands": [
+        {
+          "hz": 2500.0,
+          "gain_db": 12.0,
+          "q": 1.4,
+          "role": "2–3 kHz 主抬升，增益为③的两倍"
+        }
+      ],
+      "samples": 669696,
+      "samples_match": true,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.2,
+      "lufs_meter": "ffmpeg ebur128",
+      "master": {
+        "path": "v001.tp_limit",
+        "internal_ceil_dbtp": -1.2,
+        "master_gain_db": 14.3,
+        "internal_lufs": -13.1,
+        "internal_true_peak_dbtp": -1.2,
+        "stock_master_error": "无法同时满足 -13.0 LUFS 与 -1.0 dBTP: lufs=-13.2 tp=-1.3",
+        "reason": "v001.master 的内部天花板 -1.3 dBTP 把响度卡在目标外 0.2 LU 以内；同一支前视限幅放宽到该值后仍 ≤ -1 dBTP",
+        "pre_master_peak_dbfs": -2.51,
+        "limited_peak_dbfs": -1.21
+      },
+      "floor_lift_db": 6.48,
+      "tail_p10_lift_db": 5.78,
+      "band_power_db": {
+        "125-200": 63.169,
+        "50-250": 59.03,
+        "1000-2000": 40.018,
+        "2000-3000": 43.23,
+        "3000-4000": 35.704
+      },
+      "pitch_vs_source": {
+        "voiced_overlap": 0.995,
+        "median_cents": 310.67,
+        "cents_p05": 289.71,
+        "cents_p95": 326.39,
+        "p95_abs_cents": 326.39,
+        "frames_both": 992,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 31.0,
+        "frames_abs_error_over_20_cents": 0.0927
+      },
+      "sha256": "83ed6d1c9c8e3a79416f72412f5d926772b80172e37266f1898b4b1714224062",
+      "technical_pass": true,
+      "failures": [],
+      "listening": "pending_jade",
+      "band_delta_vs_replay_db": {
+        "125-200": -0.977,
+        "50-250": -0.961,
+        "1000-2000": 1.66,
+        "2000-3000": 7.87,
+        "3000-4000": 4.976,
+        "2000-3000_minus_50-250": 8.831
+      },
+      "correlation_vs_replay": 0.955635
+    }
+  ],
+  "listening_material_s": 55.8
+}

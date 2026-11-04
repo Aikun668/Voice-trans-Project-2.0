@@ -412,6 +412,7 @@ FFmpeg 在 PATH 中（WinGet）。**本机没有 NVIDIA GPU。**
 - experiments/WOMENDE_FOCUS_2026-11-03_v001/：已答（§2.1；候选2 升调+补谐波为后续基线）
 - experiments/WOMENDE_FOCUS_2026-11-03_v002/：已答（都还不行；空旷几乎没了；力度像变大）
 - experiments/WOMENDE_FOCUS_2026-11-03_v003/：已答（A链叠在升调+补谐波上，空旷无改善；力度②③④不可分）
+- experiments/WOMENDE_FOCUS_2026-11-04_v004/：未答（v001 候选2 上只补 2–3 kHz presence，不叠 A 链）
 
 ---
 
