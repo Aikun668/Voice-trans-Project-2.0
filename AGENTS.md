@@ -6,7 +6,7 @@
 
 ## 当前状态（一句话）
 
-P0 未停。《我们的歌》v004 已产出，听感 pending_jade。v003 的判定：A 链叠在升调+补谐波上，空旷没有少。本轮只在 v001 候选2 后面补 2500 Hz presence（③ +6 dB，④ +12 dB，Q=1.4），不削 250 Hz 以下，不用 chain_dry。老师 demo 仍等 Jade 点名「可以给老师」后再做。
+P0 未停。《我们的歌》v005 待听。v004：2500 Hz 钟形等响后 2–3 kHz 仍高约 4 / 8 dB，Jade 听不出 ②③④ 的差别，空旷依旧。不把 presence 写成到顶。v005 在同一条升调+补谐波上试两件不同的事：只抬谐波的中高频宽架，以及把字尾再压低。老师 demo 仍等 Jade 点名「可以给老师」后再做。
 
 ## 硬规则（任何时候都适用）
 
@@ -32,5 +32,6 @@ P0 未停。《我们的歌》v004 已产出，听感 pending_jade。v003 的判
 | 有参考修音 | f2/poc_phase4c.py（拖音版）/ poc_phase4b.py |
 | 共振峰上移（S45） | experiments/F1_demo_chain_2026-11-02_v003/formant_shift.py |
 | 声源 / 力度测量 | experiments/WOMENDE_FOCUS_2026-11-03_v001/measure_source.py |
-| 本轮 presence（v004，听感未答） | experiments/WOMENDE_FOCUS_2026-11-04_v004/ |
+| 本轮试听（v005，听感未答） | experiments/WOMENDE_FOCUS_2026-11-04_v005/ |
+| 上一轮 presence（v004，已答，不判到顶） | experiments/WOMENDE_FOCUS_2026-11-04_v004/ |
 | 原唱参考与对齐区间 | ROADMAP §9.2 |
