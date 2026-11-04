@@ -4,28 +4,28 @@
 
 ## 三档含义（务必分清）
 
-| 文件后缀 | 中文名 | 是什么 |
-|---|---|---|
-| _micro_off | **对照微微跑调** | 词基本对、整体接近正常，但**故意留一点点跑调**；不是干净 normal，也不是 mild |
-| _mild | 轻度跑调 | 明显有几处长音停错 |
-| _severe | 严重/重度跑调 | 更多错音或整段偏音 |
+| 文件名里的档位 | 含义 |
+|---|---|
+| **对照微微跑调** | 词基本对、整体接近正常，但**故意留一点点跑调**；不是干净 normal，也不是轻度 |
+| **轻度跑调** | 明显有几处长音停错 |
+| **严重跑调** | 更多错音或整段偏音（原「重度」并入此档） |
 
-不要把 _micro_off 当成「完美对照 / 零跑调」。听感对比时：它是「微微跑」锚点，真正干净对照没有单独一条。
+不要把「对照微微跑调」当成完美零跑调对照。
 
-## 文件清单
+## 文件清单（中文歌名）
 
-| 歌 | take | 对照微微跑调 | 轻度 | 严重 |
+| 歌 | take | 对照微微跑调 | 轻度跑调 | 严重跑调 |
 |---|---|---|---|---|
-| 心墙 | 01 | xinqiang_01_micro_off | xinqiang_01_mild | xinqiang_01_severe |
-| 离开我的依赖 | 01 | likaiwodeyilai_01_micro_off | likaiwodeyilai_01_mild | likaiwodeyilai_01_severe |
-| 离开我的依赖 | 02 | likaiwodeyilai_02_micro_off | likaiwodeyilai_02_mild | likaiwodeyilai_02_severe |
-| 莫问归期 | 01 | mowenguiqi_01_micro_off | mowenguiqi_01_mild | mowenguiqi_01_severe |
-| 莫问归期 | 02 | mowenguiqi_02_micro_off | mowenguiqi_02_mild | mowenguiqi_02_severe |
+| 心墙 | 01 | 心墙01-对照微微跑调 | 心墙01-轻度跑调 | 心墙01-严重跑调 |
+| 离开我的依赖 | 01 | 离开我的依赖01-对照微微跑调 | 离开我的依赖01-轻度跑调 | 离开我的依赖01-严重跑调 |
+| 离开我的依赖 | 02 | 离开我的依赖02-对照微微跑调 | 离开我的依赖02-轻度跑调 | 离开我的依赖02-严重跑调 |
+| 莫问归期 | 01 | 莫问归期01-对照微微跑调 | 莫问归期01-轻度跑调 | 莫问归期01-严重跑调 |
+| 莫问归期 | 02 | 莫问归期02-对照微微跑调 | 莫问归期02-轻度跑调 | 莫问归期02-严重跑调 |
 
-- wav/：48 kHz mono PCM16
+- wav/：48 kHz mono PCM16（工程用）
 - 
 aw/：手机原 m4a
-- 「离开你的依赖02…」已归入 likaiwodeyilai_02_micro_off
+- 旧英文文件名（xinqiang / likaiwodeyilai / mowenguiqi + micro_off/mild/severe）已全部改为上表中文名
 
 ## 缺口
 
