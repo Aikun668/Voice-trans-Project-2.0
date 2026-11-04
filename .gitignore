@@ -39,3 +39,11 @@ test_dataset/**/*.flac
 # --- F2 参考原唱：显式纳入版本控制（2026-11-03，Jade 要求）---
 !test_dataset/reference/
 !test_dataset/reference/**
+
+# Keep F2 rerecord batch tracked
+!test_dataset/my_singing/rerecord_2026-11-04_f2/wav/
+!test_dataset/my_singing/rerecord_2026-11-04_f2/wav/**
+!test_dataset/my_singing/rerecord_2026-11-04_f2/raw/
+!test_dataset/my_singing/rerecord_2026-11-04_f2/raw/**
+!test_dataset/reference/
+!test_dataset/reference/**
