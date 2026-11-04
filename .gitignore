@@ -15,6 +15,7 @@ f2/outputs/
 .venv-tools/
 .venv-womende-v002/
 .venv-womende-v004/
+.venv-womende-v005/
 .trae-html-share-packages/
 third_party_neuralsvb/
 neuralsvb_f1/**/checkpoints/
@@ -27,6 +28,8 @@ experiments/**/audio/
 !experiments/WOMENDE_FOCUS_2026-11-03_v003/audio/**
 !experiments/WOMENDE_FOCUS_2026-11-04_v004/audio/
 !experiments/WOMENDE_FOCUS_2026-11-04_v004/audio/**
+!experiments/WOMENDE_FOCUS_2026-11-04_v005/audio/
+!experiments/WOMENDE_FOCUS_2026-11-04_v005/audio/**
 experiments/**/work/
 experiments/**/.ruff_cache/
 experiments/**/__pycache__/
