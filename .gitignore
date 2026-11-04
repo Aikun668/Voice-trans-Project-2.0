@@ -35,3 +35,7 @@ test_dataset/**/*.flac
 *.onnx
 *.ckpt
 *.bin
+
+# --- F2 参考原唱：显式纳入版本控制（2026-11-03，Jade 要求）---
+!test_dataset/reference/
+!test_dataset/reference/**

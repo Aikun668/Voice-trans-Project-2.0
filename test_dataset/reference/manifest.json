@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "song": "我们的歌",
+      "type": "studio_original",
+      "source_url": "https://www.bilibili.com/video/BV1xjx6eyEye",
+      "local_path": "test_dataset/reference/我们的歌_王力宏.wav",
+      "duration_s": 248.0,
+      "notes": "王力宏原唱录音室版，B站无损搬运（UP主 上岸音乐馆），源音频 224kbps AAC m4a 同目录保存；标题无 live/翻唱/DJ；峰值达 32768 存在轻微削波风险。"
+    },
+    {
+      "song": "刚好遇见你",
+      "type": "studio_original",
+      "source_url": "https://www.bilibili.com/video/BV1ba4y1k7mS",
+      "local_path": "test_dataset/reference/刚好遇见你_李玉刚_录音室.wav",
+      "duration_s": 200.13,
+      "notes": "李玉刚原唱录音室版，B站无损搬运（UP主 索性自挂东南枝），源音频 270kbps AAC m4a 同目录保存；与已存在 live 版 刚好遇见你_李玉刚.wav 区分，未覆盖；峰值 31464。"
+    }
+  ]
+}
