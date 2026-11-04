@@ -15,6 +15,33 @@
       "local_path": "test_dataset/reference/刚好遇见你_李玉刚_录音室.wav",
       "duration_s": 200.13,
       "notes": "李玉刚原唱录音室版，B站无损搬运（UP主 索性自挂东南枝），源音频 270kbps AAC m4a 同目录保存；与已存在 live 版 刚好遇见你_李玉刚.wav 区分，未覆盖；峰值 31464。"
+    },
+    {
+      "song": "心墙",
+      "type": "studio_original",
+      "source_url": "https://www.youtube.com/watch?v=VhCRokYVF1I",
+      "local_path": "test_dataset/reference/心墙_郭静.wav",
+      "vocal_path": "test_dataset/reference/vocals/心墙_郭静_vocals.wav",
+      "duration_s": 232.41,
+      "notes": "郭静官方MV音源（片头约4.4s静音后进入）；YouTube VhCRokYVF1I；源 m4a 同目录；demucs htdemucs --two-stems=vocals → vocals/心墙_郭静_vocals.wav；另镜像到 my_singing/rerecord_2026-11-04_f2/ref_vocals/。"
+    },
+    {
+      "song": "离开我的依赖",
+      "type": "studio_original",
+      "source_url": "https://www.youtube.com/watch?v=p13tH7Etlzc",
+      "local_path": "test_dataset/reference/离开我的依赖_王艳薇.wav",
+      "vocal_path": "test_dataset/reference/vocals/离开我的依赖_王艳薇_vocals.wav",
+      "duration_s": 241.42,
+      "notes": "王艳薇官方MV；YouTube p13tH7Etlzc；源 m4a 同目录；demucs htdemucs --two-stems=vocals；镜像 ref_vocals/。"
+    },
+    {
+      "song": "莫问归期",
+      "type": "studio_original",
+      "source_url": "https://www.youtube.com/watch?v=XaTFvLSP1oI",
+      "local_path": "test_dataset/reference/莫问归期_蒋雪儿.wav",
+      "vocal_path": "test_dataset/reference/vocals/莫问归期_蒋雪儿_vocals.wav",
+      "duration_s": 217.08,
+      "notes": "蒋雪儿Snow.J官方MV；YouTube XaTFvLSP1oI；源 m4a 同目录；demucs htdemucs --two-stems=vocals；镜像 ref_vocals/。"
     }
   ]
 }

@@ -23,10 +23,23 @@
 | 莫问归期 | 02 | 莫问归期02-对照微微跑调 | 莫问归期02-轻度跑调 | 莫问归期02-严重跑调 |
 
 - wav/：48 kHz mono PCM16（工程用）
-- 
-aw/：手机原 m4a
+- raw/：手机原 m4a
 - 旧英文文件名（xinqiang / likaiwodeyilai / mowenguiqi + micro_off/mild/severe）已全部改为上表中文名
 
-## 缺口
+## 目录结构
 
-这三首在 	est_dataset/reference/ **还没有**原唱/人声。phase4c 有参考对齐暂不可用；旧最炫/自由飞翔参考仍可用。
+- wav/ — 清唱工程 wav
+- raw/ — 清唱原 m4a
+- ref_vocals/ — 三首原唱 demucs 人声（与 test_dataset/reference/vocals/ 相同，方便和 wav/ 对照）
+
+## 原唱参考（已补齐）
+
+| 歌 | 歌手 | 原唱 | demucs 人声 | F2 镜像 |
+|---|---|---|---|---|
+| 心墙 | 郭静 | test_dataset/reference/心墙_郭静.wav | test_dataset/reference/vocals/心墙_郭静_vocals.wav | ref_vocals/心墙_郭静_vocals.wav |
+| 离开我的依赖 | 王艳薇 | test_dataset/reference/离开我的依赖_王艳薇.wav | test_dataset/reference/vocals/离开我的依赖_王艳薇_vocals.wav | ref_vocals/离开我的依赖_王艳薇_vocals.wav |
+| 莫问归期 | 蒋雪儿 | test_dataset/reference/莫问归期_蒋雪儿.wav | test_dataset/reference/vocals/莫问归期_蒋雪儿_vocals.wav | ref_vocals/莫问归期_蒋雪儿_vocals.wav |
+
+- 源：YouTube 官方 MV（心墙 VhCRokYVF1I，离开我的依赖 p13tH7Etlzc，莫问归期 XaTFvLSP1oI）；源 m4a 与 wav 同放在 test_dataset/reference/。
+- 去伴奏：demucs htdemucs --two-stems=vocals。
+- 心墙 MV 片头约 4.4s 静音，对齐时注意。
