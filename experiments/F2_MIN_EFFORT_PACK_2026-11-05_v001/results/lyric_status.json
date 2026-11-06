@@ -1,0 +1,54 @@
+{
+    "心墙01":  {
+                 "status":  "已确认",
+                 "text":  "我学着不去担心得太远不计划太多反而能勇敢冒险",
+                 "n":  22,
+                 "note":  "",
+                 "sung_vs_confirmed":  "",
+                 "ref_pick":  "",
+                 "lyric_standard":  "本人干声实唱为准",
+                 "confirmed_at":  "2026-11-06T05:06:16.441Z"
+             },
+    "离开我的依赖01":  {
+                     "status":  "已确认",
+                     "text":  "我蒙上了眼仿佛你在身边当你不再应答",
+                     "n":  17,
+                     "note":  "训练字用实唱「身边」；官网/原歌词为「身旁」",
+                     "sung_vs_confirmed":  "训练=身边(实唱)；官网=身旁",
+                     "ref_pick":  "",
+                     "lyric_standard":  "本人干声实唱为准",
+                     "confirmed_at":  "2026-11-06T05:06:16.441Z",
+                     "train_text_fixed_at":  "2026-11-05 America/Los_Angeles"
+                 },
+    "离开我的依赖02":  {
+                     "status":  "已确认",
+                     "text":  "我来不及道声不安有点混乱有点缓慢才发现承诺是谎话",
+                     "n":  24,
+                     "note":  "",
+                     "sung_vs_confirmed":  "",
+                     "ref_pick":  "",
+                     "lyric_standard":  "本人干声实唱为准",
+                     "confirmed_at":  "2026-11-06T05:06:16.441Z"
+                 },
+    "莫问归期01":  {
+                   "status":  "已确认",
+                   "text":  "藏进心口的刺无枉寻也如此沉默有时最后因你放肆",
+                   "n":  22,
+                   "note":  "训练字用实唱「无枉寻」；官网候选「不枉寻」；ref A/B=unsure",
+                   "sung_vs_confirmed":  "训练=无枉寻(实唱)；官网候选=不枉寻",
+                   "ref_pick":  "unsure",
+                   "lyric_standard":  "本人干声实唱为准",
+                   "confirmed_at":  "2026-11-06T05:06:16.441Z",
+                   "train_text_fixed_at":  "2026-11-05 America/Los_Angeles"
+               },
+    "莫问归期02":  {
+                   "status":  "已确认",
+                   "text":  "沉默有时念想有时谁诀别相思成疾莫问天涯也莫问归期",
+                   "n":  24,
+                   "note":  "轻度版跑调偏高，可能同音误识；字面确认OK",
+                   "sung_vs_confirmed":  "",
+                   "ref_pick":  "",
+                   "lyric_standard":  "本人干声实唱为准",
+                   "confirmed_at":  "2026-11-06T05:06:16.441Z"
+               }
+}

@@ -1,0 +1,13 @@
+﻿group,version,index,char,source,start_s,end_s,status,note
+心墙01,对照微微跑调,1,我,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-对照微微跑调.wav,0.72,0.72,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+心墙01,轻度跑调,1,我,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav,0.64,0.64,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+离开我的依赖01,对照微微跑调,1,我,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav,0.56,0.56,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+离开我的依赖01,轻度跑调,1,我,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav,0.8,0.8,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+离开我的依赖01,原唱候选,7,佛,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,60.04,60.04,不可用,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+离开我的依赖02,对照微微跑调,1,我,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav,0.56,0.56,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+离开我的依赖02,原唱候选,1,我,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,68.5,68.5,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+离开我的依赖02,原唱候选,21,诺,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,79.3,79.3,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+离开我的依赖02,原唱候选,22,是,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,79.3,79.3,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+莫问归期01,原唱候选B,15,有,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,121.5,121.5,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+莫问归期02,原唱候选,18,天,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,143.0,143.0,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。
+莫问归期02,原唱候选,19,涯,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,143.96,143.96,零时长,首轮零时长；如扩窗或人工确认出现可用候选，另留证据核对，不直接覆盖。

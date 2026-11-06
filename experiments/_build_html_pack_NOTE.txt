@@ -1,0 +1,5 @@
+﻿# -*- coding: utf-8 -*-
+"""Patch note: prefer _fix_bad_spot_windows.py for bad-spot cards.
+This file kept for lyric section rebuild; bad-spot listen_* must come from fixed CSV.
+"""
+print("Use experiments/_fix_bad_spot_windows.py to rebuild index.html with clamped dry-clip listen windows.")

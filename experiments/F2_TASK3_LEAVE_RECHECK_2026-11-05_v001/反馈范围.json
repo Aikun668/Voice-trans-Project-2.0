@@ -1,0 +1,17 @@
+{
+  "song": "离开我的依赖",
+  "answers": {
+    "本人当你": "完整",
+    "原唱当你": "完整",
+    "原唱歌词": "身旁",
+    "原唱第二段": "两处都能听到",
+    "补充": "无"
+  },
+  "confirmed_scope": {
+    "self_phrase": {"source": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav", "start_s": 8.4, "end_s": 10.16, "judgment": "完整当你，整体片段范围，不代表每字边界已核实"},
+    "reference_phrase": {"source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav", "start_s": 62.68, "end_s": 63.88, "judgment": "完整当你，整体片段范围，不代表每字边界已核实"},
+    "reference_lyric": {"start_s": 60.9, "end_s": 62.75, "judgment": "身旁"},
+    "reference_02_context": {"windows_s": [[68.5, 71.3], [77.6, 80.5]], "judgment": "两处目标词组可听到，仅大致位置"}
+  },
+  "not_inferred": ["各字精确起止", "其他歌词及录音版本", "目标音高与修音听感", "自动作为训练样本"]
+}

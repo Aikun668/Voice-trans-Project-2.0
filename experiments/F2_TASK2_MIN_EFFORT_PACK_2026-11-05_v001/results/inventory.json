@@ -1,0 +1,63 @@
+{
+  "pack": "F2_TASK2_MIN_EFFORT_PACK_2026-11-05_v001",
+  "created": "2026-11-06T06:02:36.486801+00:00",
+  "takes": [
+    {
+      "id": "心墙01_轻度跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav",
+      "chars": 21
+    },
+    {
+      "id": "心墙01_对照微微跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-对照微微跑调.wav",
+      "chars": 21
+    },
+    {
+      "id": "离开我的依赖01_轻度跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav",
+      "chars": 16
+    },
+    {
+      "id": "离开我的依赖01_对照微微跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav",
+      "chars": 16
+    },
+    {
+      "id": "离开我的依赖02_轻度跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-轻度跑调.wav",
+      "chars": 24
+    },
+    {
+      "id": "离开我的依赖02_对照微微跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav",
+      "chars": 23
+    },
+    {
+      "id": "莫问归期01_轻度跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-轻度跑调.wav",
+      "chars": 22
+    },
+    {
+      "id": "莫问归期01_对照微微跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-对照微微跑调.wav",
+      "chars": 22
+    },
+    {
+      "id": "莫问归期02_轻度跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-轻度跑调.wav",
+      "chars": 24
+    },
+    {
+      "id": "莫问归期02_对照微微跑调",
+      "wav": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav",
+      "chars": 24
+    }
+  ],
+  "pitch_suggestions": {
+    "status": "skipped",
+    "reason": "base Anaconda python 无 librosa/parselmouth/crepe；未扫描其他 env 以免拖慢。UI 无候选仍可用。",
+    "checked_at": "2026-11-06T06:02:36.427279+00:00",
+    "count": 0
+  },
+  "default_take": "心墙01_轻度跑调"
+}

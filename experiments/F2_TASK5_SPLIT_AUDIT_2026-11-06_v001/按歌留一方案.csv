@@ -1,0 +1,4 @@
+﻿fold,development_songs_joined_for_training_candidate,held_out_song,positive_repair_labels_in_train_candidate,positive_repair_labels_in_heldout,leakage_audit,use_status
+LOSO-1,离开我的依赖;莫问归期,心墙,1,0,PASS: no song group appears on both sides,proposal only; not a valid quality score until aligned target pitch/output labels exist
+LOSO-2,心墙;莫问归期,离开我的依赖,0,1,PASS: no song group appears on both sides,proposal only; not a valid quality score until aligned target pitch/output labels exist
+LOSO-3,心墙;离开我的依赖,莫问归期,1,0,PASS: no song group appears on both sides,proposal only; not a valid quality score until aligned target pitch/output labels exist

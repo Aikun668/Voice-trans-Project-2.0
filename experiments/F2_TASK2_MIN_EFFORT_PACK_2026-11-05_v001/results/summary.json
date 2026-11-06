@@ -1,0 +1,47 @@
+{
+  "pack": "F2_TASK2_MIN_EFFORT_PACK_2026-11-05_v001",
+  "answered_at": "2026-11-06T06:43:08.657Z",
+  "ingested_at": "2026-11-06T06:45:27.447091+00:00",
+  "total_fragments": 17,
+  "counts_by_label": {
+    "故意这样唱": 16,
+    "希望修": 1
+  },
+  "counts_by_song": {
+    "心墙01": 3,
+    "离开我的依赖01": 3,
+    "离开我的依赖02": 3,
+    "莫问归期01": 4,
+    "莫问归期02": 4
+  },
+  "hope_fix_ids": [
+    5
+  ],
+  "hope_fix": [
+    {
+      "id": 5,
+      "song": "离开我的依赖01",
+      "version": "轻度跑调",
+      "text": "当你",
+      "start_s": "8.036",
+      "end_s": "10.176"
+    }
+  ],
+  "intentional_count": 16,
+  "conflict": {
+    "id": 1,
+    "text": "太多",
+    "song": "心墙01",
+    "version": "轻度跑调",
+    "original_label": "希望修",
+    "resolved_label": "故意这样唱",
+    "note_flag": "conflict_resolved:希望修→故意",
+    "reason": "#2 note says 「太多」also intentional; Jade clarification"
+  },
+  "files": {
+    "raw_txt": "results/jade_answers_2026-11-06.txt",
+    "raw_json": "results/jade_answers_2026-11-06.json",
+    "fragments_csv": "results/fragments.csv",
+    "summary_json": "results/summary.json"
+  }
+}

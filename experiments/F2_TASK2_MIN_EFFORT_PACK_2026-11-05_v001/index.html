@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>F2 任务二 · 最小标注包</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--line:#dde1e6;--pri:#1a73e8;--ok:#0b7a3b;--warn:#b00020}
+*{box-sizing:border-box}
+body{font-family:system-ui,"Segoe UI",sans-serif;max-width:960px;margin:20px auto;padding:0 14px 120px;background:var(--bg);color:#1a1a1a;line-height:1.45}
+h1{font-size:1.3rem;margin:0 0 8px}
+h2{font-size:1.05rem;margin:0 0 8px}
+.steps{background:#eef5ff;border:1px solid #c9dbff;border-radius:10px;padding:12px 14px;margin:10px 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:12px 0}
+.muted{color:#666;font-size:.92rem}
+.tag{display:inline-block;font-size:.78rem;background:#eef;padding:2px 8px;border-radius:999px;margin-left:6px}
+.row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:8px 0}
+.btn{padding:7px 12px;border:1px solid #8a8a8a;border-radius:8px;background:#f7f7f7;cursor:pointer;font-size:.95rem}
+.btn:hover{filter:brightness(.97)}
+.btn.primary{background:var(--pri);color:#fff;border-color:var(--pri)}
+.btn.danger{background:#fff;color:var(--warn);border-color:#f0b4b4}
+.btn.active{outline:2px solid var(--pri);outline-offset:1px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+select,input[type=text],textarea{font:inherit;padding:6px 8px;border:1px solid #bbb;border-radius:8px}
+input[type=text],textarea{width:100%}
+audio{width:100%;margin-top:6px}
+.timeline{position:relative;height:28px;background:#e9edf2;border-radius:6px;margin:10px 0 4px;overflow:hidden}
+.playhead{position:absolute;top:0;bottom:0;width:2px;background:var(--pri);left:0}
+.mark-bar{position:absolute;top:4px;bottom:4px;background:rgba(26,115,232,.28);border:1px solid rgba(26,115,232,.7);border-radius:4px}
+.lyric-now{font-size:1.15rem;min-height:1.6em;letter-spacing:.06em}
+.frag{border:1px solid var(--line);border-radius:8px;padding:10px;margin:8px 0;background:#fafbfc}
+.frag.want_fix{border-left:4px solid #d93025}
+.frag.intentional{border-left:4px solid #f9ab00}
+.frag.unsure{border-left:4px solid #80868b}
+.frag.no_fix{border-left:4px solid #188038}
+.labels label{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer}
+.labels input{margin:0}
+#sticky{position:sticky;bottom:0;background:#111;color:#fff;padding:10px 14px;border-radius:10px 10px 0 0;z-index:5}
+#out{white-space:pre-wrap;background:#f0f0f0;padding:12px;border-radius:8px;font-size:.9rem}
+.sug{border:1px dashed #bbb;border-radius:8px;padding:8px 10px;margin:6px 0;background:#fff}
+.warn{color:var(--warn);font-weight:600}
+</style>
+</head>
+<body>
+<h1>F2 任务二 · 标「真破了」的地方 <span class="tag">pack v001</span></h1>
+<div class="steps">
+<ol>
+<li>选录音（默认<strong>心墙01 · 轻度</strong>）→ 听干声。</li>
+<li>听到破的地方：点「记起点」→ 再点「记终点」→ 选标签（希望修 / 故意 / 拿不准 / 不需要修）→「加入」。</li>
+<li>标完点「生成答案并复制」发我。</li>
+</ol>
+<p class="muted">你心里已经知道哪里破——工具只帮记账。音高候选若空=本机没装分析库，不影响你标。Agent 听不见，不当裁判。</p>
+</div>
+
+<div class="card">
+  <div class="row">
+    <label>录音
+      <select id="take"></select>
+    </label>
+    <button type="button" class="btn" id="reload">重载本条</button>
+    <span class="muted" id="takeMeta"></span>
+  </div>
+  <audio id="audio" controls preload="metadata"></audio>
+  <div class="timeline" id="tl"><div class="playhead" id="ph"></div></div>
+  <div class="row muted"><span>当前 <b id="curT">0.00</b>s / <span id="durT">?</span>s</span>
+    <span>· 附近字：</span><span class="lyric-now" id="lyricNear">—</span>
+  </div>
+  <p class="muted">整句（任务一已确认，实唱为准）：<span id="lyricFull"></span></p>
+</div>
+
+<div class="card">
+  <h2>记一段</h2>
+  <div class="row">
+    <button type="button" class="btn primary" id="markStart">记起点（当前时间）</button>
+    <button type="button" class="btn primary" id="markEnd">记终点（当前时间）</button>
+    <button type="button" class="btn" id="markQuick">一键 ±0.5s（以当前为中心）</button>
+    <button type="button" class="btn" id="playSpan">听刚圈的段</button>
+  </div>
+  <div class="row muted">起点 <b id="sShow">—</b> · 终点 <b id="eShow">—</b> · 时长 <b id="lenShow">—</b>s</div>
+  <div class="row labels" id="labelRow"></div>
+  <div class="row">
+    <label style="flex:1">字/短句（可空，旁字可点填）
+      <input type="text" id="phrase" placeholder="例如：担心 / 勇敢冒险"/>
+    </label>
+  </div>
+  <div class="row" id="charChips"></div>
+  <div class="row">
+    <label style="flex:1">备注（可空）
+      <input type="text" id="note" placeholder="例如：第二个音掉下去了"/>
+    </label>
+  </div>
+  <div class="row">
+    <button type="button" class="btn primary" id="addFrag">加入清单</button>
+    <button type="button" class="btn" id="clearDraft">清空草稿</button>
+  </div>
+</div>
+
+<div class="card" id="sugCard">
+  <h2>可选建议（机器猜的，可忽略）</h2>
+  <p class="muted" id="sugStatus">无音高候选：本机未检测到 librosa / parselmouth / crepe。页面照常可用。</p>
+  <div id="sugList"></div>
+</div>
+
+<div class="card">
+  <h2>已标片段 <span class="tag" id="fragCount">0</span></h2>
+  <div id="fragList" class="muted">还没有。听着标就行。</div>
+</div>
+
+<div class="card">
+  <button type="button" class="btn primary" id="gen">生成答案并复制</button>
+  <button type="button" class="btn" id="dl">下载 answers.txt</button>
+  <button type="button" class="btn" id="saveLocal">暂存到浏览器</button>
+  <button type="button" class="btn" id="loadLocal">读回暂存</button>
+  <pre id="out"></pre>
+</div>
+
+<div id="sticky">正在听：<span id="now">未播放</span></div>
+
+<script>
+const TAKES = [{"id": "心墙01_轻度跑调", "song": "心墙01", "version": "轻度跑调", "file": "心墙01-轻度跑调.wav", "priority": 1, "note": "先啃这一首", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav", "lyric_text": "我学着不去担心得太远不计划太多反而能勇敢冒险", "lyric_status": "已确认", "chars": [{"i": 2, "c": "学", "s": 0.64, "e": 0.96}, {"i": 3, "c": "着", "s": 0.96, "e": 1.2}, {"i": 4, "c": "不", "s": 1.2, "e": 1.44}, {"i": 5, "c": "去", "s": 1.44, "e": 1.68}, {"i": 6, "c": "担", "s": 1.68, "e": 1.92}, {"i": 7, "c": "心", "s": 1.92, "e": 2.4}, {"i": 8, "c": "得", "s": 2.4, "e": 2.56}, {"i": 9, "c": "太", "s": 2.56, "e": 3.04}, {"i": 10, "c": "远", "s": 3.04, "e": 3.68}, {"i": 11, "c": "不", "s": 3.76, "e": 3.92}, {"i": 12, "c": "计", "s": 3.92, "e": 4.16}, {"i": 13, "c": "划", "s": 4.16, "e": 4.48}, {"i": 14, "c": "太", "s": 4.48, "e": 4.88}, {"i": 15, "c": "多", "s": 4.88, "e": 5.36}, {"i": 16, "c": "反", "s": 5.36, "e": 5.68}, {"i": 17, "c": "而", "s": 5.68, "e": 5.84}, {"i": 18, "c": "能", "s": 5.84, "e": 6.0}, {"i": 19, "c": "勇", "s": 6.0, "e": 6.24}, {"i": 20, "c": "敢", "s": 6.24, "e": 6.48}, {"i": 21, "c": "冒", "s": 6.48, "e": 6.88}, {"i": 22, "c": "险", "s": 6.88, "e": 7.6}]}, {"id": "心墙01_对照微微跑调", "song": "心墙01", "version": "对照微微跑调", "file": "心墙01-对照微微跑调.wav", "priority": 2, "note": "对照档，可选", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-对照微微跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-对照微微跑调.wav", "lyric_text": "我学着不去担心得太远不计划太多反而能勇敢冒险", "lyric_status": "已确认", "chars": [{"i": 2, "c": "学", "s": 0.72, "e": 1.04}, {"i": 3, "c": "着", "s": 1.04, "e": 1.28}, {"i": 4, "c": "不", "s": 1.28, "e": 1.6}, {"i": 5, "c": "去", "s": 1.6, "e": 1.84}, {"i": 6, "c": "担", "s": 1.84, "e": 2.08}, {"i": 7, "c": "心", "s": 2.08, "e": 2.4}, {"i": 8, "c": "得", "s": 2.4, "e": 2.56}, {"i": 9, "c": "太", "s": 2.56, "e": 2.96}, {"i": 10, "c": "远", "s": 2.96, "e": 3.76}, {"i": 11, "c": "不", "s": 3.92, "e": 4.08}, {"i": 12, "c": "计", "s": 4.08, "e": 4.32}, {"i": 13, "c": "划", "s": 4.32, "e": 4.56}, {"i": 14, "c": "太", "s": 4.56, "e": 4.8}, {"i": 15, "c": "多", "s": 4.8, "e": 5.28}, {"i": 16, "c": "反", "s": 5.28, "e": 5.6}, {"i": 17, "c": "而", "s": 5.6, "e": 5.84}, {"i": 18, "c": "能", "s": 5.84, "e": 6.08}, {"i": 19, "c": "勇", "s": 6.08, "e": 6.32}, {"i": 20, "c": "敢", "s": 6.32, "e": 6.56}, {"i": 21, "c": "冒", "s": 6.56, "e": 7.12}, {"i": 22, "c": "险", "s": 7.12, "e": 7.68}]}, {"id": "离开我的依赖01_轻度跑调", "song": "离开我的依赖01", "version": "轻度跑调", "file": "离开我的依赖01-轻度跑调.wav", "priority": 10, "note": "钩子·后扩", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav", "lyric_text": "我蒙上了眼仿佛你在身边当你不再应答", "lyric_status": "已确认", "chars": [{"i": 2, "c": "蒙", "s": 0.8, "e": 1.6}, {"i": 3, "c": "上", "s": 1.6, "e": 1.84}, {"i": 4, "c": "了", "s": 1.84, "e": 3.44}, {"i": 5, "c": "眼", "s": 3.44, "e": 4.08}, {"i": 6, "c": "仿", "s": 4.4, "e": 4.64}, {"i": 7, "c": "佛", "s": 5.36, "e": 6.16}, {"i": 8, "c": "你", "s": 6.24, "e": 6.72}, {"i": 9, "c": "在", "s": 6.72, "e": 6.96}, {"i": 10, "c": "身", "s": 6.96, "e": 7.52}, {"i": 11, "c": "边", "s": 7.52, "e": 7.6}, {"i": 12, "c": "当", "s": 8.4, "e": 9.12}, {"i": 13, "c": "你", "s": 9.28, "e": 10.16}, {"i": 14, "c": "不", "s": 10.16, "e": 10.96}, {"i": 15, "c": "再", "s": 11.04, "e": 11.76}, {"i": 16, "c": "应", "s": 11.76, "e": 12.48}, {"i": 17, "c": "答", "s": 12.48, "e": 13.44}]}, {"id": "离开我的依赖01_对照微微跑调", "song": "离开我的依赖01", "version": "对照微微跑调", "file": "离开我的依赖01-对照微微跑调.wav", "priority": 11, "note": "钩子·后扩", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav", "lyric_text": "我蒙上了眼仿佛你在身边当你不再应答", "lyric_status": "已确认", "chars": [{"i": 2, "c": "蒙", "s": 0.56, "e": 1.44}, {"i": 3, "c": "上", "s": 1.44, "e": 1.76}, {"i": 4, "c": "了", "s": 1.76, "e": 2.96}, {"i": 5, "c": "眼", "s": 2.96, "e": 3.68}, {"i": 6, "c": "仿", "s": 3.92, "e": 4.48}, {"i": 7, "c": "佛", "s": 4.48, "e": 5.52}, {"i": 8, "c": "你", "s": 5.52, "e": 6.0}, {"i": 9, "c": "在", "s": 6.0, "e": 6.24}, {"i": 10, "c": "身", "s": 6.24, "e": 6.72}, {"i": 11, "c": "边", "s": 6.72, "e": 7.2}, {"i": 12, "c": "当", "s": 7.52, "e": 7.76}, {"i": 13, "c": "你", "s": 7.76, "e": 8.48}, {"i": 14, "c": "不", "s": 8.48, "e": 9.6}, {"i": 15, "c": "再", "s": 9.6, "e": 10.48}, {"i": 16, "c": "应", "s": 10.64, "e": 11.12}, {"i": 17, "c": "答", "s": 11.12, "e": 12.0}]}, {"id": "离开我的依赖02_轻度跑调", "song": "离开我的依赖02", "version": "轻度跑调", "file": "离开我的依赖02-轻度跑调.wav", "priority": 12, "note": "钩子·后扩", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-轻度跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-轻度跑调.wav", "lyric_text": "我来不及道声不安有点混乱有点缓慢才发现承诺是谎话", "lyric_status": "已确认", "chars": [{"i": 1, "c": "我", "s": 0.48, "e": 0.88}, {"i": 2, "c": "来", "s": 0.96, "e": 1.36}, {"i": 3, "c": "不", "s": 1.36, "e": 1.84}, {"i": 4, "c": "及", "s": 1.84, "e": 2.32}, {"i": 5, "c": "道", "s": 2.32, "e": 2.8}, {"i": 6, "c": "声", "s": 2.8, "e": 3.12}, {"i": 7, "c": "不", "s": 3.12, "e": 3.52}, {"i": 8, "c": "安", "s": 3.52, "e": 4.16}, {"i": 9, "c": "有", "s": 4.32, "e": 4.72}, {"i": 10, "c": "点", "s": 4.72, "e": 5.2}, {"i": 11, "c": "混", "s": 5.2, "e": 5.52}, {"i": 12, "c": "乱", "s": 5.52, "e": 5.92}, {"i": 13, "c": "有", "s": 6.16, "e": 6.64}, {"i": 14, "c": "点", "s": 6.64, "e": 7.2}, {"i": 15, "c": "缓", "s": 7.2, "e": 7.52}, {"i": 16, "c": "慢", "s": 7.52, "e": 8.08}, {"i": 17, "c": "才", "s": 8.08, "e": 8.56}, {"i": 18, "c": "发", "s": 8.56, "e": 8.96}, {"i": 19, "c": "现", "s": 8.96, "e": 9.52}, {"i": 20, "c": "承", "s": 9.52, "e": 10.08}, {"i": 21, "c": "诺", "s": 10.08, "e": 10.4}, {"i": 22, "c": "是", "s": 10.4, "e": 10.64}, {"i": 23, "c": "谎", "s": 10.64, "e": 11.12}, {"i": 24, "c": "话", "s": 11.36, "e": 12.08}]}, {"id": "离开我的依赖02_对照微微跑调", "song": "离开我的依赖02", "version": "对照微微跑调", "file": "离开我的依赖02-对照微微跑调.wav", "priority": 13, "note": "钩子·后扩", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav", "lyric_text": "我来不及道声不安有点混乱有点缓慢才发现承诺是谎话", "lyric_status": "已确认", "chars": [{"i": 2, "c": "来", "s": 0.96, "e": 1.44}, {"i": 3, "c": "不", "s": 1.44, "e": 1.6}, {"i": 4, "c": "及", "s": 1.92, "e": 2.4}, {"i": 5, "c": "道", "s": 2.4, "e": 2.8}, {"i": 6, "c": "声", "s": 2.8, "e": 3.12}, {"i": 7, "c": "不", "s": 3.12, "e": 3.6}, {"i": 8, "c": "安", "s": 3.6, "e": 4.0}, {"i": 9, "c": "有", "s": 4.32, "e": 4.8}, {"i": 10, "c": "点", "s": 4.8, "e": 5.04}, {"i": 11, "c": "混", "s": 5.04, "e": 5.6}, {"i": 12, "c": "乱", "s": 5.6, "e": 6.32}, {"i": 13, "c": "有", "s": 6.32, "e": 6.8}, {"i": 14, "c": "点", "s": 6.8, "e": 7.2}, {"i": 15, "c": "缓", "s": 7.2, "e": 7.52}, {"i": 16, "c": "慢", "s": 7.52, "e": 8.08}, {"i": 17, "c": "才", "s": 8.24, "e": 8.72}, {"i": 18, "c": "发", "s": 8.72, "e": 9.12}, {"i": 19, "c": "现", "s": 9.12, "e": 9.68}, {"i": 20, "c": "承", "s": 9.68, "e": 10.24}, {"i": 21, "c": "诺", "s": 10.24, "e": 10.64}, {"i": 22, "c": "是", "s": 10.64, "e": 10.88}, {"i": 23, "c": "谎", "s": 10.88, "e": 11.36}, {"i": 24, "c": "话", "s": 11.36, "e": 12.16}]}, {"id": "莫问归期01_轻度跑调", "song": "莫问归期01", "version": "轻度跑调", "file": "莫问归期01-轻度跑调.wav", "priority": 20, "note": "钩子·后扩", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-轻度跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-轻度跑调.wav", "lyric_text": "藏进心口的刺无枉寻也如此沉默有时最后因你放肆", "lyric_status": "已确认", "chars": [{"i": 1, "c": "藏", "s": 0.32, "e": 0.88}, {"i": 2, "c": "进", "s": 0.88, "e": 1.2}, {"i": 3, "c": "心", "s": 1.2, "e": 1.68}, {"i": 4, "c": "口", "s": 1.68, "e": 2.08}, {"i": 5, "c": "的", "s": 2.08, "e": 2.48}, {"i": 6, "c": "刺", "s": 2.48, "e": 3.44}, {"i": 7, "c": "无", "s": 4.0, "e": 4.4}, {"i": 8, "c": "枉", "s": 4.4, "e": 4.72}, {"i": 9, "c": "寻", "s": 4.72, "e": 5.28}, {"i": 10, "c": "也", "s": 5.28, "e": 5.68}, {"i": 11, "c": "如", "s": 5.68, "e": 6.08}, {"i": 12, "c": "此", "s": 6.08, "e": 6.96}, {"i": 13, "c": "沉", "s": 7.52, "e": 7.84}, {"i": 14, "c": "默", "s": 7.84, "e": 8.4}, {"i": 15, "c": "有", "s": 8.4, "e": 8.8}, {"i": 16, "c": "时", "s": 8.8, "e": 9.28}, {"i": 17, "c": "最", "s": 9.28, "e": 9.68}, {"i": 18, "c": "后", "s": 9.68, "e": 10.08}, {"i": 19, "c": "因", "s": 10.08, "e": 10.48}, {"i": 20, "c": "你", "s": 10.56, "e": 10.96}, {"i": 21, "c": "放", "s": 10.96, "e": 11.12}, {"i": 22, "c": "肆", "s": 11.36, "e": 12.4}]}, {"id": "莫问归期01_对照微微跑调", "song": "莫问归期01", "version": "对照微微跑调", "file": "莫问归期01-对照微微跑调.wav", "priority": 21, "note": "钩子·后扩", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-对照微微跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-对照微微跑调.wav", "lyric_text": "藏进心口的刺无枉寻也如此沉默有时最后因你放肆", "lyric_status": "已确认", "chars": [{"i": 1, "c": "藏", "s": 0.48, "e": 1.04}, {"i": 2, "c": "进", "s": 1.04, "e": 1.44}, {"i": 3, "c": "心", "s": 1.44, "e": 1.92}, {"i": 4, "c": "口", "s": 1.92, "e": 2.4}, {"i": 5, "c": "的", "s": 2.4, "e": 2.8}, {"i": 6, "c": "刺", "s": 2.8, "e": 3.84}, {"i": 7, "c": "无", "s": 4.08, "e": 4.56}, {"i": 8, "c": "枉", "s": 4.56, "e": 4.88}, {"i": 9, "c": "寻", "s": 4.88, "e": 5.44}, {"i": 10, "c": "也", "s": 5.44, "e": 5.76}, {"i": 11, "c": "如", "s": 5.76, "e": 6.16}, {"i": 12, "c": "此", "s": 6.16, "e": 7.04}, {"i": 13, "c": "沉", "s": 7.68, "e": 8.08}, {"i": 14, "c": "默", "s": 8.08, "e": 8.48}, {"i": 15, "c": "有", "s": 8.48, "e": 8.88}, {"i": 16, "c": "时", "s": 8.88, "e": 9.36}, {"i": 17, "c": "最", "s": 9.36, "e": 9.84}, {"i": 18, "c": "后", "s": 9.84, "e": 10.32}, {"i": 19, "c": "因", "s": 10.32, "e": 10.88}, {"i": 20, "c": "你", "s": 10.88, "e": 11.2}, {"i": 21, "c": "放", "s": 11.2, "e": 11.36}, {"i": 22, "c": "肆", "s": 11.6, "e": 12.4}]}, {"id": "莫问归期02_轻度跑调", "song": "莫问归期02", "version": "轻度跑调", "file": "莫问归期02-轻度跑调.wav", "priority": 22, "note": "钩子·后扩", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-轻度跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-轻度跑调.wav", "lyric_text": "沉默有时念想有时谁诀别相思成疾莫问天涯也莫问归期", "lyric_status": "已确认", "chars": [{"i": 1, "c": "沉", "s": 0.56, "e": 0.8}, {"i": 2, "c": "默", "s": 0.8, "e": 1.36}, {"i": 3, "c": "有", "s": 1.36, "e": 1.6}, {"i": 4, "c": "时", "s": 1.6, "e": 2.16}, {"i": 5, "c": "念", "s": 2.4, "e": 2.72}, {"i": 6, "c": "想", "s": 2.72, "e": 2.96}, {"i": 7, "c": "有", "s": 3.28, "e": 3.6}, {"i": 8, "c": "时", "s": 3.6, "e": 5.2}, {"i": 9, "c": "谁", "s": 5.6, "e": 5.76}, {"i": 10, "c": "诀", "s": 6.08, "e": 6.56}, {"i": 11, "c": "别", "s": 6.56, "e": 6.88}, {"i": 12, "c": "相", "s": 6.88, "e": 7.36}, {"i": 13, "c": "思", "s": 7.36, "e": 7.84}, {"i": 14, "c": "成", "s": 7.84, "e": 8.32}, {"i": 15, "c": "疾", "s": 8.32, "e": 8.72}, {"i": 16, "c": "莫", "s": 8.72, "e": 9.2}, {"i": 17, "c": "问", "s": 9.2, "e": 9.6}, {"i": 18, "c": "天", "s": 9.6, "e": 10.08}, {"i": 19, "c": "涯", "s": 10.08, "e": 10.4}, {"i": 20, "c": "也", "s": 10.4, "e": 10.88}, {"i": 21, "c": "莫", "s": 10.88, "e": 11.28}, {"i": 22, "c": "问", "s": 11.28, "e": 11.68}, {"i": 23, "c": "归", "s": 11.68, "e": 12.08}, {"i": 24, "c": "期", "s": 12.08, "e": 12.8}]}, {"id": "莫问归期02_对照微微跑调", "song": "莫问归期02", "version": "对照微微跑调", "file": "莫问归期02-对照微微跑调.wav", "priority": 23, "note": "钩子·后扩", "wav_rel": "../../test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav", "wav_repo": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav", "lyric_text": "沉默有时念想有时谁诀别相思成疾莫问天涯也莫问归期", "lyric_status": "已确认", "chars": [{"i": 1, "c": "沉", "s": 0.56, "e": 0.88}, {"i": 2, "c": "默", "s": 0.88, "e": 1.44}, {"i": 3, "c": "有", "s": 1.44, "e": 1.76}, {"i": 4, "c": "时", "s": 1.76, "e": 2.4}, {"i": 5, "c": "念", "s": 2.88, "e": 3.28}, {"i": 6, "c": "想", "s": 3.28, "e": 3.36}, {"i": 7, "c": "有", "s": 3.36, "e": 3.6}, {"i": 8, "c": "时", "s": 3.6, "e": 5.44}, {"i": 9, "c": "谁", "s": 5.44, "e": 5.6}, {"i": 10, "c": "诀", "s": 5.92, "e": 6.4}, {"i": 11, "c": "别", "s": 6.4, "e": 6.72}, {"i": 12, "c": "相", "s": 6.72, "e": 7.2}, {"i": 13, "c": "思", "s": 7.2, "e": 7.68}, {"i": 14, "c": "成", "s": 7.68, "e": 8.16}, {"i": 15, "c": "疾", "s": 8.16, "e": 8.56}, {"i": 16, "c": "莫", "s": 8.56, "e": 9.04}, {"i": 17, "c": "问", "s": 9.04, "e": 9.44}, {"i": 18, "c": "天", "s": 9.44, "e": 10.0}, {"i": 19, "c": "涯", "s": 10.0, "e": 10.32}, {"i": 20, "c": "也", "s": 10.32, "e": 10.72}, {"i": 21, "c": "莫", "s": 10.72, "e": 11.28}, {"i": 22, "c": "问", "s": 11.28, "e": 11.68}, {"i": 23, "c": "归", "s": 11.68, "e": 12.08}, {"i": 24, "c": "期", "s": 12.08, "e": 12.8}]}];
+const SUGGESTIONS = [];
+const PACK = "v001";
+const LABEL_OPTS = [
+  {v:"希望修", k:"want_fix"},
+  {v:"故意这样唱", k:"intentional"},
+  {v:"拿不准", k:"unsure"},
+  {v:"不需要修", k:"no_fix"},
+];
+
+const audio = document.getElementById("audio");
+const takeSel = document.getElementById("take");
+const ph = document.getElementById("ph");
+const tl = document.getElementById("tl");
+let draftS = null, draftE = null, editIdx = null;
+let frags = [];
+let curTake = null;
+
+function fmt(t){ if(t==null||isNaN(t)) return "—"; return (Math.round(t*100)/100).toFixed(2); }
+function clamp(x,a,b){ return Math.max(a, Math.min(b,x)); }
+
+function initTakes(){
+  TAKES.forEach((t,i)=>{
+    const o=document.createElement("option");
+    o.value=t.id;
+    o.textContent = (t.priority===1?"★ ":"") + t.song + " · " + t.version + (t.note?("（"+t.note+"）"):"");
+    takeSel.appendChild(o);
+  });
+  takeSel.value = TAKES[0].id;
+  LABEL_OPTS.forEach((L,i)=>{
+    const lab=document.createElement("label");
+    lab.innerHTML = `<input type="radio" name="lab" value="${L.v}" ${i===0?"checked":""}> ${L.v}`;
+    document.getElementById("labelRow").appendChild(lab);
+  });
+  loadTake();
+  renderSug();
+  try{
+    const raw=localStorage.getItem("f2_task2_v001");
+    if(raw){ /* silent; user can 读回暂存 */ }
+  }catch(e){}
+}
+
+function loadTake(){
+  curTake = TAKES.find(t=>t.id===takeSel.value) || TAKES[0];
+  audio.src = curTake.wav_rel;
+  document.getElementById("takeMeta").textContent = curTake.wav_repo + " · chars=" + (curTake.chars||[]).length;
+  document.getElementById("lyricFull").textContent = curTake.lyric_text || "（无任务一歌词）";
+  document.getElementById("now").textContent = curTake.file;
+  draftS=draftE=null; editIdx=null; updateDraftUI();
+  renderCharChips();
+  renderFrags();
+  renderSug();
+  audio.onloadedmetadata = ()=>{
+    document.getElementById("durT").textContent = fmt(audio.duration);
+  };
+}
+
+function nearestChars(t){
+  const cs = curTake.chars || [];
+  if(!cs.length) return "（无字时标）";
+  const near = cs.filter(c => c.s <= t+0.35 && c.e >= t-0.35);
+  if(near.length) return near.map(c=>c.c).join("");
+  // closest one
+  let best=cs[0], bd=1e9;
+  for(const c of cs){
+    const mid=(c.s+c.e)/2;
+    const d=Math.abs(mid-t);
+    if(d<bd){bd=d;best=c;}
+  }
+  return best.c + "（近 @"+fmt(best.s)+"）";
+}
+
+function renderCharChips(){
+  const box=document.getElementById("charChips");
+  box.innerHTML="";
+  const cs=curTake.chars||[];
+  if(!cs.length){ box.innerHTML='<span class="muted">本条无可靠字时标，手填字/短句即可</span>'; return; }
+  cs.forEach(c=>{
+    const b=document.createElement("button");
+    b.type="button"; b.className="btn";
+    b.textContent=c.c;
+    b.title=fmt(c.s)+"-"+fmt(c.e);
+    b.onclick=()=>{
+      const inp=document.getElementById("phrase");
+      inp.value = (inp.value||"") + c.c;
+      // jump playhead near char
+      audio.currentTime = c.s;
+      if(audio.paused) audio.play();
+    };
+    box.appendChild(b);
+  });
+}
+
+function updateDraftUI(){
+  document.getElementById("sShow").textContent = fmt(draftS);
+  document.getElementById("eShow").textContent = fmt(draftE);
+  const len = (draftS!=null && draftE!=null) ? Math.max(0, draftE-draftS) : null;
+  document.getElementById("lenShow").textContent = fmt(len);
+  // draft bar on timeline
+  [...tl.querySelectorAll(".mark-bar.draft")].forEach(n=>n.remove());
+  if(draftS!=null && draftE!=null && audio.duration){
+    const bar=document.createElement("div");
+    bar.className="mark-bar draft";
+    const a=clamp(draftS/audio.duration,0,1)*100;
+    const b=clamp(draftE/audio.duration,0,1)*100;
+    bar.style.left=Math.min(a,b)+"%";
+    bar.style.width=Math.abs(b-a)+"%";
+    tl.appendChild(bar);
+  }
+}
+
+audio.addEventListener("timeupdate", ()=>{
+  const t=audio.currentTime;
+  document.getElementById("curT").textContent = fmt(t);
+  document.getElementById("lyricNear").textContent = nearestChars(t);
+  if(audio.duration){
+    ph.style.left = (t/audio.duration*100)+"%";
+  }
+});
+
+document.getElementById("markStart").onclick=()=>{
+  draftS = audio.currentTime;
+  if(draftE!=null && draftE < draftS) draftE = null;
+  updateDraftUI();
+};
+document.getElementById("markEnd").onclick=()=>{
+  draftE = audio.currentTime;
+  if(draftS==null) draftS = Math.max(0, draftE-0.8);
+  if(draftE < draftS){ const x=draftS; draftS=draftE; draftE=x; }
+  updateDraftUI();
+};
+document.getElementById("markQuick").onclick=()=>{
+  const t=audio.currentTime;
+  draftS=Math.max(0,t-0.5);
+  draftE=Math.min(audio.duration||t+0.5, t+0.5);
+  updateDraftUI();
+};
+document.getElementById("playSpan").onclick=()=>{
+  if(draftS==null||draftE==null) return;
+  audio.currentTime=draftS;
+  const stop=draftE;
+  const onT=()=>{ if(audio.currentTime>=stop){ audio.pause(); audio.removeEventListener("timeupdate", onT);} };
+  audio.addEventListener("timeupdate", onT);
+  audio.play();
+};
+document.getElementById("clearDraft").onclick=()=>{
+  draftS=draftE=null; editIdx=null;
+  document.getElementById("phrase").value="";
+  document.getElementById("note").value="";
+  updateDraftUI();
+};
+
+function selectedLabel(){
+  const el=document.querySelector('input[name="lab"]:checked');
+  return el?el.value:"希望修";
+}
+
+document.getElementById("addFrag").onclick=()=>{
+  if(draftS==null||draftE==null){ alert("先记起点和终点（或用一键±0.5s）"); return; }
+  if(draftE-draftS < 0.05){ alert("这段太短了"); return; }
+  const item={
+    song: curTake.song,
+    version: curTake.version,
+    wav_path: curTake.wav_repo,
+    start_s: Math.round(draftS*1000)/1000,
+    end_s: Math.round(draftE*1000)/1000,
+    char_or_phrase: (document.getElementById("phrase").value||"").trim(),
+    label: selectedLabel(),
+    note: (document.getElementById("note").value||"").trim(),
+    source: "jade",
+    take_id: curTake.id,
+  };
+  if(editIdx!=null){ frags[editIdx]=item; editIdx=null; }
+  else frags.push(item);
+  document.getElementById("phrase").value="";
+  document.getElementById("note").value="";
+  draftS=draftE=null; updateDraftUI();
+  renderFrags();
+};
+
+function renderFrags(){
+  const box=document.getElementById("fragList");
+  document.getElementById("fragCount").textContent = String(frags.length);
+  // redraw mark bars (non-draft)
+  [...tl.querySelectorAll(".mark-bar:not(.draft)")].forEach(n=>n.remove());
+  const mine = frags.filter(f=>f.take_id===curTake.id);
+  if(!frags.length){ box.innerHTML='还没有。听着标就行。'; box.className="muted"; return; }
+  box.className="";
+  box.innerHTML="";
+  frags.forEach((f,i)=>{
+    const key = LABEL_OPTS.find(L=>L.v===f.label)?.k || "unsure";
+    const d=document.createElement("div");
+    d.className="frag "+key;
+    d.innerHTML = `<div><b>#${i+1}</b> ${f.song} · ${f.version} · ${fmt(f.start_s)}–${fmt(f.end_s)}s · <b>${f.label}</b>
+      ${f.char_or_phrase?(" · 「"+f.char_or_phrase+"」"):""}</div>
+      <div class="muted">${f.note||""}</div>
+      <div class="row">
+        <button type="button" class="btn" data-act="play" data-i="${i}">听这段</button>
+        <button type="button" class="btn" data-act="edit" data-i="${i}">改</button>
+        <button type="button" class="btn danger" data-act="del" data-i="${i}">删</button>
+      </div>`;
+    box.appendChild(d);
+    if(f.take_id===curTake.id && audio.duration){
+      const bar=document.createElement("div");
+      bar.className="mark-bar";
+      const a=clamp(f.start_s/audio.duration,0,1)*100;
+      const b=clamp(f.end_s/audio.duration,0,1)*100;
+      bar.style.left=Math.min(a,b)+"%";
+      bar.style.width=Math.max(0.4, Math.abs(b-a))+"%";
+      bar.title="#"+ (i+1);
+      tl.appendChild(bar);
+    }
+  });
+}
+
+document.getElementById("fragList").addEventListener("click", (e)=>{
+  const b=e.target.closest("[data-act]"); if(!b) return;
+  const i=+b.getAttribute("data-i");
+  const act=b.getAttribute("data-act");
+  const f=frags[i]; if(!f) return;
+  if(act==="del"){ frags.splice(i,1); renderFrags(); return; }
+  if(act==="play"){
+    if(takeSel.value!==f.take_id){ takeSel.value=f.take_id; loadTake(); }
+    const start=()=>{ audio.currentTime=f.start_s; const stop=f.end_s;
+      const onT=()=>{ if(audio.currentTime>=stop){ audio.pause(); audio.removeEventListener("timeupdate", onT);} };
+      audio.addEventListener("timeupdate", onT); audio.play();
+    };
+    if(audio.readyState>=1) start(); else audio.onloadeddata=start;
+    return;
+  }
+  if(act==="edit"){
+    if(takeSel.value!==f.take_id){ takeSel.value=f.take_id; loadTake(); }
+    draftS=f.start_s; draftE=f.end_s; editIdx=i;
+    document.getElementById("phrase").value=f.char_or_phrase||"";
+    document.getElementById("note").value=f.note||"";
+    const radio=[...document.querySelectorAll('input[name="lab"]')].find(r=>r.value===f.label);
+    if(radio) radio.checked=true;
+    updateDraftUI();
+    window.scrollTo({top: document.getElementById("markStart").offsetTop-40, behavior:"smooth"});
+  }
+});
+
+function buildAnswers(){
+  const lines=[];
+  lines.push("F2_TASK2_MIN_EFFORT_PACK answers");
+  lines.push("date: "+ new Date().toISOString());
+  lines.push("pack: "+PACK);
+  lines.push("=== FRAGMENTS ===");
+  if(!frags.length) lines.push("(none)");
+  frags.forEach((f,i)=>{
+    lines.push(`#${i+1} | song=${f.song} | version=${f.version} | wav=${f.wav_path} | start=${f.start_s} | end=${f.end_s} | text=${f.char_or_phrase||""} | label=${f.label} | note=${f.note||""} | source=${f.source}`);
+  });
+  lines.push("=== CSV ===");
+  lines.push("song,version,wav_path,start_s,end_s,char_or_phrase,label,note,source");
+  frags.forEach(f=>{
+    const esc=s=>`"${String(s??"").replace(/"/g,'""')}"`;
+    lines.push([f.song,f.version,f.wav_path,f.start_s,f.end_s,f.char_or_phrase,f.label,f.note,f.source].map(esc).join(","));
+  });
+  return lines.join("\n");
+}
+
+document.getElementById("gen").onclick=async()=>{
+  const txt=buildAnswers();
+  document.getElementById("out").textContent=txt;
+  try{ await navigator.clipboard.writeText(txt); alert("已复制到剪贴板，粘贴发我即可"); }
+  catch(e){ alert("复制失败，请手动从下面框里全选复制"); }
+};
+document.getElementById("dl").onclick=()=>{
+  const txt=buildAnswers();
+  document.getElementById("out").textContent=txt;
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([txt],{type:"text/plain;charset=utf-8"}));
+  a.download="F2_TASK2_answers.txt"; a.click();
+};
+document.getElementById("saveLocal").onclick=()=>{
+  localStorage.setItem("f2_task2_v001", JSON.stringify({frags, take:takeSel.value}));
+  alert("已暂存到本浏览器");
+};
+document.getElementById("loadLocal").onclick=()=>{
+  const raw=localStorage.getItem("f2_task2_v001");
+  if(!raw){ alert("没有暂存"); return; }
+  try{
+    const o=JSON.parse(raw);
+    frags=o.frags||[];
+    if(o.take){ takeSel.value=o.take; }
+    loadTake(); renderFrags();
+    alert("已读回 "+frags.length+" 条");
+  }catch(e){ alert("暂存损坏"); }
+};
+
+function renderSug(){
+  const list=document.getElementById("sugList");
+  list.innerHTML="";
+  const all=SUGGESTIONS||[];
+  const mine=all.filter(s=>s.take_id===curTake.id);
+  if(!all.length){
+    document.getElementById("sugStatus").textContent="无音高候选：本机未检测到 librosa / parselmouth / crepe。页面照常可用——你直接按耳朵标。";
+    return;
+  }
+  document.getElementById("sugStatus").textContent="以下是粗候选，不是真理。可「采用进草稿」或忽略。";
+  if(!mine.length){ list.innerHTML='<p class="muted">本条无候选</p>'; return; }
+  mine.forEach((s,i)=>{
+    const d=document.createElement("div");
+    d.className="sug";
+    d.innerHTML=`<b>建议#${i+1}</b> ${fmt(s.start_s)}–${fmt(s.end_s)}s · ${s.reason||""}
+      <div class="row">
+        <button type="button" class="btn" data-sug="${i}">采用进草稿</button>
+        <button type="button" class="btn" data-sugplay="${i}">听建议段</button>
+      </div>`;
+    list.appendChild(d);
+  });
+  list.onclick=(e)=>{
+    const b=e.target.closest("[data-sug],[data-sugplay]"); if(!b) return;
+    const i=+(b.getAttribute("data-sug")??b.getAttribute("data-sugplay"));
+    const s=mine[i]; if(!s) return;
+    if(b.hasAttribute("data-sugplay")){
+      audio.currentTime=s.start_s; const stop=s.end_s;
+      const onT=()=>{ if(audio.currentTime>=stop){ audio.pause(); audio.removeEventListener("timeupdate", onT);} };
+      audio.addEventListener("timeupdate", onT); audio.play(); return;
+    }
+    draftS=s.start_s; draftE=s.end_s; updateDraftUI();
+  };
+}
+
+takeSel.onchange=()=>loadTake();
+document.getElementById("reload").onclick=()=>loadTake();
+initTakes();
+</script>
+</body>
+</html>

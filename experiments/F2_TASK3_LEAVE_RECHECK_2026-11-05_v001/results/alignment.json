@@ -1,0 +1,295 @@
+{
+  "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-轻度跑调.wav",
+  "source_sha256": "3861f9938869f26af95c846bf995bd77fad4c4f7a3188a0534224f4fae10e09d",
+  "source_time_base": "完整文件秒",
+  "model": "D:\\My_Grand_Projects2026\\Videos-Master-Project\\Qwen3-ForcedAligner-0.6B",
+  "qwen_asr_version": "0.0.6",
+  "device": "cpu",
+  "input_text_basis": "Jade 确认本人轻度实唱身边；此前模型用了原唱候选身旁",
+  "checks": {
+    "text_matches": true,
+    "finite": true,
+    "inside": true,
+    "monotonic": true,
+    "zero_duration": 1,
+    "source_hash_unchanged": true
+  },
+  "units": [
+    {
+      "index": 1,
+      "char": "我",
+      "start_s": 0.8,
+      "end_s": 0.8
+    },
+    {
+      "index": 2,
+      "char": "蒙",
+      "start_s": 0.8,
+      "end_s": 1.6
+    },
+    {
+      "index": 3,
+      "char": "上",
+      "start_s": 1.6,
+      "end_s": 1.84
+    },
+    {
+      "index": 4,
+      "char": "了",
+      "start_s": 1.84,
+      "end_s": 3.44
+    },
+    {
+      "index": 5,
+      "char": "眼",
+      "start_s": 3.44,
+      "end_s": 4.08
+    },
+    {
+      "index": 6,
+      "char": "仿",
+      "start_s": 4.4,
+      "end_s": 4.64
+    },
+    {
+      "index": 7,
+      "char": "佛",
+      "start_s": 5.36,
+      "end_s": 6.16
+    },
+    {
+      "index": 8,
+      "char": "你",
+      "start_s": 6.24,
+      "end_s": 6.72
+    },
+    {
+      "index": 9,
+      "char": "在",
+      "start_s": 6.72,
+      "end_s": 6.96
+    },
+    {
+      "index": 10,
+      "char": "身",
+      "start_s": 6.96,
+      "end_s": 7.52
+    },
+    {
+      "index": 11,
+      "char": "边",
+      "start_s": 7.52,
+      "end_s": 8.32
+    },
+    {
+      "index": 12,
+      "char": "当",
+      "start_s": 8.4,
+      "end_s": 9.12
+    },
+    {
+      "index": 13,
+      "char": "你",
+      "start_s": 9.12,
+      "end_s": 10.16
+    },
+    {
+      "index": 14,
+      "char": "不",
+      "start_s": 10.16,
+      "end_s": 10.96
+    },
+    {
+      "index": 15,
+      "char": "再",
+      "start_s": 11.04,
+      "end_s": 11.76
+    },
+    {
+      "index": 16,
+      "char": "应",
+      "start_s": 11.76,
+      "end_s": 12.48
+    },
+    {
+      "index": 17,
+      "char": "答",
+      "start_s": 12.48,
+      "end_s": 13.44
+    }
+  ],
+  "old_comparison": [
+    {
+      "index": 1,
+      "char": "我",
+      "new_start_s": 0.8,
+      "new_end_s": 0.8,
+      "old_start_s": 0.8,
+      "old_end_s": 0.8,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 2,
+      "char": "蒙",
+      "new_start_s": 0.8,
+      "new_end_s": 1.6,
+      "old_start_s": 0.8,
+      "old_end_s": 1.6,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 3,
+      "char": "上",
+      "new_start_s": 1.6,
+      "new_end_s": 1.84,
+      "old_start_s": 1.6,
+      "old_end_s": 1.84,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 4,
+      "char": "了",
+      "new_start_s": 1.84,
+      "new_end_s": 3.44,
+      "old_start_s": 1.84,
+      "old_end_s": 3.44,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 5,
+      "char": "眼",
+      "new_start_s": 3.44,
+      "new_end_s": 4.08,
+      "old_start_s": 3.44,
+      "old_end_s": 4.08,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 6,
+      "char": "仿",
+      "new_start_s": 4.4,
+      "new_end_s": 4.64,
+      "old_start_s": 4.4,
+      "old_end_s": 4.64,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 7,
+      "char": "佛",
+      "new_start_s": 5.36,
+      "new_end_s": 6.16,
+      "old_start_s": 5.36,
+      "old_end_s": 6.16,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 8,
+      "char": "你",
+      "new_start_s": 6.24,
+      "new_end_s": 6.72,
+      "old_start_s": 6.24,
+      "old_end_s": 6.72,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 9,
+      "char": "在",
+      "new_start_s": 6.72,
+      "new_end_s": 6.96,
+      "old_start_s": 6.72,
+      "old_end_s": 6.96,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 10,
+      "char": "身",
+      "new_start_s": 6.96,
+      "new_end_s": 7.52,
+      "old_start_s": 6.96,
+      "old_end_s": 7.52,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 11,
+      "char": "边",
+      "new_start_s": 7.52,
+      "new_end_s": 8.32,
+      "old_start_s": 7.52,
+      "old_end_s": 7.6,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.72
+    },
+    {
+      "index": 12,
+      "char": "当",
+      "new_start_s": 8.4,
+      "new_end_s": 9.12,
+      "old_start_s": 8.4,
+      "old_end_s": 9.12,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 13,
+      "char": "你",
+      "new_start_s": 9.12,
+      "new_end_s": 10.16,
+      "old_start_s": 9.28,
+      "old_end_s": 10.16,
+      "start_shift_s": -0.16,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 14,
+      "char": "不",
+      "new_start_s": 10.16,
+      "new_end_s": 10.96,
+      "old_start_s": 10.16,
+      "old_end_s": 10.96,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 15,
+      "char": "再",
+      "new_start_s": 11.04,
+      "new_end_s": 11.76,
+      "old_start_s": 11.04,
+      "old_end_s": 11.76,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 16,
+      "char": "应",
+      "new_start_s": 11.76,
+      "new_end_s": 12.48,
+      "old_start_s": 11.76,
+      "old_end_s": 12.48,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    },
+    {
+      "index": 17,
+      "char": "答",
+      "new_start_s": 12.48,
+      "new_end_s": 13.44,
+      "old_start_s": 12.48,
+      "old_end_s": 13.44,
+      "start_shift_s": 0.0,
+      "end_shift_s": 0.0
+    }
+  ],
+  "status": "模型结果，仍需按范围人工验证；不自动用于训练",
+  "audio_output_generated": false
+}

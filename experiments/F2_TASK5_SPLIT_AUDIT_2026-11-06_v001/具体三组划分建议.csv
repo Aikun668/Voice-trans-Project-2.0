@@ -1,0 +1,4 @@
+﻿split,song_group,take_labels,unique_fragments,labels,reference_handling,purpose
+Train candidate,离开我的依赖,01;02,6,希望修 1；故意 5,该歌原唱整条音频及所有候选窗口同组,唯一希望修标签先进入开发/训练候选池
+Validation candidate,心墙,01,3,故意 3,该歌原唱整条音频及所有候选窗口同组,只检查是否误动故意唱法；不评修音收益
+Locked test candidate,莫问归期,01;02,8,故意 8,A/B 候选是同一原唱文件，连同本人所有版本整体锁定,独立检查是否误动故意唱法；不评修音收益

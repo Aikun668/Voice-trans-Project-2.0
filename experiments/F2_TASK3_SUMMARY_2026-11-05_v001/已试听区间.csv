@@ -1,0 +1,12 @@
+﻿source,source_sha256,label,start_source_s,end_source_s,verdict,evidence,scope,training_status
+test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav,9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa,心墙 · 你的“太多”,4.48,5.36,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/心墙_郭静_vocals.wav,e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc,心墙 · 原唱的“太多”,118.08,118.56,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e,离开我的依赖 · 原唱的“来”,69.62,70.02,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e,离开我的依赖 · 原唱的“点”,75.22,75.7,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-轻度跑调.wav,fc6801a3bd924008f98ddd6f419e36f8cae3022816878eed3920897a610604eb,莫问归期 · 你的“无”,4.0,4.4,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6,莫问归期 · 原唱的“有”,121.18,121.5,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6,莫问归期 · 原唱的“沉”,134.04,134.52,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6,莫问归期 · 原唱的“谁”,139.16,139.32,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6,莫问归期 · 原唱的“涯”,143.56,143.88,完整,集中抽查 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav,3861f9938869f26af95c846bf995bd77fad4c4f7a3188a0534224f4fae10e09d,本人“边”候选,7.52,8.32,完整,离开我的依赖边界复核 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核
+test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e,原唱“诺是”候选,78.66,79.3,完整,离开我的依赖边界复核 v001,仅听过的播放区间；不推出其他位置或多字内部边界,待任务四按实际训练需求审核

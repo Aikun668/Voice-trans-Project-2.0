@@ -1,0 +1,532 @@
+{
+  "model": "D:\\My_Grand_Projects2026\\Videos-Master-Project\\Qwen3-ForcedAligner-0.6B",
+  "model_license": "Apache-2.0 (local README)",
+  "package": "qwen-asr 0.0.6",
+  "device": "cpu",
+  "source_hashes_unchanged": true,
+  "audio_output_generated": false,
+  "results": [
+    {
+      "label": "本人对照微微跑调",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav",
+      "source_sha256": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+      "source_rate": 48000,
+      "sample_offset": 0,
+      "source_start_s": 0.0,
+      "duration_s": 8.021333333333333,
+      "input_text_status": "本人该句已确认",
+      "seconds_used": 10.61,
+      "units": [
+        {
+          "text": "我",
+          "start_local_s": 0.72,
+          "end_local_s": 0.72,
+          "start_source_s": 0.72,
+          "end_source_s": 0.72
+        },
+        {
+          "text": "学",
+          "start_local_s": 0.72,
+          "end_local_s": 1.04,
+          "start_source_s": 0.72,
+          "end_source_s": 1.04
+        },
+        {
+          "text": "着",
+          "start_local_s": 1.04,
+          "end_local_s": 1.28,
+          "start_source_s": 1.04,
+          "end_source_s": 1.28
+        },
+        {
+          "text": "不",
+          "start_local_s": 1.28,
+          "end_local_s": 1.6,
+          "start_source_s": 1.28,
+          "end_source_s": 1.6
+        },
+        {
+          "text": "去",
+          "start_local_s": 1.6,
+          "end_local_s": 1.84,
+          "start_source_s": 1.6,
+          "end_source_s": 1.84
+        },
+        {
+          "text": "担",
+          "start_local_s": 1.84,
+          "end_local_s": 2.08,
+          "start_source_s": 1.84,
+          "end_source_s": 2.08
+        },
+        {
+          "text": "心",
+          "start_local_s": 2.08,
+          "end_local_s": 2.4,
+          "start_source_s": 2.08,
+          "end_source_s": 2.4
+        },
+        {
+          "text": "得",
+          "start_local_s": 2.4,
+          "end_local_s": 2.56,
+          "start_source_s": 2.4,
+          "end_source_s": 2.56
+        },
+        {
+          "text": "太",
+          "start_local_s": 2.56,
+          "end_local_s": 2.96,
+          "start_source_s": 2.56,
+          "end_source_s": 2.96
+        },
+        {
+          "text": "远",
+          "start_local_s": 2.96,
+          "end_local_s": 3.76,
+          "start_source_s": 2.96,
+          "end_source_s": 3.76
+        },
+        {
+          "text": "不",
+          "start_local_s": 3.92,
+          "end_local_s": 4.08,
+          "start_source_s": 3.92,
+          "end_source_s": 4.08
+        },
+        {
+          "text": "计",
+          "start_local_s": 4.08,
+          "end_local_s": 4.32,
+          "start_source_s": 4.08,
+          "end_source_s": 4.32
+        },
+        {
+          "text": "划",
+          "start_local_s": 4.32,
+          "end_local_s": 4.56,
+          "start_source_s": 4.32,
+          "end_source_s": 4.56
+        },
+        {
+          "text": "太",
+          "start_local_s": 4.56,
+          "end_local_s": 4.8,
+          "start_source_s": 4.56,
+          "end_source_s": 4.8
+        },
+        {
+          "text": "多",
+          "start_local_s": 4.8,
+          "end_local_s": 5.28,
+          "start_source_s": 4.8,
+          "end_source_s": 5.28
+        },
+        {
+          "text": "反",
+          "start_local_s": 5.28,
+          "end_local_s": 5.6,
+          "start_source_s": 5.28,
+          "end_source_s": 5.6
+        },
+        {
+          "text": "而",
+          "start_local_s": 5.6,
+          "end_local_s": 5.84,
+          "start_source_s": 5.6,
+          "end_source_s": 5.84
+        },
+        {
+          "text": "能",
+          "start_local_s": 5.84,
+          "end_local_s": 6.08,
+          "start_source_s": 5.84,
+          "end_source_s": 6.08
+        },
+        {
+          "text": "勇",
+          "start_local_s": 6.08,
+          "end_local_s": 6.32,
+          "start_source_s": 6.08,
+          "end_source_s": 6.32
+        },
+        {
+          "text": "敢",
+          "start_local_s": 6.32,
+          "end_local_s": 6.56,
+          "start_source_s": 6.32,
+          "end_source_s": 6.56
+        },
+        {
+          "text": "冒",
+          "start_local_s": 6.56,
+          "end_local_s": 7.12,
+          "start_source_s": 6.56,
+          "end_source_s": 7.12
+        },
+        {
+          "text": "险",
+          "start_local_s": 7.12,
+          "end_local_s": 7.68,
+          "start_source_s": 7.12,
+          "end_source_s": 7.68
+        }
+      ],
+      "checks": {
+        "finite": true,
+        "inside_audio": true,
+        "monotonic": true,
+        "zero_duration": 1
+      },
+      "status": "模型候选，待 Jade 听感抽查；不得直接视为训练样本"
+    },
+    {
+      "label": "本人轻度跑调",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+      "source_sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa",
+      "source_rate": 48000,
+      "sample_offset": 0,
+      "source_start_s": 0.0,
+      "duration_s": 8.612,
+      "input_text_status": "按用户命名同一段；具体文字待抽查",
+      "seconds_used": 2.98,
+      "units": [
+        {
+          "text": "我",
+          "start_local_s": 0.64,
+          "end_local_s": 0.64,
+          "start_source_s": 0.64,
+          "end_source_s": 0.64
+        },
+        {
+          "text": "学",
+          "start_local_s": 0.64,
+          "end_local_s": 0.96,
+          "start_source_s": 0.64,
+          "end_source_s": 0.96
+        },
+        {
+          "text": "着",
+          "start_local_s": 0.96,
+          "end_local_s": 1.2,
+          "start_source_s": 0.96,
+          "end_source_s": 1.2
+        },
+        {
+          "text": "不",
+          "start_local_s": 1.2,
+          "end_local_s": 1.44,
+          "start_source_s": 1.2,
+          "end_source_s": 1.44
+        },
+        {
+          "text": "去",
+          "start_local_s": 1.44,
+          "end_local_s": 1.68,
+          "start_source_s": 1.44,
+          "end_source_s": 1.68
+        },
+        {
+          "text": "担",
+          "start_local_s": 1.68,
+          "end_local_s": 1.92,
+          "start_source_s": 1.68,
+          "end_source_s": 1.92
+        },
+        {
+          "text": "心",
+          "start_local_s": 1.92,
+          "end_local_s": 2.4,
+          "start_source_s": 1.92,
+          "end_source_s": 2.4
+        },
+        {
+          "text": "得",
+          "start_local_s": 2.4,
+          "end_local_s": 2.56,
+          "start_source_s": 2.4,
+          "end_source_s": 2.56
+        },
+        {
+          "text": "太",
+          "start_local_s": 2.56,
+          "end_local_s": 3.04,
+          "start_source_s": 2.56,
+          "end_source_s": 3.04
+        },
+        {
+          "text": "远",
+          "start_local_s": 3.04,
+          "end_local_s": 3.68,
+          "start_source_s": 3.04,
+          "end_source_s": 3.68
+        },
+        {
+          "text": "不",
+          "start_local_s": 3.76,
+          "end_local_s": 3.92,
+          "start_source_s": 3.76,
+          "end_source_s": 3.92
+        },
+        {
+          "text": "计",
+          "start_local_s": 3.92,
+          "end_local_s": 4.16,
+          "start_source_s": 3.92,
+          "end_source_s": 4.16
+        },
+        {
+          "text": "划",
+          "start_local_s": 4.16,
+          "end_local_s": 4.48,
+          "start_source_s": 4.16,
+          "end_source_s": 4.48
+        },
+        {
+          "text": "太",
+          "start_local_s": 4.48,
+          "end_local_s": 4.88,
+          "start_source_s": 4.48,
+          "end_source_s": 4.88
+        },
+        {
+          "text": "多",
+          "start_local_s": 4.88,
+          "end_local_s": 5.36,
+          "start_source_s": 4.88,
+          "end_source_s": 5.36
+        },
+        {
+          "text": "反",
+          "start_local_s": 5.36,
+          "end_local_s": 5.68,
+          "start_source_s": 5.36,
+          "end_source_s": 5.68
+        },
+        {
+          "text": "而",
+          "start_local_s": 5.68,
+          "end_local_s": 5.84,
+          "start_source_s": 5.68,
+          "end_source_s": 5.84
+        },
+        {
+          "text": "能",
+          "start_local_s": 5.84,
+          "end_local_s": 6.0,
+          "start_source_s": 5.84,
+          "end_source_s": 6.0
+        },
+        {
+          "text": "勇",
+          "start_local_s": 6.0,
+          "end_local_s": 6.24,
+          "start_source_s": 6.0,
+          "end_source_s": 6.24
+        },
+        {
+          "text": "敢",
+          "start_local_s": 6.24,
+          "end_local_s": 6.48,
+          "start_source_s": 6.24,
+          "end_source_s": 6.48
+        },
+        {
+          "text": "冒",
+          "start_local_s": 6.48,
+          "end_local_s": 6.88,
+          "start_source_s": 6.48,
+          "end_source_s": 6.88
+        },
+        {
+          "text": "险",
+          "start_local_s": 6.88,
+          "end_local_s": 7.6,
+          "start_source_s": 6.88,
+          "end_source_s": 7.6
+        }
+      ],
+      "checks": {
+        "finite": true,
+        "inside_audio": true,
+        "monotonic": true,
+        "zero_duration": 1
+      },
+      "status": "模型候选，待 Jade 听感抽查；不得直接视为训练样本"
+    },
+    {
+      "label": "原唱候选",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "source_sha256": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc",
+      "source_rate": 44100,
+      "sample_offset": 4974480,
+      "source_start_s": 112.8,
+      "duration_s": 8.3,
+      "input_text_status": "用户确认同一句；逐字待抽查",
+      "seconds_used": 2.67,
+      "units": [
+        {
+          "text": "我",
+          "start_local_s": 0.8,
+          "end_local_s": 1.12,
+          "start_source_s": 113.6,
+          "end_source_s": 113.92
+        },
+        {
+          "text": "学",
+          "start_local_s": 1.12,
+          "end_local_s": 1.36,
+          "start_source_s": 113.92,
+          "end_source_s": 114.16
+        },
+        {
+          "text": "着",
+          "start_local_s": 1.36,
+          "end_local_s": 1.6,
+          "start_source_s": 114.16,
+          "end_source_s": 114.4
+        },
+        {
+          "text": "不",
+          "start_local_s": 1.6,
+          "end_local_s": 1.84,
+          "start_source_s": 114.4,
+          "end_source_s": 114.64
+        },
+        {
+          "text": "去",
+          "start_local_s": 1.84,
+          "end_local_s": 2.08,
+          "start_source_s": 114.64,
+          "end_source_s": 114.88
+        },
+        {
+          "text": "担",
+          "start_local_s": 2.08,
+          "end_local_s": 2.56,
+          "start_source_s": 114.88,
+          "end_source_s": 115.36
+        },
+        {
+          "text": "心",
+          "start_local_s": 2.56,
+          "end_local_s": 2.88,
+          "start_source_s": 115.36,
+          "end_source_s": 115.68
+        },
+        {
+          "text": "得",
+          "start_local_s": 2.88,
+          "end_local_s": 3.28,
+          "start_source_s": 115.68,
+          "end_source_s": 116.08
+        },
+        {
+          "text": "太",
+          "start_local_s": 3.28,
+          "end_local_s": 3.68,
+          "start_source_s": 116.08,
+          "end_source_s": 116.48
+        },
+        {
+          "text": "远",
+          "start_local_s": 3.68,
+          "end_local_s": 4.32,
+          "start_source_s": 116.48,
+          "end_source_s": 117.12
+        },
+        {
+          "text": "不",
+          "start_local_s": 4.56,
+          "end_local_s": 4.8,
+          "start_source_s": 117.36,
+          "end_source_s": 117.6
+        },
+        {
+          "text": "计",
+          "start_local_s": 4.8,
+          "end_local_s": 5.04,
+          "start_source_s": 117.6,
+          "end_source_s": 117.84
+        },
+        {
+          "text": "划",
+          "start_local_s": 5.04,
+          "end_local_s": 5.28,
+          "start_source_s": 117.84,
+          "end_source_s": 118.08
+        },
+        {
+          "text": "太",
+          "start_local_s": 5.28,
+          "end_local_s": 5.52,
+          "start_source_s": 118.08,
+          "end_source_s": 118.32
+        },
+        {
+          "text": "多",
+          "start_local_s": 5.52,
+          "end_local_s": 5.76,
+          "start_source_s": 118.32,
+          "end_source_s": 118.56
+        },
+        {
+          "text": "反",
+          "start_local_s": 5.76,
+          "end_local_s": 6.08,
+          "start_source_s": 118.56,
+          "end_source_s": 118.88
+        },
+        {
+          "text": "而",
+          "start_local_s": 6.08,
+          "end_local_s": 6.4,
+          "start_source_s": 118.88,
+          "end_source_s": 119.2
+        },
+        {
+          "text": "能",
+          "start_local_s": 6.4,
+          "end_local_s": 6.72,
+          "start_source_s": 119.2,
+          "end_source_s": 119.52
+        },
+        {
+          "text": "勇",
+          "start_local_s": 6.72,
+          "end_local_s": 6.96,
+          "start_source_s": 119.52,
+          "end_source_s": 119.76
+        },
+        {
+          "text": "敢",
+          "start_local_s": 6.96,
+          "end_local_s": 7.2,
+          "start_source_s": 119.76,
+          "end_source_s": 120.0
+        },
+        {
+          "text": "冒",
+          "start_local_s": 7.2,
+          "end_local_s": 7.68,
+          "start_source_s": 120.0,
+          "end_source_s": 120.48
+        },
+        {
+          "text": "险",
+          "start_local_s": 7.68,
+          "end_local_s": 8.16,
+          "start_source_s": 120.48,
+          "end_source_s": 120.96
+        }
+      ],
+      "checks": {
+        "finite": true,
+        "inside_audio": true,
+        "monotonic": true,
+        "zero_duration": 0
+      },
+      "status": "模型候选，待 Jade 听感抽查；不得直接视为训练样本"
+    }
+  ]
+}

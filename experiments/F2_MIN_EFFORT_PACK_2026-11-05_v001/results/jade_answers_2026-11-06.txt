@@ -1,0 +1,27 @@
+F2_MIN_EFFORT_PACK answers
+date: 2026-11-06T05:06:16.441Z
+pack: v001-clamp
+=== LYRICS ===
+心墙01 | status=ok | text=我学着不去担心得太远不计划太多反而能勇敢冒险 | note=
+离开我的依赖01 | status=ok | text=我蒙上了眼仿佛你在身旁当你不再应答 | note=这边听本人轻度的这个跑调，我原来唱的里面是身边，但是原歌词是身旁
+离开我的依赖02 | status=ok | text=我来不及道声不安有点混乱有点缓慢才发现承诺是谎话 | note=
+莫问归期01 | status=ok | text=藏进心口的刺不枉寻也如此沉默有时最后因你放肆 | note=这里面这句歌词不忘寻也如此，这个不我唱成了无，AB都差不多都行 ref_pick=unsure
+莫问归期02 | status=ok | text=沉默有时念想有时谁诀别相思成疾莫问天涯也莫问归期 | note=歌词是没问题，第二版我这个本人轻度跑调的，这个可能跑调程度有点高了点，有些词可能会识别成另外的一些同音词，
+=== BAD_SPOTS ===
+bad#1 | ok_enough
+bad#2 | ok_enough
+bad#3 | ok_enough
+bad#4 | ok_enough
+bad#5 | wrong_time
+bad#6 | drop
+bad#7 | ok_enough
+bad#8 | ok_enough
+bad#9 | ok_enough
+bad#10 | ok_enough
+bad#11 | ok_enough
+bad#12 | ok_enough
+bad#13 | ok_enough
+bad#14 | ok_enough
+bad#15 | ok_enough
+bad#16 | ok_enough
+bad#17 | ok_enough

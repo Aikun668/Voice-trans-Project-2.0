@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "status": "skipped",
+    "reason": "base Anaconda python 无 librosa/parselmouth/crepe；未扫描其他 env 以免拖慢。UI 无候选仍可用。",
+    "checked_at": "2026-11-06T06:02:36.427279+00:00",
+    "count": 0
+  },
+  "items": []
+}

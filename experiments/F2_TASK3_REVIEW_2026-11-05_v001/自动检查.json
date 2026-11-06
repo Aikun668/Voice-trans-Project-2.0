@@ -1,0 +1,35 @@
+{
+  "groups": {
+    "心墙01": {
+      "candidate_pairs": 44,
+      "self_or_reference_flagged": 2
+    },
+    "离开我的依赖01": {
+      "candidate_pairs": 34,
+      "self_or_reference_flagged": 6
+    },
+    "离开我的依赖02": {
+      "candidate_pairs": 48,
+      "self_or_reference_flagged": 10
+    },
+    "莫问归期01": {
+      "candidate_pairs": 88,
+      "self_or_reference_flagged": 2
+    },
+    "莫问归期02": {
+      "candidate_pairs": 48,
+      "self_or_reference_flagged": 8
+    }
+  },
+  "pairs": 262,
+  "all_pair_status": "未人工逐字确认，不得直接训练",
+  "old_reference_listening_mapped_to_wrong_source": 12,
+  "audio_output_generated": false,
+  "review_songs_per_round": 1,
+  "notes": [
+    "字序相同不代表实唱相同",
+    "零时长无法从大概落窗推断有效边界",
+    "不同原唱候选保留",
+    "待抽查结果按具体区间解读，不推断其他字已通过"
+  ]
+}
