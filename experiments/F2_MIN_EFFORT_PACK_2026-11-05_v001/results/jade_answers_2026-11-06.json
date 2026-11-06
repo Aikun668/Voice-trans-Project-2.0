@@ -1,0 +1,148 @@
+{
+    "date":  "2026-11-06T05:06:16.441Z",
+    "pack":  "v001-clamp",
+    "ingested_at_local":  "2026-11-05 21:09:07",
+    "timezone":  "America/Los_Angeles",
+    "lyric_standard":  "本人干声实唱为准；官网词仅候选",
+    "lyrics":  [
+                   {
+                       "group":  "心墙01",
+                       "status":  "ok",
+                       "text":  "我学着不去担心得太远不计划太多反而能勇敢冒险",
+                       "note":  "",
+                       "sung_vs_sheet":  "",
+                       "ref_pick":  ""
+                   },
+                   {
+                       "group":  "离开我的依赖01",
+                       "status":  "ok",
+                       "text":  "我蒙上了眼仿佛你在身旁当你不再应答",
+                       "note":  "这边听本人轻度的这个跑调，我原来唱的里面是身边，但是原歌词是身旁",
+                       "sung_vs_sheet":  "训练字已改为实唱「身边」；官网仍为「身旁」",
+                       "ref_pick":  "",
+                       "train_text":  "我蒙上了眼仿佛你在身边当你不再应答"
+                   },
+                   {
+                       "group":  "离开我的依赖02",
+                       "status":  "ok",
+                       "text":  "我来不及道声不安有点混乱有点缓慢才发现承诺是谎话",
+                       "note":  "",
+                       "sung_vs_sheet":  "",
+                       "ref_pick":  ""
+                   },
+                   {
+                       "group":  "莫问归期01",
+                       "status":  "ok",
+                       "text":  "藏进心口的刺不枉寻也如此沉默有时最后因你放肆",
+                       "note":  "这里面这句歌词不忘寻也如此，这个不我唱成了无，AB都差不多都行",
+                       "sung_vs_sheet":  "训练字已改为实唱「无枉寻」；官网候选「不枉寻」；ref_pick=unsure",
+                       "ref_pick":  "unsure",
+                       "train_text":  "藏进心口的刺无枉寻也如此沉默有时最后因你放肆"
+                   },
+                   {
+                       "group":  "莫问归期02",
+                       "status":  "ok",
+                       "text":  "沉默有时念想有时谁诀别相思成疾莫问天涯也莫问归期",
+                       "note":  "歌词是没问题，第二版我这个本人轻度跑调的，这个可能跑调程度有点高了点，有些词可能会识别成另外的一些同音词，",
+                       "sung_vs_sheet":  "",
+                       "ref_pick":  ""
+                   }
+               ],
+    "bad_spots":  [
+                      {
+                          "id":  1,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  2,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  3,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  4,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  5,
+                          "verdict":  "wrong_time"
+                      },
+                      {
+                          "id":  6,
+                          "verdict":  "drop"
+                      },
+                      {
+                          "id":  7,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  8,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  9,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  10,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  11,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  12,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  13,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  14,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  15,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  16,
+                          "verdict":  "ok_enough"
+                      },
+                      {
+                          "id":  17,
+                          "verdict":  "ok_enough"
+                      }
+                  ],
+    "kick_ids":  [
+                     5,
+                     6
+                 ],
+    "keep_ids":  [
+                     1,
+                     2,
+                     3,
+                     4,
+                     7,
+                     8,
+                     9,
+                     10,
+                     11,
+                     12,
+                     13,
+                     14,
+                     15,
+                     16,
+                     17
+                 ],
+    "train_text_fix":  {
+                           "at":  "2026-11-05 America/Los_Angeles",
+                           "leave01":  "我蒙上了眼仿佛你在身边当你不再应答",
+                           "mo01":  "藏进心口的刺无枉寻也如此沉默有时最后因你放肆",
+                           "note":  "按 Jade 标准：训练字=实唱；未重跑对齐，仅改字面/字级 glyph"
+                       }
+}

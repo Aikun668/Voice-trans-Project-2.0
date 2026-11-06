@@ -1,0 +1,140 @@
+[
+    {
+        "group":  "心墙01",
+        "version":  "对照微微跑调",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-对照微微跑调.wav",
+        "window_start_s":  0.0,
+        "text":  "我学着不去担心得太远不计划太多反而能勇敢冒险",
+        "zero_indices":  [
+                             1
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  1
+    },
+    {
+        "group":  "心墙01",
+        "version":  "轻度跑调",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav",
+        "window_start_s":  0.0,
+        "text":  "我学着不去担心得太远不计划太多反而能勇敢冒险",
+        "zero_indices":  [
+                             1
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  1
+    },
+    {
+        "group":  "离开我的依赖01",
+        "version":  "对照微微跑调",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav",
+        "window_start_s":  0.0,
+        "text":  "我蒙上了眼仿佛你在身边当你不再应答",
+        "zero_indices":  [
+                             1
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  2
+    },
+    {
+        "group":  "离开我的依赖01",
+        "version":  "轻度跑调",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav",
+        "window_start_s":  0.0,
+        "text":  "我蒙上了眼仿佛你在身边当你不再应答",
+        "zero_indices":  [
+                             1
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  2
+    },
+    {
+        "group":  "离开我的依赖01",
+        "version":  "原唱候选",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+        "window_start_s":  53.4,
+        "text":  "我蒙上了眼仿佛你在身边当你不再应答",
+        "zero_indices":  [
+                             7
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  2
+    },
+    {
+        "group":  "离开我的依赖02",
+        "version":  "对照微微跑调",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav",
+        "window_start_s":  0.0,
+        "text":  "我来不及道声不安有点混乱有点缓慢才发现承诺是谎话",
+        "zero_indices":  [
+                             1
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  2
+    },
+    {
+        "group":  "离开我的依赖02",
+        "version":  "原唱候选",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+        "window_start_s":  68.5,
+        "text":  "我来不及道声不安有点混乱有点缓慢才发现承诺是谎话",
+        "zero_indices":  [
+                             1,
+                             21,
+                             22
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  2
+    },
+    {
+        "group":  "莫问归期01",
+        "version":  "原唱候选B",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+        "window_start_s":  113.1,
+        "text":  "藏进心口的刺无枉寻也如此沉默有时最后因你放肆",
+        "zero_indices":  [
+                             15
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  2
+    },
+    {
+        "group":  "莫问归期02",
+        "version":  "原唱候选",
+        "source":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+        "window_start_s":  133.4,
+        "text":  "沉默有时念想有时谁诀别相思成疾莫问天涯也莫问归期",
+        "zero_indices":  [
+                             18,
+                             19
+                         ],
+        "suggested_tools":  [
+                                "MFA",
+                                "HubertFA"
+                            ],
+        "priority":  2
+    }
+]

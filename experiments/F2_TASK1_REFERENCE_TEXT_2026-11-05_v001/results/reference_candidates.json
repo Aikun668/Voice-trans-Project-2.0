@@ -1,0 +1,158 @@
+{
+  "items": [
+    {
+      "group": "心墙01",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "window_s": [
+        112.8,
+        123.2
+      ],
+      "segments": [
+        {
+          "start_in_window_s": 0.0,
+          "end_in_window_s": 4.0,
+          "text": "我學著不去擔心的太遠"
+        },
+        {
+          "start_in_window_s": 4.0,
+          "end_in_window_s": 8.0,
+          "text": "不計劃太多反而能勇敢冒險"
+        },
+        {
+          "start_in_window_s": 8.0,
+          "end_in_window_s": 10.0,
+          "text": "豐富的過每一天"
+        }
+      ],
+      "status": "原唱候选机器识别；歌词和位置未确认"
+    },
+    {
+      "group": "离开我的依赖01",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "window_s": [
+        53.4,
+        68.8
+      ],
+      "segments": [
+        {
+          "start_in_window_s": 0.0,
+          "end_in_window_s": 15.0,
+          "text": "我夢上了眼 彷彿你在身旁 離不在陰堂"
+        }
+      ],
+      "status": "原唱候选机器识别；歌词和位置未确认"
+    },
+    {
+      "group": "离开我的依赖02",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "window_s": [
+        68.5,
+        80.9
+      ],
+      "segments": [
+        {
+          "start_in_window_s": 0.0,
+          "end_in_window_s": 4.0,
+          "text": "过来不及的事不安"
+        },
+        {
+          "start_in_window_s": 4.0,
+          "end_in_window_s": 8.0,
+          "text": "有天昏暖 有天温暖"
+        },
+        {
+          "start_in_window_s": 8.0,
+          "end_in_window_s": 12.0,
+          "text": "才发现什么是昏暖"
+        }
+      ],
+      "status": "原唱候选机器识别；歌词和位置未确认"
+    },
+    {
+      "group": "莫问归期01-候选A",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "window_s": [
+        30.6,
+        42.9
+      ],
+      "segments": [
+        {
+          "start_in_window_s": 0.0,
+          "end_in_window_s": 3.58,
+          "text": "藏起心口的字"
+        },
+        {
+          "start_in_window_s": 3.58,
+          "end_in_window_s": 7.0,
+          "text": "不忘血液如此"
+        },
+        {
+          "start_in_window_s": 7.0,
+          "end_in_window_s": 12.0,
+          "text": "沉默又是最後因你放肆"
+        }
+      ],
+      "status": "原唱候选机器识别；歌词和位置未确认"
+    },
+    {
+      "group": "莫问归期01-候选B",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "window_s": [
+        113.1,
+        125.4
+      ],
+      "segments": [
+        {
+          "start_in_window_s": 0.0,
+          "end_in_window_s": 3.58,
+          "text": "藏起心靠的詞"
+        },
+        {
+          "start_in_window_s": 3.58,
+          "end_in_window_s": 6.88,
+          "text": "無往虛也如此"
+        },
+        {
+          "start_in_window_s": 6.88,
+          "end_in_window_s": 12.12,
+          "text": "沉默又是最後因你放肆"
+        }
+      ],
+      "status": "原唱候选机器识别；歌词和位置未确认"
+    },
+    {
+      "group": "莫问归期02",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "window_s": [
+        133.4,
+        146.4
+      ],
+      "segments": [
+        {
+          "start_in_window_s": 0.0,
+          "end_in_window_s": 5.0,
+          "text": "沉默有失 念相有失"
+        },
+        {
+          "start_in_window_s": 5.0,
+          "end_in_window_s": 8.0,
+          "text": "誰卻別消失成績"
+        },
+        {
+          "start_in_window_s": 8.0,
+          "end_in_window_s": 12.0,
+          "text": "莫問成雅也莫問歸西"
+        }
+      ],
+      "status": "原唱候选机器识别；歌词和位置未确认"
+    }
+  ],
+  "source_sha256": {
+    "心墙_郭静_vocals.wav": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc",
+    "离开我的依赖_王艳薇_vocals.wav": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+    "莫问归期_蒋雪儿_vocals.wav": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6"
+  },
+  "source_hashes_unchanged": true,
+  "model": "Systran/faster-whisper-small, faster-whisper 1.2.1 CPU int8",
+  "note": "窗口内临时读取并重采样内存，不生成音频；位置与文字皆仅供辅助核对。"
+}

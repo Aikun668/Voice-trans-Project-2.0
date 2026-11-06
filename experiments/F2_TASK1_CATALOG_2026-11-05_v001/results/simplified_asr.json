@@ -1,0 +1,66 @@
+{
+  "source": "catalog.json, derived from user recordings",
+  "converter": "zhconv 1.4.3",
+  "items": [
+    {
+      "song": "心墙",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav",
+      "text_simplified": "我学着不许担心的太远不计划太多反而能勇敢冒险",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "心墙",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+      "text_simplified": "我学着不去担心的太远,不计划太多,反而能勇敢冒险。",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "离开我的依赖",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-对照微微跑调.wav",
+      "text_simplified": "我梦上了眼 仿佛你在身旁 当你不再应答",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "离开我的依赖",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-轻度跑调.wav",
+      "text_simplified": "我梦上了眼,仿佛你在身边当,你不在意的。",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "离开我的依赖",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-对照微微跑调.wav",
+      "text_simplified": "我来不及大声不安 有点浑软 有点缓慢 才发现沉默是谎话",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "离开我的依赖",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-轻度跑调.wav",
+      "text_simplified": "我来不及到深不安 有点混乱 有点缓慢 才发现沉浓湿黄银花",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "莫问归期",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-对照微微跑调.wav",
+      "text_simplified": "藏尽心口的词 无往寻也如此沉默有事最后应以放肆",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "莫问归期",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-轻度跑调.wav",
+      "text_simplified": "长尽心口的词 无忘寻也如此沉默有时最后隐移放肆",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "莫问归期",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav",
+      "text_simplified": "沉默有事,想念有事,谁绝别相思沉寂,莫问天涯也莫问归期",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    },
+    {
+      "song": "莫问归期",
+      "file": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-轻度跑调.wav",
+      "text_simplified": "沉默有诗,也想有诗谁绝别相思,沉寂,莫问天涯,也莫问鬼气",
+      "status": "语音识别转写，未人工核验，不是原歌词，也不能直接作为强制对齐的确认文本"
+    }
+  ]
+}

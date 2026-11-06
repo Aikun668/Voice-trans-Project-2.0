@@ -1,0 +1,50 @@
+{
+    "n_rows":  349,
+    "status_counts":  {
+                          "零时长":  12,
+                          "OK候选":  332,
+                          "漂移可疑":  5
+                      },
+    "n_bad_spots":  17,
+    "bad_by_group_version":  {
+                                 "心墙01|对照微微跑调":  1,
+                                 "心墙01|轻度跑调":  1,
+                                 "离开我的依赖01|对照微微跑调":  1,
+                                 "离开我的依赖01|轻度跑调":  1,
+                                 "离开我的依赖01|原唱候选":  2,
+                                 "离开我的依赖02|对照微微跑调":  1,
+                                 "离开我的依赖02|原唱候选":  5,
+                                 "莫问归期01|原唱候选B":  1,
+                                 "莫问归期02|原唱候选":  4
+                             },
+    "drift_threshold_s":  0.35,
+    "note":  "OK候选不等于可训练；零时长/漂移可疑默认不可训练。",
+    "bad_spot_fix":  {
+                         "n_bad_spots":  17,
+                         "was_full_ref_n":  12,
+                         "was_play_oob_n":  12,
+                         "clamped_usable_n":  16,
+                         "out_of_clip_n":  1,
+                         "note":  "Playback remapped to Jade dry wav clips; windows clamped to [0, duration]. OUT_OF_CLIP = Qwen local time past dry clip."
+                     },
+    "round":  "v001-clamp",
+    "jade_answers":  {
+                         "date":  "2026-11-06T05:06:16.441Z",
+                         "pack":  "v001-clamp",
+                         "lyrics_confirmed":  5,
+                         "bad_keep":  15,
+                         "bad_kick":  2,
+                         "kick_ids":  [
+                                          5,
+                                          6
+                                      ],
+                         "reliable_n":  332,
+                         "excluded_n":  17
+                     },
+    "status_counts_after":  {
+                                "可靠":  332,
+                                "零时长_retained_not_in_reliable":  11,
+                                "漂移可疑_retained_not_in_reliable":  4,
+                                "不可用_kicked":  2
+                            }
+}

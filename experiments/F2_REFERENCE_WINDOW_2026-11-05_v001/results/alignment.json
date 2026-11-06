@@ -1,0 +1,541 @@
+{
+  "sources": {
+    "离开我的依赖": "https://www.kugou.com/song-36/143hgz45.html",
+    "莫问归期": "https://chinesemusicwiki.com/dont-ask-about-the-return-date%E8%8E%AB%E9%97%AE%E5%BD%92%E6%9C%9Fmo-wen-gui-qi-by-snow-j%E8%92%8B%E9%9B%AA%E5%84%BF/"
+  },
+  "source_segments": {
+    "离开我的依赖01": "酷狗时间 55–68 秒三行",
+    "离开我的依赖02": "酷狗时间 69–80 秒三行",
+    "莫问归期01": "来源歌词第1–3行",
+    "莫问归期02": "来源歌词第6–8行"
+  },
+  "text_sha256": {
+    "离开我的依赖01": "9fb26abbff18a0101f7ca7250a05795b3e8d33bb66fc221b336bb70eb6c19e84",
+    "离开我的依赖02": "acaa9e2408f0b234d756575618973bcbce7c0189a0cfe84b07c0dcd2d0016681",
+    "莫问归期01": "329746bb36febc14fe208a618fe6549923313fc42600d06903730ebef27e03f3",
+    "莫问归期02": "cf4f704d227e255a4f30150a0fcb1b9fda3984ab4433aeae9c81fae4545b2997"
+  },
+  "model": "Qwen3-ForcedAligner-0.6B",
+  "qwen_asr_version": "0.0.6",
+  "device": "cpu",
+  "inputs_unchanged": true,
+  "audio_output_generated": false,
+  "notes": [
+    "每个原唱窗口在原基础上首尾各扩 2 秒以测试边缘影响。",
+    "网页歌词仅用于本次内存计算，不保存歌词；只保存序号与时间。",
+    "真实演唱及字边界未人工验证。"
+  ],
+  "items": [
+    {
+      "group": "离开我的依赖01",
+      "label": "扩大窗口",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "source_start_s": 51.4,
+      "duration_s": 19.4,
+      "source_sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "tokens": [
+        {
+          "index": 1,
+          "start_s": 55.0,
+          "end_s": 55.0
+        },
+        {
+          "index": 2,
+          "start_s": 55.0,
+          "end_s": 56.12
+        },
+        {
+          "index": 3,
+          "start_s": 56.12,
+          "end_s": 56.36
+        },
+        {
+          "index": 4,
+          "start_s": 57.0,
+          "end_s": 57.08
+        },
+        {
+          "index": 5,
+          "start_s": 57.16,
+          "end_s": 58.68
+        },
+        {
+          "index": 6,
+          "start_s": 59.0,
+          "end_s": 59.96
+        },
+        {
+          "index": 7,
+          "start_s": 60.04,
+          "end_s": 60.04
+        },
+        {
+          "index": 8,
+          "start_s": 61.0,
+          "end_s": 61.4
+        },
+        {
+          "index": 9,
+          "start_s": 61.48,
+          "end_s": 61.64
+        },
+        {
+          "index": 10,
+          "start_s": 61.64,
+          "end_s": 62.28
+        },
+        {
+          "index": 11,
+          "start_s": 62.28,
+          "end_s": 62.68
+        },
+        {
+          "index": 12,
+          "start_s": 62.68,
+          "end_s": 62.92
+        },
+        {
+          "index": 13,
+          "start_s": 62.92,
+          "end_s": 63.88
+        },
+        {
+          "index": 14,
+          "start_s": 63.88,
+          "end_s": 64.76
+        },
+        {
+          "index": 15,
+          "start_s": 64.76,
+          "end_s": 65.32
+        },
+        {
+          "index": 16,
+          "start_s": 65.8,
+          "end_s": 65.8
+        },
+        {
+          "index": 17,
+          "start_s": 65.8,
+          "end_s": 65.8
+        }
+      ],
+      "seconds_used": 12.94,
+      "checks": {
+        "token_text_matches_source": true,
+        "finite": true,
+        "inside_audio": true,
+        "monotonic": true,
+        "zero_duration": 4
+      },
+      "status": "仅模型候选，原唱位置和字音边界待抽查，不能直接用于训练"
+    },
+    {
+      "group": "离开我的依赖02",
+      "label": "扩大窗口",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "source_start_s": 66.5,
+      "duration_s": 16.4,
+      "source_sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "tokens": [
+        {
+          "index": 1,
+          "start_s": 66.5,
+          "end_s": 66.5
+        },
+        {
+          "index": 2,
+          "start_s": 66.5,
+          "end_s": 70.02
+        },
+        {
+          "index": 3,
+          "start_s": 70.02,
+          "end_s": 70.1
+        },
+        {
+          "index": 4,
+          "start_s": 70.5,
+          "end_s": 70.98
+        },
+        {
+          "index": 5,
+          "start_s": 70.98,
+          "end_s": 71.38
+        },
+        {
+          "index": 6,
+          "start_s": 71.38,
+          "end_s": 71.78
+        },
+        {
+          "index": 7,
+          "start_s": 71.78,
+          "end_s": 72.18
+        },
+        {
+          "index": 8,
+          "start_s": 72.18,
+          "end_s": 72.5
+        },
+        {
+          "index": 9,
+          "start_s": 72.5,
+          "end_s": 73.3
+        },
+        {
+          "index": 10,
+          "start_s": 73.3,
+          "end_s": 73.54
+        },
+        {
+          "index": 11,
+          "start_s": 73.54,
+          "end_s": 73.7
+        },
+        {
+          "index": 12,
+          "start_s": 73.7,
+          "end_s": 74.42
+        },
+        {
+          "index": 13,
+          "start_s": 74.42,
+          "end_s": 74.5
+        },
+        {
+          "index": 14,
+          "start_s": 74.5,
+          "end_s": 74.5
+        },
+        {
+          "index": 15,
+          "start_s": 75.7,
+          "end_s": 75.94
+        },
+        {
+          "index": 16,
+          "start_s": 76.02,
+          "end_s": 76.58
+        },
+        {
+          "index": 17,
+          "start_s": 76.58,
+          "end_s": 77.14
+        },
+        {
+          "index": 18,
+          "start_s": 77.22,
+          "end_s": 77.54
+        },
+        {
+          "index": 19,
+          "start_s": 77.54,
+          "end_s": 77.7
+        },
+        {
+          "index": 20,
+          "start_s": 78.1,
+          "end_s": 78.1
+        },
+        {
+          "index": 21,
+          "start_s": 78.66,
+          "end_s": 78.98
+        },
+        {
+          "index": 22,
+          "start_s": 78.98,
+          "end_s": 79.3
+        },
+        {
+          "index": 23,
+          "start_s": 79.3,
+          "end_s": 79.78
+        },
+        {
+          "index": 24,
+          "start_s": 79.86,
+          "end_s": 80.18
+        }
+      ],
+      "seconds_used": 8.44,
+      "checks": {
+        "token_text_matches_source": true,
+        "finite": true,
+        "inside_audio": true,
+        "monotonic": true,
+        "zero_duration": 3
+      },
+      "status": "仅模型候选，原唱位置和字音边界待抽查，不能直接用于训练"
+    },
+    {
+      "group": "莫问归期01",
+      "label": "扩大窗口B",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "source_start_s": 111.1,
+      "duration_s": 16.3,
+      "source_sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "tokens": [
+        {
+          "index": 1,
+          "start_s": 113.42,
+          "end_s": 113.82
+        },
+        {
+          "index": 2,
+          "start_s": 113.82,
+          "end_s": 114.22
+        },
+        {
+          "index": 3,
+          "start_s": 114.22,
+          "end_s": 114.78
+        },
+        {
+          "index": 4,
+          "start_s": 114.78,
+          "end_s": 114.86
+        },
+        {
+          "index": 5,
+          "start_s": 115.18,
+          "end_s": 115.34
+        },
+        {
+          "index": 6,
+          "start_s": 115.58,
+          "end_s": 115.82
+        },
+        {
+          "index": 7,
+          "start_s": 116.94,
+          "end_s": 117.42
+        },
+        {
+          "index": 8,
+          "start_s": 117.66,
+          "end_s": 117.74
+        },
+        {
+          "index": 9,
+          "start_s": 117.74,
+          "end_s": 117.9
+        },
+        {
+          "index": 10,
+          "start_s": 117.98,
+          "end_s": 118.62
+        },
+        {
+          "index": 11,
+          "start_s": 118.7,
+          "end_s": 118.94
+        },
+        {
+          "index": 12,
+          "start_s": 119.02,
+          "end_s": 119.26
+        },
+        {
+          "index": 13,
+          "start_s": 120.3,
+          "end_s": 120.54
+        },
+        {
+          "index": 14,
+          "start_s": 120.54,
+          "end_s": 121.18
+        },
+        {
+          "index": 15,
+          "start_s": 121.18,
+          "end_s": 121.5
+        },
+        {
+          "index": 16,
+          "start_s": 121.5,
+          "end_s": 121.98
+        },
+        {
+          "index": 17,
+          "start_s": 121.98,
+          "end_s": 122.46
+        },
+        {
+          "index": 18,
+          "start_s": 122.54,
+          "end_s": 122.62
+        },
+        {
+          "index": 19,
+          "start_s": 123.02,
+          "end_s": 123.42
+        },
+        {
+          "index": 20,
+          "start_s": 123.42,
+          "end_s": 123.74
+        },
+        {
+          "index": 21,
+          "start_s": 123.82,
+          "end_s": 124.14
+        },
+        {
+          "index": 22,
+          "start_s": 124.14,
+          "end_s": 124.46
+        }
+      ],
+      "seconds_used": 7.95,
+      "checks": {
+        "token_text_matches_source": true,
+        "finite": true,
+        "inside_audio": true,
+        "monotonic": true,
+        "zero_duration": 0
+      },
+      "status": "仅模型候选，原唱位置和字音边界待抽查，不能直接用于训练"
+    },
+    {
+      "group": "莫问归期02",
+      "label": "扩大窗口",
+      "source": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "source_start_s": 131.4,
+      "duration_s": 17.0,
+      "source_sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "tokens": [
+        {
+          "index": 1,
+          "start_s": 131.56,
+          "end_s": 131.96
+        },
+        {
+          "index": 2,
+          "start_s": 134.52,
+          "end_s": 134.92
+        },
+        {
+          "index": 3,
+          "start_s": 134.92,
+          "end_s": 135.16
+        },
+        {
+          "index": 4,
+          "start_s": 135.16,
+          "end_s": 135.48
+        },
+        {
+          "index": 5,
+          "start_s": 135.8,
+          "end_s": 136.2
+        },
+        {
+          "index": 6,
+          "start_s": 136.2,
+          "end_s": 136.6
+        },
+        {
+          "index": 7,
+          "start_s": 136.6,
+          "end_s": 137.0
+        },
+        {
+          "index": 8,
+          "start_s": 137.0,
+          "end_s": 139.56
+        },
+        {
+          "index": 9,
+          "start_s": 139.56,
+          "end_s": 139.56
+        },
+        {
+          "index": 10,
+          "start_s": 139.56,
+          "end_s": 140.12
+        },
+        {
+          "index": 11,
+          "start_s": 140.12,
+          "end_s": 140.44
+        },
+        {
+          "index": 12,
+          "start_s": 140.44,
+          "end_s": 140.84
+        },
+        {
+          "index": 13,
+          "start_s": 140.84,
+          "end_s": 141.32
+        },
+        {
+          "index": 14,
+          "start_s": 141.32,
+          "end_s": 141.72
+        },
+        {
+          "index": 15,
+          "start_s": 141.8,
+          "end_s": 142.12
+        },
+        {
+          "index": 16,
+          "start_s": 142.2,
+          "end_s": 142.28
+        },
+        {
+          "index": 17,
+          "start_s": 142.68,
+          "end_s": 143.0
+        },
+        {
+          "index": 18,
+          "start_s": 143.0,
+          "end_s": 143.0
+        },
+        {
+          "index": 19,
+          "start_s": 143.56,
+          "end_s": 143.88
+        },
+        {
+          "index": 20,
+          "start_s": 143.96,
+          "end_s": 144.36
+        },
+        {
+          "index": 21,
+          "start_s": 144.36,
+          "end_s": 144.84
+        },
+        {
+          "index": 22,
+          "start_s": 144.84,
+          "end_s": 145.16
+        },
+        {
+          "index": 23,
+          "start_s": 145.16,
+          "end_s": 145.56
+        },
+        {
+          "index": 24,
+          "start_s": 145.56,
+          "end_s": 146.12
+        }
+      ],
+      "seconds_used": 8.28,
+      "checks": {
+        "token_text_matches_source": true,
+        "finite": true,
+        "inside_audio": true,
+        "monotonic": true,
+        "zero_duration": 2
+      },
+      "status": "仅模型候选，原唱位置和字音边界待抽查，不能直接用于训练"
+    }
+  ]
+}

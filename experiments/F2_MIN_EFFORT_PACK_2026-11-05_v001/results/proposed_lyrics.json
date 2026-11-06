@@ -1,0 +1,112 @@
+{
+    "心墙01":  {
+                 "text":  "我学着不去担心得太远不计划太多反而能勇敢冒险",
+                 "n":  22,
+                 "jade_status":  "已确认",
+                 "source":  "Jade 原话确认；Qwen 已用该句",
+                 "note":  "轻度版按命名同组；首字本人两版零时长",
+                 "self_control":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-对照微微跑调.wav",
+                 "self_mild":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav",
+                 "ref":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/心墙_郭静_vocals.wav",
+                 "ref_windows":  [
+                                     {
+                                         "id":  "A",
+                                         "start":  112.8,
+                                         "end":  121.1
+                                     }
+                                 ],
+                 "asr_hint":  "对照识别曾把「去」听成「许」；已按确认句纠正",
+                 "confirmed_at":  "2026-11-06T05:06:16.441Z",
+                 "sung_vs_confirmed":  "",
+                 "ref_pick":  ""
+             },
+    "离开我的依赖01":  {
+                     "text":  "我蒙上了眼仿佛你在身边当你不再应答",
+                     "n":  17,
+                     "jade_status":  "已确认",
+                     "source":  "https://www.kugeci.com/song/mqpSKkac （约 00:55–01:07）",
+                     "note":  "训练字=实唱「身边」；官网为「身旁」（仅备注） | train_text_fixed",
+                     "self_control":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav",
+                     "self_mild":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav",
+                     "ref":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+                     "ref_windows":  [
+                                         {
+                                             "id":  "A",
+                                             "start":  53.4,
+                                             "end":  68.8
+                                         }
+                                     ],
+                     "asr_hint":  "本人对照识别：我梦上了眼 仿佛你在身旁 当你不再应答",
+                     "confirmed_at":  "2026-11-06T05:06:16.441Z",
+                     "sung_vs_confirmed":  "训练=身边；官网=身旁",
+                     "ref_pick":  ""
+                 },
+    "离开我的依赖02":  {
+                     "text":  "我来不及道声不安有点混乱有点缓慢才发现承诺是谎话",
+                     "n":  24,
+                     "jade_status":  "已确认",
+                     "source":  "https://www.kugeci.com/song/mqpSKkac （约 01:09–01:20）",
+                     "note":  "ASR 把「道声/混乱/承诺」听乱了；以官网词为候选，听一句确认即可",
+                     "self_control":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav",
+                     "self_mild":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-轻度跑调.wav",
+                     "ref":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+                     "ref_windows":  [
+                                         {
+                                             "id":  "A",
+                                             "start":  68.5,
+                                             "end":  80.9
+                                         }
+                                     ],
+                     "asr_hint":  "本人对照识别：我来不及大声不安 有点浑软 有点缓慢 才发现沉默是谎话",
+                     "confirmed_at":  "2026-11-06T05:06:16.441Z",
+                     "sung_vs_confirmed":  "",
+                     "ref_pick":  ""
+                 },
+    "莫问归期01":  {
+                   "text":  "藏进心口的刺无枉寻也如此沉默有时最后因你放肆",
+                   "n":  22,
+                   "jade_status":  "已确认",
+                   "source":  "https://www.mulanci.org/lyric/sl323329/ 第1–3行",
+                   "note":  "训练字=实唱「无枉寻」；官网候选「不枉寻」；ref_pick=unsure | train_text_fixed",
+                   "self_control":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-对照微微跑调.wav",
+                   "self_mild":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-轻度跑调.wav",
+                   "ref":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+                   "ref_windows":  [
+                                       {
+                                           "id":  "A",
+                                           "start":  30.6,
+                                           "end":  42.9
+                                       },
+                                       {
+                                           "id":  "B",
+                                           "start":  113.1,
+                                           "end":  125.4
+                                       }
+                                   ],
+                   "asr_hint":  "本人对照识别：藏尽心口的词…（「刺」常被听成「词/字」）",
+                   "confirmed_at":  "2026-11-06T05:06:16.441Z",
+                   "sung_vs_confirmed":  "训练=无枉寻；官网候选=不枉寻",
+                   "ref_pick":  "unsure"
+               },
+    "莫问归期02":  {
+                   "text":  "沉默有时念想有时谁诀别相思成疾莫问天涯也莫问归期",
+                   "n":  24,
+                   "jade_status":  "已确认",
+                   "source":  "https://www.mulanci.org/lyric/sl323329/ 第6–8行附近",
+                   "note":  "轻度版跑调偏高，可能同音误识；字面确认OK",
+                   "self_control":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav",
+                   "self_mild":  "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-轻度跑调.wav",
+                   "ref":  "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+                   "ref_windows":  [
+                                       {
+                                           "id":  "A",
+                                           "start":  133.4,
+                                           "end":  146.4
+                                       }
+                                   ],
+                   "asr_hint":  "本人对照识别：沉默有事,想念有事…莫问归期",
+                   "confirmed_at":  "2026-11-06T05:06:16.441Z",
+                   "sung_vs_confirmed":  "",
+                   "ref_pick":  ""
+               }
+}
