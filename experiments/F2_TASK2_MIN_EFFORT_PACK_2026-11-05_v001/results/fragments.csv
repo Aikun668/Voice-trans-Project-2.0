@@ -1,0 +1,18 @@
+id,song,version,wav_path,start_s,end_s,char_or_phrase,label,original_label,note,note_flag,source
+1,心墙01,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav,4.34,5.21,太多,故意这样唱,希望修,”太多“跑调 | conflict_resolved:希望修→故意,conflict_resolved:希望修→故意,jade
+2,心墙01,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav,6.56,7.626,冒险,故意这样唱,,我故意这样唱的，上一个这个“太多”也是我故意唱这样的,,jade
+3,心墙01,对照微微跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-对照微微跑调.wav,0.785,1.216,学着,故意这样唱,,我故意这样唱的其实都是跑调的，我故意唱跑调的,,jade
+4,离开我的依赖01,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav,2.063,3.539,上了,故意这样唱,,,,jade
+5,离开我的依赖01,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav,8.036,10.176,当你,希望修,,这个好像是我没唱对，有点跑调（好像不是故意的）,,jade
+6,离开我的依赖01,对照微微跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav,2.355,3.855,了眼,故意这样唱,,,,jade
+7,离开我的依赖02,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-轻度跑调.wav,9.612,10.324,承诺,故意这样唱,,,,jade
+8,离开我的依赖02,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-轻度跑调.wav,4.061,5.114,有点,故意这样唱,,,,jade
+9,离开我的依赖02,对照微微跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav,1.338,2.367,不及,故意这样唱,,,,jade
+10,莫问归期01,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-轻度跑调.wav,10.114,11.005,因你,故意这样唱,,,,jade
+11,莫问归期01,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-轻度跑调.wav,3.797,5.33,无枉寻也,故意这样唱,,,,jade
+12,莫问归期01,对照微微跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-对照微微跑调.wav,5.733,7.129,也如此,故意这样唱,,,,jade
+13,莫问归期01,对照微微跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-对照微微跑调.wav,7.499,8.125,沉默,故意这样唱,,,,jade
+14,莫问归期02,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-轻度跑调.wav,10.55,12.798,也莫问归期,故意这样唱,,,,jade
+15,莫问归期02,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-轻度跑调.wav,2.955,5.316,（念想）有时,故意这样唱,,,,jade
+16,莫问归期02,轻度跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-轻度跑调.wav,6.554,8.661,相思成疾,故意这样唱,,,,jade
+17,莫问归期02,对照微微跑调,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav,0,2.177,沉默有时,故意这样唱,,,,jade
