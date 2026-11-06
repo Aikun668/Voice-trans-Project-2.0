@@ -1,0 +1,52 @@
+[
+  {
+    "id": "self_dangni",
+    "label": "你的「当你」",
+    "role": "本人轻度",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-轻度跑调.wav",
+    "start": 8.4,
+    "end": 10.16,
+    "source_sha256": "3861f9938869f26af95c846bf995bd77fad4c4f7a3188a0534224f4fae10e09d",
+    "source_duration_s": 14.272
+  },
+  {
+    "id": "ref_dangni",
+    "label": "原唱的「当你」",
+    "role": "原唱",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+    "start": 62.68,
+    "end": 63.88,
+    "source_sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+    "source_duration_s": 241.44108843537416
+  },
+  {
+    "id": "ref_word",
+    "label": "原唱「身旁／身边」附近",
+    "role": "原唱",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+    "start": 60.9,
+    "end": 62.75,
+    "source_sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+    "source_duration_s": 241.44108843537416
+  },
+  {
+    "id": "ref_open",
+    "label": "原唱第二段开头",
+    "role": "原唱",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+    "start": 68.5,
+    "end": 71.3,
+    "source_sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+    "source_duration_s": 241.44108843537416
+  },
+  {
+    "id": "ref_end",
+    "label": "原唱第二段末尾",
+    "role": "原唱",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+    "start": 77.6,
+    "end": 80.5,
+    "source_sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+    "source_duration_s": 241.44108843537416
+  }
+]

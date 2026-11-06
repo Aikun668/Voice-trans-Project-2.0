@@ -1,0 +1,13 @@
+﻿bad_id,group,index,original_ref_source,start_source_s,end_source_s,status,old_played_source,old_answer,interpretation
+5,离开我的依赖01,7,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,60.04,60.04,零时长,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav,wrong_time,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+6,离开我的依赖01,17,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,66.44,66.52,漂移可疑,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖01-对照微微跑调.wav,drop,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+8,离开我的依赖02,1,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,68.5,68.5,零时长,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+9,离开我的依赖02,2,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,69.62,70.02,漂移可疑,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+10,离开我的依赖02,14,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,75.22,75.7,漂移可疑,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+11,离开我的依赖02,21,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,79.3,79.3,零时长,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+12,离开我的依赖02,22,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav,79.3,79.3,零时长,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/离开我的依赖02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+13,莫问归期01,15,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,121.5,121.5,零时长,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+14,莫问归期02,1,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,134.04,134.52,漂移可疑,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+15,莫问归期02,9,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,139.16,139.32,漂移可疑,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+16,莫问归期02,18,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,143.0,143.0,零时长,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界
+17,莫问归期02,19,test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav,143.96,143.96,零时长,test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期02-对照微微跑调.wav,ok_enough,旧答案不验证原唱；保留待复核；零时长或漂移不作为可用字边界

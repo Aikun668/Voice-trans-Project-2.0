@@ -1,0 +1,83 @@
+[
+  {
+    "id": "q1",
+    "label": "心墙 · 你的“太多”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/心墙01-轻度跑调.wav",
+    "start": 4.48,
+    "end": 5.36,
+    "word": "太多",
+    "sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa"
+  },
+  {
+    "id": "q2",
+    "label": "心墙 · 原唱的“太多”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/心墙_郭静_vocals.wav",
+    "start": 118.08,
+    "end": 118.56,
+    "word": "太多",
+    "sha256": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc"
+  },
+  {
+    "id": "q3",
+    "label": "离开我的依赖 · 原唱的“来”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+    "start": 69.62,
+    "end": 70.02,
+    "word": "来",
+    "sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e"
+  },
+  {
+    "id": "q4",
+    "label": "离开我的依赖 · 原唱的“点”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+    "start": 75.22,
+    "end": 75.7,
+    "word": "点",
+    "sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e"
+  },
+  {
+    "id": "q5",
+    "label": "莫问归期 · 你的“无”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/wav/莫问归期01-轻度跑调.wav",
+    "start": 4.0,
+    "end": 4.4,
+    "word": "无",
+    "sha256": "fc6801a3bd924008f98ddd6f419e36f8cae3022816878eed3920897a610604eb"
+  },
+  {
+    "id": "q6",
+    "label": "莫问归期 · 原唱的“有”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+    "start": 121.18,
+    "end": 121.5,
+    "word": "有",
+    "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6"
+  },
+  {
+    "id": "q7",
+    "label": "莫问归期 · 原唱的“沉”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+    "start": 134.04,
+    "end": 134.52,
+    "word": "沉",
+    "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6"
+  },
+  {
+    "id": "q8",
+    "label": "莫问归期 · 原唱的“谁”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+    "start": 139.16,
+    "end": 139.32,
+    "word": "谁",
+    "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6"
+  },
+  {
+    "id": "q9",
+    "label": "莫问归期 · 原唱的“涯”",
+    "source": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+    "start": 143.56,
+    "end": 143.88,
+    "word": "涯",
+    "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6"
+  }
+]
