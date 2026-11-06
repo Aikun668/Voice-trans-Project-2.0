@@ -1,0 +1,4 @@
+﻿song_group,take_labels_in_scope,unique_fragments,candidate_rows_including_A_B,distinct_self_recordings,distinct_reference_audio_hashes,hopeful_repair_fragments,intentional_fragments,proposed_assignment,leakage_rule
+心墙,心墙01,3,3,2,1,0,3,验证候选,"all takes, fragments, reference windows/full reference audio, and derivatives stay together"
+离开我的依赖,离开我的依赖01;离开我的依赖02,6,6,4,1,1,5,训练候选,"all takes, fragments, reference windows/full reference audio, and derivatives stay together"
+莫问归期,莫问归期01;莫问归期02,8,12,4,1,0,8,锁定测试候选,"all takes, fragments, reference windows/full reference audio, and derivatives stay together"
