@@ -1,0 +1,648 @@
+[
+  {
+    "id": 1,
+    "song": "心墙",
+    "take": "心墙01",
+    "version": "轻度跑调",
+    "phrase": "太多",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+      "sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa",
+      "seconds": [
+        4.625,
+        5.389
+      ],
+      "rate": 48000,
+      "frames": [
+        222000,
+        258672
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "sha256": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc",
+      "seconds": [
+        118.089,
+        118.547
+      ],
+      "rate": 44100,
+      "frames": [
+        5207725,
+        5227923
+      ]
+    },
+    "self_text": "太多",
+    "reference_text": "太多"
+  },
+  {
+    "id": 2,
+    "song": "心墙",
+    "take": "心墙01",
+    "version": "轻度跑调",
+    "phrase": "冒险",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+      "sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa",
+      "seconds": [
+        6.568,
+        7.518
+      ],
+      "rate": 48000,
+      "frames": [
+        315264,
+        360864
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "sha256": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc",
+      "seconds": [
+        120.061,
+        120.96
+      ],
+      "rate": 44100,
+      "frames": [
+        5294690,
+        5334336
+      ]
+    },
+    "self_text": "冒险",
+    "reference_text": "冒险"
+  },
+  {
+    "id": 3,
+    "song": "心墙",
+    "take": "心墙01",
+    "version": "对照微微跑调",
+    "phrase": "学着",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav",
+      "sha256": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+      "seconds": [
+        0.785,
+        1.216
+      ],
+      "rate": 48000,
+      "frames": [
+        37680,
+        58368
+      ]
+    },
+    "reference": {
+      "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "sha256": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a",
+      "seconds": [
+        113.905,
+        114.424
+      ],
+      "rate": 44100,
+      "frames": [
+        5023210,
+        5046098
+      ]
+    },
+    "self_text": "学着",
+    "reference_text": "学着"
+  },
+  {
+    "id": 4,
+    "song": "离开我的依赖",
+    "take": "离开我的依赖01",
+    "version": "轻度跑调",
+    "phrase": "上了",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "千问候选 · 离开01",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-轻度跑调.wav",
+      "sha256": "3861f9938869f26af95c846bf995bd77fad4c4f7a3188a0534224f4fae10e09d",
+      "seconds": [
+        1.781,
+        3.466
+      ],
+      "rate": 48000,
+      "frames": [
+        85488,
+        166368
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "seconds": [
+        56.309,
+        57.085
+      ],
+      "rate": 44100,
+      "frames": [
+        2483227,
+        2517448
+      ]
+    },
+    "self_text": "上了",
+    "reference_text": "上了"
+  },
+  {
+    "id": 5,
+    "song": "离开我的依赖",
+    "take": "离开我的依赖01",
+    "version": "轻度跑调",
+    "phrase": "当你",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-轻度跑调.wav",
+      "sha256": "3861f9938869f26af95c846bf995bd77fad4c4f7a3188a0534224f4fae10e09d",
+      "seconds": [
+        8.362,
+        10.281
+      ],
+      "rate": 48000,
+      "frames": [
+        401376,
+        493488
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "seconds": [
+        62.68,
+        63.804
+      ],
+      "rate": 44100,
+      "frames": [
+        2764188,
+        2813756
+      ]
+    },
+    "self_text": "当你",
+    "reference_text": "当你"
+  },
+  {
+    "id": 6,
+    "song": "离开我的依赖",
+    "take": "离开我的依赖01",
+    "version": "对照微微跑调",
+    "phrase": "了眼",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-对照微微跑调.wav",
+      "sha256": "1331a75d46e9d5b36ef81b51598432d9c058fe0c07d22d0d2daab2511ec568b9",
+      "seconds": [
+        2.485,
+        3.629
+      ],
+      "rate": 48000,
+      "frames": [
+        119280,
+        174192
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "seconds": [
+        57.009,
+        57.967
+      ],
+      "rate": 44100,
+      "frames": [
+        2514097,
+        2556345
+      ]
+    },
+    "self_text": "了眼",
+    "reference_text": "了眼"
+  },
+  {
+    "id": 7,
+    "song": "离开我的依赖",
+    "take": "离开我的依赖02",
+    "version": "轻度跑调",
+    "phrase": "承诺",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "千问候选 · 离开02",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-轻度跑调.wav",
+      "sha256": "3b09d13f2b782bca259d36777492cec4f19786c3d32978d78a6611dc7a35b2f1",
+      "seconds": [
+        9.682,
+        10.412
+      ],
+      "rate": 48000,
+      "frames": [
+        464736,
+        499776
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "seconds": [
+        78.065,
+        78.98
+      ],
+      "rate": 44100,
+      "frames": [
+        3442666,
+        3483018
+      ]
+    },
+    "self_text": "承诺",
+    "reference_text": "承诺"
+  },
+  {
+    "id": 8,
+    "song": "离开我的依赖",
+    "take": "离开我的依赖02",
+    "version": "轻度跑调",
+    "phrase": "有点",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-轻度跑调.wav",
+      "sha256": "3b09d13f2b782bca259d36777492cec4f19786c3d32978d78a6611dc7a35b2f1",
+      "seconds": [
+        4.3,
+        5.117
+      ],
+      "rate": 48000,
+      "frames": [
+        206400,
+        245616
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "seconds": [
+        72.851,
+        73.581
+      ],
+      "rate": 44100,
+      "frames": [
+        3212729,
+        3244922
+      ]
+    },
+    "self_text": "有点",
+    "reference_text": "有点"
+  },
+  {
+    "id": 9,
+    "song": "离开我的依赖",
+    "take": "离开我的依赖02",
+    "version": "对照微微跑调",
+    "phrase": "不及",
+    "action": "fix",
+    "split": "train",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-对照微微跑调.wav",
+      "sha256": "854e9cfad85336d804c6a95740e7bfeaa0f3361aad0e08c18003494af282ef19",
+      "seconds": [
+        1.506,
+        2.417
+      ],
+      "rate": 48000,
+      "frames": [
+        72288,
+        116016
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "seconds": [
+        70.088,
+        70.965
+      ],
+      "rate": 44100,
+      "frames": [
+        3090881,
+        3129556
+      ]
+    },
+    "self_text": "不及",
+    "reference_text": "不及"
+  },
+  {
+    "id": 10,
+    "song": "莫问归期",
+    "take": "莫问归期01",
+    "version": "轻度跑调",
+    "phrase": "因你",
+    "action": "fix",
+    "split": "holdout",
+    "reference_selection": "千问候选 · 莫问01 · 前一次",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-轻度跑调.wav",
+      "sha256": "fc6801a3bd924008f98ddd6f419e36f8cae3022816878eed3920897a610604eb",
+      "seconds": [
+        10.234,
+        11.009
+      ],
+      "rate": 48000,
+      "frames": [
+        491232,
+        528432
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "seconds": [
+        40.74,
+        41.54
+      ],
+      "rate": 44100,
+      "frames": [
+        1796634,
+        1831914
+      ]
+    },
+    "self_text": "因你",
+    "reference_text": "因你"
+  },
+  {
+    "id": 11,
+    "song": "莫问归期",
+    "take": "莫问归期01",
+    "version": "轻度跑调",
+    "phrase": "无枉寻也",
+    "action": "fix",
+    "split": "holdout",
+    "reference_selection": "千问候选 · 莫问01 · 前一次",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-轻度跑调.wav",
+      "sha256": "fc6801a3bd924008f98ddd6f419e36f8cae3022816878eed3920897a610604eb",
+      "seconds": [
+        4.065,
+        5.749
+      ],
+      "rate": 48000,
+      "frames": [
+        195120,
+        275952
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "seconds": [
+        34.68,
+        36.34
+      ],
+      "rate": 44100,
+      "frames": [
+        1529388,
+        1602594
+      ]
+    },
+    "self_text": "无枉寻也",
+    "reference_text": "不枉寻也"
+  },
+  {
+    "id": 12,
+    "song": "莫问归期",
+    "take": "莫问归期01",
+    "version": "对照微微跑调",
+    "phrase": "也如此",
+    "action": "fix",
+    "split": "holdout",
+    "reference_selection": "千问候选 · 莫问01 · 后一次",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-对照微微跑调.wav",
+      "sha256": "5d14c65fb8b742840fb32dc666e3a3c0d2827984ae84e1bbbd88ff8e735fe58d",
+      "seconds": [
+        5.396,
+        7.108
+      ],
+      "rate": 48000,
+      "frames": [
+        259008,
+        341184
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "seconds": [
+        118.221,
+        119.238
+      ],
+      "rate": 44100,
+      "frames": [
+        5213546,
+        5258396
+      ]
+    },
+    "self_text": "也如此",
+    "reference_text": "也如此"
+  },
+  {
+    "id": 13,
+    "song": "莫问归期",
+    "take": "莫问归期01",
+    "version": "对照微微跑调",
+    "phrase": "沉默",
+    "action": "fix",
+    "split": "holdout",
+    "reference_selection": "千问候选 · 莫问01 · 后一次",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-对照微微跑调.wav",
+      "sha256": "5d14c65fb8b742840fb32dc666e3a3c0d2827984ae84e1bbbd88ff8e735fe58d",
+      "seconds": [
+        7.713,
+        8.484
+      ],
+      "rate": 48000,
+      "frames": [
+        370224,
+        407232
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "seconds": [
+        120.377,
+        121.115
+      ],
+      "rate": 44100,
+      "frames": [
+        5308626,
+        5341172
+      ]
+    },
+    "self_text": "沉默",
+    "reference_text": "沉默"
+  },
+  {
+    "id": 14,
+    "song": "莫问归期",
+    "take": "莫问归期02",
+    "version": "轻度跑调",
+    "phrase": "也莫问归期",
+    "action": "fix",
+    "split": "holdout",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-轻度跑调.wav",
+      "sha256": "ce8752deeb6ce8d16a2cb2a9bee0c7a66505064b5dddfdb8e898cd08209723ea",
+      "seconds": [
+        10.595,
+        12.745
+      ],
+      "rate": 48000,
+      "frames": [
+        508560,
+        611760
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "seconds": [
+        143.999,
+        146.12
+      ],
+      "rate": 44100,
+      "frames": [
+        6350356,
+        6443892
+      ]
+    },
+    "self_text": "也莫问归期",
+    "reference_text": "也莫问归期"
+  },
+  {
+    "id": 15,
+    "song": "莫问归期",
+    "take": "莫问归期02",
+    "version": "轻度跑调",
+    "phrase": "（念想）有时",
+    "action": "fix",
+    "split": "holdout",
+    "reference_selection": "千问候选 · 莫问02 · 后一次",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-轻度跑调.wav",
+      "sha256": "ce8752deeb6ce8d16a2cb2a9bee0c7a66505064b5dddfdb8e898cd08209723ea",
+      "seconds": [
+        3.269,
+        5.002
+      ],
+      "rate": 48000,
+      "frames": [
+        156912,
+        240096
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "seconds": [
+        136.602,
+        138.244
+      ],
+      "rate": 44100,
+      "frames": [
+        6024148,
+        6096560
+      ]
+    },
+    "self_text": "有时",
+    "reference_text": "有时"
+  },
+  {
+    "id": 16,
+    "song": "莫问归期",
+    "take": "莫问归期02",
+    "version": "轻度跑调",
+    "phrase": "相思成疾",
+    "action": "fix",
+    "split": "holdout",
+    "reference_selection": "上一轮已确认同一处",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-轻度跑调.wav",
+      "sha256": "ce8752deeb6ce8d16a2cb2a9bee0c7a66505064b5dddfdb8e898cd08209723ea",
+      "seconds": [
+        7.044,
+        8.7
+      ],
+      "rate": 48000,
+      "frames": [
+        338112,
+        417600
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "seconds": [
+        140.44,
+        142.216
+      ],
+      "rate": 44100,
+      "frames": [
+        6193404,
+        6271726
+      ]
+    },
+    "self_text": "相思成疾",
+    "reference_text": "相思成疾"
+  },
+  {
+    "id": 17,
+    "song": "莫问归期",
+    "take": "莫问归期02",
+    "version": "对照微微跑调",
+    "phrase": "沉默有时",
+    "action": "fix",
+    "split": "holdout",
+    "reference_selection": "千问候选 · 莫问02 · 前一次",
+    "self": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav",
+      "sha256": "14e01ae944d173ce96fbd2ee58a1e14bb8b76c19e99bb55f1c548bfe886849ca",
+      "seconds": [
+        0.574,
+        2.346
+      ],
+      "rate": 48000,
+      "frames": [
+        27552,
+        112608
+      ]
+    },
+    "reference": {
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "seconds": [
+        51.8,
+        53.256
+      ],
+      "rate": 44100,
+      "frames": [
+        2284380,
+        2348590
+      ]
+    },
+    "self_text": "沉默有时",
+    "reference_text": "沉默有时"
+  }
+]

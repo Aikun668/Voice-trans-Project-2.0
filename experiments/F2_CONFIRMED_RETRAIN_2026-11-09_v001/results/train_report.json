@@ -1,0 +1,50 @@
+{
+  "schema": "f2-confirmed-frames-v1",
+  "features": [
+    "abs_center_delta",
+    "oriented_local_delta",
+    "shape_retained"
+  ],
+  "sklearn": "1.9.1",
+  "samples_sha256": "9948c0322af84788a4d2688ad3d2d8283cd7e0b9bbc60a98c26db97f4fd77e0f",
+  "weight_sha256": "08e8d7e9f9d58c93784bd8ee85dbd429a0f1f879db21a41b2702e217fb16dd1f",
+  "training_songs": [
+    "心墙",
+    "离开我的依赖"
+  ],
+  "holdout_songs": [
+    "莫问归期"
+  ],
+  "training": {
+    "frames": 100,
+    "pairs": 4,
+    "mae_cents": 0.1346191222964707,
+    "mean_pair_mae_cents": 0.20969972696430197,
+    "pair_mae_cents": {
+      "1": 0.0025801297848422684,
+      "3": 0.8342000902334199,
+      "6": 0.0010183400566519,
+      "8": 0.0010003477822938375
+    },
+    "no_shift_mae_cents": 208.95033523709742,
+    "nonzero_frames": 100,
+    "opposite_sign_frames": 0
+  },
+  "holdout": {
+    "frames": 55,
+    "pairs": 2,
+    "mae_cents": 0.0,
+    "mean_pair_mae_cents": 0.0,
+    "pair_mae_cents": {
+      "10": 0.0,
+      "12": 0.0
+    },
+    "no_shift_mae_cents": 0.0,
+    "nonzero_frames": 0,
+    "opposite_sign_frames": 0
+  },
+  "direct_reference_target_mae_cents": 0.0,
+  "label_source": "confirmed pairs plus checked reference pitch; 学 uses the manual curve",
+  "direction_policy": "Reference sets direction and deadband; model learns magnitude.",
+  "listening": "pending_jade"
+}

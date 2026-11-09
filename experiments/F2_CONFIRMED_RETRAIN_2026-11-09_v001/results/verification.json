@@ -1,0 +1,35 @@
+{
+  "weight_sha256": "08e8d7e9f9d58c93784bd8ee85dbd429a0f1f879db21a41b2702e217fb16dd1f",
+  "heldout_prediction_replay": true,
+  "control_audio": {
+    "source_report": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_ONE_NOTE_ROUND_TRIP_2026-11-07_v002\\report.json",
+    "measured_raise_cents": 100.41979389406447,
+    "cases": [
+      {
+        "take": "original.wav",
+        "reference": "raised.wav",
+        "expected_cents": 100.0,
+        "median_prediction_cents": 77.08215217475787,
+        "max_absolute_error_cents": 22.920859404544203,
+        "frames": 83
+      },
+      {
+        "take": "raised.wav",
+        "reference": "original.wav",
+        "expected_cents": -100.0,
+        "median_prediction_cents": -77.08215217475787,
+        "max_absolute_error_cents": 22.917847825242134,
+        "frames": 83
+      },
+      {
+        "take": "original.wav",
+        "reference": "original.wav",
+        "expected_cents": 0,
+        "median_prediction_cents": 0.0,
+        "max_absolute_error_cents": 0.0,
+        "frames": 83
+      }
+    ]
+  },
+  "listening": "pending_jade"
+}

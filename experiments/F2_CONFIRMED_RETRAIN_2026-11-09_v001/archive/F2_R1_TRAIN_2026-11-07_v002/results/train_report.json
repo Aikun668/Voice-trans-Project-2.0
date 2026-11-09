@@ -1,0 +1,81 @@
+{
+  "segments": [
+    {
+      "segment": "心墙01-对照微微跑调",
+      "key_cents": -430.7,
+      "cost_per_frame": 44.6,
+      "ref_interval_s": [
+        112.8,
+        121.1
+      ],
+      "notes": 9,
+      "fix_labeled": 2
+    },
+    {
+      "segment": "心墙01-轻度跑调",
+      "key_cents": 124.8,
+      "cost_per_frame": 65.8,
+      "ref_interval_s": [
+        113.16,
+        123.92
+      ],
+      "notes": 11,
+      "fix_labeled": 2
+    },
+    {
+      "segment": "离开我的依赖01-对照微微跑调",
+      "key_cents": 548.2,
+      "cost_per_frame": 62.9,
+      "ref_interval_s": [
+        24.34,
+        36.92
+      ],
+      "notes": 22,
+      "fix_labeled": 4
+    },
+    {
+      "segment": "离开我的依赖01-轻度跑调",
+      "key_cents": 46.9,
+      "cost_per_frame": 70.0,
+      "ref_interval_s": [
+        22.94,
+        37.24
+      ],
+      "notes": 17,
+      "fix_labeled": 2
+    },
+    {
+      "segment": "离开我的依赖02-对照微微跑调",
+      "key_cents": 380.6,
+      "cost_per_frame": 49.0,
+      "ref_interval_s": [
+        68.42,
+        80.54
+      ],
+      "notes": 24,
+      "fix_labeled": 9
+    },
+    {
+      "segment": "离开我的依赖02-轻度跑调",
+      "key_cents": 396.5,
+      "cost_per_frame": 55.8,
+      "ref_interval_s": [
+        68.52,
+        80.9
+      ],
+      "notes": 26,
+      "fix_labeled": 3
+    }
+  ],
+  "samples": 109,
+  "fix_labeled_total": 22,
+  "train_mae_all_cents": 0.0,
+  "train_mae_fix_cents": 0.0,
+  "baseline_mae_zero_cents": 16.6,
+  "model": "GradientBoostingRegressor(n_estimators=200, max_depth=3, min_samples_leaf=2)，仅在待修子集上训练",
+  "honesty": [
+    "标签由守护规则从自动候选对齐推导，尚无 Jade 的故意唱法标注（P2 后替换标签源）。",
+    "训练样本极少（待修仅 7 个），模型只是占位基线，可信修正量以守护规则回退为准。",
+    "train_mae 是训练集拟合度，不是测试成绩，更不是听感；听感一律 pending_jade。"
+  ]
+}

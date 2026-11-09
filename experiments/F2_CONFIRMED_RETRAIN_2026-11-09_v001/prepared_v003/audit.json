@@ -1,0 +1,1704 @@
+{
+  "schema": "f2-confirmed-frames-v1",
+  "inputs": {
+    "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\confirmed_pairs.json": "3f6add2cc689e207c8b4f549fabc1c734124deded9f7017b87ff06684e810ba8",
+    "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\word_probes.json": "5dc8f2eae17f3ceff15846d81fd2a6a91357200150ce2768746fb49f801c1324",
+    "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\experiments\\F2_TASK3_PAIR_AUDIT_2026-11-05_v001\\逐字候选对照.csv": "5d4da9bbde7217805e04e1036e8a805ec8547147365b8b2b75b49d1c18f3a647",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_XUE_CONTOUR_2026-11-08_v001\\report.json": "aef930bd3b952e9e46abfb532563690ad5f9b87bfeaa04168dca70c74dc2f10b"
+  },
+  "source_hashes_verified": true,
+  "samples_sha256": "9948c0322af84788a4d2688ad3d2d8283cd7e0b9bbc60a98c26db97f4fd77e0f",
+  "manual_pair_id": 3,
+  "pairs": [
+    {
+      "id": 1,
+      "phrase": "太多",
+      "split": "train",
+      "words": [
+        {
+          "word": "太",
+          "reference_word": "太",
+          "status": "correction",
+          "self_core": [
+            4.625,
+            4.865
+          ],
+          "reference_core": [
+            118.089,
+            118.269
+          ],
+          "frame_count": 19,
+          "shift": -282.54079310343536
+        },
+        {
+          "word": "多",
+          "reference_word": "多",
+          "status": "offset_exceeds_bound"
+        }
+      ],
+      "key_cents": -1095.8791513487881,
+      "context_evidence": [
+        {
+          "word": "学",
+          "index": "2",
+          "self": [
+            0.64,
+            0.96
+          ],
+          "reference": [
+            113.92,
+            114.16
+          ],
+          "delta": -1113.88567610357,
+          "used": true
+        },
+        {
+          "word": "着",
+          "index": "3",
+          "self": [
+            0.96,
+            1.2
+          ],
+          "reference": [
+            114.16,
+            114.4
+          ],
+          "delta": -1071.9901007356425,
+          "used": true
+        },
+        {
+          "word": "不",
+          "index": "4",
+          "self": [
+            1.2,
+            1.44
+          ],
+          "reference": [
+            114.4,
+            114.64
+          ],
+          "delta": -1114.035115282543,
+          "used": true
+        },
+        {
+          "word": "去",
+          "index": "5",
+          "self": [
+            1.44,
+            1.68
+          ],
+          "reference": [
+            114.64,
+            114.88
+          ],
+          "delta": -1095.8791513487881,
+          "used": true
+        },
+        {
+          "word": "心",
+          "index": "7",
+          "self": [
+            1.92,
+            2.4
+          ],
+          "reference": [
+            115.36,
+            115.68
+          ],
+          "delta": -1065.6675735550698,
+          "used": true
+        },
+        {
+          "word": "得",
+          "index": "8",
+          "self": [
+            2.4,
+            2.56
+          ],
+          "reference": [
+            115.68,
+            116.08
+          ],
+          "delta": -1087.9005192557952,
+          "used": true
+        },
+        {
+          "word": "远",
+          "index": "10",
+          "self": [
+            3.04,
+            3.68
+          ],
+          "reference": [
+            116.48,
+            117.12
+          ],
+          "delta": -1106.6090481097413,
+          "used": true
+        },
+        {
+          "word": "计",
+          "index": "12",
+          "self": [
+            3.92,
+            4.16
+          ],
+          "reference": [
+            117.6,
+            117.84
+          ],
+          "delta": -1077.9143167919651,
+          "used": true
+        },
+        {
+          "word": "划",
+          "index": "13",
+          "self": [
+            4.16,
+            4.48
+          ],
+          "reference": [
+            117.84,
+            118.08
+          ],
+          "delta": -1129.4254190771185,
+          "used": true
+        },
+        {
+          "word": "而",
+          "index": "17",
+          "self": [
+            5.68,
+            5.84
+          ],
+          "reference": [
+            118.88,
+            119.2
+          ],
+          "delta": -1287.876917759796,
+          "used": false
+        },
+        {
+          "word": "能",
+          "index": "18",
+          "self": [
+            5.84,
+            6.0
+          ],
+          "reference": [
+            119.2,
+            119.52
+          ],
+          "delta": -1324.6102431570557,
+          "used": false
+        },
+        {
+          "word": "勇",
+          "index": "19",
+          "self": [
+            6.0,
+            6.24
+          ],
+          "reference": [
+            119.52,
+            119.76
+          ],
+          "delta": -1301.5166613952238,
+          "used": false
+        }
+      ],
+      "frame_count": 19,
+      "nonzero_frames": 19
+    },
+    {
+      "id": 2,
+      "phrase": "冒险",
+      "split": "train",
+      "words": [
+        {
+          "word": "冒",
+          "reference_word": "冒",
+          "status": "no_stable_voiced_core"
+        },
+        {
+          "word": "险",
+          "reference_word": "险",
+          "status": "no_stable_voiced_core"
+        }
+      ],
+      "key_cents": -1095.8791513487881,
+      "context_evidence": [
+        {
+          "word": "学",
+          "index": "2",
+          "self": [
+            0.64,
+            0.96
+          ],
+          "reference": [
+            113.92,
+            114.16
+          ],
+          "delta": -1113.88567610357,
+          "used": true
+        },
+        {
+          "word": "着",
+          "index": "3",
+          "self": [
+            0.96,
+            1.2
+          ],
+          "reference": [
+            114.16,
+            114.4
+          ],
+          "delta": -1071.9901007356425,
+          "used": true
+        },
+        {
+          "word": "不",
+          "index": "4",
+          "self": [
+            1.2,
+            1.44
+          ],
+          "reference": [
+            114.4,
+            114.64
+          ],
+          "delta": -1114.035115282543,
+          "used": true
+        },
+        {
+          "word": "去",
+          "index": "5",
+          "self": [
+            1.44,
+            1.68
+          ],
+          "reference": [
+            114.64,
+            114.88
+          ],
+          "delta": -1095.8791513487881,
+          "used": true
+        },
+        {
+          "word": "心",
+          "index": "7",
+          "self": [
+            1.92,
+            2.4
+          ],
+          "reference": [
+            115.36,
+            115.68
+          ],
+          "delta": -1065.6675735550698,
+          "used": true
+        },
+        {
+          "word": "得",
+          "index": "8",
+          "self": [
+            2.4,
+            2.56
+          ],
+          "reference": [
+            115.68,
+            116.08
+          ],
+          "delta": -1087.9005192557952,
+          "used": true
+        },
+        {
+          "word": "远",
+          "index": "10",
+          "self": [
+            3.04,
+            3.68
+          ],
+          "reference": [
+            116.48,
+            117.12
+          ],
+          "delta": -1106.6090481097413,
+          "used": true
+        },
+        {
+          "word": "计",
+          "index": "12",
+          "self": [
+            3.92,
+            4.16
+          ],
+          "reference": [
+            117.6,
+            117.84
+          ],
+          "delta": -1077.9143167919651,
+          "used": true
+        },
+        {
+          "word": "划",
+          "index": "13",
+          "self": [
+            4.16,
+            4.48
+          ],
+          "reference": [
+            117.84,
+            118.08
+          ],
+          "delta": -1129.4254190771185,
+          "used": true
+        },
+        {
+          "word": "而",
+          "index": "17",
+          "self": [
+            5.68,
+            5.84
+          ],
+          "reference": [
+            118.88,
+            119.2
+          ],
+          "delta": -1287.876917759796,
+          "used": false
+        },
+        {
+          "word": "能",
+          "index": "18",
+          "self": [
+            5.84,
+            6.0
+          ],
+          "reference": [
+            119.2,
+            119.52
+          ],
+          "delta": -1324.6102431570557,
+          "used": false
+        },
+        {
+          "word": "勇",
+          "index": "19",
+          "self": [
+            6.0,
+            6.24
+          ],
+          "reference": [
+            119.52,
+            119.76
+          ],
+          "delta": -1301.5166613952238,
+          "used": false
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 3,
+      "phrase": "学着",
+      "split": "train",
+      "words": [
+        {
+          "word": "学",
+          "status": "manual_curve",
+          "frame_count": 16
+        }
+      ],
+      "frame_count": 16,
+      "nonzero_frames": 16
+    },
+    {
+      "id": 4,
+      "phrase": "上了",
+      "split": "train",
+      "words": [
+        {
+          "word": "上",
+          "reference_word": "上",
+          "status": "timing_uncertain"
+        },
+        {
+          "word": "了",
+          "reference_word": "了",
+          "status": "key_uncertain"
+        }
+      ],
+      "key_cents": null,
+      "context_evidence": [
+        {
+          "word": "蒙",
+          "index": "2",
+          "self": [
+            0.8,
+            1.6
+          ],
+          "reference": [
+            55.16,
+            55.32
+          ],
+          "delta": -750.2874001995285
+        },
+        {
+          "word": "你",
+          "index": "8",
+          "self": [
+            6.24,
+            6.72
+          ],
+          "reference": [
+            61.0,
+            61.4
+          ],
+          "delta": -1139.471952934035
+        },
+        {
+          "word": "身",
+          "index": "10",
+          "self": [
+            6.96,
+            7.52
+          ],
+          "reference": [
+            61.64,
+            62.2
+          ],
+          "delta": -1139.7109885781044
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 5,
+      "phrase": "当你",
+      "split": "train",
+      "words": [
+        {
+          "word": "当",
+          "reference_word": "当",
+          "status": "timing_uncertain"
+        },
+        {
+          "word": "你",
+          "reference_word": "你",
+          "status": "key_uncertain"
+        }
+      ],
+      "key_cents": null,
+      "context_evidence": [
+        {
+          "word": "蒙",
+          "index": "2",
+          "self": [
+            0.8,
+            1.6
+          ],
+          "reference": [
+            55.16,
+            55.32
+          ],
+          "delta": -750.2874001995285
+        },
+        {
+          "word": "你",
+          "index": "8",
+          "self": [
+            6.24,
+            6.72
+          ],
+          "reference": [
+            61.0,
+            61.4
+          ],
+          "delta": -1139.471952934035
+        },
+        {
+          "word": "身",
+          "index": "10",
+          "self": [
+            6.96,
+            7.52
+          ],
+          "reference": [
+            61.64,
+            62.2
+          ],
+          "delta": -1139.7109885781044
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 6,
+      "phrase": "了眼",
+      "split": "train",
+      "words": [
+        {
+          "word": "了",
+          "reference_word": "了",
+          "status": "correction",
+          "self_core": [
+            2.485,
+            2.905
+          ],
+          "reference_core": [
+            57.009,
+            57.109
+          ],
+          "frame_count": 37,
+          "shift": -77.08172364828829
+        },
+        {
+          "word": "眼",
+          "reference_word": "眼",
+          "status": "offset_exceeds_bound"
+        }
+      ],
+      "key_cents": -652.751073723897,
+      "context_evidence": [
+        {
+          "word": "仿",
+          "index": "6",
+          "self": [
+            3.92,
+            4.48
+          ],
+          "reference": [
+            59.0,
+            59.96
+          ],
+          "delta": -832.4225054028988,
+          "used": false
+        },
+        {
+          "word": "身",
+          "index": "10",
+          "self": [
+            6.24,
+            6.72
+          ],
+          "reference": [
+            61.64,
+            62.2
+          ],
+          "delta": -643.3532529180825,
+          "used": true
+        },
+        {
+          "word": "你",
+          "index": "13",
+          "self": [
+            7.76,
+            8.48
+          ],
+          "reference": [
+            62.92,
+            63.88
+          ],
+          "delta": -661.7239910913729,
+          "used": true
+        },
+        {
+          "word": "应",
+          "index": "16",
+          "self": [
+            10.64,
+            11.12
+          ],
+          "reference": [
+            65.8,
+            66.44
+          ],
+          "delta": -652.751073723897,
+          "used": true
+        }
+      ],
+      "frame_count": 37,
+      "nonzero_frames": 37
+    },
+    {
+      "id": 7,
+      "phrase": "承诺",
+      "split": "train",
+      "words": [
+        {
+          "word": "承",
+          "reference_word": "承",
+          "status": "timing_uncertain"
+        },
+        {
+          "word": "诺",
+          "reference_word": "诺",
+          "status": "no_stable_voiced_core"
+        }
+      ],
+      "key_cents": -826.6349102682601,
+      "context_evidence": [
+        {
+          "word": "及",
+          "index": "4",
+          "self": [
+            1.84,
+            2.32
+          ],
+          "reference": [
+            70.5,
+            70.98
+          ],
+          "delta": -814.8235075767707,
+          "used": true
+        },
+        {
+          "word": "声",
+          "index": "6",
+          "self": [
+            2.8,
+            3.12
+          ],
+          "reference": [
+            71.38,
+            71.7
+          ],
+          "delta": -770.9066548485132,
+          "used": true
+        },
+        {
+          "word": "不",
+          "index": "7",
+          "self": [
+            3.12,
+            3.52
+          ],
+          "reference": [
+            71.7,
+            72.18
+          ],
+          "delta": 1586.583318419198,
+          "used": false
+        },
+        {
+          "word": "安",
+          "index": "8",
+          "self": [
+            3.52,
+            4.16
+          ],
+          "reference": [
+            72.18,
+            72.5
+          ],
+          "delta": -866.7552466654445,
+          "used": true
+        },
+        {
+          "word": "混",
+          "index": "11",
+          "self": [
+            5.2,
+            5.52
+          ],
+          "reference": [
+            73.54,
+            73.7
+          ],
+          "delta": -646.0080889340409,
+          "used": false
+        },
+        {
+          "word": "缓",
+          "index": "15",
+          "self": [
+            7.2,
+            7.52
+          ],
+          "reference": [
+            75.7,
+            75.94
+          ],
+          "delta": -837.9681784097054,
+          "used": true
+        },
+        {
+          "word": "发",
+          "index": "18",
+          "self": [
+            8.56,
+            8.96
+          ],
+          "reference": [
+            77.14,
+            77.54
+          ],
+          "delta": -826.6349102682601,
+          "used": true
+        },
+        {
+          "word": "谎",
+          "index": "23",
+          "self": [
+            10.64,
+            11.12
+          ],
+          "reference": [
+            79.3,
+            79.78
+          ],
+          "delta": -651.4129587520122,
+          "used": false
+        },
+        {
+          "word": "话",
+          "index": "24",
+          "self": [
+            11.36,
+            12.08
+          ],
+          "reference": [
+            79.86,
+            80.18
+          ],
+          "delta": -648.3261530632662,
+          "used": false
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 8,
+      "phrase": "有点",
+      "split": "train",
+      "words": [
+        {
+          "word": "有",
+          "reference_word": "有",
+          "status": "no_stable_voiced_core"
+        },
+        {
+          "word": "点",
+          "reference_word": "点",
+          "status": "correction",
+          "self_core": [
+            4.72,
+            5.1
+          ],
+          "reference_core": [
+            73.351,
+            73.411
+          ],
+          "frame_count": 28,
+          "shift": -152.44818778703575
+        }
+      ],
+      "key_cents": -826.6349102682601,
+      "context_evidence": [
+        {
+          "word": "及",
+          "index": "4",
+          "self": [
+            1.84,
+            2.32
+          ],
+          "reference": [
+            70.5,
+            70.98
+          ],
+          "delta": -814.8235075767707,
+          "used": true
+        },
+        {
+          "word": "声",
+          "index": "6",
+          "self": [
+            2.8,
+            3.12
+          ],
+          "reference": [
+            71.38,
+            71.7
+          ],
+          "delta": -770.9066548485132,
+          "used": true
+        },
+        {
+          "word": "不",
+          "index": "7",
+          "self": [
+            3.12,
+            3.52
+          ],
+          "reference": [
+            71.7,
+            72.18
+          ],
+          "delta": 1586.583318419198,
+          "used": false
+        },
+        {
+          "word": "安",
+          "index": "8",
+          "self": [
+            3.52,
+            4.16
+          ],
+          "reference": [
+            72.18,
+            72.5
+          ],
+          "delta": -866.7552466654445,
+          "used": true
+        },
+        {
+          "word": "混",
+          "index": "11",
+          "self": [
+            5.2,
+            5.52
+          ],
+          "reference": [
+            73.54,
+            73.7
+          ],
+          "delta": -646.0080889340409,
+          "used": false
+        },
+        {
+          "word": "缓",
+          "index": "15",
+          "self": [
+            7.2,
+            7.52
+          ],
+          "reference": [
+            75.7,
+            75.94
+          ],
+          "delta": -837.9681784097054,
+          "used": true
+        },
+        {
+          "word": "发",
+          "index": "18",
+          "self": [
+            8.56,
+            8.96
+          ],
+          "reference": [
+            77.14,
+            77.54
+          ],
+          "delta": -826.6349102682601,
+          "used": true
+        },
+        {
+          "word": "谎",
+          "index": "23",
+          "self": [
+            10.64,
+            11.12
+          ],
+          "reference": [
+            79.3,
+            79.78
+          ],
+          "delta": -651.4129587520122,
+          "used": false
+        },
+        {
+          "word": "话",
+          "index": "24",
+          "self": [
+            11.36,
+            12.08
+          ],
+          "reference": [
+            79.86,
+            80.18
+          ],
+          "delta": -648.3261530632662,
+          "used": false
+        }
+      ],
+      "frame_count": 28,
+      "nonzero_frames": 28
+    },
+    {
+      "id": 9,
+      "phrase": "不及",
+      "split": "train",
+      "words": [
+        {
+          "word": "不",
+          "reference_word": "不",
+          "status": "timing_uncertain"
+        },
+        {
+          "word": "及",
+          "reference_word": "及",
+          "status": "key_uncertain"
+        }
+      ],
+      "key_cents": null,
+      "context_evidence": [
+        {
+          "word": "不",
+          "index": "7",
+          "self": [
+            3.12,
+            3.6
+          ],
+          "reference": [
+            71.7,
+            72.18
+          ],
+          "delta": 1557.9834333873987
+        },
+        {
+          "word": "安",
+          "index": "8",
+          "self": [
+            3.6,
+            4.0
+          ],
+          "reference": [
+            72.18,
+            72.5
+          ],
+          "delta": -866.6301917222702
+        },
+        {
+          "word": "混",
+          "index": "11",
+          "self": [
+            5.04,
+            5.6
+          ],
+          "reference": [
+            73.54,
+            73.7
+          ],
+          "delta": -944.2115935518016
+        },
+        {
+          "word": "发",
+          "index": "18",
+          "self": [
+            8.72,
+            9.12
+          ],
+          "reference": [
+            77.14,
+            77.54
+          ],
+          "delta": -759.7716071338438
+        },
+        {
+          "word": "谎",
+          "index": "23",
+          "self": [
+            10.88,
+            11.36
+          ],
+          "reference": [
+            79.3,
+            79.78
+          ],
+          "delta": -765.4106785335016
+        },
+        {
+          "word": "话",
+          "index": "24",
+          "self": [
+            11.36,
+            12.16
+          ],
+          "reference": [
+            79.86,
+            80.18
+          ],
+          "delta": -760.0222873524099
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 10,
+      "phrase": "因你",
+      "split": "holdout",
+      "words": [
+        {
+          "word": "因",
+          "reference_word": "因",
+          "status": "no_stable_voiced_core"
+        },
+        {
+          "word": "你",
+          "reference_word": "你",
+          "status": "near_target_control",
+          "self_core": [
+            10.654,
+            10.954
+          ],
+          "reference_core": [
+            40.9,
+            41.46
+          ],
+          "frame_count": 21,
+          "shift": 0.0
+        }
+      ],
+      "key_cents": -610.1210320016219,
+      "context_evidence": [
+        {
+          "word": "进",
+          "index": "2",
+          "self": [
+            0.88,
+            1.2
+          ],
+          "reference": [
+            31.56,
+            31.96
+          ],
+          "delta": -601.5766896069838,
+          "used": true
+        },
+        {
+          "word": "心",
+          "index": "3",
+          "self": [
+            1.2,
+            1.68
+          ],
+          "reference": [
+            31.96,
+            32.52
+          ],
+          "delta": -602.4318485954061,
+          "used": true
+        },
+        {
+          "word": "默",
+          "index": "14",
+          "self": [
+            7.84,
+            8.4
+          ],
+          "reference": [
+            38.52,
+            38.84
+          ],
+          "delta": -614.9414165748235,
+          "used": true
+        },
+        {
+          "word": "时",
+          "index": "16",
+          "self": [
+            8.8,
+            9.28
+          ],
+          "reference": [
+            39.24,
+            39.72
+          ],
+          "delta": -610.1210320016219,
+          "used": true
+        },
+        {
+          "word": "后",
+          "index": "18",
+          "self": [
+            9.68,
+            10.08
+          ],
+          "reference": [
+            40.2,
+            40.68
+          ],
+          "delta": -623.552302456014,
+          "used": true
+        }
+      ],
+      "frame_count": 21,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 11,
+      "phrase": "无枉寻也",
+      "split": "holdout",
+      "words": [
+        {
+          "word": "无",
+          "reference_word": "不",
+          "status": "different_syllable"
+        },
+        {
+          "word": "枉",
+          "reference_word": "枉",
+          "status": "timing_uncertain"
+        },
+        {
+          "word": "寻",
+          "reference_word": "寻",
+          "status": "no_stable_voiced_core"
+        },
+        {
+          "word": "也",
+          "reference_word": "也",
+          "status": "offset_exceeds_bound"
+        }
+      ],
+      "key_cents": -610.1210320016219,
+      "context_evidence": [
+        {
+          "word": "进",
+          "index": "2",
+          "self": [
+            0.88,
+            1.2
+          ],
+          "reference": [
+            31.56,
+            31.96
+          ],
+          "delta": -601.5766896069838,
+          "used": true
+        },
+        {
+          "word": "心",
+          "index": "3",
+          "self": [
+            1.2,
+            1.68
+          ],
+          "reference": [
+            31.96,
+            32.52
+          ],
+          "delta": -602.4318485954061,
+          "used": true
+        },
+        {
+          "word": "默",
+          "index": "14",
+          "self": [
+            7.84,
+            8.4
+          ],
+          "reference": [
+            38.52,
+            38.84
+          ],
+          "delta": -614.9414165748235,
+          "used": true
+        },
+        {
+          "word": "时",
+          "index": "16",
+          "self": [
+            8.8,
+            9.28
+          ],
+          "reference": [
+            39.24,
+            39.72
+          ],
+          "delta": -610.1210320016219,
+          "used": true
+        },
+        {
+          "word": "后",
+          "index": "18",
+          "self": [
+            9.68,
+            10.08
+          ],
+          "reference": [
+            40.2,
+            40.68
+          ],
+          "delta": -623.552302456014,
+          "used": true
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 12,
+      "phrase": "也如此",
+      "split": "holdout",
+      "words": [
+        {
+          "word": "也",
+          "reference_word": "也",
+          "status": "near_target_control",
+          "self_core": [
+            5.396,
+            5.796
+          ],
+          "reference_core": [
+            118.221,
+            118.641
+          ],
+          "frame_count": 34,
+          "shift": 0.0
+        },
+        {
+          "word": "如",
+          "reference_word": "如",
+          "status": "no_stable_voiced_core"
+        },
+        {
+          "word": "此",
+          "reference_word": "此",
+          "status": "no_stable_voiced_core"
+        }
+      ],
+      "key_cents": -521.0257378938142,
+      "context_evidence": [
+        {
+          "word": "进",
+          "index": "2",
+          "self": [
+            1.04,
+            1.44
+          ],
+          "reference": [
+            113.82,
+            114.22
+          ],
+          "delta": -460.98850005484996,
+          "used": true
+        },
+        {
+          "word": "心",
+          "index": "3",
+          "self": [
+            1.44,
+            1.92
+          ],
+          "reference": [
+            114.22,
+            114.78
+          ],
+          "delta": -433.1506967334394,
+          "used": true
+        },
+        {
+          "word": "时",
+          "index": "16",
+          "self": [
+            8.88,
+            9.36
+          ],
+          "reference": [
+            121.5,
+            121.98
+          ],
+          "delta": -526.7453168176744,
+          "used": true
+        },
+        {
+          "word": "因",
+          "index": "19",
+          "self": [
+            10.32,
+            10.88
+          ],
+          "reference": [
+            123.02,
+            123.18
+          ],
+          "delta": -521.0257378938142,
+          "used": true
+        },
+        {
+          "word": "你",
+          "index": "20",
+          "self": [
+            10.88,
+            11.2
+          ],
+          "reference": [
+            123.18,
+            123.74
+          ],
+          "delta": -292.00709994610236,
+          "used": false
+        },
+        {
+          "word": "肆",
+          "index": "22",
+          "self": [
+            11.6,
+            12.4
+          ],
+          "reference": [
+            124.14,
+            124.46
+          ],
+          "delta": -530.3485197549958,
+          "used": true
+        }
+      ],
+      "frame_count": 34,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 13,
+      "phrase": "沉默",
+      "split": "holdout",
+      "words": [
+        {
+          "word": "沉",
+          "reference_word": "沉",
+          "status": "no_stable_voiced_core"
+        },
+        {
+          "word": "默",
+          "reference_word": "默",
+          "status": "timing_uncertain"
+        }
+      ],
+      "key_cents": -521.0257378938142,
+      "context_evidence": [
+        {
+          "word": "进",
+          "index": "2",
+          "self": [
+            1.04,
+            1.44
+          ],
+          "reference": [
+            113.82,
+            114.22
+          ],
+          "delta": -460.98850005484996,
+          "used": true
+        },
+        {
+          "word": "心",
+          "index": "3",
+          "self": [
+            1.44,
+            1.92
+          ],
+          "reference": [
+            114.22,
+            114.78
+          ],
+          "delta": -433.1506967334394,
+          "used": true
+        },
+        {
+          "word": "时",
+          "index": "16",
+          "self": [
+            8.88,
+            9.36
+          ],
+          "reference": [
+            121.5,
+            121.98
+          ],
+          "delta": -526.7453168176744,
+          "used": true
+        },
+        {
+          "word": "因",
+          "index": "19",
+          "self": [
+            10.32,
+            10.88
+          ],
+          "reference": [
+            123.02,
+            123.18
+          ],
+          "delta": -521.0257378938142,
+          "used": true
+        },
+        {
+          "word": "你",
+          "index": "20",
+          "self": [
+            10.88,
+            11.2
+          ],
+          "reference": [
+            123.18,
+            123.74
+          ],
+          "delta": -292.00709994610236,
+          "used": false
+        },
+        {
+          "word": "肆",
+          "index": "22",
+          "self": [
+            11.6,
+            12.4
+          ],
+          "reference": [
+            124.14,
+            124.46
+          ],
+          "delta": -530.3485197549958,
+          "used": true
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 14,
+      "phrase": "也莫问归期",
+      "split": "holdout",
+      "words": [
+        {
+          "word": "也",
+          "reference_word": "也",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "莫",
+          "reference_word": "莫",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "问",
+          "reference_word": "问",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "归",
+          "reference_word": "归",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "期",
+          "reference_word": "期",
+          "status": "key_uncertain"
+        }
+      ],
+      "key_cents": null,
+      "context_evidence": [
+        {
+          "word": "时",
+          "index": "4",
+          "self": [
+            1.6,
+            2.16
+          ],
+          "reference": [
+            135.16,
+            135.48
+          ],
+          "delta": -1093.2172903849466
+        },
+        {
+          "word": "别",
+          "index": "11",
+          "self": [
+            6.56,
+            6.88
+          ],
+          "reference": [
+            140.12,
+            140.44
+          ],
+          "delta": 75.94577532289577
+        },
+        {
+          "word": "问",
+          "index": "17",
+          "self": [
+            9.2,
+            9.6
+          ],
+          "reference": [
+            142.68,
+            143.0
+          ],
+          "delta": 200.53836201249214
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 15,
+      "phrase": "（念想）有时",
+      "split": "holdout",
+      "words": [
+        {
+          "word": "有",
+          "reference_word": "有",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "时",
+          "reference_word": "时",
+          "status": "key_uncertain"
+        }
+      ],
+      "key_cents": null,
+      "context_evidence": [
+        {
+          "word": "时",
+          "index": "4",
+          "self": [
+            1.6,
+            2.16
+          ],
+          "reference": [
+            135.16,
+            135.48
+          ],
+          "delta": -1093.2172903849466
+        },
+        {
+          "word": "别",
+          "index": "11",
+          "self": [
+            6.56,
+            6.88
+          ],
+          "reference": [
+            140.12,
+            140.44
+          ],
+          "delta": 75.94577532289577
+        },
+        {
+          "word": "问",
+          "index": "17",
+          "self": [
+            9.2,
+            9.6
+          ],
+          "reference": [
+            142.68,
+            143.0
+          ],
+          "delta": 200.53836201249214
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 16,
+      "phrase": "相思成疾",
+      "split": "holdout",
+      "words": [
+        {
+          "word": "相",
+          "reference_word": "相",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "思",
+          "reference_word": "思",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "成",
+          "reference_word": "成",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "疾",
+          "reference_word": "疾",
+          "status": "key_uncertain"
+        }
+      ],
+      "key_cents": null,
+      "context_evidence": [
+        {
+          "word": "时",
+          "index": "4",
+          "self": [
+            1.6,
+            2.16
+          ],
+          "reference": [
+            135.16,
+            135.48
+          ],
+          "delta": -1093.2172903849466
+        },
+        {
+          "word": "别",
+          "index": "11",
+          "self": [
+            6.56,
+            6.88
+          ],
+          "reference": [
+            140.12,
+            140.44
+          ],
+          "delta": 75.94577532289577
+        },
+        {
+          "word": "问",
+          "index": "17",
+          "self": [
+            9.2,
+            9.6
+          ],
+          "reference": [
+            142.68,
+            143.0
+          ],
+          "delta": 200.53836201249214
+        }
+      ],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    },
+    {
+      "id": 17,
+      "phrase": "沉默有时",
+      "split": "holdout",
+      "words": [
+        {
+          "word": "沉",
+          "reference_word": "沉",
+          "status": "timing_uncertain"
+        },
+        {
+          "word": "默",
+          "reference_word": "默",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "有",
+          "reference_word": "有",
+          "status": "key_uncertain"
+        },
+        {
+          "word": "时",
+          "reference_word": "时",
+          "status": "key_uncertain"
+        }
+      ],
+      "key_cents": null,
+      "context_evidence": [],
+      "frame_count": 0,
+      "nonzero_frames": 0
+    }
+  ]
+}

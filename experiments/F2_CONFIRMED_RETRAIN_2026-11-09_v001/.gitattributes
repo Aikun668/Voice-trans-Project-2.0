@@ -1,0 +1,5 @@
+# Retain exact bytes for files covered by the experiment's SHA-256 records.
+confirmed_pairs.json -text
+word_probes.json -text
+prepared_v003/samples.csv -text
+archive/** -text

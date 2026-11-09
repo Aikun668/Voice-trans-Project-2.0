@@ -1,0 +1,10 @@
+{
+  "status": "experimental",
+  "schema": "f2-confirmed-frames-v1",
+  "weights": "experiments/F2_CONFIRMED_RETRAIN_2026-11-09_v001/results/model.pkl",
+  "sha256": "08e8d7e9f9d58c93784bd8ee85dbd429a0f1f879db21a41b2702e217fb16dd1f",
+  "prepared": "experiments/F2_CONFIRMED_RETRAIN_2026-11-09_v001/prepared_v003",
+  "verification": "experiments/F2_CONFIRMED_RETRAIN_2026-11-09_v001/results/verification.json",
+  "legacy_archive": "experiments/F2_CONFIRMED_RETRAIN_2026-11-09_v001/archive/inventory.json",
+  "listening": "pending_jade"
+}
