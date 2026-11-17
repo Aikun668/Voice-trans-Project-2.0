@@ -1,0 +1,95 @@
+{
+  "state": "legacy archive",
+  "files": [
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v001\\results\\model.pkl",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v001\\results\\model.pkl",
+      "sha256": "7a2742e204def26d925c85a4335f8656795b4499397220e6156ae9b34be4e0ae"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v001\\results\\samples.csv",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v001\\results\\samples.csv",
+      "sha256": "f143cd7cbd96765d19d900ccc9c519471eee9d4103707d39061fe1cdc46ccc69"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v001\\results\\train_report.json",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v001\\results\\train_report.json",
+      "sha256": "32b8ca62f27b7e73f2959cc7fac25befcc84b29af10e5d4e5a06dc259ddea828"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v001\\results\\apply_notes.csv",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v001\\results\\apply_notes.csv",
+      "sha256": "40eb9f8c525e3db4b2f76c766dbe604ef3f04b1039c14f71be59cf2f5680fa8b"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v001\\run.py",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v001\\run.py",
+      "sha256": "390d20641f9ed049308b8057f39259ddcb2d72d25c273b4fdf0d59aa52bd8f6e"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v001\\r1_pipeline.py",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v001\\r1_pipeline.py",
+      "sha256": "403bfa3a8864655e68b948ba5a4600575746ac447d4c9045a7cff48f722974cf"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v002\\results\\model.pkl",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v002\\_superseded_2026-11-07\\results\\model.pkl",
+      "sha256": "d779952eeac686e49a0fb2dc79a253887bd79803eb6e4e5f113fbe5bc148f5d5"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v002\\results\\samples.csv",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v002\\_superseded_2026-11-07\\results\\samples.csv",
+      "sha256": "0de43b8b09cf7592cd3781758ede7b46e9e9207a015891f3f3fbb990855fe35a"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v002\\results\\train_report.json",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v002\\_superseded_2026-11-07\\results\\train_report.json",
+      "sha256": "2f6e9a358b387e144c78fef910c1b876ff1b705d86ae662b34128cf6425fa041"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v002\\results\\apply_notes.csv",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v002\\_superseded_2026-11-07\\results\\apply_notes.csv",
+      "sha256": "5515f147996aeb7b87aefbb429b58b0a33ea0a01f3c53a575d05c0ab6f5d9be8"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v002\\run.py",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v002\\run.py",
+      "sha256": "390d20641f9ed049308b8057f39259ddcb2d72d25c273b4fdf0d59aa52bd8f6e"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v002\\r1_pipeline.py",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v002\\r1_pipeline.py",
+      "sha256": "21a299a33fc4463686a37fe06218924bce5338239318914cc0628d69c97c7877"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v003\\results\\model.pkl",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\results\\model.pkl",
+      "sha256": "9c7dd3d48099bb2775b676e2939dda1bd3d0a1526471cf2a82561b55b66ce975"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v003\\results\\samples.csv",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\results\\samples.csv",
+      "sha256": "d851015e26d01df274e0b58c88d9987e9163912dca18538311f554a55acbff9c"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v003\\results\\train_report.json",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\results\\train_report.json",
+      "sha256": "257c7d33aa5eb88ffb2b616794d21c9c02f002e29640502e3ceaab7a01dcfcf8"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v003\\results\\apply_notes.csv",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\results\\apply_notes.csv",
+      "sha256": "639552409a3dde7213a53291ed73b1ab6ccf3672c517b59f41402f759a58da47"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v003\\run.py",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\run.py",
+      "sha256": "254dcfd634ddf6509ef375f4358fd1cb07333e6d24e99e256405d869b272bc6f"
+    },
+    {
+      "archive": "F2_R1_TRAIN_2026-11-07_v003\\r1_pipeline.py",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\r1_pipeline.py",
+      "sha256": "5de32ca5788695cc3d6d58db60885e65c84f91bf2be79a493c23a81c0ea96981"
+    }
+  ]
+}

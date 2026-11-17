@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-16",
+  "local_snapshot": "53bef58",
+  "remote_parent": "b6c7a1bd0dffa1254b0971b4854ecebe0d144afd",
+  "reason": "Preserve distinct same-named source recordings and historical remote documents while syncing latest local project. Primary workspace source files were not changed.",
+  "files": [
+    {
+      "conflicting_path": "AGENTS.md",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "fa99d244e08c9c2bd15080e7acb182bf47fe2182527c9dac4086fab2e941bd22",
+      "remote_sha256": "e102969b6fe70d304c4781887b0397e62b8f815702cefac57cd3d94283ec13ae",
+      "remote_archived_as": "documents/AGENTS.md"
+    },
+    {
+      "conflicting_path": "docs/ROADMAP.md",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "32cf7625a146e3fc92c4e3f0b424be81038e809e7adab03c59f202d41347802e",
+      "remote_sha256": "6212a184e5cc84f4655a460d1610d8d9db522f1a2fa58f16e3a117cbb8de98b9",
+      "remote_archived_as": "documents/docs/ROADMAP.md"
+    },
+    {
+      "conflicting_path": "docs/开发日志_有参考修音.md",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "bcfba39d167803550c46ee5165c31969349d5fba91e60a8254e7f87220033537",
+      "remote_sha256": "8aac887c914d9763fc9f20aa7196affb5c8173f90fd792da70f0228b5133be55",
+      "remote_archived_as": "documents/docs/开发日志_有参考修音.md"
+    },
+    {
+      "conflicting_path": "docs/新阶段_前三项任务初步计划.md",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "ac79bea2cacc93f65510ef91907bcab39bdc94d93c668bcbd9681ea23dde2d5d",
+      "remote_sha256": "b78d33d4373e540b65f4a8f75749248c6b066c81eb1253b329ed0e768495da1f",
+      "remote_archived_as": "documents/docs/新阶段_前三项任务初步计划.md"
+    },
+    {
+      "conflicting_path": "experiments/WOMENDE_FOCUS_2026-11-03_v003/feedback.md",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "a943de855e5c2dab1ffc22aab9001948b81ee7332f5ce85bdb128d4266b5335b",
+      "remote_sha256": "20bd70d117c85d0819eafe76a87d2819e59b800bbb7214c3812297e3b65809cc",
+      "remote_archived_as": "documents/experiments/WOMENDE_FOCUS_2026-11-03_v003/feedback.md"
+    },
+    {
+      "conflicting_path": "test_dataset/my_singing/rerecord_2026-11-04_f2/README.md",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "ae6183887026dbceb607b4a146e3db2cb961cdd9be56ee7055df3ce517160b84",
+      "remote_sha256": "48b0c504def67d8601963d24dd9e56ebca27835555eba6f2bd2885ab8145b93d",
+      "remote_archived_as": "documents/test_dataset/my_singing/rerecord_2026-11-04_f2/README.md"
+    },
+    {
+      "conflicting_path": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/心墙_郭静_vocals.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a",
+      "remote_sha256": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc",
+      "remote_archived_as": "audio/e96ab53fd88a_心墙_郭静_vocals.wav"
+    },
+    {
+      "conflicting_path": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/离开我的依赖_王艳薇_vocals.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "6a7ed12e1eb4b0bbe3a4aebfc531631f1e6a4d65b772a6f6a6be7432f8c06e43",
+      "remote_sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "remote_archived_as": "audio/b866b5f275b9_离开我的依赖_王艳薇_vocals.wav"
+    },
+    {
+      "conflicting_path": "test_dataset/my_singing/rerecord_2026-11-04_f2/ref_vocals/莫问归期_蒋雪儿_vocals.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "ae69a7a4c21acd4ff405917b7ba1214bb24976cf9fdff8d9163a5dd9f905f1b5",
+      "remote_sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "remote_archived_as": "audio/e2b536f4f225_莫问归期_蒋雪儿_vocals.wav"
+    },
+    {
+      "conflicting_path": "test_dataset/reference/manifest.json",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "9fdcd5c6cfb8253b81281ad755b08d72f474b1dd54a062a89adc9db813a77a3f",
+      "remote_sha256": "ff68320bf602d02345743f94032151cba2b06b923295940ba916d39a37dff41f",
+      "remote_archived_as": "documents/test_dataset/reference/manifest.json"
+    },
+    {
+      "conflicting_path": "test_dataset/reference/vocals/心墙_郭静_vocals.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a",
+      "remote_sha256": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc",
+      "remote_archived_as": "audio/e96ab53fd88a_心墙_郭静_vocals.wav"
+    },
+    {
+      "conflicting_path": "test_dataset/reference/vocals/离开我的依赖_王艳薇_vocals.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "6a7ed12e1eb4b0bbe3a4aebfc531631f1e6a4d65b772a6f6a6be7432f8c06e43",
+      "remote_sha256": "b866b5f275b9c91d012a088be5102e6afcd77e0f44c8a2f59eff8d349655406e",
+      "remote_archived_as": "audio/b866b5f275b9_离开我的依赖_王艳薇_vocals.wav"
+    },
+    {
+      "conflicting_path": "test_dataset/reference/vocals/莫问归期_蒋雪儿_vocals.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "ae69a7a4c21acd4ff405917b7ba1214bb24976cf9fdff8d9163a5dd9f905f1b5",
+      "remote_sha256": "e2b536f4f225b81f82d8713d01fa48052544c4083d5c63730631dab0e8a83ab6",
+      "remote_archived_as": "audio/e2b536f4f225_莫问归期_蒋雪儿_vocals.wav"
+    },
+    {
+      "conflicting_path": "test_dataset/reference/心墙_郭静.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "9c468a7930fdd75ba9380f681aa9e5b61c42bf9a72eb1f68e8b50f02ab0f2735",
+      "remote_sha256": "4e6a882473aaeebcd253985e24714209b15933a6af4cc7dacedd2140d7ae20a1",
+      "remote_archived_as": "audio/4e6a882473aa_心墙_郭静.wav"
+    },
+    {
+      "conflicting_path": "test_dataset/reference/离开我的依赖_王艳薇.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "8008c7f49ca298812477b026772501483faab038d1bc39fb791b0ddbb6a7c4ae",
+      "remote_sha256": "13a85969ca361c0ce97c638f8b5bce96570c1dfc2f6097cedbac4794f437972a",
+      "remote_archived_as": "audio/13a85969ca36_离开我的依赖_王艳薇.wav"
+    },
+    {
+      "conflicting_path": "test_dataset/reference/莫问归期_蒋雪儿.wav",
+      "active_resolution": "latest local version retained",
+      "local_sha256": "eb509df46059c5385f3e8f5c0154253590c1469cac6e3a523a493896929846f8",
+      "remote_sha256": "93eea8e9225a73fadd8bf51196ca32be1bf573aa1f8ddf7ae9cb28ca3b246d2f",
+      "remote_archived_as": "audio/93eea8e9225a_莫问归期_蒋雪儿.wav"
+    }
+  ],
+  "hash_scope": "SHA256 of Git blob bytes. Windows text checkout may use CRLF; audio bytes are unmodified."
+}
