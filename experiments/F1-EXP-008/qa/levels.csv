@@ -1,0 +1,5 @@
+﻿id,target_gr_db,wet,threshold_db,makeup_db,achieved_gr_p90,gr_median_active,frac_gr_gt_1db,gr_at_quiet_p10,dyn_change_wet_db,dyn_change_mix_db,quiet_boost_db,crest_drop_db,centroid_ratio,lag,raw_peak_dbfs,raw_lufs,raw_tp_dbtp,raw_clipped,hard_fail,flags,matched_lufs,matched_tp_dbtp
+P1,4.0,0.5,-20.71,3.1,3.98,1.4,0.597,0.0,3.98,2.15,1.69,-0.19,1.04,0,-6.08,-19.29,-6.07,0,,,-17.99,-4.78
+P2,8.0,0.5,-26.04,6.94,7.98,5.29,0.915,0.42,6.41,3.79,3.82,-0.07,1.053,0,-6.17,-19.3,-6.16,0,,,-18.0,-4.86
+P3,4.0,1.0,-20.71,3.1,3.98,1.4,0.597,0.0,3.98,3.98,3.1,-0.51,1.08,0,-5.56,-19.24,-5.56,0,,,-18.0,-4.32
+P4,8.0,1.0,-26.04,6.94,7.98,5.29,0.915,0.42,6.41,6.41,6.47,-0.54,1.108,0,-5.43,-19.24,-5.43,0,,,-18.01,-4.19

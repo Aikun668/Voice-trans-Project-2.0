@@ -1,0 +1,18 @@
+{
+  "official_repository": "https://github.com/MoonInTheRiver/NeuralSVB",
+  "license": "GPL-3.0",
+  "commit": "7a80bc51806103f09c7448b0daf93f49615ce52f",
+  "official_versioned_files_clean": true,
+  "checkpoints": {
+    "third_party_neuralsvb\\src\\checkpoints\\1030_vae_mle\\model_ckpt_steps_200000.ckpt": "210e7b669e5422d27946bba1d2be313f54686d7891689436ac846fa55adff057",
+    "third_party_neuralsvb\\src\\checkpoints\\1012_hifigan_all_songs_nsf\\model_ckpt_steps_1170000.ckpt": "5ee9dde88bf4acd74679a6ec182aba0a073ad686f8abfdaf9e0d9f09b11f7a11"
+  },
+  "versions": {
+    "torch": "2.2.2+cpu",
+    "numpy": "1.23.5",
+    "scipy": "1.15.3",
+    "librosa": "0.9.2",
+    "praat-parselmouth": "0.4.7",
+    "resemblyzer": "0.1.4"
+  }
+}

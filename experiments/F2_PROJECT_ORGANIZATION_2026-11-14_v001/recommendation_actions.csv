@@ -1,0 +1,19 @@
+﻿item,audit_object,decision,action,evidence
+1,M/H/I 的旧 README 当前阶段描述,已修改,三处README统一指向主项目现状；旧正文留存快照/原文,README.md; H/I README.md
+2,AGENTS 中 11-05“当前状态”段,已修改,更新三处状态/入口，保留原音、环境、Git及听感硬规则；反馈改复制,AGENTS.md; H/I AGENTS.md
+3,ROADMAP 的旧“当前状态 11-08”、旧首任务及旧时间表,已修改,主项目消除旧当前状态；旧树ROADMAP明确历史，主次线边界写入§5,docs/ROADMAP.md; H/I docs/ROADMAP.md
+4,M `docs/FILE_INDEX.md`,已修改,索引按角色重写，补入17对、三类权重、两线实验及来源登记,docs/FILE_INDEX.md
+5,M `docs/开发日志_有参考修音.md`,已修改,主项目待办改去向表，H/I日志增加历史定位，保留过程原话,docs/开发日志_有参考修音.md; H/I同路径
+6,`docs/新阶段_前三项任务初步计划.md`、11-07 第一轮有参考训练计划,原位归档,两份旧计划加历史提示，不再作为执行前提；原文保留,docs/新阶段_前三项任务初步计划.md; docs/F2_第一轮有参考修音_训练计划书_给第三方Agent.md
+7,H `docs/F2_TEAM_HANDOFF.md` 的“Jade 清洗17段”任务,已更正,17对核准已完成；徐同学任务完成情况仍待核实,H/docs/F2_TEAM_HANDOFF.md
+8,H `F2_MANUAL_MARKS_REVIEW…v001`,历史保留,v001退出切口权威；v002编辑来源和最终确认表保留,experiment_roles.csv; FILE_INDEX共用资产
+9,H `F2_CONFIRMED_RETRAIN…/prepared`、`prepared_v002`,历史保留,prepared/prepared_v002不作为默认；v003仅是旧有参考基线；不搬数组,asset_roles.json; FILE_INDEX历史
+10,M `F2_R1_TRAIN…v001/v002/v003`,原位归档,旧三版权重已有归档快照，全部退出当前模型入口，不重复搬移,experiment_roles.csv; H旧archive/inventory.json
+11,I `F2_TASK1_*`、`TASK2_*`、`TASK3_*`、`TASK4_*`、`TASK5_*` 与旧候选/划分页面,原位归档,I任务包是历史；原话、CSV及源音仍可能被引用，不整树搬移,experiment_roles.csv; retained_dependencies.json
+12,M `F2_PHRASE_ALIGN…v001/v002`、单字修音/接缝/WORLD对照等,原位归档,单字、对齐、接缝和合成试听保留失败证据和复用代码,experiment_roles.csv
+13,H `F2_MODEL_LISTEN…v001/v002`,归档且保留依赖,旧试听不作当前；v002/run.py仍被导入，保留原路径,retained_dependencies.json
+14,H `F2_REFERENCE_SEQUENCE…v001`,归档且保留依赖,直接参考修音不是训练模型；render_v002仍被model_sequence读取,retained_dependencies.json
+15,M F1-EXP、NeuralSVB、美化、WOMENDE、DEMO 旧轮试听和调参说明,维持暂停并归档,新增历史索引；F1链通用函数与反馈保留；不否定未来模型,docs/archive/README.md; retained_dependencies.json
+16,F1_FEATURE_MAP、F1_LISTENING_ACCEPTANCE、F1_REBASE、10月实现计划,维持已有历史定位,这些文档已是历史，不重复移动或提出删除,docs/archive/README.md
+17,M `F2_POPBUTFY_CLEAN…/pilot_v001`,内部历史定位,pilot仅初期探索，全量映射与机器复核仍供后续使用,FILE_INDEX共用资产; experiment_roles.csv
+18,最新试训原三版的 delivery.json、verification.json、artifact_hashes.json、browser_check.js / browser_switch_check.js / verify_delivery.py,撤下前快照保留,旧三版验证不作当前两版通过证据；不重写旧清单,FILE_INDEX历史; 原版本核查withdrawal.json

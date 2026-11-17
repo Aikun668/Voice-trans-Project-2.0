@@ -1,0 +1,8 @@
+created_utc: 2026-11-02T06:53:01.504087+00:00
+experiment: F1-EXP-018
+phase: F1-P4
+cross-singer transfer with fixed template from 4 self pairs; target M01 (A_gt_03)
+no reference for target; no new modules
+sealed: A04, A06, B03, C01, C02, C03
+target_lufs: -18.0
+technical_pass: True

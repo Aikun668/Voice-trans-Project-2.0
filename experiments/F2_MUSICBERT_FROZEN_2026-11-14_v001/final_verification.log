@@ -1,0 +1,74 @@
+{
+  "existing_project_files_verified": 5181,
+  "existing_project_files_changed": [],
+  "mainline_unchanged": true,
+  "predeclared_rules_unchanged": true,
+  "fresh_process_replay_exact": true,
+  "replay_arrays": {
+    "source": true,
+    "rendered": true,
+    "sample_rate": true,
+    "time": true,
+    "f0": true,
+    "cc": true,
+    "agreement": true,
+    "probabilities": true,
+    "command": true,
+    "mask": true
+  },
+  "raw_unselected_samples_exact": true,
+  "audio_readback": {
+    "original": {
+      "sha256": "bb1e86c768e3b1b6199fc53d2b88735ea23b3589e2a46f05fe5b3284d95b87d1",
+      "samples": 413376,
+      "rate": 48000,
+      "lufs": -18.5,
+      "true_peak_dbtp": -3.6,
+      "voiced_overlap_vs_source": 1.0,
+      "pitch_delta_median_cents": 2.304159352206625e-08
+    },
+    "model": {
+      "sha256": "d1ae3c0ed0642f97e673f3cd114e27e8467735a273194a0eade5124a3c25d4fc",
+      "samples": 413376,
+      "rate": 48000,
+      "lufs": -18.5,
+      "true_peak_dbtp": -3.5,
+      "voiced_overlap_vs_source": 0.9984544049459042,
+      "pitch_delta_median_cents": -2.7367718757886905e-08
+    }
+  },
+  "delivered_pitch": {
+    "voiced_overlap": 0.9984544049459042,
+    "changed_pitch_frames": 111,
+    "command_error_median_cents": 0.7557933482257795,
+    "command_error_p90_cents": 2.8769266628924015,
+    "actual_shift_range_cents": [
+      -128.45455058557718,
+      108.96513234670806
+    ],
+    "pitch_technical_pass": true
+  },
+  "controls_recounted": {
+    "normal_total": 48,
+    "normal_changed_over_50": 8,
+    "corrupt_total": 192,
+    "restored_exact": 33,
+    "shuffled_restored_exact": 15
+  },
+  "model_numerical_equivalence": {
+    "max_absolute_logit_error": 0.0,
+    "mean_absolute_logit_error": 0.0,
+    "official_operations_replayed": true,
+    "raw_checkpoint_only_in_reference": true,
+    "hf_equivalence_pass": true,
+    "context_probability_l1_difference": 1.4089889022776982,
+    "all_parameters_frozen": true,
+    "weight_digest_unchanged": true,
+    "training_steps": 0
+  },
+  "training_steps": 0,
+  "technical_pass": true,
+  "effectiveness_gate_pass": false,
+  "fine_tuning_recommended_now": false,
+  "listening": "pending_jade"
+}

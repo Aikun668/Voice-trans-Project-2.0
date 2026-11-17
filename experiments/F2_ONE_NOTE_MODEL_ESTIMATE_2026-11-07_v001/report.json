@@ -1,0 +1,41 @@
+{
+  "model": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\results\\model.pkl",
+  "model_sha256": "9c7dd3d48099bb2775b676e2939dda1bd3d0a1526471cf2a82561b55b66ce975",
+  "sklearn_version": "1.9.1",
+  "control": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_ONE_NOTE_ROUND_TRIP_2026-11-07_v002\\report.json",
+  "audio_sha256": {
+    "original.wav": "64170ede6314303f85327194a763d7b6e30a099519186dc1d4471209dd33af33",
+    "raised.wav": "eaa4a284512007eba0932dc9347c27fb7b64d2ab9af4cf061a9bfce99a10f21f"
+  },
+  "alignment": "same take, matched timestamps, zero key offset",
+  "injected_span_seconds": [
+    4.272,
+    5.422
+  ],
+  "detected_note_span_seconds": [
+    4.332,
+    5.392
+  ],
+  "reference_track_frames": [
+    217,
+    270
+  ],
+  "model_features": {
+    "dur": 1.06,
+    "sung_cents": -963.31526,
+    "ref_c_global": -1061.702246,
+    "ref_spread": 25.217432,
+    "ref_voiced": 0.96,
+    "t0": 4.332
+  },
+  "commanded_raise_cents": 100,
+  "measured_raise_in_core_cents": 100.295,
+  "expected_correction_cents": -100,
+  "raw_model_correction_cents": -95.373,
+  "model_error_signed_cents": 4.627,
+  "aligned_pitch_difference_correction_cents": -98.387,
+  "aligned_pitch_difference_error_signed_cents": 1.613,
+  "raw_prediction": true,
+  "guardrail_or_fallback_applied": false,
+  "rendered_audio": false
+}

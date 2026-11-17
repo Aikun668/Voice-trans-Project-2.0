@@ -1,0 +1,17 @@
+=== attempt 1 23:30:00
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\librosa\util\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\nn\utils\weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+| load HifiGAN:  checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt
+Removing weight norm...
+| Loaded model parameters from checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt.
+| HifiGAN device: cpu.
+Loaded the voice encoder model on cpu in 0.01 seconds.
+shige input rms dBFS -11.9 -> -21.9
+  whole {"worst_drop_db": -17.0, "hnr_median_db": 24.8, "shimmer": 0.0318, "p95_dev_cents": 18.7} colour 7.8
+  quiet {"worst_drop_db": -8.2, "hnr_median_db": 23.5, "shimmer": 0.037, "p95_dev_cents": 16.9} colour 1.1
+zuixuan input rms dBFS -12.1 -> -22.1
+  whole {"worst_drop_db": -11.2, "hnr_median_db": 20.3, "shimmer": 0.0385, "p95_dev_cents": 49.3} colour 5.0
+  quiet {"worst_drop_db": -6.4, "hnr_median_db": 19.5, "shimmer": 0.0443, "p95_dev_cents": 52.5} colour 1.8
+DONE

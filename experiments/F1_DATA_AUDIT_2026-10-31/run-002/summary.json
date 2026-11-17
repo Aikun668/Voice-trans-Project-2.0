@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-31T11:58:19.535546+00:00",
+  "dataset_manifest": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\f1_dataset_v2\\manifest.json",
+  "dataset_manifest_sha256": "23b3152e0ad1278e4b8a92ad3c7071b53e7e21babbc6c46589d0d9c95b7e873b",
+  "counts": {
+    "A_thin": 12,
+    "B_full": 6,
+    "C_observe": 6
+  },
+  "total": 24,
+  "first_batch": 12,
+  "quality_status": {
+    "ok": 19,
+    "warn": 4,
+    "review": 1
+  },
+  "preview_target_lufs": -20.319999999999997,
+  "preview_count": 12,
+  "preview_dir": "experiments\\F1_DATA_AUDIT_2026-10-31\\run-002\\previews",
+  "environment": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "ffmpeg": "ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "outputs": [
+    "features.json",
+    "samples.csv",
+    "preview_manifest.json",
+    "index.html",
+    "previews/"
+  ]
+}

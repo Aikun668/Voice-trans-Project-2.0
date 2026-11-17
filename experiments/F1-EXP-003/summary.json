@@ -1,0 +1,13 @@
+{
+  "experiment": "F1-EXP-003",
+  "phase": "F1-P2.2",
+  "status": "negative_no_stable_fullness_effect",
+  "test_count": 4,
+  "target_lufs": -25.05,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "listening_result": "+8 audible brightness/clarity on A01/A02; A05/B01 inconsistent; no stable fullness; perceived loudness likely HF emphasis",
+  "decision": "stop_current_high_shelf_direction_no_further_gain"
+}

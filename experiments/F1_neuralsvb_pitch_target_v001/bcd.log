@@ -1,0 +1,8 @@
+=== attempt 1 23:27:38
+{"clip": "shige_normal", "variant": "whole", "pass": true, "errors": [], "pitch": {"comparable_frames": 605, "median_abs_cents": 2.4460558841855446, "p95_abs_cents": 14.563539919572184}, "praat": {"comparable_frames": 2132, "median_abs_cents": 3.314338488416344, "p95_abs_cents": 18.683460802067614}}
+{"clip": "shige_normal", "variant": "chunked", "pass": true, "errors": [], "pitch": {"comparable_frames": 604, "median_abs_cents": 2.4315711757916225, "p95_abs_cents": 16.965462517125808}, "praat": {"comparable_frames": 2130, "median_abs_cents": 3.0999073693672794, "p95_abs_cents": 21.28964917639159}}
+shige {'whole': (True, []), 'chunked': (True, [])}
+{"clip": "zuixuan_normal", "variant": "whole", "pass": true, "errors": [], "pitch": {"comparable_frames": 871, "median_abs_cents": 3.5228425362025417, "p95_abs_cents": 31.73692661646921}, "praat": {"comparable_frames": 3054, "median_abs_cents": 4.391392254691463, "p95_abs_cents": 45.06429800451399}}
+{"clip": "zuixuan_normal", "variant": "chunked", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 872, "median_abs_cents": 3.7319325852586713, "p95_abs_cents": 32.83824729239456}, "praat": {"comparable_frames": 3064, "median_abs_cents": 4.457297433720885, "p95_abs_cents": 47.14149616977626}}
+zuixuan {'whole': (True, []), 'chunked': (False, ['dynamic change / dropout in active singing'])}
+DONE

@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_MUSICBERT_FROZEN_2026-11-14_v001\infer.py", line 70, in <module>
+    if __name__=='__main__':main()
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_MUSICBERT_FROZEN_2026-11-14_v001\infer.py", line 39, in main
+    model=FrozenMusicBert()
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_MUSICBERT_FROZEN_2026-11-14_v001\adapter.py", line 149, in __init__
+    import torch
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\__init__.py", line 1570, in <module>
+    from torch import quantization as quantization
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\quantization\__init__.py", line 1, in <module>
+    from .quantize import *  # noqa: F403
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\quantization\quantize.py", line 10, in <module>
+    from torch.ao.quantization.quantize import (
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\ao\quantization\__init__.py", line 11, in <module>
+    from .quantization_mappings import *  # type: ignore[no-redef]
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\ao\quantization\quantization_mappings.py", line 12, in <module>
+    import torch.ao.nn.quantized.reference as nnqr
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_MUSICBERT_FROZEN_2026-11-14_v001\infer.py", line 31, in guard
+    blocked.append(str(p));raise PermissionError('Reference or external audio/label is blocked during inference: '+str(p))
+PermissionError: Reference or external audio/label is blocked during inference: D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\Lib\site-packages\torch\ao\nn\quantized\reference\__init__.py

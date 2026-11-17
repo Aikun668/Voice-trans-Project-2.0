@@ -1,0 +1,44 @@
+{
+  "experiment": "F1-EXP-020",
+  "phase": "F1-P6",
+  "status": "partial_positive",
+  "target": "A_self_01",
+  "baseline": "EXP-016 M2",
+  "f1_original_hz": 226.9,
+  "f1_baseline_hz": 269.7,
+  "versions": ["S20", "S45"],
+  "actual_shifts_hz": {"S20": 25.1, "S45": 59.6},
+  "total_shift_vs_original_hz": {"S20": 68.0, "S45": 102.5},
+  "technical_pass": true,
+  "target_lufs": -19.97,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "listening_result": {
+    "winner": "S45 (B)",
+    "verdict": "表现最好；饱和度OK、清晰度OK、无失真、像本人；但力度感未提升，主观只是'声音放大了'",
+    "positive_finding": "F1 大幅上移（相对原音 +102.5Hz）被接受且未破坏音色 —— 推翻了此前'F1位移会像别人'的未验证推断",
+    "unmet_goal": "发声力度感 / 立体感"
+  },
+  "jade_verbatim": "目前这个版本B应该是表现最好的。目前还是饱和度OK，清晰度OK，没有失真，还确实像本人。但力度感这边还是没有整体提上去，只是感觉声音放大了。我们先停一下吧，先分析一下这个发生力度和立体感这块从哪边改参数。就是他这个音还是算挺薄的，这个音调还没整体拉起来，或者说这这个任务是F2那边的内容，我们这边管不到",
+  "scope_answer": {
+    "F2_definition_from_docs": "F2 = 音高修正（修音）；项目文档明文：'音高修正、节奏、混响、人声分离、伴奏：不借美化名义混入 F1'",
+    "user_judgment_correct": "整体音调拉起来确实属于 F2，F1 管不到",
+    "but_effort_decomposition": {
+      "f0_pitch": "F2（不归 F1）",
+      "spl_loudness": "被响度统一主动抹平（公平比较必需）",
+      "h1_h2_closure": "F1 已做（-4dB），可辨但弱",
+      "spectral_tilt": "F1 已做（M2）",
+      "f1_position": "F1 本轮已做，最大档被接受",
+      "attack_transient_crest": "F1（S4 动态）—— 从未做对方向",
+      "f1_bandwidth_hnr_cpp": "F1 未做"
+    },
+    "key_conclusion": "力度感约一半仍在 F1 范围内；此前唯一试过的动态处理是'压缩'，方向与提升力度感相反（压缩减小动态对比）。从未试过动态扩展/瞬态增强。"
+  },
+  "explicit_save_point": "用户明确要求先停下分析，不继续调参",
+  "next_options": [
+    "A: 动态扩展/瞬态增强（S4 反向），F1 内，未测过",
+    "B: F1 带宽收窄 / HNR·CPP 提升，F1 内，未测过",
+    "C: 整体音高抬升，属 F2，需跨模块协调",
+    "D: 接受当前 S45 为 F1 最佳产出，收工"
+  ]
+}

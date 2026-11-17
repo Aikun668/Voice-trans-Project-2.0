@@ -1,0 +1,13 @@
+{
+  "experiment_instances": 161,
+  "by_group": {
+    "历史记录": 154,
+    "次线": 1,
+    "共用资产": 5,
+    "主线": 1
+  },
+  "source_bindings": 34,
+  "unique_source_files": 14,
+  "retained_runtime_edges": 4,
+  "moved_experiments": 0
+}

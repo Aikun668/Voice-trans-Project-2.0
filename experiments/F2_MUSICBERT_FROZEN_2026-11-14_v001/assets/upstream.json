@@ -1,0 +1,36 @@
+{
+  "repo": "https://github.com/microsoft/muzic",
+  "commit": "2b8739671ba06f819f31f568b8a79da581aaf6f9",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/microsoft/muzic/2b8739671ba06f819f31f568b8a79da581aaf6f9/musicbert/README.md",
+      "sha256": "f9382e6b839cd24c4a3ac453e6daea615db4c8c4909fefa15a4550c6332156bc"
+    },
+    {
+      "path": "preprocess.py",
+      "url": "https://raw.githubusercontent.com/microsoft/muzic/2b8739671ba06f819f31f568b8a79da581aaf6f9/musicbert/preprocess.py",
+      "sha256": "df70822861ce7005769ee6c31579e63ae416c914739fc947ca85d86a4503f42e"
+    },
+    {
+      "path": "musicbert_original.py",
+      "url": "https://raw.githubusercontent.com/microsoft/muzic/2b8739671ba06f819f31f568b8a79da581aaf6f9/musicbert/musicbert/__init__.py",
+      "sha256": "0fe4a5213de4a24f2e8ce561892c5ebab95358306d408cbad4322ef627864052"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/microsoft/muzic/2b8739671ba06f819f31f568b8a79da581aaf6f9/LICENSE",
+      "sha256": "9906940f61b1f0b533fa7d99baf55178b2808fbe113ea51dfbfad8572ccd5f2b"
+    }
+  ],
+  "weight_source_folder": "https://drive.google.com/drive/folders/1aGcEB3qZoJ_ZE4qqmrrs6-JAp3z1vkE4",
+  "small_file_id": "1RQvThodh0hbfbZ9SaXm7Q8vXNOFTfYZu",
+  "expected_bytes": 265448349,
+  "checkpoint": {
+    "path": "checkpoint_last_musicbert_small.pt",
+    "bytes": 265448349,
+    "sha256": "f5bb685afe128bc9e0e445be51b5333b98be6a5456df850bd9c9f2cc80bb7275",
+    "download_url": "https://drive.usercontent.google.com/download"
+  }
+}

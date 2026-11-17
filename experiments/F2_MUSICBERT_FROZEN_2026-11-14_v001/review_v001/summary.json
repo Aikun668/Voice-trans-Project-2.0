@@ -1,0 +1,68 @@
+{
+  "input_sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa",
+  "confirmed_table_sha256": "3f6add2cc689e207c8b4f549fabc1c734124deded9f7017b87ff06684e810ba8",
+  "post_inference_only": true,
+  "raw_notes": 29,
+  "safety_eligible_notes": 8,
+  "accepted_notes": 2,
+  "all_accepted_changes": [
+    {
+      "index": 11,
+      "start": 2.98,
+      "end": 3.64,
+      "pitch": 51,
+      "target": 52,
+      "shift_cents": 106.04664851884564,
+      "odds": 116.71678591835219,
+      "local_target_probability": 0.9506015886881761,
+      "overlapping_confirmed_phrases": []
+    },
+    {
+      "index": 16,
+      "start": 4.96,
+      "end": 5.4799999999999995,
+      "pitch": 58,
+      "target": 57,
+      "shift_cents": -90.51133373353011,
+      "odds": 27.074674136133087,
+      "local_target_probability": 0.657026054318281,
+      "overlapping_confirmed_phrases": [
+        "太多"
+      ]
+    }
+  ],
+  "confirmed_problem_coverage": [
+    {
+      "phrase": "太多",
+      "confirmed_content_seconds": [
+        4.625,
+        5.389
+      ],
+      "changed_frames_over_50": 20,
+      "changed_seconds_over_50": 0.4,
+      "direction_verified": false,
+      "target_note_status": "Content cut confirmed, no human-confirmed per-note target in this table."
+    },
+    {
+      "phrase": "冒险",
+      "confirmed_content_seconds": [
+        6.568,
+        7.518
+      ],
+      "changed_frames_over_50": 0,
+      "changed_seconds_over_50": 0.0,
+      "direction_verified": false,
+      "target_note_status": "Content cut confirmed, no human-confirmed per-note target in this table."
+    }
+  ],
+  "modified_seconds_over_50_outside_confirmed_cuts": 0.66,
+  "outside_cuts_are_not_automatically_normal": true,
+  "personal_direction_gate_demonstrated": false,
+  "personal_direction_gate_reason": "Cut confirmation does not establish the correct note or correction direction.",
+  "controlled_context_gate": false,
+  "controlled_normal_preservation_gate": false,
+  "immediate_finetuning_recommended": false,
+  "recommendation": "Do not start fine-tuning now: the predeclared recovery and normal-preservation gates failed. Zero-shot failure does not prove fine-tuning cannot work.",
+  "listening": "pending_jade",
+  "selection_thresholds_changed": false
+}

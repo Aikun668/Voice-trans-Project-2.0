@@ -1,0 +1,48 @@
+{
+  "experiment": "F1-EXP-019",
+  "phase": "F1-P5",
+  "status": "cross_song_insufficient",
+  "target": "A_self_01",
+  "reference": "A_self_06",
+  "cross_song_runs": true,
+  "hard_failed": [],
+  "target_lufs": -18.86,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "deliverables": ["original.wav", "same_song.wav", "cross_song.wav"],
+  "next_rule": "若跨歌曲版明显劣于同曲版 → 个性化参考路线成立；若接近或更好 → 跨歌曲可用",
+  "listening_result": {
+    "version_2_same_song": "历史最佳，本来也不明显，需听一下才可辨",
+    "version_3_cross_song": "与原音（1号）基本无可听差异；明显不如 2号",
+    "gap_2_vs_3": "用户判为'差了很大'（指改善程度），与客观闭合率 51% 一致"
+  },
+  "jade_verbatim": "我们的这个3号和我们2号感觉差了很大。我们2号本来历史调的最佳的，本来就没什么明显，也是需要听一下才能听出来的。这相较之下会比较明显。我认为1和3还是没什么大区别。我们想调的东西是同一个吗？怎么一直没对齐上？还是还是说达不到",
+  "key_question": "我们想调的东西是同一个吗？",
+  "perceptual_threshold_series": {
+    "note": "跨实验汇总：谐波结构改善量 vs 用户是否可感知",
+    "1.19dB_female_A05": "听不出",
+    "1.94dB_male_M01": "听不出（仅 X1+M2 包络部分有点点效果）",
+    "2.86dB_A01_cross_song": "听不出（本轮）",
+    "5.57dB_A01_same_song": "勉强可辨（需认真听）",
+    "conclusion": "谐波结构改善的可感知门槛约在 3–5dB 之间；红线内能做到的上限（同曲参考 5.5dB）恰在门槛边缘"
+  },
+  "objective_gap": {
+    "original": {"h1h2": 11.35, "rich": -23.59, "centroid": 294},
+    "same_song": {"h1h2": 5.78, "rich": -19.61, "centroid": 414},
+    "cross_song": {"h1h2": 8.49, "rich": -21.34, "centroid": 434},
+    "closure_rate_cross_song": 0.51,
+    "note": "跨歌曲版重心 434Hz 高于同曲版 414Hz，参考歌个性混入"
+  },
+  "alignment_diagnosis": {
+    "what_we_optimize": "频谱静态结构（谐波比例 + 包络形状）",
+    "what_user_wants": "听起来不'嗲'、有力量、像正常自然唱",
+    "relation": "部分相关但不充分——EXP-015 已把频谱对齐到正常版 97%，听感仍只到'更饱满/更清晰、需认真听'",
+    "why_missed": "频谱是'发声方式'的伴生结果，不是其原因；对齐伴生指标不等于复现发声状态",
+    "remaining_gap_domain": "声门闭合动态、气息支撑、咬字位置——均属红线外或后期不可造"
+  },
+  "next_options": [
+    "1: 接受红线内上限（同曲参考 X1+M2 为最终能力），F1 定位为'轻度美化'",
+    "2: 越界试验（F0活跃度注入 / 咬字位置上移），需明示授权",
+    "3: 转演唱侧（重录正常状态），与 EXP-013 结论闭环"
+  ]
+}

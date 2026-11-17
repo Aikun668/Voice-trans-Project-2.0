@@ -1,0 +1,13 @@
+[
+ {
+  "t0": 16.63,
+  "t1": 16.67,
+  "frames": 8,
+  "praat_hz": 116.0,
+  "praat": 116.0,
+  "pyin": 233.0,
+  "comb_low_f": 0.95,
+  "comb_high_f": 1.04,
+  "winner": "pYIN correct (Praat octave error)"
+ }
+]

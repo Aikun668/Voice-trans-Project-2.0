@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>心墙 · “学着”两字精切</title>
+<style>
+  body { max-width: 40rem; margin: 2.5rem auto; padding: 0 1rem; color: #202530; font: 1rem/1.65 system-ui, sans-serif; }
+  button, textarea { font: inherit; }
+  button { padding: .35rem .65rem; margin: .2rem .3rem .2rem 0; cursor: pointer; }
+  #compare { background: #204d76; color: white; border: 1px solid #204d76; }
+  audio, textarea { width: 100%; box-sizing: border-box; margin-top: .6rem; }
+  label { display: block; margin-top: .25rem; }
+  fieldset { margin: 1rem 0; border: 1px solid #bcc4ce; }
+</style>
+<main>
+  <h1>《心墙》只听“学着”</h1>
+  <p>先听你唱的“学着”，再听原唱的“学着”。两段用固定增益做等响对照，音高和唱速保留原样。戴耳机、固定音量。Agent 不能听音，请你确认两边有没有切完整。</p>
+  <button type="button" id="compare" data-audio="compare.wav">一键连听 · 本人 → 原唱</button>
+  <audio controls id="player" preload="metadata" src="audio/compare.wav"></audio>
+  <div>
+    <button type="button" data-audio="take.wav">单听本人</button>
+    <button type="button" data-audio="reference.wav">单听原唱</button>
+  </div>
+  <form>
+    <fieldset>
+      <legend>两边都切到完整的“学着”了吗？</legend>
+      <label><input type="radio" name="verdict" value="对，两边都切到位" required> 对，两边都切到位</label>
+      <label><input type="radio" name="verdict" value="有字被截短"> 有字被截短</label>
+      <label><input type="radio" name="verdict" value="多切了前后别的字"> 多切了前后别的字</label>
+      <label><input type="radio" name="verdict" value="拿不准"> 拿不准</label>
+    </fieldset>
+    <label>补充（可不填）<textarea id="notes" rows="2"></textarea></label>
+    <button>生成答案</button>
+    <textarea id="answer" aria-label="复制这行回聊天" rows="2" readonly hidden></textarea>
+  </form>
+</main>
+<script>
+  const player = document.querySelector("#player");
+  for (const button of document.querySelectorAll("[data-audio]")) {
+    button.addEventListener("click", () => {
+      const source = "audio/" + button.dataset.audio;
+      if (player.getAttribute("src") !== source) player.src = source;
+      else player.currentTime = 0;
+      player.play().catch(() => {});
+    });
+  }
+  document.querySelector("form").addEventListener("submit", event => {
+    event.preventDefault();
+    const answer = document.querySelector("#answer");
+    const notes = document.querySelector("#notes").value.trim();
+    answer.value = "《心墙》“学着”精切：" + new FormData(event.target).get("verdict")
+      + (notes ? "\n补充：" + notes : "");
+    answer.hidden = false;
+    answer.select();
+  });
+</script>
+</html>

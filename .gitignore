@@ -40,6 +40,29 @@ test_dataset/**/*.flac
 !test_dataset/reference/
 !test_dataset/reference/**
 
+# Local experiment runtimes and reproducible bulk artifacts (2026-11-16).
+# Existing tracked media stay tracked; these rules only exclude new local files.
+.venv*/
+experiments/**/vendor/
+experiments/**/numba_cache/
+experiments/**/*.nbc
+experiments/**/*.nbi
+experiments/**/*.pkl
+experiments/**/*.pid
+experiments/**/smule-renaissance/
+experiments/**/assets/muzic_repo/
+experiments/**/*.npz
+experiments/**/*.npy
+experiments/**/*.wav
+experiments/**/*.jsonl
+experiments/**/work_output/
+neuralsvb_f1/outputs/
+test_dataset/**/*.m4a
+experiments/F2_POPBUTFY_CLEAN_*/audit_*/
+experiments/F2_POPBUTFY_CLEAN_*/alignment_*/
+experiments/F2_POPBUTFY_CLEAN_*/auto_candidates.csv
+experiments/F2_POPBUTFY_CLEAN_*/review_queue.csv
+
 # Keep F2 rerecord batch tracked
 !test_dataset/my_singing/rerecord_2026-11-04_f2/wav/
 !test_dataset/my_singing/rerecord_2026-11-04_f2/wav/**

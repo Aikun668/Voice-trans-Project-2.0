@@ -1,0 +1,135 @@
+{
+  "technical_pass": true,
+  "listening": "pending_jade",
+  "source_sha256": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+  "base_sha256": "dab42f74cbc5d0a0081e8aa44ba8dd36ff9a3e08c3159496aeb86a873e8d6ffa",
+  "eq_db": {
+    "reduce": -2.5,
+    "add": 2.5
+  },
+  "curve": "300–450 rise, 450–700 full, 700–1000 fade; gain 0 below 250",
+  "versions": {
+    "anchor": {
+      "lufs": -13.1,
+      "tp": -1.3,
+      "samples": 669696,
+      "finite": true,
+      "pitch": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.13,
+        "cents_p95": 0.34,
+        "p95_abs_cents": 0.53,
+        "frames_both": 997,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 0.53,
+        "frames_abs_error_over_20_cents": 0.004
+      },
+      "pitch_vs_b": null,
+      "decay_lift_db": 1.43,
+      "floor_relative_db": -32.83,
+      "sibilance_p99_db": -2.17,
+      "sha256": "ed7c1d12bbe0db6c2646d312942a2932a18951806856aae878cdf2d7e53f3c1c",
+      "failures": []
+    },
+    "base": {
+      "lufs": -13.1,
+      "tp": -1.3,
+      "samples": 669696,
+      "finite": true,
+      "pitch": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.53,
+        "cents_p05": 289.69,
+        "cents_p95": 324.96,
+        "p95_abs_cents": 324.96,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.14,
+        "frames_abs_error_over_20_cents": 0.0825
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": 0.0,
+        "cents_p95": 0.0,
+        "p95_abs_cents": 0.0,
+        "frames_both": 1049,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 0.0,
+        "frames_abs_error_over_20_cents": 0.0
+      },
+      "decay_lift_db": 2.13,
+      "floor_relative_db": -31.91,
+      "sibilance_p99_db": -1.92,
+      "sha256": "dab42f74cbc5d0a0081e8aa44ba8dd36ff9a3e08c3159496aeb86a873e8d6ffa",
+      "failures": []
+    },
+    "reduce": {
+      "lufs": -13.0,
+      "tp": -1.3,
+      "samples": 669696,
+      "finite": true,
+      "pitch": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.48,
+        "cents_p05": 289.03,
+        "cents_p95": 325.92,
+        "p95_abs_cents": 325.92,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.55,
+        "frames_abs_error_over_20_cents": 0.0845
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.01,
+        "cents_p05": -0.73,
+        "cents_p95": 0.76,
+        "p95_abs_cents": 1.33,
+        "frames_both": 1049,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 1.33,
+        "frames_abs_error_over_20_cents": 0.0038
+      },
+      "decay_lift_db": 2.17,
+      "floor_relative_db": -31.91,
+      "sibilance_p99_db": -1.91,
+      "sha256": "01283ef497411aca195e022fbfbbac0507c0d0fbfbb8cd78a3e7f6843137aff1",
+      "failures": []
+    },
+    "add": {
+      "lufs": -13.1,
+      "tp": -1.3,
+      "samples": 669696,
+      "finite": true,
+      "pitch": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.52,
+        "cents_p05": 289.69,
+        "cents_p95": 324.89,
+        "p95_abs_cents": 324.89,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.94,
+        "frames_abs_error_over_20_cents": 0.0845
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 1.0,
+        "median_cents": -0.02,
+        "cents_p05": -0.96,
+        "cents_p95": 0.9,
+        "p95_abs_cents": 1.73,
+        "frames_both": 1049,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 1.73,
+        "frames_abs_error_over_20_cents": 0.0019
+      },
+      "decay_lift_db": 2.2,
+      "floor_relative_db": -31.8,
+      "sibilance_p99_db": -1.95,
+      "sha256": "20aeb6262a7d46d36b6e7f0b2a7acf5e15d72c471928f518a4d3dfaa0d7f8393",
+      "failures": []
+    }
+  }
+}

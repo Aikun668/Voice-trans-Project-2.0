@@ -1,0 +1,46 @@
+{
+  "experiment": "F1-EXP-006",
+  "phase": "F1-P3A-3",
+  "test": [
+    "A01",
+    "A05"
+  ],
+  "sealed": [
+    "A02",
+    "A03",
+    "A04",
+    "A06",
+    "B01",
+    "B02",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "algorithm": "soft tanh: tanh(3*x)/3; 4x oversampling; 20kHz lowpass; wet diagnostic",
+  "drive": 3.0,
+  "wets": {
+    "Wet50": 0.5,
+    "Wet60": 0.6,
+    "Wet70": 0.7
+  },
+  "reuse": [
+    {
+      "scheme": "Wet50",
+      "source_experiment": "F1-EXP-004",
+      "source_scheme": "Medium",
+      "drive": 3.0,
+      "wet": 0.5
+    },
+    {
+      "scheme": "Wet70",
+      "source_experiment": "F1-EXP-005",
+      "source_scheme": "Light",
+      "drive": 3.0,
+      "wet": 0.7
+    }
+  ],
+  "target_lufs": -18.549999999999997,
+  "blind_seed": 20261031,
+  "no_stacking": true
+}

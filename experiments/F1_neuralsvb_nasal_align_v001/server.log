@@ -1,0 +1,8 @@
+127.0.0.1 - - [26/Oct/2026 07:13:21] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:13:21] "GET /audio/shige_normal__base_a2p.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:13:21] "GET /audio/shige_normal__original.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:17:47] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:17:47] "GET /audio/shige_normal__original.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:18:23] "GET /audio/shige_normal__base_a2p.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:22:45] "GET /audio/shige_normal__base_a2a.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:33:08] "GET /audio/shige_normal__original.wav HTTP/1.1" 304 -

@@ -1,0 +1,332 @@
+{
+  "scope": "module A analysis only; no DSP and no listening judgment",
+  "assumptions": "normal/off-pitch labels identify input files only; no pitch correctness claim",
+  "tolerances": {
+    "level_db": 0.1,
+    "dynamic_db": 0.1,
+    "active_seconds": 0.1,
+    "band_fraction": 0.01,
+    "time_mismatch_fraction": 0.01
+  },
+  "recordings": [
+    {
+      "id": "person_normal",
+      "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_normal.wav",
+      "source_sha256": "086558fbe53b4e087bf10423acaf198cb1f4b2ba8f22ee28914eb13a5cfa8b15",
+      "format": {
+        "sample_rate": 44100,
+        "subtype": "PCM_16",
+        "samples": 757286,
+        "seconds": 17.172018140589568
+      },
+      "features_file": "person_normal_features.json",
+      "activity_gate_dbfs": -48.15528178215027,
+      "active_seconds": 16.37,
+      "dynamic_range_db": 24.4310317993164,
+      "candidate_count": 20,
+      "candidate_preview": [
+        {
+          "start_seconds": 0.95,
+          "end_seconds": 1.02
+        },
+        {
+          "start_seconds": 1.02,
+          "end_seconds": 1.13
+        },
+        {
+          "start_seconds": 1.13,
+          "end_seconds": 1.15
+        },
+        {
+          "start_seconds": 1.38,
+          "end_seconds": 1.4
+        },
+        {
+          "start_seconds": 1.4,
+          "end_seconds": 1.48
+        }
+      ],
+      "independent_calculation": {
+        "p50_rms_abs_error_db": 2.0250372045893528e-07,
+        "p95_p10_dynamic_abs_error_db": 7.965105801588379e-07,
+        "band_fraction_deltas": {
+          "body": 0.0,
+          "mid": -1.6653345369377348e-16,
+          "presence": 0.0,
+          "high": 0.0
+        },
+        "measurement_frames": [
+          {
+            "type": "quietest_active_frame",
+            "start_seconds": 0.26,
+            "end_seconds": 0.28,
+            "rms_dbfs_independent": -48.138657920294406
+          },
+          {
+            "type": "loudest_active_frame",
+            "start_seconds": 6.94,
+            "end_seconds": 6.96,
+            "rms_dbfs_independent": -6.012380811830189
+          }
+        ],
+        "method": "NumPy direct RMS/FFT with SciPy Hann; cross-checks numerical implementation, not perceptual ground truth."
+      },
+      "invariance": {
+        "pad_1s_each_side": {
+          "expected_level_shift_db": 0,
+          "actual_p50_level_shift_db": -0.007029533386230469,
+          "dynamic_range_delta_db": 0.12744178771973225,
+          "active_seconds_delta": 0.03999999999999915,
+          "gate_delta_db": -0.07193589210510254,
+          "max_band_fraction_delta": 0.00086624882910602,
+          "activity_time_mismatch": 0.0023296447291788003,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": false
+        },
+        "pad_5s_each_side": {
+          "expected_level_shift_db": 0,
+          "actual_p50_level_shift_db": -0.027172088623046875,
+          "dynamic_range_delta_db": 0.6728252410888729,
+          "active_seconds_delta": 0.09999999999999787,
+          "gate_delta_db": -0.38143491744995117,
+          "max_band_fraction_delta": 0.00086624882910602,
+          "activity_time_mismatch": 0.0064065230052417,
+          "high_candidate_time_mismatch": 0.0005824111822947001,
+          "diagnostic_within_tolerance": false
+        },
+        "gain_-12dB": {
+          "expected_level_shift_db": -12,
+          "actual_p50_level_shift_db": -12.0,
+          "dynamic_range_delta_db": 1.5258789112237992e-06,
+          "active_seconds_delta": 0.0,
+          "gate_delta_db": -12.000000238418579,
+          "max_band_fraction_delta": 1.6653345369377348e-16,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": true
+        },
+        "gain_-6dB": {
+          "expected_level_shift_db": -6,
+          "actual_p50_level_shift_db": -6.0,
+          "dynamic_range_delta_db": 0.0,
+          "active_seconds_delta": 0.0,
+          "gate_delta_db": -6.0,
+          "max_band_fraction_delta": 2.220446049250313e-16,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": true
+        }
+      }
+    },
+    {
+      "id": "person_off_pitch",
+      "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_medium.wav",
+      "source_sha256": "4f6775a7738a76cee694d92ed8459b13cd1cb15dba2568fd8e79c1b1b749122e",
+      "format": {
+        "sample_rate": 44100,
+        "subtype": "PCM_16",
+        "samples": 946445,
+        "seconds": 21.461337868480726
+      },
+      "features_file": "person_off_pitch_features.json",
+      "activity_gate_dbfs": -47.72241268157959,
+      "active_seconds": 21.15,
+      "dynamic_range_db": 21.87158794403076,
+      "candidate_count": 15,
+      "candidate_preview": [
+        {
+          "start_seconds": 0.63,
+          "end_seconds": 0.65
+        },
+        {
+          "start_seconds": 0.72,
+          "end_seconds": 0.87
+        },
+        {
+          "start_seconds": 1.14,
+          "end_seconds": 1.18
+        },
+        {
+          "start_seconds": 1.8,
+          "end_seconds": 1.83
+        },
+        {
+          "start_seconds": 4.34,
+          "end_seconds": 4.43
+        }
+      ],
+      "independent_calculation": {
+        "p50_rms_abs_error_db": 3.3977172364529906e-07,
+        "p95_p10_dynamic_abs_error_db": 3.7133288799395814e-07,
+        "band_fraction_deltas": {
+          "body": 0.0,
+          "mid": -1.1102230246251565e-16,
+          "presence": 1.0842021724855044e-19,
+          "high": 6.505213034913027e-19
+        },
+        "measurement_frames": [
+          {
+            "type": "quietest_active_frame",
+            "start_seconds": 16.45,
+            "end_seconds": 16.47,
+            "rms_dbfs_independent": -47.70594088295784
+          },
+          {
+            "type": "loudest_active_frame",
+            "start_seconds": 7.38,
+            "end_seconds": 7.4,
+            "rms_dbfs_independent": -5.652483145135978
+          }
+        ],
+        "method": "NumPy direct RMS/FFT with SciPy Hann; cross-checks numerical implementation, not perceptual ground truth."
+      },
+      "invariance": {
+        "pad_1s_each_side": {
+          "expected_level_shift_db": 0,
+          "actual_p50_level_shift_db": -0.0005526542663574219,
+          "dynamic_range_delta_db": 0.04041295051574778,
+          "active_seconds_delta": 0.010000000000001563,
+          "gate_delta_db": -0.07134799957275106,
+          "max_band_fraction_delta": 0.001227561470833638,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0009319664492078285,
+          "diagnostic_within_tolerance": true
+        },
+        "pad_5s_each_side": {
+          "expected_level_shift_db": 0,
+          "actual_p50_level_shift_db": -0.0011053085327148438,
+          "dynamic_range_delta_db": 0.15077219009398846,
+          "active_seconds_delta": 0.020000000000003126,
+          "gate_delta_db": -0.2635114669799776,
+          "max_band_fraction_delta": 0.001088608627729526,
+          "activity_time_mismatch": 0.0009319664492078285,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": false
+        },
+        "gain_-12dB": {
+          "expected_level_shift_db": -12,
+          "actual_p50_level_shift_db": -11.999999046325684,
+          "dynamic_range_delta_db": -1.9073485901799359e-07,
+          "active_seconds_delta": 0.0,
+          "gate_delta_db": -12.000000190734859,
+          "max_band_fraction_delta": 6.661338147750939e-16,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": true
+        },
+        "gain_-6dB": {
+          "expected_level_shift_db": -6,
+          "actual_p50_level_shift_db": -6.000000953674316,
+          "dynamic_range_delta_db": -9.536742950899679e-08,
+          "active_seconds_delta": 0.0,
+          "gate_delta_db": -5.999999427795409,
+          "max_band_fraction_delta": 2.220446049250313e-16,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": true
+        }
+      }
+    },
+    {
+      "id": "network_normal",
+      "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\web_singing\\gtsinger_alto_control\\告白气球_normal.wav",
+      "source_sha256": "961a715b14292591938047d0ad8448a7a10ff6cf3437f0cec44eb1539fc84216",
+      "format": {
+        "sample_rate": 48000,
+        "subtype": "PCM_24",
+        "samples": 292320,
+        "seconds": 6.09
+      },
+      "features_file": "network_normal_features.json",
+      "activity_gate_dbfs": -58.79286642074585,
+      "active_seconds": 6.07,
+      "dynamic_range_db": 21.407726478576652,
+      "candidate_count": 3,
+      "candidate_preview": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 0.1
+        },
+        {
+          "start_seconds": 1.14,
+          "end_seconds": 1.21
+        },
+        {
+          "start_seconds": 4.19,
+          "end_seconds": 4.21
+        }
+      ],
+      "independent_calculation": {
+        "p50_rms_abs_error_db": 7.901887570938015e-07,
+        "p95_p10_dynamic_abs_error_db": 5.354011030078709e-07,
+        "band_fraction_deltas": {
+          "body": 0.0,
+          "mid": -2.7755575615628914e-17,
+          "presence": 1.734723475976807e-18,
+          "high": -8.131516293641283e-20
+        },
+        "measurement_frames": [
+          {
+            "type": "quietest_active_frame",
+            "start_seconds": 4.82,
+            "end_seconds": 4.84,
+            "rms_dbfs_independent": -58.76815559926307
+          },
+          {
+            "type": "loudest_active_frame",
+            "start_seconds": 2.53,
+            "end_seconds": 2.55,
+            "rms_dbfs_independent": -14.681587856082261
+          }
+        ],
+        "method": "NumPy direct RMS/FFT with SciPy Hann; cross-checks numerical implementation, not perceptual ground truth."
+      },
+      "invariance": {
+        "pad_1s_each_side": {
+          "expected_level_shift_db": 0,
+          "actual_p50_level_shift_db": -0.0048847198486328125,
+          "dynamic_range_delta_db": 0.07832164764405647,
+          "active_seconds_delta": 0.019999999999999574,
+          "gate_delta_db": -0.5031149864196749,
+          "max_band_fraction_delta": 0.00011615698027533927,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0016420361247947454,
+          "diagnostic_within_tolerance": true
+        },
+        "pad_5s_each_side": {
+          "expected_level_shift_db": 0,
+          "actual_p50_level_shift_db": -0.0048847198486328125,
+          "dynamic_range_delta_db": 0.07832164764405647,
+          "active_seconds_delta": 0.019999999999999574,
+          "gate_delta_db": -1.1640735626220646,
+          "max_band_fraction_delta": 0.00011615698027533927,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": true
+        },
+        "gain_-12dB": {
+          "expected_level_shift_db": -12,
+          "actual_p50_level_shift_db": -11.999998092651367,
+          "dynamic_range_delta_db": 1.9073486612342094e-07,
+          "active_seconds_delta": 0.0,
+          "gate_delta_db": -12.000000667572024,
+          "max_band_fraction_delta": 3.3306690738754696e-16,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": true
+        },
+        "gain_-6dB": {
+          "expected_level_shift_db": -6,
+          "actual_p50_level_shift_db": -6.0,
+          "dynamic_range_delta_db": -3.433227533378158e-06,
+          "active_seconds_delta": 0.0,
+          "gate_delta_db": -6.000001907348633,
+          "max_band_fraction_delta": 3.3306690738754696e-16,
+          "activity_time_mismatch": 0.0,
+          "high_candidate_time_mismatch": 0.0,
+          "diagnostic_within_tolerance": true
+        }
+      }
+    }
+  ]
+}

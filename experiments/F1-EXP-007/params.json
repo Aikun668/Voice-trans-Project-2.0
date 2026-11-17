@@ -1,0 +1,189 @@
+{
+  "experiment": "F1-EXP-007",
+  "sample_id": "A01",
+  "ranges": {
+    "low_shelf": {
+      "freq_hz": [
+        220,
+        300,
+        400
+      ],
+      "gain_db": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "q": [
+        0.7,
+        0.8,
+        0.9
+      ]
+    },
+    "high_shelf": {
+      "freq_hz": [
+        3000
+      ],
+      "gain_db": [
+        4,
+        8
+      ],
+      "q": [
+        0.7
+      ]
+    },
+    "peak": {
+      "freq_hz": [
+        500,
+        1500
+      ],
+      "gain_db": [
+        3
+      ],
+      "q": [
+        0.8,
+        1.0
+      ]
+    },
+    "saturation": {
+      "drive": [
+        3,
+        6
+      ],
+      "wet": [
+        0.5,
+        0.6,
+        0.7
+      ],
+      "oversampling": 4,
+      "lowpass_hz": 20000
+    }
+  },
+  "candidates": [
+    {
+      "id": "C01",
+      "group": "EQ",
+      "type": "low_shelf",
+      "freq": 220,
+      "gain": 2.0,
+      "q": 0.7,
+      "label": "LowShelf 220Hz +2dB Q0.7"
+    },
+    {
+      "id": "C02",
+      "group": "EQ",
+      "type": "low_shelf",
+      "freq": 220,
+      "gain": 4.0,
+      "q": 0.7,
+      "label": "LowShelf 220Hz +4dB Q0.7"
+    },
+    {
+      "id": "C03",
+      "group": "EQ",
+      "type": "low_shelf",
+      "freq": 300,
+      "gain": 4.0,
+      "q": 0.8,
+      "label": "LowShelf 300Hz +4dB Q0.8"
+    },
+    {
+      "id": "C04",
+      "group": "EQ",
+      "type": "low_shelf",
+      "freq": 400,
+      "gain": 3.0,
+      "q": 0.9,
+      "label": "LowShelf 400Hz +3dB Q0.9"
+    },
+    {
+      "id": "C05",
+      "group": "EQ",
+      "type": "low_shelf",
+      "freq": 220,
+      "gain": 6.0,
+      "q": 0.7,
+      "label": "LowShelf 220Hz +6dB Q0.7"
+    },
+    {
+      "id": "C06",
+      "group": "EQ",
+      "type": "high_shelf",
+      "freq": 3000,
+      "gain": 4.0,
+      "q": 0.7,
+      "label": "HighShelf 3000Hz +4dB Q0.7"
+    },
+    {
+      "id": "C07",
+      "group": "EQ",
+      "type": "high_shelf",
+      "freq": 3000,
+      "gain": 8.0,
+      "q": 0.7,
+      "label": "HighShelf 3000Hz +8dB Q0.7"
+    },
+    {
+      "id": "C08",
+      "group": "EQ",
+      "type": "peak",
+      "freq": 500,
+      "gain": 3.0,
+      "q": 0.8,
+      "label": "Peak 500Hz +3dB Q0.8"
+    },
+    {
+      "id": "C09",
+      "group": "EQ",
+      "type": "peak",
+      "freq": 1500,
+      "gain": 3.0,
+      "q": 1.0,
+      "label": "Peak 1500Hz +3dB Q1.0"
+    },
+    {
+      "id": "C10",
+      "group": "SAT",
+      "drive": 3.0,
+      "wet": 0.5,
+      "label": "tanh drive3 wet0.5"
+    },
+    {
+      "id": "C11",
+      "group": "SAT",
+      "drive": 3.0,
+      "wet": 0.6,
+      "label": "tanh drive3 wet0.6"
+    },
+    {
+      "id": "C12",
+      "group": "SAT",
+      "drive": 6.0,
+      "wet": 0.5,
+      "label": "tanh drive6 wet0.5"
+    },
+    {
+      "id": "C13",
+      "group": "SAT",
+      "drive": 6.0,
+      "wet": 0.6,
+      "label": "tanh drive6 wet0.6"
+    },
+    {
+      "id": "C14",
+      "group": "SAT",
+      "drive": 6.0,
+      "wet": 0.7,
+      "label": "tanh drive6 wet0.7"
+    }
+  ],
+  "screen_rules": {
+    "max_crest_drop_db": 3.0,
+    "min_centroid_ratio": 0.78,
+    "max_centroid_ratio": 1.25,
+    "max_low_gain_db": 6.0,
+    "max_high_gain_db": 8.0
+  },
+  "target_lufs": -18.0,
+  "note": "only one module per candidate; no stacking; A01 only"
+}

@@ -1,0 +1,75 @@
+{
+  "groups": 5,
+  "players": 11,
+  "full_decode_checks": [
+    {
+      "file": "delivery/molihua_normal__original.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 573830
+    },
+    {
+      "file": "delivery/molihua_normal__vocoder.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 573830
+    },
+    {
+      "file": "delivery/molihua_normal__a2p.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 573830
+    },
+    {
+      "file": "delivery/shige_normal__original.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 757286
+    },
+    {
+      "file": "delivery/shige_normal__vocoder.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 757286
+    },
+    {
+      "file": "delivery/zuixuan_normal__original.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 1039526
+    },
+    {
+      "file": "delivery/zuixuan_normal__vocoder.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 1039526
+    },
+    {
+      "file": "delivery/shige_medium__original.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 946445
+    },
+    {
+      "file": "delivery/shige_medium__vocoder.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 946445
+    },
+    {
+      "file": "delivery/shige_severe__original.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 1101266
+    },
+    {
+      "file": "delivery/shige_severe__vocoder.wav",
+      "sha256_matches": true,
+      "channels": 1,
+      "frames": 1101266
+    }
+  ],
+  "played_all_to_end_at_8x_muted": true,
+  "seek_and_mutual_pause_pass": true,
+  "listening_judgment_performed": false
+}

@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>我们的歌 · 原版回听</title>
+<style>body{max-width:800px;margin:32px auto;padding:0 16px;font:16px/1.65 system-ui;background:#f4f6f9;color:#243040}button{font:inherit;margin:4px;padding:8px 12px;cursor:pointer}button[aria-pressed=true]{background:#235ac1;color:white}audio{width:100%;margin:12px 0}li{margin:7px 0}</style>
+<h1>我们的歌 · 原版回听</h1><p>先听 B。各版直接播放原 WAV，响度保持历史原样。切换时尽量保留当前秒数。</p>
+<div id="buttons"></div><audio id="player" controls preload="metadata"></audio><p id="note"></p><ol id="history"></ol>
+<script>
+const versions=[["B · 后来调响的有力版", "../WOMENDE_FOCUS_2026-11-04_v006/audio/baseline.wav", "你刚指认的版本，v003–v006 的有力基线，约 −13.1 LUFS。"], ["A · 最初的升调＋补谐波", "../WOMENDE_FOCUS_2026-11-03_v001/audio/c2_keyup_tilt.wav", "v001 试听页③，当时评为最接近正常版，稍空，约 −18.5 LUFS。"], ["C · 早期唱片人声链 V1", "../DEMO_2026-11-02_v001/audio/f1_womende_v1.wav", "早期试听选过 V1，同时反馈空旷。 同文件：D · 后续唱片人声链 V1。"], ["E · 有力版加收尾", "../WOMENDE_FOCUS_2026-11-03_v003/audio/op_a.wav", "v003 ③，你当时觉得和②力度分不出，仍空。"], ["F · 有力版再升一点", "../WOMENDE_FOCUS_2026-11-03_v003/audio/k400_tilt_a.wav", "v003 ④，力度分不出，反馈不会嗲，仍空。"], ["G · 有力版重压字尾", "../WOMENDE_FOCUS_2026-11-04_v005/audio/tail.wav", "你觉得空旷似乎少一点，但约 11–12 秒有电感。"], ["H · 有力版缓和字尾", "../WOMENDE_FOCUS_2026-11-04_v006/audio/soft_tail.wav", "v006 ④，和②差不多，11–12 秒没听到电感。"]];
+const player=document.querySelector('#player');
+const buttons=document.querySelector('#buttons');
+let revision=0;
+function select(index){
+  const t=player.currentTime||0, playing=!player.paused, turn=++revision;
+  for(const [i,b] of [...buttons.children].entries()) b.setAttribute('aria-pressed',String(i===index));
+  document.querySelector('#note').textContent=versions[index][2];
+  player.addEventListener('loadedmetadata',()=>{if(turn!==revision)return;player.currentTime=Math.min(t,Math.max(0,player.duration-.05));if(playing)player.play().catch(()=>{});},{once:true});
+  player.src=versions[index][1];
+}
+versions.forEach(([label,path,note],i)=>{
+  const b=document.createElement('button');b.textContent=label;b.onclick=()=>select(i);buttons.append(b);
+  const li=document.createElement('li');li.textContent=label+'。'+note;document.querySelector('#history').append(li);
+});
+select(0);
+</script></html>

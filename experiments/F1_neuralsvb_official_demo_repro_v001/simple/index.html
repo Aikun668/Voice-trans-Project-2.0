@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>从哪一步开始发颤</title>
+<style>body{max-width:640px;margin:30px auto;padding:0 18px;font:18px/1.8 system-ui;background:#f4f6fa;color:#172337}button{font:inherit;padding:10px 16px;margin:5px;border:1px solid #b8c5d5;border-radius:8px;background:#fff;cursor:pointer}button[aria-pressed=true]{background:#2357a4;color:#fff}audio{width:100%;margin:12px 0}.n{color:#536177;font-size:15px}</style>
+<h2>从哪一步开始发颤？</h2><p class="n">同一句英文，按顺序听 1 → 2 → 3 → 4。每一步都比上一步多处理了一层。听到哪一步开始"颤"，就告诉我数字。</p>
+<p>句子：<button data-s="1" aria-pressed="true">第 1 句</button><button data-s="2" aria-pressed="false">第 2 句</button></p>
+<p><button data-v="1" aria-pressed="true">1 原录音</button><button data-v="2" aria-pressed="false">2 只过声码器</button><button data-v="3" aria-pressed="false">3 模型重建</button><button data-v="4" aria-pressed="false">4 模型美化</button></p>
+<audio id="p" controls></audio>
+<script>let s='1',v='1';const p=document.getElementById('p');
+function go(){const t=p.currentTime,r=!p.paused;p.src='s'+s+'_v'+v+'.wav';p.onloadedmetadata=()=>{p.currentTime=Math.min(t,p.duration-.05);if(r)p.play()};
+document.querySelectorAll('[data-s]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.s===s));document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v))}
+document.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{s=b.dataset.s;p.currentTime=0;go()});document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{v=b.dataset.v;go()});go();</script>

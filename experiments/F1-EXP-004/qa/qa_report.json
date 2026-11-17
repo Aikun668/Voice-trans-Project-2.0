@@ -1,0 +1,260 @@
+{
+  "experiment": "F1-EXP-004",
+  "phase": "F1-P3A",
+  "target_lufs": -18.549999999999997,
+  "records": [
+    {
+      "sample_id": "A01",
+      "dataset_id": "A_self_01",
+      "source": "Self",
+      "display": "平凡之路 / 薄音版",
+      "input_wav": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\平凡之路薄音版.wav",
+      "input_sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+      "sample_rate": 48000,
+      "frames": 630784,
+      "schemes": {
+        "Light": {
+          "drive": 1.5,
+          "wet": 0.5,
+          "raw_file": "experiments\\F1-EXP-004\\outputs\\processed_raw\\Light\\A01.wav",
+          "raw_sha256": "7d848530f59bd14cdbeff83d6dd903ae3a7c0afc9b8b7832effc9a16c5389832",
+          "raw_frames": 630784,
+          "raw_peak_dbfs": -7.054168468500297,
+          "raw_rms_dbfs": -19.463013875974728,
+          "raw_clipped_samples": 0,
+          "raw_lufs": -19.41,
+          "raw_true_peak_dbtp": -7.05,
+          "lufs_gain_db": -0.1700000000000017,
+          "spectral": {
+            "centroid_hz": 293.47064566903725,
+            "flatness": 0.01941508893898323
+          },
+          "lag_samples": 0,
+          "matched": {
+            "file": "experiments\\F1-EXP-004\\listening\\audio\\A01_B.wav",
+            "gain_db": 0.860000000000003,
+            "lufs": -18.55,
+            "true_peak_dbtp": -6.19,
+            "frames": 630784,
+            "sha256": "7740c43fd1e61a680383682263acac22e7237ea3d1dcf6f6e00537a3c1f35226"
+          },
+          "label": "B"
+        },
+        "Medium": {
+          "drive": 3.0,
+          "wet": 0.5,
+          "raw_file": "experiments\\F1-EXP-004\\outputs\\processed_raw\\Medium\\A01.wav",
+          "raw_sha256": "a635b663a1ab75db231af311f8790b7cbaf116c6739d41025c49a4bc27c5a7c3",
+          "raw_frames": 630784,
+          "raw_peak_dbfs": -8.231514896057021,
+          "raw_rms_dbfs": -19.799198321563008,
+          "raw_clipped_samples": 0,
+          "raw_lufs": -19.76,
+          "raw_true_peak_dbtp": -8.23,
+          "lufs_gain_db": -0.5200000000000031,
+          "spectral": {
+            "centroid_hz": 293.2241346508091,
+            "flatness": 0.01986077456478268
+          },
+          "lag_samples": 0,
+          "matched": {
+            "file": "experiments\\F1-EXP-004\\listening\\audio\\A01_A.wav",
+            "gain_db": 1.2100000000000044,
+            "lufs": -18.56,
+            "true_peak_dbtp": -7.02,
+            "frames": 630784,
+            "sha256": "d7a70593be9ccebd140fe9d0570890de42e1fe93b52e891e0483076472c6dd88"
+          },
+          "label": "A"
+        },
+        "Strong": {
+          "drive": 6.0,
+          "wet": 0.5,
+          "raw_file": "experiments\\F1-EXP-004\\outputs\\processed_raw\\Strong\\A01.wav",
+          "raw_sha256": "bdae0fb41a4ac81b6ae5702099ce432f8af77d5ee6e5827f71ea76e8867e7fdb",
+          "raw_frames": 630784,
+          "raw_peak_dbfs": -9.851604330358821,
+          "raw_rms_dbfs": -20.647841983520618,
+          "raw_clipped_samples": 0,
+          "raw_lufs": -20.63,
+          "raw_true_peak_dbtp": -9.85,
+          "lufs_gain_db": -1.3900000000000006,
+          "spectral": {
+            "centroid_hz": 295.7015294095579,
+            "flatness": 0.02143852597831633
+          },
+          "lag_samples": 0,
+          "matched": {
+            "file": "experiments\\F1-EXP-004\\listening\\audio\\A01_C.wav",
+            "gain_db": 2.080000000000002,
+            "lufs": -18.56,
+            "true_peak_dbtp": -7.77,
+            "frames": 630784,
+            "sha256": "8a62f479085bd22c3a234feda8e12b9ad714828a859c0c420144d1a67a4b2a14"
+          },
+          "label": "C"
+        }
+      },
+      "notes": [],
+      "original_matched": {
+        "file": "experiments\\F1-EXP-004\\listening\\audio\\A01_original.wav",
+        "gain_db": 0.6900000000000013,
+        "lufs": -18.55,
+        "true_peak_dbtp": -5.72,
+        "frames": 630784,
+        "sha256": "1fd58a7c775f19587528b7467eea2d2d1170f9aa3d0175f4965feee20aa19d4d"
+      }
+    },
+    {
+      "sample_id": "A05",
+      "dataset_id": "A_gt_02",
+      "source": "GTSinger",
+      "display": "女A-002（来源未保留）",
+      "input_wav": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\wav\\女A-002.wav",
+      "input_sha256": "1f2b63c251ee2f8a30f8a6117a64b9d5a161b71e1fead0cd8b523e26ad7e205c",
+      "sample_rate": 48000,
+      "frames": 572160,
+      "schemes": {
+        "Light": {
+          "drive": 1.5,
+          "wet": 0.5,
+          "raw_file": "experiments\\F1-EXP-004\\outputs\\processed_raw\\Light\\A05.wav",
+          "raw_sha256": "73370bfa66ff21f8d98d6f1a005060e4be6e596be124ac7c95206914088f6dd8",
+          "raw_frames": 572160,
+          "raw_peak_dbfs": -6.604800856022091,
+          "raw_rms_dbfs": -20.327470035605995,
+          "raw_clipped_samples": 0,
+          "raw_lufs": -21.38,
+          "raw_true_peak_dbtp": -6.6,
+          "lufs_gain_db": -0.14000000000000057,
+          "spectral": {
+            "centroid_hz": 458.87651658493405,
+            "flatness": 0.017001106760046864
+          },
+          "lag_samples": 0,
+          "matched": {
+            "file": "experiments\\F1-EXP-004\\listening\\audio\\A05_A.wav",
+            "gain_db": 2.830000000000002,
+            "lufs": -18.55,
+            "true_peak_dbtp": -3.77,
+            "frames": 572160,
+            "sha256": "bc4b1aa2e504552355bb882c4a444ec7d3f1fdd1c0e6578cdaf5b9f8a9f699bb"
+          },
+          "label": "A"
+        },
+        "Medium": {
+          "drive": 3.0,
+          "wet": 0.5,
+          "raw_file": "experiments\\F1-EXP-004\\outputs\\processed_raw\\Medium\\A05.wav",
+          "raw_sha256": "7197c15fa231acfb2d0e4954cc8276895626692a8e495028f667e682d2b69eb2",
+          "raw_frames": 572160,
+          "raw_peak_dbfs": -7.849189122996361,
+          "raw_rms_dbfs": -20.66732131629852,
+          "raw_clipped_samples": 0,
+          "raw_lufs": -21.7,
+          "raw_true_peak_dbtp": -7.84,
+          "lufs_gain_db": -0.46000000000000085,
+          "spectral": {
+            "centroid_hz": 453.2809419303338,
+            "flatness": 0.01769599374246615
+          },
+          "lag_samples": 0,
+          "matched": {
+            "file": "experiments\\F1-EXP-004\\listening\\audio\\A05_C.wav",
+            "gain_db": 3.150000000000002,
+            "lufs": -18.56,
+            "true_peak_dbtp": -4.69,
+            "frames": 572160,
+            "sha256": "07672c479e3bfb3ec0a999e73abdca7b64794b8b3b504fb096ae3a01ac604b14"
+          },
+          "label": "C"
+        },
+        "Strong": {
+          "drive": 6.0,
+          "wet": 0.5,
+          "raw_file": "experiments\\F1-EXP-004\\outputs\\processed_raw\\Strong\\A05.wav",
+          "raw_sha256": "fb2652753483a49c18eb7b054b7490a356970d044226b73901434f4b553bb923",
+          "raw_frames": 572160,
+          "raw_peak_dbfs": -9.459963526258651,
+          "raw_rms_dbfs": -21.448604612400587,
+          "raw_clipped_samples": 0,
+          "raw_lufs": -22.47,
+          "raw_true_peak_dbtp": -9.45,
+          "lufs_gain_db": -1.2300000000000004,
+          "spectral": {
+            "centroid_hz": 446.6860657458416,
+            "flatness": 0.01967575469500925
+          },
+          "lag_samples": 0,
+          "matched": {
+            "file": "experiments\\F1-EXP-004\\listening\\audio\\A05_B.wav",
+            "gain_db": 3.9200000000000017,
+            "lufs": -18.55,
+            "true_peak_dbtp": -5.53,
+            "frames": 572160,
+            "sha256": "5ba670961e920aac0ca981cebae32484af42a7b6b25b667958894a2ed984468b"
+          },
+          "label": "B"
+        }
+      },
+      "notes": [],
+      "original_matched": {
+        "file": "experiments\\F1-EXP-004\\listening\\audio\\A05_original.wav",
+        "gain_db": 2.6900000000000013,
+        "lufs": -18.55,
+        "true_peak_dbtp": -3.2,
+        "frames": 572160,
+        "sha256": "8e054e912c678e27828d95ca3f9c2cba18dbd441863154a1f1730d83569e777b"
+      }
+    }
+  ],
+  "chain": {
+    "experiment": "F1-EXP-004",
+    "phase": "F1-P3A",
+    "oversampling": 4,
+    "lowpass_hz": 20000,
+    "wet": 0.5,
+    "drives": {
+      "Light": 1.5,
+      "Medium": 3.0,
+      "Strong": 6.0
+    },
+    "alignment": [
+      {
+        "sample_id": "A01",
+        "scheme": "Light",
+        "lag_samples": 0
+      },
+      {
+        "sample_id": "A01",
+        "scheme": "Medium",
+        "lag_samples": 0
+      },
+      {
+        "sample_id": "A01",
+        "scheme": "Strong",
+        "lag_samples": 0
+      },
+      {
+        "sample_id": "A05",
+        "scheme": "Light",
+        "lag_samples": 0
+      },
+      {
+        "sample_id": "A05",
+        "scheme": "Medium",
+        "lag_samples": 0
+      },
+      {
+        "sample_id": "A05",
+        "scheme": "Strong",
+        "lag_samples": 0
+      }
+    ],
+    "alignment_pass": true,
+    "raw_clipping": false,
+    "ab_mapping_seed": 20261031,
+    "technical_pass": true
+  },
+  "status": "pending_jade"
+}

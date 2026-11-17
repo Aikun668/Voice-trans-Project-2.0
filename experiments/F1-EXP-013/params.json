@@ -1,0 +1,22 @@
+{
+  "experiment": "F1-EXP-013",
+  "phase": "F1-DIAG-3",
+  "question": "响度完全一致时，薄音版是否仍被听作'薄'",
+  "processing": "纯常数增益；无 EQ/谐波/压缩/饱和/限制器",
+  "pair": "A_self_01 (薄音版) vs A_self_02 (正常版) — 平凡之路",
+  "target_lufs": -18.0,
+  "loudness_tolerance_lu": 0.3,
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  }
+}

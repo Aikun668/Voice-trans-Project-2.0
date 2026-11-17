@@ -1,0 +1,47 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>F1 · SHIGE 鼻音位置对齐</title>
+<style>body{margin:0;background:#f4f6fa;color:#172337;font:16px/1.7 system-ui}.wrap{max-width:1180px;margin:24px auto;padding:0 20px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px;align-items:start}header{grid-column:1/-1}h1{font-size:26px;margin:0 0 4px}section{background:#fff;padding:16px 20px;border:1px solid #d9e1eb;border-radius:12px;margin-bottom:14px}h2{font-size:17px;margin:0 0 6px}button{font:inherit;padding:6px 11px;margin:3px;border:1px solid #b8c5d5;border-radius:7px;background:#fff;cursor:pointer}button[aria-pressed=true]{background:#2357a4;color:#fff;border-color:#2357a4}audio{width:100%;margin:8px 0}.note{color:#536177;font-size:14px}.seg{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:6px 0;border-top:1px solid #eef1f6}.seg b{min-width:130px}select{font:inherit;padding:4px}textarea{width:100%;box-sizing:border-box;min-height:120px;font:inherit;padding:8px;border:1px solid #b8c5d5;border-radius:7px}.sticky{position:sticky;top:12px}#now{font-variant-numeric:tabular-nums;font-weight:600}@media(max-width:900px){.wrap{grid-template-columns:1fr}.sticky{position:static}}</style>
+<div class="wrap"><header><h1>F1 · SHIGE 鼻音／呱声 位置对齐</h1><p class="note">这一步<b>不处理音频</b>，只确认“你听到的问题到底在哪里”。四个版本是同一条 SHIGE，响度已匹配。我无法听音，下面的候选片段是我用测量挑的（美化版中频比原音抬高最多的位置），可能挑错，请以你的听感为准。</p></header>
+<div>
+<section><h2>播放器</h2><div id="vers"></div><p><b>当前：</b><span id="cur"></span> · <span id="now">0:00.0</span></p><audio id="player" controls preload="auto"></audio>
+<p class="note">切换版本时接续当前位置。点“记录当前位置”会把时间和版本写进右边备注。</p><button id="mark">记录当前位置到备注</button></section>
+<section><h2>候选片段（每个约 2 秒）</h2><p class="note">先用“原音”听，再切到“完整美化”“仅声码器”“模型重建”，对比同一片段。</p><div id="segs"></div></section>
+</div>
+<div class="sticky"><section><h2>你的反馈（自动暂存）</h2>
+<p class="note">每个片段，完整美化版听起来——</p><div id="fb"></div>
+<p><b>整条的“鼻音感”从哪个版本开始有？</b><br>
+<select id="wh"><option value="">未答</option><option>原音就有</option><option>仅声码器就有</option><option>模型重建(a2a)开始有</option><option>完整美化(a2p)才有</option><option>四个都差不多</option></select></p>
+<p><b>除了候选，你觉得最明显的位置和现象</b>（如 3.2s 呱声）：</p>
+<textarea id="notes" placeholder="例：3.2 秒呱；9 秒某个字像捏着鼻子……"></textarea>
+<p><button id="copy">复制反馈文本</button><button id="dl">下载 feedback.json</button><button id="clr">清空</button> <span id="msg" class="note"></span></p></section></div></div>
+<script>
+const V={original:'原音',base_vocoder:'仅声码器',base_a2a:'模型重建 a2a',base_a2p:'完整美化 a2p'};
+const SEG=[[2.55,'2.5 s'],[3.2,'3.2 s（你标的呱）'],[4.46,'4.5 s'],[6.55,'6.5 s'],[8.52,'8.5 s'],[10.8,'10.8 s'],[12.61,'12.6 s'],[14.33,'14.3 s'],[15.86,'15.9 s']];
+const player=document.getElementById('player'),cur=document.getElementById('cur'),now=document.getElementById('now');let mode='original',stopAt=null,busy=false;
+const fmt=t=>Math.floor(t/60)+':'+(t%60).toFixed(1).padStart(4,'0'),f=k=>'audio/shige_normal__'+k+'.wav';
+const vers=document.getElementById('vers');for(const k in V){const b=document.createElement('button');b.textContent=V[k];b.dataset.m=k;b.onclick=()=>load(k);vers.appendChild(b)}
+const mark=()=>document.querySelectorAll('#vers button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.m===mode)));
+async function load(k){if(busy||(k===mode&&player.src))return;busy=true;const t=player.currentTime||0,r=!player.paused;player.pause();
+ try{await new Promise((ok,no)=>{player.addEventListener('loadedmetadata',ok,{once:true});player.addEventListener('error',no,{once:true});player.src=f(k);player.load()});
+  mode=k;player.currentTime=Math.min(t,Math.max(0,player.duration-.05));cur.textContent=V[k];mark();if(r)await player.play()}
+ catch(e){cur.textContent='加载失败，请刷新'}finally{busy=false}}
+const segs=document.getElementById('segs'),fb=document.getElementById('fb');
+SEG.forEach(([c,l],i)=>{const d=document.createElement('div');d.className='seg';d.innerHTML='<b>'+l+'</b>';
+ const b=document.createElement('button');b.textContent='▶ 播放 ±1 s';b.onclick=async()=>{player.currentTime=Math.max(0,c-1);stopAt=c+1;await player.play()};d.appendChild(b);segs.appendChild(d);
+ const r=document.createElement('div');r.className='seg';
+ r.innerHTML='<b>'+l+'</b><select data-i="'+i+'"><option value="">未答</option><option>没有鼻音/没问题</option><option>轻微鼻音</option><option>明显鼻音</option><option>呱/怪声</option><option>跳变</option><option>其他（写备注）</option></select>';fb.appendChild(r)});
+player.addEventListener('timeupdate',()=>{now.textContent=fmt(player.currentTime);if(stopAt&&player.currentTime>=stopAt){player.pause();stopAt=null}});
+player.addEventListener('seeking',()=>{if(stopAt&&player.currentTime>stopAt+.2)stopAt=null});
+const KEY='f1_shige_nasal_align_v001',notes=document.getElementById('notes'),wh=document.getElementById('wh'),msg=document.getElementById('msg');
+function st(){const a={};document.querySelectorAll('#fb select').forEach(s=>a[SEG[s.dataset.i][1]]=s.value||null);
+ return{clip:'shige_normal',experiment:'F1_neuralsvb_nasal_align_v001',listening_status:'pending_jade',segment_answers_on_a2p:a,nasal_first_appears_in:wh.value||null,notes:notes.value,saved_at:new Date().toISOString()}}
+const save=()=>localStorage.setItem(KEY,JSON.stringify(st()));
+try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s){notes.value=s.notes||'';wh.value=s.nasal_first_appears_in||'';
+ document.querySelectorAll('#fb select').forEach(x=>x.value=(s.segment_answers_on_a2p||{})[SEG[x.dataset.i][1]]||'')}}catch(e){}
+document.addEventListener('change',save);notes.addEventListener('input',save);
+const txt=()=>{const s=st();return['【F1 SHIGE 鼻音位置对齐反馈】',...Object.entries(s.segment_answers_on_a2p).map(([k,v])=>k+'：'+(v||'（未答）')),'鼻音感从哪个版本开始：'+(s.nasal_first_appears_in||'（未答）'),'备注：'+(s.notes||'（无）')].join('\n')};
+document.getElementById('mark').onclick=()=>{notes.value+=(notes.value&&!notes.value.endsWith('\n')?'\n':'')+'['+fmt(player.currentTime)+' · '+V[mode]+'] ';notes.focus();save()};
+document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.writeText(txt());msg.textContent='已复制'}catch(e){msg.textContent='复制失败'}};
+document.getElementById('dl').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(st(),null,2)],{type:'application/json'}));a.download='feedback.json';a.click()};
+document.getElementById('clr').onclick=()=>{if(confirm('清空？')){localStorage.removeItem(KEY);document.querySelectorAll('#fb select').forEach(s=>s.value='');wh.value='';notes.value=''}};
+load('original');
+</script></html>

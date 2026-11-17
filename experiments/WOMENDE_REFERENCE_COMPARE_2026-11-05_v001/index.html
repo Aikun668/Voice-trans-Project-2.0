@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>我们的歌 · 与参考唱法对照</title>
+<style>body{font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif;max-width:780px;margin:25px auto;padding:0 16px;background:#f4f6fa;color:#202638}section{background:white;border-radius:10px;padding:16px;margin:14px 0}button{font:inherit;padding:8px 12px;margin:4px;cursor:pointer}button[aria-pressed=true]{background:#305ec4;color:white}audio,textarea{width:100%;box-sizing:border-box}textarea{min-height:95px}label{display:block}</style></head>
+<body><h1>我们的歌 · 与参考唱法对照</h1>
+<section><p>用耳机，音量保持不变。每段约 14 秒，切换版本从当前进度接着听。为听细节，五版用固定增益调到约 −18.5 LUFS。②③沿用之前成品的限幅，新增对照没有再限幅。我不能听音，效果由你判断。</p>
+<button type="button" data-src="audio/original.wav">① 原音·同样响</button>
+<button type="button" data-src="audio/best.wav">② 目前⑤</button>
+<button type="button" data-src="audio/previous.wav">③ 上次阶段性成果</button>
+<button type="button" data-src="audio/normal.wav">④ 你的正常版</button>
+<button type="button" data-src="audio/singer.wav">⑤ 王力宏原唱人声</button>
+<audio id="player" controls preload="metadata"></audio>
+<p id="description"></p><p>②是你觉得乱震较少的处理版。④是你自己的正常唱法。⑤是原唱分离人声，保留原制作和可能的分离痕迹。④⑤是不同录音，同一秒不一定是同一个字，请按歌词找同一句。</p></section>
+<section><p><b>1. ②与⑤原唱相比，最明显差在哪里？</b></p>
+<div data-q="最明显差别"><label><input type="radio" name="space" value="乱震">唱声乱震</label><label><input type="radio" name="space" value="力度">力度或发声感觉</label><label><input type="radio" name="space" value="音色">音色或清晰度</label><label><input type="radio" name="space" value="咬字">咬字或尾音</label><label><input type="radio" name="space" value="不好说">不好说</label></div>
+<p><b>2. ②与④你的正常版相比，最主要差在哪里？</b></p>
+<div data-q="对自己的正常版"><label><input type="radio" name="strength" value="乱震">唱声乱震</label><label><input type="radio" name="strength" value="力度">力度或发声感觉</label><label><input type="radio" name="strength" value="音色">音色或清晰度</label><label><input type="radio" name="strength" value="咬字">咬字或尾音</label><label><input type="radio" name="strength" value="不好说">不好说</label></div>
+<p><b>3. ②你觉得值得优先调整哪一处？</b></p>
+<div data-q="下一步重点"><label><input type="radio" name="artifact" value="减少乱震">减少乱震</label><label><input type="radio" name="artifact" value="增强力度">增强力度</label><label><input type="radio" name="artifact" value="改善音色">改善音色</label><label><input type="radio" name="artifact" value="改善咬字">改善咬字</label><label><input type="radio" name="artifact" value="拿不准">拿不准</label></div>
+<p>补充：写具体歌词、秒数、对比对象和你听到的差别。可以多写几处。</p><textarea id="notes"></textarea><p><button id="generate" type="button">生成答案</button></p><textarea id="answer" readonly placeholder="生成后复制结果发回"></textarea></section>
+<script>
+const player=document.querySelector('#player'), buttons=[...document.querySelectorAll('[data-src]')],description=document.querySelector('#description');
+let current=0,serial=0,loading=false,position=0,playing=false;
+function select(i){
+ if(!loading){position=player.currentTime||0;playing=!player.paused}
+ loading=true;const id=++serial;current=i;
+ buttons.forEach((b,j)=>b.setAttribute('aria-pressed',String(i===j)));
+ description.textContent=buttons[i].textContent;
+ player.addEventListener('loadedmetadata',()=>{if(id!==serial)return;player.currentTime=Math.min(position,Math.max(0,player.duration-.05));loading=false;if(playing)player.play().catch(()=>{});},{once:true});
+ player.src=buttons[i].dataset.src;
+}
+buttons.forEach((b,i)=>b.addEventListener('click',()=>{if(i!==current)select(i)}));select(0);
+document.querySelector('#generate').onclick=()=>{const lines=['【我们的歌 与参考唱法对照 v001】'];document.querySelectorAll('[data-q]').forEach(el=>{const checked=el.querySelector('input:checked');lines.push(el.dataset.q+'：'+(checked?checked.value:'未答'))});lines.push('补充：'+(document.querySelector('#notes').value.trim()||'未答'));const a=document.querySelector('#answer');a.value=lines.join('\n');a.focus();a.select()};
+</script></body></html>

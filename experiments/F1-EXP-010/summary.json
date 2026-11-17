@@ -1,0 +1,27 @@
+{
+  "experiment": "F1-EXP-010",
+  "phase": "F1-P4A",
+  "status": "weak_positive_pending_revision",
+  "sample_id": "A01",
+  "versions": [
+    "V1",
+    "V2"
+  ],
+  "deliverable": [
+    "V1",
+    "V2"
+  ],
+  "hard_failed": [],
+  "diag_marked": [
+    "V2"
+  ],
+  "target_lufs": -19.36,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "listening_result": "B=V2(100%) 稍微好了一点点且未报告副作用；A=V1(50%) 与原音无区别。方向性弱正向，幅度不足",
+  "jade_verbatim": "就版本B稍微好了一点点。a和原版没区别",
+  "classification": "weak_positive 初测；未达'正常试听即可感知'的明确改善标准",
+  "next_action": "待用户决策：推荐单控制量修订（谐波覆盖 H2-H8→H2-H12，依据 H9-H11 实测缺口 6.8-8.4dB，其余不变）；修订后仍'一点点'则停方案A转C；明确改善则 A05 复验"
+}

@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>F1 · 官网英文样例复现</title>
+<style>body{margin:0;background:#f4f6fa;color:#172337;font:16px/1.7 system-ui}.wrap{max-width:1100px;margin:24px auto;padding:0 20px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px;align-items:start}header{grid-column:1/-1}h1{font-size:26px;margin:0 0 4px}section{background:#fff;padding:16px 20px;border:1px solid #d9e1eb;border-radius:12px;margin-bottom:14px}h2{font-size:17px;margin:0 0 6px}button{font:inherit;padding:6px 11px;margin:3px;border:1px solid #b8c5d5;border-radius:7px;background:#fff;cursor:pointer}button[aria-pressed=true]{background:#2357a4;color:#fff;border-color:#2357a4}audio{width:100%;margin:8px 0}.note{color:#536177;font-size:14px}.row{padding:8px 0;border-top:1px solid #eef1f6}.row b{display:block}select{font:inherit;padding:4px;margin:2px 4px 2px 0}textarea{width:100%;box-sizing:border-box;min-height:100px;font:inherit;padding:8px;border:1px solid #b8c5d5;border-radius:7px}.sticky{position:sticky;top:12px}#now{font-variant-numeric:tabular-nums;font-weight:600}@media(max-width:900px){.wrap{grid-template-columns:1fr}.sticky{position:static}}</style>
+<div class="wrap"><header><h1>F1 · 官网英文样例：我们能不能复现？</h1>
+<p class="note">用的是 NeuralSVB 官网演示页的中文样例（不是你的录音）。同一句有 4 个版本：<b>官网业余版</b>（输入）、<b>官网美化版</b>（作者自己的结果）、<b>我们·成对流程</b>（官方做法：额外给一份"专业版"的音高当目标）、<b>我们·单文件流程</b>（只给你的录音，我们 F1 现在的做法）。响度已对齐业余版。我无法听音，全部由你判断。</p></header>
+<div>
+<section><h2>播放器</h2><p><b>句子：</b><span id="clipbtns"></span></p><div id="vers"></div>
+<p><b>当前：</b><span id="cur"></span> · <span id="now">0:00.0</span></p><audio id="player" controls preload="auto"></audio>
+<p class="note">切换句子从头开始；同一句切换版本时接续位置。成对流程的输出时间轴跟“专业版”走，可能比业余版略长或短，属正常。</p></section></div>
+<div class="sticky"><section><h2>你的反馈（自动暂存）</h2>
+<p class="note">每一句各选一次（听完 4 个版本之后）：</p><div id="fb"></div>
+<div class="row"><b>总体：我们复现出来的（成对流程）接近官网美化版吗？</b><select id="q1"><option value="">未答</option><option>很接近，同样好</option><option>能听出差距，但还不错</option><option>明显更差（沙哑/鼻音/怪声）</option><option>说不清</option></select></div>
+<div class="row"><b>总体：单文件流程相比成对流程？</b><select id="q2"><option value="">未答</option><option>差不多</option><option>单文件更差</option><option>单文件更好</option><option>说不清</option></select></div>
+<div class="row"><b>备注</b><textarea id="notes"></textarea></div>
+<p><button id="copy">复制反馈文本</button><button id="dl">下载 feedback.json</button><button id="clr">清空</button> <span id="msg" class="note"></span></p></section></div></div>
+<script>
+const V={gt_a:'官网业余版（输入）',official_NSVB:'官网美化版',ours_pair:'我们·成对流程',ours_single:'我们·单文件流程'};
+const CL=['1','2','3'],OPT='<option value="">未答</option><option>我们的和官网美化版一样好</option><option>我们的有一点差</option><option>我们的明显更差</option><option>官网美化版也不好听</option>';
+const player=document.getElementById('player'),cur=document.getElementById('cur'),now=document.getElementById('now');let clip='1',mode='gt_a',busy=false;
+const fmt=t=>Math.floor(t/60)+':'+(t%60).toFixed(1).padStart(4,'0'),f=(c,k)=>'audio/en'+c+'_'+k+'.wav';
+const cb=document.getElementById('clipbtns'),vers=document.getElementById('vers'),fb=document.getElementById('fb');
+CL.forEach(c=>{const b=document.createElement('button');b.textContent='第 '+c+' 句';b.dataset.c=c;b.onclick=()=>{clip=c;mode='gt_a';load(true)};cb.appendChild(b);
+ const r=document.createElement('div');r.className='row';r.innerHTML='<b>第 '+c+' 句</b><select data-c="'+c+'">'+OPT+'</select>';fb.appendChild(r)});
+for(const k in V){const b=document.createElement('button');b.textContent=V[k];b.dataset.m=k;b.onclick=()=>{mode=k;load(false)};vers.appendChild(b)}
+const mark=()=>{document.querySelectorAll('#vers button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.m===mode)));document.querySelectorAll('#clipbtns button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.c===clip)))};
+async function load(reset){if(busy)return;busy=true;const t=reset?0:player.currentTime||0,r=!player.paused;player.pause();
+ try{await new Promise((ok,no)=>{player.addEventListener('loadedmetadata',ok,{once:true});player.addEventListener('error',no,{once:true});player.src=f(clip,mode);player.load()});
+  player.currentTime=Math.min(t,Math.max(0,player.duration-.05));cur.textContent='第 '+clip+' 句 · '+V[mode];mark();if(r)await player.play()}
+ catch(e){cur.textContent='加载失败，请刷新'}finally{busy=false}}
+player.addEventListener('timeupdate',()=>now.textContent=fmt(player.currentTime));
+const KEY='f1_official_demo_repro_en_v001',notes=document.getElementById('notes'),q1=document.getElementById('q1'),q2=document.getElementById('q2'),msg=document.getElementById('msg');
+function st(){const a={};document.querySelectorAll('#fb select').forEach(s=>a['第'+s.dataset.c+'句']=s.value||null);return{experiment:'F1_neuralsvb_official_demo_repro_v001',listening_status:'pending_jade',per_clip_pair_vs_official:a,pair_vs_official_overall:q1.value||null,single_vs_pair:q2.value||null,notes:notes.value,saved_at:new Date().toISOString()}}
+const save=()=>localStorage.setItem(KEY,JSON.stringify(st()));
+try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s){notes.value=s.notes||'';q1.value=s.pair_vs_official_overall||'';q2.value=s.single_vs_pair||'';document.querySelectorAll('#fb select').forEach(x=>x.value=(s.per_clip_pair_vs_official||{})['第'+x.dataset.c+'句']||'')}}catch(e){}
+document.addEventListener('change',save);notes.addEventListener('input',save);
+const txt=()=>{const s=st();return['【F1 官网英文样例复现 反馈】',...Object.entries(s.per_clip_pair_vs_official).map(([k,v])=>k+'（成对流程 vs 官网美化版）：'+(v||'（未答）')),'总体 成对 vs 官网：'+(s.pair_vs_official_overall||'（未答）'),'单文件 vs 成对：'+(s.single_vs_pair||'（未答）'),'备注：'+(s.notes||'（无）')].join('\n')};
+document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.writeText(txt());msg.textContent='已复制'}catch(e){msg.textContent='复制失败'}};
+document.getElementById('dl').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(st(),null,2)],{type:'application/json'}));a.download='feedback.json';a.click()};
+document.getElementById('clr').onclick=()=>{if(confirm('清空？')){localStorage.removeItem(KEY);document.querySelectorAll('#fb select').forEach(s=>s.value='');q1.value='';q2.value='';notes.value=''}};
+load(true);
+</script></html>

@@ -1,0 +1,27 @@
+{
+  "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\web_singing\\gtsinger_alto_control\\告白气球_normal.wav",
+  "sha256": "961a715b14292591938047d0ad8448a7a10ff6cf3437f0cec44eb1539fc84216",
+  "windows": [
+    {
+      "source_start_seconds": 0.5,
+      "source_end_seconds": 4.0,
+      "full_recording_gate_dbfs": -58.79286642074585,
+      "crop_gate_dbfs": -58.10569801330567,
+      "full_dynamic_db": 21.407726478576652,
+      "crop_dynamic_db": 22.083490371704094,
+      "candidate_label_mismatch_fraction_in_overlap": 0.0,
+      "note": "Different summary values can be expected: the clip contains a different distribution of singing."
+    },
+    {
+      "source_start_seconds": 2.0,
+      "source_end_seconds": 5.5,
+      "full_recording_gate_dbfs": -58.79286642074585,
+      "crop_gate_dbfs": -58.00939178466797,
+      "full_dynamic_db": 21.407726478576652,
+      "crop_dynamic_db": 23.133012199401854,
+      "candidate_label_mismatch_fraction_in_overlap": 0.0,
+      "note": "Different summary values can be expected: the clip contains a different distribution of singing."
+    }
+  ],
+  "note": "Statistics on a shorter excerpt need not equal the full recording. Only compare corresponding time labels; no human-listened ground truth."
+}

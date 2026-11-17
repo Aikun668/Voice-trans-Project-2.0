@@ -1,0 +1,112 @@
+[
+  {
+    "thin_s": 0.76,
+    "normal_s": 1.06,
+    "matched_offset_s": -0.04,
+    "rise_db_100_to_200ms": {
+      "thin": 3.79,
+      "normal": 2.8,
+      "current": 2.87
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 4.44,
+    "normal_s": 4.4,
+    "matched_offset_s": 0.02,
+    "rise_db_100_to_200ms": {
+      "thin": 1.68,
+      "normal": -3.84,
+      "current": 1.74
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 5.12,
+    "normal_s": 5.0,
+    "matched_offset_s": 0.0,
+    "rise_db_100_to_200ms": {
+      "thin": 0.64,
+      "normal": -0.56,
+      "current": 0.58
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 7.94,
+    "normal_s": 7.74,
+    "matched_offset_s": 0.02,
+    "rise_db_100_to_200ms": {
+      "thin": 0.98,
+      "normal": 0.1,
+      "current": 1.09
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 8.6,
+    "normal_s": 8.4,
+    "matched_offset_s": -0.02,
+    "rise_db_100_to_200ms": {
+      "thin": 3.13,
+      "normal": 0.13,
+      "current": 3.02
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 9.1,
+    "normal_s": 8.9,
+    "matched_offset_s": 0.02,
+    "rise_db_100_to_200ms": {
+      "thin": 2.01,
+      "normal": -0.77,
+      "current": 2.25
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 11.4,
+    "normal_s": 11.1,
+    "matched_offset_s": 0.02,
+    "rise_db_100_to_200ms": {
+      "thin": -0.84,
+      "normal": 10.98,
+      "current": -0.39
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 11.64,
+    "normal_s": 11.42,
+    "matched_offset_s": 0.04,
+    "rise_db_100_to_200ms": {
+      "thin": 2.03,
+      "normal": 2.9,
+      "current": 1.22
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 12.06,
+    "normal_s": 11.84,
+    "matched_offset_s": 0.02,
+    "rise_db_100_to_200ms": {
+      "thin": 2.67,
+      "normal": -3.98,
+      "current": 2.58
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  },
+  {
+    "thin_s": 12.54,
+    "normal_s": 12.3,
+    "matched_offset_s": 0.02,
+    "rise_db_100_to_200ms": {
+      "thin": -0.08,
+      "normal": -1.58,
+      "current": 0.04
+    },
+    "note": "浊音起点代理，未确认字头或元音"
+  }
+]

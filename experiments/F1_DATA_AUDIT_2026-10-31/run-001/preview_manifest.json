@@ -1,0 +1,134 @@
+[
+  {
+    "sample_id": "A05",
+    "dataset_id": "A_gt_02",
+    "source": "GTSinger",
+    "category": "A_thin",
+    "split": "dev",
+    "preview_file": "previews\\A05.wav",
+    "gain_db": 0.9200000000000017,
+    "lufs": -20.32,
+    "true_peak_dbtp": -4.97
+  },
+  {
+    "sample_id": "A06",
+    "dataset_id": "A_gt_03",
+    "source": "GTSinger",
+    "category": "A_thin",
+    "split": "holdout",
+    "preview_file": "previews\\A06.wav",
+    "gain_db": 3.860000000000003,
+    "lufs": -20.32,
+    "true_peak_dbtp": -9.0
+  },
+  {
+    "sample_id": "A01",
+    "dataset_id": "A_self_01",
+    "source": "Self",
+    "category": "A_thin",
+    "split": "dev",
+    "preview_file": "previews\\A01.wav",
+    "gain_db": -1.0799999999999983,
+    "lufs": -20.32,
+    "true_peak_dbtp": -7.49
+  },
+  {
+    "sample_id": "A02",
+    "dataset_id": "A_self_03",
+    "source": "Self",
+    "category": "A_thin",
+    "split": "dev",
+    "preview_file": "previews\\A02.wav",
+    "gain_db": 4.7500000000000036,
+    "lufs": -20.32,
+    "true_peak_dbtp": -4.05
+  },
+  {
+    "sample_id": "A03",
+    "dataset_id": "A_self_05",
+    "source": "Self",
+    "category": "A_thin",
+    "split": "dev",
+    "preview_file": "previews\\A03.wav",
+    "gain_db": 0.25000000000000355,
+    "lufs": -20.33,
+    "true_peak_dbtp": -5.69
+  },
+  {
+    "sample_id": "A04",
+    "dataset_id": "A_self_07",
+    "source": "Self",
+    "category": "A_thin",
+    "split": "holdout",
+    "preview_file": "previews\\A04.wav",
+    "gain_db": 0.32000000000000384,
+    "lufs": -20.32,
+    "true_peak_dbtp": -5.84
+  },
+  {
+    "sample_id": "B01",
+    "dataset_id": "B_gt_02",
+    "source": "GTSinger",
+    "category": "B_full",
+    "split": "dev",
+    "preview_file": "previews\\B01.wav",
+    "gain_db": 3.2900000000000027,
+    "lufs": -20.33,
+    "true_peak_dbtp": -3.64
+  },
+  {
+    "sample_id": "B03",
+    "dataset_id": "B_gt_03",
+    "source": "GTSinger",
+    "category": "B_full",
+    "split": "holdout",
+    "preview_file": "previews\\B03.wav",
+    "gain_db": 1.5400000000000027,
+    "lufs": -20.32,
+    "true_peak_dbtp": -5.17
+  },
+  {
+    "sample_id": "B02",
+    "dataset_id": "B_gt_06",
+    "source": "GTSinger",
+    "category": "B_full",
+    "split": "dev",
+    "preview_file": "previews\\B02.wav",
+    "gain_db": 4.060000000000002,
+    "lufs": -20.33,
+    "true_peak_dbtp": -6.2
+  },
+  {
+    "sample_id": "C01",
+    "dataset_id": "C_gt_01",
+    "source": "GTSinger",
+    "category": "C_observe",
+    "split": "dev",
+    "preview_file": "previews\\C01.wav",
+    "gain_db": -0.34999999999999787,
+    "lufs": -20.31,
+    "true_peak_dbtp": -3.2
+  },
+  {
+    "sample_id": "C03",
+    "dataset_id": "C_gt_02",
+    "source": "GTSinger",
+    "category": "C_observe",
+    "split": "holdout",
+    "preview_file": "previews\\C03.wav",
+    "gain_db": 3.0500000000000043,
+    "lufs": -20.29,
+    "true_peak_dbtp": -4.36
+  },
+  {
+    "sample_id": "C02",
+    "dataset_id": "C_gt_05",
+    "source": "GTSinger",
+    "category": "C_observe",
+    "split": "dev",
+    "preview_file": "previews\\C02.wav",
+    "gain_db": 5.990000000000002,
+    "lufs": -20.32,
+    "true_peak_dbtp": -7.99
+  }
+]

@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>F1-P4C 包络移植盲听（A01）</title><style>body{font:16px/1.6 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:880px;margin:28px auto;padding:0 18px}h1{font-size:24px}.card{background:#fff;border:1px solid #dce0e6;border-radius:10px;padding:16px;margin:14px 0}h3{font-size:17px;margin:0 0 8px}.meta{color:#596579;margin:4px 0}.row{display:grid;grid-template-columns:170px 1fr;gap:10px;align-items:center;margin:8px 0}label{color:#596579;font-size:14px}audio{width:100%}.note{background:#fff8e6;border:1px solid #ead9a6;border-radius:8px;padding:12px;margin-bottom:14px}.key{background:#eef4ff;border:1px solid #c4d6f0;border-radius:8px;padding:12px;margin-bottom:14px}.badge{background:#e9edf3;color:#4a5568;border-radius:4px;font-size:12px;padding:1px 6px;margin-left:6px}</style>
+<h1>F1-P4C · 包络移植（仅 A01）</h1>
+<div class="key"><b>本轮目标：把效果调到"一听就能听出来"。</b><br>
+机制 = 论文（Interspeech 2016，Perrotin）的<b>频谱包络移植</b>半部分：把你的正常版实测的剩余包络差搬过来——
+重点是 2.5–3.5kHz"芯/力量"区（+2~4dB）与 5–8kHz（+1.5~2.5dB），以及把上轮过冲的 1–1.5kHz 小幅收回。<br>
+两档强度已隐藏。基线是上轮已认可的"上轮最佳版"（ harmonic 对齐版），A/B 都是在它之上加的。</div>
+<div class="note"><b>本轮登记：</b>预期 = 更有力量、更实，一听可辨（不再需要认真对比）。<br>
+否决副作用 = 只亮不厚、嘶嘶声/齿音加重（注意 s/是 等辅音）、金属感、闷、像别人。<br>
+<b>请对照"上轮最佳版"听 A/B：差别是否一听可辨？哪个更好？</b></div>
+<div class="card"><h3>试听（A/B 匿名）</h3>
+<div class="row"><label>原音</label><audio controls preload="metadata" src="audio/original.wav"></audio></div>
+<div class="row"><label>上轮最佳版（基线）</label><audio controls preload="metadata" src="audio/prev_best.wav"></audio></div><div class="row"><label>版本 A</label><audio controls preload="metadata" src="audio/A.wav"></audio></div><div class="row"><label>版本 B <span class="badge">带工程标记</span></label><audio controls preload="metadata" src="audio/B.wav"></audio></div></div>
+<p class="meta">仅 A01（13.14s）；Holdout 未处理；统一响度 -19.26 LUFS（常数增益，无限制器）。
+若 100% 档仍不满足"一听可辨"，下一步是论文另一半（生成新谐波），不是继续加大 EQ。</p></html>

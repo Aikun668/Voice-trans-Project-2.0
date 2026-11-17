@@ -1,0 +1,65 @@
+{
+  "source_experiment": "F1-EXP-020",
+  "version": "S45",
+  "archive_mapping": "B = S45",
+  "files": {
+    "original": "audio/original.wav",
+    "s45": "audio/s45.wav"
+  },
+  "duration": 13.141333333333334,
+  "common_lufs": -20.4,
+  "archived_report_target_lufs": -19.97,
+  "archived_audio_remeasured": {
+    "original": {
+      "lufs": -20.4,
+      "true_peak_dbtp": -7.1
+    },
+    "s45": {
+      "lufs": -20.1,
+      "true_peak_dbtp": -3.2
+    }
+  },
+  "audio_checks": {
+    "original": {
+      "archive_file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1-EXP-020\\listening\\audio\\original.wav",
+      "archive_sha256": "793cdd991d63895c03f3d18049698459b69659aee470176f0884dc6ecc927129",
+      "sha256": "34e26609e3bf7fad23e7438dcb4eca9a63dc1dd720b3a1ab94b011215af711c1",
+      "samples": 630784,
+      "sample_rate": 48000,
+      "fixed_gain_db": 0.0,
+      "clipped_samples": 0,
+      "finite": true,
+      "lufs": -20.4,
+      "true_peak_dbtp": -7.1,
+      "pitch_center_delta_cents": 0.0,
+      "voiced_overlap": 1.0,
+      "p95_abs_pitch_delta_cents": 0.0,
+      "only_fixed_gain_and_pcm_rounding": true
+    },
+    "s45": {
+      "archive_file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1-EXP-020\\listening\\audio\\B.wav",
+      "archive_sha256": "9c4278340a320d28de37d5b83978f4779047abc85ed65f50b5a2718f2cde0df9",
+      "sha256": "fdea8e7e66fe71091cd34fdd4f259ebc79bec5506a14ad910e6c4b68fed4653d",
+      "samples": 630784,
+      "sample_rate": 48000,
+      "fixed_gain_db": -0.29999999999999716,
+      "clipped_samples": 0,
+      "finite": true,
+      "lufs": -20.4,
+      "true_peak_dbtp": -3.5,
+      "pitch_center_delta_cents": -0.00657538944665248,
+      "voiced_overlap": 0.95635305528613,
+      "p95_abs_pitch_delta_cents": 20.759455217297045,
+      "only_fixed_gain_and_pcm_rounding": true
+    }
+  },
+  "technical_pass": true,
+  "listening": "pending_jade",
+  "s45_parameters_changed": false,
+  "s45_algorithm_rerun": false,
+  "model_loaded": false,
+  "whole_key_shift": false,
+  "new_limiter_or_effects": false,
+  "protected_file_count": 73,
+  "protected_files_changed": []
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-27",
+  "page": "listening_v001",
+  "feedback_verbatim": "路线一 Smule 试听反馈：\nM1 茉莉花：更好；否决项：无\nO1 官方中文3：一样；否决项：无\nO3 官方英文6：一样；否决项：无\n拦截核实（可选）：M2\n拦截核实（可选）：M3\n拦截核实（可选）：O2\n\n我感觉被你拦下了也问题没有那么大，尤其是这个O2\n还有上面的M3 M2, 他们确实是很多地方声音被压低了一些\n但比我想象中的要好一些吧",
+  "verdicts": {
+    "M1_molihua_normal": {"choice": "更好", "vetoes": [], "engineering": "technical_pass", "status": "provisional_pass_listening_pending_recheck"},
+    "O1_official_chinese_3": {"choice": "一样", "vetoes": [], "engineering": "technical_pass", "status": "no_clear_benefit"},
+    "O3_official_english_6": {"choice": "一样", "vetoes": [], "engineering": "technical_pass", "status": "no_clear_benefit"},
+    "M2_shige_normal": {"engineering": "technical_blocked_soft_suppression", "jade_check": "声音确实被压低了一些，但比想象中好一些"},
+    "M3_zuixuan_normal": {"engineering": "technical_blocked_soft_suppression", "jade_check": "声音确实被压低了一些，但比想象中好一些"},
+    "O2_official_chinese_9": {"engineering": "technical_blocked_dynamic_reshape", "jade_check": "问题没有那么大（Jade 原话）"}
+  },
+  "notes": "技术拦截经 Jade 核实：问题真实存在但严重度低于测量数值的观感；拦截理由（轻声被压、动态重塑）听感上可辨认。Jade 的听感状态以此为准，不得改写。",
+  "next": "G1-G2 待路线二选定后补跑补记；路线结论见 ../REPORT.md"
+}

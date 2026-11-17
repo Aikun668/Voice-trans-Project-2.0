@@ -1,0 +1,28 @@
+{
+  "experiment": "F1-EXP-018",
+  "phase": "F1-P4b",
+  "question": "无配对正常版参考时，X1+M2 能否运行并改善单薄感",
+  "template_source": "4 对自录 Dev 中位数（固定，不再逐例拟合）",
+  "no_new_modules": true,
+  "no_reference_for_target": true,
+  "target": {
+    "id": "M01",
+    "dataset_id": "A_gt_03",
+    "f0_hz": 222.6
+  },
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "listening_target_lufs": -18.0,
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "blind_seed": 20261107
+}

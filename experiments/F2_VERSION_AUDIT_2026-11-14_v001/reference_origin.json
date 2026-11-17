@@ -1,0 +1,50 @@
+{
+  "confirmed_table": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\confirmed_pairs.json",
+  "confirmed_sha256": "3f6add2cc689e207c8b4f549fabc1c734124deded9f7017b87ff06684e810ba8",
+  "pair_count": 17,
+  "selected": [
+    {
+      "id": 1,
+      "phrase": "太多",
+      "self": [
+        4.625,
+        5.389
+      ],
+      "reference": [
+        118.089,
+        118.547
+      ]
+    },
+    {
+      "id": 2,
+      "phrase": "冒险",
+      "self": [
+        6.568,
+        7.518
+      ],
+      "reference": [
+        120.061,
+        120.96
+      ]
+    }
+  ],
+  "offset_candidates": [
+    113.464,
+    113.158,
+    113.49300000000001,
+    113.442
+  ],
+  "median_offset": 113.453,
+  "self_duration": 8.612,
+  "computed_equal_duration_reference": [
+    113.453,
+    122.065
+  ],
+  "actual_export": [
+    113.45299319727891,
+    122.06498866213153
+  ],
+  "approved_full_recording_reference_span_found": false,
+  "inference_reference_input": false,
+  "derivation_matches_export_within_one_sample": true
+}

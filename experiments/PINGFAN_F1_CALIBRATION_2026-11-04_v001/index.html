@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>平凡之路 · F1 验收标定</title>
+  <style>
+    body { max-width: 760px; margin: 28px auto; padding: 0 16px; font: 16px/1.65 system-ui, "Microsoft YaHei", sans-serif; color: #242936; background: #f4f5f7; }
+    h1 { font-size: 25px; line-height: 1.3; }
+    h2 { font-size: 18px; margin: 0 0 8px; }
+    section, form { background: white; border: 1px solid #dce2ea; border-radius: 10px; padding: 16px; margin: 14px 0; }
+    .switch, .ratings { display: flex; flex-wrap: wrap; gap: 8px; }
+    button, select, textarea { font: inherit; }
+    button { padding: 7px 11px; border: 1px solid #b8c2d4; border-radius: 7px; background: #f8f9fc; color: inherit; cursor: pointer; }
+    button[aria-pressed="true"], .primary { background: #2457cd; color: white; border-color: #2457cd; }
+    audio, textarea { width: 100%; box-sizing: border-box; }
+    fieldset { border: 1px solid #dce2ea; border-radius: 7px; margin: 12px 0; }
+    .ratings { gap: 14px; }
+    .ratings label { display: grid; gap: 3px; }
+    textarea { min-height: 80px; padding: 6px; }
+    #answer { min-height: 145px; }
+    .muted { color: #505a70; }
+  </style>
+</head>
+<body>
+  <h1>平凡之路 · F1 验收标定</h1>
+  <p>这次只定一件事：换一首同调录音，确认正常版是否也达到你想要的力度。</p>
+  <section aria-label="试听">
+    <h2>同样响，听这两段</h2>
+    <p>用耳机，音量固定。两段各约 13 秒，实测均为 −18.5 LUFS，仅用固定增益匹配响度。切换版本会保留当前秒数。正常版是另一次演唱，咬字时间可能略有差异。</p>
+    <div class="switch">
+      <button type="button" data-file="original" aria-pressed="true">① 薄音原音</button>
+      <button type="button" data-file="normal" aria-pressed="false">② 本人正常版</button>
+    </div>
+    <p id="description" class="muted"></p>
+    <audio id="player" controls preload="metadata" src="audio/original.wav"></audio>
+    <p id="play-error" role="status"></p>
+  </section>
+  <form id="feedback">
+    <h2>每段听完，给三个分数</h2>
+    <p class="muted">空旷和电感只要能察觉就记 1 或 2。力度以①为起点，②够不够当参考由你定。我不能听音，工程数据和你的评分分开记录。</p>
+    <div id="scores"></div>
+    <label for="notes">如果听到空旷或电感，记下版本和秒数。②里有特别接近你预期的一句，也可以标出来。</label>
+    <textarea id="notes" placeholder="例如：② 约 5–8 秒，力度正好"></textarea>
+    <p><button class="primary" type="submit">生成答案</button></p>
+    <label for="answer">复制下方结果发回</label>
+    <textarea id="answer" readonly></textarea>
+  </form>
+  <script>
+    const descriptions = {
+      original: '薄音原音，只匹配响度，作为力度起点。',
+      normal: '本人正常录音，只匹配响度。请判断这一遍唱得够不够扎实。'
+    };
+    const player = document.getElementById('player');
+    const description = document.getElementById('description');
+    const playError = document.getElementById('play-error');
+    const buttons = [...document.querySelectorAll('.switch button')];
+    description.textContent = descriptions.original;
+
+    let switchCount = 0;
+    let switching = false;
+    let resumeAt = 0;
+    let wasPlaying = false;
+    buttons.forEach(button => button.addEventListener('click', () => {
+      if (button.getAttribute('aria-pressed') === 'true') return;
+      if (!switching) {
+        resumeAt = player.currentTime;
+        wasPlaying = !player.paused;
+      }
+      switching = true;
+      const request = ++switchCount;
+      buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      const file = button.dataset.file;
+      description.textContent = descriptions[file];
+      playError.textContent = '';
+      player.addEventListener('loadedmetadata', () => {
+        if (request !== switchCount) return;
+        player.currentTime = Math.min(resumeAt, Math.max(0, player.duration - 0.05));
+        switching = false;
+        if (wasPlaying) player.play().catch(() => {});
+      }, { once: true });
+      player.src = 'audio/' + file + '.wav';
+    }));
+    player.addEventListener('error', () => {
+      switching = false;
+      playError.textContent = '音频未能加载，请确认试听页和 audio 文件夹在同一目录。';
+    });
+
+    const defects = ['0 没听到', '1 能察觉', '2 明显'];
+    const strength = ['0 和①差不多或更弱', '1 比①更有力，但还不够', '2 力度达到我想要的程度'];
+    const scoreRows = buttons.map((button, index) => {
+      const field = document.createElement('fieldset');
+      const title = document.createElement('legend');
+      title.textContent = button.textContent;
+      field.append(title);
+      const ratings = document.createElement('div');
+      ratings.className = 'ratings';
+      const dimensions = [['空旷', defects], ['电感', defects]];
+      if (index !== 0) dimensions.push(['力度', strength]);
+      const scores = dimensions.map(([name, options]) => {
+        const label = document.createElement('label');
+        const select = document.createElement('select');
+        select.add(new Option('请选择', ''));
+        options.forEach(option => select.add(new Option(option)));
+        select.add(new Option('拿不准'));
+        label.append(name, select);
+        ratings.append(label);
+        return { name, select };
+      });
+      field.append(ratings);
+      document.getElementById('scores').append(field);
+      return { title: title.textContent, scores };
+    });
+    document.getElementById('feedback').addEventListener('submit', event => {
+      event.preventDefault();
+      const lines = ['【平凡之路 F1 验收标定 v001】'];
+      for (const { title, scores } of scoreRows) {
+        lines.push(title + '｜' + scores.map(({ name, select }) => name + ' ' + (select.value || '未答')).join(' / '));
+      }
+      lines.push('秒数或补充：' + (document.getElementById('notes').value.trim() || '未答'));
+      const answer = document.getElementById('answer');
+      answer.value = lines.join('\n');
+      answer.focus();
+      answer.select();
+    });
+  </script>
+</body>
+</html>

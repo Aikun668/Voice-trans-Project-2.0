@@ -1,0 +1,93 @@
+{
+ "v002/molihua/original": {
+  "hnr_median_db": 23.4,
+  "hnr_p10_db": 17.3,
+  "voiced_frames": 1044,
+  "jitter_local": 0.0065,
+  "shimmer_local": 0.053
+ },
+ "v002/molihua/vocoder_only": {
+  "hnr_median_db": 25.3,
+  "hnr_p10_db": 19.0,
+  "voiced_frames": 1042,
+  "jitter_local": 0.0056,
+  "shimmer_local": 0.0251
+ },
+ "v002/molihua/a2p": {
+  "hnr_median_db": 27.2,
+  "hnr_p10_db": 20.4,
+  "voiced_frames": 1057,
+  "jitter_local": 0.0039,
+  "shimmer_local": 0.0215
+ },
+ "v002/shige/original": {
+  "hnr_median_db": 18.5,
+  "hnr_p10_db": 5.3,
+  "voiced_frames": 1383,
+  "jitter_local": 0.0115,
+  "shimmer_local": 0.0741
+ },
+ "v002/shige/vocoder_only": {
+  "hnr_median_db": 21.3,
+  "hnr_p10_db": 5.7,
+  "voiced_frames": 1350,
+  "jitter_local": 0.0088,
+  "shimmer_local": 0.0519
+ },
+ "v002/shige/a2p": {
+  "hnr_median_db": 24.7,
+  "hnr_p10_db": 11.8,
+  "voiced_frames": 1285,
+  "jitter_local": 0.0069,
+  "shimmer_local": 0.0334
+ },
+ "v002/zuixuan/original": {
+  "hnr_median_db": 14.9,
+  "hnr_p10_db": 3.8,
+  "voiced_frames": 2123,
+  "jitter_local": 0.0158,
+  "shimmer_local": 0.0966
+ },
+ "v002/zuixuan/vocoder_only": {
+  "hnr_median_db": 17.7,
+  "hnr_p10_db": 4.1,
+  "voiced_frames": 2111,
+  "jitter_local": 0.0138,
+  "shimmer_local": 0.06
+ },
+ "v002/zuixuan/a2p": {
+  "hnr_median_db": 21.8,
+  "hnr_p10_db": 9.1,
+  "voiced_frames": 1849,
+  "jitter_local": 0.009,
+  "shimmer_local": 0.0411
+ },
+ "contract_v001/shige/original": {
+  "hnr_median_db": 18.5,
+  "hnr_p10_db": 5.3,
+  "voiced_frames": 1383,
+  "jitter_local": 0.0115,
+  "shimmer_local": 0.0741
+ },
+ "contract_v001/shige/base_vocoder": {
+  "hnr_median_db": 21.3,
+  "hnr_p10_db": 6.1,
+  "voiced_frames": 1360,
+  "jitter_local": 0.0086,
+  "shimmer_local": 0.0476
+ },
+ "contract_v001/shige/base_a2a": {
+  "hnr_median_db": 24.8,
+  "hnr_p10_db": 10.6,
+  "voiced_frames": 1338,
+  "jitter_local": 0.006,
+  "shimmer_local": 0.0297
+ },
+ "contract_v001/shige/base_a2p": {
+  "hnr_median_db": 24.8,
+  "hnr_p10_db": 12.9,
+  "voiced_frames": 1264,
+  "jitter_local": 0.0067,
+  "shimmer_local": 0.0344
+ }
+}

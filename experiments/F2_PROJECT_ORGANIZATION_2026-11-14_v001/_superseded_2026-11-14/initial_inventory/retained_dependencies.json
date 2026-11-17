@@ -1,0 +1,38 @@
+{
+  "scope": "四条已逐条核对的调用关系，不是全项目依赖闭合证明",
+  "edges": [
+    {
+      "consumer": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\render_reference.py",
+      "target": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_MODEL_LISTEN_2026-11-09_v002\\run.py",
+      "purpose": "动态导入工程检查代码",
+      "literal_verified": true,
+      "physical_action": "retain_in_place"
+    },
+    {
+      "consumer": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\model_sequence.py",
+      "target": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_SEQUENCE_2026-11-09_v001\\render_v002",
+      "purpose": "读取直接参考对照数据",
+      "literal_verified": true,
+      "physical_action": "retain_in_place"
+    },
+    {
+      "consumer": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\reference_sequence.py",
+      "target": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\experiments\\F2_TASK3_PAIR_AUDIT_2026-11-05_v001\\逐字候选对照.csv",
+      "purpose": "读取辅助逐字上下文，不替代最终切口",
+      "literal_verified": true,
+      "physical_action": "retain_in_place"
+    },
+    {
+      "consumer": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_demo_chain_2026-11-02_v003\\run.py",
+      "target": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_demo_chain_2026-11-02_v001\\run.py",
+      "purpose": "复用母带等函数",
+      "literal_verified": true,
+      "physical_action": "retain_in_place"
+    }
+  ],
+  "other_retained": [
+    "f2公共函数",
+    "旧权重与训练表",
+    "原始素材和环境"
+  ]
+}

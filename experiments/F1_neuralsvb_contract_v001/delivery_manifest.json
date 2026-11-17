@@ -1,0 +1,141 @@
+[
+  {
+    "clip": "molihua_normal",
+    "label": "茉莉花 · 正常",
+    "listening_status": "pending_jade",
+    "selected_beautifier": "a2p",
+    "tracks": [
+      {
+        "variant": "original",
+        "file": "delivery/molihua_normal__original.wav",
+        "sha256": "931ac84f0e8fbe47c15f75144a8f762c249bd0dcf28040c814524562734fefe6",
+        "technical_pass": false,
+        "role": "reference",
+        "frames": 573830,
+        "duration_seconds": 13.01201814058957
+      },
+      {
+        "variant": "vocoder",
+        "file": "delivery/molihua_normal__vocoder.wav",
+        "sha256": "26764f2d0c3db0ac38ca8575e7919539c4bb5941986de8bbe4e1b9280df4257a",
+        "technical_pass": true,
+        "role": "engineering_pass_pending_jade",
+        "frames": 573830,
+        "duration_seconds": 13.01201814058957
+      },
+      {
+        "variant": "a2p",
+        "file": "delivery/molihua_normal__a2p.wav",
+        "sha256": "c5ae243516d7330f1f6dfed68e13ee4f28c690d611affe8810f65f86653913fa",
+        "technical_pass": true,
+        "role": "engineering_pass_pending_jade",
+        "frames": 573830,
+        "duration_seconds": 13.01201814058957
+      }
+    ]
+  },
+  {
+    "clip": "shige_normal",
+    "label": "SHIGE · 正常",
+    "listening_status": "pending_jade",
+    "selected_beautifier": null,
+    "tracks": [
+      {
+        "variant": "original",
+        "file": "delivery/shige_normal__original.wav",
+        "sha256": "3862564c9aa15b30f14eef80e004533ce143ddb7241c89a29fb2ba945b49dfb2",
+        "technical_pass": false,
+        "role": "reference",
+        "frames": 757286,
+        "duration_seconds": 17.172018140589568
+      },
+      {
+        "variant": "vocoder",
+        "file": "delivery/shige_normal__vocoder.wav",
+        "sha256": "f45f09fa11c93438cba47bd3465799f60dc9f94693c27447c606370376bdda69",
+        "technical_pass": true,
+        "role": "engineering_pass_pending_jade",
+        "frames": 757286,
+        "duration_seconds": 17.172018140589568
+      }
+    ]
+  },
+  {
+    "clip": "zuixuan_normal",
+    "label": "zuixuan · 正常",
+    "listening_status": "pending_jade",
+    "selected_beautifier": null,
+    "tracks": [
+      {
+        "variant": "original",
+        "file": "delivery/zuixuan_normal__original.wav",
+        "sha256": "00382d75b111c61a1bf1b8bfee99e0c1d11f103e8e3947c134b743ddcf2cf2da",
+        "technical_pass": false,
+        "role": "reference",
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957
+      },
+      {
+        "variant": "vocoder",
+        "file": "delivery/zuixuan_normal__vocoder.wav",
+        "sha256": "cdc5fdf30fb1570cf17ab3cb30e586351ae29778068a81ed94eccb29ea27d2c7",
+        "technical_pass": true,
+        "role": "engineering_pass_pending_jade",
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957
+      }
+    ]
+  },
+  {
+    "clip": "shige_medium",
+    "label": "SHIGE · 中度跑调",
+    "listening_status": "pending_jade",
+    "selected_beautifier": null,
+    "tracks": [
+      {
+        "variant": "original",
+        "file": "delivery/shige_medium__original.wav",
+        "sha256": "7fd76ae96abee171fa169001119790f94648b1cd11a5266d7dfb4d0be8a9fe72",
+        "technical_pass": false,
+        "role": "reference",
+        "frames": 946445,
+        "duration_seconds": 21.461337868480726
+      },
+      {
+        "variant": "vocoder",
+        "file": "delivery/shige_medium__vocoder.wav",
+        "sha256": "98ca960667846b008f041e01401611585a9e9c90cf5a494a037639e4f95c673e",
+        "technical_pass": true,
+        "role": "engineering_pass_pending_jade",
+        "frames": 946445,
+        "duration_seconds": 21.461337868480726
+      }
+    ]
+  },
+  {
+    "clip": "shige_severe",
+    "label": "SHIGE · 严重跑调",
+    "listening_status": "pending_jade",
+    "selected_beautifier": null,
+    "tracks": [
+      {
+        "variant": "original",
+        "file": "delivery/shige_severe__original.wav",
+        "sha256": "ea0cd2e4e016c73f865a0a4c7e07c70a6ac589bda80130d77f58459655aab17a",
+        "technical_pass": false,
+        "role": "reference",
+        "frames": 1101266,
+        "duration_seconds": 24.97201814058957
+      },
+      {
+        "variant": "vocoder",
+        "file": "delivery/shige_severe__vocoder.wav",
+        "sha256": "741aeb8d7a332600ce29c98da62aeb6e7355cbd28bf3710b3883814e2f43427c",
+        "technical_pass": true,
+        "role": "engineering_pass_pending_jade",
+        "frames": 1101266,
+        "duration_seconds": 24.97201814058957
+      }
+    ]
+  }
+]

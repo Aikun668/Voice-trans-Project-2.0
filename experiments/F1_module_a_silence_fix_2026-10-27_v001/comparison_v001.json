@@ -1,0 +1,218 @@
+{
+  "scope": "A only, digital silence fix; no processed WAV or listening evaluation",
+  "old_code_sha256": "ce5983644ebcfa4e94b14217d6c0e7fbe81c4ec5427e7e6f68cbade8de81ecef",
+  "new_code_sha256": "b1f7a337901f1b4752eac58be46d720731c796d1cde1256049206e4398fc06e9",
+  "tolerance_db": 0.1,
+  "cases": [
+    {
+      "name": "person_normal",
+      "source_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_normal.wav",
+      "source_sha256": "086558fbe53b4e087bf10423acaf198cb1f4b2ba8f22ee28914eb13a5cfa8b15",
+      "old_baseline": {
+        "gate_dbfs": -48.15528178215027,
+        "dynamic_db": 24.4310317993164,
+        "active_seconds": 16.37,
+        "p50_dbfs": -11.522331237792969,
+        "candidate_count_not_events": 20,
+        "band_fractions": {
+          "body": 0.548211884061762,
+          "mid": 0.34331300589062647,
+          "presence": 0.001356598237326361,
+          "high": 0.0007118554256885452
+        }
+      },
+      "new_baseline": {
+        "gate_dbfs": -48.15593223571778,
+        "dynamic_db": 24.54091243743897,
+        "active_seconds": 16.39,
+        "p50_dbfs": -11.526691436767578,
+        "candidate_count_not_events": 20,
+        "band_fractions": {
+          "body": 0.549078132890868,
+          "mid": 0.34266314429129924,
+          "presence": 0.001361367198774101,
+          "high": 0.0007138239827467716
+        }
+      },
+      "variations": {
+        "digital_silence_1s_each_side": {
+          "old_dynamic_delta_db": 0.12744178771973225,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "digital_silence_5s_each_side": {
+          "old_dynamic_delta_db": 0.6728252410888729,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "digital_silence_10s_each_side": {
+          "old_dynamic_delta_db": 0.8324352264404311,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "gain_-6dB": {
+          "level_shift_error_db": 0.0,
+          "dynamic_delta_db": 0.0,
+          "active_delta_seconds": 0.0
+        },
+        "gain_-12dB": {
+          "level_shift_error_db": 0.0,
+          "dynamic_delta_db": -3.552713678800501e-15,
+          "active_delta_seconds": 0.0
+        },
+        "nonzero_noise_minus65dbfs_5s_each_side": {
+          "new_dynamic_delta_db": 0.5629446029663043,
+          "new_gate_delta_db": -0.38191771507262473,
+          "new_active_delta_seconds": 0.0799999999999983,
+          "interpretation": "Exploratory artificial nonzero noise, not guaranteed ambient-noise behavior."
+        }
+      }
+    },
+    {
+      "name": "person_off_pitch",
+      "source_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_medium.wav",
+      "source_sha256": "4f6775a7738a76cee694d92ed8459b13cd1cb15dba2568fd8e79c1b1b749122e",
+      "old_baseline": {
+        "gate_dbfs": -47.72241268157959,
+        "dynamic_db": 21.87158794403076,
+        "active_seconds": 21.15,
+        "p50_dbfs": -11.32299518585205,
+        "candidate_count_not_events": 15,
+        "band_fractions": {
+          "body": 0.41679928561317464,
+          "mid": 0.5267567714599443,
+          "presence": 0.0005694524226032305,
+          "high": 0.0006838253179017292
+        }
+      },
+      "new_baseline": {
+        "gate_dbfs": -47.72269809246063,
+        "dynamic_db": 21.91200089454651,
+        "active_seconds": 21.16,
+        "p50_dbfs": -11.323547840118408,
+        "candidate_count_not_events": 15,
+        "band_fractions": {
+          "body": 0.4180268470840083,
+          "mid": 0.5262124671460795,
+          "presence": 0.0005698038948992834,
+          "high": 0.000683881070159339
+        }
+      },
+      "variations": {
+        "digital_silence_1s_each_side": {
+          "old_dynamic_delta_db": 0.04041295051574778,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "digital_silence_5s_each_side": {
+          "old_dynamic_delta_db": 0.15077219009398846,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "digital_silence_10s_each_side": {
+          "old_dynamic_delta_db": 0.15077219009398846,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "gain_-6dB": {
+          "level_shift_error_db": -4.76837158203125e-07,
+          "dynamic_delta_db": 0.0,
+          "active_delta_seconds": 0.0
+        },
+        "gain_-12dB": {
+          "level_shift_error_db": 1.430511474609375e-06,
+          "dynamic_delta_db": -2.384185791015625e-07,
+          "active_delta_seconds": 0.0
+        },
+        "nonzero_noise_minus65dbfs_5s_each_side": {
+          "new_dynamic_delta_db": 0.11035923957824068,
+          "new_gate_delta_db": -0.26363513469696187,
+          "new_active_delta_seconds": 0.010000000000001563,
+          "interpretation": "Exploratory artificial nonzero noise, not guaranteed ambient-noise behavior."
+        }
+      }
+    },
+    {
+      "name": "network_normal",
+      "source_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\web_singing\\gtsinger_alto_control\\告白气球_normal.wav",
+      "source_sha256": "961a715b14292591938047d0ad8448a7a10ff6cf3437f0cec44eb1539fc84216",
+      "old_baseline": {
+        "gate_dbfs": -58.79286642074585,
+        "dynamic_db": 21.407726478576652,
+        "active_seconds": 6.07,
+        "p50_dbfs": -21.505720138549805,
+        "candidate_count_not_events": 3,
+        "band_fractions": {
+          "body": 0.7845703658434217,
+          "mid": 0.19245819483076085,
+          "presence": 0.0068039655074284625,
+          "high": 0.00015043009179402584
+        }
+      },
+      "new_baseline": {
+        "gate_dbfs": -58.802067661285406,
+        "dynamic_db": 21.48604812622071,
+        "active_seconds": 6.09,
+        "p50_dbfs": -21.510604858398438,
+        "candidate_count_not_events": 3,
+        "band_fractions": {
+          "body": 0.784686522823697,
+          "mid": 0.19240734415554253,
+          "presence": 0.0068039655074284625,
+          "high": 0.0001512635344915223
+        }
+      },
+      "variations": {
+        "digital_silence_1s_each_side": {
+          "old_dynamic_delta_db": 0.07832164764405647,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "digital_silence_5s_each_side": {
+          "old_dynamic_delta_db": 0.07832164764405647,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "digital_silence_10s_each_side": {
+          "old_dynamic_delta_db": 0.07832164764405647,
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": 0.0,
+          "new_activity_delta_seconds": 0.0,
+          "within_tolerance": true
+        },
+        "gain_-6dB": {
+          "level_shift_error_db": 0.0,
+          "dynamic_delta_db": -1.9073486328125e-06,
+          "active_delta_seconds": 0.0
+        },
+        "gain_-12dB": {
+          "level_shift_error_db": 0.0,
+          "dynamic_delta_db": 2.288818354401201e-06,
+          "active_delta_seconds": 0.0
+        },
+        "nonzero_noise_minus65dbfs_5s_each_side": {
+          "new_dynamic_delta_db": 0.0,
+          "new_gate_delta_db": -1.155064773559566,
+          "new_active_delta_seconds": 0.0,
+          "interpretation": "Exploratory artificial nonzero noise, not guaranteed ambient-noise behavior."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "experiment": "F1-EXP-014",
+  "phase": "F1-P4B",
+  "status": "pending_jade",
+  "sample_id": "A01",
+  "versions": [
+    "W1",
+    "W2"
+  ],
+  "deliverable": [
+    "W1",
+    "W2"
+  ],
+  "hard_failed": [],
+  "diag_marked": [
+    "W1",
+    "W2"
+  ],
+  "target_lufs": -18.0,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "next_rule": "仍只有一点点 → 频谱路线确定性收工（方案C）；明确改善 → A05 复验"
+}

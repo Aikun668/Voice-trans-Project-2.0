@@ -1,0 +1,95 @@
+{
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav",
+  "source_sha256": "14e01ae944d173ce96fbd2ee58a1e14bb8b76c19e99bb55f1c548bfe886849ca",
+  "span_seconds": [
+    4.272,
+    5.422
+  ],
+  "injection": {
+    "engine": "F2_R1_TRAIN_2026-11-07_v003/r1_pipeline.py:corrected_audio",
+    "shares_span_and_taper_with_restore": true,
+    "shift_cents": 100
+  },
+  "restore": {
+    "engine": "F2_R1_TRAIN_2026-11-07_v003/r1_pipeline.py:corrected_audio",
+    "parselmouth_version": "0.4.7",
+    "shift_cents": -100,
+    "model_used": false
+  },
+  "common_gain_db": -2.1,
+  "file_levels": {
+    "original.wav": {
+      "samples": 632832,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -4.4,
+      "peak": 0.60141,
+      "sha256": "64170ede6314303f85327194a763d7b6e30a099519186dc1d4471209dd33af33"
+    },
+    "raised.wav": {
+      "samples": 632832,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -4.4,
+      "peak": 0.60141,
+      "sha256": "eaa4a284512007eba0932dc9347c27fb7b64d2ab9af4cf061a9bfce99a10f21f"
+    },
+    "restored.wav": {
+      "samples": 632832,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -4.4,
+      "peak": 0.60141,
+      "sha256": "be1d182cbf728dcd26aa786d4a993d592499fe09997d2010f43ccb4d57a8b1f7"
+    }
+  },
+  "pitch": {
+    "core_seconds": [
+      4.42,
+      5.28
+    ],
+    "core_voiced_frames": 43,
+    "core_f0_hz": [
+      238.25,
+      252.15,
+      237.81
+    ],
+    "core_raise_vs_original_cents": 100.295,
+    "core_restore_vs_raised_cents": -99.742,
+    "core_restore_vs_original_cents": -0.117,
+    "full_span_restore_vs_original_cents": -0.031,
+    "full_span_p90_absolute_residual_cents": 6.891,
+    "previous_jump_seconds": [
+      4.235,
+      4.27
+    ],
+    "previous_jump_max_absolute_residual_cents": 5.331,
+    "transition_window_seconds": [
+      4.18,
+      5.55
+    ],
+    "transition_window_max_absolute_residual_cents": 17.006,
+    "voiced_overlap_vs_original": [
+      1.0,
+      1.0
+    ]
+  },
+  "outside_splice_sample_equality": {
+    "raised_vs_anchor_outside_injection": true,
+    "restored_vs_raised_outside_correction": true,
+    "restored_vs_anchor_outside_both": true
+  },
+  "checks": {
+    "source_unchanged": true,
+    "length_and_rate": true,
+    "finite_and_no_clipping": true,
+    "loudness_and_true_peak": true,
+    "unchanged_outside_splices": true,
+    "voiced_overlap_at_least_0_95": true,
+    "previous_jump_max_under_10_cents": true,
+    "transition_window_max_under_20_cents": true,
+    "median_pitch_errors_under_5_cents": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

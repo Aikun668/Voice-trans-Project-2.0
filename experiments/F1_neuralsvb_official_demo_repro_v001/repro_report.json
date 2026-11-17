@@ -1,0 +1,33 @@
+{
+ "f0_norm_proxy": [
+  386.90602069027926,
+  116.32606009865852
+ ],
+ "clips": [
+  {
+   "id": 1,
+   "frames_a": 596,
+   "frames_p": 632
+  },
+  {
+   "id": 2,
+   "frames_a": 884,
+   "frames_p": 920
+  },
+  {
+   "id": 3,
+   "frames_a": 968,
+   "frames_p": 940
+  },
+  {
+   "id": 4,
+   "frames_a": 608,
+   "frames_p": 616
+  },
+  {
+   "id": 5,
+   "frames_a": 616,
+   "frames_p": 616
+  }
+ ]
+}

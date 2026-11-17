@@ -1,0 +1,48 @@
+{
+  "experiment": "F1-EXP-005",
+  "phase": "F1-P3A-2",
+  "oversampling": 4,
+  "lowpass_hz": 20000,
+  "wet": 0.7,
+  "drives": {
+    "Light": 3.0,
+    "Medium": 6.0,
+    "Strong": 12.0
+  },
+  "alignment": [
+    {
+      "sample_id": "A01",
+      "scheme": "Light",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A01",
+      "scheme": "Medium",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A01",
+      "scheme": "Strong",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "Light",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "Medium",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "Strong",
+      "lag_samples": 0
+    }
+  ],
+  "alignment_pass": true,
+  "raw_clipping": false,
+  "ab_mapping_seed": 20261031,
+  "technical_pass": true
+}

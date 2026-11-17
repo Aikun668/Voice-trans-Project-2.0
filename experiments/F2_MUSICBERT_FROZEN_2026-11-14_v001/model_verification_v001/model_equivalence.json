@@ -1,0 +1,11 @@
+{
+  "max_absolute_logit_error": 0.0,
+  "mean_absolute_logit_error": 0.0,
+  "official_operations_replayed": true,
+  "raw_checkpoint_only_in_reference": true,
+  "hf_equivalence_pass": true,
+  "context_probability_l1_difference": 1.4089889022776982,
+  "all_parameters_frozen": true,
+  "weight_digest_unchanged": true,
+  "training_steps": 0
+}

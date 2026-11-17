@@ -1,0 +1,37 @@
+{
+  "original": {
+    "median_f0_hz": 136.2,
+    "alpha_db": -27.43,
+    "h1_minus_h2_db": 4.6,
+    "h1_minus_a3_db": 37.09,
+    "voiced_active_frames": 886
+  },
+  "previous": {
+    "median_f0_hz": 163.2,
+    "alpha_db": -21.65,
+    "h1_minus_h2_db": 6.68,
+    "h1_minus_a3_db": 30.39,
+    "voiced_active_frames": 910
+  },
+  "best": {
+    "median_f0_hz": 163.0,
+    "alpha_db": -23.04,
+    "h1_minus_h2_db": 6.67,
+    "h1_minus_a3_db": 32.45,
+    "voiced_active_frames": 910
+  },
+  "normal": {
+    "median_f0_hz": 158.4,
+    "alpha_db": -16.05,
+    "h1_minus_h2_db": 2.45,
+    "h1_minus_a3_db": 24.43,
+    "voiced_active_frames": 878
+  },
+  "singer": {
+    "median_f0_hz": 159.8,
+    "alpha_db": -17.67,
+    "h1_minus_h2_db": 6.78,
+    "h1_minus_a3_db": 27.38,
+    "voiced_active_frames": 988
+  }
+}

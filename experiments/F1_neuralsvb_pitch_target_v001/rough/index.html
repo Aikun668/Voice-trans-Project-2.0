@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>粗糙录音测试</title>
+<style>body{max-width:680px;margin:28px auto;padding:0 18px;font:18px/1.8 system-ui;background:#f4f6fa;color:#172337}button{font:inherit;padding:9px 15px;margin:4px;border:1px solid #b8c5d5;border-radius:8px;background:#fff;cursor:pointer}button[aria-pressed=true]{background:#2357a4;color:#fff}audio{width:100%;margin:10px 0}.n{color:#536177;font-size:15px}select{font:inherit;padding:4px}.q{border-top:1px solid #e3e8ef;padding:8px 0}textarea{width:100%;min-height:70px;font:inherit;box-sizing:border-box}</style>
+<h2>官网里最“粗糙”的几句，我们的处理有没有问题？</h2>
+<p class="n">这几句是官网样例里声音最毛、最接近你 SHIGE 的。每句听 <b>官网业余版（输入）</b> 和 <b>我们的</b>，必要时再听<b>官网美化版</b>对照。</p>
+<p id="cl"></p><p id="vs"></p><audio id="p" controls></audio><div id="fb"></div>
+<div class="q"><b>备注</b><textarea id="nt"></textarea></div><p><button id="cp">复制反馈</button> <span id="m" class="n"></span></p>
+<script>
+const V={amateur:'官网业余版（输入）',ours:'我们的',authors:'官网美化版'};let P=[],c,v='amateur';const p=document.getElementById('p');
+fetch('picked.json').then(r=>r.json()).then(a=>{P=a;c=a[0];const cl=document.getElementById('cl');a.forEach(k=>{const b=document.createElement('button');b.textContent=(k.startsWith('zh')?'中文':'英文')+k.slice(2);b.dataset.c=k;b.onclick=()=>{c=k;go(true)};cl.appendChild(b);
+ const d=document.createElement('div');d.className='q';d.innerHTML='<b>'+b.textContent+'：我们的 比 业余版输入</b><select data-k="'+k+'"><option value="">未答</option><option>没有变差，听着正常</option><option>出现沙哑/鼻音/颤</option><option>出现怪声或跳变</option><option>输入本身就很怪</option></select>';document.getElementById('fb').appendChild(d)});go(true)});
+const vs=document.getElementById('vs');for(const k in V){const b=document.createElement('button');b.textContent=V[k];b.dataset.v=k;b.onclick=()=>{v=k;go(false)};vs.appendChild(b)}
+function go(reset){const t=reset?0:p.currentTime,r=!p.paused;p.src='audio/'+c+'_'+v+'.wav';p.onloadedmetadata=()=>{p.currentTime=Math.min(t,p.duration-.05);if(r)p.play()};document.querySelectorAll('[data-c]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===c));document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v))}
+document.getElementById('cp').onclick=async()=>{const L=['【粗糙录音测试反馈】'];document.querySelectorAll('select[data-k]').forEach(s=>L.push(s.dataset.k+'：'+(s.value||'未答')));L.push('备注：'+document.getElementById('nt').value);try{await navigator.clipboard.writeText(L.join('\n'));document.getElementById('m').textContent='已复制'}catch(e){document.getElementById('m').textContent='复制失败'}};
+</script>

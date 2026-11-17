@@ -1,0 +1,8 @@
+{
+  "full_pipeline_wavs_verified": 30,
+  "sources": 5,
+  "delivery_wavs_verified": 11,
+  "probe_vocoder_reproduced_bit_identically": true,
+  "audio_contract": "44100 mono PCM16 exact source sample count",
+  "listening_status": "pending_jade"
+}

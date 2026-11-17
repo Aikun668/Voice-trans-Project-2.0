@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\infer.py", line 67, in <module>
+    if __name__=='__main__':main()
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\infer.py", line 51, in main
+    if np.sum(np.abs(command)>=20)<5:raise ValueError('Model produced too little correction for a meaningful audio trial')
+ValueError: Model produced too little correction for a meaningful audio trial

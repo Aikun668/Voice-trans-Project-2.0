@@ -1,0 +1,8 @@
+created_utc: 2026-11-01T08:24:57.745545+00:00
+experiment: F1-EXP-011
+phase: F1-P4A-rev1
+single control: coverage H2-H8 -> H2-H12; strength/cap/calibration unchanged
+anchor: EXP-010 V2 raw sha-verified
+sealed: A04, A06, B03, C01, C02, C03
+target_lufs: -19.36
+technical_pass: True

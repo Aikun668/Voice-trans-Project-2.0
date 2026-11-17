@@ -1,0 +1,7 @@
+created_utc: 2026-11-02T03:48:46.821168+00:00
+experiment: F1-EXP-015
+phase: F1-P4B-fix
+fixed EXP-014 frame-wise phase cancellation by using one static gain table
+sealed: A04, A06, B03, C01, C02, C03
+target_lufs: -19.26
+technical_pass: True

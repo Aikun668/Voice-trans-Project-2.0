@@ -1,0 +1,45 @@
+{
+  "experiment": "F1-EXP-016",
+  "phase": "F1-P4C",
+  "status": "best_in_f1_scope",
+  "sample_id": "A01",
+  "base": "EXP-015 X1",
+  "versions": ["M1", "M2"],
+  "deliverable": ["M1", "M2"],
+  "hard_failed": [],
+  "diag_marked": ["M2"],
+  "target_lufs": -19.26,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "goal": "把效果调到一听可辨（用户需求升级）",
+  "listening_result": "M2(100%包络移植) 获认可为目前最佳调试；仍未达'随便一听就有明显增强'；用户感觉'核心提不起来'",
+  "jade_verbatim": "可以，可以。这这版调试保留到日志里面去，目前是最好的一个调试，但是还达不到那种就随便一听就有明显增强的这种……我觉得应该没有到顶吧，我这个明显还感觉到他声音还是不是能够的核心的调能够提起来的那种",
+  "classification": "best_in_f1_scope：F1边界内最佳；未达一听可辨",
+  "post_listening_diagnostics": {
+    "harmonic_visibility_paper_criterion": {
+      "A01": {"ceiling_hz": 2477, "contrast_2p5_4k_db": 4.7},
+      "A02_normal": {"ceiling_hz": 2714, "contrast_2p5_4k_db": 6.4},
+      "M2": {"ceiling_hz": 2996, "contrast_2p5_4k_db": 7.8},
+      "conclusion": "M2 谐波可见度已超过正常版；频域（幅度+包络+可见度）已到顶"
+    },
+    "temporal_4pair_check": {
+      "f0_liveliness_sigma_semitone": {"pair1": [0.983, 2.131], "pair2": [1.25, 1.386], "pair3": [1.812, 1.284], "pair4": [2.007, 1.902]},
+      "consistent_4of4": false,
+      "onset_p90_slope_consistent_4of4": "薄音更陡（方向与预期相反）",
+      "conclusion": "时间域无 4/4 一致的缺失属性；F0活跃度差仅为平凡之路一对的演绎差异"
+    },
+    "remaining_4of4_consistent_but_out_of_scope": [
+      "F1 共振峰位置 +40~55Hz（咬字层，'像别人'红线）",
+      "CPP +0.27dB（量级过小）"
+    ],
+    "problem_identification": "频谱已搬运完成（M2 vs 原音 ≈ A02 vs 原音，各频段差 ≤1.5dB）；残余'明显'差异来自演绎层（F0活跃度2.17×、咬字），属音高/咬字范畴=F1红线外；单take重构与双take对比存在感知不对称"
+  },
+  "next_options_for_user": [
+    "1: 确认 M2 为 F1 边界内最终版，走 A05 复验并固化 X1+M2 组合",
+    "2: 授权一次越界试验（F0 活跃度注入，违反'不改音高'约定，须明示批准）",
+    "3: F1 位置上移试验（+40~55Hz，论文模型；收益预期小，'换咬字'风险）",
+    "4: 演唱侧（演绎层差异本质是演唱状态，与 EXP-013 结论闭环）"
+  ]
+}

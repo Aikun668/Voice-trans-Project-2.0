@@ -1,0 +1,31 @@
+{
+  "experiment": "F1-EXP-011",
+  "phase": "F1-P4A-rev1",
+  "sample_id": "A01",
+  "dataset_id": "A_self_01",
+  "display": "平凡之路 / 薄音版",
+  "revision_of": "F1-EXP-010 V2",
+  "single_control_change": "谐波覆盖 H2-H8 -> H2-H12（含逐谐波掩膜半宽适配，其余参数与上轮完全一致）",
+  "anchor": {
+    "file": "experiments/F1-EXP-010/outputs/processed_raw/V2.wav",
+    "sha256": "4623f42694cfdd87ad4edf9d46c69be9cfc9b9d247d3529f9626ffb90893ed89",
+    "note": "上轮版本B原文件，未改动，作对照锚点"
+  },
+  "target_reference": "A_self_02",
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "wav_sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+  "listening_contract": {
+    "原音问题登记": "A01 自评薄音；上轮（EXP-010）V2 已判'稍微好一点点'且无副作用，本轮为其唯一一次修订",
+    "素材与片段": "A01 全长 13.14s，不截取",
+    "预期可听变化": "修订版（H2-H12）应比上轮B版更实、改善更明显；方向为『厚/实』而非『亮/响』",
+    "否决副作用": "高次泛音区新增（1.6-2.1kHz）：粗糙感、嘶嘶声、齿音变重；金属感/机器味；只变亮或只变响不算通过",
+    "预先声明": "若修订版相对上轮B仍只有一点点，方案A终止转C，不再扩范围/调强度"
+  }
+}

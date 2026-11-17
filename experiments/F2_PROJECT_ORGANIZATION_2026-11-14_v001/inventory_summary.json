@@ -1,0 +1,19 @@
+{
+  "experiment_instances": 160,
+  "by_group": {
+    "历史记录": 153,
+    "次线": 1,
+    "共用资产": 5,
+    "主线": 1
+  },
+  "source_bindings": 34,
+  "unique_source_files": 14,
+  "retained_runtime_edges": 4,
+  "moved_experiments": 0,
+  "excluded_non_experiment_dirs": [
+    {
+      "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\.ruff_cache",
+      "reason": "工具缓存，不作为实验；原位保留"
+    }
+  ]
+}

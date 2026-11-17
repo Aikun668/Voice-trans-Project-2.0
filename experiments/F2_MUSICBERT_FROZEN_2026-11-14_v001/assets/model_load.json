@@ -1,0 +1,22 @@
+{
+  "checkpoint_sha256": "f5bb685afe128bc9e0e445be51b5333b98be6a5456df850bd9c9f2cc80bb7275",
+  "upstream_model_commit": "2b8739671ba06f819f31f568b8a79da581aaf6f9",
+  "adapter_repo_commit": "64a054c791c2372e146d59cb0b04a5f5eba23fc0",
+  "num_layers": 4,
+  "hidden_size": 512,
+  "num_parameters": 22536405,
+  "all_inference_parameters_match_pretrained_tensors": true,
+  "trainable_parameters": 0,
+  "original_masked_language_head_used": true,
+  "optimizer_created": false,
+  "training_steps": 0,
+  "parameter_digest_before": "f2703e9cdecf0f32037383483192d0aab1678f694f095aeff7de2c8e10d9b954",
+  "layernorm_epsilon": 1e-05,
+  "unused_hf_token_type_embeddings_removed": true,
+  "codec": {
+    "tempo_bpm": 120,
+    "meter": "4/4",
+    "instrument": 0,
+    "velocity": 80
+  }
+}

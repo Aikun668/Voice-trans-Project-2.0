@@ -1,0 +1,226 @@
+{
+  "hypothesis": "Changing only mel range to vocoder-config range reduces reconstruction damage.",
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\zuixuan_normal.wav",
+  "source_sha256": "4cd81729d94ca48029916abd9caa972be16f93528bd12d5eca839d951e76df2a",
+  "interface": {
+    "sample_rate": 44100,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "encoding": "pcm_s16le",
+    "frames": 1039526
+  },
+  "internal_rate": 22050,
+  "seed_before_each_vocoder_call": 0,
+  "f0_shared_sha256": "8fb82418e4ffab5e179c9b2dac3ee598de613b524279d6fa59581544ddd82a56",
+  "f0_intentionally_modified": false,
+  "frame_count": 4061,
+  "old_acoustic_four_frame_crop_used": false,
+  "feature_method": "official PWG process_utterance, log10 magnitude, center=True and zero edge padding unchanged",
+  "baseline_range": [
+    50,
+    11025
+  ],
+  "candidate_range": [
+    0,
+    8000
+  ],
+  "other_feature_parameters": {
+    "audio_sample_rate": 22050,
+    "audio_num_mel_bins": 80,
+    "fft_size": 512,
+    "hop_size": 128,
+    "win_size": 512
+  },
+  "vocoder_checkpoint_sha256": "5ee9dde88bf4acd74679a6ec182aba0a073ad686f8abfdaf9e0d9f09b11f7a11",
+  "vocoder_config_sha256": "fc9bf054afcb596b60d10184991806fbd34653b1f3967592f0e68618a7aca04e",
+  "versions": {
+    "torch": "2.2.2+cpu",
+    "numpy": "1.23.5",
+    "scipy": "1.15.3",
+    "librosa": "0.9.2",
+    "praat-parselmouth": "0.4.7"
+  },
+  "limitations": [
+    "Complete vocoder training feature recipe unconfirmed.",
+    "Current F0 time alignment retained.",
+    "Upsampling to 44.1 kHz does not restore lost high frequencies.",
+    "New seeded full-length baseline is not bit-identical to v002.",
+    "Agent cannot listen; metrics do not establish removal of rasp or audible jumps."
+  ],
+  "listening_status": "pending_jade",
+  "outputs": {
+    "original": {
+      "file": "diagnostics\\zuixuan_normal__original.wav",
+      "sha256": "00382d75b111c61a1bf1b8bfee99e0c1d11f103e8e3947c134b743ddcf2cf2da",
+      "contract_pass": true,
+      "full_decode_matches_pcm": true,
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -6.791807228320298,
+        "rms_dbfs": -18.026846726066207,
+        "clipped_samples": 0,
+        "dc_offset": -7.6411227347398e-06
+      },
+      "loudness": {
+        "integrated_lufs": -18.01,
+        "true_peak_dbtp": -6.75,
+        "loudness_range_lu": 2.0
+      }
+    },
+    "baseline_50_11025": {
+      "file": "diagnostics\\zuixuan_normal__baseline_50_11025.wav",
+      "sha256": "450a460c01889266cde988767595d8ef52d6062e05b7e7e203ebd9d9b9a98ae7",
+      "contract_pass": true,
+      "full_decode_matches_pcm": true,
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -6.3810530104474985,
+        "rms_dbfs": -18.002172999144914,
+        "clipped_samples": 0,
+        "dc_offset": -0.00015021074964582717
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -6.32,
+        "loudness_range_lu": 1.9
+      },
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -6.3676035572161425,
+          "rms_dbfs": -17.99836132935703,
+          "clipped_samples": 0,
+          "dc_offset": -0.00015025128718309505
+        },
+        "loudness": {
+          "integrated_lufs": -17.99,
+          "true_peak_dbtp": -6.31,
+          "loudness_range_lu": 1.9
+        },
+        "active_gain": {
+          "spread_db": 3.3661143879392967,
+          "min_db": -11.374947552333788
+        },
+        "max_sample_jump_ratio": 1.0925262174157124,
+        "pitch_vs_original": {
+          "comparable_frames": 855,
+          "median_abs_cents": 17.228572070379283,
+          "p95_abs_cents": 106.76186692056042
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 2996,
+          "median_abs_cents": 18.045185459917747,
+          "p95_abs_cents": 106.26746799699374
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        },
+        "analysis_rate_note": "Existing helper analyzes actual final PCM resampled to 22050; interface is checked separately on final 44100 PCM."
+      },
+      "generation": {
+        "native_frames": 519808,
+        "excess_resampled_tail_samples_removed": 90,
+        "raw_peak_abs": 0.9020316004753113,
+        "raw_samples_over_fullscale": 0,
+        "mel_sha256": "af4f4eca5d6eeecdd01859364bdd770041b50690c31f5831e0ba145d381d4419"
+      }
+    },
+    "matched_0_8000": {
+      "file": "diagnostics\\zuixuan_normal__matched_0_8000.wav",
+      "sha256": "372dfff48f7b625a5ddee09c09713f722b441d6685948f8bb6588a874f0ccc6b",
+      "contract_pass": true,
+      "full_decode_matches_pcm": true,
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -4.058258637048292,
+        "rms_dbfs": -18.00264073877007,
+        "clipped_samples": 0,
+        "dc_offset": -0.00033685886977987745
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -4.05,
+        "loudness_range_lu": 2.0
+      },
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -4.080396825234846,
+          "rms_dbfs": -18.000177126564328,
+          "clipped_samples": 0,
+          "dc_offset": -0.0003369253375916112
+        },
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -4.04,
+          "loudness_range_lu": 2.0
+        },
+        "active_gain": {
+          "spread_db": 7.6058511324100255,
+          "min_db": -9.673678363097247
+        },
+        "max_sample_jump_ratio": 1.425029763811462,
+        "pitch_vs_original": {
+          "comparable_frames": 507,
+          "median_abs_cents": 32.03818096751323,
+          "p95_abs_cents": 1201.4835727724815
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 2198,
+          "median_abs_cents": 51.16301678024551,
+          "p95_abs_cents": 1235.2631625214333
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        },
+        "analysis_rate_note": "Existing helper analyzes actual final PCM resampled to 22050; interface is checked separately on final 44100 PCM."
+      },
+      "generation": {
+        "native_frames": 519808,
+        "excess_resampled_tail_samples_removed": 90,
+        "raw_peak_abs": 0.8928004503250122,
+        "raw_samples_over_fullscale": 0,
+        "mel_sha256": "d8fc4ee7df670263dee85de45fd03d8db6c0a1c207036f8cfc3d0ee9d24c445e"
+      }
+    }
+  },
+  "common_target_lufs": -18.0,
+  "original_and_previous_experiment_hashes_unchanged": true,
+  "preserved_old_wav_count": 15,
+  "technical_pass": false,
+  "status": "technical_blocked"
+}

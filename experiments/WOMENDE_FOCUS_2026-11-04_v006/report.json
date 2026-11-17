@@ -1,0 +1,174 @@
+{
+  "round": "WOMENDE_FOCUS_2026-11-04_v006",
+  "technical_pass": true,
+  "listening": "pending_jade",
+  "agent_cannot_hear": true,
+  "source": {
+    "path": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\我们的歌-薄音版.wav",
+    "sha256": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+    "hash_unchanged": true,
+    "samples": 669696,
+    "sample_rate": 48000
+  },
+  "baseline_lock_correlation": 0.9999999991726891,
+  "f1_pitch_change_vs_tilt": {
+    "median_cents": -0.0,
+    "voiced_overlap": 0.9887,
+    "frames_both": 962
+  },
+  "diagnosis_11_12s": {
+    "old_gain_range_db": [
+      -10.0,
+      0.0
+    ],
+    "old_steps_ge_1db_per_5ms": 34,
+    "revised_gain_range_db": [
+      -2.16,
+      -0.62
+    ],
+    "revised_steps_ge_1db_per_5ms": 0,
+    "note": "时间重合不证明听到的电音由字尾增益引起；升调和谐波处理仍可能参与。"
+  },
+  "parameters": {
+    "f2k_cents": 310,
+    "f2k_default": "off",
+    "tail_depth_db": -6,
+    "tail_smoothing_gaussian_sigma_ms": 120,
+    "tail_operation": "全频同幅时间增益，无单独削低频或高通",
+    "no_eq_cut_below_250": true
+  },
+  "master": {
+    "key_only": {
+      "path": "v001.master",
+      "internal_ceil_dbtp": -1.3,
+      "master_gain_db": 12.8,
+      "internal_lufs": -13.1,
+      "internal_true_peak_dbtp": -1.3
+    },
+    "soft_tail": {
+      "path": "v001.master",
+      "internal_ceil_dbtp": -1.3,
+      "master_gain_db": 14.6,
+      "internal_lufs": -13.1,
+      "internal_true_peak_dbtp": -1.3
+    }
+  },
+  "versions": [
+    {
+      "id": "anchor",
+      "name": "原音·同样响",
+      "file": "anchor.wav",
+      "samples": 669696,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.13,
+        "cents_p95": 0.34,
+        "p95_abs_cents": 0.53,
+        "frames_both": 997,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 0.53,
+        "frames_abs_error_over_20_cents": 0.004
+      },
+      "decay_lift_db": 1.43,
+      "gap_floor_relative_db": -32.83,
+      "sibilance_5_9khz_p99_db": -2.17,
+      "sha256": "ed7c1d12bbe0db6c2646d312942a2932a18951806856aae878cdf2d7e53f3c1c",
+      "failures": [],
+      "technical_pass": true,
+      "listening": "pending_jade"
+    },
+    {
+      "id": "baseline",
+      "name": "上次有力那版",
+      "file": "baseline.wav",
+      "samples": 669696,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.53,
+        "cents_p05": 289.69,
+        "cents_p95": 324.96,
+        "p95_abs_cents": 324.96,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.14,
+        "frames_abs_error_over_20_cents": 0.0825
+      },
+      "decay_lift_db": 2.13,
+      "gap_floor_relative_db": -31.91,
+      "sibilance_5_9khz_p99_db": -1.92,
+      "sha256": "dab42f74cbc5d0a0081e8aa44ba8dd36ff9a3e08c3159496aeb86a873e8d6ffa",
+      "failures": [],
+      "technical_pass": true,
+      "listening": "pending_jade"
+    },
+    {
+      "id": "key_only",
+      "name": "只升调·定位对照",
+      "file": "key_only.wav",
+      "samples": 669696,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.34,
+        "cents_p05": 291.68,
+        "cents_p95": 323.21,
+        "p95_abs_cents": 323.21,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 28.38,
+        "frames_abs_error_over_20_cents": 0.0714
+      },
+      "decay_lift_db": 1.41,
+      "gap_floor_relative_db": -32.67,
+      "sibilance_5_9khz_p99_db": -1.91,
+      "sha256": "4dd21f3abebc734af8b1e8d38c7f061c810bba3fbb2b52fbe0cb346c00859eae",
+      "failures": [],
+      "technical_pass": true,
+      "listening": "pending_jade"
+    },
+    {
+      "id": "soft_tail",
+      "name": "有力版·缓和字尾",
+      "file": "soft_tail.wav",
+      "samples": 669696,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.54,
+        "cents_p05": 289.73,
+        "cents_p95": 324.97,
+        "p95_abs_cents": 324.97,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.17,
+        "frames_abs_error_over_20_cents": 0.0825
+      },
+      "decay_lift_db": 0.95,
+      "gap_floor_relative_db": -32.18,
+      "sibilance_5_9khz_p99_db": -1.91,
+      "sha256": "499f8dc6704b8fb784f034704f67a94b7a16deba87e4f2108763c23bb2b083cb",
+      "failures": [],
+      "technical_pass": true,
+      "listening": "pending_jade"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "experiment": "F1-EXP-014",
+  "phase": "F1-P4B",
+  "question": "全谐波 H1-H23 逐帧对齐（频谱路线最彻底形式）能否产生可听的饱满改善",
+  "single_module": true,
+  "no_stacking": true,
+  "samples": [
+    "A01"
+  ],
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "target_reference": "A_self_02",
+  "mechanism": {
+    "name": "全谐波逐帧对齐（方案 A 最后一次尝试）",
+    "harmonics": "H1-H23（基频 175Hz 时约覆盖到 4025Hz）",
+    "frame_wise": true,
+    "profile_normalization": "相对全带能量（80-8000Hz），使 H1 也可被调整",
+    "caps": {
+      "max_boost_db": 9.0,
+      "max_cut_db": 6.0
+    },
+    "smoothing": "增益时间一阶低通 tau=50ms；掩膜时域 alpha=0.6",
+    "mask_width": "逐谐波 k×±6% 颤音，谐波间距一半封顶",
+    "fallback": "周期性<0.35 或帧能量低于最响帧 40.0dB → 不处理",
+    "variants": {
+      "W1": "H1 可调（完整对齐）",
+      "W2": "H1 锁定不动（仅 H2-H23）"
+    }
+  },
+  "deficit_profile_db": {
+    "1": -1.84,
+    "2": 4.12,
+    "3": 4.23,
+    "4": 3.07,
+    "5": 4.73,
+    "6": 7.79,
+    "7": 6.22,
+    "8": 5.52,
+    "9": 5.89,
+    "10": 5.32,
+    "11": 6.0,
+    "12": 2.06,
+    "13": 3.39,
+    "14": 5.17,
+    "15": 6.59,
+    "16": 6.07,
+    "17": 5.55,
+    "18": 8.96,
+    "19": 8.22,
+    "20": 7.26,
+    "21": 7.31,
+    "22": 7.54,
+    "23": 5.27
+  },
+  "listening_target_lufs": -18.0,
+  "loudness_tolerance_lu": 0.3,
+  "stop_condition": "本轮仍只有一点点 → 频谱路线确定性收工，转方案C接受边界",
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "blind_seed": 20261103
+}

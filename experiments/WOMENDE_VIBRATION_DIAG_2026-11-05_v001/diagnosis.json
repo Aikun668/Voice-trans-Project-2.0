@@ -1,0 +1,45 @@
+{
+  "note": "F0 跟踪和频带包络只是波动代理；不能断言产生听感的根因。",
+  "comparisons": {
+    "shift": {
+      "frames": 981,
+      "median_error_cents": 0.38,
+      "p95_abs_error_cents": 26.71,
+      "pct_abs_error_gt20": 0.069
+    },
+    "tilt": {
+      "frames": 972,
+      "median_error_cents": 0.56,
+      "p95_abs_error_cents": 29.15,
+      "pct_abs_error_gt20": 0.078
+    },
+    "master": {
+      "frames": 994,
+      "median_error_cents": 0.53,
+      "p95_abs_error_cents": 29.14,
+      "pct_abs_error_gt20": 0.082
+    }
+  },
+  "upper_band_envelope": {
+    "raw": {
+      "stable_frames": 739,
+      "p50_abs_deviation_db": 2.05,
+      "p95_abs_deviation_db": 8.71
+    },
+    "shift": {
+      "stable_frames": 680,
+      "p50_abs_deviation_db": 1.98,
+      "p95_abs_deviation_db": 8.33
+    },
+    "tilt": {
+      "stable_frames": 672,
+      "p50_abs_deviation_db": 2.4,
+      "p95_abs_deviation_db": 9.39
+    },
+    "master": {
+      "stable_frames": 757,
+      "p50_abs_deviation_db": 2.28,
+      "p95_abs_deviation_db": 9.15
+    }
+  }
+}

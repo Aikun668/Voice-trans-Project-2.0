@@ -1,0 +1,153 @@
+{
+ "file": "..\\F1_neuralsvb_v002_restored_2026-10-26\\audio\\shige_normal__original.wav",
+ "sr": 22050,
+ "octave_jumps": [
+  {
+   "t": 16.646,
+   "praat_from": 234.5,
+   "praat_to": 116.6,
+   "pyin_at_t": 231.8,
+   "comb_from_f0": 1.14,
+   "comb_to_f0": 0.71
+  }
+ ],
+ "windows": {
+  "16.655": [
+   {
+    "t": 16.505,
+    "praat": 231.6,
+    "pyin": 230.5,
+    "comb_praat": 2.65,
+    "comb_half": 0.72,
+    "comb_double": -0.45,
+    "rms_db": -19.6
+   },
+   {
+    "t": 16.525,
+    "praat": 232.9,
+    "pyin": 231.8,
+    "comb_praat": 2.78,
+    "comb_half": 0.88,
+    "comb_double": -0.5,
+    "rms_db": -18.8
+   },
+   {
+    "t": 16.545,
+    "praat": 233.5,
+    "pyin": 233.2,
+    "comb_praat": 2.91,
+    "comb_half": 0.89,
+    "comb_double": -0.49,
+    "rms_db": -20.0
+   },
+   {
+    "t": 16.565,
+    "praat": 235.3,
+    "pyin": 233.2,
+    "comb_praat": 2.51,
+    "comb_half": 1.06,
+    "comb_double": -0.42,
+    "rms_db": -21.2
+   },
+   {
+    "t": 16.585,
+    "praat": 236.3,
+    "pyin": 234.5,
+    "comb_praat": 2.22,
+    "comb_half": 0.91,
+    "comb_double": -0.32,
+    "rms_db": -22.2
+   },
+   {
+    "t": 16.605,
+    "praat": 230.2,
+    "pyin": 235.9,
+    "comb_praat": 1.49,
+    "comb_half": 0.48,
+    "comb_double": -0.33,
+    "rms_db": -25.6
+   },
+   {
+    "t": 16.625,
+    "praat": 232.8,
+    "pyin": 233.2,
+    "comb_praat": 0.95,
+    "comb_half": 0.58,
+    "comb_double": -0.0,
+    "rms_db": -33.0
+   },
+   {
+    "t": 16.645,
+    "praat": 116.6,
+    "pyin": 230.5,
+    "comb_praat": 0.72,
+    "comb_half": 0.09,
+    "comb_double": 1.15,
+    "rms_db": -39.0
+   },
+   {
+    "t": 16.665,
+    "praat": 116.1,
+    "pyin": 234.5,
+    "comb_praat": 1.1,
+    "comb_half": -0.1,
+    "comb_double": 0.87,
+    "rms_db": -39.6
+   },
+   {
+    "t": 16.685,
+    "praat": 117.0,
+    "pyin": 234.5,
+    "comb_praat": 0.73,
+    "comb_half": 0.24,
+    "comb_double": 1.2,
+    "rms_db": -40.5
+   },
+   {
+    "t": 16.705,
+    "praat": 0.0,
+    "pyin": 0.0,
+    "comb_praat": null,
+    "comb_half": null,
+    "comb_double": null,
+    "rms_db": -33.4
+   },
+   {
+    "t": 16.725,
+    "praat": 0.0,
+    "pyin": 0.0,
+    "comb_praat": null,
+    "comb_half": null,
+    "comb_double": null,
+    "rms_db": -29.3
+   },
+   {
+    "t": 16.745,
+    "praat": 0.0,
+    "pyin": 0.0,
+    "comb_praat": null,
+    "comb_half": null,
+    "comb_double": null,
+    "rms_db": -24.6
+   },
+   {
+    "t": 16.765,
+    "praat": 0.0,
+    "pyin": 0.0,
+    "comb_praat": null,
+    "comb_half": null,
+    "comb_double": null,
+    "rms_db": -20.8
+   },
+   {
+    "t": 16.785,
+    "praat": 0.0,
+    "pyin": 0.0,
+    "comb_praat": null,
+    "comb_half": null,
+    "comb_double": null,
+    "rms_db": -24.8
+   }
+  ]
+ }
+}

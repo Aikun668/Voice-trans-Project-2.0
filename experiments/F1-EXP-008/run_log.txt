@@ -1,0 +1,8 @@
+created_utc: 2026-11-01T06:39:09.764314+00:00
+experiment: F1-EXP-008
+phase: F1-P3B
+sample: A01 (A_self_01)
+sealed: A04, A06, B03, C01, C02, C03
+target_lufs: -18.0
+technical_pass: True
+note: original inputs not modified; holdout not processed; single compressor module only; no limiter

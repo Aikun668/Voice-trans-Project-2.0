@@ -1,0 +1,21 @@
+{
+  "technical_pass": true,
+  "inventory_rows": 28971,
+  "source_hashes_rechecked": 28971,
+  "source_hash_mismatches": [],
+  "label_archive_hash_unchanged": true,
+  "unique_lyric_pairs": 13264,
+  "alignment_rows": 13264,
+  "time_maps_checked": 12894,
+  "alignment_status": {
+    "auto_screen_candidate": 5643,
+    "needs_review": 7251,
+    "duration_ratio_review": 366,
+    "alignment_error": 4
+  },
+  "cross_song_or_duplicate_split_leakage": false,
+  "training_ready": false,
+  "semantic_alignment_and_pitch_targets": "pending_review",
+  "listening": "pending_jade",
+  "limitation": "Checks prove traceability and numerical integrity, not correct lyric/audio alignment or pitch targets."
+}

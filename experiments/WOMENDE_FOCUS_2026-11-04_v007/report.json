@@ -1,0 +1,110 @@
+{
+  "purpose": "same-pitch harmonic compensation dose",
+  "half_slope_db_per_oct": 3.996,
+  "half_gain_cap_db": 7.5,
+  "full": {
+    "slope_db_per_oct": 7.992,
+    "alpha_db": -20.11,
+    "key_up_cents": 310,
+    "max_gain_db": 15.0
+  },
+  "technical_pass": true,
+  "listening": "pending_jade",
+  "common_target_lufs": -18.5,
+  "measured_loudness_spread_lu": 0.0,
+  "processing": "fixed gain only, no limiter",
+  "shift_only_vs_thin": {
+    "voiced_overlap": 0.985,
+    "median_cents": 310.39,
+    "cents_p05": 293.09,
+    "cents_p95": 323.02,
+    "p95_abs_cents": 323.02,
+    "frames_both": 982,
+    "frames_ref_voiced": 997,
+    "abs_error_p95_cents": 26.7,
+    "frames_abs_error_over_20_cents": 0.0692
+  },
+  "versions": {
+    "original": {
+      "input": "experiments/WOMENDE_FOCUS_2026-11-03_v001/work/thin_keyup.wav",
+      "input_sha256": "e4073a16b319701624b4c30c0b66bf82942ab55ec91e0f3f5f866fdb623e7ab1",
+      "input_hash_unchanged": true,
+      "output_sha256": "bafcee918658db5b983c42ae78f3b7469e7b784474e943fe8e9a9e6a419a79a2",
+      "fixed_gain_db": 6.6,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "duration_s": 13.952,
+      "sample_shape_unchanged": true,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -18.5,
+      "true_peak_dbtp": -2.3,
+      "pitch_vs_shifted_base": {
+        "voiced_overlap": 1.0,
+        "median_cents": -0.0,
+        "cents_p05": -0.0,
+        "cents_p95": 0.0,
+        "p95_abs_cents": 0.0,
+        "frames_both": 983,
+        "frames_ref_voiced": 983,
+        "abs_error_p95_cents": 0.0,
+        "frames_abs_error_over_20_cents": 0.0
+      },
+      "technical_pass": true
+    },
+    "shift_only": {
+      "input": "experiments/WOMENDE_FOCUS_2026-11-04_v007/half_raw.wav",
+      "input_sha256": "686c7cb6427890c300984263ef95f6371948d47714de8ef612dfc73df0dd275f",
+      "input_hash_unchanged": true,
+      "output_sha256": "3ebba5b8fc721cbd03f145676653d1efc02900aea6618759beb8d2625b41e26e",
+      "fixed_gain_db": 6.4,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "duration_s": 13.952,
+      "sample_shape_unchanged": true,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -18.5,
+      "true_peak_dbtp": -2.0,
+      "pitch_vs_shifted_base": {
+        "voiced_overlap": 0.9959,
+        "median_cents": 0.02,
+        "cents_p05": -2.44,
+        "cents_p95": 1.99,
+        "p95_abs_cents": 3.07,
+        "frames_both": 979,
+        "frames_ref_voiced": 983,
+        "abs_error_p95_cents": 3.07,
+        "frames_abs_error_over_20_cents": 0.001
+      },
+      "technical_pass": true
+    },
+    "normal": {
+      "input": "experiments/WOMENDE_FOCUS_2026-11-03_v001/work/c2_keyup_tilt_raw.wav",
+      "input_sha256": "7f9d55eb7b370a9c1e05907079b3604dcbaaec1ec6170789b5f59a8ce518aeae",
+      "input_hash_unchanged": true,
+      "output_sha256": "c84b7b9811b4d34524f1a85372b380f935ff21a562c5ca1f897b0b72b94ec7f7",
+      "fixed_gain_db": 6.2,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "duration_s": 13.952,
+      "sample_shape_unchanged": true,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -18.5,
+      "true_peak_dbtp": -1.4,
+      "pitch_vs_shifted_base": {
+        "voiced_overlap": 0.9898,
+        "median_cents": 0.09,
+        "cents_p05": -4.69,
+        "cents_p95": 3.73,
+        "p95_abs_cents": 6.63,
+        "frames_both": 973,
+        "frames_ref_voiced": 983,
+        "abs_error_p95_cents": 6.63,
+        "frames_abs_error_over_20_cents": 0.0051
+      },
+      "technical_pass": true
+    }
+  }
+}

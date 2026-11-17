@@ -1,0 +1,219 @@
+{
+  "case": {
+    "segment": "莫问归期01-轻度跑调",
+    "word": "刺",
+    "alignment": "Qwen3-ForcedAligner-0.6B, same syllable and stable vowel windows",
+    "lyric_source": "https://www.joox.com/my-en/single/tf8Ts47nfR2TncID5m3NhA==",
+    "reference_source": "https://www.youtube.com/watch?v=XaTFvLSP1oI",
+    "qwen_word_bounds_seconds": {
+      "source": [
+        2.48,
+        3.44
+      ],
+      "paired": [
+        2.8,
+        3.84
+      ],
+      "reference": [
+        33.36,
+        33.52
+      ]
+    },
+    "reference_window_note": "Forced aligner marked a short onset in the original recording. Praat shows the same G#4 pitch continues into the sustained vowel; measure that held part, before the next syllable begins.",
+    "source_core": [
+      2.85,
+      3.3
+    ],
+    "reference_core": [
+      33.55,
+      34.1
+    ],
+    "paired_core": [
+      3.15,
+      3.54
+    ],
+    "edit": [
+      2.58,
+      3.47
+    ],
+    "preview": [
+      0.0,
+      3.73
+    ],
+    "reference_analysis": [
+      30.0,
+      43.6
+    ],
+    "reference_preview": [
+      31.04,
+      34.6
+    ],
+    "reference_key_anchors": [
+      [
+        [
+          0.97,
+          1.17
+        ],
+        [
+          31.79,
+          31.96
+        ]
+      ],
+      [
+        [
+          1.43,
+          1.65
+        ],
+        [
+          32.17,
+          32.44
+        ]
+      ],
+      [
+        [
+          8.04,
+          8.31
+        ],
+        [
+          38.46,
+          38.76
+        ]
+      ],
+      [
+        [
+          11.72,
+          12.25
+        ],
+        [
+          42.19,
+          42.65
+        ]
+      ]
+    ],
+    "paired_key_anchors": [
+      [
+        [
+          0.97,
+          1.17
+        ],
+        [
+          1.24,
+          1.4
+        ]
+      ],
+      [
+        [
+          1.43,
+          1.65
+        ],
+        [
+          1.67,
+          1.88
+        ]
+      ],
+      [
+        [
+          8.04,
+          8.31
+        ],
+        [
+          8.2,
+          8.42
+        ]
+      ],
+      [
+        [
+          11.72,
+          12.25
+        ],
+        [
+          11.95,
+          12.27
+        ]
+      ]
+    ],
+    "protected_source_spans": [
+      [
+        3.797,
+        5.33
+      ],
+      [
+        10.114,
+        11.005
+      ]
+    ]
+  },
+  "input_sha256": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-轻度跑调.wav": "fc6801a3bd924008f98ddd6f419e36f8cae3022816878eed3920897a610604eb",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav": "ae69a7a4c21acd4ff405917b7ba1214bb24976cf9fdff8d9163a5dd9f905f1b5",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-对照微微跑调.wav": "5d14c65fb8b742840fb32dc666e3a3c0d2827984ae84e1bbbd88ff8e735fe58d",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\results\\model.pkl": "9c7dd3d48099bb2775b676e2939dda1bd3d0a1526471cf2a82561b55b66ce975"
+  },
+  "key_offsets_cents": [
+    599.0976689951431,
+    597.184082878709,
+    586.8759153056021,
+    554.6394001542048
+  ],
+  "paired_key_offsets_cents": [
+    -133.00636917198358,
+    -166.4280594371769,
+    -115.73401436014842,
+    -155.95178841987058
+  ],
+  "reference_based_shift_cents": 72.6,
+  "paired_take_crosscheck_shift_cents": 116.4,
+  "aligned_raw_model_shift_cents": -163.158,
+  "prior_automatic_decision_for_note": {
+    "segment": "莫问归期01-轻度跑调",
+    "t0": "2.681",
+    "t1": "3.481",
+    "dur": "0.8",
+    "note": "C#4",
+    "ref_note": "D5",
+    "dev": "-40.1",
+    "ref_spread": "18.5",
+    "ref_voiced": "0.96",
+    "jade_mark": "-",
+    "label_shift": "40.1",
+    "model_shift": "40.1",
+    "shift_source": "model_clamped",
+    "status": "fix"
+  },
+  "source_in_first_round_training": false,
+  "one_pass_measured_shift_cents": 72.595,
+  "voiced_overlap": 0.9964664310954063,
+  "file_levels": {
+    "original.wav": {
+      "samples": 179040,
+      "sample_rate": 48000,
+      "lufs": -15.6,
+      "dbtp": -3.4,
+      "sha256": "ee984bb1734bbfe5578f8c15f5263c9e78d5309d0df42cc3861f36b92a5ac4f8"
+    },
+    "corrected.wav": {
+      "samples": 179040,
+      "sample_rate": 48000,
+      "lufs": -15.6,
+      "dbtp": -3.4,
+      "sha256": "2aa823c7e201e2e71b95acd0d6714c052eecd81537f49c8d9be893a9a7d30550"
+    },
+    "reference.wav": {
+      "samples": 156996,
+      "sample_rate": 44100,
+      "lufs": -17.1,
+      "dbtp": -3.0,
+      "sha256": "e6ea54491708a977fff0a2278c21324bfecb9d45dc08ef9e04425e3b0375ce93"
+    }
+  },
+  "checks": {
+    "input_hashes_unchanged": true,
+    "outside_splice_identical": true,
+    "true_peak_at_most_minus_1_dbtp": true,
+    "loudness_matched": true,
+    "voiced_overlap_at_least_0_95": true,
+    "measured_shift_within_5_cents": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

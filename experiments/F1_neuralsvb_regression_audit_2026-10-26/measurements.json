@@ -1,0 +1,105 @@
+{
+  "http_files": [
+    {
+      "id": "original",
+      "expected_sha256": "3862564c9aa15b30f14eef80e004533ce143ddb7241c89a29fb2ba945b49dfb2",
+      "disk_matches": true,
+      "http_matches": true
+    },
+    {
+      "id": "beautify_gentle",
+      "expected_sha256": "8cf9353cfd23e2f520555514040e70aa8314d9b998464388a001061d05b3d9f8",
+      "disk_matches": true,
+      "http_matches": true
+    },
+    {
+      "id": "beautify_standard",
+      "expected_sha256": "b2947f8253f88ab20d02254abf216f5ba3a448161f1c287e5720e04ed6ce7c42",
+      "disk_matches": true,
+      "http_matches": true
+    }
+  ],
+  "delivered_measurements": {
+    "beautify_gentle": {
+      "correlation": 0.9896638506599463,
+      "relative_residual_rms_db": -16.843542147366644,
+      "identical_samples_fraction": 0.0054708524916610105,
+      "bands": {
+        "body_80_500": -3.6566130125596246,
+        "mid_500_3000": -2.5187521363999874,
+        "presence_3000_8000": -20.353144011697157
+      }
+    },
+    "beautify_standard": {
+      "correlation": 0.9764175252850255,
+      "relative_residual_rms_db": -13.304490062063362,
+      "identical_samples_fraction": 0.004372192276101763,
+      "bands": {
+        "body_80_500": -4.1880776085905485,
+        "mid_500_3000": -2.1576565934886722,
+        "presence_3000_8000": -19.870688145509895
+      }
+    }
+  },
+  "scope": "read-only diagnostics; no audio generation",
+  "model_feature_decomposition": {
+    "frames": 2959,
+    "full_a2p_minus_source_weighted_rms_db": 10.983040853076162,
+    "reconstruction_minus_source_weighted_rms_db": 6.495061635262483,
+    "mapping_only_weighted_rms_db": 5.84788268348049,
+    "full_a2p_minus_source_unweighted_rms_db": 13.737427251166633,
+    "reconstruction_minus_source_unweighted_rms_db": 11.128637477636357,
+    "mapping_only_unweighted_rms_db": 7.0268831025742715,
+    "feature_mel_reconstruction_exact": true,
+    "source_weighting": "10**(2*source_log10_mel); descriptive only, not a listening metric"
+  },
+  "projected_mapping": {
+    "weighted_global_mean_db": -5.073585821268269,
+    "weighted_rms_db": 5.644848947862753,
+    "weighted_rms_after_removing_constant_gain_db": 2.474479047883176,
+    "static_per_frequency_rms_db": 2.1180058624803424,
+    "time_varying_residual_rms_db": 1.279491197668727,
+    "delivery_strengths": [
+      0.5,
+      0.75
+    ],
+    "definition": "Full-strength projected log gain weighted by source STFT power; not perceptual magnitude"
+  },
+  "legacy_hashes_ok": {
+    "vocoder_only": true,
+    "a2a": true,
+    "a2p_nomap": true,
+    "a2p": true
+  },
+  "source_hash_ok": true,
+  "actual_audio_spectral_distances_db": {
+    "original": {
+      "weighted_shape_rms_after_constant_gain_removed": 0.0,
+      "all_bins_unweighted_shape_rms_after_constant_gain_removed": 0.0
+    },
+    "legacy_a2p": {
+      "weighted_shape_rms_after_constant_gain_removed": 5.251096906998409,
+      "all_bins_unweighted_shape_rms_after_constant_gain_removed": 11.620345593900385
+    },
+    "legacy_vocoder": {
+      "weighted_shape_rms_after_constant_gain_removed": 2.7789928098625314,
+      "all_bins_unweighted_shape_rms_after_constant_gain_removed": 8.367152122972609
+    },
+    "aligned_a2p": {
+      "weighted_shape_rms_after_constant_gain_removed": 4.754221735299557,
+      "all_bins_unweighted_shape_rms_after_constant_gain_removed": 11.227568033159374
+    },
+    "aligned_a2a": {
+      "weighted_shape_rms_after_constant_gain_removed": 4.576653423754498,
+      "all_bins_unweighted_shape_rms_after_constant_gain_removed": 11.372591892492963
+    },
+    "aligned_vocoder": {
+      "weighted_shape_rms_after_constant_gain_removed": 1.8573647712190464,
+      "all_bins_unweighted_shape_rms_after_constant_gain_removed": 7.8428432875635545
+    },
+    "residual_standard": {
+      "weighted_shape_rms_after_constant_gain_removed": 1.7293344958356869,
+      "all_bins_unweighted_shape_rms_after_constant_gain_removed": 2.9282178523269105
+    }
+  }
+}

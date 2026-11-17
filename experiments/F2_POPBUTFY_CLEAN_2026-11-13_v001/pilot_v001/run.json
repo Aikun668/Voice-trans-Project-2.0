@@ -1,0 +1,24 @@
+{
+  "audit_dir": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_POPBUTFY_CLEAN_2026-11-13_v001\\audit_v001",
+  "selected_pairs": 16,
+  "librosa": "0.11.0",
+  "scipy": "1.13.1",
+  "numpy": "1.26.4",
+  "hop_seconds": 0.02,
+  "features": "MFCC coefficients 1..12, excluding energy",
+  "dtw_steps": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ]
+  ],
+  "training_ready": false
+}

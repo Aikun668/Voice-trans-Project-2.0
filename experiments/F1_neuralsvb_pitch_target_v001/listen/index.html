@@ -1,0 +1,81 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>F1 · 新版美化试听</title>
+<style>
+body{margin:0;background:#f4f6fa;color:#172337;font:17px/1.7 system-ui}
+.wrap{max-width:1120px;margin:22px auto;padding:0 18px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px;align-items:start}
+header{grid-column:1/-1}h1{font-size:25px;margin:0 0 4px}
+section{background:#fff;padding:14px 18px;border:1px solid #d9e1eb;border-radius:12px;margin-bottom:14px}h2{font-size:17px;margin:0 0 6px}
+button{font:inherit;padding:7px 13px;margin:3px;border:1px solid #b8c5d5;border-radius:8px;background:#fff;cursor:pointer}
+button[aria-pressed=true]{background:#2357a4;color:#fff;border-color:#2357a4}
+audio{width:100%;margin:8px 0}.n{color:#536177;font-size:14px}.q{padding:7px 0;border-top:1px solid #eef1f6}.q b{display:block}
+select{font:inherit;padding:4px;max-width:100%}textarea{width:100%;box-sizing:border-box;min-height:90px;font:inherit;padding:8px;border:1px solid #b8c5d5;border-radius:8px}
+.sticky{position:sticky;top:10px}#now{font-variant-numeric:tabular-nums;font-weight:600}.tab{font-weight:600}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}.sticky{position:static}}
+</style>
+<div class="wrap">
+<header><h1>F1 · 新版美化试听</h1>
+<p class="n">这一版修了三个已查实的原因：①zuixuan 里有 3 段送给模型的音高低了整整一个八度（2.4、3.1、18.6 秒，正是你标的跳变位置）；②模型输出忽大忽小，现在让音量起伏跟着原音走；③模型把声音拉成“中频突出”，现在把这个整体倾斜还原。<b>每条录音 4 个版本：原音、旧版美化（你之前听过的）、新版 A（还原倾斜）、新版 B（只还原一半）。</b>响度都已对齐。我无法听音，好不好全靠你。</p></header>
+<div>
+<section><h2>① 你的录音</h2>
+<p class="tab" id="clips"></p>
+<p id="vers"></p>
+<p class="n"><b>当前：</b><span id="cur"></span> · <span id="now">0:00.0</span></p>
+<audio id="player" controls preload="auto"></audio>
+<p id="spots"></p>
+<p class="n">“跳到”按钮会从该点前 1.5 秒播到后 1.5 秒。切换版本时接续播放位置，方便同一处来回对比。</p></section>
+<section><h2>② 官网样例验证（选听，约 1 分钟）</h2>
+<p class="n">想验证“用自己的音高当参照，效果能不能接近官网作者的结果”。每句 3 个版本：官网业余版（输入）、官网美化版（作者的）、我们的（只给录音，不给专业版）。</p>
+<p id="offclips"></p><p id="offvers"></p>
+<audio id="p2" controls preload="auto"></audio></section>
+</div>
+<div class="sticky"><section><h2>你的反馈（自动暂存）</h2>
+<div id="fb"></div>
+<div class="q"><b>② 官网样例：我们的 比 官网美化版</b><select id="offq"><option value="">未答</option><option>差不多一样好</option><option>略差，但可以接受</option><option>明显更差</option><option>说不清</option></select></div>
+<div class="q"><b>备注（原话、时间点）</b><textarea id="notes"></textarea></div>
+<p><button id="mark">记录当前位置到备注</button><button id="copy">复制反馈文本</button><button id="dl">下载 feedback.json</button><button id="clr">清空</button> <span id="msg" class="n"></span></p>
+<p class="n">听感状态始终是 pending_jade：技术检查通过不等于好听。</p></section></div>
+</div>
+<script>
+const CL={shige:'SHIGE',zuixuan:'zuixuan（最炫民族风）',molihua:'茉莉花'};
+const V={orig:'原音',old:'旧版美化',A:'新版 A（还原倾斜）',B:'新版 B（还原一半）'};
+const SPOTS={shige:[[3.2,'3.2 秒“呱”'],[8.5,'8.5 秒'],[11.3,'11.3 秒（漂泊之后）'],[13.7,'13.7 秒（海→挨）'],[16.65,'16.65 秒']],
+ zuixuan:[[2.4,'2.4 秒（修过八度）'],[3.1,'3.1 秒（修过八度）'],[9.7,'9.7 秒'],[18.6,'18.6 秒（修过八度）'],[12.2,'12.2 秒']],
+ molihua:[[3,'3 秒'],[6,'6 秒'],[9,'9 秒']]};
+const QS=[['q1','新版 A 和旧版美化比，沙哑、鼻音、颤：',['明显好转','略好一点','没变化','更差','说不清']],
+ ['q2','新版 A 和新版 B，更愿意选：',['A','B','差不多','都不如原音']],
+ ['q3','新版（A 或 B）和原音比：',['愿意选新版','不确定','更愿意选原音']]];
+const ZX=['zx','zuixuan 2.4、3.1、18.6 秒那几处跳变：',['都没了','减轻了','还在','变得更怪']];
+const player=document.getElementById('player'),cur=document.getElementById('cur'),now=document.getElementById('now');
+let clip='shige',mode='orig',stopAt=null,busy=false;
+const fmt=t=>Math.floor(t/60)+':'+(t%60).toFixed(1).padStart(4,'0');
+const mk=(id,fn,items,attr)=>{const e=document.getElementById(id);e.innerHTML='';for(const [k,l] of items){const b=document.createElement('button');b.textContent=l;b.dataset[attr]=k;b.onclick=()=>fn(k);e.appendChild(b)}};
+const marks=()=>{document.querySelectorAll('#clips button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.c===clip)));document.querySelectorAll('#vers button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===mode)))};
+function spots(){const e=document.getElementById('spots');e.innerHTML='<b>跳到：</b>';for(const [t,l] of SPOTS[clip]){const b=document.createElement('button');b.textContent=l;b.onclick=async()=>{player.currentTime=Math.max(0,t-1.5);stopAt=t+1.5;await player.play()};e.appendChild(b)}}
+async function load(reset){if(busy)return;busy=true;const t=reset?0:(player.currentTime||0),r=!player.paused;player.pause();
+ try{await new Promise((ok,no)=>{player.addEventListener('loadedmetadata',ok,{once:true});player.addEventListener('error',no,{once:true});player.src='audio/'+clip+'_'+mode+'.wav';player.load()});
+  player.currentTime=Math.min(t,Math.max(0,player.duration-.05));cur.textContent=CL[clip]+' · '+V[mode];marks();if(r)await player.play()}
+ catch(e){cur.textContent='加载失败，请刷新'}finally{busy=false}}
+mk('clips',k=>{clip=k;mode='orig';spots();renderFb();load(true)},Object.entries(CL),'c');mk('vers',k=>{mode=k;load(false)},Object.entries(V),'v');
+player.addEventListener('timeupdate',()=>{now.textContent=fmt(player.currentTime);if(stopAt&&player.currentTime>=stopAt){player.pause();stopAt=null}});
+player.addEventListener('seeking',()=>{if(stopAt&&player.currentTime>stopAt+.3)stopAt=null});
+// ---- feedback
+const KEY='f1_new_listen_v6',notes=document.getElementById('notes'),offq=document.getElementById('offq'),msg=document.getElementById('msg');
+let store={};try{store=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+store.ans=store.ans||{};
+function renderFb(){const e=document.getElementById('fb');e.innerHTML='<p class="n"><b>当前这条：'+CL[clip]+'</b>（换条目会换一组问题）</p>';
+ const list=QS.concat(clip==='zuixuan'?[ZX]:[]);
+ for(const [id,q,opts] of list){const d=document.createElement('div');d.className='q';const key=clip+'_'+id;d.innerHTML='<b>'+q+'</b>';const s=document.createElement('select');s.innerHTML='<option value="">未答</option>'+opts.map(o=>'<option>'+o+'</option>').join('');s.value=store.ans[key]||'';s.onchange=()=>{store.ans[key]=s.value||null;save()};d.appendChild(s);e.appendChild(d)}}
+function save(){store.notes=notes.value;store.off=offq.value||null;store.t=new Date().toISOString();localStorage.setItem(KEY,JSON.stringify(store))}
+notes.value=store.notes||'';offq.value=store.off||'';notes.addEventListener('input',save);offq.addEventListener('change',save);
+// official validation player
+const OC=['zh3','zh9','zh18','en6','en12'],OV={amateur:'官网业余版（输入）',authors:'官网美化版',ours:'我们的'};let oc='zh3',ov='amateur';const p2=document.getElementById('p2');
+function oload(){const t=p2.currentTime||0,r=!p2.paused;p2.src='audio/off_'+oc+'_'+ov+'.wav';p2.onloadedmetadata=()=>{p2.currentTime=Math.min(t,p2.duration-.05);if(r)p2.play()};
+ document.querySelectorAll('#offclips button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.c===oc)));document.querySelectorAll('#offvers button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===ov)))}
+mk('offclips',k=>{oc=k;p2.currentTime=0;oload()},OC.map(k=>[k,(k.startsWith('zh')?'中文':'英文')+k.slice(2)]),'c');mk('offvers',k=>{ov=k;oload()},Object.entries(OV),'v');
+// output
+const text=()=>{const L=['【F1 新版美化试听反馈】'];for(const [k,v] of Object.entries(store.ans))L.push(k+'：'+(v||'（未答）'));L.push('官网样例 我们的 vs 官网美化版：'+(store.off||'（未答）'));L.push('备注：'+(notes.value||'（无）'));return L.join('\n')};
+document.getElementById('mark').onclick=()=>{notes.value+=(notes.value&&!notes.value.endsWith('\n')?'\n':'')+'['+CL[clip]+' '+fmt(player.currentTime)+' · '+V[mode]+'] ';notes.focus();save()};
+document.getElementById('copy').onclick=async()=>{save();try{await navigator.clipboard.writeText(text());msg.textContent='已复制'}catch(e){msg.textContent='复制失败，请用“下载”'}};
+document.getElementById('dl').onclick=()=>{save();const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({listening_status:'pending_jade',...store,notes:notes.value},null,2)],{type:'application/json'}));a.download='feedback.json';a.click()};
+document.getElementById('clr').onclick=()=>{if(confirm('清空？')){localStorage.removeItem(KEY);store={ans:{}};notes.value='';offq.value='';renderFb();msg.textContent='已清空'}};
+spots();renderFb();load(true);oload();
+</script></html>

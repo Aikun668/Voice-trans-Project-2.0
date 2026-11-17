@@ -1,0 +1,74 @@
+[
+  {
+    "file": "gyjyn_orig.wav",
+    "sibilance_p99_db": -0.7,
+    "gap_floor_rel_db": -38.5,
+    "dynamics_p95_p30_db": 8.1
+  },
+  {
+    "file": "gyjyn_v1.wav",
+    "sibilance_p99_db": -0.8,
+    "gap_floor_rel_db": -38.3,
+    "dynamics_p95_p30_db": 3.7
+  },
+  {
+    "file": "gyjyn_v3.wav",
+    "sibilance_p99_db": -1.0,
+    "gap_floor_rel_db": -50.3,
+    "dynamics_p95_p30_db": 2.6
+  },
+  {
+    "file": "pingfan_orig.wav",
+    "sibilance_p99_db": -2.1,
+    "gap_floor_rel_db": -37.9,
+    "dynamics_p95_p30_db": 8.0
+  },
+  {
+    "file": "pingfan_v1.wav",
+    "sibilance_p99_db": -2.3,
+    "gap_floor_rel_db": -37.6,
+    "dynamics_p95_p30_db": 3.2
+  },
+  {
+    "file": "pingfan_v3.wav",
+    "sibilance_p99_db": -2.3,
+    "gap_floor_rel_db": -48.6,
+    "dynamics_p95_p30_db": 2.4
+  },
+  {
+    "file": "womende_orig.wav",
+    "sibilance_p99_db": -2.2,
+    "gap_floor_rel_db": -32.8,
+    "dynamics_p95_p30_db": 10.7
+  },
+  {
+    "file": "womende_v1.wav",
+    "sibilance_p99_db": -1.8,
+    "gap_floor_rel_db": -34.1,
+    "dynamics_p95_p30_db": 3.5
+  },
+  {
+    "file": "womende_v3.wav",
+    "sibilance_p99_db": -1.8,
+    "gap_floor_rel_db": -45.5,
+    "dynamics_p95_p30_db": 3.7
+  },
+  {
+    "file": "yasu_orig.wav",
+    "sibilance_p99_db": -1.9,
+    "gap_floor_rel_db": -27.9,
+    "dynamics_p95_p30_db": 9.8
+  },
+  {
+    "file": "yasu_v1.wav",
+    "sibilance_p99_db": -2.2,
+    "gap_floor_rel_db": -22.3,
+    "dynamics_p95_p30_db": 4.0
+  },
+  {
+    "file": "yasu_v3.wav",
+    "sibilance_p99_db": -1.4,
+    "gap_floor_rel_db": -25.3,
+    "dynamics_p95_p30_db": 3.3
+  }
+]

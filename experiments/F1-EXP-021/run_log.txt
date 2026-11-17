@@ -1,0 +1,7 @@
+created_utc: 2026-11-02T12:14:56.597737+00:00
+experiment: F1-EXP-021
+phase: F1-P7
+vowel-onset transient boost on EXP-020 S45; peaks +1.5/+3.0 dB; sustain untouched
+sealed untouched: A04, A06, B03, C01, C02, C03
+target_lufs: -20.479999999999997
+technical_pass: True

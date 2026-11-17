@@ -1,5 +1,7 @@
 # NeuralSVB single-WAV F1 PoC
 
+> Historical external-weights experiment. For current direction and subsequent listening outcomes, see [ROADMAP](../docs/ROADMAP.md) and the [fixed-DSP closeout](../docs/archive/F1_FIXED_DSP_CLOSEOUT_2026-11-05.md).
+
 Wraps the **official** NeuralSVB code and weights (https://github.com/MoonInTheRiver/NeuralSVB,
 commit `7a80bc5`, GPL-3.0). No training, no fine-tuning, no DSP effects. Official files are untouched.
 Listening status of every output: **pending_jade** (the agent cannot listen; measurements are not "sounds better").

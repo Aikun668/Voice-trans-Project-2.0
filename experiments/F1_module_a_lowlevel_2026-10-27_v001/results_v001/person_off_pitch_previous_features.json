@@ -1,0 +1,138 @@
+{
+  "schema_version": "f1.features.v0.1",
+  "sample_rate": 44100,
+  "samples": 946445,
+  "duration_seconds": 21.461337868480726,
+  "frame_ms": 20,
+  "hop_ms": 10,
+  "activity_gate_dbfs": -47.72269809246063,
+  "activity_method": "relative_rms_gate_excludes_exact_zero_frames_not_vocal_detection",
+  "active_seconds": 21.16,
+  "active_intervals": [
+    {
+      "start_seconds": 0.03,
+      "end_seconds": 11.04
+    },
+    {
+      "start_seconds": 11.21,
+      "end_seconds": 16.47
+    },
+    {
+      "start_seconds": 16.55,
+      "end_seconds": 21.4613
+    }
+  ],
+  "rms_dbfs": {
+    "p10": -29.62900161743164,
+    "p50": -11.323547840118408,
+    "p90": -8.26069450378418,
+    "p95": -7.717000722885132,
+    "p99": -6.466775965690613
+  },
+  "dynamic_range_db": 21.91200089454651,
+  "frame_peak_dbfs_p90": -1.5086161925628754,
+  "sample_peak_dbfs": -0.6586729670669865,
+  "full_scale_samples": 0,
+  "longest_loud_event_seconds": 0.3199999999999985,
+  "band_energy": {
+    "body": {
+      "range_hz": [
+        80,
+        500
+      ],
+      "median_energy_fraction": 0.4180268470840083
+    },
+    "mid": {
+      "range_hz": [
+        500,
+        3000
+      ],
+      "median_energy_fraction": 0.5262124671460795
+    },
+    "presence": {
+      "range_hz": [
+        3000,
+        5000
+      ],
+      "median_energy_fraction": 0.0005698038948992834
+    },
+    "high": {
+      "range_hz": [
+        5000,
+        8000
+      ],
+      "median_energy_fraction": 0.000683881070159339
+    }
+  },
+  "tonal_quality": {
+    "status": "unknown",
+    "reason": "No perceptual calibration; spectral balance may be natural timbre."
+  },
+  "sibilance": {
+    "status": "unknown",
+    "candidate_intervals": [
+      {
+        "start_seconds": 0.63,
+        "end_seconds": 0.65
+      },
+      {
+        "start_seconds": 0.72,
+        "end_seconds": 0.87
+      },
+      {
+        "start_seconds": 1.14,
+        "end_seconds": 1.18
+      },
+      {
+        "start_seconds": 1.8,
+        "end_seconds": 1.83
+      },
+      {
+        "start_seconds": 4.34,
+        "end_seconds": 4.43
+      },
+      {
+        "start_seconds": 7.85,
+        "end_seconds": 7.87
+      },
+      {
+        "start_seconds": 8.56,
+        "end_seconds": 8.62
+      },
+      {
+        "start_seconds": 11.24,
+        "end_seconds": 11.31
+      },
+      {
+        "start_seconds": 12.18,
+        "end_seconds": 12.23
+      },
+      {
+        "start_seconds": 12.23,
+        "end_seconds": 12.28
+      },
+      {
+        "start_seconds": 15.06,
+        "end_seconds": 15.13
+      },
+      {
+        "start_seconds": 15.14,
+        "end_seconds": 15.2
+      },
+      {
+        "start_seconds": 16.55,
+        "end_seconds": 16.6
+      },
+      {
+        "start_seconds": 19.19,
+        "end_seconds": 19.27
+      },
+      {
+        "start_seconds": 19.5,
+        "end_seconds": 19.58
+      }
+    ],
+    "candidate_frame_fraction": 0.036389413988657845,
+    "reason": "High-frequency bursts can be consonants, breath or natural timbre; not confirmed defects."
+  }
+}

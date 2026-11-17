@@ -1,0 +1,12 @@
+127.0.0.1 - - [26/Oct/2026 07:45:59] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:46:00] "GET /audio/shige_normal__original.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:46:00] "GET /audio/shige_normal__base_vocoder.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:46:27] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:46:27] "GET /audio/shige_normal__original.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:46:33] "GET /audio/shige_normal__base_vocoder.wav HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 07:46:34] "GET /audio/shige_normal__original.wav HTTP/1.1" 304 -
+127.0.0.1 - - [26/Oct/2026 07:47:14] "GET /audio/shige_normal__base_vocoder.wav HTTP/1.1" 304 -
+127.0.0.1 - - [26/Oct/2026 07:49:01] "GET /audio/shige_normal__original.wav HTTP/1.1" 304 -
+127.0.0.1 - - [26/Oct/2026 07:49:10] "GET /audio/shige_normal__base_vocoder.wav HTTP/1.1" 304 -
+127.0.0.1 - - [26/Oct/2026 07:50:20] "GET /audio/shige_normal__base_vocoder.wav HTTP/1.1" 304 -
+127.0.0.1 - - [26/Oct/2026 07:51:06] "GET /audio/shige_normal__base_vocoder.wav HTTP/1.1" 304 -

@@ -1,0 +1,96 @@
+{
+  "experiment": "F1-EXP-010",
+  "phase": "F1-P4A",
+  "question": "把薄音的谐波结构向本人正常版靠拢，能否获得可听、自然的饱满度改善（方案 A 首轮，单机制）",
+  "single_module": true,
+  "no_stacking": true,
+  "samples": [
+    "A01"
+  ],
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "mechanism": {
+    "name": "F0 锁定谐波选择性增强（方案 A）",
+    "stft": {
+      "n": 2048,
+      "hop": 512,
+      "window": "hann",
+      "synthesis": "WOLA + 精确归一化"
+    },
+    "harmonics": "H2-H8 窄带增益，H1 与谐波间间隙不动（掩膜=1）",
+    "mask_halfwidth": "按 ±6% 颤音摆幅逐帧计算（F0×k×6% 换算 bin）",
+    "fallback": "周期性<0.35 或帧能量低于最响帧40.0dB 的帧整帧回退原声；掩膜一阶平滑 α=0.6",
+    "gain_source": "A01 谐波剖面 vs A_self_02（同曲正常版）谐波剖面的差值，逐谐波裁剪 [0,+9dB]，缺口<2dB 不处理",
+    "strengths": {
+      "V1": "50%",
+      "V2": "100%"
+    }
+  },
+  "gain_table_100": {
+    "2": 6.05,
+    "3": 6.9,
+    "4": 5.29,
+    "5": 6.65,
+    "6": 9.0,
+    "7": 7.97,
+    "8": 7.56
+  },
+  "gain_tables": {
+    "V1": {
+      "2": 3.02,
+      "3": 3.45,
+      "4": 2.65,
+      "5": 3.33,
+      "6": 4.5,
+      "7": 3.98,
+      "8": 3.78
+    },
+    "V2": {
+      "2": 6.05,
+      "3": 6.9,
+      "4": 5.29,
+      "5": 6.65,
+      "6": 9.0,
+      "7": 7.97,
+      "8": 7.56
+    }
+  },
+  "deficit_profile_db": {
+    "2": 6.05,
+    "3": 6.9,
+    "4": 5.29,
+    "5": 6.65,
+    "6": 10.04,
+    "7": 7.97,
+    "8": 7.56,
+    "9": 8.36,
+    "10": 7.97,
+    "11": 6.79,
+    "12": 3.47
+  },
+  "target_reference": "A_self_02",
+  "cross_check": [
+    "A_self_04",
+    "A_self_06",
+    "A_self_08"
+  ],
+  "listening_target_lufs": -19.36,
+  "loudness_tolerance_lu": 0.3,
+  "references": {
+    "diagnosis": "experiments/F1-EXP-009/RESULT.md — 薄音指纹：H1-H2 偏大、丰富度缺 4dB、2-4kHz 弱",
+    "paper_D_glottal_source": "https://www.isca-archive.org/smm_2019/cabral19_smm.html — 声源特征变换方向的工程化第一步",
+    "stop_condition": "初测+最多一次修订；无自然饱满改善或出现金属感/失真 → 转 C（接受边界），不扫参数"
+  },
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "blind_seed": 20261102
+}

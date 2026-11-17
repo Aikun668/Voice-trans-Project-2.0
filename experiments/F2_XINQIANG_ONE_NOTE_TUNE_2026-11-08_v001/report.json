@@ -1,0 +1,168 @@
+{
+  "source": "心墙01-对照微微跑调",
+  "word": "着",
+  "approved_cut": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_WORD_CUT_2026-11-08_v001\\report.json",
+  "anchors": [
+    {
+      "word": "不",
+      "source_seconds": [
+        1.515,
+        1.595
+      ],
+      "reference_seconds": [
+        114.52,
+        114.61
+      ],
+      "source_cents": -941.0160195893483,
+      "reference_cents": -590.5273421139749,
+      "note_offset_cents": -300
+    },
+    {
+      "word": "去",
+      "source_seconds": [
+        1.745,
+        1.825
+      ],
+      "reference_seconds": [
+        114.77,
+        114.82
+      ],
+      "source_cents": -939.5570445236613,
+      "reference_cents": -609.5926280987517,
+      "note_offset_cents": -300
+    },
+    {
+      "word": "心",
+      "source_seconds": [
+        2.235,
+        2.365
+      ],
+      "reference_seconds": [
+        115.54,
+        115.62
+      ],
+      "source_cents": -976.1021638705531,
+      "reference_cents": -633.3668505693471,
+      "note_offset_cents": -400
+    },
+    {
+      "word": "得",
+      "source_seconds": [
+        2.435,
+        2.545
+      ],
+      "reference_seconds": [
+        115.79,
+        115.945
+      ],
+      "source_cents": -1034.222316329795,
+      "reference_cents": -618.0405214669776,
+      "note_offset_cents": -400
+    },
+    {
+      "word": "太",
+      "source_seconds": [
+        2.685,
+        2.875
+      ],
+      "reference_seconds": [
+        116.345,
+        116.445
+      ],
+      "source_cents": -1001.6392712613006,
+      "reference_cents": -595.4393629099959,
+      "note_offset_cents": -400
+    },
+    {
+      "word": "远",
+      "source_seconds": [
+        3.09,
+        3.6
+      ],
+      "reference_seconds": [
+        116.515,
+        116.73
+      ],
+      "source_cents": -1102.2723594953336,
+      "reference_cents": -699.931283947317,
+      "note_offset_cents": -400
+    }
+  ],
+  "majority_semitone_offset_cents": -400,
+  "local_tuning_cents": -1.9558153783170837,
+  "reference_core_seconds": [
+    114.278,
+    114.39
+  ],
+  "reference_note": "D#4",
+  "source_core_seconds": [
+    1.205,
+    1.315
+  ],
+  "source_median_cents": -899.3621244542837,
+  "target_note": "B3",
+  "target_cents": -1001.9558153783171,
+  "planned_shift_cents": -102.6,
+  "measured_shift_cents": -102.63698742051417,
+  "readback_core_cents": -1000.6145966537492,
+  "pitch_curve_seconds": [
+    1.1,
+    1.443
+  ],
+  "affected_audio_seconds": [
+    1.1,
+    1.4099791666666666
+  ],
+  "processing": "One pass with poc_phase4b.smooth_shift (Praat), with existing local crossfade via splice",
+  "trained_f2_model_used": false,
+  "peak_10ms_step_cents_in_word": {
+    "original": 86.21172610307156,
+    "corrected": 59.53703918135909
+  },
+  "voiced_overlap": 0.9787234042553191,
+  "preview_source_seconds": [
+    0.755,
+    1.415
+  ],
+  "compare_split_seconds": 0.8,
+  "levels": {
+    "original.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.6,
+      "dbtp": -7.8,
+      "sha256": "2e9b7de44ae19ac9f639fa6e663d8511e2df7bda9294a66db56ed68e8eed1cea"
+    },
+    "corrected.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.8,
+      "dbtp": -7.8,
+      "sha256": "37516a54f5138fbf26e3e980493149dc815a7bf2cf57c9d9c60c6fc064f59825"
+    },
+    "compare.wav": {
+      "samples": 76800,
+      "sample_rate": 48000,
+      "lufs": -19.0,
+      "dbtp": -7.8,
+      "sha256": "493b2a122a0a92cc65a59c12a59050e6c9ffc09c79a631378c3832eafb782de9"
+    }
+  },
+  "inputs": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "anchor_matches_approved_cut": true,
+    "exact_original_then_corrected": true,
+    "outside_splice_identical": true,
+    "matched_loudness": true,
+    "true_peak_at_most_minus_1_dbtp": true,
+    "pitch_target_within_5_cents": true,
+    "voiced_overlap_at_least_0_95": true,
+    "largest_word_pitch_step_not_increased": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

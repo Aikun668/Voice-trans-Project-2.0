@@ -1,0 +1,36 @@
+{
+  "experiment": "F1-EXP-010",
+  "phase": "F1-P4A",
+  "sample_id": "A01",
+  "dataset_id": "A_self_01",
+  "display": "平凡之路 / 薄音版",
+  "target_reference": {
+    "dataset_id": "A_self_02",
+    "display": "平凡之路 / 正常版",
+    "use": "只读谐波剖面作为增益目标，不处理不交付"
+  },
+  "cross_check": [
+    "A_self_04",
+    "A_self_06",
+    "A_self_08"
+  ],
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "wav_sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+  "raw_sha256": "cbb3ddfabf7a71b809d54d784e306b5ecf61823022aa02140a54791dfd122b72",
+  "frames": 630784,
+  "sample_rate": 48000,
+  "listening_contract": {
+    "原音问题登记": "A01 自评薄音（单薄、不够充实）；诊断指纹 = 上方谐波结构与 2-4kHz 谐波能量缺失（F1-EXP-009）",
+    "素材与片段": "A01 全长 13.14s，不截取",
+    "预期可听变化": "元音更实、声音有芯、整句更充实；变化方向应为『厚』而非『亮/响』；仍是本人音色",
+    "否决副作用": "金属感/机器嗡嗡声、个别字发假或毛刺、齿音变重、闷糊、像别人；只变亮或只变响不算通过",
+    "机制边界": "本轮只动 H2-H8 谐波结构，不叠加 EQ/压缩/饱和；H1 与谐波间噪声不动"
+  }
+}

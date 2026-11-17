@@ -1,0 +1,538 @@
+{
+  "experiment": "F1-EXP-001",
+  "phase": "F1-P2",
+  "created_utc": "2026-10-31T14:52:29.610621+00:00",
+  "dev": [
+    "A01",
+    "A02",
+    "A03",
+    "A05",
+    "B01",
+    "B02"
+  ],
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C03",
+    "C01",
+    "C02"
+  ],
+  "schemes": {
+    "E1": {
+      "type": "LowShelfFilter",
+      "cutoff_hz": 220,
+      "gain_db": 2.0,
+      "q": 0.7
+    },
+    "E2": {
+      "type": "HighShelfFilter",
+      "cutoff_hz": 3000,
+      "gain_db": 1.5,
+      "q": 0.7
+    }
+  },
+  "target_lufs": -19.88,
+  "blind_seed": 20261031,
+  "technical_pass": true,
+  "records": [
+    {
+      "sample_id": "A01",
+      "dataset_id": "A_self_01",
+      "source": "Self",
+      "display": "平凡之路 / 薄音版",
+      "input_wav": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\平凡之路薄音版.wav",
+      "input_sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+      "sample_rate": 48000,
+      "frames": 630784,
+      "length_preserved": true,
+      "nonfinite": false,
+      "raw_clipping": false,
+      "abnormal_gain": false,
+      "schemes": {
+        "E1": {
+          "filter": {
+            "type": "LowShelfFilter",
+            "cutoff_hz": 220,
+            "gain_db": 2.0,
+            "q": 0.7
+          },
+          "purpose": "中低频主体感：轻微宽带低架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E1\\A01.wav",
+          "raw_sha256": "c31c2904b733bb25a443f4017e407e7c99944183d79d461a2088d93dde4f0d97",
+          "raw_frames": 630784,
+          "raw_peak_dbfs": -6.3113235301408,
+          "raw_rms_dbfs": -18.20992523856389,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -18.21,
+          "raw_true_peak_dbtp": -6.31,
+          "lufs_gain_vs_original_db": 1.0299999999999976,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\A01_B.wav",
+            "gain_db": -1.6699999999999982,
+            "lufs": -19.87,
+            "true_peak_dbtp": -7.98,
+            "frames": 630784,
+            "sha256": "fe8a04b267e0de5fa5eb2941b889d592255439541a08ecf360b3c74336b588ea"
+          },
+          "listening_label": "B"
+        },
+        "E2": {
+          "filter": {
+            "type": "HighShelfFilter",
+            "cutoff_hz": 3000,
+            "gain_db": 1.5,
+            "q": 0.7
+          },
+          "purpose": "中高频存在感：轻微宽带高架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E2\\A01.wav",
+          "raw_sha256": "a7996077e693f1902af6a18bdb7f1c9df580bad5cb1cf0b237d81d69d8a57ef6",
+          "raw_frames": 630784,
+          "raw_peak_dbfs": -6.346990418982935,
+          "raw_rms_dbfs": -19.314511355161372,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -19.22,
+          "raw_true_peak_dbtp": -6.34,
+          "lufs_gain_vs_original_db": 0.019999999999999574,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\A01_A.wav",
+            "gain_db": -0.6600000000000001,
+            "lufs": -19.84,
+            "true_peak_dbtp": -7.0,
+            "frames": 630784,
+            "sha256": "dd77351950f95fc57e8cd021139360a04783cf76ad9c632ec2bbc289d36a451a"
+          },
+          "listening_label": "A"
+        }
+      },
+      "notes": [],
+      "original_matched": {
+        "file": "experiments\\F1-EXP-001\\listening\\audio\\A01_original.wav",
+        "gain_db": -0.6400000000000006,
+        "lufs": -19.86,
+        "true_peak_dbtp": -7.05,
+        "frames": 630784,
+        "sha256": "37848008eb649ea465e99ee2ef85f723de1729900345ae87b50556756c06a461"
+      },
+      "listening": {
+        "target_lufs": -19.88,
+        "blind_key_file": "qa/blind_key.json"
+      }
+    },
+    {
+      "sample_id": "A02",
+      "dataset_id": "A_self_03",
+      "source": "Self",
+      "display": "我们的歌 / 薄音版",
+      "input_wav": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\我们的歌-薄音版.wav",
+      "input_sha256": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+      "sample_rate": 48000,
+      "frames": 669696,
+      "length_preserved": true,
+      "nonfinite": false,
+      "raw_clipping": false,
+      "abnormal_gain": false,
+      "schemes": {
+        "E1": {
+          "filter": {
+            "type": "LowShelfFilter",
+            "cutoff_hz": 220,
+            "gain_db": 2.0,
+            "q": 0.7
+          },
+          "purpose": "中低频主体感：轻微宽带低架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E1\\A02.wav",
+          "raw_sha256": "1e01038844c2ce544da71c3b3dbbf0d580349ee7627978993251b3681ea817a3",
+          "raw_frames": 669696,
+          "raw_peak_dbfs": -8.369676810239053,
+          "raw_rms_dbfs": -23.29773472505066,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -23.85,
+          "raw_true_peak_dbtp": -8.37,
+          "lufs_gain_vs_original_db": 1.2199999999999989,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\A02_B.wav",
+            "gain_db": 3.9700000000000024,
+            "lufs": -19.88,
+            "true_peak_dbtp": -4.4,
+            "frames": 669696,
+            "sha256": "6601fbf6380f59014fb08b062cf1675ae4af335d895dd5e5eff18fb9b4c87a3d"
+          },
+          "listening_label": "B"
+        },
+        "E2": {
+          "filter": {
+            "type": "HighShelfFilter",
+            "cutoff_hz": 3000,
+            "gain_db": 1.5,
+            "q": 0.7
+          },
+          "purpose": "中高频存在感：轻微宽带高架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E2\\A02.wav",
+          "raw_sha256": "e387764e4e043276d135cca27c2525c825752d2b4a061ac4fde604df480a437a",
+          "raw_frames": 669696,
+          "raw_peak_dbfs": -8.766350796915361,
+          "raw_rms_dbfs": -24.550029377265442,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -25.07,
+          "raw_true_peak_dbtp": -8.77,
+          "lufs_gain_vs_original_db": 0.0,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\A02_A.wav",
+            "gain_db": 5.190000000000001,
+            "lufs": -19.88,
+            "true_peak_dbtp": -3.58,
+            "frames": 669696,
+            "sha256": "728adb6ae82498a1753f479652be2e0c4c7ff6ca8753cfbd84afc178af2dac84"
+          },
+          "listening_label": "A"
+        }
+      },
+      "notes": [],
+      "original_matched": {
+        "file": "experiments\\F1-EXP-001\\listening\\audio\\A02_original.wav",
+        "gain_db": 5.190000000000001,
+        "lufs": -19.88,
+        "true_peak_dbtp": -3.61,
+        "frames": 669696,
+        "sha256": "5755309aa04c54934c7961e8c6b3abe98b0cb2c295cf31a8a37ba93607492512"
+      },
+      "listening": {
+        "target_lufs": -19.88,
+        "blind_key_file": "qa/blind_key.json"
+      }
+    },
+    {
+      "sample_id": "A03",
+      "dataset_id": "A_self_05",
+      "source": "Self",
+      "display": "雅俗共赏 / 清唱版",
+      "input_wav": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\雅俗共赏-清唱版.wav",
+      "input_sha256": "a9fad650bd690d4826a55e7ac69fed87569aa9e73896413611d75a70a135b401",
+      "sample_rate": 48000,
+      "frames": 720000,
+      "length_preserved": true,
+      "nonfinite": false,
+      "raw_clipping": false,
+      "abnormal_gain": false,
+      "schemes": {
+        "E1": {
+          "filter": {
+            "type": "LowShelfFilter",
+            "cutoff_hz": 220,
+            "gain_db": 2.0,
+            "q": 0.7
+          },
+          "purpose": "中低频主体感：轻微宽带低架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E1\\A03.wav",
+          "raw_sha256": "70e9d47a5559bcad8ab787c4f66f843375e46455c7116ea8c260b6653feb9223",
+          "raw_frames": 720000,
+          "raw_peak_dbfs": -5.586325257477274,
+          "raw_rms_dbfs": -18.61784451538927,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -19.68,
+          "raw_true_peak_dbtp": -5.58,
+          "lufs_gain_vs_original_db": 0.8900000000000006,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\A03_A.wav",
+            "gain_db": -0.1999999999999993,
+            "lufs": -19.88,
+            "true_peak_dbtp": -5.78,
+            "frames": 720000,
+            "sha256": "a97966c7843ec5d5968b2afd9fe8e7bfc04558c7cdc9ceff97571af50e1d1ed0"
+          },
+          "listening_label": "A"
+        },
+        "E2": {
+          "filter": {
+            "type": "HighShelfFilter",
+            "cutoff_hz": 3000,
+            "gain_db": 1.5,
+            "q": 0.7
+          },
+          "purpose": "中高频存在感：轻微宽带高架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E2\\A03.wav",
+          "raw_sha256": "f37249c5b5ba05990ddffa51610d80eff2790b8ec41b6a4d92f920189de66801",
+          "raw_frames": 720000,
+          "raw_peak_dbfs": -5.896517131404137,
+          "raw_rms_dbfs": -19.520526750991934,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -20.55,
+          "raw_true_peak_dbtp": -5.9,
+          "lufs_gain_vs_original_db": 0.019999999999999574,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\A03_B.wav",
+            "gain_db": 0.6700000000000017,
+            "lufs": -19.88,
+            "true_peak_dbtp": -5.23,
+            "frames": 720000,
+            "sha256": "5930371af894ce4fc623efc828b94a84d97fec6049a5d792d8e444b9e6ba1b6e"
+          },
+          "listening_label": "B"
+        }
+      },
+      "notes": [],
+      "original_matched": {
+        "file": "experiments\\F1-EXP-001\\listening\\audio\\A03_original.wav",
+        "gain_db": 0.6900000000000013,
+        "lufs": -19.88,
+        "true_peak_dbtp": -5.25,
+        "frames": 720000,
+        "sha256": "0056bbc79e73936539ac7cc0277ce6b5604ef7fa46fcda45e441c2a0de24f42c"
+      },
+      "listening": {
+        "target_lufs": -19.88,
+        "blind_key_file": "qa/blind_key.json"
+      }
+    },
+    {
+      "sample_id": "A05",
+      "dataset_id": "A_gt_02",
+      "source": "GTSinger",
+      "display": "女A-002（来源未保留）",
+      "input_wav": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\wav\\女A-002.wav",
+      "input_sha256": "1f2b63c251ee2f8a30f8a6117a64b9d5a161b71e1fead0cd8b523e26ad7e205c",
+      "sample_rate": 48000,
+      "frames": 572160,
+      "length_preserved": true,
+      "nonfinite": false,
+      "raw_clipping": false,
+      "abnormal_gain": false,
+      "schemes": {
+        "E1": {
+          "filter": {
+            "type": "LowShelfFilter",
+            "cutoff_hz": 220,
+            "gain_db": 2.0,
+            "q": 0.7
+          },
+          "purpose": "中低频主体感：轻微宽带低架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E1\\A05.wav",
+          "raw_sha256": "e47d811f179c7e4b0d1a358f7c1703c0a30aaa5e36e6bc993e7b10c3476a0451",
+          "raw_frames": 572160,
+          "raw_peak_dbfs": -5.638065394104369,
+          "raw_rms_dbfs": -19.776946566977543,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -20.86,
+          "raw_true_peak_dbtp": -5.61,
+          "lufs_gain_vs_original_db": 0.379999999999999,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\A05_A.wav",
+            "gain_db": 0.9800000000000004,
+            "lufs": -19.88,
+            "true_peak_dbtp": -4.63,
+            "frames": 572160,
+            "sha256": "8cd4af64e39cabe074aab41644d7f4f22952056d370ed898abaa54e8fbd7e8bd"
+          },
+          "listening_label": "A"
+        },
+        "E2": {
+          "filter": {
+            "type": "HighShelfFilter",
+            "cutoff_hz": 3000,
+            "gain_db": 1.5,
+            "q": 0.7
+          },
+          "purpose": "中高频存在感：轻微宽带高架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E2\\A05.wav",
+          "raw_sha256": "650e9d05db7a06ef994eb5c0a18c31437ff584704f01887716b49d496bbf6877",
+          "raw_frames": 572160,
+          "raw_peak_dbfs": -5.801311622898595,
+          "raw_rms_dbfs": -20.164857244338986,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -21.21,
+          "raw_true_peak_dbtp": -5.8,
+          "lufs_gain_vs_original_db": 0.029999999999997584,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\A05_B.wav",
+            "gain_db": 1.3300000000000018,
+            "lufs": -19.88,
+            "true_peak_dbtp": -4.47,
+            "frames": 572160,
+            "sha256": "eed54c7e2a507b0ecd51bee62339f27e023873d059e7d5bfc934f5c962a4f225"
+          },
+          "listening_label": "B"
+        }
+      },
+      "notes": [],
+      "original_matched": {
+        "file": "experiments\\F1-EXP-001\\listening\\audio\\A05_original.wav",
+        "gain_db": 1.3599999999999994,
+        "lufs": -19.87,
+        "true_peak_dbtp": -4.53,
+        "frames": 572160,
+        "sha256": "563f277b0c58218127ffa4200b163a05d1f96b6a10e8aeb09fcc83ba2706a903"
+      },
+      "listening": {
+        "target_lufs": -19.88,
+        "blind_key_file": "qa/blind_key.json"
+      }
+    },
+    {
+      "sample_id": "B01",
+      "dataset_id": "B_gt_02",
+      "source": "GTSinger",
+      "display": "女B-002（来源未保留）",
+      "input_wav": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\wav\\女B-002.wav",
+      "input_sha256": "1d8a9ef70a2df3a084469ae3ed91900847c4ee51b46f3659fe58530a693fe513",
+      "sample_rate": 48000,
+      "frames": 427680,
+      "length_preserved": true,
+      "nonfinite": false,
+      "raw_clipping": false,
+      "abnormal_gain": false,
+      "schemes": {
+        "E1": {
+          "filter": {
+            "type": "LowShelfFilter",
+            "cutoff_hz": 220,
+            "gain_db": 2.0,
+            "q": 0.7
+          },
+          "purpose": "中低频主体感：轻微宽带低架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E1\\B01.wav",
+          "raw_sha256": "2b3bf377a30758e2efecf684282260269c382d6d5d86b615c0583dcb7d742e04",
+          "raw_frames": 427680,
+          "raw_peak_dbfs": -6.880651634069358,
+          "raw_rms_dbfs": -22.540926313343626,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -22.86,
+          "raw_true_peak_dbtp": -6.8,
+          "lufs_gain_vs_original_db": 0.75,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\B01_B.wav",
+            "gain_db": 2.9800000000000004,
+            "lufs": -19.88,
+            "true_peak_dbtp": -3.82,
+            "frames": 427680,
+            "sha256": "8a27bc449cb126be375aabc1011964c331e2a54f11d23b4d9891d68a2ff1c4a7"
+          },
+          "listening_label": "B"
+        },
+        "E2": {
+          "filter": {
+            "type": "HighShelfFilter",
+            "cutoff_hz": 3000,
+            "gain_db": 1.5,
+            "q": 0.7
+          },
+          "purpose": "中高频存在感：轻微宽带高架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E2\\B01.wav",
+          "raw_sha256": "ec8ad9f04db2fd38c9d2d8e78ef0332d112a09f63fa3da54956dd3376025218c",
+          "raw_frames": 427680,
+          "raw_peak_dbfs": -6.842374457315045,
+          "raw_rms_dbfs": -23.278320909940927,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -23.47,
+          "raw_true_peak_dbtp": -6.81,
+          "lufs_gain_vs_original_db": 0.14000000000000057,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\B01_A.wav",
+            "gain_db": 3.59,
+            "lufs": -19.89,
+            "true_peak_dbtp": -3.22,
+            "frames": 427680,
+            "sha256": "ef6cac7af8e719da3c95cc214af9c59cb77caceb85051b6adfe5f1ce924813ea"
+          },
+          "listening_label": "A"
+        }
+      },
+      "notes": [],
+      "original_matched": {
+        "file": "experiments\\F1-EXP-001\\listening\\audio\\B01_original.wav",
+        "gain_db": 3.7300000000000004,
+        "lufs": -19.89,
+        "true_peak_dbtp": -3.2,
+        "frames": 427680,
+        "sha256": "004472f8aaf2134b6f404646b852e312833fc7c526e39067c2aad296039e27c3"
+      },
+      "listening": {
+        "target_lufs": -19.88,
+        "blind_key_file": "qa/blind_key.json"
+      }
+    },
+    {
+      "sample_id": "B02",
+      "dataset_id": "B_gt_06",
+      "source": "GTSinger",
+      "display": "男B-003（来源未保留）",
+      "input_wav": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\wav\\男B-003.wav",
+      "input_sha256": "67626595f92f5ecfe82278f8f0e41262a6ea203aad92041ba20a51a2ca43e4dc",
+      "sample_rate": 48000,
+      "frames": 653760,
+      "length_preserved": true,
+      "nonfinite": false,
+      "raw_clipping": false,
+      "abnormal_gain": false,
+      "schemes": {
+        "E1": {
+          "filter": {
+            "type": "LowShelfFilter",
+            "cutoff_hz": 220,
+            "gain_db": 2.0,
+            "q": 0.7
+          },
+          "purpose": "中低频主体感：轻微宽带低架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E1\\B02.wav",
+          "raw_sha256": "5ab91084202ae8da0ebf4a5e75121eead4144db047ec6fadf3398d8db5368e12",
+          "raw_frames": 653760,
+          "raw_peak_dbfs": -9.958959936050926,
+          "raw_rms_dbfs": -23.601215799038368,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -23.78,
+          "raw_true_peak_dbtp": -9.96,
+          "lufs_gain_vs_original_db": 0.5999999999999979,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\B02_B.wav",
+            "gain_db": 3.900000000000002,
+            "lufs": -19.88,
+            "true_peak_dbtp": -6.06,
+            "frames": 653760,
+            "sha256": "62e7fb43727b71aaa3bfceada219617b1d4b78ab94e40d5bd636b4f35afe0fc9"
+          },
+          "listening_label": "B"
+        },
+        "E2": {
+          "filter": {
+            "type": "HighShelfFilter",
+            "cutoff_hz": 3000,
+            "gain_db": 1.5,
+            "q": 0.7
+          },
+          "purpose": "中高频存在感：轻微宽带高架",
+          "raw_file": "experiments\\F1-EXP-001\\outputs\\processed_raw\\E2\\B02.wav",
+          "raw_sha256": "a3a5befbd97d7f86e1582b8d0367254396088e5bbf0469225181b897667d0024",
+          "raw_frames": 653760,
+          "raw_peak_dbfs": -10.205527587005943,
+          "raw_rms_dbfs": -24.178708654696166,
+          "raw_clipped_samples": 0,
+          "raw_integrated_lufs": -24.33,
+          "raw_true_peak_dbtp": -10.21,
+          "lufs_gain_vs_original_db": 0.05000000000000071,
+          "matched": {
+            "file": "experiments\\F1-EXP-001\\listening\\audio\\B02_A.wav",
+            "gain_db": 4.449999999999999,
+            "lufs": -19.88,
+            "true_peak_dbtp": -5.76,
+            "frames": 653760,
+            "sha256": "4891935227af404ab440047df55f100e9a46b3073c5d0e579f642ca70d757a1e"
+          },
+          "listening_label": "A"
+        }
+      },
+      "notes": [],
+      "original_matched": {
+        "file": "experiments\\F1-EXP-001\\listening\\audio\\B02_original.wav",
+        "gain_db": 4.5,
+        "lufs": -19.88,
+        "true_peak_dbtp": -5.76,
+        "frames": 653760,
+        "sha256": "8cd09d24acf9d0df2ab08c47794a7dba545866bf4d109d4a2ca7b728ea6e3037"
+      },
+      "listening": {
+        "target_lufs": -19.88,
+        "blind_key_file": "qa/blind_key.json"
+      }
+    }
+  ]
+}

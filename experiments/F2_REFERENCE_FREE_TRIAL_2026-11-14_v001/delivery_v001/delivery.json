@@ -1,0 +1,83 @@
+{
+  "title": "心墙01-轻度跑调",
+  "files": {
+    "original": "audio/original.wav",
+    "model": "audio/model.wav",
+    "reference": "audio/reference.wav"
+  },
+  "duration": 8.612,
+  "source_input": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+  "source_sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa",
+  "checkpoint_sha256": "d63eea5b0dea900aa4fb100fbb0159c0e4cba3177821d24ac6e20ceebdca955d",
+  "first_change_preview": 0.07999999999999996,
+  "common_lufs": -18.5,
+  "audio_checks": {
+    "original": {
+      "samples": 413376,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "gain_db": -0.6000000000000014,
+      "sha256": "e07a75098886e813402dc4ab18a75e3d1489b6ebbae8778cf4116a4fac63d4f3",
+      "lufs": -18.5,
+      "true_peak_dbtp": -3.6,
+      "technical_pass": true
+    },
+    "model": {
+      "samples": 413376,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "gain_db": -0.3999999999999986,
+      "sha256": "3112103da52b61cb06ca42661e374112ba11a89e9c97fcc56e2ca93ce3a33c39",
+      "lufs": -18.5,
+      "true_peak_dbtp": -3.4,
+      "technical_pass": true
+    },
+    "reference": {
+      "samples": 379789,
+      "sample_rate": 44100,
+      "finite": true,
+      "clipped_samples": 0,
+      "gain_db": 1.8999999999999986,
+      "sha256": "ee6a1e62936b38effa5f673901f37703862167cbfce39b6c46e519b9d68d6d81",
+      "lufs": -18.5,
+      "true_peak_dbtp": -6.4,
+      "technical_pass": true
+    }
+  },
+  "pitch_checks": {
+    "voiced_overlap": 0.9984544049459042,
+    "changed_pitch_frames": 227,
+    "command_error_median_cents": 1.235689768080892,
+    "command_error_p90_cents": 6.429108370698715,
+    "actual_shift_range_cents": [
+      -149.48226328853957,
+      199.0139329429992
+    ],
+    "pitch_technical_pass": true
+  },
+  "reference_input": false,
+  "reference_display": {
+    "source": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+    "source_sha256": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc",
+    "seconds": [
+      113.45299319727891,
+      122.06498866213153
+    ],
+    "method": "start estimated from already confirmed phrase correspondences; no time stretch; display only"
+  },
+  "technical_pass": true,
+  "listening": "jade_rejected",
+  "reference_is_not_model_input": true,
+  "effectiveness_pass": false,
+  "diagnostic_only": true,
+  "jade_feedback": {
+    "date": "2026-11-14",
+    "accuracy": "差不多",
+    "new_problems": "没听到新问题",
+    "preference": "都不行",
+    "useful_improvement": false,
+    "source": "../followup_2026-11-14_v001/jade_feedback.md"
+  }
+}

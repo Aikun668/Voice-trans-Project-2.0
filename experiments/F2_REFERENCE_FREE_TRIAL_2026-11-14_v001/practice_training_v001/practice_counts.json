@@ -1,0 +1,17 @@
+{
+  "train": {
+    "perturbed_sequences": 7078,
+    "known_error_frames": 177518,
+    "normal_sequences": 266
+  },
+  "test": {
+    "perturbed_sequences": 676,
+    "known_error_frames": 16990,
+    "normal_sequences": 21
+  },
+  "validation": {
+    "perturbed_sequences": 824,
+    "known_error_frames": 19977,
+    "normal_sequences": 30
+  }
+}

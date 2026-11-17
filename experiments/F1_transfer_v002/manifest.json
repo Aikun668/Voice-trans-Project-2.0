@@ -1,0 +1,47 @@
+[
+  {
+    "id": "shige",
+    "title": "本人 · 是谁在唱歌",
+    "original_source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_normal.wav",
+    "original_sha256": "086558fbe53b4e087bf10423acaf198cb1f4b2ba8f22ee28914eb13a5cfa8b15",
+    "converted_copy": false,
+    "technical_pass": true,
+    "errors": [],
+    "subjective_result": "pending_jade",
+    "phrase_seconds": [
+      13.0,
+      16.0
+    ],
+    "duration_seconds": 17.172018140589568
+  },
+  {
+    "id": "zuixuan",
+    "title": "本人 · 最炫民族风",
+    "original_source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\zuixuan_normal.wav",
+    "original_sha256": "4cd81729d94ca48029916abd9caa972be16f93528bd12d5eca839d951e76df2a",
+    "converted_copy": false,
+    "technical_pass": true,
+    "errors": [],
+    "subjective_result": "pending_jade",
+    "phrase_seconds": [
+      4.5,
+      7.5
+    ],
+    "duration_seconds": 23.57201814058957
+  },
+  {
+    "id": "web_gaobai",
+    "title": "网络 · 告白气球（女中音）",
+    "original_source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\web_singing\\gtsinger_alto_control\\告白气球_normal.wav",
+    "original_sha256": "961a715b14292591938047d0ad8448a7a10ff6cf3437f0cec44eb1539fc84216",
+    "converted_copy": true,
+    "technical_pass": true,
+    "errors": [],
+    "subjective_result": "pending_jade",
+    "phrase_seconds": [
+      0.0,
+      3.0
+    ],
+    "duration_seconds": 6.09
+  }
+]

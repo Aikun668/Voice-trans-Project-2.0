@@ -1,0 +1,33 @@
+{
+  "scope_roots": [
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0",
+    "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0",
+    "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0"
+  ],
+  "experiment_instances": 157,
+  "unique_experiment_names": 135,
+  "project_text_or_metadata_files": 1676,
+  "full_text_files_read": 1656,
+  "large_metadata_files_not_read_in_full": {
+    "main": 16,
+    "handoff": 2,
+    "initial": 2
+  },
+  "status_counts": {
+    "logical_archive_paused_stage": 97,
+    "retain_dependency_history": 10,
+    "logical_archive_old_reference_stage": 45,
+    "retain_live_input": 1,
+    "retain_latest_failed_trial": 1,
+    "retain_human_approval": 2,
+    "retain_reference_baseline_history": 1
+  },
+  "divergent_docs_or_f2_paths": 39,
+  "reference_mentions": 646,
+  "limitations": [
+    "Static code literals and text references are not a complete runtime dependency graph.",
+    "No listening, historic training, environment cleanup or mass archival performed.",
+    "Old does not mean safe to move; candidate classifications are logical archival only."
+  ],
+  "normalized_text_divergent_paths": 4
+}

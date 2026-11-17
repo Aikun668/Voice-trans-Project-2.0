@@ -1,0 +1,18 @@
+{
+  "feature": "S1-density",
+  "status": "not_accepted_first_listen",
+  "preferred_file": null,
+  "raw_feedback": "目前和原音对比，温和处理感觉又听不出来（非常认真听才能听出来一点差别吧），差别明显处理化这个档次，它又开始变闷，变得有点糊（闷的效果比较明显）",
+  "side_effects": [
+    "03 较明显档：明显发闷",
+    "03 较明显档：有点糊"
+  ],
+  "variant_feedback": {
+    "02_density_mild.wav": "几乎听不出；非常认真听才有一点差别，未确认改善",
+    "03_density_strong.wav": "开始变闷、变糊，闷感明显"
+  },
+  "revision_count": 0,
+  "next_action": "align_input_problem_and_screen_alternative_before_new_audio",
+  "candidate_disposition": "excluded_from_combination",
+  "acceptance_reference": "docs/F1_LISTENING_ACCEPTANCE.md (for future experiments; raw feedback unchanged)"
+}

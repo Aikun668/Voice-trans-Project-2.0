@@ -1,0 +1,15 @@
+{
+  "experiment": "F1-EXP-007",
+  "status": "partial_signal_two_candidates",
+  "sample_id": "A01",
+  "generated": 14,
+  "selected": 12,
+  "rejected": [
+    "C07",
+    "C14"
+  ],
+  "target_lufs": -18.0,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "listening_result": "C06 high-shelf 3k +4 audible/bright, perceived higher pitch, slight preference; C08 peak 500 +3 similar but slightly muffled; all others no difference; single sample only"
+}

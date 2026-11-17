@@ -1,0 +1,316 @@
+{
+  "experiment": "F1-EXP-010",
+  "phase": "F1-P4A",
+  "status": "pending_jade",
+  "sample_id": "A01",
+  "sample_display": "平凡之路 / 薄音版",
+  "mechanism": {
+    "name": "F0 锁定谐波选择性增强（方案 A）",
+    "stft": {
+      "n": 2048,
+      "hop": 512,
+      "window": "hann",
+      "synthesis": "WOLA + 精确归一化"
+    },
+    "harmonics": "H2-H8 窄带增益，H1 与谐波间间隙不动（掩膜=1）",
+    "mask_halfwidth": "按 ±6% 颤音摆幅逐帧计算（F0×k×6% 换算 bin）",
+    "fallback": "周期性<0.35 或帧能量低于最响帧40.0dB 的帧整帧回退原声；掩膜一阶平滑 α=0.6",
+    "gain_source": "A01 谐波剖面 vs A_self_02（同曲正常版）谐波剖面的差值，逐谐波裁剪 [0,+9dB]，缺口<2dB 不处理",
+    "strengths": {
+      "V1": "50%",
+      "V2": "100%"
+    }
+  },
+  "profiles": {
+    "thin_A01": {
+      "rel_db": {
+        "1": 0.0,
+        "2": -11.26,
+        "3": -18.53,
+        "4": -24.02,
+        "5": -27.85,
+        "6": -35.19,
+        "7": -37.09,
+        "8": -38.52,
+        "9": -43.52,
+        "10": -45.78,
+        "11": -48.03,
+        "12": -44.84
+      },
+      "voiced_frames": 560
+    },
+    "target_A02": {
+      "rel_db": {
+        "1": 0.0,
+        "2": -5.2,
+        "3": -11.63,
+        "4": -18.72,
+        "5": -21.2,
+        "6": -25.15,
+        "7": -29.12,
+        "8": -30.96,
+        "9": -35.16,
+        "10": -37.81,
+        "11": -41.23,
+        "12": -41.38
+      },
+      "voiced_frames": 571
+    },
+    "cross_check_median": {
+      "2": -6.65,
+      "3": -13.76,
+      "4": -21.18,
+      "5": -24.6,
+      "6": -27.73,
+      "7": -32.1,
+      "8": -36.89,
+      "9": -36.17,
+      "10": -37.85,
+      "11": -41.04,
+      "12": -42.91
+    },
+    "deficit_thin_vs_target_db": {
+      "2": 6.05,
+      "3": 6.9,
+      "4": 5.29,
+      "5": 6.65,
+      "6": 10.04,
+      "7": 7.97,
+      "8": 7.56,
+      "9": 8.36,
+      "10": 7.97,
+      "11": 6.79,
+      "12": 3.47
+    }
+  },
+  "baseline_metrics": {
+    "h1_minus_h2_db": -11.26,
+    "harm_richness_db_k12": -10.21,
+    "profile_rel_db": {
+      "1": 0.0,
+      "2": -11.26,
+      "3": -18.53,
+      "4": -24.02,
+      "5": -27.85,
+      "6": -35.19,
+      "7": -37.09,
+      "8": -38.52,
+      "9": -43.52,
+      "10": -45.78,
+      "11": -48.03,
+      "12": -44.84
+    },
+    "voiced_frames": 560
+  },
+  "target_metrics": {
+    "h1_minus_h2_db": -5.2,
+    "harm_richness_db_k12": -4.01,
+    "profile_rel_db": {
+      "1": 0.0,
+      "2": -5.2,
+      "3": -11.63,
+      "4": -18.72,
+      "5": -21.2,
+      "6": -25.15,
+      "7": -29.12,
+      "8": -30.96,
+      "9": -35.16,
+      "10": -37.81,
+      "11": -41.23,
+      "12": -41.38
+    },
+    "voiced_frames": 571
+  },
+  "target_lufs": -19.36,
+  "versions": [
+    {
+      "id": "V1",
+      "strength": 0.5,
+      "gain_table_db": {
+        "2": 3.02,
+        "3": 3.45,
+        "4": 2.65,
+        "5": 3.33,
+        "6": 4.5,
+        "7": 3.98,
+        "8": 3.78
+      },
+      "proc_stats": {
+        "frames_total": 1237,
+        "frames_boosted": 1042,
+        "boost_fraction": 0.842,
+        "gain_applied_mean_db": {
+          "2": 3.02,
+          "3": 3.45,
+          "4": 2.65,
+          "5": 3.33,
+          "6": 4.5,
+          "7": 3.98,
+          "8": 3.78
+        },
+        "gain_applied_frames": {
+          "2": 1042,
+          "3": 1042,
+          "4": 1042,
+          "5": 1042,
+          "6": 1042,
+          "7": 1042,
+          "8": 1042
+        }
+      },
+      "baseline_h1_minus_h2_db": -11.26,
+      "achieved_h1_minus_h2_db": -8.34,
+      "target_h1_minus_h2_db": -5.2,
+      "move_h1_minus_h2_db": 2.92,
+      "gap_closed_h1h2": 0.482,
+      "baseline_richness_db": -10.21,
+      "achieved_richness_db": -7.23,
+      "target_richness_db": -4.01,
+      "move_richness_db": 2.98,
+      "gap_closed_richness": 0.481,
+      "achieved_profile_rel_db": {
+        "1": 0.0,
+        "2": -8.34,
+        "3": -15.15,
+        "4": -21.36,
+        "5": -24.73,
+        "6": -30.85,
+        "7": -33.33,
+        "8": -35.19,
+        "9": -43.23,
+        "10": -45.99,
+        "11": -48.23,
+        "12": -44.72
+      },
+      "peak_dbfs": -3.98,
+      "rms_dbfs": -18.62,
+      "crest_db": 14.64,
+      "centroid_hz": 331.0,
+      "lag_samples": 0,
+      "pitch_median_hz": 175.5,
+      "raw_export_guard_db": 0.0,
+      "raw_file": "experiments/F1-EXP-010/outputs/processed_raw/V1.wav",
+      "raw_sha256": "d2b2e748f57d56388e6d3a488e90c54c80d828e22f1b5db9e279834118e8af75",
+      "raw_lufs": -18.53,
+      "raw_true_peak_dbtp": -3.98,
+      "raw_lra": 3.3,
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": -0.83,
+        "lufs": -19.39,
+        "true_peak_dbtp": -4.81,
+        "frames": 630784,
+        "sha256": "3657e2128839118d68d8855d0edd7ccf27ef6d9c481b6cb121791ed487a76522"
+      }
+    },
+    {
+      "id": "V2",
+      "strength": 1.0,
+      "gain_table_db": {
+        "2": 6.05,
+        "3": 6.9,
+        "4": 5.29,
+        "5": 6.65,
+        "6": 9.0,
+        "7": 7.97,
+        "8": 7.56
+      },
+      "proc_stats": {
+        "frames_total": 1237,
+        "frames_boosted": 1042,
+        "boost_fraction": 0.842,
+        "gain_applied_mean_db": {
+          "2": 6.05,
+          "3": 6.9,
+          "4": 5.29,
+          "5": 6.65,
+          "6": 9.0,
+          "7": 7.97,
+          "8": 7.56
+        },
+        "gain_applied_frames": {
+          "2": 1042,
+          "3": 1042,
+          "4": 1042,
+          "5": 1042,
+          "6": 1042,
+          "7": 1042,
+          "8": 1042
+        }
+      },
+      "baseline_h1_minus_h2_db": -11.26,
+      "achieved_h1_minus_h2_db": -5.36,
+      "target_h1_minus_h2_db": -5.2,
+      "move_h1_minus_h2_db": 5.9,
+      "gap_closed_h1h2": 0.974,
+      "baseline_richness_db": -10.21,
+      "achieved_richness_db": -4.15,
+      "target_richness_db": -4.01,
+      "move_richness_db": 6.06,
+      "gap_closed_richness": 0.977,
+      "achieved_profile_rel_db": {
+        "1": 0.0,
+        "2": -5.36,
+        "3": -11.6,
+        "4": -18.81,
+        "5": -21.56,
+        "6": -26.65,
+        "7": -29.49,
+        "8": -31.69,
+        "9": -43.13,
+        "10": -46.1,
+        "11": -48.13,
+        "12": -45.16
+      },
+      "peak_dbfs": -1.23,
+      "rms_dbfs": -17.44,
+      "crest_db": 16.22,
+      "centroid_hz": 385.0,
+      "lag_samples": 0,
+      "pitch_median_hz": 176.0,
+      "raw_export_guard_db": 0.0,
+      "raw_file": "experiments/F1-EXP-010/outputs/processed_raw/V2.wav",
+      "raw_sha256": "4623f42694cfdd87ad4edf9d46c69be9cfc9b9d247d3529f9626ffb90893ed89",
+      "raw_lufs": -17.39,
+      "raw_true_peak_dbtp": -1.23,
+      "raw_lra": 2.3,
+      "hard_fail": [],
+      "flags": [
+        "单谐波增益触顶 9.0dB，注意金属感"
+      ],
+      "deliverable": true,
+      "diag_mark": true,
+      "matched": {
+        "gain_db": -1.97,
+        "lufs": -19.36,
+        "true_peak_dbtp": -3.2,
+        "frames": 630784,
+        "sha256": "4cd087954a33bbba0493b85602fa7459997803bc947c8241ca162c9b0ba13579"
+      }
+    }
+  ],
+  "screen_rules": {
+    "hard": [
+      "H1-H2/丰富度向目标的距离收敛比例不足（V1<25% / V2<50%）",
+      "|lag|>1 样本",
+      "|Δpitch|>2Hz",
+      "非有限值",
+      "削波"
+    ],
+    "diag": [
+      "处理帧占比<40%",
+      "单谐波增益触顶 9dB（金属感风险）"
+    ],
+    "loudness": "常数增益统一响度，无限制器；误差≤0.3 LU"
+  },
+  "limitations": [
+    "自实现谐波剖面/掩膜机制，未与外部工具校验；指标仅用于成对相对比较",
+    "增益表来自 A02 单曲剖面（F0 中值 171.8 vs A01 175.5，高度匹配）；其余正常版中位剖面已交叉核对",
+    "H9-H12 缺口仅记录不处理；丰富度目标可能无法完全闭合",
+    "掩膜宽度按 ±6% 颤音设计，极端颤音瞬间部分谐波增益可能未完全覆盖（欠增益而非杂音）",
+    "Agent 无听音能力；技术自检通过不代表听感改善，结论以 Jade 试听为准"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "source": "心墙01-对照微微跑调",
+  "word": "学",
+  "model_weights_used": false,
+  "target_note": "B3",
+  "target_cents": -1001.9558153783171,
+  "pitch_curve_source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_XUE_CONTOUR_2026-11-08_v001\\report.json",
+  "left_fade_seconds": [
+    0.855,
+    0.875
+  ],
+  "right_fade_seconds": [
+    1.086,
+    1.087
+  ],
+  "core_seconds": [
+    0.9,
+    1.0615
+  ],
+  "peak_shift_command_cents": 679.1228626147284,
+  "psola_core_rms_change_before_splice_db": {
+    "zero_shift": 0.05736826861888744,
+    "approved_shift": -2.234571171679221
+  },
+  "rubberband_r3_rejected_full_take_measurements": {
+    "standard": {
+      "core_voiced_overlap": 1.0,
+      "median_command_error_cents": -144.90907486071376,
+      "p90_absolute_command_error_cents": 573.9669351210251,
+      "target_center_error_cents": -147.5947028856092,
+      "candidate_core_hz_p10_p90": [
+        199.48296099561608,
+        351.1944895827159
+      ]
+    },
+    "short_window": {
+      "core_voiced_overlap": 1.0,
+      "median_command_error_cents": -125.36210682383967,
+      "p90_absolute_command_error_cents": 183.36733094279305,
+      "target_center_error_cents": -137.22858223270669,
+      "candidate_core_hz_p10_p90": [
+        216.40321700248228,
+        271.97545508092657
+      ]
+    }
+  },
+  "engines": {
+    "world": {
+      "adapter": "pyworld 0.3.5",
+      "license": "MIT",
+      "frame_period_ms": 2.5,
+      "source": "https://github.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder",
+      "paper": "https://www.jstage.jst.go.jp/article/transinf/E99.D/7/E99.D_2015EDP7457/_article/-char/en"
+    },
+    "lpc": {
+      "adapter": "Praat via Parselmouth",
+      "version": "0.4.7",
+      "praat_version": "6.1.38",
+      "license": "GPL-3.0-or-later",
+      "source": "https://praat.org/manual/Manipulation.html"
+    },
+    "rubberband": {
+      "adapter": "R3 CLI 4.0.0",
+      "license": "GPL-2.0-or-later",
+      "source": "https://breakfastquay.com/rubberband/index.html",
+      "vendor_zip_sha256": "f2d47fc64dbb42f6cc62edf7933ac4fa89d8f0ef8b9cf97b6afc263a7fe05644"
+    }
+  },
+  "compare_order": [
+    "original.wav",
+    "previous.wav",
+    "world.wav",
+    "lpc.wav"
+  ],
+  "compare_split_seconds": 0.8,
+  "versions": {
+    "world.wav": {
+      "engine_calibration_cents": -5.0,
+      "core_gain_db": -0.9942027768080752,
+      "fixed_preview_gain_db": -5.35,
+      "outside_splice_identical": true,
+      "median_command_error_cents": -3.2787523881945333,
+      "p90_absolute_command_error_cents": 10.876579857004458,
+      "target_center_error_cents": 3.6058350934451937,
+      "voiced_overlap": 0.9787234042553191
+    },
+    "lpc.wav": {
+      "engine_calibration_cents": -4.0,
+      "core_gain_db": 11.194180626466592,
+      "fixed_preview_gain_db": -4.65,
+      "outside_splice_identical": true,
+      "median_command_error_cents": -1.4040129841136206,
+      "p90_absolute_command_error_cents": 6.855867428845187,
+      "target_center_error_cents": 3.070214293008803,
+      "voiced_overlap": 0.9791666666666666
+    },
+    "previous.wav": {
+      "median_command_error_cents": 1.1642125864279933,
+      "p90_absolute_command_error_cents": 3.8496097181495657,
+      "target_center_error_cents": 3.687518828252564,
+      "voiced_overlap": 0.9787234042553191
+    }
+  },
+  "levels": {
+    "original.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.6,
+      "dbtp": -7.8,
+      "sha256": "2e9b7de44ae19ac9f639fa6e663d8511e2df7bda9294a66db56ed68e8eed1cea"
+    },
+    "previous.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -7.2,
+      "sha256": "7d7fb4b7d5dc511e0c4e01d7589d74559cc6690d934b386331c16d91ad31111c"
+    },
+    "world.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -6.7,
+      "sha256": "a3b0a457e0cb0a329adb9a01c5e8fff3741f4d50e7f9eb2ae0f8d9f331b7bf12"
+    },
+    "lpc.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -4.5,
+      "sha256": "21bf7aac70f210f06ff90fe43c2bdc7107627d9269321d4d5b4cbb36fcf9326c"
+    },
+    "compare.wav": {
+      "samples": 153600,
+      "sample_rate": 48000,
+      "lufs": -19.1,
+      "dbtp": -4.5,
+      "sha256": "653b7495c3c68c560ccbb38793bd4ab0015cec242924e5e2b5cecf58222f0199"
+    }
+  },
+  "inputs": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_XUE_CONTOUR_2026-11-08_v001\\audio\\original.wav": "2e9b7de44ae19ac9f639fa6e663d8511e2df7bda9294a66db56ed68e8eed1cea",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_XUE_CONTOUR_2026-11-08_v002\\audio\\corrected.wav": "7d7fb4b7d5dc511e0c4e01d7589d74559cc6690d934b386331c16d91ad31111c"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "anchors_bit_exact": true,
+    "comparison_order_exact": true,
+    "pitch_errors_under_5_cents": true,
+    "voiced_overlap_at_least_0_95": true,
+    "matched_loudness_within_0_5_lu": true,
+    "outside_splice_identical_before_preview_gain": true,
+    "sample_count_rate_and_true_peak_verified": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>《心墙》· “学”字滑音对照</title>
+<style>
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; color: #202530; font: 1rem/1.65 system-ui, sans-serif; }
+  button, textarea { font: inherit; }
+  button { padding: .35rem .65rem; cursor: pointer; }
+  #compare { background: #204d76; color: white; border: 1px solid #204d76; }
+  audio, textarea { width: 100%; box-sizing: border-box; }
+  label { display: block; margin-top: .25rem; }
+  fieldset { margin: 1rem 0; border: 1px solid #bcc4ce; }
+  li { margin: .3rem 0; }
+  #answer { margin-top: .75rem; }
+</style>
+<main>
+  <h1>《心墙》“学”字滑音对照</h1>
+  <p>戴耳机，音量固定。每段 0.8 秒，单段实测 −18.6 至 −18.5 LUFS。Agent 不能听音，对比上轮 WORLD 和两版新试听，听电音有没有少，字感还像不像“学着”。</p>
+  <button type="button" id="compare" data-audio="compare.wav">一键连听 · 原音 → 上轮 WORLD → 保留滑音 → 保留滑音·半量</button>
+  <p id="now">原音 → 上轮 WORLD → 保留滑音 → 保留滑音·半量</p>
+  <audio controls id="player" preload="metadata" src="audio/compare.wav"></audio>
+  <ol>
+    <li><button type="button" data-audio="original.wav">原音·同样响</button> 故意唱偏的录音。</li>
+    <li><button type="button" data-audio="world.wav">上轮 WORLD</button> 音高往下拉，同时把原来的滑音压小。</li>
+    <li><button type="button" data-audio="retain_glide.wav">保留滑音</button> 保留原来的升降走势，中心仍落在上轮目标附近。</li>
+    <li><button type="button" data-audio="half_shift.wav">保留滑音·半量</button> 同样保留走势，向目标只拉一半，用来听降调幅度的影响。</li>
+  </ol>
+  <form>
+    <fieldset>
+      <legend>对比上轮 WORLD，哪版电音少，同时还像“学着”？</legend>
+      <label><input type="radio" name="verdict" value="保留滑音更好" required> 保留滑音更好</label>
+      <label><input type="radio" name="verdict" value="半量更好"> 半量更好</label>
+      <label><input type="radio" name="verdict" value="两版都更好"> 两版都更好</label>
+      <label><input type="radio" name="verdict" value="电音差不多或更明显"> 电音差不多或更明显</label>
+      <label><input type="radio" name="verdict" value="电音少了但又像靴着"> 电音少了但又像“靴着”</label>
+      <label><input type="radio" name="verdict" value="拿不准"> 拿不准</label>
+    </fieldset>
+    <label>补充（可不填）<textarea id="notes" rows="2"></textarea></label>
+    <button>生成答案</button>
+    <textarea id="answer" aria-label="复制这行回聊天" rows="2" readonly hidden></textarea>
+  </form>
+</main>
+<script>
+  const player = document.querySelector("#player");
+  const now = document.querySelector("#now");
+  const order = ["原音", "上轮 WORLD", "保留滑音", "保留滑音·半量"];
+  const full = "audio/compare.wav";
+  const slot = 0.8;
+  const selection = new Map(Array.from(document.querySelectorAll("[data-audio]"),
+    button => ["audio/" + button.dataset.audio, button.textContent.trim()]));
+
+  player.addEventListener("timeupdate", () => {
+    if (player.getAttribute("src") === full) {
+      const index = Math.min(order.length - 1, Math.floor(player.currentTime / slot));
+      now.textContent = (index + 1) + " / 4 · " + order[index];
+    }
+  });
+
+  for (const button of document.querySelectorAll("[data-audio]")) {
+    button.addEventListener("click", () => {
+      const source = "audio/" + button.dataset.audio;
+      const current = player.getAttribute("src");
+      const resume = source !== full && source !== current && !player.paused;
+      const time = resume ? player.currentTime % slot : 0;
+      if (source !== current) player.src = source;
+      player.currentTime = time;
+      now.textContent = source === full ? "1 / 4 · 原音" : selection.get(source);
+      player.play().catch(() => {
+        if (player.getAttribute("src") === source) now.textContent = "请按播放器上的播放键。";
+      });
+    });
+  }
+
+  document.querySelector("form").addEventListener("submit", event => {
+    event.preventDefault();
+    const answer = document.querySelector("#answer");
+    const notes = document.querySelector("#notes").value.trim();
+    answer.value = "《心墙》“学”滑音对照：" + new FormData(event.target).get("verdict")
+      + (notes ? "\n补充：" + notes : "");
+    answer.hidden = false;
+    answer.select();
+  });
+</script>
+</html>

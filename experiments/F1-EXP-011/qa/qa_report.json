@@ -1,0 +1,177 @@
+{
+  "experiment": "F1-EXP-011",
+  "phase": "F1-P4A-rev1",
+  "status": "pending_jade",
+  "sample_id": "A01",
+  "sample_display": "平凡之路 / 薄音版",
+  "revision": {
+    "of": "F1-EXP-010 V2",
+    "single_control": "谐波覆盖 H2-H8 -> H2-H12；逐谐波掩膜半宽（k×±6%，谐波间距一半封顶）为覆盖扩展的必要适配，其余与上轮完全一致",
+    "strength": 1.0,
+    "cap_db": 9.0,
+    "gain_table_db": {
+      "2": 6.05,
+      "3": 6.9,
+      "4": 5.29,
+      "5": 6.65,
+      "6": 9.0,
+      "7": 7.97,
+      "8": 7.56,
+      "9": 8.36,
+      "10": 7.97,
+      "11": 6.79,
+      "12": 3.47
+    },
+    "deficit_profile_db": {
+      "2": 6.05,
+      "3": 6.9,
+      "4": 5.29,
+      "5": 6.65,
+      "6": 10.04,
+      "7": 7.97,
+      "8": 7.56,
+      "9": 8.36,
+      "10": 7.97,
+      "11": 6.79,
+      "12": 3.47
+    },
+    "stop_condition": "修订版相对上轮B仍只有一点点 → 方案A终止转C"
+  },
+  "mechanism_note": "STFT/回退/平滑/合成与 F1-EXP-010 相同；仅掩膜半宽由全帧统一宽度改为逐谐波宽度",
+  "baseline_metrics": {
+    "h1_minus_h2_db": -11.26,
+    "richness_k2_12_db": -10.21,
+    "richness_k9_12_db": -39.23,
+    "profile_rel_db": {
+      "1": 0.0,
+      "2": -11.26,
+      "3": -18.53,
+      "4": -24.02,
+      "5": -27.85,
+      "6": -35.19,
+      "7": -37.09,
+      "8": -38.52,
+      "9": -43.52,
+      "10": -45.78,
+      "11": -48.03,
+      "12": -44.84
+    },
+    "voiced_frames": 560
+  },
+  "target_metrics": {
+    "h1_minus_h2_db": -5.2,
+    "richness_k2_12_db": -4.01,
+    "richness_k9_12_db": -32.09,
+    "profile_rel_db": {
+      "1": 0.0,
+      "2": -5.2,
+      "3": -11.63,
+      "4": -18.72,
+      "5": -21.2,
+      "6": -25.15,
+      "7": -29.12,
+      "8": -30.96,
+      "9": -35.16,
+      "10": -37.81,
+      "11": -41.23,
+      "12": -41.38
+    },
+    "voiced_frames": 571
+  },
+  "anchor_V2_metrics": {
+    "h1_minus_h2_db": -5.36,
+    "richness_k2_12_db": -4.15,
+    "richness_k9_12_db": -39.24,
+    "profile_rel_db": {
+      "1": 0.0,
+      "2": -5.36,
+      "3": -11.6,
+      "4": -18.81,
+      "5": -21.56,
+      "6": -26.65,
+      "7": -29.49,
+      "8": -31.69,
+      "9": -43.12,
+      "10": -46.1,
+      "11": -48.13,
+      "12": -45.15
+    },
+    "voiced_frames": 554
+  },
+  "V3": {
+    "proc_stats": {
+      "frames_total": 1237,
+      "frames_boosted": 1042,
+      "boost_fraction": 0.842
+    },
+    "key_metrics": {
+      "h1_minus_h2_db": -5.74,
+      "richness_k2_12_db": -4.53,
+      "richness_k9_12_db": -32.77,
+      "profile_rel_db": {
+        "1": 0.0,
+        "2": -5.74,
+        "3": -12.07,
+        "4": -19.15,
+        "5": -21.7,
+        "6": -26.63,
+        "7": -29.59,
+        "8": -31.84,
+        "9": -35.76,
+        "10": -38.68,
+        "11": -41.99,
+        "12": -41.87
+      },
+      "voiced_frames": 557
+    },
+    "gap_closed_h1h2": 0.911,
+    "gap_closed_richness_k9_12": 0.905,
+    "peak_dbfs": -1.41,
+    "centroid_hz": 388.0,
+    "lag_samples": 0,
+    "pitch_median_hz": 176.4,
+    "pitch_delta_hz": 0.43,
+    "raw_export_guard_db": 0.0,
+    "raw_sha256": "f5edcc5a3ee60079063562bfe3f936efb2e4a1bb56a7683abc3bd59142d3dcfa",
+    "raw_lufs": -17.51,
+    "raw_true_peak_dbtp": -1.41,
+    "hard_fail": [],
+    "flags": [
+      "单谐波增益触顶 9.0dB（与上轮相同，H6），注意金属感"
+    ],
+    "deliverable": true,
+    "diag_mark": true
+  },
+  "target_lufs": -19.36,
+  "exports": [
+    {
+      "tag": "original",
+      "file": "experiments/F1-EXP-011/listening/audio/original.wav",
+      "lufs": -19.37,
+      "true_peak_dbtp": -6.53,
+      "frames": 630784,
+      "sha256": "0b07c2d93710b06e7393fe7431170e1ae9d7e10d9496d1082618024d7df5ca98"
+    },
+    {
+      "tag": "anchor_B",
+      "file": "experiments/F1-EXP-011/listening/audio/prev_B.wav",
+      "lufs": -19.36,
+      "true_peak_dbtp": -3.2,
+      "frames": 630784,
+      "sha256": "4cd087954a33bbba0493b85602fa7459997803bc947c8241ca162c9b0ba13579"
+    },
+    {
+      "tag": "V3",
+      "file": "experiments/F1-EXP-011/listening/audio/revision.wav",
+      "lufs": -19.35,
+      "true_peak_dbtp": -3.26,
+      "frames": 630784,
+      "sha256": "a1409cf92339d56d38184375979468e510b0be2ad41ea0a3437551037630ca5f"
+    }
+  ],
+  "limitations": [
+    "H13+ 未测量未处理；2-4kHz 中 H13-H23 部分仍在本机制覆盖之外",
+    "高次泛音区绝对能量低（-36 至 -43dB rel），增益与测量噪声敏感度更高",
+    "自实现机制未与外部工具校验；结论以 Jade 试听为准"
+  ]
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>莫问归期 · 单音还原 v002</title>
+<style>
+  body { max-width: 44rem; margin: 2.5rem auto; padding: 0 1rem; color: #202530; font: 1rem/1.6 system-ui, sans-serif; }
+  button, select, textarea { font: inherit; }
+  button { margin: .2rem .3rem .2rem 0; padding: .35rem .6rem; cursor: pointer; }
+  button[aria-pressed="true"] { background: #204d76; color: white; border-color: #204d76; border-radius: .25rem; }
+  audio, textarea { display: block; width: 100%; margin: .75rem 0; }
+  label { display: block; margin: .65rem 0; }
+  select { max-width: 100%; }
+  [hidden] { display: none; }
+</style>
+<main>
+  <h1>《莫问归期》单音还原 v002</h1>
+  <p>重点听 <strong>4.2–5.5 秒</strong>，尤其是长音刚进来的地方。建议戴耳机、固定音量。三个版本都是同一遍录音，实测响度都是 −18.5 LUFS，只用固定增益。Agent 不能听音，请你判断还原后是否自然。</p>
+  <div aria-label="试听版本">
+    <button type="button" data-file="original.wav" aria-pressed="true">① 原音·同样响</button>
+    <button type="button" data-file="raised.wav" aria-pressed="false">② 调高半音</button>
+    <button type="button" data-file="restored.wav" aria-pressed="false">③ 程序降回半音</button>
+  </div>
+  <audio controls id="audio" preload="metadata" src="audio/original.wav"></audio>
+  <button type="button" id="replay">从 3.8 秒开始听</button>
+  <p>② 把目标长音升高半音。③ 用同一个起止范围、同样的过渡降回半音。这轮直接给程序修正量。</p>
+  <h2>听完后的判断</h2>
+  <form id="feedback">
+    <label>③ 和①比，音高听起来回来了吗？
+      <select id="pitch" required>
+        <option value="">选一项</option><option>回来了</option><option>还有差别</option><option>听不准</option>
+      </select>
+    </label>
+    <label>③ 和①比，有新出现的电音或不自然吗？
+      <select id="artifact" required>
+        <option value="">选一项</option><option>没有听到</option><option>有</option><option>拿不准</option>
+      </select>
+    </label>
+    <label>补充（可写大概秒数）
+      <textarea id="notes" rows="2"></textarea>
+    </label>
+    <button>生成答案</button>
+    <label id="answer-label" hidden>把这段复制回聊天
+      <textarea id="answer" rows="5" readonly></textarea>
+    </label>
+  </form>
+</main>
+<script>
+  const audio = document.querySelector("#audio");
+  const buttons = document.querySelectorAll("[data-file]");
+  let pendingPlayback = null;
+  audio.addEventListener("loadedmetadata", () => {
+    if (!pendingPlayback) return;
+    const { time, play } = pendingPlayback;
+    pendingPlayback = null;
+    audio.currentTime = time;
+    if (play) audio.play().catch(() => {});
+  });
+  for (const button of buttons) {
+    button.addEventListener("click", () => {
+      if (button.getAttribute("aria-pressed") === "true") return;
+      pendingPlayback ??= { time: audio.currentTime, play: !audio.paused };
+      for (const item of buttons) item.setAttribute("aria-pressed", String(item === button));
+      audio.src = "audio/" + button.dataset.file;
+    });
+  }
+  document.querySelector("#replay").addEventListener("click", () => {
+    if (audio.readyState < 1) {
+      pendingPlayback = { time: 3.8, play: true };
+      return;
+    }
+    audio.currentTime = 3.8;
+    audio.play().catch(() => {});
+  });
+  document.querySelector("#feedback").addEventListener("submit", event => {
+    event.preventDefault();
+    const pitch = document.querySelector("#pitch").value;
+    const artifact = document.querySelector("#artifact").value;
+    const notes = document.querySelector("#notes").value.trim();
+    const answer = document.querySelector("#answer");
+    answer.value = ["《莫问归期》单音还原 v002", "音高：" + pitch, "电音或不自然：" + artifact, "补充：" + notes].join("\n");
+    document.querySelector("#answer-label").hidden = false;
+    answer.select();
+  });
+</script>
+</html>

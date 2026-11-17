@@ -1,0 +1,131 @@
+{
+  "vocoder": {
+    "events": [],
+    "count_frames": 0,
+    "f0_unvoiced_at_dropout_frame_center": 0,
+    "engineering": {
+      "spread_db": 2.8155657916339405,
+      "min_db": -6.24248539416798
+    }
+  },
+  "a2a": {
+    "events": [
+      {
+        "start_s": 0.8,
+        "end_s": 0.82,
+        "min_db": -13.89
+      },
+      {
+        "start_s": 0.92,
+        "end_s": 0.96,
+        "min_db": -20.98
+      },
+      {
+        "start_s": 0.98,
+        "end_s": 1.0,
+        "min_db": -13.1
+      },
+      {
+        "start_s": 16.86,
+        "end_s": 16.88,
+        "min_db": -14.79
+      },
+      {
+        "start_s": 16.96,
+        "end_s": 17.0,
+        "min_db": -17.8
+      }
+    ],
+    "count_frames": 7,
+    "f0_unvoiced_at_dropout_frame_center": 7,
+    "engineering": {
+      "spread_db": 9.850757931795552,
+      "min_db": -20.980223168565246
+    }
+  },
+  "a2p": {
+    "events": [
+      {
+        "start_s": 0.8,
+        "end_s": 0.82,
+        "min_db": -17.89
+      },
+      {
+        "start_s": 0.92,
+        "end_s": 0.96,
+        "min_db": -26.45
+      },
+      {
+        "start_s": 0.98,
+        "end_s": 1.0,
+        "min_db": -15.72
+      },
+      {
+        "start_s": 16.82,
+        "end_s": 16.88,
+        "min_db": -16.09
+      },
+      {
+        "start_s": 16.92,
+        "end_s": 16.94,
+        "min_db": -14.16
+      },
+      {
+        "start_s": 16.96,
+        "end_s": 17.0,
+        "min_db": -20.33
+      }
+    ],
+    "count_frames": 10,
+    "f0_unvoiced_at_dropout_frame_center": 10,
+    "engineering": {
+      "spread_db": 11.313257312269887,
+      "min_db": -26.44414149617688
+    }
+  },
+  "a2p_mean": {
+    "events": [
+      {
+        "start_s": 0.8,
+        "end_s": 0.82,
+        "min_db": -18.02
+      },
+      {
+        "start_s": 0.92,
+        "end_s": 0.96,
+        "min_db": -26.56
+      },
+      {
+        "start_s": 0.98,
+        "end_s": 1.0,
+        "min_db": -15.73
+      },
+      {
+        "start_s": 16.82,
+        "end_s": 16.84,
+        "min_db": -15.99
+      },
+      {
+        "start_s": 16.86,
+        "end_s": 16.88,
+        "min_db": -13.06
+      },
+      {
+        "start_s": 16.92,
+        "end_s": 16.94,
+        "min_db": -14.05
+      },
+      {
+        "start_s": 16.96,
+        "end_s": 17.0,
+        "min_db": -20.55
+      }
+    ],
+    "count_frames": 9,
+    "f0_unvoiced_at_dropout_frame_center": 9,
+    "engineering": {
+      "spread_db": 11.297252091666227,
+      "min_db": -26.554851302332075
+    }
+  }
+}

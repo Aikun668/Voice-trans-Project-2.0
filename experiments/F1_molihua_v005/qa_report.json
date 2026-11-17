@@ -1,0 +1,183 @@
+{
+  "version": "F1-DSP-v0.5",
+  "profile": "v5",
+  "created_at": "2026-10-24T23:15:43.850021-04:00",
+  "input": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\molihua_normal.wav",
+  "source_sha256": "95ba12e6968ff34bf0597cc8d13739b71385470a299ff58a5aa4f7f4dd11117e",
+  "input_samples": {
+    "sample_rate": 44100,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "frames": 573830,
+    "duration_seconds": 13.01201814058957,
+    "sample_peak_dbfs": -1.2005280267747878,
+    "rms_dbfs": -11.567919629815256,
+    "clipped_samples": 0,
+    "dc_offset": 1.6306213737354705e-06
+  },
+  "input_loudness": {
+    "integrated_lufs": -11.59,
+    "true_peak_dbtp": -1.18,
+    "loudness_range_lu": 2.9
+  },
+  "target_lufs": -18.0,
+  "presets": {
+    "v05_clear": "highpass=f=55,bass=g=1:f=250,equalizer=f=650:t=q:w=0.9:g=-3,equalizer=f=2000:t=q:w=0.7:g=3,acompressor=threshold=0.158489:ratio=2:attack=8:release=180:makeup=1",
+    "v05_strong": "highpass=f=55,bass=g=1:f=250,equalizer=f=650:t=q:w=0.9:g=-5,equalizer=f=2000:t=q:w=0.7:g=5,acompressor=threshold=0.158489:ratio=2:attack=8:release=180:makeup=1",
+    "v03_light_baseline": "highpass=f=55,bass=g=4:f=350,equalizer=f=900:t=q:w=0.7:g=-5,treble=g=-3.5:f=3200,acompressor=threshold=0.089125:ratio=3.5:attack=12:release=180:makeup=1"
+  },
+  "ffmpeg_version": "ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "technical_pass": true,
+  "listening_acceptance": "pending_jade",
+  "outputs": [
+    {
+      "file": "01_before_matched.wav",
+      "sha256": "931ac84f0e8fbe47c15f75144a8f762c249bd0dcf28040c814524562734fefe6",
+      "gain_db": -6.41,
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 573830,
+        "duration_seconds": 13.01201814058957,
+        "sample_peak_dbfs": -7.610801116556793,
+        "rms_dbfs": -17.977919599356163,
+        "clipped_samples": 0,
+        "dc_offset": 7.848106588896101e-07
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -7.59,
+        "loudness_range_lu": 2.9
+      },
+      "comparison": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "waveform_correlation": 0.9999999975685778,
+        "active_gain_spread_db": 6.610317659712093e-05,
+        "max_sample_jump_ratio": 1.0000604940233457,
+        "relative_band_change_db": {
+          "body_80_500": 2.856468679368618e-07,
+          "mid_500_3000": -1.0439659332561746e-06,
+          "presence_3000_8000": 6.593227350748521e-06
+        },
+        "pitch_comparable_frames": 529,
+        "pitch_median_abs_cents": 5.3546594916951055e-05,
+        "pitch_p95_abs_cents": 0.0004934869448678284
+      }
+    },
+    {
+      "file": "02_v05_clear.wav",
+      "sha256": "acf07f536de630a4d9b6aaf8ab71a13991d9b02added9f9a4ad58403a618281a",
+      "gain_db": -1.3099999999999987,
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 573830,
+        "duration_seconds": 13.01201814058957,
+        "sample_peak_dbfs": -6.083917346836911,
+        "rms_dbfs": -17.99583996140838,
+        "clipped_samples": 0,
+        "dc_offset": -9.983954145350648e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -6.08,
+        "loudness_range_lu": 2.4
+      },
+      "comparison": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "waveform_correlation": 0.9690103358011832,
+        "active_gain_spread_db": 3.567600942647903,
+        "max_sample_jump_ratio": 1.98165932084552,
+        "relative_band_change_db": {
+          "body_80_500": 0.11074300795952108,
+          "mid_500_3000": -0.4171481848707739,
+          "presence_3000_8000": 1.3923951849942853
+        },
+        "pitch_comparable_frames": 532,
+        "pitch_median_abs_cents": 0.3626310250879332,
+        "pitch_p95_abs_cents": 4.913925509887566
+      }
+    },
+    {
+      "file": "03_v05_strong.wav",
+      "sha256": "53e9bd4e0ace3d680efa995ef9037e43a27cb30592e897b664e1f2e335fbf718",
+      "gain_db": -1.2600000000000016,
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 573830,
+        "duration_seconds": 13.01201814058957,
+        "sample_peak_dbfs": -6.037049964247175,
+        "rms_dbfs": -18.095016528647935,
+        "clipped_samples": 0,
+        "dc_offset": -0.00010972708147379778
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -6.04,
+        "loudness_range_lu": 2.6
+      },
+      "comparison": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "waveform_correlation": 0.9504591304939373,
+        "active_gain_spread_db": 3.5789803258536557,
+        "max_sample_jump_ratio": 2.153573413675456,
+        "relative_band_change_db": {
+          "body_80_500": 0.0058940369093796185,
+          "mid_500_3000": -0.06138140320991248,
+          "presence_3000_8000": 2.394913222300584
+        },
+        "pitch_comparable_frames": 531,
+        "pitch_median_abs_cents": 0.5783335371026204,
+        "pitch_p95_abs_cents": 6.068109526756638
+      }
+    },
+    {
+      "file": "04_v03_light_baseline.wav",
+      "sha256": "5585bf86875bd375b051fbfb15902ff61d037e803dce4d6e24b0894961e387d3",
+      "gain_db": 3.539999999999999,
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 573830,
+        "duration_seconds": 13.01201814058957,
+        "sample_peak_dbfs": -6.759423048347909,
+        "rms_dbfs": -17.6799735876865,
+        "clipped_samples": 0,
+        "dc_offset": -0.0001815595667216336
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -6.76,
+        "loudness_range_lu": 2.1
+      },
+      "comparison": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "waveform_correlation": 0.9346476665931799,
+        "active_gain_spread_db": 5.322286461756585,
+        "max_sample_jump_ratio": 2.123511285383561,
+        "relative_band_change_db": {
+          "body_80_500": 0.7454650983661681,
+          "mid_500_3000": -4.21894951476279,
+          "presence_3000_8000": -3.610516890604668
+        },
+        "pitch_comparable_frames": 533,
+        "pitch_median_abs_cents": 0.619862221949911,
+        "pitch_p95_abs_cents": 9.218586723635648
+      }
+    }
+  ],
+  "errors": []
+}

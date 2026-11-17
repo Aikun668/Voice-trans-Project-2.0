@@ -1,0 +1,124 @@
+{
+  "schema_version": "f1.features.v0.2",
+  "sample_rate": 48000,
+  "samples": 292320,
+  "duration_seconds": 6.09,
+  "frame_ms": 20,
+  "hop_ms": 10,
+  "activity_gate_dbfs": -54.6815881729126,
+  "activity_method": "peak_relative_rms_gate_not_vocal_detection",
+  "activity_reference_dbfs": -14.681588172912598,
+  "activity_assessment": {
+    "status": "heuristic_unvalidated",
+    "is_voice_detection": false,
+    "relative_margin_db": 40,
+    "absolute_floor_dbfs": -75,
+    "reference_support_seconds_within_3db": 0.15,
+    "warnings": [],
+    "reference_risk": "A dominant loud transient can raise the reference; quiet nonzero frames remain unknown.",
+    "reason": "Above-gate means sufficient measured level, not confirmed singing. Below-gate nonzero audio is not declared noise."
+  },
+  "active_seconds": 6.04,
+  "active_intervals": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 1.36
+    },
+    {
+      "start_seconds": 1.37,
+      "end_seconds": 2.88
+    },
+    {
+      "start_seconds": 2.88,
+      "end_seconds": 4.83
+    },
+    {
+      "start_seconds": 4.84,
+      "end_seconds": 6.09
+    }
+  ],
+  "low_level": {
+    "status": "unknown",
+    "seconds": 0.05,
+    "candidate_intervals": [
+      {
+        "start_seconds": 1.35,
+        "end_seconds": 1.38
+      },
+      {
+        "start_seconds": 2.87,
+        "end_seconds": 2.89
+      },
+      {
+        "start_seconds": 4.82,
+        "end_seconds": 4.85
+      }
+    ],
+    "reason": "Nonzero audio below the analysis gate may include quiet singing, breath, tails or background sound. Not classified, removed or automatically processed."
+  },
+  "rms_dbfs": {
+    "p10": -39.84465103149414,
+    "p50": -21.498367309570312,
+    "p90": -19.788433456420897,
+    "p95": -18.77906455993653,
+    "p99": -15.688469085693336
+  },
+  "dynamic_range_db": 21.06558647155761,
+  "frame_peak_dbfs_p90": -11.803995792735583,
+  "sample_peak_dbfs": -6.050338865034077,
+  "full_scale_samples": 0,
+  "longest_loud_event_seconds": 0.29000000000000004,
+  "band_energy": {
+    "body": {
+      "range_hz": [
+        80,
+        500
+      ],
+      "median_energy_fraction": 0.784686522823697
+    },
+    "mid": {
+      "range_hz": [
+        500,
+        3000
+      ],
+      "median_energy_fraction": 0.19240734415554253
+    },
+    "presence": {
+      "range_hz": [
+        3000,
+        5000
+      ],
+      "median_energy_fraction": 0.006792049534782343
+    },
+    "high": {
+      "range_hz": [
+        5000,
+        8000
+      ],
+      "median_energy_fraction": 0.0001495191001002069
+    }
+  },
+  "tonal_quality": {
+    "status": "unknown",
+    "reason": "No perceptual calibration; spectral balance may be natural timbre."
+  },
+  "sibilance": {
+    "status": "unknown",
+    "candidate_intervals": [
+      {
+        "start_seconds": 0.0,
+        "end_seconds": 0.1
+      },
+      {
+        "start_seconds": 1.14,
+        "end_seconds": 1.21
+      },
+      {
+        "start_seconds": 4.19,
+        "end_seconds": 4.21
+      }
+    ],
+    "candidate_frame_fraction": 0.02809917355371901,
+    "reason": "High-frequency bursts can be consonants, breath or natural timbre; not confirmed defects."
+  }
+}

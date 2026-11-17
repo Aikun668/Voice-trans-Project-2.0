@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>离开我的依赖 · “当你”一处试听</title>
+<style>
+  body { max-width: 42rem; margin: 2.5rem auto; padding: 0 1rem; color: #202530; font: 1rem/1.65 system-ui, sans-serif; }
+  button { font: inherit; margin: .2rem .35rem .2rem 0; padding: .35rem .65rem; cursor: pointer; }
+  button[aria-pressed="true"] { background: #204d76; color: white; border-color: #204d76; }
+  audio { width: 100%; margin: .6rem 0; }
+  fieldset { border: 1px solid #bcc4ce; margin: 1rem 0; }
+  label { display: block; padding: .2rem 0; }
+  textarea { display: block; box-sizing: border-box; width: 100%; margin-top: .6rem; font: inherit; }
+</style>
+<main>
+  <h1>《离开我的依赖》只听一句</h1>
+  <p>戴耳机，固定音量。点①、再点②，各 4 秒。只修了“当你”的“当”。两版用相同的固定增益。Agent 不能听音，音准和自然度由你判断。</p>
+  <button type="button" data-file="original.wav" aria-pressed="true">① 原音·同样响</button>
+  <button type="button" data-file="corrected.wav" aria-pressed="false">② 按参考修一次</button>
+  <audio controls preload="metadata" id="audio" src="audio/original.wav"></audio>
+  <p><a href="audio/reference.wav">核对原唱同一句（可选）</a></p>
+  <form>
+    <fieldset>
+      <legend>你听②里的这个音，感觉怎样？</legend>
+      <label><input type="radio" name="verdict" value="更准，也自然" required> 更准，也自然</label>
+      <label><input type="radio" name="verdict" value="更准，但有跳变或电音"> 更准，但有跳变或电音</label>
+      <label><input type="radio" name="verdict" value="听不出更准，但有跳变或电音"> 听不出更准，但有跳变或电音</label>
+      <label><input type="radio" name="verdict" value="差不多／拿不准"> 差不多／拿不准</label>
+      <label><input type="radio" name="verdict" value="原音更准"> 原音更准</label>
+    </fieldset>
+    <button>生成答案</button>
+    <textarea id="answer" aria-label="复制这行回聊天" rows="2" readonly hidden></textarea>
+  </form>
+</main>
+<script>
+  const audio = document.querySelector("#audio");
+  const buttons = document.querySelectorAll("[data-file]");
+  let pendingPlayback = null;
+  audio.addEventListener("loadedmetadata", () => {
+    if (!pendingPlayback) return;
+    const { time, play } = pendingPlayback;
+    pendingPlayback = null;
+    audio.currentTime = time;
+    if (play) audio.play().catch(() => {});
+  });
+  for (const button of buttons) {
+    button.addEventListener("click", () => {
+      if (button.getAttribute("aria-pressed") === "true") {
+        if (audio.ended) audio.currentTime = 0;
+        audio.play().catch(() => {});
+        return;
+      }
+      pendingPlayback ??= { time: audio.ended ? 0 : audio.currentTime, play: true };
+      for (const item of buttons) item.setAttribute("aria-pressed", String(item === button));
+      audio.src = "audio/" + button.dataset.file;
+    });
+  }
+  document.querySelector("form").addEventListener("submit", event => {
+    event.preventDefault();
+    const answer = document.querySelector("#answer");
+    answer.value = "《离开我的依赖》“当你”试听：" + new FormData(event.target).get("verdict");
+    answer.hidden = false;
+    answer.select();
+  });
+</script>
+</html>

@@ -1,0 +1,7 @@
+created_utc: 2026-11-02T05:25:05.590899+00:00
+experiment: F1-EXP-016
+phase: F1-P4C
+envelope morphing (Perrotin Interspeech 2016, morphing half) on EXP-015 X1 base
+sealed: A04, A06, B03, C01, C02, C03
+target_lufs: -19.26
+technical_pass: True

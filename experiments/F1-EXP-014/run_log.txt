@@ -1,0 +1,7 @@
+created_utc: 2026-11-01T13:39:23.638050+00:00
+experiment: F1-EXP-014
+phase: F1-P4B
+full-harmonic H1-H23 frame-wise alignment; two variants (H1 adjustable vs locked)
+sealed: A04, A06, B03, C01, C02, C03
+target_lufs: -18.0
+technical_pass: True

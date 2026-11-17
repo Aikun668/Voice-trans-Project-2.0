@@ -1,0 +1,47 @@
+{
+  "source_hash_unchanged": true,
+  "reference_source_hash_unchanged": true,
+  "checkpoint_hash_matches": true,
+  "reloaded_prediction_exact": true,
+  "reconstructed_application_curve_exact": true,
+  "outside_generated_mask_exact": true,
+  "delivered_audio_hashes_and_headers_verified": 3,
+  "browser": {
+    "audio_versions": [
+      {
+        "version": "original",
+        "src": "http://127.0.0.1:62512/audio/original.wav",
+        "duration": 8.612,
+        "time": 0.04015,
+        "error": null
+      },
+      {
+        "version": "model",
+        "src": "http://127.0.0.1:62512/audio/model.wav",
+        "duration": 8.612,
+        "time": 0.041615,
+        "error": null
+      },
+      {
+        "version": "reference",
+        "src": "http://127.0.0.1:62512/audio/reference.wav",
+        "duration": 8.611995,
+        "time": 0.041897,
+        "error": null
+      }
+    ],
+    "position_switch": true,
+    "end_switch": true,
+    "reference_seek_notice": true,
+    "feedback_retained": true,
+    "feedback_exported": true,
+    "test_feedback_cleared": true,
+    "script_errors": [],
+    "all_playback_muted": true
+  },
+  "feedback_export_has_real_newlines": true,
+  "technical_pass": true,
+  "effectiveness_pass": false,
+  "diagnostic_only": true,
+  "listening": "pending_jade"
+}

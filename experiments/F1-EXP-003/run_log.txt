@@ -1,0 +1,8 @@
+created_utc: 2026-11-01T03:03:05.539996+00:00
+experiment: F1-EXP-003
+phase: F1-P2.2
+test: A01, A02, A05, B01
+sealed: A03, A04, A06, B02, B03, C01, C02, C03
+target_lufs: -25.05
+technical_pass: True
+note: original inputs not modified; holdout not processed

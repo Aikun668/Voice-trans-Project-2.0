@@ -1,0 +1,29 @@
+{
+  "seed": 20261031,
+  "mapping": {
+    "A01": {
+      "version_A": "E2",
+      "version_B": "E1"
+    },
+    "A02": {
+      "version_A": "E2",
+      "version_B": "E1"
+    },
+    "A03": {
+      "version_A": "E1",
+      "version_B": "E2"
+    },
+    "A05": {
+      "version_A": "E1",
+      "version_B": "E2"
+    },
+    "B01": {
+      "version_A": "E2",
+      "version_B": "E1"
+    },
+    "B02": {
+      "version_A": "E2",
+      "version_B": "E1"
+    }
+  }
+}

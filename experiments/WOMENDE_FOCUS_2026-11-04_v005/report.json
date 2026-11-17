@@ -1,0 +1,442 @@
+{
+  "round": "WOMENDE_FOCUS_2026-11-04_v005",
+  "listening": "pending_jade",
+  "agent_cannot_hear": true,
+  "technical_pass": true,
+  "source": {
+    "path": "test_dataset/f1_dataset_v2/A_thin/self/wav/我们的歌-薄音版.wav",
+    "sha256": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+    "sha16": "6923e1e390604a80",
+    "hash_unchanged": true,
+    "samples": 669696,
+    "sample_rate": 48000,
+    "duration_s": 13.952
+  },
+  "diagnosis": {
+    "v004_heard": "和②差不多，听不出补了什么；依旧空旷",
+    "v004_measured_after_rematch": "2–3 kHz vs ② about +4.2 dB and +7.9 dB; floor lift +3.98 / +6.48 dB vs anchor's reference",
+    "not_exhausted": "一轮两档，不按 §7.5 写成 presence 到顶。本轮换形状，不再加 2500 Hz 钟形。",
+    "c2_voiced": {
+      "voiced_400_600_db": -49.62,
+      "voiced_2400_3400_db": -61.14,
+      "voiced_drop_400_to_ring_db": 11.52,
+      "voiced_drop_50_250_to_ring_db": 26.02,
+      "ring_2200_3600_harmonic_fraction": 0.702
+    },
+    "why_not_f1": "F1 中位约 211 Hz。+70 Hz 的增益在 250 Hz 以下会削到约 -7 dB，守护不允许。",
+    "why_tail": "v003 A 链的字尾抬升不低于②。这一轮把衰减段再压低，等响门限不会把已经偏低的字尾拉回来。"
+  },
+  "v001_c2_lock": {
+    "module": "experiments/WOMENDE_FOCUS_2026-11-03_v001/harmonic_tilt.py",
+    "slope_db_per_oct": 7.992,
+    "max_gain_db": 15.0,
+    "key_up_cents": 310,
+    "alpha": {
+      "v001_c2_alpha_db": -20.11,
+      "replay_310_alpha_db": -20.11,
+      "delta_db": 0.0,
+      "tolerance_db": 1.0,
+      "stage": "harmonic_tilt output, before shelf / tail"
+    },
+    "shift_lock": {
+      "file": "experiments/WOMENDE_FOCUS_2026-11-03_v001/work/thin_keyup.wav",
+      "max_abs_diff_vs_fresh_shift": 2.5e-05,
+      "correlation_vs_fresh_shift": 1.0
+    }
+  },
+  "v004_replay_lock": {
+    "file": "experiments/WOMENDE_FOCUS_2026-11-04_v004/audio/op_replay.wav",
+    "sample_rate": 48000,
+    "samples": 669696,
+    "correlation": 1.0
+  },
+  "harmonic_shelf": {
+    "shape": "harmonic-only shelf, residual gain 0 dB",
+    "lo_hz": 800.0,
+    "full_hz": 1600.0,
+    "hold_hz": 4000.0,
+    "fade_hz": 6000.0,
+    "peak_gain_db": 10.0,
+    "curve_on_harmonic_peak_db": {
+      "200": 0.0,
+      "250": 0.0,
+      "800": 0.034,
+      "1200": 5.0,
+      "1600": 9.943,
+      "2500": 10.0,
+      "3000": 10.0,
+      "4000": 9.974,
+      "6000": 0.0,
+      "8000": 0.0
+    },
+    "below_250_max_abs_gain_db": 0.0,
+    "voiced_fraction": 0.692
+  },
+  "tail_trim": {
+    "depth_db": 10.0,
+    "smooth_ms": 30.0,
+    "decay_frame_fraction": 0.244,
+    "decay_frames": 680,
+    "frames": 2791,
+    "decay_median_rel_db": -17.58,
+    "note": "增益随时间走，全频一起变轻。没有高通，没有 250 Hz 以下的削减曲线。"
+  },
+  "f0_move_vs_tilt": {
+    "shelf": {
+      "median_cents": 0.1,
+      "voiced_overlap": 0.9794,
+      "frames_both": 953
+    },
+    "tail": {
+      "median_cents": 0.0,
+      "voiced_overlap": 0.9311,
+      "frames_both": 906
+    },
+    "max_abs_cents": 5.0
+  },
+  "pitch_precheck": {
+    "ok": true,
+    "ceilings_agree": true,
+    "tracks": {
+      "600": {
+        "voiced_frames": 997,
+        "median_hz": 136.96,
+        "p95_hz": 167.93,
+        "p99_hz": 183.41,
+        "max_hz": 224.23
+      },
+      "800": {
+        "voiced_frames": 997,
+        "median_hz": 136.96,
+        "p95_hz": 167.93,
+        "p99_hz": 183.41,
+        "max_hz": 224.23
+      }
+    },
+    "shifts": [
+      {
+        "cents": 310.0,
+        "factor": 1.1961,
+        "projected_p99_hz": 219.38,
+        "projected_max_hz": 268.2,
+        "frames_over_600": 0,
+        "longest_run_frames": 0,
+        "blocked": false
+      },
+      {
+        "cents": 400.0,
+        "factor": 1.2599,
+        "projected_p99_hz": 231.08,
+        "projected_max_hz": 282.51,
+        "frames_over_600": 0,
+        "longest_run_frames": 0,
+        "blocked": false
+      }
+    ],
+    "note": ""
+  },
+  "not_applied": [
+    "chain_dry",
+    "presence_bell_2500",
+    "reverb",
+    "double_track",
+    "hard_pitch_snap",
+    "harmonic_exciter",
+    "cut_below_250_hz",
+    "formant_shift"
+  ],
+  "f1_does_not_change_pitch": true,
+  "f2k_switch": "① 关。②③④ +310 音分（v001 文件）。产品默认仍是关。宽架和字尾不改音高。",
+  "literature": [
+    "Sundberg 1974 JASA doi:10.1121/1.1914609",
+    "Sundberg 1972 STL-QPSR 13(2-3) 61-63",
+    "Sundberg et al. 1995 STL-QPSR, singer's formant revisited",
+    "ITU-R BS.1770-5",
+    "JSLHR 2024 10.1044/2024_JSLHR-23-00759"
+  ],
+  "targets": {
+    "lufs": -13.0,
+    "true_peak_dbtp_max": -1.0,
+    "lufs_abs_tolerance": 0.4,
+    "shift_error_cents_max": 5.0,
+    "voiced_overlap_min": 0.95,
+    "lever_f0_median_abs_cents_max": 5.0,
+    "tail_decay_lift_vs_replay_db_max": -6.0,
+    "shelf_1600_4000_vs_replay_db_min": 3.0
+  },
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "reuse": {
+    "parselmouth": "0.4.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "soundfile": "0.14.0",
+    "pedalboard": "0.9.26"
+  },
+  "versions": [
+    {
+      "id": "anchor",
+      "file": "anchor.wav",
+      "name": "原音·同样响",
+      "f2k_cents": 0.0,
+      "f2k_switch": "off",
+      "chain": "master_only",
+      "uses_harmonic_tilt": false,
+      "uses_a_chain": false,
+      "uses_presence_bell": false,
+      "lever": null,
+      "samples": 669696,
+      "samples_match": true,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "lufs_meter": "ffmpeg ebur128",
+      "master": {
+        "path": "v001.master",
+        "internal_ceil_dbtp": -1.3,
+        "master_gain_db": 12.8,
+        "internal_lufs": -13.1,
+        "internal_true_peak_dbtp": -1.3,
+        "pre_master_peak_dbfs": -8.8,
+        "limited_peak_dbfs": -1.31
+      },
+      "floor_lift_db": 1.4,
+      "decay_lift_db": 1.43,
+      "band_power_db": {
+        "125-200": 62.365,
+        "50-250": 59.977,
+        "400-600": 49.115,
+        "800-1600": 35.592,
+        "1600-4000": 28.182,
+        "2000-3000": 27.088,
+        "2400-3400": 26.657
+      },
+      "pitch_vs_source": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.13,
+        "cents_p95": 0.34,
+        "p95_abs_cents": 0.53,
+        "frames_both": 997,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 0.53,
+        "frames_abs_error_over_20_cents": 0.004
+      },
+      "technical_pass": true,
+      "failures": [],
+      "listening": "pending_jade",
+      "band_delta_vs_replay_db": {
+        "125-200": -1.781,
+        "50-250": -0.014,
+        "400-600": 3.719,
+        "800-1600": -3.154,
+        "1600-4000": -6.928,
+        "2000-3000": -8.272,
+        "2400-3400": -8.215
+      },
+      "correlation_vs_replay": -0.000601,
+      "decay_lift_minus_replay_db": -0.7,
+      "sha256": "ed7c1d12bbe0db6c2646d312942a2932a18951806856aae878cdf2d7e53f3c1c"
+    },
+    {
+      "id": "op_replay",
+      "file": "op_replay.wav",
+      "name": "上次有力那版",
+      "f2k_cents": 310.0,
+      "f2k_switch": "on",
+      "chain": "v001 thin_keyup → harmonic_tilt(slope locked) → master",
+      "uses_harmonic_tilt": true,
+      "uses_a_chain": false,
+      "uses_presence_bell": false,
+      "lever": null,
+      "samples": 669696,
+      "samples_match": true,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "lufs_meter": "ffmpeg ebur128",
+      "master": {
+        "path": "v001.master",
+        "internal_ceil_dbtp": -1.3,
+        "master_gain_db": 13.4,
+        "internal_lufs": -13.1,
+        "internal_true_peak_dbtp": -1.3,
+        "pre_master_peak_dbfs": -7.61,
+        "limited_peak_dbfs": -1.31
+      },
+      "floor_lift_db": 2.32,
+      "decay_lift_db": 2.13,
+      "band_power_db": {
+        "125-200": 64.146,
+        "50-250": 59.991,
+        "400-600": 45.396,
+        "800-1600": 38.746,
+        "1600-4000": 35.11,
+        "2000-3000": 35.36,
+        "2400-3400": 34.872
+      },
+      "pitch_vs_source": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.53,
+        "cents_p05": 289.69,
+        "cents_p95": 324.96,
+        "p95_abs_cents": 324.96,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.14,
+        "frames_abs_error_over_20_cents": 0.0825
+      },
+      "technical_pass": true,
+      "failures": [],
+      "listening": "pending_jade",
+      "band_delta_vs_replay_db": {
+        "125-200": 0.0,
+        "50-250": 0.0,
+        "400-600": 0.0,
+        "800-1600": 0.0,
+        "1600-4000": 0.0,
+        "2000-3000": 0.0,
+        "2400-3400": 0.0
+      },
+      "correlation_vs_replay": 1.0,
+      "decay_lift_minus_replay_db": 0.0,
+      "sha256": "dab42f74cbc5d0a0081e8aa44ba8dd36ff9a3e08c3159496aeb86a873e8d6ffa"
+    },
+    {
+      "id": "shelf",
+      "file": "shelf.wav",
+      "name": "有力 + 只补唱出来的中高频",
+      "f2k_cents": 310.0,
+      "f2k_switch": "on",
+      "chain": "v001 thin_keyup → harmonic_tilt → harmonic shelf → master",
+      "uses_harmonic_tilt": true,
+      "uses_a_chain": false,
+      "uses_presence_bell": false,
+      "lever": "shelf",
+      "samples": 669696,
+      "samples_match": true,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "lufs_meter": "ffmpeg ebur128",
+      "master": {
+        "path": "v001.master",
+        "internal_ceil_dbtp": -1.3,
+        "master_gain_db": 14.0,
+        "internal_lufs": -13.1,
+        "internal_true_peak_dbtp": -1.3,
+        "pre_master_peak_dbfs": -4.16,
+        "limited_peak_dbfs": -1.31
+      },
+      "floor_lift_db": 3.19,
+      "decay_lift_db": 2.91,
+      "band_power_db": {
+        "125-200": 63.365,
+        "50-250": 59.212,
+        "400-600": 44.086,
+        "800-1600": 41.074,
+        "1600-4000": 40.002,
+        "2000-3000": 40.721,
+        "2400-3400": 40.326
+      },
+      "pitch_vs_source": {
+        "voiced_overlap": 0.997,
+        "median_cents": 310.53,
+        "cents_p05": 288.8,
+        "cents_p95": 325.95,
+        "p95_abs_cents": 325.95,
+        "frames_both": 994,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 30.92,
+        "frames_abs_error_over_20_cents": 0.0895
+      },
+      "technical_pass": true,
+      "failures": [],
+      "listening": "pending_jade",
+      "band_delta_vs_replay_db": {
+        "125-200": -0.781,
+        "50-250": -0.779,
+        "400-600": -1.31,
+        "800-1600": 2.328,
+        "1600-4000": 4.892,
+        "2000-3000": 5.361,
+        "2400-3400": 5.454
+      },
+      "correlation_vs_replay": 0.978466,
+      "decay_lift_minus_replay_db": 0.78,
+      "sha256": "0896907e2e1ccd50902b48bd3a4bfd36df51bdaceb4be8284ed1c0b1f182bf88"
+    },
+    {
+      "id": "tail",
+      "file": "tail.wav",
+      "name": "有力 + 字尾再压低",
+      "f2k_cents": 310.0,
+      "f2k_switch": "on",
+      "chain": "v001 thin_keyup → harmonic_tilt → tail trim → master",
+      "uses_harmonic_tilt": true,
+      "uses_a_chain": false,
+      "uses_presence_bell": false,
+      "lever": "tail",
+      "samples": 669696,
+      "samples_match": true,
+      "sample_rate": 48000,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "lufs_meter": "ffmpeg ebur128",
+      "master": {
+        "path": "v001.master",
+        "internal_ceil_dbtp": -1.3,
+        "master_gain_db": 14.4,
+        "internal_lufs": -13.1,
+        "internal_true_peak_dbtp": -1.3,
+        "pre_master_peak_dbfs": -7.61,
+        "limited_peak_dbfs": -1.31
+      },
+      "floor_lift_db": -1.27,
+      "decay_lift_db": -5.82,
+      "band_power_db": {
+        "125-200": 63.999,
+        "50-250": 59.851,
+        "400-600": 45.234,
+        "800-1600": 38.703,
+        "1600-4000": 34.657,
+        "2000-3000": 35.087,
+        "2400-3400": 34.273
+      },
+      "pitch_vs_source": {
+        "voiced_overlap": 0.9799,
+        "median_cents": 310.64,
+        "cents_p05": 290.44,
+        "cents_p95": 326.09,
+        "p95_abs_cents": 326.09,
+        "frames_both": 977,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.44,
+        "frames_abs_error_over_20_cents": 0.089
+      },
+      "technical_pass": true,
+      "failures": [],
+      "listening": "pending_jade",
+      "band_delta_vs_replay_db": {
+        "125-200": -0.147,
+        "50-250": -0.14,
+        "400-600": -0.162,
+        "800-1600": -0.043,
+        "1600-4000": -0.453,
+        "2000-3000": -0.273,
+        "2400-3400": -0.599
+      },
+      "correlation_vs_replay": 0.986275,
+      "decay_lift_minus_replay_db": -7.95,
+      "sha256": "c5ba5e2975fd8c7aa5aef02e1d3dcdf569c65dfd18d154d582c2df56c2bafb87"
+    }
+  ],
+  "listening_material_s": 55.8
+}

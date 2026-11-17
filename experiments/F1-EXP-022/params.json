@@ -1,0 +1,11 @@
+{
+  "experiment": "F1-EXP-022",
+  "phase": "F1-P8",
+  "read_only": true,
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.2"
+  }
+}

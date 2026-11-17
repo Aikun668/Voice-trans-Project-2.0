@@ -1,0 +1,7 @@
+created_utc: 2026-11-02T13:12:11.938065+00:00
+experiment: F1-EXP-023
+phase: F1-P9
+selective upward compression on EXP-020 S45; GMAX 4/12 dB; strong sections untouched
+sealed untouched: A04, A06, B03, C01, C02, C03
+target_lufs: -19.97
+technical_pass: True

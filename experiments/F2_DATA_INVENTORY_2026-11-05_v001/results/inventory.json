@@ -1,0 +1,162 @@
+{
+  "items": [
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav",
+      "seconds": 8.021,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.816772,
+      "near_full_scale_samples": 0,
+      "sha256": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+      "seconds": 8.612,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.707581,
+      "near_full_scale_samples": 0,
+      "sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-对照微微跑调.wav",
+      "seconds": 12.372,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.780487,
+      "near_full_scale_samples": 0,
+      "sha256": "1331a75d46e9d5b36ef81b51598432d9c058fe0c07d22d0d2daab2511ec568b9"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-轻度跑调.wav",
+      "seconds": 14.272,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.732452,
+      "near_full_scale_samples": 0,
+      "sha256": "3861f9938869f26af95c846bf995bd77fad4c4f7a3188a0534224f4fae10e09d"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-对照微微跑调.wav",
+      "seconds": 12.608,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.87677,
+      "near_full_scale_samples": 0,
+      "sha256": "854e9cfad85336d804c6a95740e7bfeaa0f3361aad0e08c18003494af282ef19"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-轻度跑调.wav",
+      "seconds": 12.132,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.845825,
+      "near_full_scale_samples": 0,
+      "sha256": "3b09d13f2b782bca259d36777492cec4f19786c3d32978d78a6611dc7a35b2f1"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-对照微微跑调.wav",
+      "seconds": 12.732,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.777161,
+      "near_full_scale_samples": 0,
+      "sha256": "5d14c65fb8b742840fb32dc666e3a3c0d2827984ae84e1bbbd88ff8e735fe58d"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-轻度跑调.wav",
+      "seconds": 13.112,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.75473,
+      "near_full_scale_samples": 0,
+      "sha256": "fc6801a3bd924008f98ddd6f419e36f8cae3022816878eed3920897a610604eb"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav",
+      "seconds": 13.184,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.76593,
+      "near_full_scale_samples": 0,
+      "sha256": "14e01ae944d173ce96fbd2ee58a1e14bb8b76c19e99bb55f1c548bfe886849ca"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-轻度跑调.wav",
+      "seconds": 12.928,
+      "rate": 48000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.720306,
+      "near_full_scale_samples": 0,
+      "sha256": "ce8752deeb6ce8d16a2cb2a9bee0c7a66505064b5dddfdb8e898cd08209723ea"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "seconds": 232.408,
+      "rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.590424,
+      "near_full_scale_samples": 0,
+      "sha256": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "seconds": 241.418,
+      "rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.833435,
+      "near_full_scale_samples": 0,
+      "sha256": "6a7ed12e1eb4b0bbe3a4aebfc531631f1e6a4d65b772a6f6a6be7432f8c06e43"
+    },
+    {
+      "path": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "seconds": 217.083,
+      "rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sample_peak": 0.464844,
+      "near_full_scale_samples": 0,
+      "sha256": "ae69a7a4c21acd4ff405917b7ba1214bb24976cf9fdff8d9163a5dd9f905f1b5"
+    }
+  ],
+  "first_song_alignment_candidates": [
+    {
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "reference_start_s": 112.8,
+      "reference_end_s": 121.1,
+      "coarse_key_cents": -400,
+      "cost": 39.32,
+      "reversed_cost": 65.75,
+      "status": "自动候选，歌词和唱法未确认；不可作为训练标签"
+    },
+    {
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "reference_start_s": 113.4,
+      "reference_end_s": 123.2,
+      "coarse_key_cents": 100,
+      "cost": 61.32,
+      "reversed_cost": 71.82,
+      "status": "自动候选，歌词和唱法未确认；不可作为训练标签"
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "notes": [
+    "只扫描 WAV 文件，不修改音频；没有生成音频。",
+    "数值与自动对齐不能证明唱准、同字或听感。",
+    "排除文件名含严重的版本。"
+  ]
+}

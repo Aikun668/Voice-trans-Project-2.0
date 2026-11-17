@@ -1,0 +1,16 @@
+{
+  "limit": 128,
+  "skip": 0,
+  "pairs": 128,
+  "source_previous": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_POPBUTFY_CLEAN_2026-11-13_v001",
+  "asr_checkpoint": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\third_party_neuralsvb\\src\\checkpoints\\1009_pretrain_asr_english\\model_ckpt_steps_136000.ckpt",
+  "asr_sha256": "06a760c20a3cc2b281c881a6f32cc0375b593dfef3f359738954e1006c43b0b5",
+  "torch": "2.2.2+cpu",
+  "source_hash_rechecked_when_loaded": true,
+  "thresholds": {
+    "mapping_median": 0.08,
+    "mapping_p95": 0.2,
+    "pitch_fraction": 0.7,
+    "min_frames": 15
+  }
+}

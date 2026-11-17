@@ -1,0 +1,14 @@
+{
+  "previous": {
+    "h2_relative_h1_median_db": -7.8,
+    "frames": 26
+  },
+  "medium": {
+    "h2_relative_h1_median_db": -6.27,
+    "frames": 26
+  },
+  "strong": {
+    "h2_relative_h1_median_db": -4.69,
+    "frames": 26
+  }
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>F1 / F2 demo v002 · 2026-11-02</title>
+<style>
+body{font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif;background:#f4f5f7;color:#1f2430;max-width:940px;margin:24px auto;padding:0 18px}
+h1{font-size:24px;margin-bottom:4px}h2{font-size:20px;margin:32px 0 8px;border-left:5px solid #3a6ff7;padding-left:10px}
+.sub{color:#667085;font-size:14px}
+.card{background:#fff;border:1px solid #dde1e8;border-radius:10px;padding:16px 18px;margin:14px 0}
+.warn{background:#fff7e6;border-color:#f3cf86}.info{background:#eef4ff;border-color:#bcd0fb}
+.q{font-weight:650;margin:10px 0 6px}
+.switch{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.switch button{border:1px solid #b8c2d4;background:#f7f9fc;border-radius:7px;padding:7px 12px;font-size:14px;cursor:pointer}
+.switch button.on{background:#3a6ff7;color:#fff;border-color:#3a6ff7}
+.desc{font-size:13.5px;color:#4a5466;margin:4px 0 0}
+.opts label{display:inline-block;margin:3px 14px 3px 0;font-size:14.5px;cursor:pointer}
+textarea{width:100%;box-sizing:border-box;min-height:44px;border:1px solid #cfd5df;border-radius:6px;padding:6px;font:14px system-ui}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #dde1e8;padding:6px 8px;text-align:left;vertical-align:top}th{background:#eef1f6}
+#export{width:100%;min-height:150px;font-family:Consolas,monospace;font-size:13px}
+.big{font-size:16px;padding:10px 18px;background:#3a6ff7;color:#fff;border:0;border-radius:8px;cursor:pointer}
+audio{width:100%;margin-top:6px}
+</style>
+</head>
+<body>
+<h1>F1 / F2 demo v002</h1>
+<p class="sub">2026-11-02 · experiments/DEMO_2026-11-02_v002 · 所有版本都标了名字 · 听感：pending_jade（我没法直接听音频）</p>
+
+<div class="card warn">
+<b>怎么听</b>：戴耳机，先把音量调好，之后不要再动。点按钮会从当前位置无缝切换。
+F1 和组合版都在 -13 LUFS（成品响度）；F2 单独比较时在 -16 LUFS 等响。听完点最底下"生成答案"。
+</div>
+
+<div class="card info">
+<b>"美化"这次按什么标准判</b>（你上一轮问达到什么程度算数，这是我的建议，你可以改）
+<table>
+<tr><th style="width:18%">项</th><th>算成功</th><th>一票否决</th></tr>
+<tr><td>F1 音色</td><td>跟"原音·同样响"比，正常听一遍就<b>更愿意听处理版</b>：声音更靠前、更干净，不闷、不箱体</td><td>空旷/录音机感、不像本人、毛/沙/刺耳、明显压扁</td></tr>
+<tr><td>F2 修音</td><td>你自己能听出跑的地方，修完<b>回到旋律上</b>，而且不突兀</td><td>电音、某个字突然变怪</td></tr>
+<tr><td>组合（给老师看）</td><td>原音 → 组合版，<b>一听就是"同一个人唱得更好了"</b></td><td>上面任何一项否决</td></tr>
+</table>
+<p class="desc">说实话：效果器能改的是录音的"音色和质感"，没法替你把"唱法"变成专业歌手。唱片里那种"大"还有一部分来自混响，而你不要混响，所以这次的目标是<b>干净、靠前、像录音棚里录的</b>。</p>
+</div>
+
+<div class="card info">
+<b>这一版改了什么</b>
+<table>
+<tr><th style="width:12%"></th><th>做法与依据</th></tr>
+<tr><td><b>F1 V3</b>（新）</td><td>
+<b>先查清"空旷/录音机感"是哪来的</b>：用专门的去混响工具（WPE）测了一下，你录音里的长混响不到 1 dB，所以主因不是回音。
+真正的差别在音色上：和 4 位男歌手（朴树、王力宏、许嵩、李玉刚）的原唱人声比，你的手机录音"箱体/闷"的中频少了一大块，2–3 kHz 的"靠前、清楚"那一段<b>少了约 18 dB</b>。高频缺、低频堆着，就是"录音机放出来"的那种声音。
+所以 V3 会<b>先测你这条录音的频谱，再自动向录音室人声的音色靠拢</b>（补差距的 70%，单个频段最多 ±9 dB）。250 Hz 以下是你的基频，只补不削。另外加了压缩，并把句子之间的底噪再压低 12 dB。
+<b>V2"能量链"已经去掉了</b>，你说它最像录音机。</td></tr>
+<tr><td><b>F2 新版</b></td><td>
+① 你说"严重跑调版"有几处确实能听出跑，这次就在真正有跑调的 3 条录音上做，用原唱人声当参考。<br>
+② 减少电音：<b>只在要修的那几个音上重新合成</b>，其他部分保持原始录音一个采样都不动（只占全长 7–24%）；音高也改成平滑过渡。上一版是整段都重新合成。<br>
+③ 补上漏修的：最炫民族风·轻度版 9.4–17 秒有一串音偏低约 130 音分，上一版因为判定太严全漏掉了，这次修上了。<br>
+上一轮受控测试里你听到的电音，有一部分是"人为制造跑调"那一步本身带来的：那一步把整段重新合成了一遍。所以这次不再拿受控测试给你听。</td></tr>
+</table>
+</div>
+
+<h2>一、组合：F2 修音 → F1 美化（给老师看的主体）</h2>
+<div id="combos"></div>
+
+<h2>二、F1 单独：4 首薄音版</h2>
+<div id="f1songs"></div>
+
+<h2>三、F2 单独：只改音高（等响）</h2>
+<div id="f2songs"></div>
+
+<div class="card">
+<div class="q">总的来说</div>
+<div class="opts" data-q="总评 能否拿给老师">
+ <label><input type="radio" name="tot" value="可以，挑最好的一两首给老师">可以，挑最好的一两首给老师</label>
+ <label><input type="radio" name="tot" value="F1可以，F2还不行">F1 可以，F2 还不行</label>
+ <label><input type="radio" name="tot" value="F2可以，F1还不行">F2 可以，F1 还不行</label>
+ <label><input type="radio" name="tot" value="都还不行">都还不行</label>
+</div>
+<textarea data-q="其他想说的" placeholder="其他：比如哪一首最适合给老师；某版本几秒处有问题"></textarea>
+<p><button class="big" id="gen">生成答案</button></p>
+<textarea id="export" readonly></textarea>
+</div>
+
+<script>
+const PROBLEMS=["空旷/回音/录音机感","底噪/沙沙声","发闷/糊","太亮/刺耳/齿音","毛/沙/失真","压得太平","不像本人","电音/某个字变怪","力度还不够","没问题"];
+function probs(q){return `<div class="opts" data-q="${q}" data-multi="1"><b>你选的那版还有什么问题（可多选）：</b>`+PROBLEMS.map(p=>`<label><input type="checkbox" value="${p}">${p}</label>`).join('')+`</div>`;}
+function pick(q,name,opts){return `<div class="opts" data-q="${q}"><b>选：</b>`+opts.map(o=>`<label><input type="radio" name="${name}" value="${o}">${o}</label>`).join('')+`</div>`;}
+function card(title,pid,btns,extra){return `<div class="card"><div class="q">${title}</div><div class="switch" data-player="${pid}">`+
+  btns.map(([src,label,desc])=>`<button data-src="${src}" data-desc="${desc}">${label}</button>`).join('')+
+  `</div><audio id="${pid}" controls preload="metadata"></audio><p class="desc" id="${pid}d"></p>${extra}</div>`;}
+
+const COMBOS=[
+ ["zuixuan_mild","最炫民族风·轻度跑调","修了 11 处（3.3、5.9、7.6、9.4、11.0、16.6、17.3、17.7、18.9、21.6、23.2 秒附近），每处 88–153 音分"],
+ ["shige_severe","自由飞翔（你标的'是谁在唱歌'）·严重跑调","修了 10 处（4.9、8.3、9.0、9.3、10.0、11.8、13.0、13.2、16.9、17.8 秒附近），每处 63–176 音分"],
+ ["zuixuan_severe","最炫民族风·严重跑调","修了 5 处（7.2、11.7、14.1、18.3、21.2 秒附近），每处 62–121 音分"],
+ ["gyjyn","因为刚好遇见你·清唱版","你这条基本不跑，F2 只动了 13.0 秒一个短音（-77 音分），这首主要看 F1"],
+];
+const ch=document.getElementById('combos');
+COMBOS.forEach(([k,n,fx],i)=>ch.insertAdjacentHTML('beforeend',card(`组合-${i+1}：${n}`,`c${k}`,[
+ [`audio/combo_${k}_orig.wav`,"① 原音·同样响","原音，只调响度到 -13 LUFS，没做任何处理"],
+ [`audio/combo_${k}_f1.wav`,"② 只 F1 V3","只做 F1 音色美化，不修音"],
+ [`audio/combo_${k}_f2f1.wav`,"③ F2 + F1 V3","先修音再美化。"+fx],
+],pick(`组合-${i+1} ${n} 选哪版`,`cp${k}`,["③最好","②最好","原音最好","差不多"])+probs(`组合-${i+1} ${n} 所选版本问题`))));
+
+const F1S=[["pingfan","平凡之路·薄音版"],["womende","我们的歌·薄音版"],["yasu","雅俗共赏·清唱版（这条录音底噪本来就高，压得没那么干净）"],["gyjyn","因为刚好遇见你·清唱版"]];
+const f1=document.getElementById('f1songs');
+F1S.forEach(([k,n],i)=>f1.insertAdjacentHTML('beforeend',card(`F1-${i+1}：${n}`,`f${k}`,[
+ [`audio/f1_${k}_orig.wav`,"① 原音·同样响","原音，只调响度到 -13 LUFS"],
+ [`audio/f1_${k}_v1.wav`,"② V1（上一轮你选的）","上一轮的唱片链，你说还是空旷"],
+ [`audio/f1_${k}_v3.wav`,"③ V3（新）","按录音室人声音色自动 EQ + 压缩 + 压低句间底噪"],
+],pick(`F1-${i+1} ${n.split('（')[0]} 选哪版`,`fp${k}`,["V3最好","V1最好","原音最好","差不多"])+probs(`F1-${i+1} ${n.split('（')[0]} 所选版本问题`))));
+
+const f2=document.getElementById('f2songs');
+COMBOS.slice(0,3).forEach(([k,n,fx],i)=>f2.insertAdjacentHTML('beforeend',card(`F2-${i+1}：${n}`,`s${k}`,[
+ [`audio/f2_${k}_orig.wav`,"① 原音","原音，-16 LUFS"],
+ [`audio/f2_${k}_fixed.wav`,"② F2 修正","只改音高。"+fx],
+ [`audio/f2_${k}_reference.wav`,"③ 原唱对应段","凤凰传奇原唱人声里对齐上的那一段，用来对旋律。原唱和你不同调、语速也不同，按位置切换时对不上是正常的"],
+],pick(`F2-${i+1} ${n} 修音效果`,`sp${k}`,["跑的地方修回来了，自然","修回来了但有电音/怪声","听不出变化","更差了"])+
+ `<textarea data-q="F2-${i+1} ${n} 补充" placeholder="补充：哪几秒还跑，或者哪几秒有电音"></textarea>`)));
+
+document.querySelectorAll('.switch').forEach(sw=>{
+  const a=document.getElementById(sw.dataset.player), d=document.getElementById(sw.dataset.player+'d');
+  const btns=[...sw.querySelectorAll('button')];
+  const go=(b,keep)=>{
+    const t=a.currentTime||0, playing=!a.paused;
+    btns.forEach(x=>x.classList.toggle('on',x===b));
+    a.src=b.dataset.src; d.textContent=b.dataset.desc;
+    if(keep){a.addEventListener('loadedmetadata',()=>{a.currentTime=Math.min(t,Math.max(a.duration-0.05,0));if(playing)a.play();},{once:true});}
+  };
+  btns.forEach(b=>b.addEventListener('click',()=>go(b,true)));
+  go(btns[0],false);
+});
+document.getElementById('gen').addEventListener('click',()=>{
+  const out=['【demo v002 反馈 2026-11-02】'];
+  document.querySelectorAll('[data-q]').forEach(el=>{
+    const v=el.tagName==='TEXTAREA'?el.value.trim():[...el.querySelectorAll('input:checked')].map(i=>i.value).join('；');
+    out.push(el.dataset.q+'：'+(v||'（未答）'));
+  });
+  const ex=document.getElementById('export'); ex.value=out.join('\n'); ex.select();
+});
+</script>
+</body>
+</html>

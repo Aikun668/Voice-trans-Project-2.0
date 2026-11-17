@@ -1,0 +1,97 @@
+{
+  "experiment": "F1-EXP-006",
+  "phase": "F1-P3A-3",
+  "drive": 3.0,
+  "wets": {
+    "Wet50": 0.5,
+    "Wet60": 0.6,
+    "Wet70": 0.7
+  },
+  "oversampling": 4,
+  "lowpass_hz": 20000,
+  "reuse": [
+    {
+      "scheme": "Wet50",
+      "source_experiment": "F1-EXP-004",
+      "source_scheme": "Medium",
+      "drive": 3.0,
+      "wet": 0.5
+    },
+    {
+      "scheme": "Wet70",
+      "source_experiment": "F1-EXP-005",
+      "source_scheme": "Light",
+      "drive": 3.0,
+      "wet": 0.7
+    }
+  ],
+  "copy_integrity": [
+    {
+      "sample_id": "A01",
+      "scheme": "Wet50",
+      "source": "experiments\\F1-EXP-004\\outputs\\processed_raw\\Medium\\A01.wav",
+      "source_sha256": "a635b663a1ab75db231af311f8790b7cbaf116c6739d41025c49a4bc27c5a7c3",
+      "copy_sha256": "a635b663a1ab75db231af311f8790b7cbaf116c6739d41025c49a4bc27c5a7c3",
+      "match": true
+    },
+    {
+      "sample_id": "A01",
+      "scheme": "Wet70",
+      "source": "experiments\\F1-EXP-005\\outputs\\processed_raw\\Light\\A01.wav",
+      "source_sha256": "00757176254be63b8690f428ab99949d9dd14a090cf4e5744ce0d81a32f1bf6e",
+      "copy_sha256": "00757176254be63b8690f428ab99949d9dd14a090cf4e5744ce0d81a32f1bf6e",
+      "match": true
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "Wet50",
+      "source": "experiments\\F1-EXP-004\\outputs\\processed_raw\\Medium\\A05.wav",
+      "source_sha256": "7197c15fa231acfb2d0e4954cc8276895626692a8e495028f667e682d2b69eb2",
+      "copy_sha256": "7197c15fa231acfb2d0e4954cc8276895626692a8e495028f667e682d2b69eb2",
+      "match": true
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "Wet70",
+      "source": "experiments\\F1-EXP-005\\outputs\\processed_raw\\Light\\A05.wav",
+      "source_sha256": "9ade0c4d30d97f9bebddadc9eec17f5e3bded1c7b3c8686e99b15d1d2d0454bf",
+      "copy_sha256": "9ade0c4d30d97f9bebddadc9eec17f5e3bded1c7b3c8686e99b15d1d2d0454bf",
+      "match": true
+    }
+  ],
+  "alignment": [
+    {
+      "sample_id": "A01",
+      "scheme": "Wet50",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A01",
+      "scheme": "Wet60",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A01",
+      "scheme": "Wet70",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "Wet50",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "Wet60",
+      "lag_samples": 0
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "Wet70",
+      "lag_samples": 0
+    }
+  ],
+  "alignment_pass": true,
+  "raw_clipping": false,
+  "technical_pass": true
+}

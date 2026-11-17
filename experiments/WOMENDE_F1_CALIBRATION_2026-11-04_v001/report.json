@@ -1,0 +1,102 @@
+{
+  "purpose": "calibrate listening anchors",
+  "technical_pass": true,
+  "listening": "pending_jade",
+  "common_target_lufs": -18.5,
+  "measured_loudness_spread_lu": 0.0,
+  "processing": "fixed gain only, no limiter",
+  "shift_only_vs_thin": {
+    "voiced_overlap": 0.985,
+    "median_cents": 310.39,
+    "cents_p05": 293.09,
+    "cents_p95": 323.02,
+    "p95_abs_cents": 323.02,
+    "frames_both": 982,
+    "frames_ref_voiced": 997,
+    "abs_error_p95_cents": 26.7,
+    "frames_abs_error_over_20_cents": 0.0692
+  },
+  "versions": {
+    "original": {
+      "input": "test_dataset/f1_dataset_v2/A_thin/self/wav/我们的歌-薄音版.wav",
+      "input_sha256": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+      "input_hash_unchanged": true,
+      "output_sha256": "3f9a9de8ee6b9a598f745b4fc85c08ac1d67869dd21eedfe18b45f1c7e693163",
+      "fixed_gain_db": 6.3,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "duration_s": 13.952,
+      "sample_shape_unchanged": true,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -18.5,
+      "true_peak_dbtp": -2.5,
+      "pitch_vs_own_input": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.0,
+        "cents_p95": 0.0,
+        "p95_abs_cents": 0.01,
+        "frames_both": 997,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 0.01,
+        "frames_abs_error_over_20_cents": 0.0
+      },
+      "technical_pass": true
+    },
+    "shift_only": {
+      "input": "experiments/WOMENDE_FOCUS_2026-11-03_v001/work/thin_keyup.wav",
+      "input_sha256": "e4073a16b319701624b4c30c0b66bf82942ab55ec91e0f3f5f866fdb623e7ab1",
+      "input_hash_unchanged": true,
+      "output_sha256": "bafcee918658db5b983c42ae78f3b7469e7b784474e943fe8e9a9e6a419a79a2",
+      "fixed_gain_db": 6.6,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "duration_s": 13.952,
+      "sample_shape_unchanged": true,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -18.5,
+      "true_peak_dbtp": -2.3,
+      "pitch_vs_own_input": {
+        "voiced_overlap": 1.0,
+        "median_cents": -0.0,
+        "cents_p05": -0.0,
+        "cents_p95": 0.0,
+        "p95_abs_cents": 0.0,
+        "frames_both": 983,
+        "frames_ref_voiced": 983,
+        "abs_error_p95_cents": 0.0,
+        "frames_abs_error_over_20_cents": 0.0
+      },
+      "technical_pass": true
+    },
+    "normal": {
+      "input": "test_dataset/f1_dataset_v2/A_thin/self/wav/我们的歌正常版.wav",
+      "input_sha256": "ced2ec03981059267deccafbdfb3747c691492d493393c036544df4ffa46dff4",
+      "input_hash_unchanged": true,
+      "output_sha256": "3eb5673a3535c50ded4a89a28a31c346f13b90f449a62ad47218897e1666141f",
+      "fixed_gain_db": -1.0,
+      "samples": 673536,
+      "sample_rate": 48000,
+      "duration_s": 14.032,
+      "sample_shape_unchanged": true,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -18.5,
+      "true_peak_dbtp": -5.4,
+      "pitch_vs_own_input": {
+        "voiced_overlap": 1.0,
+        "median_cents": -0.0,
+        "cents_p05": -0.0,
+        "cents_p95": 0.0,
+        "p95_abs_cents": 0.0,
+        "frames_both": 937,
+        "frames_ref_voiced": 937,
+        "abs_error_p95_cents": 0.0,
+        "frames_abs_error_over_20_cents": 0.0
+      },
+      "technical_pass": true
+    }
+  }
+}

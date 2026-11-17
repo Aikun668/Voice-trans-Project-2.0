@@ -1,0 +1,4 @@
+﻿version,h1h2,rich_2_23,centroid_hz,pitch,lag,peak_dbfs,crest_db,raw_lufs,raw_tp,clipped,matched_lufs,matched_tp,hard,flags
+original(A01),11.35,-23.59,294.0,175.9,0,-6.42,12.91,-19.24,-6.41,0,-18.87,-6.03,,
+same_song_best,5.78,-19.61,414.0,,,-3.56,15.77,-19.22,,,-18.86,-3.2,,
+cross_song(cross_song),8.49,-21.34,434.0,176.1,0,-3.39,15.55,-18.75,-3.36,0,-18.84,-3.47,,

@@ -1,0 +1,4 @@
+created_utc: 2026-11-01T13:12:48.803066+00:00
+experiment: F1-EXP-012
+read-only three-dimension diagnosis on 8 self recordings (4 thin/normal pairs)
+no audio generated; no holdout processed

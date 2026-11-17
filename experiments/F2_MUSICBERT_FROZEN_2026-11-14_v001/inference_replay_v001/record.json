@@ -1,0 +1,31 @@
+{
+  "input": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+  "input_sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa",
+  "sample_rate": 48000,
+  "samples": 413376,
+  "duration": 8.612,
+  "checkpoint_sha256": "f5bb685afe128bc9e0e445be51b5333b98be6a5456df850bd9c9f2cc80bb7275",
+  "rules_sha256": "bae745799d6790daf14ca48e7463fb6523818e1027fba9a3c3d7331df7db81f1",
+  "reference_input": false,
+  "guard_probe_blocked": true,
+  "model_inputs_read": [
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_MUSICBERT_FROZEN_2026-11-14_v001\\assets\\checkpoint_last_musicbert_small.pt",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_MUSICBERT_FROZEN_2026-11-14_v001\\assets\\dict.txt",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_MUSICBERT_FROZEN_2026-11-14_v001\\assets\\preprocess.py",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_MUSICBERT_FROZEN_2026-11-14_v001\\assets\\upstream.json",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav"
+  ],
+  "notes_total": 29,
+  "eligible_notes": 8,
+  "accepted_notes": 2,
+  "changed_frames_over_20_cents": 57,
+  "command_range_cents": [
+    -90.51133373353011,
+    106.04664851884564
+  ],
+  "outside_mask_exact": true,
+  "deterministic_repeat_exact": true,
+  "training_steps": 0,
+  "global_key_shift": false,
+  "listening": "pending_jade"
+}

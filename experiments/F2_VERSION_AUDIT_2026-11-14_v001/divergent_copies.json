@@ -1,0 +1,860 @@
+[
+  {
+    "relative_path": "AGENTS.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\AGENTS.md",
+        "sha256": "8acffa51f3209fc98f041c555de7b46732a6131c2857df8c39712a32a3fde5bd"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\AGENTS.md",
+        "sha256": "09870244c8d7361d66897fb61cbdda0783690996103ca71d85b4deea51b5a90b"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\AGENTS.md",
+        "sha256": "09870244c8d7361d66897fb61cbdda0783690996103ca71d85b4deea51b5a90b"
+      }
+    ],
+    "normalized_text_differs": true,
+    "line_ending_or_encoding_only": false
+  },
+  {
+    "relative_path": "docs/archive/AGENTS_before_roadmap_2026-11-03.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\archive\\AGENTS_before_roadmap_2026-11-03.md",
+        "sha256": "a2e4344835d0403e28255e8c4d93dbd6501cf950c52ff6ed66bf82e449ea3504"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\archive\\AGENTS_before_roadmap_2026-11-03.md",
+        "sha256": "dd740fd7d5cbcccee8ffa0268a6ae2ba7021a9117cf6e4a750206601fe5c1fc4"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\archive\\AGENTS_before_roadmap_2026-11-03.md",
+        "sha256": "dd740fd7d5cbcccee8ffa0268a6ae2ba7021a9117cf6e4a750206601fe5c1fc4"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "docs/archive/README_before_adaptive_v0_2026-10-27.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\archive\\README_before_adaptive_v0_2026-10-27.md",
+        "sha256": "71d211594b93b01a1ee89f36e3dbe84b138f7fc14c667d0d3f8588b15b910d8f"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\archive\\README_before_adaptive_v0_2026-10-27.md",
+        "sha256": "5fb301cd2a0355c5960b9bfcb2a1d322c1bfd751077f52cd4d07cd574625747c"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\archive\\README_before_adaptive_v0_2026-10-27.md",
+        "sha256": "5fb301cd2a0355c5960b9bfcb2a1d322c1bfd751077f52cd4d07cd574625747c"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "docs/F1_FEATURE_MAP.html",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\F1_FEATURE_MAP.html",
+        "sha256": "240472953b07bb89b320f6047cf9e2625361452456d3d7eb5228c70d4a14858f"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\F1_FEATURE_MAP.html",
+        "sha256": "98c24bc299b748f2e0454d684e686ae3a3ebad343fdb60dc7e04980c30c880bc"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\F1_FEATURE_MAP.html",
+        "sha256": "98c24bc299b748f2e0454d684e686ae3a3ebad343fdb60dc7e04980c30c880bc"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "docs/ROADMAP.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\ROADMAP.md",
+        "sha256": "0390deeebbdffe50c0cce7a12e7386ca17fdd2184542308dae33bfeab353e351"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\ROADMAP.md",
+        "sha256": "1d74fea92b81ffadfb777b946336392c1387c5518419e57927713690640f5833"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\ROADMAP.md",
+        "sha256": "fda72b3c529a22e523a68fe3260851b99708c83bf35b0cb5a51a55f89ec40c19"
+      }
+    ],
+    "normalized_text_differs": true,
+    "line_ending_or_encoding_only": false
+  },
+  {
+    "relative_path": "docs/superpowers/plans/2026-10-26-f1-pitch-input-route01.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-26-f1-pitch-input-route01.md",
+        "sha256": "5b6b1a03db1028695ec7b8e7791bc87ddd7abdfb27fcc902d0c8b535dc894bcc"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-26-f1-pitch-input-route01.md",
+        "sha256": "bd13b07dd84dfdcd8bf6eaeec83294bb79158d022aa1cf6f6e134e0ac8d0572b"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-26-f1-pitch-input-route01.md",
+        "sha256": "bd13b07dd84dfdcd8bf6eaeec83294bb79158d022aa1cf6f6e134e0ac8d0572b"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "docs/superpowers/plans/2026-10-27-f1-abcd-goals-and-acceptance.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-27-f1-abcd-goals-and-acceptance.md",
+        "sha256": "4bf0b12cf51281a6c2391e8dc6a56e98c4aca0b248fc2bd435e5940886450d5d"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-27-f1-abcd-goals-and-acceptance.md",
+        "sha256": "334d85ec9e36e9996d6fe89deb734a161f559091a409b5c518bfa18bb6c29131"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-27-f1-abcd-goals-and-acceptance.md",
+        "sha256": "334d85ec9e36e9996d6fe89deb734a161f559091a409b5c518bfa18bb6c29131"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "docs/superpowers/plans/2026-10-27-f1-adaptive-v0.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-27-f1-adaptive-v0.md",
+        "sha256": "8dc3fb8da4099200bbeb7b974fb8511d59accaeaa63705223821c421b07aa745"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-27-f1-adaptive-v0.md",
+        "sha256": "a366dd2a5136c911f55a1725795ffcfd53e17ca31dfc833ebd9640675cc83f35"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\superpowers\\plans\\2026-10-27-f1-adaptive-v0.md",
+        "sha256": "a366dd2a5136c911f55a1725795ffcfd53e17ca31dfc833ebd9640675cc83f35"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "docs/开发日志_有参考修音.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\开发日志_有参考修音.md",
+        "sha256": "449a7f85c00b875c19e2c5166f3d81cb08d25ae3f85b7c1d4ad5b976645d743b"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\开发日志_有参考修音.md",
+        "sha256": "2cc7d190edf9f16b708795fc66a9593cc7652fefda0c395edecdec6a695319c6"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\开发日志_有参考修音.md",
+        "sha256": "b4fa1ebfbb92e428c0d83066466ecd7425a516550f34f8b9c872bbc6a857b7c5"
+      }
+    ],
+    "normalized_text_differs": true,
+    "line_ending_or_encoding_only": false
+  },
+  {
+    "relative_path": "docs/新阶段_前三项任务初步计划.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\新阶段_前三项任务初步计划.md",
+        "sha256": "b78d33d4373e540b65f4a8f75749248c6b066c81eb1253b329ed0e768495da1f"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\新阶段_前三项任务初步计划.md",
+        "sha256": "111ba31fa484867008dfdeee89682a51b034a24d9e0d086b677d85f0be0a963f"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\新阶段_前三项任务初步计划.md",
+        "sha256": "b78d33d4373e540b65f4a8f75749248c6b066c81eb1253b329ed0e768495da1f"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_cut_ref.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_cut_ref.py",
+        "sha256": "089d9b633ff485f27b04b156c4dc6b4565a6d40b35c000d7ad5d9fbbca7ab6ee"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_cut_ref.py",
+        "sha256": "5d94fbdecd940875ae01f797aab70d31928f1be9a5543e420b94b16d19d485c1"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_cut_ref.py",
+        "sha256": "5d94fbdecd940875ae01f797aab70d31928f1be9a5543e420b94b16d19d485c1"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_finish_gyjyn.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_finish_gyjyn.py",
+        "sha256": "f2c2ae1ac5f6222b81b77819ebcf4ef1a4ddafe0742dd8e8c211ceac0814590c"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_finish_gyjyn.py",
+        "sha256": "2287214b42155d50a0bf92e9e91c8d7833ac7183da1af937cabe67be413b5e2a"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_finish_gyjyn.py",
+        "sha256": "2287214b42155d50a0bf92e9e91c8d7833ac7183da1af937cabe67be413b5e2a"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_finish_qingchang.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_finish_qingchang.py",
+        "sha256": "58b8afdc74cc84d3b1dcf5a2eac79acd37cdc2e6be2e50c2c45df09b92bf4cac"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_finish_qingchang.py",
+        "sha256": "f0939758bf2343cc87bc7ec92ee1da6a0c915eeb7a707ebf6da7d6e7fb9562ff"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_finish_qingchang.py",
+        "sha256": "f0939758bf2343cc87bc7ec92ee1da6a0c915eeb7a707ebf6da7d6e7fb9562ff"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_prep_3d.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_prep_3d.py",
+        "sha256": "04a5b0d78a0ef06bc5354e3eaaf134b23dd1353d3f7ec8e7a3ca156408143fcd"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_prep_3d.py",
+        "sha256": "49f06fe99baeed57c66f9199c3265e2d2b8973e028b68cbd857a56f8d82c11a2"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_prep_3d.py",
+        "sha256": "49f06fe99baeed57c66f9199c3265e2d2b8973e028b68cbd857a56f8d82c11a2"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_prep_3e.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_prep_3e.py",
+        "sha256": "2020423de03f371a49a52f9c36ba29e6f9a0d24f165bc9d8674f863918800d63"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_prep_3e.py",
+        "sha256": "df0f05c854ad25d2d14a6e18fad31c4d06ab414fbf4f916f97ffcdf7b011339f"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_prep_3e.py",
+        "sha256": "df0f05c854ad25d2d14a6e18fad31c4d06ab414fbf4f916f97ffcdf7b011339f"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_prep_listen3.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_prep_listen3.py",
+        "sha256": "ab59a6a027956a49f663b2d51ece10bc4dd18f37fda8e949f27c0e3cd9250e7f"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_prep_listen3.py",
+        "sha256": "9ae47f9683b73a95f91dd27e9b1a6bbf2538f310435358edba7cde4f6ba689d9"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_prep_listen3.py",
+        "sha256": "9ae47f9683b73a95f91dd27e9b1a6bbf2538f310435358edba7cde4f6ba689d9"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_prep_listen3b.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_prep_listen3b.py",
+        "sha256": "1b6203c9ce00842203aabbe620823d49eea611d0bc99dcf436598f13c179a142"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_prep_listen3b.py",
+        "sha256": "1b770085eee4d17f1e02c26fad1c6823bb8092ad0dde88c8c110d1f70ad5fb69"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_prep_listen3b.py",
+        "sha256": "1b770085eee4d17f1e02c26fad1c6823bb8092ad0dde88c8c110d1f70ad5fb69"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_salience.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_salience.py",
+        "sha256": "04df13ecb39b03856d2631b2bcc4aadf838c9c892a5bdef429c19a8230d5f380"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_salience.py",
+        "sha256": "212ea3ccd8b4843c0a32c1085356c371947b4d21dc2130a22a934930a9fb8ccb"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_salience.py",
+        "sha256": "212ea3ccd8b4843c0a32c1085356c371947b4d21dc2130a22a934930a9fb8ccb"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_scan_qingchang.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_scan_qingchang.py",
+        "sha256": "9f68f198cd83ca6c5e25a77f797748d71f5f41e11d05a68f76745b9d36265535"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_scan_qingchang.py",
+        "sha256": "de5f9b92e5632268c1f92e0071a4f4df361ff39fbdccae00a2990d834617174c"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_scan_qingchang.py",
+        "sha256": "de5f9b92e5632268c1f92e0071a4f4df361ff39fbdccae00a2990d834617174c"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_show_fix.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_show_fix.py",
+        "sha256": "b0e2680102c2ee3994e5bde6ec91f623fb76d98c0ddd6d054678d705b9a8edf9"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_show_fix.py",
+        "sha256": "2849d41af2f761137a829e979978418c5e19161dc6d0f3668017cf849133f6ed"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_show_fix.py",
+        "sha256": "2849d41af2f761137a829e979978418c5e19161dc6d0f3668017cf849133f6ed"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/_show_notes.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\_show_notes.py",
+        "sha256": "bfa9bda970dc463fa396d63942c2d405584d18d7b409e23c0506d94b4fe09d94"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\_show_notes.py",
+        "sha256": "2b20870371701259fe157ff7e95801844aa8cdb4652aceb87c67dd918a76258b"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\_show_notes.py",
+        "sha256": "2b20870371701259fe157ff7e95801844aa8cdb4652aceb87c67dd918a76258b"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/check_seam.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\check_seam.py",
+        "sha256": "d4883ddd6bfc227ac12b6f17dd88efb16d2a5e54a7297bc54b5768b6e9c47a37"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\check_seam.py",
+        "sha256": "cbb257dda841b2ce04abaf10eb4d1c3e6af8cf89184c5c50100415a8e16477bd"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\check_seam.py",
+        "sha256": "cbb257dda841b2ce04abaf10eb4d1c3e6af8cf89184c5c50100415a8e16477bd"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/diag_control.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\diag_control.py",
+        "sha256": "1cecb5fc761f00652d8a7fccac8596c32a1160dc5349918a7c38ce5543df2eb7"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\diag_control.py",
+        "sha256": "08f087832d88ba7bf08e8accb8ed1b339209fb8fd74ef2a99388b69a54c50b0a"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\diag_control.py",
+        "sha256": "08f087832d88ba7bf08e8accb8ed1b339209fb8fd74ef2a99388b69a54c50b0a"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/diag_threshold.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\diag_threshold.py",
+        "sha256": "e27b446cd2516fc1ea90664fdf8bf99e44dc5c260897f39abbeb6573e2eb3e59"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\diag_threshold.py",
+        "sha256": "59e305e5362ebaca5c3f3e20f972ab183f28852e501e15895070ca07c28d4964"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\diag_threshold.py",
+        "sha256": "59e305e5362ebaca5c3f3e20f972ab183f28852e501e15895070ca07c28d4964"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/match_song.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\match_song.py",
+        "sha256": "6ccb48d36fedaa887d8702c8db127f0e6a58b0d43dbf49ae6b75dea4274ec8b8"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\match_song.py",
+        "sha256": "55c15c762e0401cbdb418c09567dbdc469a6f44a83ca57940b6e86b6d3958fb2"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\match_song.py",
+        "sha256": "55c15c762e0401cbdb418c09567dbdc469a6f44a83ca57940b6e86b6d3958fb2"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/PHASE1_NOTES.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\PHASE1_NOTES.md",
+        "sha256": "94a5189892d68c01d0904b8e69bb23a171de518d73f5c3fb3ed204d753e09104"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\PHASE1_NOTES.md",
+        "sha256": "0e6196cd17697670ff3b8f85fe53b59a5b13190feeb23c73812f9386973f9dbb"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\PHASE1_NOTES.md",
+        "sha256": "0e6196cd17697670ff3b8f85fe53b59a5b13190feeb23c73812f9386973f9dbb"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/PHASE2_NOTES.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\PHASE2_NOTES.md",
+        "sha256": "a151f7673536e2ccd0a6443a72f63e4044e0abc709f665a1aa2a43cfcba03507"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\PHASE2_NOTES.md",
+        "sha256": "037dc24fbea6b6c0bdcf50178328c85071b3e5db65d6356022b83b9e0d535d11"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\PHASE2_NOTES.md",
+        "sha256": "037dc24fbea6b6c0bdcf50178328c85071b3e5db65d6356022b83b9e0d535d11"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/poc_phase2.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\poc_phase2.py",
+        "sha256": "fa826d3de4ececd173cf8e0ba2f834ba4d3e2b4910f70d6fe8009a06b6efcaf7"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\poc_phase2.py",
+        "sha256": "2782cb3091042d7c95a1fdbc5d73aa8e331caddb86e6bc134e63c76c39aa9aa9"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\poc_phase2.py",
+        "sha256": "2782cb3091042d7c95a1fdbc5d73aa8e331caddb86e6bc134e63c76c39aa9aa9"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/poc_phase3.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\poc_phase3.py",
+        "sha256": "0075099945ce664a67d3154579cae1341af3363f3e47ed1b8de9da4960a2fe2a"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\poc_phase3.py",
+        "sha256": "81c1b1dd5507060d143d5a037f38a6d533e115817bf4c7a91661f6089b6cb1c6"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\poc_phase3.py",
+        "sha256": "81c1b1dd5507060d143d5a037f38a6d533e115817bf4c7a91661f6089b6cb1c6"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/poc_phase3b.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\poc_phase3b.py",
+        "sha256": "8eccdaf3e205a6cfce164f00c1c37d78809189660a1e2ce449e71309365a3898"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\poc_phase3b.py",
+        "sha256": "c06fa15b43b2e4a5e101debddc7fa0ecc7a9083d5490f5175226d25624b52b3e"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\poc_phase3b.py",
+        "sha256": "c06fa15b43b2e4a5e101debddc7fa0ecc7a9083d5490f5175226d25624b52b3e"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/poc_phase3d.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\poc_phase3d.py",
+        "sha256": "33ea0b8b5c564f6c181d18cc788e75442d5917e099fb6d595fba84315e38aacf"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\poc_phase3d.py",
+        "sha256": "534e8755c3c396a0a22bdc4bd16f4e7be0fa8f0f2d12d86a960c504120781132"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\poc_phase3d.py",
+        "sha256": "534e8755c3c396a0a22bdc4bd16f4e7be0fa8f0f2d12d86a960c504120781132"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/poc_phase4_inject.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\poc_phase4_inject.py",
+        "sha256": "ae44f608b35a241000f306661d84d3d839d8ebd8717867012ec57350298f6a5b"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\poc_phase4_inject.py",
+        "sha256": "4e52cec8aff65e74127b80183cafc08cd8d7ff5519a7f676033eb3f5a187e918"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\poc_phase4_inject.py",
+        "sha256": "4e52cec8aff65e74127b80183cafc08cd8d7ff5519a7f676033eb3f5a187e918"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/poc_phase4b.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\poc_phase4b.py",
+        "sha256": "cc18472b91971a65c33d2443e45f2a2c8323bb6b7431d6f8fa36b2ad2bf99a29"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\poc_phase4b.py",
+        "sha256": "460369278ef27ce400c37b33150ce2997de09f959ce746de582acd2b7e95acac"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\poc_phase4b.py",
+        "sha256": "460369278ef27ce400c37b33150ce2997de09f959ce746de582acd2b7e95acac"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/ref_align.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\ref_align.py",
+        "sha256": "fd42d07f06c1bdc5b381518370e90b17ade10ffa92d5d1cff4f47cecfe9c2c1c"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\ref_align.py",
+        "sha256": "127bfcff6eb464349d8a8a3719fe6f668023ad805cb48945c2d1682121e4ce30"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\ref_align.py",
+        "sha256": "127bfcff6eb464349d8a8a3719fe6f668023ad805cb48945c2d1682121e4ce30"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/scan_align.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\scan_align.py",
+        "sha256": "195293973d7ceeb506aea5c61cf195fa44f7add9618d44a6124d26d29f16bcc1"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\scan_align.py",
+        "sha256": "19f469a18efcd5b2b5b0a86f9ac1ff87ef1edc2d1857039e979e630721553199"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\scan_align.py",
+        "sha256": "19f469a18efcd5b2b5b0a86f9ac1ff87ef1edc2d1857039e979e630721553199"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/scan_all.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\scan_all.py",
+        "sha256": "34819031e43330cd9f4a89251fe7bea1c677b59931e70db627039c73b7c591f2"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\scan_all.py",
+        "sha256": "3462d410fedbd63e4810816a58021739bad7ea800420a186179f1e5b83e04187"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\scan_all.py",
+        "sha256": "3462d410fedbd63e4810816a58021739bad7ea800420a186179f1e5b83e04187"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/self_ref_align.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\self_ref_align.py",
+        "sha256": "3589b27d52aa3ba7c67ffb8b58dd98a3ef747b6e5a2f3618cf59b9b7d543d6d5"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\self_ref_align.py",
+        "sha256": "4a159c8edfbd0c033d25cc5eeb3db5c4ad388fd8c9fe6c41a4b89a9787e6e01e"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\self_ref_align.py",
+        "sha256": "4a159c8edfbd0c033d25cc5eeb3db5c4ad388fd8c9fe6c41a4b89a9787e6e01e"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "f2/survey.py",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\f2\\survey.py",
+        "sha256": "dd6f816af50389f75610a97a98880cbf895364fd458973bace87a3848b92c6ff"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\survey.py",
+        "sha256": "1e905969f15e7d64381cca1754dcbf14d5be7e29eeac8373b751b6a46143270a"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\f2\\survey.py",
+        "sha256": "1e905969f15e7d64381cca1754dcbf14d5be7e29eeac8373b751b6a46143270a"
+      }
+    ],
+    "normalized_text_differs": false,
+    "line_ending_or_encoding_only": true
+  },
+  {
+    "relative_path": "README.md",
+    "copies": [
+      {
+        "checkout": "main",
+        "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\README.md",
+        "sha256": "b51adfc816faaff0fef0e7bb297fe6722a9339aaf6bcde3206063fae75be7d60"
+      },
+      {
+        "checkout": "handoff",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\README.md",
+        "sha256": "d71b5dce046d4f71e98940a81d1b72bf81ea4dc9e766e1d7ec4db90f81cd2f9e"
+      },
+      {
+        "checkout": "initial",
+        "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\README.md",
+        "sha256": "d71b5dce046d4f71e98940a81d1b72bf81ea4dc9e766e1d7ec4db90f81cd2f9e"
+      }
+    ],
+    "normalized_text_differs": true,
+    "line_ending_or_encoding_only": false
+  }
+]

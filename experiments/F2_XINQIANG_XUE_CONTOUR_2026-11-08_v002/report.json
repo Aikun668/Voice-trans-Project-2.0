@@ -1,0 +1,90 @@
+{
+  "source": "心墙01-对照微微跑调",
+  "word": "学",
+  "previous": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_XUE_CONTOUR_2026-11-08_v001\\report.json",
+  "target_note": "B3",
+  "target_cents": -1001.9558153783171,
+  "resynthesis": "Same Praat/Parselmouth and same time-varying correction curve as v001",
+  "splice": "Amplitude-complementary raised-cosine fades, with the right fade moved past the mismatch",
+  "left_fade_seconds": [
+    0.855,
+    0.875
+  ],
+  "right_fade_seconds": [
+    1.086,
+    1.087
+  ],
+  "old_right_overlap_seconds": [
+    1.066,
+    1.086
+  ],
+  "left_rms_bump_db": {
+    "span_seconds": [
+      0.862,
+      0.867
+    ],
+    "previous": 2.905265695861928,
+    "revised": 1.241134662777199e-05
+  },
+  "old_right_waveform_correlation": 0.1281936037505868,
+  "new_right_max_sample_mismatch": 8.393792395897798e-06,
+  "central_synthesis_rms_difference_vs_source_db": -2.234571171679221,
+  "median_frame_command_error_cents": 1.1642125864279933,
+  "target_error_cents": 3.687518828252564,
+  "core_median_difference_from_v001_cents": 0.0,
+  "voiced_overlap": 0.9787234042553191,
+  "compare_split_seconds": 0.8,
+  "levels": {
+    "previous.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -7.2,
+      "sha256": "970da44aa8c708a188d80398b3be0dd10d5a35a50ed2a04c5f4b56d3742b9590"
+    },
+    "corrected.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -7.2,
+      "sha256": "7d7fb4b7d5dc511e0c4e01d7589d74559cc6690d934b386331c16d91ad31111c"
+    },
+    "compare.wav": {
+      "samples": 76800,
+      "sample_rate": 48000,
+      "lufs": -18.9,
+      "dbtp": -7.2,
+      "sha256": "03f8b18a7a91328a0f17f6a8b29c4569eb168f3f5b53dcec9fdb453cc0f2c088"
+    },
+    "original_to_new.wav": {
+      "samples": 76800,
+      "sample_rate": 48000,
+      "lufs": -18.9,
+      "dbtp": -7.2,
+      "sha256": "d6c950ec016f897a7539c48748be3e572ac4602e4cbb35156487a9778497a314"
+    }
+  },
+  "source_hashes": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "v001_reproduced_exactly": true,
+    "comparison_order_exact": true,
+    "central_waveform_matches_v001": true,
+    "old_right_overlap_replaced_by_synthesis_only": true,
+    "outside_splice_identical": true,
+    "left_bump_removed": true,
+    "matched_loudness": true,
+    "true_peak_at_most_minus_1_dbtp": true,
+    "pitch_target_and_median_command_error_within_5_cents": true,
+    "voiced_overlap_at_least_0_95": true
+  },
+  "research": {
+    "crossfade": "https://www.dafx.de/paper-archive/details/gUO-U6xEDk0Z_m4S-PivJQ",
+    "praat": "https://praat.org/manual/overlap-add.html"
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

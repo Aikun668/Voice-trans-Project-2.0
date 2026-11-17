@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>F1 / F2 小范围验证 demo · 2026-11-02</title>
+<style>
+body{font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif;background:#f4f5f7;color:#1f2430;max-width:940px;margin:24px auto;padding:0 18px}
+h1{font-size:24px;margin-bottom:4px}h2{font-size:20px;margin:32px 0 8px;border-left:5px solid #3a6ff7;padding-left:10px}
+.sub{color:#667085;font-size:14px}
+.card{background:#fff;border:1px solid #dde1e8;border-radius:10px;padding:16px 18px;margin:14px 0}
+.warn{background:#fff7e6;border-color:#f3cf86}.info{background:#eef4ff;border-color:#bcd0fb}
+.q{font-weight:650;margin:10px 0 6px}
+.switch{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.switch button{border:1px solid #b8c2d4;background:#f7f9fc;border-radius:7px;padding:7px 12px;font-size:14px;cursor:pointer}
+.switch button.on{background:#3a6ff7;color:#fff;border-color:#3a6ff7}
+.desc{font-size:13.5px;color:#4a5466;margin:4px 0 0}
+.opts label{display:inline-block;margin:3px 14px 3px 0;font-size:14.5px;cursor:pointer}
+textarea{width:100%;box-sizing:border-box;min-height:44px;border:1px solid #cfd5df;border-radius:6px;padding:6px;font:14px system-ui}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #dde1e8;padding:6px 8px;text-align:left;vertical-align:top}th{background:#eef1f6}
+#export{width:100%;min-height:150px;font-family:Consolas,monospace;font-size:13px}
+.big{font-size:16px;padding:10px 18px;background:#3a6ff7;color:#fff;border:0;border-radius:8px;cursor:pointer}
+audio{width:100%;margin-top:6px}
+</style>
+</head>
+<body>
+<h1>F1 / F2 小范围验证 demo</h1>
+<p class="sub">2026-11-02 · experiments/DEMO_2026-11-02_v001 · 所有版本都标了名字，不做盲听 · 听感：pending_jade（我没法直接听音频）</p>
+
+<div class="card warn">
+<b>怎么听</b>：戴耳机，先把音量调到舒服的位置，之后不要再动。点按钮会从当前位置无缝切换版本。
+F1 和组合版统一在 <b>-13 LUFS</b>，接近成品歌曲的响度；F2 只改音高，统一在 -16 LUFS 等响比较。
+听完点最下面的"生成答案"，复制给我。
+</div>
+
+<div class="card info">
+<b>这一版改了什么（按你上一轮的反馈）</b>
+<table>
+<tr><th style="width:12%"></th><th>做法</th><th>工程检查（不代表好听）</th></tr>
+<tr><td><b>F1 V1</b></td><td>你说"接近了"的那条唱片人声链，外加<b>安静段复原</b>。上一轮你说它"更空旷、有回音感"，我测出这条链把房间声和底噪相对歌声抬高了 9–16 dB。现在原音里本来很安静的部分会压回原来的比例，唱的部分不动。</td><td>4 首的时长、样本数都不变，无削波，真峰值 -1.3 dBTP，音高中位偏差 &lt;0.4 音分。安静段抬升：3 首 ≤+0.5 dB；雅俗共赏 +6 dB，因为它的底噪本来就高。</td></tr>
+<tr><td><b>F1 V2</b></td><td>V1 + "能量"一组改动：去掉 9 kHz 空气感（气声感可能就是"嗲"的来源），换成 1.2–6 kHz 的并联谐波激励、2.8 kHz 存在感，再加更密的两级压缩。<b>V1→V2 只差这一组。</b></td><td>同上。音高 p95 偏差 17–38 音分，是失真谐波带来的测量噪声，中位数没有变。</td></tr>
+<tr><td><b>F2 新版</b></td><td><b>找到了 P3e 不自然的根本原因：配错了音。</b>你 0–2 秒的音被配到了原唱 1.9–8 秒的音上，所以 8 处"修正"大多是把你本来唱对的音挪到了错的音上。新版按旋律轮廓重新对齐，你的 0.8–13.2 秒对应到原唱的 0.7–14.1 秒，前后顺序对、速度也一致。</td><td>你比李玉刚高约 1.45 个半音，而且全程一致，这是你选的调，不算跑调。扣掉调差后，25 个音都在 ±85 音分以内，只有最后一个短音被修（76 音分）。<b>你这条清唱基本不跑调</b>，这和你自己的判断一致。</td></tr>
+<tr><td><b>F2 受控测试</b></td><td>因为你的录音几乎不跑调，没东西可修，所以我人为把你 5 个长音推偏约 2 个半音（±180–200 音分），再让 F2 对照原唱修回去。</td><td>5 处里修好 4 处：修完离你原来的音高只差 13–29 音分（你在旋律中大约要 100 音分以上才听得出）。剩 1 处没修，因为对齐落到了原唱的滑音上，系统判定"没把握"，就跳过不碰。</td></tr>
+</table>
+</div>
+
+<h2>F1 成品：4 首你自己的录音</h2>
+<div id="f1songs"></div>
+
+<h2>F2 音高修正</h2>
+<div class="card">
+<div class="q">F2-1：真实录音（因为刚好遇见你·清唱版）——新版应该几乎<b>听不出改动</b>，这才算对</div>
+<div class="switch" data-player="pa">
+ <button data-src="audio/f2_real_orig.wav" data-desc="你的原音">① 原音</button>
+ <button data-src="audio/f2_real_p3e_old.wav" data-desc="旧版 P3e：配错了音，8 处被挪了 90–200 音分，你上一轮说'更准了但不自然'">② 旧 P3e</button>
+ <button data-src="audio/f2_real_p4_new.wav" data-desc="新版：重新对齐后只修了最后一个短音（13.0–13.2 秒，-76 音分），其他都没动">③ 新版</button>
+ <button data-src="audio/f2_reference.wav" data-desc="原唱人声轨里对齐上的那一段（0.7–14.1 秒）。他比你低约 1.45 个半音，正常">④ 原唱对应段</button>
+</div>
+<audio id="pa" controls preload="metadata"></audio><p class="desc" id="pad"></p>
+<div class="q">F2-1 问：新版 ③ 和原音 ① 比？</div>
+<div class="opts" data-q="F2-1 新版vs原音">
+ <label><input type="radio" name="f21" value="几乎一样，自然">几乎一样，自然</label>
+ <label><input type="radio" name="f21" value="有地方变怪了">有地方变怪了</label>
+ <label><input type="radio" name="f21" value="②旧版的不自然在③里没了">②旧版的不自然在③里没了</label>
+</div>
+</div>
+
+<div class="card">
+<div class="q">F2-2：受控测试：人为跑调 → 修复</div>
+<div class="switch" data-player="pb">
+ <button data-src="audio/f2_inj_orig.wav" data-desc="你的原音">① 原音</button>
+ <button data-src="audio/f2_inj_detuned.wav" data-desc="人为跑调：3.0–3.7 秒 +200，4.3–4.7 秒 −200，5.8–6.3 秒 +180，8.0–8.5 秒 −200，10.7–11.1 秒 +200（单位：音分）">② 人为跑调</button>
+ <button data-src="audio/f2_inj_repaired.wav" data-desc="F2 对照原唱修复：修好 4 处，修完和原来只差 13–29 音分；4.3–4.7 秒那处没修（系统没把握，跳过了）">③ F2 修复后</button>
+</div>
+<audio id="pb" controls preload="metadata"></audio><p class="desc" id="pbd"></p>
+<div class="q">F2-2 问：② 的跑调你听得出来吗？③ 修回来了吗？</div>
+<div class="opts" data-q="F2-2 受控测试">
+ <label><input type="radio" name="f22" value="②明显跑调，③基本修回来了，自然">②明显跑，③基本修回来了，自然</label>
+ <label><input type="radio" name="f22" value="③修回来了但有怪声/电音">③修回来了，但有怪声/电音</label>
+ <label><input type="radio" name="f22" value="③没修回来">③没修回来</label>
+ <label><input type="radio" name="f22" value="②也听不出跑调">②也听不出跑调</label>
+</div>
+<textarea data-q="F2补充" placeholder="补充：比如哪几秒还不对"></textarea>
+</div>
+
+<h2>组合：F2 → F1（因为刚好遇见你）</h2>
+<div class="card">
+<div class="switch" data-player="pc">
+ <button data-src="audio/f1_gyjyn_orig.wav" data-desc="原音，同样做到 -13 LUFS（只加增益和限幅）">① 原音·同响度</button>
+ <button data-src="audio/combo_gyjyn_f2_f1v1.wav" data-desc="F2 新版 → F1 V1">② F2 + F1 V1</button>
+ <button data-src="audio/combo_gyjyn_f2_f1v2.wav" data-desc="F2 新版 → F1 V2">③ F2 + F1 V2</button>
+</div>
+<audio id="pc" controls preload="metadata"></audio><p class="desc" id="pcd"></p>
+<div class="q">组合问：哪一版可以拿给老师当"整体效果"？</div>
+<div class="opts" data-q="组合 可展示版本">
+ <label><input type="radio" name="cb" value="②">②</label>
+ <label><input type="radio" name="cb" value="③">③</label>
+ <label><input type="radio" name="cb" value="都还不行">都还不行</label>
+</div>
+</div>
+
+<div class="card">
+<textarea data-q="其他想说的" placeholder="其他：比如老师最想看哪部分、哪首最适合展示"></textarea>
+<p><button class="big" id="gen">生成答案</button></p>
+<textarea id="export" readonly></textarea>
+</div>
+
+<script>
+const SONGS=[["pingfan","平凡之路·薄音版"],["womende","我们的歌·薄音版"],["yasu","雅俗共赏·清唱版"],["gyjyn","因为刚好遇见你·清唱版"]];
+const host=document.getElementById('f1songs');
+SONGS.forEach(([k,n],i)=>{
+  host.insertAdjacentHTML('beforeend',`<div class="card"><div class="q">F1-${i+1}：${n}</div>
+  <div class="switch" data-player="p${k}">
+   <button data-src="audio/f1_${k}_orig.wav" data-desc="原音，只加增益和限幅到 -13 LUFS，没有其他处理。用来区分'只是更响'和'链本身的作用'">① 原音·同响度</button>
+   <button data-src="audio/f1_${k}_v1.wav" data-desc="V1：你说'接近了'的唱片链 + 安静段复原（去空旷感）">② V1 唱片链</button>
+   <button data-src="audio/f1_${k}_v2.wav" data-desc="V2：V1 + 能量组（去空气感、谐波激励、存在感、更密的压缩）">③ V2 能量链</button>
+  </div><audio id="p${k}" controls preload="metadata"></audio><p class="desc" id="p${k}d"></p>
+  <div class="opts" data-q="F1-${i+1} ${n} 选哪版"><b>选：</b>
+   <label><input type="radio" name="s${k}" value="V2最好">V2 最好</label>
+   <label><input type="radio" name="s${k}" value="V1最好">V1 最好</label>
+   <label><input type="radio" name="s${k}" value="原音最好">原音最好</label>
+   <label><input type="radio" name="s${k}" value="差不多">差不多</label></div>
+  <div class="opts" data-q="F1-${i+1} ${n} 所选版本的问题" data-multi="1"><b>所选那版还有什么问题（可多选）：</b>
+   <label><input type="checkbox" value="力度/声带能量还不够">力度还不够</label>
+   <label><input type="checkbox" value="还是有点嗲/蔫">还是有点嗲/蔫</label>
+   <label><input type="checkbox" value="太亮/刺耳/齿音">太亮/刺耳/齿音</label>
+   <label><input type="checkbox" value="发闷/糊">发闷/糊</label>
+   <label><input type="checkbox" value="空旷/回音/底噪">空旷/回音/底噪</label>
+   <label><input type="checkbox" value="毛/沙/失真">毛/沙/失真</label>
+   <label><input type="checkbox" value="压得太平，没起伏">压得太平</label>
+   <label><input type="checkbox" value="不像本人">不像本人</label>
+   <label><input type="checkbox" value="没问题，可以交">没问题，可以交</label></div></div>`);
+});
+document.querySelectorAll('.switch').forEach(sw=>{
+  const a=document.getElementById(sw.dataset.player), d=document.getElementById(sw.dataset.player+'d');
+  const btns=[...sw.querySelectorAll('button')];
+  const pick=(b,keep)=>{
+    const t=a.currentTime||0, playing=!a.paused;
+    btns.forEach(x=>x.classList.toggle('on',x===b));
+    a.src=b.dataset.src; d.textContent=b.dataset.desc;
+    if(keep){a.addEventListener('loadedmetadata',()=>{a.currentTime=Math.min(t,Math.max(a.duration-0.05,0));if(playing)a.play();},{once:true});}
+  };
+  btns.forEach(b=>b.addEventListener('click',()=>pick(b,true)));
+  pick(btns[0],false);
+});
+document.getElementById('gen').addEventListener('click',()=>{
+  const out=['【demo 反馈 2026-11-02】'];
+  document.querySelectorAll('[data-q]').forEach(el=>{
+    const v=el.tagName==='TEXTAREA'?el.value.trim():[...el.querySelectorAll('input:checked')].map(i=>i.value).join('；');
+    out.push(el.dataset.q+'：'+(v||'（未答）'));
+  });
+  const ex=document.getElementById('export'); ex.value=out.join('\n'); ex.select();
+});
+</script>
+</body>
+</html>

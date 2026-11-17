@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Jade · 路线一 Smule 批量试听 v001</title>
+<style>
+body{font:16px/1.7 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:780px;margin:32px auto;padding:0 20px}
+h1{font-size:26px}h2{font-size:19px;margin:0 0 12px}section{background:white;border:1px solid #dce0e6;border-radius:12px;padding:20px;margin:16px 0}
+audio{width:100%;margin:4px 0 10px}a{color:#2953a6}.note{color:#525d70}p{margin:8px 0}
+.blocked{border-color:#e0b4b4;background:#fdf6f6}
+label{display:block;margin:2px 0}
+.tag{display:inline-block;border-radius:6px;padding:1px 8px;font-size:14px;margin-right:6px}
+.pass{background:#e7f4e4;color:#256b2f}.fail{background:#f9e2e2;color:#8f2f2f}
+textarea{width:100%;min-height:90px;margin-top:8px}
+button{padding:8px 16px;border-radius:8px;border:1px solid #2953a6;background:#2953a6;color:#fff;font-size:15px;cursor:pointer}
+.spans{font:14px/1.6 Consolas,monospace;color:#7a3b3b}
+</style>
+<h1>Jade · 路线一 Smule 批量试听 v001</h1>
+<p><span class="tag fail">3 条技术拦截</span><span class="tag pass">3 条进入听感</span>六条已完成处理与工程检查，每条都是原音 vs Smule 处理版，响度已匹配（-18 LUFS）。</p>
+<p class="note">先说清楚一件事：按通过线（8 条里至少 6 条"更好/同样好听"），现在上限只有 5 条，<b>路线一已经到不了通过线</b>。这一页不是决定接不接单，是把结果摆出来：3 条没被拦的听感如何、3 条被拦的拦在哪，你听完我们好写结论。固定耳机、固定音量，两个版本会自动接续播放。</p>
+
+<section><h2>M1 · 茉莉花（molihua_normal，本人）<span class="tag pass">技术检查通过</span></h2>
+  <p>原音</p><audio controls preload="metadata" src="M1_original.wav"></audio>
+  <p>Smule 处理版</p><audio controls preload="metadata" src="M1_smule.wav"></audio>
+  <p>你的判断：</p>
+  <label><input type="radio" name="M1" value="更好"> 更好</label>
+  <label><input type="radio" name="M1" value="一样"> 一样</label>
+  <label><input type="radio" name="M1" value="更差"> 更差</label>
+  <p>否决项（有就勾）：</p>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="M1" value="电音感"> 电音感</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="M1" value="变声不像本人"> 变声/不像本人</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="M1" value="沙哑鼻音"> 沙哑/鼻音</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="M1" value="字被吃"> 字被吃</label>
+  <label style="display:inline-block"><input type="checkbox" data-veto="M1" value="跳变"> 跳变</label>
+</section>
+
+<section><h2>O1 · 官方样例 中文3（gt_a）<span class="tag pass">技术检查通过</span></h2>
+  <p>原音</p><audio controls preload="metadata" src="O1_original.wav"></audio>
+  <p>Smule 处理版</p><audio controls preload="metadata" src="O1_smule.wav"></audio>
+  <p>你的判断：</p>
+  <label><input type="radio" name="O1" value="更好"> 更好</label>
+  <label><input type="radio" name="O1" value="一样"> 一样</label>
+  <label><input type="radio" name="O1" value="更差"> 更差</label>
+  <p>否决项（有就勾）：</p>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="O1" value="电音感"> 电音感</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="O1" value="变声不像本人"> 变声/不像本人</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="O1" value="沙哑鼻音"> 沙哑/鼻音</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="O1" value="字被吃"> 字被吃</label>
+  <label style="display:inline-block"><input type="checkbox" data-veto="O1" value="跳变"> 跳变</label>
+</section>
+
+<section><h2>O3 · 官方样例 英文6（gt_a）<span class="tag pass">技术检查通过</span></h2>
+  <p>原音</p><audio controls preload="metadata" src="O3_original.wav"></audio>
+  <p>Smule 处理版</p><audio controls preload="metadata" src="O3_smule.wav"></audio>
+  <p>你的判断：</p>
+  <label><input type="radio" name="O3" value="更好"> 更好</label>
+  <label><input type="radio" name="O3" value="一样"> 一样</label>
+  <label><input type="radio" name="O3" value="更差"> 更差</label>
+  <p>否决项（有就勾）：</p>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="O3" value="电音感"> 电音感</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="O3" value="变声不像本人"> 变声/不像本人</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="O3" value="沙哑鼻音"> 沙哑/鼻音</label>
+  <label style="display:inline-block;margin-right:14px"><input type="checkbox" data-veto="O3" value="字被吃"> 字被吃</label>
+  <label style="display:inline-block"><input type="checkbox" data-veto="O3" value="跳变"> 跳变</label>
+</section>
+
+<section class="blocked"><h2>M2 · SHIGE（shige_normal，本人）<span class="tag fail">技术拦截：轻声/尾音被压</span></h2>
+  <p>Smule 把演唱里的轻声、气声、尾音当"损伤"压掉了，共 15 段。可以直接跳到这些时间点核实处理版是不是"忽然没了"：</p>
+  <p class="spans">16.70–17.08s（结尾整段，-32 dB）· 11.10–11.16s · 9.62–9.66s · 3.20–3.24s</p>
+  <p>原音</p><audio controls preload="metadata" src="M2_original.wav"></audio>
+  <p>Smule 处理版</p><audio controls preload="metadata" src="M2_smule.wav"></audio>
+  <p class="note">这条已拦，不用投票。听感确认后写进结论。</p>
+</section>
+
+<section class="blocked"><h2>M3 · zuixuan_normal（本人）<span class="tag fail">技术拦截：轻声被压</span></h2>
+  <p>与 SHIGE 同类，共 18 段轻声被压。几个最重的：</p>
+  <p class="spans">23.04–23.56s（-35 dB）· 0.12–0.16s · 19.42–19.52s · 8.08–8.22s</p>
+  <p>原音</p><audio controls preload="metadata" src="M3_original.wav"></audio>
+  <p>Smule 处理版</p><audio controls preload="metadata" src="M3_smule.wav"></audio>
+  <p class="note">这条已拦，不用投票。</p>
+</section>
+
+<section class="blocked"><h2>O2 · 官方样例 中文9（gt_a）<span class="tag fail">技术拦截：动态被重塑</span></h2>
+  <p>没有字被吃，但模型把大小声的相对关系改了（活跃段起伏 9.6 dB，项目阈值 8）。听听大声和小声的比例跟原音是否不一样、情绪起伏还在不在。</p>
+  <p>原音</p><audio controls preload="metadata" src="O2_original.wav"></audio>
+  <p>Smule 处理版</p><audio controls preload="metadata" src="O2_smule.wav"></audio>
+  <p class="note">这条已拦，不用投票。</p>
+</section>
+
+<section><h2>复制反馈</h2>
+<p>下面的文字会随你的选择自动更新，听完点"复制"发我即可；拦截的三条有额外想说的也可以加在后面。</p>
+<button onclick="buildFeedback()">生成并复制反馈</button>
+<textarea id="feedback" readonly placeholder="点上面的按钮生成"></textarea>
+</section>
+
+<script>
+let active = null;
+document.querySelectorAll('audio').forEach(player => {
+  player.addEventListener('play', () => {
+    if (active && active !== player) {
+      const position = active.ended ? 0 : active.currentTime;
+      active.pause();
+      player.currentTime = Math.min(position, player.duration || position);
+    }
+    active = player;
+  });
+});
+const NAMES = {M1: 'M1 茉莉花', O1: 'O1 官方中文3', O3: 'O3 官方英文6'};
+function buildFeedback() {
+  const lines = [];
+  for (const [id, label] of Object.entries(NAMES)) {
+    const choice = document.querySelector(`input[name="${id}"]:checked`);
+    if (!choice) { lines.push(`${label}：未选`); continue; }
+    const vetos = [...document.querySelectorAll(`input[data-veto="${id}"]:checked`)].map(c => c.value);
+    lines.push(`${label}：${choice.value}${vetos.length ? '；否决项：' + vetos.join('、') : '；否决项：无'}`);
+  }
+  lines.push('拦截核实（可选）：M2 ', '拦截核实（可选）：M3 ', '拦截核实（可选）：O2 ');
+  const text = '路线一 Smule 试听反馈：\n' + lines.join('\n');
+  const box = document.getElementById('feedback');
+  box.value = text;
+  box.select();
+  navigator.clipboard ? navigator.clipboard.writeText(text) : document.execCommand('copy');
+}
+</script></html>

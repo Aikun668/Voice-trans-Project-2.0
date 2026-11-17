@@ -1,0 +1,22 @@
+{
+  "experiment": "F1-EXP-021",
+  "phase": "F1-P7",
+  "approved_scope": "只做元音起音瞬态增强；不做全局扩展、F1 带宽、F0 修改",
+  "baseline": "EXP-020 S45（原样引用）",
+  "target": "A_self_01",
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "listening_target_lufs": -20.479999999999997,
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "blind_seed": 20261110
+}

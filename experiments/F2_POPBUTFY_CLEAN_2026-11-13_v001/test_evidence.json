@@ -1,0 +1,7 @@
+{
+  "command": ".venv-f1-adaptive/Scripts/python.exe -B experiments/F2_POPBUTFY_CLEAN_2026-11-13_v001/test_clean.py",
+  "observed_initial_failures": 9,
+  "observed_after_implementation_passed": 9,
+  "after_implementation_exit_code": 0,
+  "source": "Command outputs observed in this session; full corpus independently verified in verification.json."
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "F1-EXP-003",
+  "phase": "F1-P2.2",
+  "test": [
+    "A01",
+    "A02",
+    "A05",
+    "B01"
+  ],
+  "sealed": [
+    "A03",
+    "A04",
+    "A06",
+    "B02",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "schemes": {
+    "E2_4p0": {
+      "type": "HighShelfFilter",
+      "cutoff_hz": 3000,
+      "gain_db": 4.0,
+      "q": 0.7
+    },
+    "E2_8p0": {
+      "type": "HighShelfFilter",
+      "cutoff_hz": 3000,
+      "gain_db": 8.0,
+      "q": 0.7
+    }
+  },
+  "target_lufs": -25.05,
+  "blind_seed": 20261031,
+  "code": "experiments/F1-EXP-003/run.py",
+  "no_stacking": true
+}

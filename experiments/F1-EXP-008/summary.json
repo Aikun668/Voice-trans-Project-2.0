@@ -1,0 +1,29 @@
+{
+  "experiment": "F1-EXP-008",
+  "phase": "F1-P3B",
+  "status": "route_stopped_unclear_benefit",
+  "sample_id": "A01",
+  "versions": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+  ],
+  "deliverable": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+  ],
+  "hard_failed": [],
+  "diag_marked": [],
+  "target_lufs": -18.0,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "listening_result": "仅 B=P4（GR 8dB 档、Wet 100%）认真听才稍微好一点点，改善方向为音量更大/更清晰，非饱满度；A=P1、C=P2、D=P3 基本无可听差异。响度已统一，无正向基准，按停止条件终止压缩路线",
+  "jade_verbatim": "就这个版本B，我认真听才稍微好了一点点。音量更大一点，更清晰一点点。其他的都基本上没什么差别。",
+  "classification": "no_clear_benefit（非常认真才辨认出一点差别，记收益不明确；只变响不算通过）",
+  "next_action": "停止压缩路线（不扫 Ratio/Attack/Release/Wet）；转向声源诊断：频谱倾斜、气声比例、谐波结构、共振特征（论文 D 方向），先确认薄音成因再谈方案"
+}

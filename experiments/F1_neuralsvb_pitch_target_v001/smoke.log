@@ -1,0 +1,19 @@
+=== attempt 1 12:41:44
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\librosa\util\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\nn\utils\weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+| load HifiGAN:  checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt
+Removing weight norm...
+| Loaded model parameters from checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt.
+| HifiGAN device: cpu.
+Loaded the voice encoder model on cpu in 0.01 seconds.
+model loaded 9.3 s
+analysed: frames 641 wav 82048 voiced 496 hint 523
+target report {'octave_fixed_frames': 0, 'spike_frames': 0, 'gap_filled_frames': 0, 'voiced_in': 496, 'voiced_out': 496}
+synth lens {'a2p': 82048, 'vocoder': 82048, 'f0_vocoder': 641} 18.4 s
+C_target {"worst_drop_db": -4.6, "seconds_below_-10db": 0.0, "blocks": 36, "colour": {"0-500": -0.9, "500-1500": -1.2, "1500-4000": -0.2, "4000-8000": 0.2, "nasal_norm_db": 0.8}, "hnr_median_db": 26.4, "hnr_p10_db": 11.5, "jitter": 0.004, "shimmer": 0.0257, "median_dev_cents": 2.7, "p95_dev_cents": 15.2, "voiced_kept": 0.998, "fast_f0_cents": 7.4} | post {}
+D_dip {"worst_drop_db": -4.6, "seconds_below_-10db": 0.0, "blocks": 36, "colour": {"0-500": -0.9, "500-1500": -1.2, "1500-4000": -0.2, "4000-8000": 0.2, "nasal_norm_db": 0.8}, "hnr_median_db": 26.4, "hnr_p10_db": 11.5, "jitter": 0.004, "shimmer": 0.0257, "median_dev_cents": 2.7, "p95_dev_cents": 15.2, "voiced_kept": 0.998, "fast_f0_cents": 7.4} | post {"dip": {"frames_touched": 3, "max_weight": 0.08964157721439274, "seconds_touched": 0.017414965986394557}}
+E_colour {"worst_drop_db": -3.3, "seconds_below_-10db": 0.0, "blocks": 36, "colour": {"0-500": 0.4, "500-1500": -0.0, "1500-4000": 0.1, "4000-8000": -0.7, "nasal_norm_db": 0.4}, "hnr_median_db": 26.5, "hnr_p10_db": 11.8, "jitter": 0.0043, "shimmer": 0.0262, "median_dev_cents": 2.6, "p95_dev_cents": 14.4, "voiced_kept": 1.0, "fast_f0_cents": 7.3} | post {"dip": {"frames_touched": 3, "max_weight": 0.08964157721439274, "seconds_touched": 0.017414965986394557}, "colour": {"band_gain_db": {"0-500": 1.39, "500-1500": 1.15, "1500-4000": 0.28, "4000-8000": -0.91}, "max_abs_gain_db": 4.16}}
+input {"worst_drop_db": 0.0, "seconds_below_-10db": 0.0, "blocks": 36, "colour": {"0-500": 0.0, "500-1500": 0.0, "1500-4000": 0.0, "4000-8000": 0.0, "nasal_norm_db": 0.0}, "hnr_median_db": 25.0, "hnr_p10_db": 8.4, "jitter": 0.005, "shimmer": 0.0321, "median_dev_cents": 0.0, "p95_dev_cents": 0.0, "voiced_kept": 1.0, "fast_f0_cents": 6.7}
+DONE

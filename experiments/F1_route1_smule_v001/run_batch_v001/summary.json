@@ -1,0 +1,401 @@
+[
+  {
+    "clip": "M1",
+    "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\molihua_normal.wav",
+    "source_sha256": "95ba12e6968ff34bf0597cc8d13739b71385470a299ff58a5aa4f7f4dd11117e",
+    "sample_rate": 44100,
+    "target_lufs": -18.0,
+    "native_smule_sha256": "f559c8ceb984a375f714a71caf58c58a6c5e1d9fdb589931c320c65f8205c2ea",
+    "resampled_pad_samples": 1823,
+    "resampled_truncated_samples": 0,
+    "listening_status": "pending_jade",
+    "thresholds": {
+      "pitch_median_cents": 10,
+      "pitch_p95_cents": 35,
+      "true_peak_dbtp": -3.0,
+      "loudness_diff_lu": 0.2,
+      "gain_spread_db": 8,
+      "min_gain_db": -12,
+      "jump_ratio": 2.5
+    },
+    "praat_second_opinion": "omitted: NeuralSVB 专属依赖，不在本隔离环境引入；音高用项目估计器单源检查",
+    "outputs": {
+      "original_matched": {
+        "file": "M1__original_matched.wav",
+        "sha256": "ff032841c176cc980eb597c666f32b18aa937cdd812a0c6ef0065f816792d7df",
+        "samples": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 573830,
+          "duration_seconds": 13.01201814058957,
+          "sample_peak_dbfs": -7.610801116556793,
+          "rms_dbfs": -17.977919599356163,
+          "clipped_samples": 0,
+          "dc_offset": 7.848106588896101e-07
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -7.59,
+          "loudness_range_lu": 2.9
+        },
+        "technical_pass": true,
+        "errors": []
+      },
+      "smule_matched": {
+        "file": "M1__smule_matched.wav",
+        "sha256": "cb58f62bb0e32d2cef1c2a8759275ba7e16545232c3393ad641555f61788f7c9",
+        "samples": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 573830,
+          "duration_seconds": 13.01201814058957,
+          "sample_peak_dbfs": -4.317545364024464,
+          "rms_dbfs": -18.0663995421356,
+          "clipped_samples": 0,
+          "dc_offset": -0.0021026525704681154
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -18.01,
+          "true_peak_dbtp": -4.23,
+          "loudness_range_lu": 2.3
+        },
+        "active_gain": {
+          "spread_db": 4.902169603075949,
+          "min_db": -9.779457607733672
+        },
+        "max_sample_jump_ratio": 0.9027176551897355,
+        "pitch_vs_original": {
+          "comparable_frames": 519,
+          "median_abs_cents": 1.3856958345871173,
+          "p95_abs_cents": 11.086260404358654
+        },
+        "technical_pass": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "clip": "M3",
+    "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\zuixuan_normal.wav",
+    "source_sha256": "4cd81729d94ca48029916abd9caa972be16f93528bd12d5eca839d951e76df2a",
+    "sample_rate": 44100,
+    "target_lufs": -18.0,
+    "native_smule_sha256": "d6dc22e22ab7d299951ac17a40491f0358f82cb69f914eb4c096c63452481a54",
+    "resampled_pad_samples": 882,
+    "resampled_truncated_samples": 0,
+    "listening_status": "pending_jade",
+    "thresholds": {
+      "pitch_median_cents": 10,
+      "pitch_p95_cents": 35,
+      "true_peak_dbtp": -3.0,
+      "loudness_diff_lu": 0.2,
+      "gain_spread_db": 8,
+      "min_gain_db": -12,
+      "jump_ratio": 2.5
+    },
+    "praat_second_opinion": "omitted: NeuralSVB 专属依赖，不在本隔离环境引入；音高用项目估计器单源检查",
+    "outputs": {
+      "original_matched": {
+        "file": "M3__original_matched.wav",
+        "sha256": "5f52bf468611f25f0cfb7590cfa18db3c5d91ef4d8059cfd421c97e81f63d142",
+        "samples": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 1039526,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -6.791807228320298,
+          "rms_dbfs": -18.026846726066207,
+          "clipped_samples": 0,
+          "dc_offset": -7.6411227347398e-06
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -18.01,
+          "true_peak_dbtp": -6.75,
+          "loudness_range_lu": 2.0
+        },
+        "technical_pass": true,
+        "errors": []
+      },
+      "smule_matched": {
+        "file": "M3__smule_matched.wav",
+        "sha256": "8015959297460588506bbd84745b2a3e53e4b7231fdc7137f71492c4c938bf29",
+        "samples": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 1039526,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -4.111713045007202,
+          "rms_dbfs": -18.243054103617794,
+          "clipped_samples": 0,
+          "dc_offset": -0.0023097447624077887
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -4.07,
+          "loudness_range_lu": 1.4
+        },
+        "active_gain": {
+          "spread_db": 15.054674833169365,
+          "min_db": -35.34431238133438
+        },
+        "max_sample_jump_ratio": 0.8646061283494522,
+        "pitch_vs_original": {
+          "comparable_frames": 856,
+          "median_abs_cents": 2.4990546019832807,
+          "p95_abs_cents": 29.70343981448937
+        },
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing"
+        ]
+      }
+    }
+  },
+  {
+    "clip": "O1",
+    "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_pitch_target_v001\\official_all\\Chinese\\gt_a\\3.wav",
+    "source_sha256": "dc6acca3503ada42f83695c1071609c9f26e0469dff4b51c0101147bb6dca256",
+    "sample_rate": 22050,
+    "target_lufs": -18.0,
+    "native_smule_sha256": "bb626e7e41abd2cdee170a8fcbbb616d5de976993b3c8ea348e93231ac209687",
+    "resampled_pad_samples": 659,
+    "resampled_truncated_samples": 0,
+    "listening_status": "pending_jade",
+    "thresholds": {
+      "pitch_median_cents": 10,
+      "pitch_p95_cents": 35,
+      "true_peak_dbtp": -3.0,
+      "loudness_diff_lu": 0.2,
+      "gain_spread_db": 8,
+      "min_gain_db": -12,
+      "jump_ratio": 2.5
+    },
+    "praat_second_opinion": "omitted: NeuralSVB 专属依赖，不在本隔离环境引入；音高用项目估计器单源检查",
+    "outputs": {
+      "original_matched": {
+        "file": "O1__original_matched.wav",
+        "sha256": "2b49903b56febda4196e7178bcaa11b07cc29817885538d21bb6654e765c5efd",
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 123904,
+          "duration_seconds": 5.61922902494331,
+          "sample_peak_dbfs": -4.56281966779491,
+          "rms_dbfs": -19.653629018500588,
+          "clipped_samples": 0,
+          "dc_offset": -0.0001655179114381144
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -4.49,
+          "loudness_range_lu": 1.8
+        },
+        "technical_pass": true,
+        "errors": []
+      },
+      "smule_matched": {
+        "file": "O1__smule_matched.wav",
+        "sha256": "9fcab942892828a610555a5e92482892ff4576ced3f65aad3a8e8f51b4e3250f",
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 123904,
+          "duration_seconds": 5.61922902494331,
+          "sample_peak_dbfs": -4.370870739639191,
+          "rms_dbfs": -18.291956792038516,
+          "clipped_samples": 0,
+          "dc_offset": -0.0024788438781233857
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -17.99,
+          "true_peak_dbtp": -4.36,
+          "loudness_range_lu": 1.1
+        },
+        "active_gain": {
+          "spread_db": 7.727190956361068,
+          "min_db": -5.907653423992017
+        },
+        "max_sample_jump_ratio": 1.44427229294948,
+        "pitch_vs_original": {
+          "comparable_frames": 217,
+          "median_abs_cents": 1.3697447319206797,
+          "p95_abs_cents": 14.530151827649139
+        },
+        "technical_pass": true,
+        "errors": []
+      }
+    }
+  },
+  {
+    "clip": "O2",
+    "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_pitch_target_v001\\official_all\\Chinese\\gt_a\\9.wav",
+    "source_sha256": "5fde54c986d0c8163ea41b1dc97aa839d2d2d5819ee5dfe1c429d3173183fc15",
+    "sample_rate": 22050,
+    "target_lufs": -18.0,
+    "native_smule_sha256": "253783f36d7063013813b8d78d4a107d10efb1d857feacbfa5fd9e8c8203b93a",
+    "resampled_pad_samples": 780,
+    "resampled_truncated_samples": 0,
+    "listening_status": "pending_jade",
+    "thresholds": {
+      "pitch_median_cents": 10,
+      "pitch_p95_cents": 35,
+      "true_peak_dbtp": -3.0,
+      "loudness_diff_lu": 0.2,
+      "gain_spread_db": 8,
+      "min_gain_db": -12,
+      "jump_ratio": 2.5
+    },
+    "praat_second_opinion": "omitted: NeuralSVB 专属依赖，不在本隔离环境引入；音高用项目估计器单源检查",
+    "outputs": {
+      "original_matched": {
+        "file": "O2__original_matched.wav",
+        "sha256": "096eeb0fce38e3d8be74ed31d598a01df76d158f6801d5a234d2c039825d74af",
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 126848,
+          "duration_seconds": 5.752743764172336,
+          "sample_peak_dbfs": -7.24184926953488,
+          "rms_dbfs": -19.94433493483881,
+          "clipped_samples": 0,
+          "dc_offset": -8.970312586225246e-05
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -18.01,
+          "true_peak_dbtp": -7.16,
+          "loudness_range_lu": 5.3
+        },
+        "technical_pass": true,
+        "errors": []
+      },
+      "smule_matched": {
+        "file": "O2__smule_matched.wav",
+        "sha256": "b387238c4e972c248ea5932b805a48521a7bf2ee163af7c0cdd699bca274442b",
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 126848,
+          "duration_seconds": 5.752743764172336,
+          "sample_peak_dbfs": -4.579869304254701,
+          "rms_dbfs": -18.647861332909702,
+          "clipped_samples": 0,
+          "dc_offset": -0.0022044706296487724
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -4.58,
+          "loudness_range_lu": 1.9
+        },
+        "active_gain": {
+          "spread_db": 9.637641011703028,
+          "min_db": -6.305078557839417
+        },
+        "max_sample_jump_ratio": 1.595595241682677,
+        "pitch_vs_original": {
+          "comparable_frames": 223,
+          "median_abs_cents": 1.2600644969839145,
+          "p95_abs_cents": 13.702893456632438
+        },
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing"
+        ]
+      }
+    }
+  },
+  {
+    "clip": "O3",
+    "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_pitch_target_v001\\official_all\\English\\gt_a\\6.wav",
+    "source_sha256": "e34920b9f51e02945d6dbf8c438228559a0ae041dcf250b07f853224c8a44c36",
+    "sample_rate": 22050,
+    "target_lufs": -19.480000000000004,
+    "native_smule_sha256": "d4fb37fe7bb01331930e3e349b00ae91bb4974f0a50fd828a1477c0937019cdb",
+    "resampled_pad_samples": 569,
+    "resampled_truncated_samples": 0,
+    "listening_status": "pending_jade",
+    "thresholds": {
+      "pitch_median_cents": 10,
+      "pitch_p95_cents": 35,
+      "true_peak_dbtp": -3.0,
+      "loudness_diff_lu": 0.2,
+      "gain_spread_db": 8,
+      "min_gain_db": -12,
+      "jump_ratio": 2.5
+    },
+    "praat_second_opinion": "omitted: NeuralSVB 专属依赖，不在本隔离环境引入；音高用项目估计器单源检查",
+    "outputs": {
+      "original_matched": {
+        "file": "O3__original_matched.wav",
+        "sha256": "3f62d29e2b4e6be13e19d02bb5c7408ca895942e28658dc7707cdda606816211",
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 88064,
+          "duration_seconds": 3.9938321995464854,
+          "sample_peak_dbfs": -3.310632805009141,
+          "rms_dbfs": -19.473077638955164,
+          "clipped_samples": 0,
+          "dc_offset": -0.00013422654118648794
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -19.47,
+          "true_peak_dbtp": -3.21,
+          "loudness_range_lu": 2.1
+        },
+        "technical_pass": true,
+        "errors": []
+      },
+      "smule_matched": {
+        "file": "O3__smule_matched.wav",
+        "sha256": "bc72f11a1b1d076a82a8707e0b5cec297f04ef7e261e41cd1d8186fb5f17bb3f",
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 88064,
+          "duration_seconds": 3.9938321995464854,
+          "sample_peak_dbfs": -3.1590682632831353,
+          "rms_dbfs": -19.296186628245522,
+          "clipped_samples": 0,
+          "dc_offset": -0.0022378456453944363
+        },
+        "full_decode_pass": true,
+        "loudness": {
+          "integrated_lufs": -19.48,
+          "true_peak_dbtp": -3.1,
+          "loudness_range_lu": 1.6
+        },
+        "active_gain": {
+          "spread_db": 5.534939209617535,
+          "min_db": -4.142094872881161
+        },
+        "max_sample_jump_ratio": 0.9004037857470127,
+        "pitch_vs_original": {
+          "comparable_frames": 137,
+          "median_abs_cents": 1.2747323825809966,
+          "p95_abs_cents": 22.177262558651947
+        },
+        "technical_pass": true,
+        "errors": []
+      }
+    }
+  }
+]

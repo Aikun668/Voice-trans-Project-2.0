@@ -1,0 +1,11 @@
+﻿dimension,metric,signs,all_same_sign,median_delta,median_effect_size,discriminates
+时域,cycle_centroid,-++-,False,-0.0014,0.12,False
+时域,cycle_rise_frac,0-+0,False,0.0,0.23,False
+时域,cycle_front_ratio,+-+-,False,-0.0003,0.14,False
+时域,cycle_crest,+-++,False,0.1046,0.28,False
+相位,phase_coherence,--+-,False,-0.034,0.12,False
+共振峰,f1_hz,++++,True,43.3916,0.65,False
+共振峰,b1_hz,+++-,False,4.0529,0.09,False
+共振峰,f2_hz,+--+,False,1.1918,0.1,False
+共振峰,b2_hz,+---,False,-32.5408,0.25,False
+共振峰,bw_sum_hz,+---,False,-41.8005,0.33,False

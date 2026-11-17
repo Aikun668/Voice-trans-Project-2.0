@@ -1,0 +1,946 @@
+{
+  "experiment": "F1-EXP-012",
+  "phase": "F1-DIAG-2",
+  "created_utc": "2026-11-01T13:12:48.794805+00:00",
+  "files": [
+    {
+      "dataset_id": "A_self_01",
+      "song": "平凡之路",
+      "variant": "薄音版",
+      "voiced_frames": 560,
+      "stats": {
+        "f0": {
+          "median": 175.5098,
+          "mad": 38.4015,
+          "n": 560
+        },
+        "cycle_centroid": {
+          "median": 0.4805,
+          "mad": 0.0388,
+          "n": 560
+        },
+        "cycle_rise_frac": {
+          "median": 0.9219,
+          "mad": 0.0463,
+          "n": 560
+        },
+        "cycle_front_ratio": {
+          "median": 0.4577,
+          "mad": 0.0816,
+          "n": 560
+        },
+        "cycle_crest": {
+          "median": 1.8821,
+          "mad": 0.3822,
+          "n": 560
+        },
+        "phase_coherence": {
+          "median": 0.6566,
+          "mad": 0.2564,
+          "n": 560
+        },
+        "f1_hz": {
+          "median": 231.9377,
+          "mad": 44.8376,
+          "n": 487
+        },
+        "b1_hz": {
+          "median": 97.9254,
+          "mad": 77.7803,
+          "n": 487
+        },
+        "f2_hz": {
+          "median": 1568.2833,
+          "mad": 809.2629,
+          "n": 487
+        },
+        "b2_hz": {
+          "median": 230.0132,
+          "mad": 156.863,
+          "n": 487
+        },
+        "bw_sum_hz": {
+          "median": 391.5529,
+          "mad": 213.9894,
+          "n": 487
+        }
+      },
+      "lufs": -19.24,
+      "wav_sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+      "role": "薄音版",
+      "pair_song": "平凡之路"
+    },
+    {
+      "dataset_id": "A_self_02",
+      "song": "平凡之路",
+      "variant": "正常版",
+      "voiced_frames": 571,
+      "stats": {
+        "f0": {
+          "median": 171.7879,
+          "mad": 37.2949,
+          "n": 571
+        },
+        "cycle_centroid": {
+          "median": 0.4759,
+          "mad": 0.0605,
+          "n": 571
+        },
+        "cycle_rise_frac": {
+          "median": 0.9219,
+          "mad": 0.0463,
+          "n": 571
+        },
+        "cycle_front_ratio": {
+          "median": 0.4805,
+          "mad": 0.1281,
+          "n": 571
+        },
+        "cycle_crest": {
+          "median": 2.0777,
+          "mad": 0.4912,
+          "n": 571
+        },
+        "phase_coherence": {
+          "median": 0.6313,
+          "mad": 0.2644,
+          "n": 571
+        },
+        "f1_hz": {
+          "median": 287.1309,
+          "mad": 79.1553,
+          "n": 544
+        },
+        "b1_hz": {
+          "median": 133.5749,
+          "mad": 106.8272,
+          "n": 544
+        },
+        "f2_hz": {
+          "median": 1617.8066,
+          "mad": 734.3339,
+          "n": 544
+        },
+        "b2_hz": {
+          "median": 273.3769,
+          "mad": 198.0451,
+          "n": 544
+        },
+        "bw_sum_hz": {
+          "median": 478.2649,
+          "mad": 257.224,
+          "n": 544
+        }
+      },
+      "lufs": -17.52,
+      "wav_sha256": "44b7f3dce397ef32b2ec0dd0e8a129b3d1818d26073d103696cd8cd0318b8c88",
+      "role": "正常版",
+      "pair_song": "平凡之路"
+    },
+    {
+      "dataset_id": "A_self_03",
+      "song": "我们的歌",
+      "variant": "薄音版",
+      "voiced_frames": 575,
+      "stats": {
+        "f0": {
+          "median": 137.0865,
+          "mad": 15.3349,
+          "n": 575
+        },
+        "cycle_centroid": {
+          "median": 0.4691,
+          "mad": 0.0457,
+          "n": 575
+        },
+        "cycle_rise_frac": {
+          "median": 0.9375,
+          "mad": 0.0232,
+          "n": 575
+        },
+        "cycle_front_ratio": {
+          "median": 0.4934,
+          "mad": 0.0957,
+          "n": 575
+        },
+        "cycle_crest": {
+          "median": 2.0983,
+          "mad": 0.2719,
+          "n": 575
+        },
+        "phase_coherence": {
+          "median": 0.8196,
+          "mad": 0.1723,
+          "n": 575
+        },
+        "f1_hz": {
+          "median": 221.0315,
+          "mad": 60.3179,
+          "n": 469
+        },
+        "b1_hz": {
+          "median": 96.5298,
+          "mad": 47.9891,
+          "n": 469
+        },
+        "f2_hz": {
+          "median": 2353.7625,
+          "mad": 965.2701,
+          "n": 469
+        },
+        "b2_hz": {
+          "median": 336.4461,
+          "mad": 223.8202,
+          "n": 469
+        },
+        "bw_sum_hz": {
+          "median": 469.8789,
+          "mad": 203.8594,
+          "n": 469
+        }
+      },
+      "lufs": -25.07,
+      "wav_sha256": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+      "role": "薄音版",
+      "pair_song": "我们的歌"
+    },
+    {
+      "dataset_id": "A_self_04",
+      "song": "我们的歌",
+      "variant": "正常版",
+      "voiced_frames": 551,
+      "stats": {
+        "f0": {
+          "median": 158.7778,
+          "mad": 19.4804,
+          "n": 551
+        },
+        "cycle_centroid": {
+          "median": 0.4954,
+          "mad": 0.0639,
+          "n": 551
+        },
+        "cycle_rise_frac": {
+          "median": 0.9219,
+          "mad": 0.0232,
+          "n": 551
+        },
+        "cycle_front_ratio": {
+          "median": 0.4435,
+          "mad": 0.1095,
+          "n": 551
+        },
+        "cycle_crest": {
+          "median": 2.0549,
+          "mad": 0.3235,
+          "n": 551
+        },
+        "phase_coherence": {
+          "median": 0.6773,
+          "mad": 0.2454,
+          "n": 551
+        },
+        "f1_hz": {
+          "median": 287.7436,
+          "mad": 84.5602,
+          "n": 515
+        },
+        "b1_hz": {
+          "median": 96.5586,
+          "mad": 79.7648,
+          "n": 515
+        },
+        "f2_hz": {
+          "median": 1926.9641,
+          "mad": 763.372,
+          "n": 515
+        },
+        "b2_hz": {
+          "median": 227.8192,
+          "mad": 166.6886,
+          "n": 515
+        },
+        "bw_sum_hz": {
+          "median": 341.7226,
+          "mad": 216.4914,
+          "n": 515
+        }
+      },
+      "lufs": -17.69,
+      "wav_sha256": "ced2ec03981059267deccafbdfb3747c691492d493393c036544df4ffa46dff4",
+      "role": "正常版",
+      "pair_song": "我们的歌"
+    },
+    {
+      "dataset_id": "A_self_05",
+      "song": "雅俗共赏",
+      "variant": "清唱版",
+      "voiced_frames": 709,
+      "stats": {
+        "f0": {
+          "median": 186.2823,
+          "mad": 46.2739,
+          "n": 709
+        },
+        "cycle_centroid": {
+          "median": 0.4862,
+          "mad": 0.0381,
+          "n": 709
+        },
+        "cycle_rise_frac": {
+          "median": 0.9062,
+          "mad": 0.0232,
+          "n": 709
+        },
+        "cycle_front_ratio": {
+          "median": 0.4544,
+          "mad": 0.0887,
+          "n": 709
+        },
+        "cycle_crest": {
+          "median": 1.7899,
+          "mad": 0.3827,
+          "n": 709
+        },
+        "phase_coherence": {
+          "median": 0.553,
+          "mad": 0.271,
+          "n": 709
+        },
+        "f1_hz": {
+          "median": 247.4369,
+          "mad": 67.2445,
+          "n": 609
+        },
+        "b1_hz": {
+          "median": 146.0894,
+          "mad": 125.985,
+          "n": 609
+        },
+        "f2_hz": {
+          "median": 1538.0763,
+          "mad": 589.2447,
+          "n": 609
+        },
+        "b2_hz": {
+          "median": 265.0853,
+          "mad": 163.6803,
+          "n": 609
+        },
+        "bw_sum_hz": {
+          "median": 470.1656,
+          "mad": 247.7168,
+          "n": 609
+        }
+      },
+      "lufs": -20.57,
+      "wav_sha256": "a9fad650bd690d4826a55e7ac69fed87569aa9e73896413611d75a70a135b401",
+      "role": "清唱版(薄)",
+      "pair_song": "雅俗共赏"
+    },
+    {
+      "dataset_id": "A_self_06",
+      "song": "雅俗共赏",
+      "variant": "正常版",
+      "voiced_frames": 642,
+      "stats": {
+        "f0": {
+          "median": 187.2428,
+          "mad": 48.171,
+          "n": 642
+        },
+        "cycle_centroid": {
+          "median": 0.4881,
+          "mad": 0.0556,
+          "n": 642
+        },
+        "cycle_rise_frac": {
+          "median": 0.9219,
+          "mad": 0.0463,
+          "n": 642
+        },
+        "cycle_front_ratio": {
+          "median": 0.4566,
+          "mad": 0.1049,
+          "n": 642
+        },
+        "cycle_crest": {
+          "median": 1.9361,
+          "mad": 0.4543,
+          "n": 642
+        },
+        "phase_coherence": {
+          "median": 0.5638,
+          "mad": 0.2854,
+          "n": 642
+        },
+        "f1_hz": {
+          "median": 277.7996,
+          "mad": 86.2124,
+          "n": 580
+        },
+        "b1_hz": {
+          "median": 154.1663,
+          "mad": 145.732,
+          "n": 580
+        },
+        "f2_hz": {
+          "median": 1490.9367,
+          "mad": 631.578,
+          "n": 580
+        },
+        "b2_hz": {
+          "median": 246.9687,
+          "mad": 159.5764,
+          "n": 580
+        },
+        "bw_sum_hz": {
+          "median": 450.9471,
+          "mad": 269.4845,
+          "n": 580
+        }
+      },
+      "lufs": -17.66,
+      "wav_sha256": "4a20ddbbd7cf56e3da809e1e5c7a351d3a42c990f698f2e20c972392a3b83eae",
+      "role": "正常版",
+      "pair_song": "雅俗共赏"
+    },
+    {
+      "dataset_id": "A_self_07",
+      "song": "因为刚好遇见你",
+      "variant": "清唱版",
+      "voiced_frames": 594,
+      "stats": {
+        "f0": {
+          "median": 201.5384,
+          "mad": 66.7627,
+          "n": 594
+        },
+        "cycle_centroid": {
+          "median": 0.4831,
+          "mad": 0.029,
+          "n": 594
+        },
+        "cycle_rise_frac": {
+          "median": 0.9062,
+          "mad": 0.0232,
+          "n": 594
+        },
+        "cycle_front_ratio": {
+          "median": 0.4855,
+          "mad": 0.0512,
+          "n": 594
+        },
+        "cycle_crest": {
+          "median": 1.6556,
+          "mad": 0.2741,
+          "n": 594
+        },
+        "phase_coherence": {
+          "median": 0.5985,
+          "mad": 0.2928,
+          "n": 594
+        },
+        "f1_hz": {
+          "median": 283.25,
+          "mad": 88.3447,
+          "n": 504
+        },
+        "b1_hz": {
+          "median": 114.2823,
+          "mad": 100.1916,
+          "n": 504
+        },
+        "f2_hz": {
+          "median": 1850.6189,
+          "mad": 898.5699,
+          "n": 504
+        },
+        "b2_hz": {
+          "median": 269.2055,
+          "mad": 200.2683,
+          "n": 504
+        },
+        "bw_sum_hz": {
+          "median": 435.2803,
+          "mad": 229.9686,
+          "n": 504
+        }
+      },
+      "lufs": -20.64,
+      "wav_sha256": "ca7da7dde00afa28489f1ae6c6ce4f2e95f03766d33aa42458f2a41099901ce0",
+      "role": "清唱版(薄)",
+      "pair_song": "因为刚好遇见你"
+    },
+    {
+      "dataset_id": "A_self_08",
+      "song": "因为刚好遇见你",
+      "variant": "原版",
+      "voiced_frames": 577,
+      "stats": {
+        "f0": {
+          "median": 225.7268,
+          "mad": 75.0946,
+          "n": 577
+        },
+        "cycle_centroid": {
+          "median": 0.4782,
+          "mad": 0.0391,
+          "n": 577
+        },
+        "cycle_rise_frac": {
+          "median": 0.9062,
+          "mad": 0.0232,
+          "n": 577
+        },
+        "cycle_front_ratio": {
+          "median": 0.4828,
+          "mad": 0.0642,
+          "n": 577
+        },
+        "cycle_crest": {
+          "median": 1.7187,
+          "mad": 0.3067,
+          "n": 577
+        },
+        "phase_coherence": {
+          "median": 0.5558,
+          "mad": 0.2839,
+          "n": 577
+        },
+        "f1_hz": {
+          "median": 314.84,
+          "mad": 108.1295,
+          "n": 509
+        },
+        "b1_hz": {
+          "median": 102.2705,
+          "mad": 97.4062,
+          "n": 509
+        },
+        "f2_hz": {
+          "median": 1949.1738,
+          "mad": 808.7628,
+          "n": 509
+        },
+        "b2_hz": {
+          "median": 222.2404,
+          "mad": 162.996,
+          "n": 509
+        },
+        "bw_sum_hz": {
+          "median": 370.8978,
+          "mad": 196.3201,
+          "n": 509
+        }
+      },
+      "lufs": -15.47,
+      "wav_sha256": "3103b758271c657008d544ddd6f4cb89b01a39c5ad59d1ae854f8ee0f6ce2b00",
+      "role": "原版(正常)",
+      "pair_song": "因为刚好遇见你"
+    }
+  ],
+  "pairs": [
+    {
+      "song": "平凡之路",
+      "thin": {
+        "id": "A_self_01",
+        "label": "薄音版"
+      },
+      "normal": {
+        "id": "A_self_02",
+        "label": "正常版"
+      },
+      "thin_medians": {
+        "cycle_centroid": 0.4805,
+        "cycle_rise_frac": 0.9219,
+        "cycle_front_ratio": 0.4577,
+        "cycle_crest": 1.8821,
+        "phase_coherence": 0.6566,
+        "f1_hz": 231.9377,
+        "b1_hz": 97.9254,
+        "f2_hz": 1568.2833,
+        "b2_hz": 230.0132,
+        "bw_sum_hz": 391.5529
+      },
+      "normal_medians": {
+        "cycle_centroid": 0.4759,
+        "cycle_rise_frac": 0.9219,
+        "cycle_front_ratio": 0.4805,
+        "cycle_crest": 2.0777,
+        "phase_coherence": 0.6313,
+        "f1_hz": 287.1309,
+        "b1_hz": 133.5749,
+        "f2_hz": 1617.8066,
+        "b2_hz": 273.3769,
+        "bw_sum_hz": 478.2649
+      },
+      "delta_normal_minus_thin": {
+        "cycle_centroid": -0.0046,
+        "cycle_rise_frac": 0.0,
+        "cycle_front_ratio": 0.0228,
+        "cycle_crest": 0.1956,
+        "phase_coherence": -0.0253,
+        "f1_hz": 55.1932,
+        "b1_hz": 35.6495,
+        "f2_hz": 49.5233,
+        "b2_hz": 43.3637,
+        "bw_sum_hz": 86.712
+      },
+      "effect_size_vs_frame_mad": {
+        "cycle_centroid": -0.09,
+        "cycle_rise_frac": 0.0,
+        "cycle_front_ratio": 0.22,
+        "cycle_crest": 0.45,
+        "phase_coherence": -0.1,
+        "f1_hz": 0.89,
+        "b1_hz": 0.39,
+        "f2_hz": 0.06,
+        "b2_hz": 0.24,
+        "bw_sum_hz": 0.37
+      }
+    },
+    {
+      "song": "我们的歌",
+      "thin": {
+        "id": "A_self_03",
+        "label": "薄音版"
+      },
+      "normal": {
+        "id": "A_self_04",
+        "label": "正常版"
+      },
+      "thin_medians": {
+        "cycle_centroid": 0.4691,
+        "cycle_rise_frac": 0.9375,
+        "cycle_front_ratio": 0.4934,
+        "cycle_crest": 2.0983,
+        "phase_coherence": 0.8196,
+        "f1_hz": 221.0315,
+        "b1_hz": 96.5298,
+        "f2_hz": 2353.7625,
+        "b2_hz": 336.4461,
+        "bw_sum_hz": 469.8789
+      },
+      "normal_medians": {
+        "cycle_centroid": 0.4954,
+        "cycle_rise_frac": 0.9219,
+        "cycle_front_ratio": 0.4435,
+        "cycle_crest": 2.0549,
+        "phase_coherence": 0.6773,
+        "f1_hz": 287.7436,
+        "b1_hz": 96.5586,
+        "f2_hz": 1926.9641,
+        "b2_hz": 227.8192,
+        "bw_sum_hz": 341.7226
+      },
+      "delta_normal_minus_thin": {
+        "cycle_centroid": 0.0263,
+        "cycle_rise_frac": -0.0156,
+        "cycle_front_ratio": -0.0499,
+        "cycle_crest": -0.0434,
+        "phase_coherence": -0.1423,
+        "f1_hz": 66.7121,
+        "b1_hz": 0.0288,
+        "f2_hz": -426.7984,
+        "b2_hz": -108.6269,
+        "bw_sum_hz": -128.1563
+      },
+      "effect_size_vs_frame_mad": {
+        "cycle_centroid": 0.48,
+        "cycle_rise_frac": -0.67,
+        "cycle_front_ratio": -0.49,
+        "cycle_crest": -0.15,
+        "phase_coherence": -0.68,
+        "f1_hz": 0.92,
+        "b1_hz": 0.0,
+        "f2_hz": -0.49,
+        "b2_hz": -0.56,
+        "bw_sum_hz": -0.61
+      }
+    },
+    {
+      "song": "雅俗共赏",
+      "thin": {
+        "id": "A_self_05",
+        "label": "清唱版(薄)"
+      },
+      "normal": {
+        "id": "A_self_06",
+        "label": "正常版"
+      },
+      "thin_medians": {
+        "cycle_centroid": 0.4862,
+        "cycle_rise_frac": 0.9062,
+        "cycle_front_ratio": 0.4544,
+        "cycle_crest": 1.7899,
+        "phase_coherence": 0.553,
+        "f1_hz": 247.4369,
+        "b1_hz": 146.0894,
+        "f2_hz": 1538.0763,
+        "b2_hz": 265.0853,
+        "bw_sum_hz": 470.1656
+      },
+      "normal_medians": {
+        "cycle_centroid": 0.4881,
+        "cycle_rise_frac": 0.9219,
+        "cycle_front_ratio": 0.4566,
+        "cycle_crest": 1.9361,
+        "phase_coherence": 0.5638,
+        "f1_hz": 277.7996,
+        "b1_hz": 154.1663,
+        "f2_hz": 1490.9367,
+        "b2_hz": 246.9687,
+        "bw_sum_hz": 450.9471
+      },
+      "delta_normal_minus_thin": {
+        "cycle_centroid": 0.0019,
+        "cycle_rise_frac": 0.0157,
+        "cycle_front_ratio": 0.0022,
+        "cycle_crest": 0.1462,
+        "phase_coherence": 0.0108,
+        "f1_hz": 30.3627,
+        "b1_hz": 8.0769,
+        "f2_hz": -47.1396,
+        "b2_hz": -18.1166,
+        "bw_sum_hz": -19.2185
+      },
+      "effect_size_vs_frame_mad": {
+        "cycle_centroid": 0.04,
+        "cycle_rise_frac": 0.45,
+        "cycle_front_ratio": 0.02,
+        "cycle_crest": 0.35,
+        "phase_coherence": 0.04,
+        "f1_hz": 0.4,
+        "b1_hz": 0.06,
+        "f2_hz": -0.08,
+        "b2_hz": -0.11,
+        "bw_sum_hz": -0.07
+      }
+    },
+    {
+      "song": "因为刚好遇见你",
+      "thin": {
+        "id": "A_self_07",
+        "label": "清唱版(薄)"
+      },
+      "normal": {
+        "id": "A_self_08",
+        "label": "原版(正常)"
+      },
+      "thin_medians": {
+        "cycle_centroid": 0.4831,
+        "cycle_rise_frac": 0.9062,
+        "cycle_front_ratio": 0.4855,
+        "cycle_crest": 1.6556,
+        "phase_coherence": 0.5985,
+        "f1_hz": 283.25,
+        "b1_hz": 114.2823,
+        "f2_hz": 1850.6189,
+        "b2_hz": 269.2055,
+        "bw_sum_hz": 435.2803
+      },
+      "normal_medians": {
+        "cycle_centroid": 0.4782,
+        "cycle_rise_frac": 0.9062,
+        "cycle_front_ratio": 0.4828,
+        "cycle_crest": 1.7187,
+        "phase_coherence": 0.5558,
+        "f1_hz": 314.84,
+        "b1_hz": 102.2705,
+        "f2_hz": 1949.1738,
+        "b2_hz": 222.2404,
+        "bw_sum_hz": 370.8978
+      },
+      "delta_normal_minus_thin": {
+        "cycle_centroid": -0.0049,
+        "cycle_rise_frac": 0.0,
+        "cycle_front_ratio": -0.0027,
+        "cycle_crest": 0.0631,
+        "phase_coherence": -0.0427,
+        "f1_hz": 31.59,
+        "b1_hz": -12.0118,
+        "f2_hz": 98.5549,
+        "b2_hz": -46.9651,
+        "bw_sum_hz": -64.3825
+      },
+      "effect_size_vs_frame_mad": {
+        "cycle_centroid": -0.14,
+        "cycle_rise_frac": 0.0,
+        "cycle_front_ratio": -0.05,
+        "cycle_crest": 0.22,
+        "phase_coherence": -0.15,
+        "f1_hz": 0.32,
+        "b1_hz": -0.12,
+        "f2_hz": 0.12,
+        "b2_hz": -0.26,
+        "bw_sum_hz": -0.3
+      }
+    }
+  ],
+  "consistency": {
+    "cycle_centroid": {
+      "dimension": "时域",
+      "signs_per_pair": [
+        "-",
+        "+",
+        "+",
+        "-"
+      ],
+      "all_same_sign": false,
+      "n_valid": 4,
+      "median_delta": -0.0014,
+      "median_effect_size": 0.12,
+      "max_effect_size": 0.48,
+      "discriminates": false
+    },
+    "cycle_rise_frac": {
+      "dimension": "时域",
+      "signs_per_pair": [
+        "0",
+        "-",
+        "+",
+        "0"
+      ],
+      "all_same_sign": false,
+      "n_valid": 2,
+      "median_delta": 0.0,
+      "median_effect_size": 0.23,
+      "max_effect_size": 0.67,
+      "discriminates": false
+    },
+    "cycle_front_ratio": {
+      "dimension": "时域",
+      "signs_per_pair": [
+        "+",
+        "-",
+        "+",
+        "-"
+      ],
+      "all_same_sign": false,
+      "n_valid": 4,
+      "median_delta": -0.0003,
+      "median_effect_size": 0.14,
+      "max_effect_size": 0.49,
+      "discriminates": false
+    },
+    "cycle_crest": {
+      "dimension": "时域",
+      "signs_per_pair": [
+        "+",
+        "-",
+        "+",
+        "+"
+      ],
+      "all_same_sign": false,
+      "n_valid": 4,
+      "median_delta": 0.1046,
+      "median_effect_size": 0.28,
+      "max_effect_size": 0.45,
+      "discriminates": false
+    },
+    "phase_coherence": {
+      "dimension": "相位",
+      "signs_per_pair": [
+        "-",
+        "-",
+        "+",
+        "-"
+      ],
+      "all_same_sign": false,
+      "n_valid": 4,
+      "median_delta": -0.034,
+      "median_effect_size": 0.12,
+      "max_effect_size": 0.68,
+      "discriminates": false
+    },
+    "f1_hz": {
+      "dimension": "共振峰",
+      "signs_per_pair": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "all_same_sign": true,
+      "n_valid": 4,
+      "median_delta": 43.3916,
+      "median_effect_size": 0.65,
+      "max_effect_size": 0.92,
+      "discriminates": false
+    },
+    "b1_hz": {
+      "dimension": "共振峰",
+      "signs_per_pair": [
+        "+",
+        "+",
+        "+",
+        "-"
+      ],
+      "all_same_sign": false,
+      "n_valid": 4,
+      "median_delta": 4.0529,
+      "median_effect_size": 0.09,
+      "max_effect_size": 0.39,
+      "discriminates": false
+    },
+    "f2_hz": {
+      "dimension": "共振峰",
+      "signs_per_pair": [
+        "+",
+        "-",
+        "-",
+        "+"
+      ],
+      "all_same_sign": false,
+      "n_valid": 4,
+      "median_delta": 1.1918,
+      "median_effect_size": 0.1,
+      "max_effect_size": 0.49,
+      "discriminates": false
+    },
+    "b2_hz": {
+      "dimension": "共振峰",
+      "signs_per_pair": [
+        "+",
+        "-",
+        "-",
+        "-"
+      ],
+      "all_same_sign": false,
+      "n_valid": 4,
+      "median_delta": -32.5408,
+      "median_effect_size": 0.25,
+      "max_effect_size": 0.56,
+      "discriminates": false
+    },
+    "bw_sum_hz": {
+      "dimension": "共振峰",
+      "signs_per_pair": [
+        "+",
+        "-",
+        "-",
+        "-"
+      ],
+      "all_same_sign": false,
+      "n_valid": 4,
+      "median_delta": -41.8005,
+      "median_effect_size": 0.33,
+      "max_effect_size": 0.61,
+      "discriminates": false
+    }
+  },
+  "dimension_verdict": {
+    "时域": false,
+    "相位": false,
+    "共振峰": false
+  },
+  "decision_rule": "4/4 对同向 且 中位效应量 ≥1.0（相对帧内 MAD）才判该指标有区分力",
+  "limitations": [
+    "自实现指标未与 Praat 校验；H1/H2 受共振峰与元音影响，同人同曲近似受控",
+    "同曲不同 take，段落/音区分布不完全一致；F0 差异需对照看",
+    "手机录音链路高频受限；绝对带宽数值不代表录音棚水平，成对内一致",
+    "LPC 在 16kHz、order 14 下只覆盖到 4kHz 以内的 F1/F2；F3+ 未测",
+    "标签由用户指定；本报告不构成听感结论"
+  ]
+}

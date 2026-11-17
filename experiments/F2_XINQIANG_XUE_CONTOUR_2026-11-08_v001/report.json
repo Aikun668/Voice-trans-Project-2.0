@@ -1,0 +1,93 @@
+{
+  "source": "心墙01-对照微微跑调",
+  "word": "学",
+  "approved_cut": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_WORD_CUT_2026-11-08_v001\\report.json",
+  "key_check": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_ONE_NOTE_TUNE_2026-11-08_v001\\report.json",
+  "majority_semitone_offset_cents": -400,
+  "local_tuning_cents": -1.9558153783170837,
+  "reference_core_seconds": [
+    114.034,
+    114.144
+  ],
+  "reference_note": "D#4",
+  "source_core_seconds": [
+    0.9,
+    1.0615
+  ],
+  "source_median_cents": -454.0767653390805,
+  "target_note": "B3",
+  "target_cents": -1001.9558153783171,
+  "planned_core_median_shift_cents": -564.6197610343476,
+  "measured_core_median_shift_cents": -563.4555484479196,
+  "median_frame_command_error_cents": 1.1642125864279933,
+  "readback_core_cents": -998.2682965500645,
+  "peak_commanded_shift_cents": 679.1228626147284,
+  "local_trial_shift_limit_cents": 700.0,
+  "original_core_hz_p10_p90": [
+    292.27361543397984,
+    371.0666830829232
+  ],
+  "corrected_core_hz_p10_p90": [
+    239.18623045152623,
+    251.82494839558555
+  ],
+  "retained_fraction_of_glide": 0.2,
+  "affected_audio_seconds": [
+    0.8550208333333333,
+    1.0859791666666667
+  ],
+  "processing": "One pass with poc_phase4c.shift_by_curve (Praat), with local crossfade via poc_phase4b.splice",
+  "corrected_preview_fixed_gain_db": 0.8000000000000007,
+  "trained_f2_model_used": false,
+  "peak_10ms_step_cents_in_word": {
+    "original": 64.17143062208265,
+    "corrected": 16.271084157170776
+  },
+  "voiced_overlap": 0.9787234042553191,
+  "preview_source_seconds": [
+    0.755,
+    1.415
+  ],
+  "compare_split_seconds": 0.8,
+  "levels": {
+    "original.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.6,
+      "dbtp": -7.8,
+      "sha256": "2e9b7de44ae19ac9f639fa6e663d8511e2df7bda9294a66db56ed68e8eed1cea"
+    },
+    "corrected.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -7.2,
+      "sha256": "970da44aa8c708a188d80398b3be0dd10d5a35a50ed2a04c5f4b56d3742b9590"
+    },
+    "compare.wav": {
+      "samples": 76800,
+      "sample_rate": 48000,
+      "lufs": -18.9,
+      "dbtp": -7.2,
+      "sha256": "6da0e440da715cc08f6c27fe11e166df5a18f5a17d91a60fb65bd0c03d4b0093"
+    }
+  },
+  "inputs": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "anchor_matches_approved_cut": true,
+    "exact_original_then_corrected": true,
+    "outside_splice_identical_before_preview_gain": true,
+    "matched_loudness": true,
+    "true_peak_at_most_minus_1_dbtp": true,
+    "pitch_target_and_median_command_error_within_5_cents": true,
+    "voiced_glide_reduced": true,
+    "voiced_overlap_at_least_0_95": true,
+    "largest_word_pitch_step_not_increased": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

@@ -1,0 +1,64 @@
+{
+  "purpose": "calibrate listening anchors",
+  "technical_pass": true,
+  "listening": "pending_jade",
+  "common_target_lufs": -18.5,
+  "measured_loudness_spread_lu": 0.0,
+  "processing": "fixed gain only, no limiter",
+  "versions": {
+    "original": {
+      "input": "test_dataset/f1_dataset_v2/A_thin/self/wav/平凡之路薄音版.wav",
+      "input_sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+      "input_hash_unchanged": true,
+      "output_sha256": "5c662bac178aa43af99d6ac42d44655ac07899d6a89f040c659e3acc75f37541",
+      "fixed_gain_db": 1.2,
+      "samples": 630784,
+      "sample_rate": 48000,
+      "duration_s": 13.141,
+      "sample_shape_unchanged": true,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -18.5,
+      "true_peak_dbtp": -5.2,
+      "pitch_vs_own_input": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.0,
+        "cents_p95": 0.0,
+        "p95_abs_cents": 0.0,
+        "frames_both": 1028,
+        "frames_ref_voiced": 1028,
+        "abs_error_p95_cents": 0.0,
+        "frames_abs_error_over_20_cents": 0.0
+      },
+      "technical_pass": true
+    },
+    "normal": {
+      "input": "test_dataset/f1_dataset_v2/A_thin/self/wav/平凡之路正常版.wav",
+      "input_sha256": "44b7f3dce397ef32b2ec0dd0e8a129b3d1818d26073d103696cd8cd0318b8c88",
+      "input_hash_unchanged": true,
+      "output_sha256": "c339714c329a7d309b474d6e7e31b4092f84978230a0628770c5fcc60cd072ba",
+      "fixed_gain_db": -0.7,
+      "samples": 640896,
+      "sample_rate": 48000,
+      "duration_s": 13.352,
+      "sample_shape_unchanged": true,
+      "finite": true,
+      "clipped_samples": 0,
+      "lufs": -18.5,
+      "true_peak_dbtp": -4.2,
+      "pitch_vs_own_input": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.0,
+        "cents_p95": 0.0,
+        "p95_abs_cents": 0.0,
+        "frames_both": 994,
+        "frames_ref_voiced": 994,
+        "abs_error_p95_cents": 0.0,
+        "frames_abs_error_over_20_cents": 0.0
+      },
+      "technical_pass": true
+    }
+  }
+}

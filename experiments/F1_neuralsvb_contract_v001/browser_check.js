@@ -1,0 +1,46 @@
+async page => {
+  const results = await page.evaluate(async () => {
+    const groups = await (await fetch('delivery_manifest.json')).json();
+    const expected = groups.flatMap(g => g.tracks);
+    const players = [...document.querySelectorAll('audio')];
+    if (groups.length !== 5 || players.length !== expected.length) throw new Error('Wrong source/player count');
+    const ctx = new AudioContext({sampleRate: 44100});
+    const checks = [];
+    for (const track of expected) {
+      const bytes = await (await fetch(track.file)).arrayBuffer();
+      const digest = [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))].map(x => x.toString(16).padStart(2, '0')).join('');
+      if (digest !== track.sha256) throw new Error('Served audio hash mismatch: ' + track.file);
+      const decoded = await ctx.decodeAudioData(bytes.slice(0));
+      if (decoded.sampleRate !== 44100 || decoded.numberOfChannels !== 1 || decoded.length !== track.frames) throw new Error('Decoded audio contract mismatch');
+      checks.push({file: track.file, sha256_matches: true, channels: decoded.numberOfChannels, frames: decoded.length});
+    }
+    await ctx.close();
+    for (const player of players) {
+      player.muted = true;
+      player.playbackRate = 8;
+      player.currentTime = 0;
+      const ended = new Promise((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error('Playback timeout')), 10000);
+        player.addEventListener('ended', () => {clearTimeout(timer); resolve();}, {once:true});
+        player.addEventListener('error', () => {clearTimeout(timer); reject(new Error('Audio playback error'));}, {once:true});
+      });
+      await player.play();
+      await ended;
+    }
+    const firstGroup = document.querySelector('section');
+    const groupPlayers = [...firstGroup.querySelectorAll('audio')];
+    groupPlayers[0].currentTime = 2;
+    groupPlayers[0].playbackRate = 1;
+    await groupPlayers[0].play();
+    groupPlayers[1].currentTime = 2;
+    groupPlayers[1].playbackRate = 1;
+    await groupPlayers[1].play();
+    if (!groupPlayers[0].paused || groupPlayers[1].paused) throw new Error('Mutual pause on switching failed');
+    groupPlayers[1].pause();
+    const verification = {groups: groups.length, players: players.length, full_decode_checks: checks,
+            played_all_to_end_at_8x_muted: true, seek_and_mutual_pause_pass: true, listening_judgment_performed: false};
+    window.browserVerification = verification;
+    return verification;
+  });
+  return results;
+}

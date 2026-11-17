@@ -1,0 +1,54 @@
+{
+  "experiment": "F1-EXP-011",
+  "phase": "F1-P4A-rev1",
+  "question": "谐波覆盖扩展到 H2-H12 后，改善是否从'一点点'变成明确可听；若仍'一点点'则方案A终止",
+  "single_module": true,
+  "no_stacking": true,
+  "samples": [
+    "A01"
+  ],
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "gain_table_db": {
+    "2": 6.05,
+    "3": 6.9,
+    "4": 5.29,
+    "5": 6.65,
+    "6": 9.0,
+    "7": 7.97,
+    "8": 7.56,
+    "9": 8.36,
+    "10": 7.97,
+    "11": 6.79,
+    "12": 3.47
+  },
+  "deficit_profile_db": {
+    "2": 6.05,
+    "3": 6.9,
+    "4": 5.29,
+    "5": 6.65,
+    "6": 10.04,
+    "7": 7.97,
+    "8": 7.56,
+    "9": 8.36,
+    "10": 7.97,
+    "11": 6.79,
+    "12": 3.47
+  },
+  "revision_of": "F1-EXP-010 V2",
+  "anchor": "EXP-010 V2 raw（哈希校验，未改动）",
+  "target_reference": "A_self_02",
+  "listening_target_lufs": -19.36,
+  "loudness_tolerance_lu": 0.3,
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  }
+}

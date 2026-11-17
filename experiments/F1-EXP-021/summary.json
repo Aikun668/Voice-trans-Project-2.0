@@ -1,0 +1,60 @@
+{
+  "experiment": "F1-EXP-021",
+  "phase": "F1-P7",
+  "status": "no_perceptual_effect",
+  "target": "A_self_01",
+  "baseline": "EXP-020 S45",
+  "onsets_detected": 27,
+  "onsets_per_second": 2.05,
+  "boosted_seconds": 1.35,
+  "total_seconds": 13.14,
+  "versions": ["T15", "T30"],
+  "applied_envelope_peak_db": {"T15": 1.5, "T30": 3.0},
+  "measured_peak_window_db": {"T15": 1.15, "T30": 2.32},
+  "sustain_leak_db": {"T15": 0.0, "T30": 0.0},
+  "technical_pass": true,
+  "target_lufs": -20.48,
+  "preview_page": "listening/index.html",
+  "listening_result": {
+    "verdict": "两档与基线无可听差异",
+    "decision": "起音方向终止，不加量（符合预定停止条件）"
+  },
+  "jade_verbatim": "感觉后面机械和AB没什么区别啊，现在我们和2的这个分界线，到底我们F1能干的？是否都拉满了？为什么还是没有达到我的效果。我要的效果是，我们它这个音能抬高一点，就是那种声音小小的，能够抬上去。真的F1已经干到顶了吗？还是什么的？我想知道",
+  "threshold_series_updated": {
+    "note": "谐波/局部改善量与可感知性（跨实验汇总）",
+    "1.19dB_global_female": "听不出",
+    "1.94dB_global_male": "听不出",
+    "2.86dB_global_A01_crosssong": "听不出",
+    "3.0dB_peak_local_onset_10pct_duration": "听不出（本轮新增）",
+    "5.57dB_global_A01_samesong": "勉强可辨",
+    "conclusion": "门槛是全局量级；局部小比例改动（本轮仅覆盖 10% 时长）即使峰值 3dB 也不可闻"
+  },
+  "f1_completion_status": {
+    "harmonic_structure": "已拉满（H1-H2 与丰富度对齐 97-99%）",
+    "spectral_envelope_tilt": "已拉满（重心 404 ≈ 正常版 403）",
+    "f1_position": "已拉满（+102.5Hz，被用户接受且无失真）",
+    "onset_transient": "已测，无效（本轮）",
+    "f1_bandwidth": "未测（预期收益小）",
+    "hnr_cpp": "只诊断未处理",
+    "f0_pitch": "完全未动 —— 属 F2，F1 红线",
+    "spl_intensity": "被响度统一主动抹平（公平比较必需）"
+  },
+  "why_goal_unmet": {
+    "user_goal": "声音小小的，能够抬上去（vocal effort 提升）",
+    "acoustic_components_of_effort": [
+      "F0 上升 —— 属 F2，F1 不动",
+      "SPL 上升 —— 被响度统一抹平",
+      "频谱倾斜变平 —— F1 已做",
+      "H1-H2 减小 —— F1 已做",
+      "F1 上移 —— F1 已做"
+    ],
+    "conclusion": "5 个物理成分里 F1 已做完 3 个（有铁证），剩下 2 个（F0、SPL）恰是用户'抬上去'最直接的成分，且都不在 F1 能力内。所以不是'F1 没拉满'，而是'拉满也够不到'。"
+  },
+  "distinction": "「到顶」意味着还可再努力突破；「结构上做不到」意味着必须换赛道。本项目的结论属后者。",
+  "next_options": [
+    "F2 音高抬升（整体或局部），需跨模块授权",
+    "放弃响度统一，直接输出更响版本（但 EXP-013 已证明纯响度不解决薄）",
+    "F1 内剩余未测项（F1 带宽、HNR/CPP），预期收益小",
+    "接受 F1 边界内最佳（EXP-020 S45）作为最终产出"
+  ]
+}

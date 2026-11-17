@@ -1,0 +1,122 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>F1 · SHIGE 音高对照试听</title>
+<style>
+body{margin:0;background:#f4f6fa;color:#172337;font:16px/1.7 system-ui}
+.wrap{max-width:1180px;margin:28px auto;padding:0 20px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px;align-items:start}
+header{grid-column:1/-1}h1{font-size:26px;margin:0 0 4px}
+section{background:#fff;padding:18px 20px;border:1px solid #d9e1eb;border-radius:12px;margin-bottom:16px}
+h2{font-size:18px;margin:0 0 8px}button{font:inherit;padding:7px 12px;margin:3px;border:1px solid #b8c5d5;border-radius:7px;background:#fff;cursor:pointer}
+button[aria-pressed=true]{background:#2357a4;color:#fff;border-color:#2357a4}audio{width:100%;margin:10px 0}
+.note{color:#536177;font-size:14px}.jump button{font-size:14px;padding:5px 9px}
+fieldset{border:1px solid #e1e7ef;border-radius:8px;margin:12px 0;padding:8px 12px}legend{font-weight:600;padding:0 6px}
+label.opt{display:block;padding:2px 0}textarea{width:100%;box-sizing:border-box;min-height:110px;font:inherit;padding:8px;border:1px solid #b8c5d5;border-radius:7px}
+.sticky{position:sticky;top:12px}#now{font-variant-numeric:tabular-nums;font-weight:600}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}.sticky{position:static}}
+</style>
+<div class="wrap">
+<header><h1>F1 · SHIGE 音高输入对照</h1>
+<p class="note">只验证一件事：把 16.65 秒附近被读成约 116 Hz（减半）的 6 帧改回约 233 Hz，其余完全不变。每组「改前」「改后」可直接对比；响度已匹配，切换时接续播放位置。我无法听音，下面所有听感判断由你填写。</p></header>
+
+<div>
+<section><h2>① 完整美化（a2p）</h2>
+<div id="gA"></div></section>
+<section><h2>② 仅声码器（诊断对照）</h2>
+<div id="gB"></div></section>
+<section><h2>播放器</h2>
+<p id="status"><b>当前：</b><span id="cur"></span> · <span id="now">0:00.0</span></p>
+<audio id="player" controls preload="auto"></audio>
+<div class="jump"><b>跳到：</b>
+<button data-t="0">开头</button>
+<button data-t="0.4">0.4 s（模型局部音量骤降区，约 0.8–1.0 s 前）</button>
+<button data-t="16.0">16.0 s（修正位置前 0.6 s）</button>
+<button data-t="16.5">16.5 s（修正位置，16.65 s 附近）</button>
+<button data-t="16.5" data-play="1" data-len="0.9">只播 16.5–17.4 s</button>
+<button data-t="16.4" data-rate="0.5" data-play="1" data-len="1.2">半速 16.4–17.6 s</button>
+</div>
+<p class="note">「修正位置」前后：16.62 s 之前是正常有声，16.645–16.685 s 是上一个音的尾部（很轻，约比前面低 20 dB），16.77 s 左右下一个音才起。</p>
+<p><button id="mark">记录当前位置到备注</button></p></section>
+<section><h2>需要你确认的内容</h2><ol class="note" style="font-size:15px">
+<li>16.65 秒附近那一小段（尾音/气声）：改前有没有怪声（变低、变粗、像换了个人）？改后有没有消失？</li>
+<li>整条沙哑：改后和改前比，有没有哪怕一点点减轻？</li>
+<li>变嗲：改后和改前比，有变化吗？</li>
+<li>美化收益：改后的美化版相对原音，还有没有以前能听到的那种变好？</li>
+<li>2、3、9、17–19 秒（你之前标记的跳变位置）是否仍在 —— 本条是 SHIGE，如有请记下时间。</li></ol></section>
+</div>
+
+<div class="sticky"><section><h2>你的反馈（自动暂存在本机浏览器）</h2>
+<fieldset><legend>A. 16.5–17.4 秒那一小段：改前版 vs 改后版</legend>
+<label class="opt"><input type=radio name=q1 value="改前有明显异常，改后消失">改前有明显异常，改后消失</label>
+<label class="opt"><input type=radio name=q1 value="改前有轻微异常，改后消失或减轻">改前有轻微异常，改后消失或减轻</label>
+<label class="opt"><input type=radio name=q1 value="两版都没有异常">两版都没有异常</label>
+<label class="opt"><input type=radio name=q1 value="两版都有，一样">两版都有，一样</label>
+<label class="opt"><input type=radio name=q1 value="改后反而更差">改后反而更差</label>
+<label class="opt"><input type=radio name=q1 value="听不出区别">听不出区别</label></fieldset>
+<fieldset><legend>B. 整条沙哑（美化版：改后 vs 改前）</legend>
+<label class="opt"><input type=radio name=q2 value="明显减轻">明显减轻</label>
+<label class="opt"><input type=radio name=q2 value="略有减轻">略有减轻</label>
+<label class="opt"><input type=radio name=q2 value="没有变化">没有变化</label>
+<label class="opt"><input type=radio name=q2 value="更沙哑">更沙哑</label>
+<label class="opt"><input type=radio name=q2 value="听不出区别">听不出区别</label></fieldset>
+<fieldset><legend>C. 变嗲（美化版：改后 vs 改前）</legend>
+<label class="opt"><input type=radio name=q3 value="减轻">减轻</label>
+<label class="opt"><input type=radio name=q3 value="没有变化">没有变化</label>
+<label class="opt"><input type=radio name=q3 value="更嗲">更嗲</label>
+<label class="opt"><input type=radio name=q3 value="听不出区别">听不出区别</label></fieldset>
+<fieldset><legend>D. 美化收益（改后美化版 vs 原音）</legend>
+<label class="opt"><input type=radio name=q4 value="仍有美化收益">仍有美化收益</label>
+<label class="opt"><input type=radio name=q4 value="收益变少">收益变少</label>
+<label class="opt"><input type=radio name=q4 value="没有收益，不如原音">没有收益，不如原音</label>
+<label class="opt"><input type=radio name=q4 value="说不清">说不清</label></fieldset>
+<fieldset><legend>E. 仅声码器：改后 vs 改前沙哑</legend>
+<label class="opt"><input type=radio name=q5 value="改后减轻">改后减轻</label>
+<label class="opt"><input type=radio name=q5 value="没有变化">没有变化</label>
+<label class="opt"><input type=radio name=q5 value="改后更差">改后更差</label>
+<label class="opt"><input type=radio name=q5 value="听不出区别">听不出区别</label></fieldset>
+<fieldset><legend>F. 最愿意选哪个美化版</legend>
+<label class="opt"><input type=radio name=q6 value="改后 a2p">改后 a2p</label>
+<label class="opt"><input type=radio name=q6 value="改前 a2p">改前 a2p</label>
+<label class="opt"><input type=radio name=q6 value="都一样">都一样</label>
+<label class="opt"><input type=radio name=q6 value="都不如原音">都不如原音</label></fieldset>
+<label><b>备注（原话、跳变/沙哑出现的时间点）</b></label>
+<textarea id="notes" placeholder="例如：改后 16.7 秒的低沉声没了，但 2 秒和 18 秒的跳变还在……"></textarea>
+<p><button id="copy">复制反馈文本</button><button id="dl">下载 feedback.json</button><button id="clr">清空</button> <span id="msg" class="note"></span></p>
+<p class="note">复制后直接发给我即可；听感状态始终是 pending_jade，我不会替你填写通过。</p></section></div>
+</div>
+<script>
+const files={
+ original:{label:'原音',f:'shige_control/shige_normal__original.wav'},
+ base_a2p:{label:'改前 · 完整美化',f:'shige_control/shige_normal__base_a2p.wav'},
+ fix_a2p:{label:'改后 · 完整美化（16.65 s 修正）',f:'shige_control/shige_normal__fix_a2p.wav'},
+ base_vocoder:{label:'改前 · 仅声码器',f:'shige_control/shige_normal__base_vocoder.wav'},
+ fix_vocoder:{label:'改后 · 仅声码器（16.65 s 修正）',f:'shige_control/shige_normal__fix_vocoder.wav'}};
+const groups={gA:['original','base_a2p','fix_a2p'],gB:['original','base_vocoder','fix_vocoder']};
+const player=document.getElementById('player'),cur=document.getElementById('cur'),now=document.getElementById('now');
+let mode='original',stopAt=null,busy=false;
+const fmt=t=>Math.floor(t/60)+':'+(t%60).toFixed(1).padStart(4,'0');
+for(const [id,list] of Object.entries(groups)){const g=document.getElementById(id);
+ for(const k of list){const b=document.createElement('button');b.textContent=files[k].label;b.dataset.mode=k;b.dataset.grp=id;g.appendChild(b);b.onclick=()=>load(k)}}
+function mark(){document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)))}
+async function load(k){if(busy||k===mode&&player.src)return;busy=true;const t=player.currentTime||0,res=!player.paused;player.pause();
+ try{await new Promise((ok,no)=>{player.addEventListener('loadedmetadata',ok,{once:true});player.addEventListener('error',no,{once:true});player.src=files[k].f;player.load()});
+  mode=k;player.currentTime=Math.min(t,Math.max(0,player.duration-.05));cur.textContent=files[k].label;mark();if(res)await player.play()}
+ catch(e){cur.textContent='加载失败，请刷新'}finally{busy=false}}
+document.querySelectorAll('.jump button').forEach(b=>b.onclick=async()=>{player.currentTime=+b.dataset.t;player.playbackRate=+(b.dataset.rate||1);
+ stopAt=b.dataset.len?player.currentTime+ +b.dataset.len:null;if(b.dataset.play)await player.play()});
+player.addEventListener('timeupdate',()=>{now.textContent=fmt(player.currentTime);if(stopAt&&player.currentTime>=stopAt){player.pause();stopAt=null;player.playbackRate=1}});
+player.addEventListener('seeking',()=>{if(stopAt&&player.currentTime>stopAt+.2)stopAt=null});
+player.addEventListener('pause',()=>{if(!stopAt)player.playbackRate=1});
+const KEY='f1_shige_pitchfix_v001',notes=document.getElementById('notes');
+function state(){const s={clip:'shige_normal',experiment:'F1_neuralsvb_pitch_fix_v001',listening_status:'pending_jade',answers:{},notes:notes.value,saved_at:new Date().toISOString()};
+ for(const q of ['q1','q2','q3','q4','q5','q6']){const c=document.querySelector(`input[name=${q}]:checked`);s.answers[q]=c?c.value:null}return s}
+function save(){localStorage.setItem(KEY,JSON.stringify(state()))}
+function restore(){try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(!s)return;notes.value=s.notes||'';
+ for(const [q,v] of Object.entries(s.answers||{}))if(v){const i=[...document.querySelectorAll(`input[name=${q}]`)].find(x=>x.value===v);if(i)i.checked=true}}catch(e){}}
+document.addEventListener('change',save);notes.addEventListener('input',save);restore();
+const LBL={q1:'A 16.5–17.4s 小段',q2:'B 整条沙哑',q3:'C 变嗲',q4:'D 美化收益',q5:'E 仅声码器沙哑',q6:'F 最愿选'};
+function text(){const s=state();return ['【F1 SHIGE 音高对照反馈】',...Object.entries(s.answers).map(([q,v])=>`${LBL[q]}：${v||'（未答）'}`),'备注：'+(s.notes||'（无）')].join('\n')}
+const msg=document.getElementById('msg');
+document.getElementById('mark').onclick=()=>{notes.value+=(notes.value&&!notes.value.endsWith('\n')?'\n':'')+`[${fmt(player.currentTime)} · ${files[mode].label}] `;notes.focus();save()};
+document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.writeText(text());msg.textContent='已复制'}catch(e){notes.value=notes.value;msg.textContent='复制失败，请手动选中备注框内容'}};
+document.getElementById('dl').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(state(),null,2)],{type:'application/json'}));a.download='feedback.json';a.click();msg.textContent='已下载'};
+document.getElementById('clr').onclick=()=>{if(confirm('清空已填内容？')){localStorage.removeItem(KEY);document.querySelectorAll('input[type=radio]').forEach(i=>i.checked=false);notes.value='';msg.textContent='已清空'}};
+load('original');
+</script></html>

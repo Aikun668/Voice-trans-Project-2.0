@@ -1,0 +1,147 @@
+{
+  "take": "心墙01-对照微微跑调",
+  "phrase": "学着",
+  "mark_source": "F2_R1_MARK_2026-11-07_v001/jade_fragments_原话.md, #3",
+  "marked_span_seconds": [
+    0.785,
+    1.216
+  ],
+  "alignment_source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_XINQIANG_ALIGN_2026-11-08_v001\\alignment.json",
+  "boundary_basis": "Confirmed Qwen word windows, then high-frequency fricative onset and low-energy valley before next syllable",
+  "anchors": {
+    "take": {
+      "word_probes": [
+        [
+          {
+            "text": "学",
+            "start": 0.72,
+            "end": 1.04
+          },
+          {
+            "text": "着",
+            "start": 1.04,
+            "end": 1.36
+          }
+        ],
+        [
+          {
+            "text": "学",
+            "start": 0.72,
+            "end": 1.04
+          },
+          {
+            "text": "着",
+            "start": 1.04,
+            "end": 1.36
+          }
+        ]
+      ],
+      "phrase_seconds": [
+        0.72,
+        1.36
+      ],
+      "anchor_seconds": 0.72
+    },
+    "reference": {
+      "word_probes": [
+        [
+          {
+            "text": "学",
+            "start": 113.9,
+            "end": 114.22
+          },
+          {
+            "text": "着",
+            "start": 114.22,
+            "end": 114.38
+          }
+        ],
+        [
+          {
+            "text": "学",
+            "start": 113.92,
+            "end": 114.16
+          },
+          {
+            "text": "着",
+            "start": 114.16,
+            "end": 114.4
+          }
+        ]
+      ],
+      "phrase_seconds": [
+        113.9,
+        114.4
+      ],
+      "anchor_seconds": 113.91
+    }
+  },
+  "take_preview": {
+    "source_seconds": [
+      0.755,
+      1.415
+    ],
+    "clip_seconds_before_padding": 0.66
+  },
+  "reference_preview": {
+    "source_seconds": [
+      113.90498866213152,
+      114.45501133786848
+    ],
+    "clip_seconds_before_padding": 0.5500416666666667
+  },
+  "compare_split_seconds": 0.8,
+  "lead_silence_seconds": 0.02,
+  "audio_operations": "trim, 5 ms edge fades, fixed gain, pad with silence; reference preview resampled from 44.1 kHz to 48 kHz; concatenate",
+  "preview_gain_db": {
+    "take.wav": -5.4,
+    "reference.wav": 3.8999999999999986
+  },
+  "levels": {
+    "take.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.6,
+      "dbtp": -7.8,
+      "sha256": "2e9b7de44ae19ac9f639fa6e663d8511e2df7bda9294a66db56ed68e8eed1cea"
+    },
+    "reference.wav": {
+      "samples": 38400,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -6.7,
+      "sha256": "993e46c52f361ed854c62f438fc1fffd268087b95ee6395a2b117601bbf1636f"
+    },
+    "compare.wav": {
+      "samples": 76800,
+      "sample_rate": 48000,
+      "lufs": -18.8,
+      "dbtp": -6.7,
+      "sha256": "550c95f7ca7f8371522a99ca08c27dda952c2ec76aa6f2f67f6f7cfbcc248da2"
+    }
+  },
+  "pitch_readback": {
+    "take.wav": {
+      "median_shift_cents": -6.393001075366556e-05,
+      "voiced_overlap": 1.0
+    },
+    "reference.wav": {
+      "median_shift_cents": -7.973246442816162e-05,
+      "voiced_overlap": 1.0
+    }
+  },
+  "inputs": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "clip_starts_at_same_slot_offset": true,
+    "exact_take_then_reference": true,
+    "same_loudness_within_half_lu": true,
+    "true_peak_at_most_minus_1_dbtp": true,
+    "pitch_preserved": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

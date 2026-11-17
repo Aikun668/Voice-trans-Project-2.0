@@ -1,0 +1,26 @@
+{
+  "beautify_gentle": {
+    "max_local_jump_ratio_active": 1.6630661325060128,
+    "local_jump_flag_times_s": [],
+    "min_relative_gain_active_db": -3.9613207019193175,
+    "praat_pitch": {
+      "comparable_frames": 2132,
+      "median_abs_cents": 0.2842765239591504,
+      "p95_abs_cents": 2.6767263264090273
+    },
+    "extended_pass": true
+  },
+  "beautify_full": {
+    "max_local_jump_ratio_active": 2.6931075430493574,
+    "local_jump_flag_times_s": [
+      0.9400000000000001
+    ],
+    "min_relative_gain_active_db": -7.2353574090873405,
+    "praat_pitch": {
+      "comparable_frames": 2098,
+      "median_abs_cents": 0.547603646833695,
+      "p95_abs_cents": 5.2775530003582904
+    },
+    "extended_pass": false
+  }
+}

@@ -1,0 +1,52 @@
+=== attempt 1 12:43:39
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\librosa\util\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\nn\utils\weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+| load HifiGAN:  checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt
+Removing weight norm...
+| Loaded model parameters from checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt.
+| HifiGAN device: cpu.
+Loaded the voice encoder model on cpu in 0.01 seconds.
+zh1 done 16.0 s
+zh2 done 23.3 s
+zh3 done 26.3 s
+zh4 done 20.4 s
+zh5 done 24.5 s
+zh6 done 19.1 s
+zh7 done 14.9 s
+zh8 done 19.9 s
+zh9 done 26.8 s
+zh10 done 61.7 s
+zh11 done 18.1 s
+zh12 done 29.8 s
+zh13 done 17.1 s
+zh14 done 25.0 s
+zh15 done 19.5 s
+zh16 done 50.5 s
+zh17 done 108.0 s
+zh18 done 52.1 s
+zh19 done 16.5 s
+zh21 done 38.8 s
+zh22 done 43.2 s
+en1 done 29.8 s
+en2 done 83.9 s
+en3 done 39.5 s
+en4 done 32.4 s
+en5 done 40.9 s
+en6 done 71.3 s
+en7 done 83.8 s
+en8 done 32.2 s
+en9 done 32.4 s
+en10 done 32.3 s
+en11 done 96.4 s
+en12 done 56.5 s
+en13 done 20.9 s
+en14 done 44.9 s
+en15 done 117.3 s
+en20 done 25.3 s
+en21 done 23.8 s
+my_molihua done 158.6 s
+my_shige done 172.8 s
+my_zuixuan done 260.5 s
+DONE

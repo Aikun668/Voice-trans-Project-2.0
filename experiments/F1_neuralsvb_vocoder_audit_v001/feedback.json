@@ -1,0 +1,18 @@
+{
+ "clip": "shige_normal",
+ "experiment": "F1_neuralsvb_vocoder_audit_v001",
+ "listening_status": "jade_feedback_received",
+ "vocoder_only_vs_original": "有区别，更差",
+ "original_nasal": "没有",
+ "segments": {
+  "3.2s": "和原音一样",
+  "11.1s": "和原音一样",
+  "13.7s": "和完整美化版的沙哑一样，只是轻一点点（Jade 推测被中间模型加强）",
+  "8.5s": "和原音一样",
+  "12.6s": "和原音一样"
+ },
+ "verbatim_notes": "他的这个声音属实是整体变得有点沙哑了，但是程度没有那么深，然后这个鼻音就开始有一点点。我怀疑是这个有一点，然后经过我们模型之后被加强了。在第2到第3秒，是谁在唱歌的时候有一点颤音的感觉。11秒之后，这个鼻音就变得更加加强了一点。",
+ "supersedes": "F1_neuralsvb_nasal_align_v001 的“原音就有”作废（Jade：自己唱的绝对没有）",
+ "verbatim_13.7": "和原来优化版沙哑声音一样的，只是好了那么一点点，估计就是被中间模型加强的",
+ "next_action": "Jade 同意开始候选调研（只读）"
+}

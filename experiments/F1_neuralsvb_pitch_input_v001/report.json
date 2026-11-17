@@ -1,0 +1,1088 @@
+{
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\zuixuan_normal.wav",
+  "source_sha256": "4cd81729d94ca48029916abd9caa972be16f93528bd12d5eca839d951e76df2a",
+  "model_seed": 0,
+  "vocoder_seed": 0,
+  "method": "Full official model and vocoder; existing pitch frontends compared without fusion",
+  "changed_variable": "whole source-pitch frontend Praat AC vs librosa pYIN; both time-aligned",
+  "mel_profile": {
+    "audio_sample_rate": 22050,
+    "fft_size": 512,
+    "hop_size": 128,
+    "win_size": 512,
+    "fmin": 50,
+    "fmax": 11025
+  },
+  "checkpoint_sha256": "210e7b669e5422d27946bba1d2be313f54686d7891689436ac846fa55adff057",
+  "vocoder_checkpoint_sha256": "5ee9dde88bf4acd74679a6ec182aba0a073ad686f8abfdaf9e0d9f09b11f7a11",
+  "common_target_lufs": -18.0,
+  "inputs": {
+    "praat": {
+      "f0_sha256": "ddbc66fcd728ec7a41a9c8371c412fb2a5717325e860ead80cb03d203230dcd5",
+      "voiced_fraction": 0.7601575966510712,
+      "pitch_input_modified_after_extraction": false
+    },
+    "pyin": {
+      "f0_sha256": "d6f7282b26462726acffd055a6788a2907d67d2c39bb111e216ea6a48947e17b",
+      "voiced_fraction": 0.776409751292785,
+      "pitch_input_modified_after_extraction": false
+    }
+  },
+  "outputs": {
+    "original": {
+      "file": "trial\\zuixuan_normal__original.wav",
+      "sha256": "00382d75b111c61a1bf1b8bfee99e0c1d11f103e8e3947c134b743ddcf2cf2da",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -6.791807228320298,
+        "rms_dbfs": -18.026846726066207,
+        "clipped_samples": 0,
+        "dc_offset": -7.6411227347398e-06
+      },
+      "loudness": {
+        "integrated_lufs": -18.01,
+        "true_peak_dbtp": -6.75,
+        "loudness_range_lu": 2.0
+      },
+      "exact_external_contract": true,
+      "full_ffmpeg_decode": true
+    },
+    "praat_vocoder": {
+      "file": "trial\\zuixuan_normal__praat_vocoder.wav",
+      "sha256": "cdc5fdf30fb1570cf17ab3cb30e586351ae29778068a81ed94eccb29ea27d2c7",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -6.294176894491843,
+        "rms_dbfs": -18.031531637087102,
+        "clipped_samples": 0,
+        "dc_offset": -0.00014636257782693748
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -6.29,
+        "loudness_range_lu": 2.0
+      },
+      "exact_external_contract": true,
+      "full_ffmpeg_decode": true,
+      "checks": {
+        "technical_pass": true,
+        "errors": [],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -6.373804884757338,
+          "rms_dbfs": -18.027678565246504,
+          "clipped_samples": 0,
+          "dc_offset": -0.00014640256788429215
+        },
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -6.29,
+          "loudness_range_lu": 2.0
+        },
+        "active_gain": {
+          "spread_db": 3.148962500889893,
+          "min_db": -11.459159995584054
+        },
+        "max_sample_jump_ratio": 1.1049402593423476,
+        "pitch_vs_original": {
+          "comparable_frames": 870,
+          "median_abs_cents": 4.44452871634469,
+          "p95_abs_cents": 33.17079298401873
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3061,
+          "median_abs_cents": 5.528936925411891,
+          "p95_abs_cents": 35.23768866060576
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      },
+      "local_diagnostics": {
+        "dropout_frames": [],
+        "max_local_jump_ratio_active": 2.8328361400188578,
+        "local_jump_times_s": [
+          19.36,
+          19.38,
+          19.48
+        ],
+        "caution": "Local sample-difference metric is not a complete perceptual jump detector."
+      }
+    },
+    "praat_a2a": {
+      "file": "trial\\zuixuan_normal__praat_a2a.wav",
+      "sha256": "f205c0909919f65614cc21ea79d0d6e8d9cd22077c569a88b3c4c8ac52ca2172",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -4.540436803174387,
+        "rms_dbfs": -18.02454339855164,
+        "clipped_samples": 0,
+        "dc_offset": -8.822007507996734e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -4.53,
+        "loudness_range_lu": 2.0
+      },
+      "exact_external_contract": true,
+      "full_ffmpeg_decode": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing",
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -4.597028572602936,
+          "rms_dbfs": -18.020131871908404,
+          "clipped_samples": 0,
+          "dc_offset": -8.821572017491425e-05
+        },
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -4.53,
+          "loudness_range_lu": 2.0
+        },
+        "active_gain": {
+          "spread_db": 12.840488660159405,
+          "min_db": -20.397308505598666
+        },
+        "max_sample_jump_ratio": 0.6146805423985472,
+        "pitch_vs_original": {
+          "comparable_frames": 871,
+          "median_abs_cents": 4.8574355017180215,
+          "p95_abs_cents": 66.60533093529267
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3050,
+          "median_abs_cents": 5.546199159223029,
+          "p95_abs_cents": 42.11131590345948
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      },
+      "local_diagnostics": {
+        "dropout_frames": [
+          {
+            "time_s": 2.24,
+            "gain_db": -12.3
+          },
+          {
+            "time_s": 2.28,
+            "gain_db": -12.37
+          },
+          {
+            "time_s": 7.16,
+            "gain_db": -12.74
+          },
+          {
+            "time_s": 8.16,
+            "gain_db": -12.4
+          },
+          {
+            "time_s": 19.44,
+            "gain_db": -16.17
+          },
+          {
+            "time_s": 19.46,
+            "gain_db": -12.4
+          },
+          {
+            "time_s": 19.48,
+            "gain_db": -20.4
+          },
+          {
+            "time_s": 19.5,
+            "gain_db": -17.47
+          },
+          {
+            "time_s": 20.5,
+            "gain_db": -16.42
+          },
+          {
+            "time_s": 23.14,
+            "gain_db": -12.93
+          },
+          {
+            "time_s": 23.34,
+            "gain_db": -18.88
+          },
+          {
+            "time_s": 23.38,
+            "gain_db": -13.06
+          }
+        ],
+        "max_local_jump_ratio_active": 7.530995540692297,
+        "local_jump_times_s": [
+          0.06,
+          0.08,
+          0.12,
+          0.14,
+          2.24,
+          7.16,
+          7.68,
+          7.8,
+          7.84,
+          7.86,
+          7.88,
+          7.94,
+          8.0,
+          8.14,
+          8.24,
+          11.98,
+          13.82,
+          19.2,
+          19.22,
+          19.240000000000002,
+          19.26,
+          19.28,
+          19.3,
+          19.32,
+          19.34,
+          19.36,
+          19.38,
+          19.400000000000002,
+          19.42,
+          19.44,
+          19.46,
+          19.48,
+          23.04,
+          23.06,
+          23.080000000000002,
+          23.1,
+          23.14,
+          23.16,
+          23.18,
+          23.2,
+          23.22,
+          23.48,
+          23.52,
+          23.54
+        ],
+        "caution": "Local sample-difference metric is not a complete perceptual jump detector."
+      }
+    },
+    "praat_a2p": {
+      "file": "trial\\zuixuan_normal__praat_a2p.wav",
+      "sha256": "31cc3af9060eb57599cf4eb94e9c409b8adc771bf8fb774de482884a53c751b6",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -3.466074226525034,
+        "rms_dbfs": -18.475840628438277,
+        "clipped_samples": 0,
+        "dc_offset": -6.901359327284442e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -3.46,
+        "loudness_range_lu": 4.4
+      },
+      "exact_external_contract": true,
+      "full_ffmpeg_decode": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing",
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -3.4533587601009597,
+          "rms_dbfs": -18.470874966284438,
+          "clipped_samples": 0,
+          "dc_offset": -6.900231069957994e-05
+        },
+        "loudness": {
+          "integrated_lufs": -17.99,
+          "true_peak_dbtp": -3.45,
+          "loudness_range_lu": 4.4
+        },
+        "active_gain": {
+          "spread_db": 16.236987091262677,
+          "min_db": -23.52242063170234
+        },
+        "max_sample_jump_ratio": 0.8354943564288451,
+        "pitch_vs_original": {
+          "comparable_frames": 870,
+          "median_abs_cents": 4.768185999430601,
+          "p95_abs_cents": 98.8086299335934
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3040,
+          "median_abs_cents": 5.350485181229654,
+          "p95_abs_cents": 42.29097013520106
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      },
+      "local_diagnostics": {
+        "dropout_frames": [
+          {
+            "time_s": 2.24,
+            "gain_db": -12.23
+          },
+          {
+            "time_s": 7.16,
+            "gain_db": -14.93
+          },
+          {
+            "time_s": 7.8,
+            "gain_db": -14.53
+          },
+          {
+            "time_s": 7.82,
+            "gain_db": -15.92
+          },
+          {
+            "time_s": 7.84,
+            "gain_db": -18.2
+          },
+          {
+            "time_s": 7.86,
+            "gain_db": -14.76
+          },
+          {
+            "time_s": 8.02,
+            "gain_db": -14.79
+          },
+          {
+            "time_s": 8.04,
+            "gain_db": -16.63
+          },
+          {
+            "time_s": 8.06,
+            "gain_db": -16.37
+          },
+          {
+            "time_s": 8.08,
+            "gain_db": -12.43
+          },
+          {
+            "time_s": 8.1,
+            "gain_db": -15.71
+          },
+          {
+            "time_s": 8.14,
+            "gain_db": -13.4
+          },
+          {
+            "time_s": 8.16,
+            "gain_db": -15.94
+          },
+          {
+            "time_s": 8.18,
+            "gain_db": -14.38
+          },
+          {
+            "time_s": 9.48,
+            "gain_db": -14.9
+          },
+          {
+            "time_s": 9.56,
+            "gain_db": -12.15
+          },
+          {
+            "time_s": 9.58,
+            "gain_db": -12.0
+          },
+          {
+            "time_s": 9.6,
+            "gain_db": -13.56
+          },
+          {
+            "time_s": 12.02,
+            "gain_db": -17.02
+          },
+          {
+            "time_s": 19.34,
+            "gain_db": -14.36
+          },
+          {
+            "time_s": 19.36,
+            "gain_db": -13.88
+          },
+          {
+            "time_s": 19.38,
+            "gain_db": -12.22
+          },
+          {
+            "time_s": 19.4,
+            "gain_db": -12.41
+          },
+          {
+            "time_s": 19.44,
+            "gain_db": -18.38
+          },
+          {
+            "time_s": 19.46,
+            "gain_db": -15.47
+          },
+          {
+            "time_s": 19.48,
+            "gain_db": -23.53
+          },
+          {
+            "time_s": 19.5,
+            "gain_db": -20.31
+          },
+          {
+            "time_s": 20.5,
+            "gain_db": -13.63
+          },
+          {
+            "time_s": 23.1,
+            "gain_db": -15.13
+          },
+          {
+            "time_s": 23.12,
+            "gain_db": -13.25
+          },
+          {
+            "time_s": 23.14,
+            "gain_db": -13.74
+          },
+          {
+            "time_s": 23.28,
+            "gain_db": -12.66
+          },
+          {
+            "time_s": 23.34,
+            "gain_db": -19.55
+          },
+          {
+            "time_s": 23.38,
+            "gain_db": -14.35
+          },
+          {
+            "time_s": 23.44,
+            "gain_db": -12.45
+          }
+        ],
+        "max_local_jump_ratio_active": 10.410761089859095,
+        "local_jump_times_s": [
+          0.06,
+          0.08,
+          0.12,
+          0.14,
+          2.24,
+          7.140000000000001,
+          7.16,
+          7.68,
+          7.8,
+          7.82,
+          7.84,
+          7.86,
+          7.88,
+          7.9,
+          7.92,
+          7.94,
+          7.96,
+          7.98,
+          8.0,
+          8.02,
+          8.040000000000001,
+          8.06,
+          8.14,
+          8.24,
+          8.26,
+          11.98,
+          12.02,
+          13.82,
+          15.96,
+          18.54,
+          19.18,
+          19.2,
+          19.22,
+          19.240000000000002,
+          19.26,
+          19.28,
+          19.3,
+          19.32,
+          19.34,
+          19.36,
+          19.38,
+          19.400000000000002,
+          19.42,
+          19.44,
+          19.46,
+          19.48,
+          19.5,
+          23.04,
+          23.06,
+          23.080000000000002,
+          23.1,
+          23.12,
+          23.18,
+          23.22,
+          23.52
+        ],
+        "caution": "Local sample-difference metric is not a complete perceptual jump detector."
+      }
+    },
+    "pyin_vocoder": {
+      "file": "trial\\zuixuan_normal__pyin_vocoder.wav",
+      "sha256": "8b13e1dca518333a8bebb230093a5c86b911ac96a510cdbb67a411db2c18bd32",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -6.551818692375092,
+        "rms_dbfs": -18.0280752166206,
+        "clipped_samples": 0,
+        "dc_offset": -0.00015343284970595973
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -6.55,
+        "loudness_range_lu": 2.0
+      },
+      "exact_external_contract": true,
+      "full_ffmpeg_decode": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -6.566067700654941,
+          "rms_dbfs": -18.024224394173455,
+          "clipped_samples": 0,
+          "dc_offset": -0.00015347270204434563
+        },
+        "loudness": {
+          "integrated_lufs": -17.99,
+          "true_peak_dbtp": -6.56,
+          "loudness_range_lu": 2.0
+        },
+        "active_gain": {
+          "spread_db": 3.34022885432971,
+          "min_db": -11.450222127031111
+        },
+        "max_sample_jump_ratio": 1.0582931413121324,
+        "pitch_vs_original": {
+          "comparable_frames": 867,
+          "median_abs_cents": 5.340196158818786,
+          "p95_abs_cents": 38.18410236064496
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3026,
+          "median_abs_cents": 6.505915469494122,
+          "p95_abs_cents": 65.21637950773486
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      },
+      "local_diagnostics": {
+        "dropout_frames": [],
+        "max_local_jump_ratio_active": 2.831356366519631,
+        "local_jump_times_s": [
+          19.36,
+          19.38,
+          19.48
+        ],
+        "caution": "Local sample-difference metric is not a complete perceptual jump detector."
+      }
+    },
+    "pyin_a2a": {
+      "file": "trial\\zuixuan_normal__pyin_a2a.wav",
+      "sha256": "cf8133ce03a46b19502b152b5407a03a0296e9c29e2cca85e46c976f9004c8b1",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -4.6792409403927335,
+        "rms_dbfs": -18.009933511706592,
+        "clipped_samples": 0,
+        "dc_offset": -9.659166379526582e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -4.67,
+        "loudness_range_lu": 1.6
+      },
+      "exact_external_contract": true,
+      "full_ffmpeg_decode": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing",
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -4.707927218531306,
+          "rms_dbfs": -18.005544742222366,
+          "clipped_samples": 0,
+          "dc_offset": -9.65870690278069e-05
+        },
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -4.67,
+          "loudness_range_lu": 1.6
+        },
+        "active_gain": {
+          "spread_db": 12.244924966719957,
+          "min_db": -20.330060420532583
+        },
+        "max_sample_jump_ratio": 0.6025943819896504,
+        "pitch_vs_original": {
+          "comparable_frames": 872,
+          "median_abs_cents": 4.774466079120431,
+          "p95_abs_cents": 43.36888466192794
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3054,
+          "median_abs_cents": 5.666515146438238,
+          "p95_abs_cents": 67.22795185721729
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      },
+      "local_diagnostics": {
+        "dropout_frames": [
+          {
+            "time_s": 9.36,
+            "gain_db": -12.26
+          },
+          {
+            "time_s": 9.58,
+            "gain_db": -12.0
+          },
+          {
+            "time_s": 19.44,
+            "gain_db": -15.78
+          },
+          {
+            "time_s": 19.48,
+            "gain_db": -19.51
+          },
+          {
+            "time_s": 19.5,
+            "gain_db": -18.62
+          },
+          {
+            "time_s": 20.5,
+            "gain_db": -17.36
+          },
+          {
+            "time_s": 23.14,
+            "gain_db": -12.88
+          },
+          {
+            "time_s": 23.34,
+            "gain_db": -20.33
+          },
+          {
+            "time_s": 23.38,
+            "gain_db": -19.75
+          },
+          {
+            "time_s": 23.4,
+            "gain_db": -14.23
+          },
+          {
+            "time_s": 23.42,
+            "gain_db": -14.73
+          },
+          {
+            "time_s": 23.44,
+            "gain_db": -15.83
+          }
+        ],
+        "max_local_jump_ratio_active": 6.9281217646249695,
+        "local_jump_times_s": [
+          0.06,
+          0.08,
+          0.12,
+          0.26,
+          2.24,
+          7.16,
+          7.68,
+          7.8,
+          7.84,
+          7.86,
+          7.88,
+          7.94,
+          8.0,
+          8.24,
+          11.98,
+          15.96,
+          19.22,
+          19.240000000000002,
+          19.26,
+          19.28,
+          19.3,
+          19.32,
+          19.34,
+          19.36,
+          19.38,
+          19.400000000000002,
+          19.42,
+          19.44,
+          19.46,
+          19.5,
+          23.04,
+          23.06,
+          23.080000000000002,
+          23.1,
+          23.14,
+          23.16,
+          23.2,
+          23.22,
+          23.44,
+          23.48
+        ],
+        "caution": "Local sample-difference metric is not a complete perceptual jump detector."
+      }
+    },
+    "pyin_a2p": {
+      "file": "trial\\zuixuan_normal__pyin_a2p.wav",
+      "sha256": "dd8146941cbd1469761738ecbf417ea2874c166c126507ae5369b1ecf1ac3dd5",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -3.671548729416397,
+        "rms_dbfs": -18.4382073372334,
+        "clipped_samples": 0,
+        "dc_offset": -7.31297083038778e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -3.66,
+        "loudness_range_lu": 3.6
+      },
+      "exact_external_contract": true,
+      "full_ffmpeg_decode": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing",
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -3.66170977145045,
+          "rms_dbfs": -18.43322445300436,
+          "clipped_samples": 0,
+          "dc_offset": -7.311846530178672e-05
+        },
+        "loudness": {
+          "integrated_lufs": -17.99,
+          "true_peak_dbtp": -3.65,
+          "loudness_range_lu": 3.6
+        },
+        "active_gain": {
+          "spread_db": 16.532018971733134,
+          "min_db": -23.537093317219586
+        },
+        "max_sample_jump_ratio": 0.90111175034414,
+        "pitch_vs_original": {
+          "comparable_frames": 871,
+          "median_abs_cents": 4.683784545782739,
+          "p95_abs_cents": 42.78336080855978
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3048,
+          "median_abs_cents": 5.478655270248618,
+          "p95_abs_cents": 67.45193362148227
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      },
+      "local_diagnostics": {
+        "dropout_frames": [
+          {
+            "time_s": 0.14,
+            "gain_db": -13.3
+          },
+          {
+            "time_s": 2.24,
+            "gain_db": -12.1
+          },
+          {
+            "time_s": 7.16,
+            "gain_db": -13.27
+          },
+          {
+            "time_s": 7.8,
+            "gain_db": -14.75
+          },
+          {
+            "time_s": 7.82,
+            "gain_db": -16.16
+          },
+          {
+            "time_s": 7.84,
+            "gain_db": -18.45
+          },
+          {
+            "time_s": 7.86,
+            "gain_db": -14.96
+          },
+          {
+            "time_s": 8.02,
+            "gain_db": -14.73
+          },
+          {
+            "time_s": 8.04,
+            "gain_db": -16.44
+          },
+          {
+            "time_s": 8.06,
+            "gain_db": -16.71
+          },
+          {
+            "time_s": 8.08,
+            "gain_db": -12.17
+          },
+          {
+            "time_s": 8.1,
+            "gain_db": -16.09
+          },
+          {
+            "time_s": 8.14,
+            "gain_db": -13.52
+          },
+          {
+            "time_s": 8.16,
+            "gain_db": -15.84
+          },
+          {
+            "time_s": 8.18,
+            "gain_db": -14.59
+          },
+          {
+            "time_s": 9.48,
+            "gain_db": -13.33
+          },
+          {
+            "time_s": 9.58,
+            "gain_db": -12.18
+          },
+          {
+            "time_s": 9.6,
+            "gain_db": -13.99
+          },
+          {
+            "time_s": 12.02,
+            "gain_db": -16.71
+          },
+          {
+            "time_s": 19.28,
+            "gain_db": -12.26
+          },
+          {
+            "time_s": 19.34,
+            "gain_db": -14.51
+          },
+          {
+            "time_s": 19.36,
+            "gain_db": -14.11
+          },
+          {
+            "time_s": 19.38,
+            "gain_db": -12.29
+          },
+          {
+            "time_s": 19.4,
+            "gain_db": -12.29
+          },
+          {
+            "time_s": 19.44,
+            "gain_db": -18.41
+          },
+          {
+            "time_s": 19.46,
+            "gain_db": -15.95
+          },
+          {
+            "time_s": 19.48,
+            "gain_db": -23.54
+          },
+          {
+            "time_s": 19.5,
+            "gain_db": -20.02
+          },
+          {
+            "time_s": 20.5,
+            "gain_db": -12.14
+          },
+          {
+            "time_s": 23.04,
+            "gain_db": -12.28
+          },
+          {
+            "time_s": 23.1,
+            "gain_db": -15.64
+          },
+          {
+            "time_s": 23.12,
+            "gain_db": -13.62
+          },
+          {
+            "time_s": 23.14,
+            "gain_db": -13.55
+          },
+          {
+            "time_s": 23.28,
+            "gain_db": -12.88
+          },
+          {
+            "time_s": 23.34,
+            "gain_db": -21.57
+          },
+          {
+            "time_s": 23.38,
+            "gain_db": -21.39
+          },
+          {
+            "time_s": 23.4,
+            "gain_db": -17.64
+          },
+          {
+            "time_s": 23.42,
+            "gain_db": -18.69
+          },
+          {
+            "time_s": 23.44,
+            "gain_db": -16.44
+          }
+        ],
+        "max_local_jump_ratio_active": 12.948226145414624,
+        "local_jump_times_s": [
+          0.06,
+          0.08,
+          0.12,
+          0.14,
+          0.22,
+          0.26,
+          2.24,
+          7.16,
+          7.8,
+          7.82,
+          7.84,
+          7.86,
+          7.88,
+          7.9,
+          7.92,
+          7.94,
+          7.96,
+          7.98,
+          8.0,
+          8.02,
+          8.040000000000001,
+          8.06,
+          8.14,
+          8.24,
+          8.26,
+          9.540000000000001,
+          11.98,
+          12.0,
+          12.02,
+          19.2,
+          19.22,
+          19.240000000000002,
+          19.26,
+          19.28,
+          19.3,
+          19.32,
+          19.34,
+          19.36,
+          19.38,
+          19.400000000000002,
+          19.42,
+          19.44,
+          19.46,
+          19.48,
+          19.5,
+          23.04,
+          23.1,
+          23.12,
+          23.18,
+          23.22,
+          23.44,
+          23.52
+        ],
+        "caution": "Local sample-difference metric is not a complete perceptual jump detector."
+      }
+    }
+  },
+  "listening_status": "pending_jade",
+  "no_residual_no_blending_no_note_correction": true,
+  "previous_files_verified": 186,
+  "previous_files_unchanged": true,
+  "full_candidate_technical_pass": false,
+  "delivery_status": "technical_blocked_internal_only"
+}

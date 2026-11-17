@@ -1,0 +1,12 @@
+{
+  "experiment": "F1-EXP-005",
+  "phase": "F1-P3A-2",
+  "status": "negative_audible_but_muffled",
+  "test_count": 2,
+  "target_lufs": -18.549999999999997,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "listening_result": "louder saturation produced audible but muffled/dull results; no fullness; A01/A05 non-monotonic"
+}

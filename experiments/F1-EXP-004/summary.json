@@ -1,0 +1,11 @@
+{
+  "experiment": "F1-EXP-004",
+  "phase": "F1-P3A",
+  "status": "pending_jade",
+  "test_count": 2,
+  "target_lufs": -18.549999999999997,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw"
+}

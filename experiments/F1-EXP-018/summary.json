@@ -1,0 +1,45 @@
+{
+  "experiment": "F1-EXP-018",
+  "phase": "F1-P4b",
+  "status": "weak_positive_only_M2",
+  "reference_dependency": {
+    "X1": true,
+    "M2": true,
+    "overridden_by_template": true
+  },
+  "can_run_without_paired_reference": true,
+  "target": {
+    "id": "M01",
+    "dataset_id": "A_gt_03",
+    "f0_hz": 222.6
+  },
+  "deliverable": ["X1", "X1_M2"],
+  "hard_failed": [],
+  "target_lufs": -18.0,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "listening_result": {
+    "A_X1_M2": "有点点效果",
+    "B_X1": "与原版无可听差异"
+  },
+  "jade_verbatim": "感觉a有点点效果，矮个子挑个高的了。b和原版比没听出差别",
+  "classification": {
+    "X1_M2": "weak_positive（勉强可辨）",
+    "X1": "no_clear_benefit（无可听差异）"
+  },
+  "key_finding": "在无配对参考、固定模板的约 2dB 量级下，可被耳朵抓住的是包络/宽带频谱形状（M2，重心 312→370Hz），而非谐波精细结构（X1，H1-H2 改善 1.94dB 却听不出）。与 EXP-016 模式一致",
+  "cross_sample_summary": {
+    "A05_female_290hz": "三版均无可听差异（覆盖盲区：250-500Hz 仅 H1）",
+    "M01_male_222hz": "X1 无可听差异；X1+M2 有点点效果（H2=444Hz 落入厚度区）",
+    "paired_reference_route_A01": "X1+M2 可达'更饱满/更清晰但需认真听'（EXP-016 最佳）"
+  },
+  "p4_conclusion": "无配对参考时，本方法能力上限约为'有点点效果'；配对参考路线可高出约 3 倍改善量且为认可的最佳版本",
+  "next_options": [
+    "1: 停止 P4，回到配对参考路线并明确其使用条件（需同一歌手唱一次'正常版'作为参照）",
+    "2: 按音区分档模板（小幅提升，本质同一机制，预期收益有限）",
+    "3: 强化 M2 包络档位（会走向'更亮/更清晰'，此前已证实不等于'厚'）",
+    "4: 越界试验（F0活跃度/咬字位置），需明示授权"
+  ]
+}

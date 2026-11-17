@@ -1,0 +1,152 @@
+{
+  "technical_pass": true,
+  "listening": "pending_jade",
+  "source_hashes": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\我们的歌-薄音版.wav": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\WOMENDE_FOCUS_2026-11-04_v006\\audio\\baseline.wav": "dab42f74cbc5d0a0081e8aa44ba8dd36ff9a3e08c3159496aeb86a873e8d6ffa",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\WOMENDE_FOCUS_2026-11-03_v001\\work\\thin_keyup.wav": "e4073a16b319701624b4c30c0b66bf82942ab55ec91e0f3f5f866fdb623e7ab1",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\WOMENDE_VIBRATION_LIMIT_2026-11-05_v001\\audio\\strong.wav": "ad071f69d6335bcf2ceea9434953da2a83109e641b4e092868db61d0671e65d1"
+  },
+  "source_hashes_unchanged": true,
+  "smoothing_sigma_ms": 80,
+  "compensation_fraction": {
+    "medium": 0.5,
+    "strong": 1.0
+  },
+  "compensation_max_db": 3,
+  "compensation_band": "800-4000 Hz, full 1200-3000 Hz",
+  "original_slope_db_oct": 7.992,
+  "below_250_gain_db": 0,
+  "master": {
+    "medium": {
+      "path": "v001.master",
+      "internal_ceil_dbtp": -1.3,
+      "master_gain_db": 13.0,
+      "internal_lufs": -13.1,
+      "internal_true_peak_dbtp": -1.3
+    },
+    "strong": {
+      "path": "v001.master",
+      "internal_ceil_dbtp": -1.3,
+      "master_gain_db": 13.0,
+      "internal_lufs": -13.1,
+      "internal_true_peak_dbtp": -1.3
+    }
+  },
+  "versions": {
+    "anchor": {
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.13,
+        "cents_p95": 0.34,
+        "p95_abs_cents": 0.53,
+        "frames_both": 997,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 0.53,
+        "frames_abs_error_over_20_cents": 0.004
+      },
+      "pitch_vs_b": null,
+      "decay_lift_db": 1.43,
+      "floor_relative_db": -32.83,
+      "sibilance_p99_db": -2.17,
+      "sha256": "ed7c1d12bbe0db6c2646d312942a2932a18951806856aae878cdf2d7e53f3c1c",
+      "failures": []
+    },
+    "previous": {
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.996,
+        "median_cents": 310.5,
+        "cents_p05": 288.86,
+        "cents_p95": 325.7,
+        "p95_abs_cents": 325.7,
+        "frames_both": 993,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.87,
+        "frames_abs_error_over_20_cents": 0.0846
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 0.9905,
+        "median_cents": -0.06,
+        "cents_p05": -2.95,
+        "cents_p95": 3.27,
+        "p95_abs_cents": 5.63,
+        "frames_both": 1039,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 5.63,
+        "frames_abs_error_over_20_cents": 0.0106
+      },
+      "decay_lift_db": 1.75,
+      "floor_relative_db": -32.39,
+      "sibilance_p99_db": -1.99,
+      "sha256": "ad071f69d6335bcf2ceea9434953da2a83109e641b4e092868db61d0671e65d1",
+      "failures": []
+    },
+    "medium": {
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.996,
+        "median_cents": 310.46,
+        "cents_p05": 288.77,
+        "cents_p95": 325.59,
+        "p95_abs_cents": 325.59,
+        "frames_both": 993,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.87,
+        "frames_abs_error_over_20_cents": 0.0846
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 0.9905,
+        "median_cents": -0.04,
+        "cents_p05": -2.84,
+        "cents_p95": 3.25,
+        "p95_abs_cents": 5.24,
+        "frames_both": 1039,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 5.24,
+        "frames_abs_error_over_20_cents": 0.0096
+      },
+      "decay_lift_db": 1.77,
+      "floor_relative_db": -32.33,
+      "sibilance_p99_db": -1.99,
+      "sha256": "3000bb2f034e333c6a7b9960d0d842db2314c0cc4a030ccb51d560a22f31632c",
+      "failures": []
+    },
+    "strong": {
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.996,
+        "median_cents": 310.45,
+        "cents_p05": 288.63,
+        "cents_p95": 325.33,
+        "p95_abs_cents": 325.33,
+        "frames_both": 993,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.55,
+        "frames_abs_error_over_20_cents": 0.0836
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 0.9905,
+        "median_cents": -0.03,
+        "cents_p05": -3.01,
+        "cents_p95": 3.16,
+        "p95_abs_cents": 4.84,
+        "frames_both": 1039,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 4.84,
+        "frames_abs_error_over_20_cents": 0.0106
+      },
+      "decay_lift_db": 1.8,
+      "floor_relative_db": -32.32,
+      "sibilance_p99_db": -2.0,
+      "sha256": "7eb9cd0cc882aec1a77fd6405dff6c82106427ff66f07dfed8ae1fa33b495f8a",
+      "failures": []
+    }
+  }
+}

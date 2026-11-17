@@ -1,0 +1,1561 @@
+{
+  "experiment": "F1-EXP-022",
+  "phase": "F1-P8",
+  "status": "diagnosis_only",
+  "question": "薄音版是否存在比正常版更明显、更频繁的非刻意局部能量下陷",
+  "settings": {
+    "win_s": 0.025,
+    "hop_s": 0.01,
+    "r_voiced": 0.45,
+    "gate_floor_db": 45.0,
+    "context_scales": [
+      {
+        "name": "local",
+        "half_window_s": 0.6
+      },
+      {
+        "name": "phrase",
+        "half_window_s": 1.5
+      }
+    ],
+    "local_baseline_percentile": 75,
+    "dip_min_db": 3.0,
+    "dip_min_frames": 10,
+    "tail_exclude_s": 0.4,
+    "suspect_dip_db": 12.0,
+    "suspect_dur_s": 1.5,
+    "target_lufs": -20.0,
+    "note": "dip 为相对量，响度归一化不改变其数值"
+  },
+  "pairs": {
+    "平凡之路": {
+      "thin_id": "A_self_01",
+      "normal_id": "A_self_02",
+      "loudness_before": {
+        "thin": -19.24,
+        "normal": -17.52
+      },
+      "gain_applied": {
+        "thin": -0.76,
+        "normal": -2.48
+      },
+      "scales": {
+        "local": {
+          "ctx_s": 0.6,
+          "thin_stats": {
+            "ctx_s": 0.6,
+            "duration_s": 13.14,
+            "voiced_fraction": 0.774,
+            "voiced_seconds": 10.16,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 6,
+            "events_main": 1,
+            "events_all_before_exclusion": 7,
+            "events_per_min": 5.91,
+            "deep_dip_count_per_min": 35.43,
+            "dip_event_max_median_db": 5.0,
+            "dip_event_max_p90_db": 5.0,
+            "dip_event_dur_median_s": 0.13,
+            "dip_time_fraction": 0.109,
+            "dip_mean_all_voiced_db": 3.78,
+            "dip_p90_all_voiced_db": 13.63,
+            "dip_max_all_voiced_db": 37.15,
+            "voiced_energy_sd_db": 7.51,
+            "voiced_energy_mean_db": -21.84
+          },
+          "normal_stats": {
+            "ctx_s": 0.6,
+            "duration_s": 13.35,
+            "voiced_fraction": 0.736,
+            "voiced_seconds": 9.81,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 2,
+            "events_main": 2,
+            "events_all_before_exclusion": 4,
+            "events_per_min": 12.23,
+            "deep_dip_count_per_min": 12.23,
+            "dip_event_max_median_db": 5.7,
+            "dip_event_max_p90_db": 6.2,
+            "dip_event_dur_median_s": 0.12,
+            "dip_time_fraction": 0.071,
+            "dip_mean_all_voiced_db": 3.58,
+            "dip_p90_all_voiced_db": 11.33,
+            "dip_max_all_voiced_db": 36.45,
+            "voiced_energy_sd_db": 7.61,
+            "voiced_energy_mean_db": -21.34
+          },
+          "delta_thin_minus_normal": {
+            "events_per_min": -6.32,
+            "deep_dip_count_per_min": 23.2,
+            "dip_event_max_median_db": -0.7,
+            "dip_event_max_p90_db": -1.2,
+            "dip_time_fraction": 0.04,
+            "dip_mean_all_voiced_db": 0.2,
+            "dip_p90_all_voiced_db": 2.3,
+            "voiced_energy_sd_db": -0.1,
+            "voiced_energy_mean_db": -0.5
+          },
+          "thin_events": [
+            {
+              "start_s": 8.87,
+              "dur_s": 0.13,
+              "max_dip_db": 5.0,
+              "mean_dip_db": 4.1
+            }
+          ],
+          "normal_events": [
+            {
+              "start_s": 4.61,
+              "dur_s": 0.13,
+              "max_dip_db": 6.4,
+              "mean_dip_db": 4.2
+            },
+            {
+              "start_s": 10.11,
+              "dur_s": 0.1,
+              "max_dip_db": 4.9,
+              "mean_dip_db": 4.0
+            }
+          ],
+          "thin_suspect": [
+            {
+              "start_s": 2.7,
+              "dur_s": 0.1,
+              "max_dip_db": 17.3
+            },
+            {
+              "start_s": 3.82,
+              "dur_s": 0.12,
+              "max_dip_db": 28.9
+            },
+            {
+              "start_s": 6.24,
+              "dur_s": 0.13,
+              "max_dip_db": 19.1
+            },
+            {
+              "start_s": 6.88,
+              "dur_s": 0.1,
+              "max_dip_db": 18.5
+            },
+            {
+              "start_s": 9.62,
+              "dur_s": 0.22,
+              "max_dip_db": 30.2
+            },
+            {
+              "start_s": 12.46,
+              "dur_s": 0.31,
+              "max_dip_db": 36.6
+            }
+          ],
+          "normal_suspect": [
+            {
+              "start_s": 3.9,
+              "dur_s": 0.11,
+              "max_dip_db": 28.1
+            },
+            {
+              "start_s": 12.29,
+              "dur_s": 0.36,
+              "max_dip_db": 35.7
+            }
+          ]
+        },
+        "phrase": {
+          "ctx_s": 1.5,
+          "thin_stats": {
+            "ctx_s": 1.5,
+            "duration_s": 13.14,
+            "voiced_fraction": 0.774,
+            "voiced_seconds": 10.16,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 6,
+            "events_main": 2,
+            "events_all_before_exclusion": 8,
+            "events_per_min": 11.81,
+            "deep_dip_count_per_min": 35.43,
+            "dip_event_max_median_db": 8.5,
+            "dip_event_max_p90_db": 10.6,
+            "dip_event_dur_median_s": 0.17,
+            "dip_time_fraction": 0.133,
+            "dip_mean_all_voiced_db": 3.99,
+            "dip_p90_all_voiced_db": 14.36,
+            "dip_max_all_voiced_db": 38.54,
+            "voiced_energy_sd_db": 7.51,
+            "voiced_energy_mean_db": -21.84
+          },
+          "normal_stats": {
+            "ctx_s": 1.5,
+            "duration_s": 13.35,
+            "voiced_fraction": 0.736,
+            "voiced_seconds": 9.81,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 3,
+            "events_main": 0,
+            "events_all_before_exclusion": 3,
+            "events_per_min": 0.0,
+            "deep_dip_count_per_min": 18.35,
+            "dip_event_max_median_db": null,
+            "dip_event_max_p90_db": null,
+            "dip_event_dur_median_s": null,
+            "dip_time_fraction": 0.058,
+            "dip_mean_all_voiced_db": 3.74,
+            "dip_p90_all_voiced_db": 11.79,
+            "dip_max_all_voiced_db": 38.18,
+            "voiced_energy_sd_db": 7.61,
+            "voiced_energy_mean_db": -21.34
+          },
+          "delta_thin_minus_normal": {
+            "events_per_min": 11.81,
+            "deep_dip_count_per_min": 17.08,
+            "dip_event_max_median_db": null,
+            "dip_event_max_p90_db": null,
+            "dip_time_fraction": 0.08,
+            "dip_mean_all_voiced_db": 0.25,
+            "dip_p90_all_voiced_db": 2.57,
+            "voiced_energy_sd_db": -0.1,
+            "voiced_energy_mean_db": -0.5
+          },
+          "thin_events": [
+            {
+              "start_s": 4.47,
+              "dur_s": 0.11,
+              "max_dip_db": 11.1,
+              "mean_dip_db": 4.6
+            },
+            {
+              "start_s": 8.85,
+              "dur_s": 0.23,
+              "max_dip_db": 5.9,
+              "mean_dip_db": 4.5
+            }
+          ],
+          "normal_events": [],
+          "thin_suspect": [
+            {
+              "start_s": 2.69,
+              "dur_s": 0.12,
+              "max_dip_db": 18.4
+            },
+            {
+              "start_s": 3.82,
+              "dur_s": 0.12,
+              "max_dip_db": 28.9
+            },
+            {
+              "start_s": 6.24,
+              "dur_s": 0.13,
+              "max_dip_db": 21.1
+            },
+            {
+              "start_s": 8.27,
+              "dur_s": 0.1,
+              "max_dip_db": 17.1
+            },
+            {
+              "start_s": 9.61,
+              "dur_s": 0.23,
+              "max_dip_db": 29.6
+            },
+            {
+              "start_s": 12.46,
+              "dur_s": 0.31,
+              "max_dip_db": 36.0
+            }
+          ],
+          "normal_suspect": [
+            {
+              "start_s": 3.9,
+              "dur_s": 0.11,
+              "max_dip_db": 28.3
+            },
+            {
+              "start_s": 9.57,
+              "dur_s": 0.1,
+              "max_dip_db": 25.9
+            },
+            {
+              "start_s": 12.29,
+              "dur_s": 0.36,
+              "max_dip_db": 35.0
+            }
+          ]
+        }
+      },
+      "dtw": {
+        "mean_abs_dev_db": 0.07,
+        "corr": 0.993,
+        "path_len": 2015
+      }
+    },
+    "我们的歌": {
+      "thin_id": "A_self_03",
+      "normal_id": "A_self_04",
+      "loudness_before": {
+        "thin": -25.07,
+        "normal": -17.69
+      },
+      "gain_applied": {
+        "thin": 5.07,
+        "normal": -2.31
+      },
+      "scales": {
+        "local": {
+          "ctx_s": 0.6,
+          "thin_stats": {
+            "ctx_s": 0.6,
+            "duration_s": 13.95,
+            "voiced_fraction": 0.604,
+            "voiced_seconds": 8.42,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 7,
+            "events_main": 0,
+            "events_all_before_exclusion": 7,
+            "events_per_min": 0.0,
+            "deep_dip_count_per_min": 49.88,
+            "dip_event_max_median_db": null,
+            "dip_event_max_p90_db": null,
+            "dip_event_dur_median_s": null,
+            "dip_time_fraction": 0.141,
+            "dip_mean_all_voiced_db": 4.31,
+            "dip_p90_all_voiced_db": 17.06,
+            "dip_max_all_voiced_db": 30.85,
+            "voiced_energy_sd_db": 7.52,
+            "voiced_energy_mean_db": -20.69
+          },
+          "normal_stats": {
+            "ctx_s": 0.6,
+            "duration_s": 14.03,
+            "voiced_fraction": 0.707,
+            "voiced_seconds": 9.91,
+            "events_excluded_tail": 1,
+            "events_suspect_intentional": 5,
+            "events_main": 2,
+            "events_all_before_exclusion": 8,
+            "events_per_min": 12.11,
+            "deep_dip_count_per_min": 30.27,
+            "dip_event_max_median_db": 6.9,
+            "dip_event_max_p90_db": 8.5,
+            "dip_event_dur_median_s": 0.16,
+            "dip_time_fraction": 0.129,
+            "dip_mean_all_voiced_db": 4.97,
+            "dip_p90_all_voiced_db": 21.22,
+            "dip_max_all_voiced_db": 41.55,
+            "voiced_energy_sd_db": 9.5,
+            "voiced_energy_mean_db": -22.75
+          },
+          "delta_thin_minus_normal": {
+            "events_per_min": -12.11,
+            "deep_dip_count_per_min": 19.61,
+            "dip_event_max_median_db": null,
+            "dip_event_max_p90_db": null,
+            "dip_time_fraction": 0.01,
+            "dip_mean_all_voiced_db": -0.66,
+            "dip_p90_all_voiced_db": -4.16,
+            "voiced_energy_sd_db": -1.98,
+            "voiced_energy_mean_db": 2.06
+          },
+          "thin_events": [],
+          "normal_events": [
+            {
+              "start_s": 9.55,
+              "dur_s": 0.12,
+              "max_dip_db": 4.9,
+              "mean_dip_db": 4.2
+            },
+            {
+              "start_s": 11.95,
+              "dur_s": 0.2,
+              "max_dip_db": 8.9,
+              "mean_dip_db": 6.0
+            }
+          ],
+          "thin_suspect": [
+            {
+              "start_s": 2.91,
+              "dur_s": 0.11,
+              "max_dip_db": 20.8
+            },
+            {
+              "start_s": 3.57,
+              "dur_s": 0.17,
+              "max_dip_db": 28.0
+            },
+            {
+              "start_s": 6.06,
+              "dur_s": 0.12,
+              "max_dip_db": 24.2
+            },
+            {
+              "start_s": 6.47,
+              "dur_s": 0.15,
+              "max_dip_db": 16.3
+            },
+            {
+              "start_s": 7.09,
+              "dur_s": 0.24,
+              "max_dip_db": 22.9
+            },
+            {
+              "start_s": 9.42,
+              "dur_s": 0.3,
+              "max_dip_db": 22.9
+            },
+            {
+              "start_s": 10.61,
+              "dur_s": 0.1,
+              "max_dip_db": 26.5
+            }
+          ],
+          "normal_suspect": [
+            {
+              "start_s": 2.63,
+              "dur_s": 0.12,
+              "max_dip_db": 25.4
+            },
+            {
+              "start_s": 3.68,
+              "dur_s": 0.39,
+              "max_dip_db": 34.5
+            },
+            {
+              "start_s": 5.88,
+              "dur_s": 0.12,
+              "max_dip_db": 20.0
+            },
+            {
+              "start_s": 6.91,
+              "dur_s": 0.17,
+              "max_dip_db": 20.4
+            },
+            {
+              "start_s": 10.42,
+              "dur_s": 0.16,
+              "max_dip_db": 30.3
+            }
+          ]
+        },
+        "phrase": {
+          "ctx_s": 1.5,
+          "thin_stats": {
+            "ctx_s": 1.5,
+            "duration_s": 13.95,
+            "voiced_fraction": 0.604,
+            "voiced_seconds": 8.42,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 7,
+            "events_main": 0,
+            "events_all_before_exclusion": 7,
+            "events_per_min": 0.0,
+            "deep_dip_count_per_min": 49.88,
+            "dip_event_max_median_db": null,
+            "dip_event_max_p90_db": null,
+            "dip_event_dur_median_s": null,
+            "dip_time_fraction": 0.15,
+            "dip_mean_all_voiced_db": 4.45,
+            "dip_p90_all_voiced_db": 17.14,
+            "dip_max_all_voiced_db": 31.55,
+            "voiced_energy_sd_db": 7.52,
+            "voiced_energy_mean_db": -20.69
+          },
+          "normal_stats": {
+            "ctx_s": 1.5,
+            "duration_s": 14.03,
+            "voiced_fraction": 0.707,
+            "voiced_seconds": 9.91,
+            "events_excluded_tail": 1,
+            "events_suspect_intentional": 5,
+            "events_main": 2,
+            "events_all_before_exclusion": 8,
+            "events_per_min": 12.11,
+            "deep_dip_count_per_min": 30.27,
+            "dip_event_max_median_db": 7.5,
+            "dip_event_max_p90_db": 8.6,
+            "dip_event_dur_median_s": 0.15,
+            "dip_time_fraction": 0.129,
+            "dip_mean_all_voiced_db": 5.12,
+            "dip_p90_all_voiced_db": 22.22,
+            "dip_max_all_voiced_db": 40.66,
+            "voiced_energy_sd_db": 9.5,
+            "voiced_energy_mean_db": -22.75
+          },
+          "delta_thin_minus_normal": {
+            "events_per_min": -12.11,
+            "deep_dip_count_per_min": 19.61,
+            "dip_event_max_median_db": null,
+            "dip_event_max_p90_db": null,
+            "dip_time_fraction": 0.02,
+            "dip_mean_all_voiced_db": -0.67,
+            "dip_p90_all_voiced_db": -5.08,
+            "voiced_energy_sd_db": -1.98,
+            "voiced_energy_mean_db": 2.06
+          },
+          "thin_events": [],
+          "normal_events": [
+            {
+              "start_s": 8.66,
+              "dur_s": 0.13,
+              "max_dip_db": 6.1,
+              "mean_dip_db": 4.4
+            },
+            {
+              "start_s": 11.98,
+              "dur_s": 0.17,
+              "max_dip_db": 8.9,
+              "mean_dip_db": 6.1
+            }
+          ],
+          "thin_suspect": [
+            {
+              "start_s": 2.91,
+              "dur_s": 0.11,
+              "max_dip_db": 20.8
+            },
+            {
+              "start_s": 3.54,
+              "dur_s": 0.2,
+              "max_dip_db": 28.4
+            },
+            {
+              "start_s": 6.06,
+              "dur_s": 0.12,
+              "max_dip_db": 23.6
+            },
+            {
+              "start_s": 6.48,
+              "dur_s": 0.14,
+              "max_dip_db": 16.2
+            },
+            {
+              "start_s": 7.08,
+              "dur_s": 0.25,
+              "max_dip_db": 23.9
+            },
+            {
+              "start_s": 9.38,
+              "dur_s": 0.34,
+              "max_dip_db": 22.9
+            },
+            {
+              "start_s": 10.61,
+              "dur_s": 0.1,
+              "max_dip_db": 26.1
+            }
+          ],
+          "normal_suspect": [
+            {
+              "start_s": 2.63,
+              "dur_s": 0.12,
+              "max_dip_db": 25.4
+            },
+            {
+              "start_s": 3.66,
+              "dur_s": 0.41,
+              "max_dip_db": 35.8
+            },
+            {
+              "start_s": 5.88,
+              "dur_s": 0.12,
+              "max_dip_db": 19.1
+            },
+            {
+              "start_s": 6.9,
+              "dur_s": 0.18,
+              "max_dip_db": 20.8
+            },
+            {
+              "start_s": 10.43,
+              "dur_s": 0.15,
+              "max_dip_db": 29.3
+            }
+          ]
+        }
+      },
+      "dtw": {
+        "mean_abs_dev_db": 0.08,
+        "corr": 0.987,
+        "path_len": 2141
+      }
+    },
+    "雅俗共赏": {
+      "thin_id": "A_self_05",
+      "normal_id": "A_self_06",
+      "loudness_before": {
+        "thin": -20.57,
+        "normal": -17.66
+      },
+      "gain_applied": {
+        "thin": 0.57,
+        "normal": -2.34
+      },
+      "scales": {
+        "local": {
+          "ctx_s": 0.6,
+          "thin_stats": {
+            "ctx_s": 0.6,
+            "duration_s": 15.0,
+            "voiced_fraction": 0.851,
+            "voiced_seconds": 12.75,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 13,
+            "events_main": 1,
+            "events_all_before_exclusion": 14,
+            "events_per_min": 4.71,
+            "deep_dip_count_per_min": 61.18,
+            "dip_event_max_median_db": 4.3,
+            "dip_event_max_p90_db": 4.3,
+            "dip_event_dur_median_s": 0.12,
+            "dip_time_fraction": 0.18,
+            "dip_mean_all_voiced_db": 4.47,
+            "dip_p90_all_voiced_db": 16.43,
+            "dip_max_all_voiced_db": 36.28,
+            "voiced_energy_sd_db": 7.77,
+            "voiced_energy_mean_db": -21.67
+          },
+          "normal_stats": {
+            "ctx_s": 0.6,
+            "duration_s": 15.0,
+            "voiced_fraction": 0.778,
+            "voiced_seconds": 11.65,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 5,
+            "events_main": 3,
+            "events_all_before_exclusion": 8,
+            "events_per_min": 15.45,
+            "deep_dip_count_per_min": 25.75,
+            "dip_event_max_median_db": 6.9,
+            "dip_event_max_p90_db": 8.4,
+            "dip_event_dur_median_s": 0.23,
+            "dip_time_fraction": 0.156,
+            "dip_mean_all_voiced_db": 3.32,
+            "dip_p90_all_voiced_db": 8.22,
+            "dip_max_all_voiced_db": 39.64,
+            "voiced_energy_sd_db": 6.81,
+            "voiced_energy_mean_db": -20.63
+          },
+          "delta_thin_minus_normal": {
+            "events_per_min": -10.74,
+            "deep_dip_count_per_min": 35.43,
+            "dip_event_max_median_db": -2.6,
+            "dip_event_max_p90_db": -4.1,
+            "dip_time_fraction": 0.02,
+            "dip_mean_all_voiced_db": 1.15,
+            "dip_p90_all_voiced_db": 8.21,
+            "voiced_energy_sd_db": 0.96,
+            "voiced_energy_mean_db": -1.04
+          },
+          "thin_events": [
+            {
+              "start_s": 13.64,
+              "dur_s": 0.12,
+              "max_dip_db": 4.3,
+              "mean_dip_db": 3.7
+            }
+          ],
+          "normal_events": [
+            {
+              "start_s": 0.62,
+              "dur_s": 0.17,
+              "max_dip_db": 5.5,
+              "mean_dip_db": 3.8
+            },
+            {
+              "start_s": 8.71,
+              "dur_s": 0.23,
+              "max_dip_db": 6.9,
+              "mean_dip_db": 5.0
+            },
+            {
+              "start_s": 9.52,
+              "dur_s": 0.31,
+              "max_dip_db": 8.8,
+              "mean_dip_db": 5.6
+            }
+          ],
+          "thin_suspect": [
+            {
+              "start_s": 1.92,
+              "dur_s": 0.15,
+              "max_dip_db": 22.8
+            },
+            {
+              "start_s": 3.16,
+              "dur_s": 0.11,
+              "max_dip_db": 26.9
+            },
+            {
+              "start_s": 3.28,
+              "dur_s": 0.2,
+              "max_dip_db": 19.3
+            },
+            {
+              "start_s": 4.54,
+              "dur_s": 0.37,
+              "max_dip_db": 36.3
+            },
+            {
+              "start_s": 4.94,
+              "dur_s": 0.11,
+              "max_dip_db": 34.1
+            },
+            {
+              "start_s": 5.37,
+              "dur_s": 0.11,
+              "max_dip_db": 19.2
+            },
+            {
+              "start_s": 8.16,
+              "dur_s": 0.24,
+              "max_dip_db": 17.7
+            },
+            {
+              "start_s": 10.88,
+              "dur_s": 0.1,
+              "max_dip_db": 16.8
+            },
+            {
+              "start_s": 11.08,
+              "dur_s": 0.1,
+              "max_dip_db": 19.8
+            },
+            {
+              "start_s": 11.41,
+              "dur_s": 0.23,
+              "max_dip_db": 27.5
+            },
+            {
+              "start_s": 12.39,
+              "dur_s": 0.18,
+              "max_dip_db": 19.0
+            },
+            {
+              "start_s": 14.67,
+              "dur_s": 0.11,
+              "max_dip_db": 22.1
+            },
+            {
+              "start_s": 14.79,
+              "dur_s": 0.17,
+              "max_dip_db": 32.9
+            }
+          ],
+          "normal_suspect": [
+            {
+              "start_s": 3.49,
+              "dur_s": 0.28,
+              "max_dip_db": 16.2
+            },
+            {
+              "start_s": 4.72,
+              "dur_s": 0.1,
+              "max_dip_db": 26.1
+            },
+            {
+              "start_s": 4.89,
+              "dur_s": 0.24,
+              "max_dip_db": 35.4
+            },
+            {
+              "start_s": 10.38,
+              "dur_s": 0.23,
+              "max_dip_db": 15.8
+            },
+            {
+              "start_s": 14.48,
+              "dur_s": 0.26,
+              "max_dip_db": 32.8
+            }
+          ]
+        },
+        "phrase": {
+          "ctx_s": 1.5,
+          "thin_stats": {
+            "ctx_s": 1.5,
+            "duration_s": 15.0,
+            "voiced_fraction": 0.851,
+            "voiced_seconds": 12.75,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 13,
+            "events_main": 2,
+            "events_all_before_exclusion": 15,
+            "events_per_min": 9.41,
+            "deep_dip_count_per_min": 61.18,
+            "dip_event_max_median_db": 4.8,
+            "dip_event_max_p90_db": 5.4,
+            "dip_event_dur_median_s": 0.12,
+            "dip_time_fraction": 0.227,
+            "dip_mean_all_voiced_db": 4.75,
+            "dip_p90_all_voiced_db": 16.59,
+            "dip_max_all_voiced_db": 36.82,
+            "voiced_energy_sd_db": 7.77,
+            "voiced_energy_mean_db": -21.67
+          },
+          "normal_stats": {
+            "ctx_s": 1.5,
+            "duration_s": 15.0,
+            "voiced_fraction": 0.778,
+            "voiced_seconds": 11.65,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 6,
+            "events_main": 5,
+            "events_all_before_exclusion": 11,
+            "events_per_min": 25.75,
+            "deep_dip_count_per_min": 30.9,
+            "dip_event_max_median_db": 6.8,
+            "dip_event_max_p90_db": 9.3,
+            "dip_event_dur_median_s": 0.23,
+            "dip_time_fraction": 0.212,
+            "dip_mean_all_voiced_db": 3.56,
+            "dip_p90_all_voiced_db": 8.22,
+            "dip_max_all_voiced_db": 40.6,
+            "voiced_energy_sd_db": 6.81,
+            "voiced_energy_mean_db": -20.63
+          },
+          "delta_thin_minus_normal": {
+            "events_per_min": -16.34,
+            "deep_dip_count_per_min": 30.28,
+            "dip_event_max_median_db": -2.0,
+            "dip_event_max_p90_db": -3.9,
+            "dip_time_fraction": 0.02,
+            "dip_mean_all_voiced_db": 1.19,
+            "dip_p90_all_voiced_db": 8.37,
+            "voiced_energy_sd_db": 0.96,
+            "voiced_energy_mean_db": -1.04
+          },
+          "thin_events": [
+            {
+              "start_s": 0.31,
+              "dur_s": 0.15,
+              "max_dip_db": 5.5,
+              "mean_dip_db": 4.4
+            },
+            {
+              "start_s": 13.66,
+              "dur_s": 0.1,
+              "max_dip_db": 4.1,
+              "mean_dip_db": 3.7
+            }
+          ],
+          "normal_events": [
+            {
+              "start_s": 0.62,
+              "dur_s": 0.28,
+              "max_dip_db": 6.8,
+              "mean_dip_db": 4.4
+            },
+            {
+              "start_s": 7.79,
+              "dur_s": 0.39,
+              "max_dip_db": 10.1,
+              "mean_dip_db": 5.2
+            },
+            {
+              "start_s": 8.71,
+              "dur_s": 0.23,
+              "max_dip_db": 6.4,
+              "mean_dip_db": 4.3
+            },
+            {
+              "start_s": 9.53,
+              "dur_s": 0.11,
+              "max_dip_db": 6.0,
+              "mean_dip_db": 4.7
+            },
+            {
+              "start_s": 9.66,
+              "dur_s": 0.17,
+              "max_dip_db": 8.0,
+              "mean_dip_db": 5.0
+            }
+          ],
+          "thin_suspect": [
+            {
+              "start_s": 1.69,
+              "dur_s": 0.38,
+              "max_dip_db": 23.4
+            },
+            {
+              "start_s": 3.16,
+              "dur_s": 0.11,
+              "max_dip_db": 26.4
+            },
+            {
+              "start_s": 3.28,
+              "dur_s": 0.2,
+              "max_dip_db": 18.9
+            },
+            {
+              "start_s": 4.54,
+              "dur_s": 0.37,
+              "max_dip_db": 36.8
+            },
+            {
+              "start_s": 4.94,
+              "dur_s": 0.11,
+              "max_dip_db": 34.7
+            },
+            {
+              "start_s": 5.37,
+              "dur_s": 0.11,
+              "max_dip_db": 18.6
+            },
+            {
+              "start_s": 7.71,
+              "dur_s": 0.1,
+              "max_dip_db": 12.9
+            },
+            {
+              "start_s": 7.92,
+              "dur_s": 0.48,
+              "max_dip_db": 19.0
+            },
+            {
+              "start_s": 11.08,
+              "dur_s": 0.1,
+              "max_dip_db": 19.2
+            },
+            {
+              "start_s": 11.41,
+              "dur_s": 0.23,
+              "max_dip_db": 27.7
+            },
+            {
+              "start_s": 12.39,
+              "dur_s": 0.18,
+              "max_dip_db": 20.0
+            },
+            {
+              "start_s": 14.67,
+              "dur_s": 0.11,
+              "max_dip_db": 22.1
+            },
+            {
+              "start_s": 14.79,
+              "dur_s": 0.17,
+              "max_dip_db": 32.9
+            }
+          ],
+          "normal_suspect": [
+            {
+              "start_s": 3.49,
+              "dur_s": 0.28,
+              "max_dip_db": 15.8
+            },
+            {
+              "start_s": 4.69,
+              "dur_s": 0.13,
+              "max_dip_db": 26.3
+            },
+            {
+              "start_s": 4.89,
+              "dur_s": 0.24,
+              "max_dip_db": 36.4
+            },
+            {
+              "start_s": 10.38,
+              "dur_s": 0.23,
+              "max_dip_db": 15.5
+            },
+            {
+              "start_s": 12.11,
+              "dur_s": 0.15,
+              "max_dip_db": 13.8
+            },
+            {
+              "start_s": 14.48,
+              "dur_s": 0.26,
+              "max_dip_db": 32.6
+            }
+          ]
+        }
+      },
+      "dtw": {
+        "mean_abs_dev_db": 0.16,
+        "corr": 0.951,
+        "path_len": 2394
+      }
+    },
+    "因为刚好遇见你": {
+      "thin_id": "A_self_07",
+      "normal_id": "A_self_08",
+      "loudness_before": {
+        "thin": -20.64,
+        "normal": -15.47
+      },
+      "gain_applied": {
+        "thin": 0.64,
+        "normal": -4.53
+      },
+      "scales": {
+        "local": {
+          "ctx_s": 0.6,
+          "thin_stats": {
+            "ctx_s": 0.6,
+            "duration_s": 13.61,
+            "voiced_fraction": 0.833,
+            "voiced_seconds": 11.32,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 11,
+            "events_main": 3,
+            "events_all_before_exclusion": 14,
+            "events_per_min": 15.9,
+            "deep_dip_count_per_min": 58.3,
+            "dip_event_max_median_db": 7.5,
+            "dip_event_max_p90_db": 7.7,
+            "dip_event_dur_median_s": 0.15,
+            "dip_time_fraction": 0.256,
+            "dip_mean_all_voiced_db": 5.61,
+            "dip_p90_all_voiced_db": 22.55,
+            "dip_max_all_voiced_db": 37.54,
+            "voiced_energy_sd_db": 9.18,
+            "voiced_energy_mean_db": -22.99
+          },
+          "normal_stats": {
+            "ctx_s": 0.6,
+            "duration_s": 13.97,
+            "voiced_fraction": 0.801,
+            "voiced_seconds": 11.17,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 7,
+            "events_main": 6,
+            "events_all_before_exclusion": 13,
+            "events_per_min": 32.23,
+            "deep_dip_count_per_min": 37.6,
+            "dip_event_max_median_db": 6.0,
+            "dip_event_max_p90_db": 7.8,
+            "dip_event_dur_median_s": 0.12,
+            "dip_time_fraction": 0.201,
+            "dip_mean_all_voiced_db": 5.21,
+            "dip_p90_all_voiced_db": 21.78,
+            "dip_max_all_voiced_db": 39.65,
+            "voiced_energy_sd_db": 9.28,
+            "voiced_energy_mean_db": -22.98
+          },
+          "delta_thin_minus_normal": {
+            "events_per_min": -16.33,
+            "deep_dip_count_per_min": 20.7,
+            "dip_event_max_median_db": 1.5,
+            "dip_event_max_p90_db": -0.1,
+            "dip_time_fraction": 0.05,
+            "dip_mean_all_voiced_db": 0.4,
+            "dip_p90_all_voiced_db": 0.77,
+            "voiced_energy_sd_db": -0.1,
+            "voiced_energy_mean_db": -0.01
+          },
+          "thin_events": [
+            {
+              "start_s": 5.97,
+              "dur_s": 0.15,
+              "max_dip_db": 4.7,
+              "mean_dip_db": 3.8
+            },
+            {
+              "start_s": 8.45,
+              "dur_s": 0.1,
+              "max_dip_db": 7.5,
+              "mean_dip_db": 5.6
+            },
+            {
+              "start_s": 8.89,
+              "dur_s": 0.28,
+              "max_dip_db": 7.8,
+              "mean_dip_db": 4.5
+            }
+          ],
+          "normal_events": [
+            {
+              "start_s": 2.44,
+              "dur_s": 0.1,
+              "max_dip_db": 8.1,
+              "mean_dip_db": 6.3
+            },
+            {
+              "start_s": 2.74,
+              "dur_s": 0.19,
+              "max_dip_db": 7.6,
+              "mean_dip_db": 4.7
+            },
+            {
+              "start_s": 6.87,
+              "dur_s": 0.1,
+              "max_dip_db": 4.5,
+              "mean_dip_db": 3.8
+            },
+            {
+              "start_s": 8.5,
+              "dur_s": 0.21,
+              "max_dip_db": 5.2,
+              "mean_dip_db": 4.1
+            },
+            {
+              "start_s": 8.91,
+              "dur_s": 0.13,
+              "max_dip_db": 4.6,
+              "mean_dip_db": 4.0
+            },
+            {
+              "start_s": 10.83,
+              "dur_s": 0.12,
+              "max_dip_db": 6.7,
+              "mean_dip_db": 5.1
+            }
+          ],
+          "thin_suspect": [
+            {
+              "start_s": 1.47,
+              "dur_s": 0.11,
+              "max_dip_db": 17.6
+            },
+            {
+              "start_s": 2.51,
+              "dur_s": 0.16,
+              "max_dip_db": 22.2
+            },
+            {
+              "start_s": 3.46,
+              "dur_s": 0.46,
+              "max_dip_db": 30.5
+            },
+            {
+              "start_s": 4.53,
+              "dur_s": 0.1,
+              "max_dip_db": 20.3
+            },
+            {
+              "start_s": 6.56,
+              "dur_s": 0.16,
+              "max_dip_db": 28.1
+            },
+            {
+              "start_s": 6.74,
+              "dur_s": 0.21,
+              "max_dip_db": 30.2
+            },
+            {
+              "start_s": 9.63,
+              "dur_s": 0.37,
+              "max_dip_db": 30.0
+            },
+            {
+              "start_s": 10.95,
+              "dur_s": 0.32,
+              "max_dip_db": 29.2
+            },
+            {
+              "start_s": 11.94,
+              "dur_s": 0.15,
+              "max_dip_db": 18.0
+            },
+            {
+              "start_s": 12.86,
+              "dur_s": 0.12,
+              "max_dip_db": 29.0
+            },
+            {
+              "start_s": 12.99,
+              "dur_s": 0.21,
+              "max_dip_db": 33.3
+            }
+          ],
+          "normal_suspect": [
+            {
+              "start_s": 4.01,
+              "dur_s": 0.33,
+              "max_dip_db": 35.8
+            },
+            {
+              "start_s": 5.03,
+              "dur_s": 0.13,
+              "max_dip_db": 14.2
+            },
+            {
+              "start_s": 7.09,
+              "dur_s": 0.18,
+              "max_dip_db": 30.3
+            },
+            {
+              "start_s": 10.35,
+              "dur_s": 0.11,
+              "max_dip_db": 27.2
+            },
+            {
+              "start_s": 11.4,
+              "dur_s": 0.34,
+              "max_dip_db": 27.4
+            },
+            {
+              "start_s": 13.23,
+              "dur_s": 0.13,
+              "max_dip_db": 25.0
+            },
+            {
+              "start_s": 13.37,
+              "dur_s": 0.18,
+              "max_dip_db": 33.5
+            }
+          ]
+        },
+        "phrase": {
+          "ctx_s": 1.5,
+          "thin_stats": {
+            "ctx_s": 1.5,
+            "duration_s": 13.61,
+            "voiced_fraction": 0.833,
+            "voiced_seconds": 11.32,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 11,
+            "events_main": 4,
+            "events_all_before_exclusion": 15,
+            "events_per_min": 21.2,
+            "deep_dip_count_per_min": 58.3,
+            "dip_event_max_median_db": 6.5,
+            "dip_event_max_p90_db": 9.5,
+            "dip_event_dur_median_s": 0.1,
+            "dip_time_fraction": 0.246,
+            "dip_mean_all_voiced_db": 5.64,
+            "dip_p90_all_voiced_db": 22.15,
+            "dip_max_all_voiced_db": 36.8,
+            "voiced_energy_sd_db": 9.18,
+            "voiced_energy_mean_db": -22.99
+          },
+          "normal_stats": {
+            "ctx_s": 1.5,
+            "duration_s": 13.97,
+            "voiced_fraction": 0.801,
+            "voiced_seconds": 11.17,
+            "events_excluded_tail": 0,
+            "events_suspect_intentional": 7,
+            "events_main": 5,
+            "events_all_before_exclusion": 12,
+            "events_per_min": 26.86,
+            "deep_dip_count_per_min": 37.6,
+            "dip_event_max_median_db": 7.8,
+            "dip_event_max_p90_db": 9.4,
+            "dip_event_dur_median_s": 0.13,
+            "dip_time_fraction": 0.246,
+            "dip_mean_all_voiced_db": 5.42,
+            "dip_p90_all_voiced_db": 22.02,
+            "dip_max_all_voiced_db": 39.54,
+            "voiced_energy_sd_db": 9.28,
+            "voiced_energy_mean_db": -22.98
+          },
+          "delta_thin_minus_normal": {
+            "events_per_min": -5.66,
+            "deep_dip_count_per_min": 20.7,
+            "dip_event_max_median_db": -1.3,
+            "dip_event_max_p90_db": 0.1,
+            "dip_time_fraction": 0.0,
+            "dip_mean_all_voiced_db": 0.22,
+            "dip_p90_all_voiced_db": 0.13,
+            "voiced_energy_sd_db": -0.1,
+            "voiced_energy_mean_db": -0.01
+          },
+          "thin_events": [
+            {
+              "start_s": 1.96,
+              "dur_s": 0.12,
+              "max_dip_db": 10.2,
+              "mean_dip_db": 4.3
+            },
+            {
+              "start_s": 2.15,
+              "dur_s": 0.1,
+              "max_dip_db": 5.1,
+              "mean_dip_db": 4.3
+            },
+            {
+              "start_s": 8.0,
+              "dur_s": 0.1,
+              "max_dip_db": 4.6,
+              "mean_dip_db": 3.9
+            },
+            {
+              "start_s": 8.45,
+              "dur_s": 0.1,
+              "max_dip_db": 8.0,
+              "mean_dip_db": 6.1
+            }
+          ],
+          "normal_events": [
+            {
+              "start_s": 2.43,
+              "dur_s": 0.11,
+              "max_dip_db": 9.8,
+              "mean_dip_db": 7.7
+            },
+            {
+              "start_s": 2.65,
+              "dur_s": 0.29,
+              "max_dip_db": 8.9,
+              "mean_dip_db": 5.3
+            },
+            {
+              "start_s": 6.86,
+              "dur_s": 0.13,
+              "max_dip_db": 5.4,
+              "mean_dip_db": 4.3
+            },
+            {
+              "start_s": 8.46,
+              "dur_s": 0.59,
+              "max_dip_db": 7.8,
+              "mean_dip_db": 5.3
+            },
+            {
+              "start_s": 10.83,
+              "dur_s": 0.12,
+              "max_dip_db": 6.3,
+              "mean_dip_db": 4.7
+            }
+          ],
+          "thin_suspect": [
+            {
+              "start_s": 1.47,
+              "dur_s": 0.11,
+              "max_dip_db": 17.6
+            },
+            {
+              "start_s": 2.51,
+              "dur_s": 0.16,
+              "max_dip_db": 21.3
+            },
+            {
+              "start_s": 3.46,
+              "dur_s": 0.47,
+              "max_dip_db": 30.5
+            },
+            {
+              "start_s": 4.53,
+              "dur_s": 0.1,
+              "max_dip_db": 20.3
+            },
+            {
+              "start_s": 6.57,
+              "dur_s": 0.15,
+              "max_dip_db": 26.1
+            },
+            {
+              "start_s": 6.74,
+              "dur_s": 0.21,
+              "max_dip_db": 28.0
+            },
+            {
+              "start_s": 9.62,
+              "dur_s": 0.38,
+              "max_dip_db": 30.5
+            },
+            {
+              "start_s": 10.95,
+              "dur_s": 0.32,
+              "max_dip_db": 29.1
+            },
+            {
+              "start_s": 11.94,
+              "dur_s": 0.15,
+              "max_dip_db": 18.1
+            },
+            {
+              "start_s": 12.87,
+              "dur_s": 0.11,
+              "max_dip_db": 28.7
+            },
+            {
+              "start_s": 12.99,
+              "dur_s": 0.21,
+              "max_dip_db": 33.4
+            }
+          ],
+          "normal_suspect": [
+            {
+              "start_s": 4.01,
+              "dur_s": 0.33,
+              "max_dip_db": 35.8
+            },
+            {
+              "start_s": 4.99,
+              "dur_s": 0.17,
+              "max_dip_db": 15.3
+            },
+            {
+              "start_s": 7.09,
+              "dur_s": 0.18,
+              "max_dip_db": 30.5
+            },
+            {
+              "start_s": 10.35,
+              "dur_s": 0.11,
+              "max_dip_db": 27.2
+            },
+            {
+              "start_s": 11.41,
+              "dur_s": 0.33,
+              "max_dip_db": 26.8
+            },
+            {
+              "start_s": 13.15,
+              "dur_s": 0.21,
+              "max_dip_db": 26.3
+            },
+            {
+              "start_s": 13.37,
+              "dur_s": 0.18,
+              "max_dip_db": 36.1
+            }
+          ]
+        }
+      },
+      "dtw": {
+        "mean_abs_dev_db": 0.07,
+        "corr": 0.991,
+        "path_len": 2126
+      }
+    }
+  },
+  "direction_summary": {
+    "local": {
+      "events_per_min": {
+        "n": 4,
+        "positive_pairs": 0,
+        "negative_pairs": 4,
+        "same_sign": 4,
+        "median_delta": -11.43
+      },
+      "deep_dip_count_per_min": {
+        "n": 4,
+        "positive_pairs": 4,
+        "negative_pairs": 0,
+        "same_sign": 4,
+        "median_delta": 21.95
+      },
+      "dip_event_max_median_db": {
+        "n": 3,
+        "positive_pairs": 1,
+        "negative_pairs": 2,
+        "same_sign": 2,
+        "median_delta": -0.7
+      },
+      "dip_event_max_p90_db": {
+        "n": 3,
+        "positive_pairs": 0,
+        "negative_pairs": 3,
+        "same_sign": 3,
+        "median_delta": -1.2
+      },
+      "dip_time_fraction": {
+        "n": 4,
+        "positive_pairs": 4,
+        "negative_pairs": 0,
+        "same_sign": 4,
+        "median_delta": 0.03
+      },
+      "dip_mean_all_voiced_db": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 1,
+        "same_sign": 3,
+        "median_delta": 0.3
+      },
+      "dip_p90_all_voiced_db": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 1,
+        "same_sign": 3,
+        "median_delta": 1.53
+      },
+      "voiced_energy_sd_db": {
+        "n": 4,
+        "positive_pairs": 1,
+        "negative_pairs": 3,
+        "same_sign": 3,
+        "median_delta": -0.1
+      }
+    },
+    "phrase": {
+      "events_per_min": {
+        "n": 4,
+        "positive_pairs": 1,
+        "negative_pairs": 3,
+        "same_sign": 3,
+        "median_delta": -8.88
+      },
+      "deep_dip_count_per_min": {
+        "n": 4,
+        "positive_pairs": 4,
+        "negative_pairs": 0,
+        "same_sign": 4,
+        "median_delta": 20.16
+      },
+      "dip_event_max_median_db": {
+        "n": 2,
+        "positive_pairs": 0,
+        "negative_pairs": 2,
+        "same_sign": 2,
+        "median_delta": -1.65
+      },
+      "dip_event_max_p90_db": {
+        "n": 2,
+        "positive_pairs": 1,
+        "negative_pairs": 1,
+        "same_sign": 1,
+        "median_delta": -1.9
+      },
+      "dip_time_fraction": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 0,
+        "same_sign": 3,
+        "median_delta": 0.02
+      },
+      "dip_mean_all_voiced_db": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 1,
+        "same_sign": 3,
+        "median_delta": 0.23
+      },
+      "dip_p90_all_voiced_db": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 1,
+        "same_sign": 3,
+        "median_delta": 1.35
+      },
+      "voiced_energy_sd_db": {
+        "n": 4,
+        "positive_pairs": 1,
+        "negative_pairs": 3,
+        "same_sign": 3,
+        "median_delta": -0.1
+      }
+    }
+  },
+  "consistency": {
+    "local": {
+      "keys_all_four_same_sign": 3,
+      "keys_at_least_three_same_sign": 7,
+      "keys_tested": 8
+    },
+    "phrase": {
+      "keys_all_four_same_sign": 1,
+      "keys_at_least_three_same_sign": 6,
+      "keys_tested": 8
+    }
+  },
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "limitations": [
+    "局部基准取±0.6s/±1.5s 内浊音帧 P75，是'乐句正常水平'的近似，不等于真实乐句切分",
+    "浊音判据用自相关周期性，气声极重的段可能被漏判",
+    "句尾渐弱按'事件后 400ms 内无浊音'排除，可能误排真正的长停顿前弱唱",
+    "深度下陷（>12dB）单列为'疑似刻意弱唱/间隙'，未计入主统计——但也可能是真实塌陷，需人工核对时间点",
+    "DTW 只用于验证两版是否在唱同一段，不用于事件统计（事件在原始时间轴上计）",
+    "Agent 未听音，'是否有听感意义'需用户确认"
+  ]
+}

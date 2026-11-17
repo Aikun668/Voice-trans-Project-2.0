@@ -1,0 +1,41 @@
+{
+  "audit_pairs": 5643,
+  "audit_statuses": {
+    "quarantine": 995,
+    "verified_candidate": 4648
+  },
+  "trial_data_gate_pass": true,
+  "counts": {
+    "train": {
+      "pairs": 3805,
+      "valid_frames": 438767,
+      "nonzero_frames": 141605,
+      "normal_frames": 153395
+    },
+    "test": {
+      "pairs": 359,
+      "valid_frames": 42680,
+      "nonzero_frames": 16005,
+      "normal_frames": 13078
+    },
+    "validation": {
+      "pairs": 442,
+      "valid_frames": 51310,
+      "nonzero_frames": 17799,
+      "normal_frames": 16574
+    }
+  },
+  "song_counts": {
+    "train": 220,
+    "test": 20,
+    "validation": 28
+  },
+  "alias_links_merged": 21,
+  "supervision": "machine cross-validated PPG/MFCC alignments, dual pitch estimator agreement; not human pitch truth",
+  "label_smoothing_seconds": 0.18,
+  "source_context_features": 19,
+  "reference_features_at_inference": 0,
+  "whole_song_integer_key_offset_removed_in_labels": true,
+  "synthetic_training_examples": 0,
+  "readiness": "experimental_training_only"
+}

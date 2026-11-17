@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>接手前对齐 · 你到底想要哪种效果（F1 / F2）</title>
+<style>
+body{font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif;background:#f4f5f7;color:#1f2430;max-width:920px;margin:24px auto;padding:0 18px}
+h1{font-size:24px;margin-bottom:4px}h2{font-size:20px;margin:34px 0 8px;border-left:5px solid #3a6ff7;padding-left:10px}
+.sub{color:#667085;font-size:14px}
+.card{background:#fff;border:1px solid #dde1e8;border-radius:10px;padding:16px 18px;margin:14px 0}
+.warn{background:#fff7e6;border-color:#f3cf86}.info{background:#eef4ff;border-color:#bcd0fb}
+.q{font-weight:650;margin:10px 0 6px}
+.switch{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.switch button{border:1px solid #b8c2d4;background:#f7f9fc;border-radius:7px;padding:7px 12px;font-size:14px;cursor:pointer}
+.switch button.on{background:#3a6ff7;color:#fff;border-color:#3a6ff7}
+.desc{font-size:13.5px;color:#4a5466;margin:4px 0 0}
+.opts label{display:inline-block;margin:3px 14px 3px 0;font-size:14.5px;cursor:pointer}
+textarea{width:100%;box-sizing:border-box;min-height:46px;border:1px solid #cfd5df;border-radius:6px;padding:6px;font:14px system-ui}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #dde1e8;padding:6px 8px;text-align:left;vertical-align:top}th{background:#eef1f6}
+.tag{display:inline-block;font-size:12px;border-radius:4px;padding:0 6px;margin-left:6px;background:#eceff4;color:#475467}
+.tag.out{background:#fde8e8;color:#a12a2a}
+#export{width:100%;min-height:160px;font-family:Consolas,monospace;font-size:13px}
+.big{font-size:16px;padding:10px 18px;background:#3a6ff7;color:#fff;border:0;border-radius:8px;cursor:pointer}
+audio{width:100%;margin-top:6px}
+</style>
+</head>
+<body>
+<h1>接手前对齐：先确定"你要的是哪种效果"</h1>
+<p class="sub">2026-11-02 · experiments/HANDOFF_ALIGN_2026-11-02_v001 · 这页的音频都是"指方向"用的样子，<b>不是候选方案</b>，有几条故意做得很夸张。</p>
+
+<div class="card warn">
+<b>怎么听（大约 15 分钟）</b><br>
+1. 戴耳机，先把系统音量调到舒服的位置，<b>整页听完前不要再动音量</b>。<br>
+2. 每组只有一个播放器。点上面的按钮会<b>从当前位置无缝切到另一版</b>，适合来回比较。<br>
+3. 不用说专业词，选最接近的一项就行；想补充就写在框里。没把握可以选"说不清"。<br>
+4. 听完点最下面的 <b>"生成答案"</b>，把文字复制给我。<br>
+<span class="sub">我（Agent）没法直接听音频。下面写的"做了什么"都是处理方法本身，不代表我觉得它好听。</span>
+</div>
+
+<div class="card info">
+<b>我目前对项目的理解（有错请指出）</b>
+<table>
+<tr><th style="width:16%"></th><th>需求文档原话</th><th>之前的 Agent 实际做成了什么</th><th>我怀疑没对齐的地方</th></tr>
+<tr><td><b>F1 音色美化</b></td><td>饱满度、柔和度、悦耳度；改善刺耳、齿音、音量不均衡；保留本人音色</td><td>做了 23 轮以上的单项实验（EQ、饱和、压缩、谐波、包络、共振峰），而且<b>每次都把音量拉平后才比较</b>。最好的是 EXP-020 的 S45。</td><td>你要的"力度/厚"，可能是这些单项效果<b>叠在一起</b>的整体结果（唱片人声的感觉），而之前每轮只允许测一项、一项也不能做重。也可能你要的其实是"唱得更用力"，这个更接近演唱本身，效果器很难补出来。</td></tr>
+<tr><td><b>F2 音高修正</b></td><td>修正明显跑调，更准、更自然；<b>不要求还原标准旋律</b>；优先测"不给原唱参考"的修法</td><td>不给参考的修法改动只有约 ±50 音分（半个半音），你听不出来，于是改成用原唱做参考；最后只修了 8 处，每处 90–200 音分，整句整组平移</td><td>你心里的"修音"可能是① 跑掉的那几个音拉回到原唱的音上；② 整体像修过音的唱片那样稳、准；③ 别的。三者做法差别很大。</td></tr>
+<tr><td><b>"声音很小"</b></td><td>—</td><td>之前的试听文件是 -17 到 -20 LUFS（为了比较公平，故意压低的）</td><td>市面上的歌一般在 -9 到 -14 LUFS，所以和手机里的歌一比，项目里每个文件都会显得小声。之前还有一个 bug 让声音小了 50 dB，已经修掉。</td></tr>
+</table>
+</div>
+
+<h2>F1 · 声音"饱满 / 有力 / 好听"指的是哪种</h2>
+<p class="sub">素材：平凡之路·薄音版（你自己录的 A01，13 秒）。除特别标注外，都统一在 -18 LUFS。</p>
+
+<div class="card" data-group="g1">
+<div class="q">组 1：目标对齐，先听你自己的两版</div>
+<div class="switch" data-player="p1">
+ <button data-src="audio/f1_orig.wav" data-desc="原音：你的薄音版，未处理">① 原音（薄音版）</button>
+ <button data-src="audio/f1_self_normal.wav" data-desc="你自己用正常唱法唱的同一句（同曲、同设备）。注意两版不是同一次演唱，按位置切换时字不一定对得上">② 你的正常版</button>
+ <button data-src="audio/f1_s45.wav" data-desc="之前最好的处理版：谐波对齐 + 频谱包络移植（往②靠）+ 第一共振峰上移。你说过：饱和度 OK、清晰度 OK、像本人，但力度没上去，只是感觉声音放大了">③ 之前最佳 S45</button>
+</div>
+<audio id="p1" controls preload="metadata"></audio><p class="desc" id="p1d"></p>
+<div class="q">Q1. ② 正常版和 ① 薄音版的差别，是不是你想让 F1 自动做到的效果？</div>
+<div class="opts" data-q="Q1 正常版是否就是F1目标">
+ <label><input type="radio" name="q1" value="是，就要①变成②这样">是，就要 ① 变成 ② 这样</label>
+ <label><input type="radio" name="q1" value="方向对，但②还不够，我要更进一步">方向对，但 ② 还不够</label>
+ <label><input type="radio" name="q1" value="不是，②也不是我想要的">不是，② 也不是我要的</label>
+ <label><input type="radio" name="q1" value="说不清">说不清</label>
+</div>
+<div class="q">Q2. ③ S45 离 ② 正常版还差多远？</div>
+<div class="opts" data-q="Q2 S45与正常版差距">
+ <label><input type="radio" name="q2" value="已经很接近②">已经很接近 ②</label>
+ <label><input type="radio" name="q2" value="走了一半">走了一半</label>
+ <label><input type="radio" name="q2" value="只是更亮更大声，没有往②走">只是更亮/更大声，没往 ② 走</label>
+ <label><input type="radio" name="q2" value="说不清">说不清</label>
+</div>
+<textarea data-q="组1补充" placeholder="补充：②比①好在哪里？用你自己的话说，比如'像吃饱了饭在唱''声音站得住''底气足'……"></textarea>
+</div>
+
+<div class="card">
+<div class="q">组 2："力度"里有多少是"更大声"</div>
+<div class="switch" data-player="p2">
+ <button data-src="audio/f1_orig.wav" data-desc="原音，-18 LUFS">① 原音</button>
+ <button data-src="audio/f1_orig_loud.wav" data-desc="同一个原音，只是整体调大约 4 dB（-14.2 LUFS），没有任何别的处理">② 原音·只调大声 <span class="tag">更响</span></button>
+</div>
+<audio id="p2" controls preload="metadata"></audio><p class="desc" id="p2d"></p>
+<div class="q">Q3. ② 只是调大了声音。它让你觉得"更有力"了吗？</div>
+<div class="opts" data-q="Q3 单纯变响是否等于有力">
+ <label><input type="radio" name="q3" value="是，大声一点就有力很多">是，大声了就有力很多</label>
+ <label><input type="radio" name="q3" value="有一点，但不是主要的">有一点，但不是主要的</label>
+ <label><input type="radio" name="q3" value="没有，只是更吵">没有，只是更吵</label>
+</div>
+</div>
+
+<div class="card">
+<div class="q">组 3：唱片人声处理链（多个常见效果叠在一起，<b>故意做得偏重</b>）</div>
+<div class="switch" data-player="p3">
+ <button data-src="audio/f1_orig.wav" data-desc="原音，-18 LUFS">① 原音</button>
+ <button data-src="audio/f1_chain.wav" data-desc="切 90Hz 以下低频 → 180Hz +3dB 补身体 → 450Hz -2dB 去闷 → 4:1 压缩（让大小声更稳、更密）→ 3.2kHz +4dB 存在感 → 9kHz +3dB 空气感 → 限幅。最后拉回 -18 LUFS，和原音一样响">② 唱片人声链（等响）</button>
+ <button data-src="audio/f1_chain_loud.wav" data-desc="同②，再推进限幅器做到唱片级响度（-13 LUFS）。这条会更响，用来对比你平时听歌的感觉">③ 唱片人声链·唱片级响度 <span class="tag">更响</span></button>
+ <button data-src="audio/f1_chain_reverb.wav" data-desc="②再加一点房间混响。注意：需求文档写明混响不在当前 PoC 范围内，这里只是问路">④ ②＋少量混响 <span class="tag out">超出现有范围</span></button>
+</div>
+<audio id="p3" controls preload="metadata"></audio><p class="desc" id="p3d"></p>
+<div class="q">Q4. ② 唱片人声链（和原音一样响）跟原音比？</div>
+<div class="opts" data-q="Q4 唱片链（等响）">
+ <label><input type="radio" name="q4" value="明显更好，这个方向对">明显更好，方向对</label>
+ <label><input type="radio" name="q4" value="方向对但太重了">方向对，但太重了</label>
+ <label><input type="radio" name="q4" value="变了但不好听（说明哪里不好）">变了，但不好听</label>
+ <label><input type="radio" name="q4" value="差不多">差不多</label>
+</div>
+<div class="q">Q5. ③ 唱片级响度：这是不是你平时听歌时"有力"的那种感觉？</div>
+<div class="opts" data-q="Q5 唱片级响度">
+ <label><input type="radio" name="q5" value="是，就是这种">是，就是这种</label>
+ <label><input type="radio" name="q5" value="接近了">接近了</label>
+ <label><input type="radio" name="q5" value="不是">不是</label>
+</div>
+<div class="q">Q6. ④ 加了混响。你想要的"好听"包括这种空间感吗？</div>
+<div class="opts" data-q="Q6 是否想要混响">
+ <label><input type="radio" name="q6" value="要，没有混响就是干巴巴的">要，没混响就干巴巴的</label>
+ <label><input type="radio" name="q6" value="可有可无">可有可无</label>
+ <label><input type="radio" name="q6" value="不要">不要</label>
+</div>
+<textarea data-q="组3补充" placeholder="补充：哪条最接近？太重的话，是哪方面重（太亮 / 太压 / 太闷 / 太吵）？"></textarea>
+</div>
+
+<div class="card">
+<div class="q">组 4："厚"是不是指像好几个人一起唱</div>
+<div class="switch" data-player="p4">
+ <button data-src="audio/f1_orig.wav" data-desc="原音">① 原音</button>
+ <button data-src="audio/f1_double.wav" data-desc="原音加上两份自己的副本：音高各偏一点（±9 音分），时间各晚一点（21 / 33 ms），再加一点轻微合唱效果。听起来像同一个人唱了几遍叠在一起">② 双叠加厚</button>
+</div>
+<audio id="p4" controls preload="metadata"></audio><p class="desc" id="p4d"></p>
+<div class="q">Q7. ② 双叠是你说的"厚"吗？</div>
+<div class="opts" data-q="Q7 双叠是否是要的厚">
+ <label><input type="radio" name="q7" value="是这种厚">是这种厚</label>
+ <label><input type="radio" name="q7" value="厚了但不像一个人在唱了">厚了，但不像一个人在唱了</label>
+ <label><input type="radio" name="q7" value="不是我说的厚">不是我说的厚</label>
+</div>
+</div>
+
+<div class="card">
+<div class="q">F1 总结</div>
+<div class="q">Q8. 上面所有版本里，<b>最接近你想要的</b>是哪条？</div>
+<div class="opts" data-q="Q8 F1最接近目标的一条">
+ <label><input type="radio" name="q8" value="你的正常版">你的正常版</label>
+ <label><input type="radio" name="q8" value="S45">S45</label>
+ <label><input type="radio" name="q8" value="只调大声">只调大声</label>
+ <label><input type="radio" name="q8" value="唱片链（等响）">唱片链（等响）</label>
+ <label><input type="radio" name="q8" value="唱片链（唱片级响度）">唱片链（唱片级响度）</label>
+ <label><input type="radio" name="q8" value="唱片链+混响">唱片链＋混响</label>
+ <label><input type="radio" name="q8" value="双叠">双叠</label>
+ <label><input type="radio" name="q8" value="都不是">都不是</label>
+</div>
+<div class="q">Q9. F1 的验收方式，你更认可哪种？</div>
+<div class="opts" data-q="Q9 F1验收方式">
+ <label><input type="radio" name="q9" value="必须等响比较，变响不算">必须音量拉平后比较，变响不算数</label>
+ <label><input type="radio" name="q9" value="最终成品听着好就行，变响也算效果的一部分">成品听着好就行，变响也算效果的一部分</label>
+ <label><input type="radio" name="q9" value="两种都看">两种都看</label>
+</div>
+</div>
+
+<h2>F2 · 你说的"修音"是哪一种</h2>
+<p class="sub">都统一在 -18 LUFS。"硬吸附"不需要原唱：它把每一瞬间的音高都贴到最近的半音上，相当于把 Auto-Tune 开到最强。</p>
+
+<div class="card">
+<div class="q">组 5：先确认原音的跑调你自己能不能听出来（是谁在唱歌）</div>
+<div class="switch" data-player="p5">
+ <button data-src="audio/f2_shige_normal.wav" data-desc="你标注的正常版（17 秒）">① 正常版</button>
+ <button data-src="audio/f2_shige_severe.wav" data-desc="你标注的严重跑调版（25 秒）。和①不是同一次演唱，长度也不一样">② 严重跑调版</button>
+ <button data-src="audio/f2_shige_severe_hardsnap.wav" data-desc="②做硬吸附：每个音高点贴到最近的半音。平均改了约 25 音分，最多 50 音分。跑偏超过半个半音的音，会被贴到相邻的错音上">③ ②·硬吸附（无参考）</button>
+</div>
+<audio id="p5" controls preload="metadata"></audio><p class="desc" id="p5d"></p>
+<div class="q">Q10. ② 严重跑调版，你自己听得出跑调吗？</div>
+<div class="opts" data-q="Q10 能否听出自己的严重跑调">
+ <label><input type="radio" name="q10" value="很明显">很明显</label>
+ <label><input type="radio" name="q10" value="有几处能听出">有几处能听出</label>
+ <label><input type="radio" name="q10" value="听不太出">听不太出</label>
+</div>
+<div class="q">Q11. ③ 硬吸附：电音感 / 变化能接受吗？跑调好些了吗？</div>
+<div class="opts" data-q="Q11 硬吸附">
+ <label><input type="radio" name="q11" value="跑调好些了，电音感能接受">跑调好些了，电音感能接受</label>
+ <label><input type="radio" name="q11" value="跑调好些了，但电音感不能接受">跑调好些了，但电音感不能接受</label>
+ <label><input type="radio" name="q11" value="没变准">没变准</label>
+ <label><input type="radio" name="q11" value="听不出变化">听不出变化</label>
+</div>
+</div>
+
+<div class="card">
+<div class="q">组 6：有原唱参考的修法（因为刚好遇见你·清唱版）</div>
+<div class="switch" data-player="p6">
+ <button data-src="audio/f2_gyjyn_orig.wav" data-desc="你的清唱原音（13.6 秒）">① 你的原音</button>
+ <button data-src="audio/f2_gyjyn_p3e.wav" data-desc="之前 F2 的最新版 P3e：整段下移 35 音分对齐原唱的调；8 处偏差大的音按乐句整组移到原唱的音上（90–200 音分）；那几处的音量也跟着原唱调了，最多 ±3dB。你还没给过反馈">② 之前 F2 修正版 P3e</button>
+ <button data-src="audio/f2_gyjyn_hardsnap.wav" data-desc="①做硬吸附（无参考，最强档 Auto-Tune 风格）">③ ①·硬吸附</button>
+ <button data-src="audio/f2_gyjyn_reference.wav" data-desc="李玉刚原唱，用 Demucs 分离出来的人声轨（25 秒，比你的长）。只用来对照旋律">④ 原唱人声 <span class="tag">参考</span></button>
+</div>
+<audio id="p6" controls preload="metadata"></audio><p class="desc" id="p6d"></p>
+<div class="q">Q12. ② P3e 比 ① 原音？</div>
+<div class="opts" data-q="Q12 P3e效果">
+ <label><input type="radio" name="q12" value="明显更准更好听">明显更准、更好听</label>
+ <label><input type="radio" name="q12" value="更准了但不自然">更准了，但不自然</label>
+ <label><input type="radio" name="q12" value="听不出区别">听不出区别</label>
+ <label><input type="radio" name="q12" value="更差">更差</label>
+</div>
+<div class="q">Q13. 你心里的"修音成功"是哪种？</div>
+<div class="opts" data-q="Q13 F2目标">
+ <label><input type="radio" name="q13" value="唱错的音拉回到原唱的音（要参考）">唱错的音拉回原唱的音（需要原唱参考）</label>
+ <label><input type="radio" name="q13" value="不管原唱，只要听起来不跑调、稳">不管原唱，听起来不跑、稳就行</label>
+ <label><input type="radio" name="q13" value="像修过音的唱片那样明显很准，有点电音也行">像修过音的唱片那样很准，带点电音也行</label>
+ <label><input type="radio" name="q13" value="其他（写在下面）">其他</label>
+</div>
+<textarea data-q="组6补充" placeholder="补充：①里哪几个字/哪几秒你觉得跑了？"></textarea>
+</div>
+
+<h2>范围与做事方式</h2>
+<div class="card">
+<div class="q">Q14. 为了达到效果，下面哪些可以用？（可多选）</div>
+<div class="opts" data-q="Q14 允许的手段" data-multi="1">
+ <label><input type="checkbox" value="多个效果器叠加成一条链">多个效果器叠成一条链（不再一次只测一项）</label>
+ <label><input type="checkbox" value="明显的压缩/限幅（唱片级响度）">明显的压缩/限幅（唱片级响度）</label>
+ <label><input type="checkbox" value="混响">混响</label>
+ <label><input type="checkbox" value="AI/神经网络模型">AI/神经网络模型</label>
+ <label><input type="checkbox" value="F1里也允许轻微改音高">F1 里也允许轻微改音高</label>
+ <label><input type="checkbox" value="必须严格按老师的需求文档范围">必须严格按老师的需求文档范围</label>
+</div>
+<div class="q">Q15. 以后每轮你希望怎么试？</div>
+<div class="opts" data-q="Q15 迭代方式">
+ <label><input type="radio" name="q15" value="像这页一样，一次给多个有明显差别的方向，我挑">像这页一样，一次给几个差别明显的方向，我来挑</label>
+ <label><input type="radio" name="q15" value="一次只验证一项，严格小步">一次只验证一项，严格小步</label>
+ <label><input type="radio" name="q15" value="先给一个调好的成品，我说哪里不满意">先给一个调好的成品，我说哪里不满意</label>
+</div>
+<textarea data-q="其他想说的" placeholder="其他想说的：比如这周老师要看什么、哪些之前的规则你觉得多余……"></textarea>
+</div>
+
+<div class="card">
+<button class="big" id="gen">生成答案</button>
+<p class="sub">点完会把答案整理成文字，全选复制后发给我。</p>
+<textarea id="export" readonly></textarea>
+</div>
+
+<script>
+document.querySelectorAll('.switch').forEach(sw=>{
+  const a=document.getElementById(sw.dataset.player), d=document.getElementById(sw.dataset.player+'d');
+  const btns=[...sw.querySelectorAll('button')];
+  const pick=(b,keep)=>{
+    const t=a.currentTime||0, playing=!a.paused;
+    btns.forEach(x=>x.classList.toggle('on',x===b));
+    a.src=b.dataset.src; d.textContent=b.dataset.desc;
+    if(keep){a.addEventListener('loadedmetadata',()=>{a.currentTime=Math.min(t,Math.max(a.duration-0.05,0));if(playing)a.play();},{once:true});}
+  };
+  btns.forEach(b=>b.addEventListener('click',()=>pick(b,true)));
+  pick(btns[0],false);
+});
+document.getElementById('gen').addEventListener('click',()=>{
+  const out=['【接手对齐页反馈 2026-11-02】'];
+  document.querySelectorAll('[data-q]').forEach(el=>{
+    let v='';
+    if(el.tagName==='TEXTAREA') v=el.value.trim();
+    else v=[...el.querySelectorAll('input:checked')].map(i=>i.value).join('；');
+    out.push(el.dataset.q+'：'+(v||'（未答）'));
+  });
+  const ex=document.getElementById('export'); ex.value=out.join('\n'); ex.select();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+  "alignment": {
+    "pitch_cost": 24.86,
+    "pitch_reverse": 99.91,
+    "mfcc_cost": 3.107,
+    "mfcc_reverse": 3.904,
+    "comparison_frames": 696,
+    "median_disagreement_s": 0.04,
+    "within_250ms_fraction": 0.957,
+    "note": "音高与MFCC两种自动对齐，仅为候选；未核实歌词和元音，绝不作为同字确定证据。"
+  },
+  "source_sha256": {
+    "thin": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+    "normal": "ced2ec03981059267deccafbdfb3747c691492d493393c036544df4ffa46dff4",
+    "current": "ad071f69d6335bcf2ceea9434953da2a83109e641b4e092868db61d0671e65d1"
+  },
+  "windows": [
+    {
+      "thin_time_s": [
+        1.56,
+        1.96
+      ],
+      "normal_time_s": [
+        1.8,
+        2.14
+      ],
+      "identity_status": "自动候选，歌词与元音未确认",
+      "metrics": {
+        "thin": {
+          "voiced_frames": 36,
+          "f0_median_hz": 140.9,
+          "alpha_db": -26.7,
+          "h1_h2_db": 5.31
+        },
+        "current": {
+          "voiced_frames": 36,
+          "f0_median_hz": 168.1,
+          "alpha_db": -19.29,
+          "h1_h2_db": 7.46
+        },
+        "normal": {
+          "voiced_frames": 30,
+          "f0_median_hz": 166.3,
+          "alpha_db": -23.41,
+          "h1_h2_db": 6.06
+        }
+      }
+    },
+    {
+      "thin_time_s": [
+        4.5,
+        4.9
+      ],
+      "normal_time_s": [
+        4.5,
+        4.8
+      ],
+      "identity_status": "自动候选，歌词与元音未确认",
+      "metrics": {
+        "thin": {
+          "voiced_frames": 36,
+          "f0_median_hz": 125.4,
+          "alpha_db": -30.41,
+          "h1_h2_db": 5.64
+        },
+        "current": {
+          "voiced_frames": 36,
+          "f0_median_hz": 149.9,
+          "alpha_db": -24.3,
+          "h1_h2_db": 7.87
+        },
+        "normal": {
+          "voiced_frames": 26,
+          "f0_median_hz": 152.1,
+          "alpha_db": -21.68,
+          "h1_h2_db": 1.57
+        }
+      }
+    },
+    {
+      "thin_time_s": [
+        10.14,
+        10.54
+      ],
+      "normal_time_s": [
+        9.94,
+        10.34
+      ],
+      "identity_status": "自动候选，歌词与元音未确认",
+      "metrics": {
+        "thin": {
+          "voiced_frames": 36,
+          "f0_median_hz": 126.5,
+          "alpha_db": -27.63,
+          "h1_h2_db": 4.81
+        },
+        "current": {
+          "voiced_frames": 36,
+          "f0_median_hz": 151.3,
+          "alpha_db": -22.41,
+          "h1_h2_db": 6.8
+        },
+        "normal": {
+          "voiced_frames": 36,
+          "f0_median_hz": 148.9,
+          "alpha_db": -11.17,
+          "h1_h2_db": -4.65
+        }
+      }
+    }
+  ],
+  "source_hashes_unchanged": true
+}

@@ -1,0 +1,7 @@
+created_utc: 2026-11-01T13:20:52.955408+00:00
+experiment: F1-EXP-013
+phase: F1-DIAG-3
+loudness-only verification; constant gain only; no timbre processing
+target_lufs: -18.0
+technical_pass: True
+sealed: A04, A06, B03, C01, C02, C03

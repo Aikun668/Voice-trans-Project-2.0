@@ -1,0 +1,33 @@
+{
+  "segment": "莫问归期01-轻度跑调",
+  "word": "刺",
+  "alignment": "Qwen3-ForcedAligner-0.6B, same syllable and stable vowel windows",
+  "lyric_source": "https://www.joox.com/my-en/single/tf8Ts47nfR2TncID5m3NhA==",
+  "reference_source": "https://www.youtube.com/watch?v=XaTFvLSP1oI",
+  "qwen_word_bounds_seconds": {
+    "source": [2.48, 3.44],
+    "paired": [2.80, 3.84],
+    "reference": [33.36, 33.52]
+  },
+  "reference_window_note": "Forced aligner marked a short onset in the original recording. Praat shows the same G#4 pitch continues into the sustained vowel; measure that held part, before the next syllable begins.",
+  "source_core": [2.85, 3.30],
+  "reference_core": [33.55, 34.10],
+  "paired_core": [3.15, 3.54],
+  "edit": [2.58, 3.47],
+  "preview": [0.00, 3.73],
+  "reference_analysis": [30.00, 43.60],
+  "reference_preview": [31.04, 34.60],
+  "reference_key_anchors": [
+    [[0.97, 1.17], [31.79, 31.96]],
+    [[1.43, 1.65], [32.17, 32.44]],
+    [[8.04, 8.31], [38.46, 38.76]],
+    [[11.72, 12.25], [42.19, 42.65]]
+  ],
+  "paired_key_anchors": [
+    [[0.97, 1.17], [1.24, 1.40]],
+    [[1.43, 1.65], [1.67, 1.88]],
+    [[8.04, 8.31], [8.20, 8.42]],
+    [[11.72, 12.25], [11.95, 12.27]]
+  ],
+  "protected_source_spans": [[3.797, 5.330], [10.114, 11.005]]
+}

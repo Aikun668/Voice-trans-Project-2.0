@@ -1,0 +1,227 @@
+{
+  "results": [
+    {
+      "song": "心墙",
+      "segment": "心墙01-轻度跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-轻度跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav",
+      "target_seconds": 8.61,
+      "candidates": [
+        {
+          "ref_start_s": 113.4,
+          "ref_end_s": 123.2,
+          "coarse_key_cents": 100,
+          "cost": 61.32,
+          "reversed_cost": 71.82
+        },
+        {
+          "ref_start_s": 36.0,
+          "ref_end_s": 45.7,
+          "coarse_key_cents": 100,
+          "cost": 66.66,
+          "reversed_cost": 71.82
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    },
+    {
+      "song": "离开我的依赖",
+      "segment": "离开我的依赖01-对照微微跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-对照微微跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "target_seconds": 12.37,
+      "candidates": [
+        {
+          "ref_start_s": 24.1,
+          "ref_end_s": 37.1,
+          "coarse_key_cents": -600,
+          "cost": 67.43,
+          "reversed_cost": 81.7
+        },
+        {
+          "ref_start_s": 54.8,
+          "ref_end_s": 68.6,
+          "coarse_key_cents": 500,
+          "cost": 68.94,
+          "reversed_cost": 91.93
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    },
+    {
+      "song": "离开我的依赖",
+      "segment": "离开我的依赖01-轻度跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-轻度跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "target_seconds": 14.27,
+      "candidates": [
+        {
+          "ref_start_s": 53.4,
+          "ref_end_s": 68.8,
+          "coarse_key_cents": 0,
+          "cost": 76.63,
+          "reversed_cost": 85.74
+        },
+        {
+          "ref_start_s": 23.0,
+          "ref_end_s": 37.3,
+          "coarse_key_cents": 0,
+          "cost": 78.17,
+          "reversed_cost": 85.74
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    },
+    {
+      "song": "离开我的依赖",
+      "segment": "离开我的依赖02-对照微微跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-对照微微跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "target_seconds": 12.61,
+      "candidates": [
+        {
+          "ref_start_s": 68.5,
+          "ref_end_s": 80.5,
+          "coarse_key_cents": 400,
+          "cost": 50.57,
+          "reversed_cost": 96.49
+        },
+        {
+          "ref_start_s": 136.9,
+          "ref_end_s": 149.2,
+          "coarse_key_cents": 400,
+          "cost": 62.82,
+          "reversed_cost": 97.85
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    },
+    {
+      "song": "离开我的依赖",
+      "segment": "离开我的依赖02-轻度跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖02-轻度跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav",
+      "target_seconds": 12.13,
+      "candidates": [
+        {
+          "ref_start_s": 68.6,
+          "ref_end_s": 80.9,
+          "coarse_key_cents": 400,
+          "cost": 65.79,
+          "reversed_cost": 105.21
+        },
+        {
+          "ref_start_s": 137.2,
+          "ref_end_s": 149.5,
+          "coarse_key_cents": 400,
+          "cost": 66.66,
+          "reversed_cost": 105.21
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    },
+    {
+      "song": "莫问归期",
+      "segment": "莫问归期01-对照微微跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-对照微微跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "target_seconds": 12.73,
+      "candidates": [
+        {
+          "ref_start_s": 30.6,
+          "ref_end_s": 42.9,
+          "coarse_key_cents": -500,
+          "cost": 38.36,
+          "reversed_cost": 76.83
+        },
+        {
+          "ref_start_s": 112.9,
+          "ref_end_s": 125.2,
+          "coarse_key_cents": -500,
+          "cost": 39.01,
+          "reversed_cost": 80.29
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    },
+    {
+      "song": "莫问归期",
+      "segment": "莫问归期01-轻度跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期01-轻度跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "target_seconds": 13.11,
+      "candidates": [
+        {
+          "ref_start_s": 113.1,
+          "ref_end_s": 125.4,
+          "coarse_key_cents": -600,
+          "cost": 64.05,
+          "reversed_cost": 82.75
+        },
+        {
+          "ref_start_s": 30.8,
+          "ref_end_s": 43.1,
+          "coarse_key_cents": 500,
+          "cost": 65.33,
+          "reversed_cost": 88.34
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    },
+    {
+      "song": "莫问归期",
+      "segment": "莫问归期02-对照微微跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "target_seconds": 13.18,
+      "candidates": [
+        {
+          "ref_start_s": 133.4,
+          "ref_end_s": 146.4,
+          "coarse_key_cents": 400,
+          "cost": 49.97,
+          "reversed_cost": 92.44
+        },
+        {
+          "ref_start_s": 51.4,
+          "ref_end_s": 64.2,
+          "coarse_key_cents": 400,
+          "cost": 50.06,
+          "reversed_cost": 92.44
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    },
+    {
+      "song": "莫问归期",
+      "segment": "莫问归期02-轻度跑调",
+      "target": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-轻度跑调.wav",
+      "reference": "test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav",
+      "target_seconds": 12.93,
+      "candidates": [
+        {
+          "ref_start_s": 133.4,
+          "ref_end_s": 146.1,
+          "coarse_key_cents": 200,
+          "cost": 61.23,
+          "reversed_cost": 96.36
+        },
+        {
+          "ref_start_s": 51.2,
+          "ref_end_s": 63.8,
+          "coarse_key_cents": 100,
+          "cost": 65.6,
+          "reversed_cost": 79.2
+        }
+      ],
+      "status": "自动候选，歌词与唱法未核对；不可作为训练标签"
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "method": "Praat F0 0.1s + 子序列DTW + 100音分调差网格（与 F2_DATA_INVENTORY_2026-11-05_v001 相同）",
+  "notes": [
+    "候选区间是程序自动定位，歌词和唱法未核对，不可作为训练标签。",
+    "coarse_key_cents 为本人相对原唱的整体调差粗估（100 音分步长）。",
+    "次优候选已记录，供首选被否决时快速复查，不进核对页。"
+  ]
+}

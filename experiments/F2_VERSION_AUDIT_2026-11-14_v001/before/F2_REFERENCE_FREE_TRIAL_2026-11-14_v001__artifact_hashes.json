@@ -1,0 +1,18 @@
+{
+  "audio_qa.py": "93d4124948fdbe59c2f05be87d15aef18c6ef22e7d7a3ac484387c3d89b9c924",
+  "audit_data.py": "9c6fdde31b289effed5304415b1bc9ffb986e67e5af0993e7f36b06e5bed00ae",
+  "deliver.py": "598317cf5638eb649ef8fda352fde9b2c836a3fb6ee745b4c0b1867cf3560d1c",
+  "infer.py": "faa32c7eb97346e3fbdbe67c2f16ad1efe60deab9a71b2a024e35ad725a82aa8",
+  "prepare.py": "4953d49ee18b334f481489201b3a5aef41c2ac055a1052d9d20f7a0ff3d3d3e4",
+  "serve.py": "f02924b3dc553adc00abb8a1f54f0aad27f199865968dbc1ba66cb57fdbbff1c",
+  "test_trial.py": "3fa7f18f6858a9ad051f4ab0f309ac0732972f13d909fa95ebd3c29259939a42",
+  "train.py": "17705532b1479a804a26010d172719dda90a4e4d1ce4f5437aec061ee770e5a5",
+  "train_context.py": "75dce66a1acc2f9fc0b436656bc65a87a28fdeff0a8d0c3c92c5b6d6e014ee0b",
+  "train_practice.py": "7517320acf6b05e799bc0181baf5d7acc61d76d0b35b299f8f52bd7c9796e024",
+  "trial.py": "aebd637c815f6e5cb3d12092594db8d8a9b6224819a2127e0df605ba2979853c",
+  "verify_delivery.py": "312f0984b32e5d13cfcd31ebc87baaa53cc9c096f23083fac78a968bac2dfc7d",
+  "REPORT.md": "8b3c4879743986c9782dd64f095d2284a2892a38ac939a940c7452665a9b35e3",
+  "rules.md": "70ee090167e95b071a1bdd06d64e09772df3db233cba3a391281b04d98c84049",
+  "verification.json": "a4f56aa83125bbe45ce26152b9eff8d4c53488aff463262ab518ab19dc2cf0f8",
+  "practice_training_v001\\model.pt": "d63eea5b0dea900aa4fb100fbb0159c0e4cba3177821d24ac6e20ceebdca955d"
+}

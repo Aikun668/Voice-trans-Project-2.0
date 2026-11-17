@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Jade · 路线一 Smule · 步骤3 体检样例</title>
+<style>
+body{font:16px/1.7 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:740px;margin:32px auto;padding:0 20px}
+h1{font-size:26px}h2{font-size:19px;margin:0 0 12px}section{background:white;border:1px solid #dce0e6;border-radius:12px;padding:20px;margin:16px 0}
+audio{width:100%}a{color:#2953a6}.note{color:#525d70}p{margin:8px 0}
+</style>
+<h1>Jade · 路线一 Smule · 步骤3 体检样例</h1>
+<p>这一页只是<b>流程体检</b>：官方极度受损样例（ExtremeDegradationBench），不是你的素材，也不算任何通过/不通过。</p>
+<p class="note">两条已用固定增益匹配到同一响度（-18 LUFS）。请用同一副耳机、固定系统音量。开始播放另一版本时会暂停上一版本并接续同一时间点。</p>
+<section><h2>01 · 官方受损原音</h2><audio controls preload="metadata" src="01_noisy_matched.wav"></audio><p><a href="01_noisy_matched.wav" download>保存 WAV</a> · -18.00 LUFS · 14.34 s</p></section>
+<section><h2>02 · Smule 修复版</h2><audio controls preload="metadata" src="02_smule_enhanced_matched.wav"></audio><p><a href="02_smule_enhanced_matched.wav" download>保存 WAV</a> · -18.00 LUFS · 14.34 s</p></section>
+<section><h2>这一页只看一件事</h2>
+<p>模型有没有把损伤<b>修掉</b>，同时没把人声<b>变得不像原来的人</b>（比如变哑、变嗲、字被吃）？</p>
+<p class="note">这条不是你的录音，所以不用打分、不用反馈更好更差。听个大概，知道流程跑通、模型在自己的"主场"上干了活就行。你的素材从步骤 4（SHIGE）开始。</p>
+</section>
+<script>
+let active = null;
+document.querySelectorAll('audio').forEach(player => {
+  player.addEventListener('play', () => {
+    if (active && active !== player) {
+      const position = active.ended ? 0 : active.currentTime;
+      active.pause();
+      player.currentTime = Math.min(position, player.duration || position);
+    }
+    active = player;
+  });
+});
+</script></html>

@@ -1,0 +1,23 @@
+{
+  "experiment": "F1-EXP-007",
+  "sample_id": "A01",
+  "source": "Self",
+  "display": "平凡之路 / 薄音版",
+  "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\平凡之路薄音版.wav",
+  "raw_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\平凡之路薄音版.m4a",
+  "wav_sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+  "raw_sha256": "cbb3ddfabf7a71b809d54d784e306b5ecf61823022aa02140a54791dfd122b72",
+  "sealed_not_processed": [
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "B01",
+    "B02",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ]
+}

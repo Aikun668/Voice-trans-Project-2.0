@@ -1,0 +1,247 @@
+{
+ "rows": {
+  "en1": {
+   "gt_a": {
+    "fast_f0_cents": 9.5,
+    "fast_amp_dB": 3.76,
+    "follow_gtp_cents": 90.0
+   },
+   "gt_p": {
+    "fast_f0_cents": 10.1,
+    "fast_amp_dB": 3.42,
+    "follow_gtp_cents": 0.0
+   },
+   "official": {
+    "fast_f0_cents": 11.0,
+    "fast_amp_dB": 3.8,
+    "follow_gtp_cents": 10.0
+   },
+   "ours_pair": {
+    "fast_f0_cents": 11.7,
+    "fast_amp_dB": 3.14,
+    "follow_gtp_cents": 310.0
+   },
+   "ours_single": {
+    "fast_f0_cents": 9.5,
+    "fast_amp_dB": 3.52,
+    "follow_gtp_cents": 100.0
+   }
+  },
+  "en2": {
+   "gt_a": {
+    "fast_f0_cents": 5.5,
+    "fast_amp_dB": 2.51,
+    "follow_gtp_cents": 40.0
+   },
+   "gt_p": {
+    "fast_f0_cents": 12.1,
+    "fast_amp_dB": 2.04,
+    "follow_gtp_cents": 0.0
+   },
+   "official": {
+    "fast_f0_cents": 13.7,
+    "fast_amp_dB": 2.26,
+    "follow_gtp_cents": 0.0
+   },
+   "ours_pair": {
+    "fast_f0_cents": 25.0,
+    "fast_amp_dB": 2.34,
+    "follow_gtp_cents": 310.0
+   },
+   "ours_single": {
+    "fast_f0_cents": 5.4,
+    "fast_amp_dB": 2.59,
+    "follow_gtp_cents": 40.0
+   }
+  },
+  "en3": {
+   "gt_a": {
+    "fast_f0_cents": 11.4,
+    "fast_amp_dB": 2.37,
+    "follow_gtp_cents": 80.0
+   },
+   "gt_p": {
+    "fast_f0_cents": 16.2,
+    "fast_amp_dB": 2.61,
+    "follow_gtp_cents": 0.0
+   },
+   "official": {
+    "fast_f0_cents": 13.1,
+    "fast_amp_dB": 2.11,
+    "follow_gtp_cents": 10.0
+   },
+   "ours_pair": {
+    "fast_f0_cents": 13.0,
+    "fast_amp_dB": 1.91,
+    "follow_gtp_cents": 70.0
+   },
+   "ours_single": {
+    "fast_f0_cents": 5.8,
+    "fast_amp_dB": 1.99,
+    "follow_gtp_cents": 70.0
+   }
+  },
+  "zh1": {
+   "gt_a": {
+    "fast_f0_cents": 5.8,
+    "fast_amp_dB": 3.33,
+    "follow_gtp_cents": 50.0
+   },
+   "gt_p": {
+    "fast_f0_cents": 6.9,
+    "fast_amp_dB": 3.31,
+    "follow_gtp_cents": 0.0
+   },
+   "official": {
+    "fast_f0_cents": 7.1,
+    "fast_amp_dB": 2.99,
+    "follow_gtp_cents": 0.0
+   },
+   "ours_pair": {
+    "fast_f0_cents": 17.5,
+    "fast_amp_dB": 2.39,
+    "follow_gtp_cents": 430.0
+   },
+   "ours_single": {
+    "fast_f0_cents": 5.8,
+    "fast_amp_dB": 2.97,
+    "follow_gtp_cents": 50.0
+   }
+  },
+  "zh2": {
+   "gt_a": {
+    "fast_f0_cents": 4.8,
+    "fast_amp_dB": 2.5,
+    "follow_gtp_cents": 60.0
+   },
+   "gt_p": {
+    "fast_f0_cents": 6.4,
+    "fast_amp_dB": 2.22,
+    "follow_gtp_cents": 0.0
+   },
+   "official": {
+    "fast_f0_cents": 8.1,
+    "fast_amp_dB": 2.45,
+    "follow_gtp_cents": 0.0
+   },
+   "ours_pair": {
+    "fast_f0_cents": 11.5,
+    "fast_amp_dB": 2.27,
+    "follow_gtp_cents": 120.0
+   },
+   "ours_single": {
+    "fast_f0_cents": 4.5,
+    "fast_amp_dB": 2.23,
+    "follow_gtp_cents": 60.0
+   }
+  },
+  "zh3": {
+   "gt_a": {
+    "fast_f0_cents": 4.7,
+    "fast_amp_dB": 2.65,
+    "follow_gtp_cents": 80.0
+   },
+   "gt_p": {
+    "fast_f0_cents": 6.1,
+    "fast_amp_dB": 2.82,
+    "follow_gtp_cents": 0.0
+   },
+   "official": {
+    "fast_f0_cents": 10.9,
+    "fast_amp_dB": 2.6,
+    "follow_gtp_cents": 0.0
+   },
+   "ours_pair": {
+    "fast_f0_cents": 9.9,
+    "fast_amp_dB": 2.39,
+    "follow_gtp_cents": 620.0
+   },
+   "ours_single": {
+    "fast_f0_cents": 4.9,
+    "fast_amp_dB": 2.89,
+    "follow_gtp_cents": 80.0
+   }
+  },
+  "zh4": {
+   "gt_a": {
+    "fast_f0_cents": 4.6,
+    "fast_amp_dB": 2.97,
+    "follow_gtp_cents": 40.0
+   },
+   "gt_p": {
+    "fast_f0_cents": 6.9,
+    "fast_amp_dB": 2.96,
+    "follow_gtp_cents": 0.0
+   },
+   "official": {
+    "fast_f0_cents": 7.0,
+    "fast_amp_dB": 2.88,
+    "follow_gtp_cents": 0.0
+   },
+   "ours_pair": {
+    "fast_f0_cents": 16.0,
+    "fast_amp_dB": 2.68,
+    "follow_gtp_cents": 300.0
+   },
+   "ours_single": {
+    "fast_f0_cents": 5.9,
+    "fast_amp_dB": 2.88,
+    "follow_gtp_cents": 40.0
+   }
+  },
+  "zh5": {
+   "gt_a": {
+    "fast_f0_cents": 7.7,
+    "fast_amp_dB": 2.69,
+    "follow_gtp_cents": 80.0
+   },
+   "gt_p": {
+    "fast_f0_cents": 13.0,
+    "fast_amp_dB": 3.1,
+    "follow_gtp_cents": 0.0
+   },
+   "official": {
+    "fast_f0_cents": 13.9,
+    "fast_amp_dB": 3.35,
+    "follow_gtp_cents": 0.0
+   },
+   "ours_pair": {
+    "fast_f0_cents": 19.7,
+    "fast_amp_dB": 2.81,
+    "follow_gtp_cents": 280.0
+   },
+   "ours_single": {
+    "fast_f0_cents": 15.8,
+    "fast_amp_dB": 2.89,
+    "follow_gtp_cents": 90.0
+   }
+  }
+ },
+ "mean": {
+  "gt_a": {
+   "fast_f0_cents": 6.75,
+   "fast_amp_dB": 2.85,
+   "follow_gtp_cents": 65.0
+  },
+  "gt_p": {
+   "fast_f0_cents": 9.71,
+   "fast_amp_dB": 2.81,
+   "follow_gtp_cents": 0.0
+  },
+  "official": {
+   "fast_f0_cents": 10.6,
+   "fast_amp_dB": 2.81,
+   "follow_gtp_cents": 2.5
+  },
+  "ours_pair": {
+   "fast_f0_cents": 15.54,
+   "fast_amp_dB": 2.49,
+   "follow_gtp_cents": 305.0
+  },
+  "ours_single": {
+   "fast_f0_cents": 7.2,
+   "fast_amp_dB": 2.75,
+   "follow_gtp_cents": 66.25
+  }
+ }
+}

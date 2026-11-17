@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Jade · F1 路线二 原音问题确认</title>
+<style>
+body{font:16px/1.7 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:740px;margin:32px auto;padding:0 20px}
+h1{font-size:26px}h2{font-size:19px;margin:0 0 12px}section{background:white;border:1px solid #dce0e6;border-radius:12px;padding:20px;margin:16px 0}
+audio{width:100%}a{color:#2953a6}.note{color:#525d70}p{margin:8px 0}
+label{margin-right:14px}input[type=text]{width:100%;box-sizing:border-box;padding:6px 8px;margin-top:4px;border:1px solid #dce0e6;border-radius:8px;font:inherit}
+button{font:inherit;padding:8px 18px;border:0;border-radius:8px;background:#2953a6;color:white;cursor:pointer}
+textarea{width:100%;box-sizing:border-box;height:150px;margin-top:10px;padding:10px;border:1px solid #dce0e6;border-radius:8px;font:inherit}
+.hint{color:#525d70;font-size:14px;margin:4px 0}
+</style>
+<h1>Jade · F1 路线二 原音问题确认</h1>
+<p>这一页只放 8 条原音，请每条听一遍，选出你最明显听到的问题维度。没有问题的直接选"不适用"。</p>
+<p class="note">我看不到你的听感，下面"测量提示"只是仪器数据，不算数——以你耳朵为准。每条确认一个维度，之后只处理确认过的。开始播放另一条时会自动暂停上一条。</p>
+
+<section><h2>M1 · 茉莉花（本人，核心）</h2><audio controls preload="metadata" src="sources/M1_molihua_normal.wav"></audio>
+<p class="hint">测量提示：动态很平；只有约 12.5s 一处可疑齿音；整体偏暗但那是音色不是毛病。</p>
+<p><label><input type="radio" name="M1" value="不适用" checked>不适用</label><label><input type="radio" name="M1" value="大小声">大小声</label><label><input type="radio" name="M1" value="刺耳">刺耳</label><label><input type="radio" name="M1" value="齿音">齿音</label><label><input type="radio" name="M1" value="单薄">单薄</label></p>
+<input type="text" id="M1_note" placeholder="片段时间点 / 你听到的具体问题（可空）">
+<p><a href="sources/M1_molihua_normal.wav" download>保存 WAV</a></p></section>
+
+<section><h2>M2 · SHIGE（本人，核心）</h2><audio controls preload="metadata" src="sources/M2_shige_normal.wav"></audio>
+<p class="hint">测量提示：大小声和齿音都突出——动态 19.7 dB；约 1.4s / 2.1s / 11.6s / 12.6s 多处强齿音。只选一个最明显的。</p>
+<p><label><input type="radio" name="M2" value="不适用" checked>不适用</label><label><input type="radio" name="M2" value="大小声">大小声</label><label><input type="radio" name="M2" value="刺耳">刺耳</label><label><input type="radio" name="M2" value="齿音">齿音</label><label><input type="radio" name="M2" value="单薄">单薄</label></p>
+<input type="text" id="M2_note" placeholder="片段时间点 / 你听到的具体问题（可空）">
+<p><a href="sources/M2_shige_normal.wav" download>保存 WAV</a></p></section>
+
+<section><h2>M3 · 最炫（本人，核心）</h2><audio controls preload="metadata" src="sources/M3_zuixuan_normal.wav"></audio>
+<p class="hint">测量提示：齿音最重的一条——约 2.9s / 4.3s / 13.8s / 16.2s / 16.8s 多处；整体也偏亮（可能刺耳）。</p>
+<p><label><input type="radio" name="M3" value="不适用" checked>不适用</label><label><input type="radio" name="M3" value="大小声">大小声</label><label><input type="radio" name="M3" value="刺耳">刺耳</label><label><input type="radio" name="M3" value="齿音">齿音</label><label><input type="radio" name="M3" value="单薄">单薄</label></p>
+<input type="text" id="M3_note" placeholder="片段时间点 / 你听到的具体问题（可空）">
+<p><a href="sources/M3_zuixuan_normal.wav" download>保存 WAV</a></p></section>
+
+<section><h2>O1 · 中文样例 gt_a 3</h2><audio controls preload="metadata" src="sources/O1_chinese_gt_a_3.wav"></audio>
+<p class="hint">测量提示：录音很轻、动态大（21.2 dB）→ 像大小声问题。</p>
+<p><label><input type="radio" name="O1" value="不适用" checked>不适用</label><label><input type="radio" name="O1" value="大小声">大小声</label><label><input type="radio" name="O1" value="刺耳">刺耳</label><label><input type="radio" name="O1" value="齿音">齿音</label><label><input type="radio" name="O1" value="单薄">单薄</label></p>
+<input type="text" id="O1_note" placeholder="片段时间点 / 你听到的具体问题（可空）">
+<p><a href="sources/O1_chinese_gt_a_3.wav" download>保存 WAV</a></p></section>
+
+<section><h2>O2 · 中文样例 gt_a 9</h2><audio controls preload="metadata" src="sources/O2_chinese_gt_a_9.wav"></audio>
+<p class="hint">测量提示：响度范围最大，动态 16.4 dB；0.8s 处有强齿音。首选大小声，齿音备选。</p>
+<p><label><input type="radio" name="O2" value="不适用" checked>不适用</label><label><input type="radio" name="O2" value="大小声">大小声</label><label><input type="radio" name="O2" value="刺耳">刺耳</label><label><input type="radio" name="O2" value="齿音">齿音</label><label><input type="radio" name="O2" value="单薄">单薄</label></p>
+<input type="text" id="O2_note" placeholder="片段时间点 / 你听到的具体问题（可空）">
+<p><a href="sources/O2_chinese_gt_a_9.wav" download>保存 WAV</a></p></section>
+
+<section><h2>O3 · 英文样例 gt_a 6</h2><audio controls preload="metadata" src="sources/O3_english_gt_a_6.wav"></audio>
+<p class="hint">测量提示：动态跨度最大（23.4 dB）；也偏亮，2.7s 处强齿音。首选大小声。</p>
+<p><label><input type="radio" name="O3" value="不适用" checked>不适用</label><label><input type="radio" name="O3" value="大小声">大小声</label><label><input type="radio" name="O3" value="刺耳">刺耳</label><label><input type="radio" name="O3" value="齿音">齿音</label><label><input type="radio" name="O3" value="单薄">单薄</label></p>
+<input type="text" id="O3_note" placeholder="片段时间点 / 你听到的具体问题（可空）">
+<p><a href="sources/O3_english_gt_a_6.wav" download>保存 WAV</a></p></section>
+
+<section><h2>G1 · 青花瓷（GTSinger 女中音）</h2><audio controls preload="metadata" src="sources/G1_qinghuaci.wav"></audio>
+<p class="hint">测量提示：动态 16.9 dB、峰均比 22 dB 都偏高；开头 0–0.1s 有个强高频——顺便确认是不是爆音。</p>
+<p><label><input type="radio" name="G1" value="不适用" checked>不适用</label><label><input type="radio" name="G1" value="大小声">大小声</label><label><input type="radio" name="G1" value="刺耳">刺耳</label><label><input type="radio" name="G1" value="齿音">齿音</label><label><input type="radio" name="G1" value="单薄">单薄</label></p>
+<input type="text" id="G1_note" placeholder="片段时间点 / 你听到的具体问题（可空）">
+<p><a href="sources/G1_qinghuaci.wav" download>保存 WAV</a></p></section>
+
+<section><h2>G2 · 贝加尔湖畔（GTSinger 女中音）</h2><audio controls preload="metadata" src="sources/G2_beijiaer.wav"></audio>
+<p class="hint">测量提示：问题最少的一条（齿音帧占比最低、动态中等、偏暗）。大概率不适用，若听得到问题再选（4.6s 处有一处齿音）。</p>
+<p><label><input type="radio" name="G2" value="不适用" checked>不适用</label><label><input type="radio" name="G2" value="大小声">大小声</label><label><input type="radio" name="G2" value="刺耳">刺耳</label><label><input type="radio" name="G2" value="齿音">齿音</label><label><input type="radio" name="G2" value="单薄">单薄</label></p>
+<input type="text" id="G2_note" placeholder="片段时间点 / 你听到的具体问题（可空）">
+<p><a href="sources/G2_beijiaer.wav" download>保存 WAV</a></p></section>
+
+<section><h2>选完后点这里</h2>
+<p>下面会自动生成你的确认结果，点"复制反馈"再粘贴给我就行。</p>
+<p><button id="copy">复制反馈</button> <span id="copied" class="note" style="display:none">已复制 ✓</span></p>
+<textarea id="result" readonly></textarea>
+</section>
+
+<script>
+let active = null;
+document.querySelectorAll('audio').forEach(player => {
+  player.addEventListener('play', () => {
+    if (active && active !== player) {
+      const position = active.ended ? 0 : active.currentTime;
+      active.pause();
+      player.currentTime = Math.min(position, player.duration || position);
+    }
+    active = player;
+  });
+});
+const NAMES = {M1:'M1 茉莉花', M2:'M2 SHIGE', M3:'M3 最炫', O1:'O1 中文3', O2:'O2 中文9', O3:'O3 英文6', G1:'G1 青花瓷', G2:'G2 贝加尔湖畔'};
+function build(){
+  let lines = ['路线二原音问题确认：'];
+  for (const k of Object.keys(NAMES)){
+    const sel = document.querySelector(`input[name=${k}]:checked`);
+    const note = document.getElementById(k+'_note').value.trim();
+    lines.push(`${NAMES[k]}：${sel.value}${note ? '｜' + note : ''}`);
+  }
+  return lines.join('\n');
+}
+document.querySelectorAll('input,textarea').forEach(el => el.addEventListener('change', () => { document.getElementById('result').value = build(); }));
+document.getElementById('copy').addEventListener('click', async () => {
+  const box = document.getElementById('result');
+  box.value = build();
+  await navigator.clipboard.writeText(box.value);
+  const tip = document.getElementById('copied');
+  tip.style.display = 'inline';
+  setTimeout(() => tip.style.display = 'none', 2000);
+});
+</script></html>

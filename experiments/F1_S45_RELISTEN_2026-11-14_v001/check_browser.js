@@ -1,0 +1,45 @@
+async (page) => {
+  const errors=[];const downloads=[];const playback=[];
+  page.on('pageerror',e=>errors.push(String(e)));
+  page.on('download',d=>downloads.push(d.suggestedFilename()));
+  await page.addInitScript(()=>{window.__copied='';window.__blocked=false;Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{if(window.__blocked)throw new Error('Permission denied for check');window.__copied=text;}}});});
+  await page.reload();await page.waitForFunction(()=>document.querySelector('#player').readyState>=2);
+  for(const version of ['original','s45']){
+    await page.locator('[data-version="'+version+'"]').click();
+    await page.waitForFunction(v=>document.querySelector('#player').currentSrc.endsWith('/audio/'+v+'.wav')&&document.querySelector('#player').readyState>=2,version);
+    await page.evaluate(()=>{const p=document.querySelector('#player');p.muted=true;p.currentTime=0;});
+    await page.getByRole('button',{name:'从头听',exact:true}).click();
+    await page.waitForFunction(()=>document.querySelector('#player').currentTime>.15);
+    playback.push(await page.evaluate(()=>{const p=document.querySelector('#player');p.pause();return {url:p.currentSrc,duration:p.duration,advanced:p.currentTime};}));
+  }
+  await page.evaluate(()=>document.querySelector('#player').currentTime=4.2);
+  await page.getByRole('button',{name:'① 原音 · 同样响',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('#player').readyState>=2&&Math.abs(document.querySelector('#player').currentTime-4.2)<.08);
+  await page.evaluate(()=>{const p=document.querySelector('#player');p.currentTime=p.duration-.01;p.playbackRate=4;return p.play();});
+  await page.waitForFunction(()=>document.querySelector('#player').ended);
+  await page.getByRole('button',{name:'② S45 归档版 · 同样响',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('#player').readyState>=2&&document.querySelector('#player').currentTime<.1);
+  await page.evaluate(()=>document.querySelector('#player').playbackRate=1);
+  await page.getByRole('group',{name:'S45 的声音是不是更饱满？'}).getByRole('radio',{name:'拿不准',exact:true}).check();
+  await page.getByRole('group',{name:'有没有新问题？'}).getByRole('radio',{name:'拿不准',exact:true}).check();
+  await page.getByRole('group',{name:'更想保留哪一版？'}).getByRole('radio',{name:'拿不准',exact:true}).check();
+  await page.getByRole('textbox',{name:'哪一句、哪个字，或者还有什么感觉'}).fill('页面功能检查，不代表 Jade 试听反馈。');
+  await page.getByRole('button',{name:'复制反馈',exact:true}).click();
+  await page.getByText('已复制，直接粘贴到聊天里即可。',{exact:true}).waitFor();
+  const text=await page.evaluate(()=>window.__copied);
+  if(!text.includes('\n饱满度：拿不准\n新问题：拿不准\n选择：拿不准\n')||!text.includes('F1-EXP-020 / S45'))throw new Error('Copied feedback values or identity incorrect');
+  await page.evaluate(()=>window.__blocked=true);await page.getByRole('button',{name:'复制反馈',exact:true}).click();
+  const fallback=await page.evaluate(()=>{const e=document.querySelector('#feedback-text');return {visible:!e.hidden,selected:e.selectionStart===0&&e.selectionEnd===e.value.length,text:e.value};});
+  if(!fallback.visible||!fallback.selected||fallback.text!==text)throw new Error('Copy fallback failed');
+  const downloadHref=await page.locator('#download').getAttribute('href');if(downloadHref!=='audio/s45.wav')throw new Error('Wrong download target');
+  const range=await page.request.get(new URL('audio/s45.wav',page.url()).href,{headers:{Range:'bytes=0-159'}});
+  if(range.status()!==206||(await range.body()).length!==160)throw new Error('Audio range request failed');
+  if(downloads.length)throw new Error('Feedback unexpectedly downloaded');
+  await page.evaluate(()=>localStorage.removeItem('f1-s45-relisten-20261114-v001'));await page.reload();
+  await page.setViewportSize({width:1100,height:1000});await page.screenshot({path:'output/playwright/s45-desktop.png',fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw new Error('Mobile horizontal overflow');
+  await page.screenshot({path:'output/playwright/s45-mobile.png',fullPage:true});await page.setViewportSize({width:1100,height:1000});
+  if(errors.length)throw new Error(errors.join('; '));
+  return {playback,position_preserved:true,end_switch_restarts:true,copy_success:true,fallback_selected:true,feedback_downloads:downloads,test_feedback_cleared:true,range_status:206,page_errors:errors,mobile_overflow:false,clipboard_api_simulated:true,system_clipboard_untouched:true};
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "song": "心墙",
+    "take": "01",
+    "pair_key_cents": -510.0,
+    "pair_cost": 66.8,
+    "pair_reversed_cost": 81.7,
+    "ref_key_对照": -431,
+    "ref_key_轻度": 125,
+    "ref_key_gap": 556.0,
+    "verdict": "矛盾：两版对原唱的调差之差 ≠ 两版互相对齐的调差"
+  },
+  {
+    "song": "离开我的依赖",
+    "take": "01",
+    "pair_key_cents": 490.0,
+    "pair_cost": 45.7,
+    "pair_reversed_cost": 86.4,
+    "ref_key_对照": 548,
+    "ref_key_轻度": 47,
+    "ref_key_gap": -501.0,
+    "verdict": "矛盾：两版对原唱的调差之差 ≠ 两版互相对齐的调差"
+  },
+  {
+    "song": "离开我的依赖",
+    "take": "02",
+    "pair_key_cents": 0.0,
+    "pair_cost": 71.3,
+    "pair_reversed_cost": 119.6,
+    "ref_key_对照": 381,
+    "ref_key_轻度": 396,
+    "ref_key_gap": 15.0,
+    "verdict": "一致"
+  }
+]

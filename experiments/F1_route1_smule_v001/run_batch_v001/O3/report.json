@@ -1,0 +1,79 @@
+{
+  "clip": "O3",
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_pitch_target_v001\\official_all\\English\\gt_a\\6.wav",
+  "source_sha256": "e34920b9f51e02945d6dbf8c438228559a0ae041dcf250b07f853224c8a44c36",
+  "sample_rate": 22050,
+  "target_lufs": -19.480000000000004,
+  "native_smule_sha256": "d4fb37fe7bb01331930e3e349b00ae91bb4974f0a50fd828a1477c0937019cdb",
+  "resampled_pad_samples": 569,
+  "resampled_truncated_samples": 0,
+  "listening_status": "pending_jade",
+  "thresholds": {
+    "pitch_median_cents": 10,
+    "pitch_p95_cents": 35,
+    "true_peak_dbtp": -3.0,
+    "loudness_diff_lu": 0.2,
+    "gain_spread_db": 8,
+    "min_gain_db": -12,
+    "jump_ratio": 2.5
+  },
+  "praat_second_opinion": "omitted: NeuralSVB 专属依赖，不在本隔离环境引入；音高用项目估计器单源检查",
+  "outputs": {
+    "original_matched": {
+      "file": "O3__original_matched.wav",
+      "sha256": "3f62d29e2b4e6be13e19d02bb5c7408ca895942e28658dc7707cdda606816211",
+      "samples": {
+        "sample_rate": 22050,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 88064,
+        "duration_seconds": 3.9938321995464854,
+        "sample_peak_dbfs": -3.310632805009141,
+        "rms_dbfs": -19.473077638955164,
+        "clipped_samples": 0,
+        "dc_offset": -0.00013422654118648794
+      },
+      "full_decode_pass": true,
+      "loudness": {
+        "integrated_lufs": -19.47,
+        "true_peak_dbtp": -3.21,
+        "loudness_range_lu": 2.1
+      },
+      "technical_pass": true,
+      "errors": []
+    },
+    "smule_matched": {
+      "file": "O3__smule_matched.wav",
+      "sha256": "bc72f11a1b1d076a82a8707e0b5cec297f04ef7e261e41cd1d8186fb5f17bb3f",
+      "samples": {
+        "sample_rate": 22050,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 88064,
+        "duration_seconds": 3.9938321995464854,
+        "sample_peak_dbfs": -3.1590682632831353,
+        "rms_dbfs": -19.296186628245522,
+        "clipped_samples": 0,
+        "dc_offset": -0.0022378456453944363
+      },
+      "full_decode_pass": true,
+      "loudness": {
+        "integrated_lufs": -19.48,
+        "true_peak_dbtp": -3.1,
+        "loudness_range_lu": 1.6
+      },
+      "active_gain": {
+        "spread_db": 5.534939209617535,
+        "min_db": -4.142094872881161
+      },
+      "max_sample_jump_ratio": 0.9004037857470127,
+      "pitch_vs_original": {
+        "comparable_frames": 137,
+        "median_abs_cents": 1.2747323825809966,
+        "p95_abs_cents": 22.177262558651947
+      },
+      "technical_pass": true,
+      "errors": []
+    }
+  }
+}

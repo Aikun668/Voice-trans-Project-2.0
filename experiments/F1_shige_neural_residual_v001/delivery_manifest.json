@@ -1,0 +1,26 @@
+[
+  {
+    "id": "original",
+    "label": "原音",
+    "file": "delivery/shige_normal__original.wav",
+    "sha256": "3862564c9aa15b30f14eef80e004533ce143ddb7241c89a29fb2ba945b49dfb2",
+    "frames": 757286,
+    "duration": 17.172018140589568
+  },
+  {
+    "id": "beautify_gentle",
+    "label": "神经美化 A · 较温和",
+    "file": "delivery/shige_normal__beautify_gentle.wav",
+    "sha256": "8cf9353cfd23e2f520555514040e70aa8314d9b998464388a001061d05b3d9f8",
+    "frames": 757286,
+    "duration": 17.172018140589568
+  },
+  {
+    "id": "beautify_standard",
+    "label": "神经美化 B · 较明显",
+    "file": "delivery/shige_normal__beautify_standard.wav",
+    "sha256": "b2947f8253f88ab20d02254abf216f5ba3a448161f1c287e5720e04ed6ce7c42",
+    "frames": 757286,
+    "duration": 17.172018140589568
+  }
+]

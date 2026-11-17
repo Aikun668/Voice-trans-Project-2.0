@@ -1,0 +1,65 @@
+{
+  "experiment": "F1-EXP-013",
+  "phase": "F1-DIAG-3",
+  "hypothesis": "薄音主要来自能量水平（唱得轻/录得小），而非可修的频谱缺陷",
+  "design": "薄音版与正常版各自施加纯常数增益，统一到同一响度；无任何音色处理、无限制器",
+  "pair": {
+    "song": "平凡之路",
+    "thin": "A_self_01",
+    "normal": "A_self_02"
+  },
+  "target_lufs": -18.0,
+  "raw_loudness_gap_db": 1.72,
+  "loudness_gap_after_match_lu": 0.0,
+  "records": [
+    {
+      "role": "thin",
+      "dataset_id": "A_self_01",
+      "label": "薄音版",
+      "src_lufs": -19.24,
+      "src_true_peak_dbtp": -6.41,
+      "src_peak_dbfs": -6.42,
+      "src_rms_dbfs": -19.33,
+      "applied_gain_db": 1.24,
+      "out_lufs": -18.0,
+      "out_true_peak_dbtp": -5.17,
+      "out_peak_dbfs": -5.18,
+      "out_rms_dbfs": -18.09,
+      "frames": 630784,
+      "clipped": 0,
+      "file": "experiments/F1-EXP-013/listening/audio/thin.wav",
+      "sha256": "892f50aef4f94429144b9b981af24eca6fbeb5708f738f1c0a27a742962ffdda"
+    },
+    {
+      "role": "normal",
+      "dataset_id": "A_self_02",
+      "label": "正常版",
+      "src_lufs": -17.52,
+      "src_true_peak_dbtp": -3.49,
+      "src_peak_dbfs": -3.49,
+      "src_rms_dbfs": -17.64,
+      "applied_gain_db": -0.48,
+      "out_lufs": -18.0,
+      "out_true_peak_dbtp": -3.97,
+      "out_peak_dbfs": -3.97,
+      "out_rms_dbfs": -18.12,
+      "frames": 640896,
+      "clipped": 0,
+      "file": "experiments/F1-EXP-013/listening/audio/normal.wav",
+      "sha256": "2ba0867946c1b95a154a3faa847b8a5da15ba7cc4756aaebe3538eda86ab43eb"
+    }
+  ],
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "interpretation_rule": {
+    "若响度抹平后不再薄": "假设成立：薄=能量不足；方向应为录音电平/演唱音量，停止 DSP 修音色",
+    "若仍能听出明显厚薄差异": "存在真实音色差异；剩余未试只剩整体频谱包络迁移（预期低）"
+  },
+  "caveat": "同曲两次录音，段落/元音不完全相同；单对样本不能外推；Agent 未听音"
+}

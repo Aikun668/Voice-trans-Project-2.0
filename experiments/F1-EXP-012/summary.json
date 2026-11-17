@@ -1,0 +1,27 @@
+{
+  "experiment": "F1-EXP-012",
+  "phase": "F1-DIAG-2",
+  "status": "analysis_complete",
+  "read_only": true,
+  "audio_generated": false,
+  "sample_count": 8,
+  "pairs": [
+    "平凡之路",
+    "我们的歌",
+    "雅俗共赏",
+    "因为刚好遇见你"
+  ],
+  "dimension_verdict": {
+    "时域": false,
+    "相位": false,
+    "共振峰": false
+  },
+  "discriminating_metrics": [],
+  "report": "RESULT.md",
+  "full_data": "qa/analysis.json",
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  }
+}

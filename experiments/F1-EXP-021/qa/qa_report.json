@@ -1,0 +1,137 @@
+{
+  "experiment": "F1-EXP-021",
+  "phase": "F1-P7",
+  "status": "pending_jade",
+  "question": "元音起音瞬态增强能否增加自然发声力度感",
+  "method": "浊音起音定位 + 短时平滑增益包络（两端为0，最长50ms，不越过下一��音）",
+  "onset_detection": {
+    "frames": 2624,
+    "voiced_fraction": 0.752,
+    "onsets_detected": 27,
+    "onsets_per_second": 2.05,
+    "rejected_no_rise": 1921,
+    "rejected_no_confirm": 23,
+    "gate_db": -48.3,
+    "onset_interval_median_s": 0.372,
+    "onset_interval_p10_s": 0.09,
+    "coverage_seconds": 1.35
+  },
+  "onset_rules": {
+    "voiced": "r ≥ 0.45（排除清辅音与噪声）",
+    "energy": "≥ 最响帧 −35.0dB",
+    "rise_or_prev_clear": "相对前 15ms 跃升 ≥6.0dB，或前一帧为清音",
+    "confirm": "其后 20ms 保持浊音（排除爆破/咔哒）",
+    "min_gap": "相邻起音至少间隔 12ms"
+  },
+  "envelope": {
+    "ramp_in_s": 0.006,
+    "hold_s": 0.008,
+    "ramp_out_s": 0.036,
+    "max_len_s": 0.05,
+    "overlap_rule": "多窗口重叠取 max，不叠加"
+  },
+  "baseline": {
+    "id": "EXP-020 S45",
+    "sha256": "ce7281324af8dc84b0e35e119d53ca492ed68c2d0a73923080830bd887b9865c"
+  },
+  "target_lufs": -20.479999999999997,
+  "exports": [
+    {
+      "tag": "original",
+      "file": "experiments/F1-EXP-021/listening/audio/original.wav",
+      "lufs": -20.46,
+      "true_peak_dbtp": -7.65,
+      "sha256": "8525e9947c0a4bf0d27096aca5bdb6f65029bac1453197dca64199143fdcc095"
+    },
+    {
+      "tag": "baseline",
+      "file": "experiments/F1-EXP-021/listening/audio/baseline.wav",
+      "lufs": -20.48,
+      "true_peak_dbtp": -3.71,
+      "sha256": "301d52dceb3f1f43c0a8ccb742b1a186d0a6e52b1db447e3d154d861d99923da"
+    }
+  ],
+  "versions": [
+    {
+      "id": "T15",
+      "target_peak_db": 1.5,
+      "onset_region_db": 0.92,
+      "onset_region_p90_db": 1.35,
+      "onset_peakwin_db": 1.15,
+      "onset_peakwin_p10_db": 0.62,
+      "sustain_region_db": 0.0,
+      "n_onset_windows": 94,
+      "n_onset_peakwin": 71,
+      "n_sustain_windows": 898,
+      "envelope_peak_db": 1.5,
+      "boosted_seconds": 1.35,
+      "pitch_hz": 175.84,
+      "pitch_base_hz": 175.84,
+      "peak_dbfs": -3.57,
+      "crest_db": 16.83,
+      "frames": 630784,
+      "clipped": 0,
+      "raw_lufs": -20.3,
+      "raw_true_peak_dbtp": -3.57,
+      "raw_file": "experiments/F1-EXP-021/outputs/processed_raw/T15.wav",
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": -0.18,
+        "lufs": -20.47,
+        "true_peak_dbtp": -3.75,
+        "sha256": "854cf1f09ec419c904ed2d714ccce8005e50c60c1152cdfc36195163a5f55320"
+      }
+    },
+    {
+      "id": "T30",
+      "target_peak_db": 3.0,
+      "onset_region_db": 1.88,
+      "onset_region_p90_db": 2.71,
+      "onset_peakwin_db": 2.32,
+      "onset_peakwin_p10_db": 1.33,
+      "sustain_region_db": 0.0,
+      "n_onset_windows": 94,
+      "n_onset_peakwin": 71,
+      "n_sustain_windows": 898,
+      "envelope_peak_db": 3.0,
+      "boosted_seconds": 1.35,
+      "pitch_hz": 175.68,
+      "pitch_base_hz": 175.84,
+      "peak_dbfs": -2.96,
+      "crest_db": 17.37,
+      "frames": 630784,
+      "clipped": 0,
+      "raw_lufs": -20.24,
+      "raw_true_peak_dbtp": -2.96,
+      "raw_file": "experiments/F1-EXP-021/outputs/processed_raw/T30.wav",
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": -0.24,
+        "lufs": -20.48,
+        "true_peak_dbtp": -3.2,
+        "sha256": "812a3d7fee1323aa50775421715d45007c6b0cbf5a47f364b8d64c3e5a31cbe9"
+      }
+    }
+  ],
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "no_other_modules": "只做起音增益；未做全局扩展、F1 带宽、F0 修改",
+  "stop_condition": "两档均仅表现为音量变化/声头突兀/无感 → 停止起音方向，不加量",
+  "limitations": [
+    "起音检测基于自相关周期性，气声很重的起音可能被误排除",
+    "20ms 窗口在快速咬字处可能跨越音节边界（已用 MIN_GAP 与 max 规则限制）",
+    "自实现机制未与外部工具校验；Agent 未听音"
+  ]
+}

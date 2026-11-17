@@ -1,0 +1,187 @@
+{
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_normal.wav",
+  "source_sha256": "086558fbe53b4e087bf10423acaf198cb1f4b2ba8f22ee28914eb13a5cfa8b15",
+  "source_annotation": {
+    "start_seconds": 5.74,
+    "end_seconds": 6.29,
+    "user_words": "就是一个简单音乐中间的一个正常的停顿",
+    "scope": "one approximate passage only; not a frame-by-frame segmentation or other samples"
+  },
+  "method": "Original versus in-memory zeroing as counterfactual diagnostic; no audio or other source modified.",
+  "baseline": {
+    "gate_dbfs": -46.01238012313843,
+    "dynamic_db": 23.262416505813597,
+    "active_seconds": 16.11,
+    "low_level_seconds": 1.03,
+    "nearby_active": [
+      {
+        "start_seconds": 0.87,
+        "end_seconds": 5.75
+      },
+      {
+        "start_seconds": 6.28,
+        "end_seconds": 11.27
+      }
+    ],
+    "nearby_unknown": [
+      {
+        "start_seconds": 5.74,
+        "end_seconds": 6.29
+      }
+    ],
+    "decision": {
+      "schema_version": "f1.decision.v0",
+      "rules_version": "f1.rules.v0.2",
+      "mode": "process",
+      "confidence": "heuristic_candidate",
+      "compressor": {
+        "enabled": true,
+        "reason": [
+          "enabled: met",
+          "dynamic_range: met",
+          "active_duration: met",
+          "sustained_loud_event: met",
+          "unclipped_input: met"
+        ],
+        "threshold_db": -11.491887497922535,
+        "ratio": 1.615744990348816,
+        "attack_ms": 25.0,
+        "release_ms": 180.0,
+        "predicted_static_peak_reduction_db": 4.0
+      },
+      "eq": {
+        "enabled": false,
+        "status": "unknown",
+        "reason": "Spectral energy alone cannot distinguish a defect from the singer's timbre; calibration required."
+      },
+      "deesser": {
+        "enabled": false,
+        "status": "unknown",
+        "reason": "Candidate locator only; selective detector/executor not validated in V0."
+      },
+      "listening_acceptance": "pending_jade",
+      "interpretation": "Dynamic variation may be intentional; triggering is not evidence of a perceptual defect."
+    },
+    "uncertainty_status": "heuristic_unvalidated"
+  },
+  "zero_full_approximate_interval": {
+    "gate_dbfs": -46.01238012313843,
+    "dynamic_db": 23.251587390899658,
+    "active_seconds": 16.1,
+    "low_level_seconds": 0.5,
+    "nearby_active": [
+      {
+        "start_seconds": 0.87,
+        "end_seconds": 5.74
+      },
+      {
+        "start_seconds": 6.28,
+        "end_seconds": 11.27
+      }
+    ],
+    "nearby_unknown": [
+      {
+        "start_seconds": 5.73,
+        "end_seconds": 5.75
+      }
+    ],
+    "decision": {
+      "schema_version": "f1.decision.v0",
+      "rules_version": "f1.rules.v0.2",
+      "mode": "process",
+      "confidence": "heuristic_candidate",
+      "compressor": {
+        "enabled": true,
+        "reason": [
+          "enabled: met",
+          "dynamic_range: met",
+          "active_duration: met",
+          "sustained_loud_event: met",
+          "unclipped_input: met"
+        ],
+        "threshold_db": -11.498749659633146,
+        "ratio": 1.6150952434539796,
+        "attack_ms": 25.0,
+        "release_ms": 180.0,
+        "predicted_static_peak_reduction_db": 3.9999999999999996
+      },
+      "eq": {
+        "enabled": false,
+        "status": "unknown",
+        "reason": "Spectral energy alone cannot distinguish a defect from the singer's timbre; calibration required."
+      },
+      "deesser": {
+        "enabled": false,
+        "status": "unknown",
+        "reason": "Candidate locator only; selective detector/executor not validated in V0."
+      },
+      "listening_acceptance": "pending_jade",
+      "interpretation": "Dynamic variation may be intentional; triggering is not evidence of a perceptual defect."
+    },
+    "uncertainty_status": "heuristic_unvalidated"
+  },
+  "zero_inner_interval": {
+    "gate_dbfs": -46.01238012313843,
+    "dynamic_db": 23.262416505813597,
+    "active_seconds": 16.11,
+    "low_level_seconds": 0.53,
+    "nearby_active": [
+      {
+        "start_seconds": 0.87,
+        "end_seconds": 5.75
+      },
+      {
+        "start_seconds": 6.28,
+        "end_seconds": 11.27
+      }
+    ],
+    "nearby_unknown": [
+      {
+        "start_seconds": 5.74,
+        "end_seconds": 5.77
+      },
+      {
+        "start_seconds": 6.26,
+        "end_seconds": 6.29
+      }
+    ],
+    "decision": {
+      "schema_version": "f1.decision.v0",
+      "rules_version": "f1.rules.v0.2",
+      "mode": "process",
+      "confidence": "heuristic_candidate",
+      "compressor": {
+        "enabled": true,
+        "reason": [
+          "enabled: met",
+          "dynamic_range: met",
+          "active_duration: met",
+          "sustained_loud_event: met",
+          "unclipped_input: met"
+        ],
+        "threshold_db": -11.491887497922535,
+        "ratio": 1.615744990348816,
+        "attack_ms": 25.0,
+        "release_ms": 180.0,
+        "predicted_static_peak_reduction_db": 4.0
+      },
+      "eq": {
+        "enabled": false,
+        "status": "unknown",
+        "reason": "Spectral energy alone cannot distinguish a defect from the singer's timbre; calibration required."
+      },
+      "deesser": {
+        "enabled": false,
+        "status": "unknown",
+        "reason": "Candidate locator only; selective detector/executor not validated in V0."
+      },
+      "listening_acceptance": "pending_jade",
+      "interpretation": "Dynamic variation may be intentional; triggering is not evidence of a perceptual defect."
+    },
+    "uncertainty_status": "heuristic_unvalidated"
+  },
+  "dynamic_delta_full_db": -0.010829114913939009,
+  "dynamic_delta_inner_db": 0.0,
+  "analyzer_code_sha256": "3716da4dda49f743c7fefe015e49e110a8d5ed1f4c1823d6038fcd0a1fd80ca4",
+  "decision_code_sha256": "403ab7ee6f7fc021b051763edebfa54f5b4af54b13f39d8fff8767bbc24ee14a"
+}

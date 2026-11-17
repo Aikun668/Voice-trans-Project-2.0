@@ -1,0 +1,35 @@
+[
+ {
+  "t0": 2.35,
+  "t1": 2.49,
+  "frames": 26,
+  "praat_hz": 145.0,
+  "praat": 145.0,
+  "pyin": 290.0,
+  "comb_low_f": 0.86,
+  "comb_high_f": 2.15,
+  "winner": "pYIN correct (Praat octave error)"
+ },
+ {
+  "t0": 3.04,
+  "t1": 3.18,
+  "frames": 25,
+  "praat_hz": 156.0,
+  "praat": 156.0,
+  "pyin": 314.0,
+  "comb_low_f": 1.44,
+  "comb_high_f": 2.43,
+  "winner": "pYIN correct (Praat octave error)"
+ },
+ {
+  "t0": 18.51,
+  "t1": 18.66,
+  "frames": 27,
+  "praat_hz": 157.0,
+  "praat": 157.0,
+  "pyin": 316.0,
+  "comb_low_f": 0.66,
+  "comb_high_f": 1.73,
+  "winner": "pYIN correct (Praat octave error)"
+ }
+]

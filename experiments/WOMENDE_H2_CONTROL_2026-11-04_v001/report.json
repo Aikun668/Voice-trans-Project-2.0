@@ -1,0 +1,168 @@
+{
+  "technical_pass": true,
+  "listening": "pending_jade",
+  "source_hashes": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\我们的歌-薄音版.wav": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\WOMENDE_FOCUS_2026-11-04_v006\\audio\\baseline.wav": "dab42f74cbc5d0a0081e8aa44ba8dd36ff9a3e08c3159496aeb86a873e8d6ffa",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\WOMENDE_FOCUS_2026-11-03_v001\\work\\thin_keyup.wav": "e4073a16b319701624b4c30c0b66bf82942ab55ec91e0f3f5f866fdb623e7ab1",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\WOMENDE_VIBRATION_LIMIT_2026-11-05_v001\\audio\\strong.wav": "ad071f69d6335bcf2ceea9434953da2a83109e641b4e092868db61d0671e65d1"
+  },
+  "source_hashes_unchanged": true,
+  "smoothing_sigma_ms": 80,
+  "h2_gain_peak_db": {
+    "medium": 2.0,
+    "strong": 4.0
+  },
+  "h2_width_sigma_f0": 0.12,
+  "below_250_protection": "0 dB below 250 Hz, transition 250–285 Hz",
+  "original_slope_db_oct": 7.992,
+  "below_250_gain_db": 0,
+  "master": {
+    "medium": {
+      "path": "v001.master",
+      "internal_ceil_dbtp": -1.3,
+      "master_gain_db": 12.7,
+      "internal_lufs": -13.1,
+      "internal_true_peak_dbtp": -1.3
+    },
+    "strong": {
+      "path": "v001.master",
+      "internal_ceil_dbtp": -1.3,
+      "master_gain_db": 12.3,
+      "internal_lufs": -13.1,
+      "internal_true_peak_dbtp": -1.3
+    }
+  },
+  "versions": {
+    "anchor": {
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 1.0,
+        "median_cents": 0.0,
+        "cents_p05": -0.13,
+        "cents_p95": 0.34,
+        "p95_abs_cents": 0.53,
+        "frames_both": 997,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 0.53,
+        "frames_abs_error_over_20_cents": 0.004
+      },
+      "pitch_vs_b": null,
+      "decay_lift_db": 1.43,
+      "floor_relative_db": -32.83,
+      "sibilance_p99_db": -2.17,
+      "clipped_samples": 0,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "finite": true,
+      "sha256": "ed7c1d12bbe0db6c2646d312942a2932a18951806856aae878cdf2d7e53f3c1c",
+      "failures": []
+    },
+    "previous": {
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.996,
+        "median_cents": 310.5,
+        "cents_p05": 288.86,
+        "cents_p95": 325.7,
+        "p95_abs_cents": 325.7,
+        "frames_both": 993,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 29.87,
+        "frames_abs_error_over_20_cents": 0.0846
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 0.9905,
+        "median_cents": -0.06,
+        "cents_p05": -2.95,
+        "cents_p95": 3.27,
+        "p95_abs_cents": 5.63,
+        "frames_both": 1039,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 5.63,
+        "frames_abs_error_over_20_cents": 0.0106
+      },
+      "decay_lift_db": 1.75,
+      "floor_relative_db": -32.39,
+      "sibilance_p99_db": -1.99,
+      "clipped_samples": 0,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "finite": true,
+      "sha256": "ad071f69d6335bcf2ceea9434953da2a83109e641b4e092868db61d0671e65d1",
+      "failures": []
+    },
+    "medium": {
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.996,
+        "median_cents": 310.45,
+        "cents_p05": 289.19,
+        "cents_p95": 324.64,
+        "p95_abs_cents": 324.64,
+        "frames_both": 993,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 31.04,
+        "frames_abs_error_over_20_cents": 0.0816
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 0.9886,
+        "median_cents": -0.15,
+        "cents_p05": -3.28,
+        "cents_p95": 3.63,
+        "p95_abs_cents": 5.98,
+        "frames_both": 1037,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 5.98,
+        "frames_abs_error_over_20_cents": 0.0106
+      },
+      "decay_lift_db": 1.49,
+      "floor_relative_db": -32.65,
+      "sibilance_p99_db": -1.98,
+      "clipped_samples": 0,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "finite": true,
+      "sha256": "48ea3085584ee6058ca16203146db646f9b190f966ef718a96648e48fab773ae",
+      "failures": []
+    },
+    "strong": {
+      "lufs": -13.1,
+      "true_peak_dbtp": -1.3,
+      "pitch_vs_source": {
+        "voiced_overlap": 0.996,
+        "median_cents": 310.26,
+        "cents_p05": 287.93,
+        "cents_p95": 323.95,
+        "p95_abs_cents": 323.95,
+        "frames_both": 993,
+        "frames_ref_voiced": 997,
+        "abs_error_p95_cents": 32.04,
+        "frames_abs_error_over_20_cents": 0.0785
+      },
+      "pitch_vs_b": {
+        "voiced_overlap": 0.9886,
+        "median_cents": -0.19,
+        "cents_p05": -4.13,
+        "cents_p95": 3.53,
+        "p95_abs_cents": 7.11,
+        "frames_both": 1037,
+        "frames_ref_voiced": 1049,
+        "abs_error_p95_cents": 7.11,
+        "frames_abs_error_over_20_cents": 0.0125
+      },
+      "decay_lift_db": 1.09,
+      "floor_relative_db": -33.11,
+      "sibilance_p99_db": -2.24,
+      "clipped_samples": 0,
+      "samples": 669696,
+      "sample_rate": 48000,
+      "finite": true,
+      "sha256": "bb3c28636aedef6b45f385b98e6506c0f35f43801deef5ca3d369b208de4e036",
+      "failures": []
+    }
+  }
+}

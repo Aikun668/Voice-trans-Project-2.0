@@ -1,0 +1,71 @@
+{
+  "baseline": "F1_neuralsvb_v002",
+  "audio_recomputed": false,
+  "active_route": "full NeuralSVB a2p + original vocoder; v002 frozen outputs",
+  "paused_route": "F1_shige_neural_residual_v001",
+  "clips": [
+    {
+      "id": "molihua_normal",
+      "label": "茉莉花",
+      "files": {
+        "original": {
+          "file": "audio/molihua_normal__original.wav",
+          "sha256": "931ac84f0e8fbe47c15f75144a8f762c249bd0dcf28040c814524562734fefe6",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\molihua_normal__original.wav"
+        },
+        "a2p": {
+          "file": "audio/molihua_normal__a2p.wav",
+          "sha256": "1e3de6c9394d2836dd72de91a948735bbfdcb728ecb9f1ac4b8c8846e8808ab4",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\molihua_normal__a2p.wav"
+        },
+        "vocoder_only": {
+          "file": "audio/molihua_normal__vocoder_only.wav",
+          "sha256": "4c1882cd7e0f425d143a88c9d6a34433ea205959b7d3464d3fc3cfc4bffce5c5",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\molihua_normal__vocoder_only.wav"
+        }
+      }
+    },
+    {
+      "id": "shige_normal",
+      "label": "SHIGE",
+      "files": {
+        "original": {
+          "file": "audio/shige_normal__original.wav",
+          "sha256": "3862564c9aa15b30f14eef80e004533ce143ddb7241c89a29fb2ba945b49dfb2",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\shige_normal__original.wav"
+        },
+        "a2p": {
+          "file": "audio/shige_normal__a2p.wav",
+          "sha256": "6e0a9793f586fa10d0bbaf7aa7c2c3c5c2a8f53fe81c3db873546bef15386ccf",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\shige_normal__a2p.wav"
+        },
+        "vocoder_only": {
+          "file": "audio/shige_normal__vocoder_only.wav",
+          "sha256": "228274100d1c2272e940baa479864135766e2f2fc5f8a702e911227ccade7fe4",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\shige_normal__vocoder_only.wav"
+        }
+      }
+    },
+    {
+      "id": "zuixuan_normal",
+      "label": "最炫民族风",
+      "files": {
+        "original": {
+          "file": "audio/zuixuan_normal__original.wav",
+          "sha256": "00382d75b111c61a1bf1b8bfee99e0c1d11f103e8e3947c134b743ddcf2cf2da",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\zuixuan_normal__original.wav"
+        },
+        "a2p": {
+          "file": "audio/zuixuan_normal__a2p.wav",
+          "sha256": "9db87182138070d04fad12df43c47f60a439ef694e77d0278901846688194daf",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\zuixuan_normal__a2p.wav"
+        },
+        "vocoder_only": {
+          "file": "audio/zuixuan_normal__vocoder_only.wav",
+          "sha256": "7531e4664e5cca15163d614b4ea7f83a25d23bc832825a9fc5a855db59477748",
+          "original_path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_v002\\candidate\\zuixuan_normal__vocoder_only.wav"
+        }
+      }
+    }
+  ]
+}

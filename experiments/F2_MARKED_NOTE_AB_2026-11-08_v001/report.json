@@ -1,0 +1,128 @@
+{
+  "source": "莫问归期02-对照微微跑调",
+  "mark_source": "F2_R1_MARK_2026-11-07_v001/jade_fragments.csv, #17 in the original export",
+  "marked_phrase": "沉默有时",
+  "marked_seconds": [
+    0.0,
+    2.177
+  ],
+  "edited_word": "时",
+  "alignment": "Qwen3-ForcedAligner-0.6B + stable voiced windows; use complete sustained syllable",
+  "aligned_word_seconds": {
+    "source": [
+      1.76,
+      2.4
+    ],
+    "reference": [
+      135.16,
+      135.56
+    ]
+  },
+  "edited_source_seconds": [
+    1.94,
+    2.41
+  ],
+  "preview_source_seconds": [
+    0.5,
+    2.5
+  ],
+  "reference_core_seconds": [
+    135.32,
+    135.49
+  ],
+  "source_core_seconds": [
+    2.05,
+    2.31
+  ],
+  "key_anchor_windows": [
+    [
+      [
+        9.16,
+        9.4
+      ],
+      [
+        142.73,
+        142.98
+      ]
+    ],
+    [
+      [
+        9.64,
+        9.9
+      ],
+      [
+        143.17,
+        143.4
+      ]
+    ],
+    [
+      [
+        11.85,
+        12.03
+      ],
+      [
+        145.42,
+        145.54
+      ]
+    ],
+    [
+      [
+        12.39,
+        12.66
+      ],
+      [
+        145.82,
+        146.0
+      ]
+    ]
+  ],
+  "key_anchor_offsets_cents": [
+    457.88031329059413,
+    460.0835083288807,
+    468.06086330175503,
+    478.4651462241345
+  ],
+  "target_shift_cents": -287.4,
+  "measured_shift_cents": -287.356,
+  "voiced_overlap": 1.0,
+  "compare_split_seconds": 2.0,
+  "preview_edge_fade_ms": 8,
+  "levels": {
+    "original.wav": {
+      "samples": 96000,
+      "sample_rate": 48000,
+      "lufs": -15.9,
+      "dbtp": -4.4,
+      "sha256": "4af1d80d0a85c55fba469a8f22e960efa4cd60e93f70abb0abc3ef69e4d434f7"
+    },
+    "corrected.wav": {
+      "samples": 96000,
+      "sample_rate": 48000,
+      "lufs": -16.0,
+      "dbtp": -4.4,
+      "sha256": "66179a6179dc18ee52c30c2a4bece3c80558245cf1cf781ea2d4833402cf6791"
+    },
+    "compare.wav": {
+      "samples": 192000,
+      "sample_rate": 48000,
+      "lufs": -16.1,
+      "dbtp": -4.4,
+      "sha256": "16d09e562bdab186cafeaf56c24ac23b50c49ba314f3bf8a7e7e93daa067c9e6"
+    }
+  },
+  "source_hashes": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav": "14e01ae944d173ce96fbd2ee58a1e14bb8b76c19e99bb55f1c548bfe886849ca",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav": "ae69a7a4c21acd4ff405917b7ba1214bb24976cf9fdff8d9163a5dd9f905f1b5"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "exact_original_then_corrected": true,
+    "outside_splice_identical": true,
+    "loudness_difference_at_most_half_lu": true,
+    "true_peak_at_most_minus_1_dbtp": true,
+    "measured_shift_within_5_cents": true,
+    "voiced_overlap_at_least_0_95": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

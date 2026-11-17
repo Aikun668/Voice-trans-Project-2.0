@@ -1,0 +1,36 @@
+{
+  "experiment": "F1-EXP-023",
+  "phase": "F1-P9",
+  "status": "pending_jade",
+  "target": "A_self_01",
+  "baseline": "EXP-020 S45",
+  "gmax_db": {
+    "U1": 6.0,
+    "U2": 20.0
+  },
+  "ratio_up": {
+    "U1": 0.35,
+    "U2": 1.0
+  },
+  "ref_level_db": -17.84,
+  "boosted_fraction_ge1db": 0.246,
+  "weak_region_gain_db": {
+    "U1": 1.25,
+    "U2": 3.63
+  },
+  "strong_region_gain_db": {
+    "U1": 0.03,
+    "U2": 0.09
+  },
+  "deliverable": [
+    "U1",
+    "U2"
+  ],
+  "hard_failed": [],
+  "target_lufs": -19.97,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "next_rule": "有正向改善则缩小跨度细化；破坏起伏/抬起气声则停止本方向"
+}

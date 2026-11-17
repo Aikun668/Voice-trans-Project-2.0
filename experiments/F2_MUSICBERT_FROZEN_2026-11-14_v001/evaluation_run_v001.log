@@ -1,0 +1,47 @@
+checked ifyoufadedremix 0a5b5d72e7a3e28a1a15 cases_so_far 12
+checked ifyoufadedremix 12a4046b361265c9259d cases_so_far 16
+checked sofaraway 0ed8cd135482df7e0bf3 cases_so_far 20
+checked sofaraway 23232d3a2aa9a7e0a26b cases_so_far 24
+checked sofaraway 34fa2f53d30970ac4ab3 cases_so_far 32
+checked somethingjustlikethis 1f4940108663da1f51c2 cases_so_far 40
+checked somethingjustlikethis 3a3042aa52055245eca7 cases_so_far 44
+checked somethingjustlikethis 4e56fa34241ae52924fa cases_so_far 48
+checked someonelikeyou 10a559afe6c85105968a cases_so_far 60
+checked someonelikeyou 178af27bb70e6eca7ec3 cases_so_far 64
+checked shapeofyou 30a036051cf3e4ae5857 cases_so_far 72
+checked shapeofyou 5d702b17a52321a960d1 cases_so_far 76
+checked shapeofyou beaefefdf2cd78781931 cases_so_far 80
+checked allofme 1269e0480425aa65f1c4 cases_so_far 88
+checked allofme 28687ecb8fdd5c8ca93d cases_so_far 96
+checked madhatter 2f9c6f01ac9d4dd458eb cases_so_far 104
+checked madhatter 32bf237968d219950f2f cases_so_far 112
+checked memory 172ba36bb52225c9aff8 cases_so_far 128
+checked grenade 0c1869bf31565956b05a cases_so_far 140
+checked grenade 19c1cfb387c08e198e64 cases_so_far 144
+checked thegloryoflove 19f9fbce159e30201edc cases_so_far 160
+checked iloveyou 0786e6fe9a0064715f05 cases_so_far 168
+checked iloveyou 23b4c906a5c1e85ac9b7 cases_so_far 176
+checked believer 22c775995c4bf4d71724 cases_so_far 192
+{
+  "seed": 20261114,
+  "songs": 12,
+  "professional_contexts": 24,
+  "normal_notes": 48,
+  "controlled_corruptions": 192,
+  "known_inverse_recovery_rate": 0.171875,
+  "nearest_semitone_rule_recovery_rate": 0.0,
+  "shuffled_context_recovery_rate": 0.078125,
+  "context_lift_percentage_points": 9.375,
+  "normal_control_modification_over_50_fraction": 0.16666666666666666,
+  "accepted_corruption_fraction": 0.2916666666666667,
+  "wrong_accepted_fraction": 0.11979166666666667,
+  "raw_local_best_recovery_rate": 0.3385416666666667,
+  "context_signal_gate": false,
+  "normal_preservation_gate": false,
+  "training_steps": 0,
+  "parameter_digest_after": "f2703e9cdecf0f32037383483192d0aab1678f694f095aeff7de2c8e10d9b954",
+  "parameter_digest_before": "f2703e9cdecf0f32037383483192d0aab1678f694f095aeff7de2c8e10d9b954",
+  "label_limit": "Only recovery of known injected shifts; not accuracy on natural human errors.",
+  "pretraining_overlap_unknown": true,
+  "thresholds_changed_after_results": false
+}

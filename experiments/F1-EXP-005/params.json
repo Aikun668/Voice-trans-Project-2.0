@@ -1,0 +1,38 @@
+{
+  "experiment": "F1-EXP-005",
+  "phase": "F1-P3A-2",
+  "test": [
+    "A01",
+    "A05"
+  ],
+  "sealed": [
+    "A02",
+    "A03",
+    "A04",
+    "A06",
+    "B01",
+    "B02",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "algorithm": "soft tanh: tanh(drive*x)/drive; 4x oversampling; 20kHz lowpass before downsample; wet=0.7",
+  "schemes": {
+    "Light": {
+      "drive": 3.0,
+      "wet": 0.7
+    },
+    "Medium": {
+      "drive": 6.0,
+      "wet": 0.7
+    },
+    "Strong": {
+      "drive": 12.0,
+      "wet": 0.7
+    }
+  },
+  "target_lufs": -18.549999999999997,
+  "blind_seed": 20261031,
+  "no_stacking": true
+}

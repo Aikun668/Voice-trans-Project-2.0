@@ -1,0 +1,46 @@
+{
+  "segments": [
+    {
+      "segment": "莫问归期01-轻度跑调",
+      "key_cents": 560.7,
+      "ref_interval_s": [
+        30.78,
+        43.12
+      ],
+      "notes": 19,
+      "fixed": 4,
+      "samples": 629376,
+      "samplerate": 48000,
+      "max_sample_diff_outside_splice": 0.0,
+      "corrected_LUFS": -17.0,
+      "corrected_dbtp": -3.0,
+      "anchor_LUFS": -16.9,
+      "anchor_dbtp": -3.0,
+      "voicing_overlap_corrected_vs_orig": 0.998,
+      "nan_in_output": false,
+      "peak_corrected": 0.7079
+    },
+    {
+      "segment": "莫问归期02-轻度跑调",
+      "key_cents": 129.3,
+      "ref_interval_s": [
+        133.44,
+        146.16
+      ],
+      "notes": 23,
+      "fixed": 9,
+      "samples": 620544,
+      "samplerate": 48000,
+      "max_sample_diff_outside_splice": 0.0,
+      "corrected_LUFS": -17.5,
+      "corrected_dbtp": -3.0,
+      "anchor_LUFS": -17.4,
+      "anchor_dbtp": -3.0,
+      "voicing_overlap_corrected_vs_orig": 0.998,
+      "nan_in_output": false,
+      "peak_corrected": 0.7079
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "engineering_pass": true
+}

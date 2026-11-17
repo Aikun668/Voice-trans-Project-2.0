@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-14",
+  "url": "http://127.0.0.1:62512/index.html",
+  "reason": "Approved local phrase ranges were extrapolated by a median offset into an unapproved full-duration reference crop.",
+  "before": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\delivery_v001\\index.html": "232af0fa2a9c18fe3bede354d2964af1de6e3c86902ca4591d1c2c938891c01a",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\delivery_v001\\delivery.json": "55a0ea934c9f4e9896df636058fb9b01949dbdac4278ba9013d5b11afe724027",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\deliver.py": "598317cf5638eb649ef8fda352fde9b2c836a3fb6ee745b4c0b1867cf3560d1c",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\REPORT.md": "8b3c4879743986c9782dd64f095d2284a2892a38ac939a940c7452665a9b35e3",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\artifact_hashes.json": "7f72e2310f2413c79a55ed6fd412fee3ff1f399b7fb8ba33bfceb4b72eec3a3e",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\verification.json": "a4f56aa83125bbe45ce26152b9eff8d4c53488aff463262ab518ab19dc2cf0f8"
+  },
+  "after": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\delivery_v001\\index.html": "fb62e02eaaa7d7b329f2489189f970fddc085f2e4e7f9c374ffc5c29a0d5fcdb",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\delivery_v001\\delivery.json": "55a0ea934c9f4e9896df636058fb9b01949dbdac4278ba9013d5b11afe724027",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\deliver.py": "e17017fb1e49b3e58bef9bc0c19712e7ea1637211bc914dba9c1eb4fdaf7d496",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\REPORT.md": "48370500b7a44fd81942890c535209cf6f46f1c6b645bd7228d2879dfbeeb840",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\artifact_hashes.json": "7f72e2310f2413c79a55ed6fd412fee3ff1f399b7fb8ba33bfceb4b72eec3a3e",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\verification.json": "a4f56aa83125bbe45ce26152b9eff8d4c53488aff463262ab518ab19dc2cf0f8"
+  },
+  "protected_hashes_unchanged": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\delivery_v001\\audio\\original.wav": "e07a75098886e813402dc4ab18a75e3d1489b6ebbae8778cf4116a4fac63d4f3",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\delivery_v001\\audio\\model.wav": "3112103da52b61cb06ca42661e374112ba11a89e9c97fcc56e2ca93ce3a33c39",
+    "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav": "e96ab53fd88a08773490346d486e8cae17dfbc5d380750f3a62cf6876b1128dc",
+    "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\confirmed_pairs.json": "3f6add2cc689e207c8b4f549fabc1c734124deded9f7017b87ff06684e810ba8"
+  },
+  "quarantined_audio": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\delivery_v001\\_superseded_2026-11-14\\reference_content_mismatch.wav",
+  "quarantined_sha256": "ee6a1e62936b38effa5f673901f37703862167cbfce39b6c46e519b9d68d6d81",
+  "original_reference_url_removed": true,
+  "remaining_versions": [
+    "original",
+    "model"
+  ],
+  "historical_manifest_and_verification": "Preserved as pre-withdrawal snapshots; superseded for changed page/builder/report."
+}

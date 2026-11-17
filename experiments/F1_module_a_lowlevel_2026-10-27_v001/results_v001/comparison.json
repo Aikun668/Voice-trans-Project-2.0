@@ -1,0 +1,385 @@
+{
+  "scope": "A only; no processed audio or subjective judgment",
+  "tolerance_db": 0.1,
+  "source_integrity": [
+    {
+      "id": "person_normal",
+      "unchanged": true
+    },
+    {
+      "id": "person_off_pitch",
+      "unchanged": true
+    },
+    {
+      "id": "network_normal",
+      "unchanged": true
+    }
+  ],
+  "old_code_sha256": "1a75cf1243c5b5172f51b8fd274bb64263161cdbe95bda7498afec0e9a04428f",
+  "new_code_sha256": "3716da4dda49f743c7fefe015e49e110a8d5ed1f4c1823d6038fcd0a1fd80ca4",
+  "recordings": [
+    {
+      "id": "person_normal",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_normal.wav",
+      "sha256": "086558fbe53b4e087bf10423acaf198cb1f4b2ba8f22ee28914eb13a5cfa8b15",
+      "old_dynamic_db": 24.54091243743897,
+      "new_dynamic_db": 23.262416505813597,
+      "old_gate_dbfs": -48.15593223571778,
+      "new_gate_dbfs": -46.01238012313843,
+      "low_level_unknown_seconds": 1.03,
+      "reference_warnings": [],
+      "variations": [
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -65,
+          "below_new_gate_by_db": 18.987619876861572,
+          "old_gate_delta_db": -0.07352123260498189,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.017561149597163705,
+          "new_dynamic_delta_db": 0.0,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 3.04,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -55,
+          "below_new_gate_by_db": 8.987619876861572,
+          "old_gate_delta_db": -0.07352123260498189,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.017561149597163705,
+          "new_dynamic_delta_db": 0.0,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 3.04,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -45,
+          "below_new_gate_by_db": -1.0123801231384277,
+          "old_gate_delta_db": -0.07352123260498189,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 12.12183609008789,
+          "new_dynamic_delta_db": 13.270871496200563,
+          "dynamic_within_diagnostic_tolerance": false,
+          "unknown_seconds": 1.07,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -65,
+          "below_new_gate_by_db": 18.987619876861572,
+          "old_gate_delta_db": -0.38191771507262473,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.5629446029663043,
+          "new_dynamic_delta_db": 0.0,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 11.04,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -55,
+          "below_new_gate_by_db": 8.987619876861572,
+          "old_gate_delta_db": -0.38191771507262473,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.5629446029663043,
+          "new_dynamic_delta_db": 0.0,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 11.04,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -45,
+          "below_new_gate_by_db": -1.0123801231384277,
+          "old_gate_delta_db": -0.38191771507262473,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 12.069167232513422,
+          "new_dynamic_delta_db": 13.349948835372928,
+          "dynamic_within_diagnostic_tolerance": false,
+          "unknown_seconds": 1.07,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 1,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 5,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 10,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "gain",
+          "input_gain_db": -6,
+          "new_gate_shift_error_db": -4.76837158203125e-07,
+          "new_dynamic_delta_db": 3.814697286941282e-07
+        },
+        {
+          "kind": "gain",
+          "input_gain_db": -12,
+          "new_gate_shift_error_db": -4.76837158203125e-07,
+          "new_dynamic_delta_db": -4.2915344522498344e-07
+        }
+      ]
+    },
+    {
+      "id": "person_off_pitch",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_medium.wav",
+      "sha256": "4f6775a7738a76cee694d92ed8459b13cd1cb15dba2568fd8e79c1b1b749122e",
+      "old_dynamic_db": 21.91200089454651,
+      "new_dynamic_db": 21.736447858810426,
+      "old_gate_dbfs": -47.72269809246063,
+      "new_gate_dbfs": -45.652482986450195,
+      "low_level_unknown_seconds": 0.34,
+      "reference_warnings": [],
+      "variations": [
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -65,
+          "below_new_gate_by_db": 19.347517013549805,
+          "old_gate_delta_db": -0.07166574001312398,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 2.35,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -55,
+          "below_new_gate_by_db": 9.347517013549805,
+          "old_gate_delta_db": -0.07166574001312398,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.04031033515930105,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 2.34,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -45,
+          "below_new_gate_by_db": -0.6524829864501953,
+          "old_gate_delta_db": -0.07166574001312398,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 11.589711618423458,
+          "new_dynamic_delta_db": 11.20673394203185,
+          "dynamic_within_diagnostic_tolerance": false,
+          "unknown_seconds": 0.36,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -65,
+          "below_new_gate_by_db": 19.347517013549805,
+          "old_gate_delta_db": -0.26363513469696187,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.11035923957824068,
+          "new_dynamic_delta_db": 0.0,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 10.35,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -55,
+          "below_new_gate_by_db": 9.347517013549805,
+          "old_gate_delta_db": -0.26363513469696187,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.11035923957824068,
+          "new_dynamic_delta_db": 0.04031033515930105,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 10.34,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -45,
+          "below_new_gate_by_db": -0.6524829864501953,
+          "old_gate_delta_db": -0.26363513469696187,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 15.206376671791077,
+          "new_dynamic_delta_db": 15.379178476333617,
+          "dynamic_within_diagnostic_tolerance": false,
+          "unknown_seconds": 0.36,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 1,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 5,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 10,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "gain",
+          "input_gain_db": -6,
+          "new_gate_shift_error_db": 0.0,
+          "new_dynamic_delta_db": -5.722045948175492e-07
+        },
+        {
+          "kind": "gain",
+          "input_gain_db": -12,
+          "new_gate_shift_error_db": 0.0,
+          "new_dynamic_delta_db": -3.004074095258602e-06
+        }
+      ]
+    },
+    {
+      "id": "network_normal",
+      "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\web_singing\\gtsinger_alto_control\\告白气球_normal.wav",
+      "sha256": "961a715b14292591938047d0ad8448a7a10ff6cf3437f0cec44eb1539fc84216",
+      "old_dynamic_db": 21.48604812622071,
+      "new_dynamic_db": 21.06558647155761,
+      "old_gate_dbfs": -58.802067661285406,
+      "new_gate_dbfs": -54.6815881729126,
+      "low_level_unknown_seconds": 0.05,
+      "reference_warnings": [],
+      "variations": [
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -65,
+          "below_new_gate_by_db": 10.318411827087402,
+          "old_gate_delta_db": -0.5038567543029728,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 2.04,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -55,
+          "below_new_gate_by_db": 0.31841182708740234,
+          "old_gate_delta_db": -0.5038567543029728,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 14.261399841308574,
+          "new_dynamic_delta_db": 1.493581581115734,
+          "dynamic_within_diagnostic_tolerance": false,
+          "unknown_seconds": 1.9,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 1,
+          "noise_rms_dbfs": -45,
+          "below_new_gate_by_db": -9.681588172912598,
+          "old_gate_delta_db": -0.5038567543029728,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 4.313249206542952,
+          "new_dynamic_delta_db": 4.747483444213874,
+          "dynamic_within_diagnostic_tolerance": false,
+          "unknown_seconds": 0.05,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -65,
+          "below_new_gate_by_db": 10.318411827087402,
+          "old_gate_delta_db": -1.155064773559566,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0,
+          "dynamic_within_diagnostic_tolerance": true,
+          "unknown_seconds": 10.04,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -55,
+          "below_new_gate_by_db": 0.31841182708740234,
+          "old_gate_delta_db": -1.155064773559566,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 13.733166885375965,
+          "new_dynamic_delta_db": 8.205733108520523,
+          "dynamic_within_diagnostic_tolerance": false,
+          "unknown_seconds": 9.6,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "nonzero_pause",
+          "seconds_each_side": 5,
+          "noise_rms_dbfs": -45,
+          "below_new_gate_by_db": -9.681588172912598,
+          "old_gate_delta_db": -1.155064773559566,
+          "new_gate_delta_db": 0.0,
+          "old_dynamic_delta_db": 3.7565807342529247,
+          "new_dynamic_delta_db": 4.1763362884521555,
+          "dynamic_within_diagnostic_tolerance": false,
+          "unknown_seconds": 0.05,
+          "note": "Noise above/near gate may legitimately enter level statistics; no promise of noise separation."
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 1,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 5,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "digital_silence",
+          "seconds_each_side": 10,
+          "new_gate_delta_db": 0.0,
+          "new_dynamic_delta_db": 0.0
+        },
+        {
+          "kind": "gain",
+          "input_gain_db": -6,
+          "new_gate_shift_error_db": -9.5367431640625e-07,
+          "new_dynamic_delta_db": -1.1444091754242436e-06
+        },
+        {
+          "kind": "gain",
+          "input_gain_db": -12,
+          "new_gate_shift_error_db": 9.5367431640625e-07,
+          "new_dynamic_delta_db": 1.9073486399179274e-06
+        }
+      ]
+    }
+  ]
+}

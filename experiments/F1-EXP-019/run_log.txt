@@ -1,0 +1,8 @@
+created_utc: 2026-11-02T08:02:03.520737+00:00
+experiment: F1-EXP-019
+phase: F1-P5
+cross-song reference transfer: target A_self_01, reference A_self_06 (different song, same singer)
+A02 excluded from all fitting; same-song best reused from EXP-016 without recompute
+sealed untouched: A04, A06, B03, C01, C02, C03
+target_lufs: -18.86
+technical_pass: True

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>心墙 · “学”的电音复核</title>
+<style>
+  body { max-width: 40rem; margin: 2.5rem auto; padding: 0 1rem; color: #202530; font: 1rem/1.65 system-ui, sans-serif; }
+  button, textarea { font: inherit; }
+  button { padding: .35rem .65rem; margin: .2rem .3rem .2rem 0; cursor: pointer; }
+  #compare { background: #204d76; color: white; border: 1px solid #204d76; }
+  audio, textarea { width: 100%; box-sizing: border-box; margin-top: .6rem; }
+  label { display: block; margin-top: .25rem; }
+  fieldset { margin: 1rem 0; border: 1px solid #bcc4ce; }
+</style>
+<main>
+  <h1>《心墙》复核“学”的电音</h1>
+  <p>戴耳机、固定音量。默认先听上次修好的音高版，再听这次重接字头、字尾的版本。每段 0.8 秒，固定增益等响。Agent 不能听音，由你判断新版电音有没有少、字感有没有保住。</p>
+  <button type="button" id="compare" data-audio="compare.wav">一键连听 · 上版 → 新版</button>
+  <audio controls id="player" preload="metadata" src="audio/compare.wav"></audio>
+  <div>
+    <button type="button" data-audio="original_to_new.wav">可选 · 原音·同样响 → 新版</button>
+    <button type="button" data-audio="previous.wav">单听上版</button>
+    <button type="button" data-audio="corrected.wav">单听新版</button>
+  </div>
+  <form>
+    <fieldset>
+      <legend>新版的“学”听起来怎样？</legend>
+      <label><input type="radio" name="verdict" value="修对了，电音基本听不到" required> 修对了，电音基本听不到</label>
+      <label><input type="radio" name="verdict" value="修对了，电音少了但还有"> 修对了，电音少了但还有</label>
+      <label><input type="radio" name="verdict" value="电音差不多或更明显"> 电音差不多或更明显</label>
+      <label><input type="radio" name="verdict" value="字感变了或拿不准"> 字感变了或拿不准</label>
+    </fieldset>
+    <label>补充（可不填）<textarea id="notes" rows="2"></textarea></label>
+    <button>生成答案</button>
+    <textarea id="answer" aria-label="复制这行回聊天" rows="2" readonly hidden></textarea>
+  </form>
+</main>
+<script>
+  const player = document.querySelector("#player");
+  for (const button of document.querySelectorAll("[data-audio]")) {
+    button.addEventListener("click", () => {
+      const source = "audio/" + button.dataset.audio;
+      if (player.getAttribute("src") !== source) player.src = source;
+      else player.currentTime = 0;
+      player.play().catch(() => {});
+    });
+  }
+  document.querySelector("form").addEventListener("submit", event => {
+    event.preventDefault();
+    const answer = document.querySelector("#answer");
+    const notes = document.querySelector("#notes").value.trim();
+    answer.value = "《心墙》“学”电音复核：" + new FormData(event.target).get("verdict")
+      + (notes ? "\n补充：" + notes : "");
+    answer.hidden = false;
+    answer.select();
+  });
+</script>
+</html>

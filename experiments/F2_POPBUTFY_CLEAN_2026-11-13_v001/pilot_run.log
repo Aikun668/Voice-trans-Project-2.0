@@ -1,0 +1,2 @@
+{"stage": "align_warmup", "seconds": 32.4, "first_status": "auto_screen_candidate"}
+{"processed_pairs": 16, "alignment_status": {"auto_screen_candidate": 8, "needs_review": 8}, "seconds": 32.84, "training_ready": false}

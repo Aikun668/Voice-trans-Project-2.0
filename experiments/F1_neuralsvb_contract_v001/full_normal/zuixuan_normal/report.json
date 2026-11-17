@@ -1,0 +1,366 @@
+{
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\zuixuan_normal.wav",
+  "source_sha256": "4cd81729d94ca48029916abd9caa972be16f93528bd12d5eca839d951e76df2a",
+  "target_lufs": -18.0,
+  "listening_status": "pending_jade",
+  "outputs": {
+    "original": {
+      "file": "zuixuan_normal__original.wav",
+      "sha256": "00382d75b111c61a1bf1b8bfee99e0c1d11f103e8e3947c134b743ddcf2cf2da",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -6.791807228320298,
+        "rms_dbfs": -18.026846726066207,
+        "clipped_samples": 0,
+        "dc_offset": -7.6411227347398e-06
+      },
+      "loudness": {
+        "integrated_lufs": -18.01,
+        "true_peak_dbtp": -6.75,
+        "loudness_range_lu": 2.0
+      },
+      "interface_pass": true,
+      "full_decode_pass": true
+    },
+    "vocoder": {
+      "file": "zuixuan_normal__vocoder.wav",
+      "sha256": "cdc5fdf30fb1570cf17ab3cb30e586351ae29778068a81ed94eccb29ea27d2c7",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -6.294176894491843,
+        "rms_dbfs": -18.031531637087102,
+        "clipped_samples": 0,
+        "dc_offset": -0.00014636257782693748
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -6.29,
+        "loudness_range_lu": 2.0
+      },
+      "interface_pass": true,
+      "full_decode_pass": true,
+      "checks": {
+        "technical_pass": true,
+        "errors": [],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -6.373804884757338,
+          "rms_dbfs": -18.027678565246504,
+          "clipped_samples": 0,
+          "dc_offset": -0.00014640256788429215
+        },
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -6.29,
+          "loudness_range_lu": 2.0
+        },
+        "active_gain": {
+          "spread_db": 3.148962500889893,
+          "min_db": -11.459159995584054
+        },
+        "max_sample_jump_ratio": 1.1049402593423476,
+        "pitch_vs_original": {
+          "comparable_frames": 870,
+          "median_abs_cents": 4.44452871634469,
+          "p95_abs_cents": 33.17079298401873
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3061,
+          "median_abs_cents": 5.528936925411891,
+          "p95_abs_cents": 35.23768866060576
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      }
+    },
+    "a2a": {
+      "file": "zuixuan_normal__a2a.wav",
+      "sha256": "f205c0909919f65614cc21ea79d0d6e8d9cd22077c569a88b3c4c8ac52ca2172",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -4.540436803174387,
+        "rms_dbfs": -18.02454339855164,
+        "clipped_samples": 0,
+        "dc_offset": -8.822007507996734e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -4.53,
+        "loudness_range_lu": 2.0
+      },
+      "interface_pass": true,
+      "full_decode_pass": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing",
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -4.597028572602936,
+          "rms_dbfs": -18.020131871908404,
+          "clipped_samples": 0,
+          "dc_offset": -8.821572017491425e-05
+        },
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -4.53,
+          "loudness_range_lu": 2.0
+        },
+        "active_gain": {
+          "spread_db": 12.840488660159405,
+          "min_db": -20.397308505598666
+        },
+        "max_sample_jump_ratio": 0.6146805423985472,
+        "pitch_vs_original": {
+          "comparable_frames": 871,
+          "median_abs_cents": 4.8574355017180215,
+          "p95_abs_cents": 66.60533093529267
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3050,
+          "median_abs_cents": 5.546199159223029,
+          "p95_abs_cents": 42.11131590345948
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      }
+    },
+    "a2p": {
+      "file": "zuixuan_normal__a2p.wav",
+      "sha256": "31cc3af9060eb57599cf4eb94e9c409b8adc771bf8fb774de482884a53c751b6",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -3.466074226525034,
+        "rms_dbfs": -18.475840628438277,
+        "clipped_samples": 0,
+        "dc_offset": -6.901359327284442e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -3.46,
+        "loudness_range_lu": 4.4
+      },
+      "interface_pass": true,
+      "full_decode_pass": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing",
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -3.4533587601009597,
+          "rms_dbfs": -18.470874966284438,
+          "clipped_samples": 0,
+          "dc_offset": -6.900231069957994e-05
+        },
+        "loudness": {
+          "integrated_lufs": -17.99,
+          "true_peak_dbtp": -3.45,
+          "loudness_range_lu": 4.4
+        },
+        "active_gain": {
+          "spread_db": 16.236987091262677,
+          "min_db": -23.52242063170234
+        },
+        "max_sample_jump_ratio": 0.8354943564288451,
+        "pitch_vs_original": {
+          "comparable_frames": 870,
+          "median_abs_cents": 4.768185999430601,
+          "p95_abs_cents": 98.8086299335934
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3040,
+          "median_abs_cents": 5.350485181229654,
+          "p95_abs_cents": 42.29097013520106
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      }
+    },
+    "a2a_mean": {
+      "file": "zuixuan_normal__a2a_mean.wav",
+      "sha256": "5fc166a417f6edd24c237baece923c1c2fece150ebbfb229e1c9c0689fa056e6",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -4.585260360373603,
+        "rms_dbfs": -18.020731172899954,
+        "clipped_samples": 0,
+        "dc_offset": -8.904457218888104e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -4.58,
+        "loudness_range_lu": 2.0
+      },
+      "interface_pass": true,
+      "full_decode_pass": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing",
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -4.637601282528438,
+          "rms_dbfs": -18.016344829496013,
+          "clipped_samples": 0,
+          "dc_offset": -8.903970345205348e-05
+        },
+        "loudness": {
+          "integrated_lufs": -17.99,
+          "true_peak_dbtp": -4.57,
+          "loudness_range_lu": 2.0
+        },
+        "active_gain": {
+          "spread_db": 12.737879402558562,
+          "min_db": -21.788043669803283
+        },
+        "max_sample_jump_ratio": 0.6757721340791958,
+        "pitch_vs_original": {
+          "comparable_frames": 871,
+          "median_abs_cents": 4.8183353001033,
+          "p95_abs_cents": 63.77831787118181
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3050,
+          "median_abs_cents": 5.564623157427034,
+          "p95_abs_cents": 42.75035605167831
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      }
+    },
+    "a2p_mean": {
+      "file": "zuixuan_normal__a2p_mean.wav",
+      "sha256": "472c4766f37056cc4055f274f726e085cd4c0aa05a222ed24236f28482c8c081",
+      "samples": {
+        "sample_rate": 44100,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 1039526,
+        "duration_seconds": 23.57201814058957,
+        "sample_peak_dbfs": -3.4684449374449233,
+        "rms_dbfs": -18.47230048226006,
+        "clipped_samples": 0,
+        "dc_offset": -6.742953719298808e-05
+      },
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -3.47,
+        "loudness_range_lu": 4.4
+      },
+      "interface_pass": true,
+      "full_decode_pass": true,
+      "checks": {
+        "technical_pass": false,
+        "errors": [
+          "dynamic change / dropout in active singing",
+          "pitch diagnostic changed (manual check required)"
+        ],
+        "duration_gap_s": 0.0,
+        "samples": {
+          "sample_rate": 22050,
+          "channels": 1,
+          "bits_per_sample": 16,
+          "frames": 519763,
+          "duration_seconds": 23.57201814058957,
+          "sample_peak_dbfs": -3.453185946744891,
+          "rms_dbfs": -18.467334432034598,
+          "clipped_samples": 0,
+          "dc_offset": -6.741831688567028e-05
+        },
+        "loudness": {
+          "integrated_lufs": -18.0,
+          "true_peak_dbtp": -3.45,
+          "loudness_range_lu": 4.4
+        },
+        "active_gain": {
+          "spread_db": 16.230592406699763,
+          "min_db": -23.540124733113025
+        },
+        "max_sample_jump_ratio": 0.7896528496461409,
+        "pitch_vs_original": {
+          "comparable_frames": 870,
+          "median_abs_cents": 4.76177092078822,
+          "p95_abs_cents": 98.97717804024117
+        },
+        "pitch_vs_original_praat_info_only": {
+          "comparable_frames": 3041,
+          "median_abs_cents": 5.320701149415143,
+          "p95_abs_cents": 42.02138180931197
+        },
+        "not_applicable": {
+          "waveform_correlation": "vocoder re-synthesis does not preserve phase/waveform",
+          "band_change_limit": "re-synthesis legitimately reshapes spectrum; not gated (see report)",
+          "sample_count_equal": "output is 22.05 kHz (official model rate); duration gap checked instead"
+        }
+      }
+    }
+  },
+  "f0_time_alignment": {
+    "first_praat_center_seconds": 0.02031746031746112,
+    "feature_frame_offset_seconds": 0.0,
+    "max_nearest_time_error_seconds": 0.0029024943310673734,
+    "outside_praat_support_frames": 6,
+    "pitch_correction_applied": false,
+    "unvoiced_interpolated": false
+  },
+  "profile": "pwg"
+}

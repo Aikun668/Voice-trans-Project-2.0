@@ -1,0 +1,26 @@
+{
+  "technical_pass": true,
+  "protected_files_checked": 73,
+  "protected_files_changed": [],
+  "files": {
+    "original": {
+      "sha256": "34e26609e3bf7fad23e7438dcb4eca9a63dc1dd720b3a1ab94b011215af711c1",
+      "samples": 630784,
+      "rate": 48000,
+      "lufs": -20.4,
+      "true_peak_dbtp": -7.1,
+      "only_fixed_gain_and_rounding": true
+    },
+    "s45": {
+      "sha256": "fdea8e7e66fe71091cd34fdd4f259ebc79bec5506a14ad910e6c4b68fed4653d",
+      "samples": 630784,
+      "rate": 48000,
+      "lufs": -20.4,
+      "true_peak_dbtp": -3.5,
+      "only_fixed_gain_and_rounding": true
+    }
+  },
+  "algorithm_rerun": false,
+  "model_loaded": false,
+  "listening": "pending_jade"
+}

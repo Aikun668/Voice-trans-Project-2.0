@@ -1,0 +1,126 @@
+{
+  "take": "莫问归期02-对照微微跑调",
+  "phrase": "沉默有时",
+  "word": "时",
+  "reference_occurrence": "original_late",
+  "reference_occurrence_reason": "Both repeats have the same sustained note; retain the previous reference occurrence.",
+  "anchors": {
+    "take": {
+      "word_probe_seconds": [
+        [
+          1.76,
+          2.4
+        ],
+        [
+          1.78,
+          2.42
+        ]
+      ],
+      "sustained_seconds": [
+        1.9849999999999994,
+        2.4049999999999994
+      ],
+      "anchor_seconds": 2.1949999999999994,
+      "pitch_cents": -1251.2069090856153,
+      "pitch_spread_cents": 85.57533256094962
+    },
+    "original_early": {
+      "word_probe_seconds": [
+        [
+          52.84,
+          53.24
+        ],
+        [
+          52.86,
+          53.26
+        ]
+      ],
+      "sustained_seconds": [
+        53.010000000000005,
+        53.28
+      ],
+      "anchor_seconds": 53.145,
+      "pitch_cents": -797.6093600976288,
+      "pitch_spread_cents": 40.77393766246041
+    },
+    "original_late": {
+      "word_probe_seconds": [
+        [
+          135.14,
+          135.54
+        ],
+        [
+          135.16,
+          135.48
+        ]
+      ],
+      "sustained_seconds": [
+        135.3,
+        135.56
+      ],
+      "anchor_seconds": 135.43,
+      "pitch_cents": -802.4167796167076,
+      "pitch_spread_cents": 29.41553950164655
+    }
+  },
+  "reference_repeat_pitch_difference_cents": 4.807419519078735,
+  "take_preview": {
+    "source_seconds": [
+      0.515,
+      2.515
+    ],
+    "relative_anchor_seconds": 1.6799999999999993
+  },
+  "reference_preview": {
+    "source_seconds": [
+      133.75,
+      135.75
+    ],
+    "relative_anchor_seconds": 1.6800000000000068
+  },
+  "compare_split_seconds": 2.0,
+  "audio_operations": "trim, 8 ms edge fades, fixed gain; reference preview resampled from 44.1 kHz to 48 kHz; concatenate",
+  "preview_gain_db": {
+    "take.wav": -4.699999999999999,
+    "reference.wav": 5.399999999999999
+  },
+  "levels": {
+    "take.wav": {
+      "samples": 96000,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -7.0,
+      "sha256": "aa9bb53cdf37e42bd23a55c320c8f729f9497745f9aeac3206d941e89697efbb"
+    },
+    "reference.wav": {
+      "samples": 96000,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -6.6,
+      "sha256": "3e429b4d306d89866e00884487e9d0927a49f4eda1085800abdbcdc5f0a06be7"
+    },
+    "compare.wav": {
+      "samples": 192000,
+      "sample_rate": 48000,
+      "lufs": -18.7,
+      "dbtp": -6.6,
+      "sha256": "0c7e8b3a6fd46d70bbe66e1d410cddbc9c0448b28a16e919e68d1d7b4f71bf38"
+    }
+  },
+  "pitch_readback": {
+    "take.wav": {
+      "median_shift_cents": 0.000110155448965088,
+      "voiced_overlap": 1.0
+    },
+    "reference.wav": {
+      "median_shift_cents": -0.00012280760557814574,
+      "voiced_overlap": 1.0
+    }
+  },
+  "inputs": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav": "14e01ae944d173ce96fbd2ee58a1e14bb8b76c19e99bb55f1c548bfe886849ca",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav": "ae69a7a4c21acd4ff405917b7ba1214bb24976cf9fdff8d9163a5dd9f905f1b5"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "anchor_match_within_input_sample": 

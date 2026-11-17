@@ -1,0 +1,3 @@
+﻿role,dataset_id,label,src_lufs,src_tp,src_peak_dbfs,src_rms_dbfs,applied_gain_db,out_lufs,out_tp,out_peak_dbfs,out_rms_dbfs,clipped
+thin,A_self_01,薄音版,-19.24,-6.41,-6.42,-19.33,1.24,-18.0,-5.17,-5.18,-18.09,0
+normal,A_self_02,正常版,-17.52,-3.49,-3.49,-17.64,-0.48,-18.0,-3.97,-3.97,-18.12,0

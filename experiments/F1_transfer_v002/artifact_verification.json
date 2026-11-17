@@ -1,0 +1,35 @@
+[
+  {
+    "id": "shige",
+    "full_decode_pass": true,
+    "original_hash_unchanged": true,
+    "loudness_spread_lu": 0.0,
+    "warnings": {
+      "01_before_matched.wav": [],
+      "02_F1_light.wav": [],
+      "03_F1_strong.wav": []
+    }
+  },
+  {
+    "id": "zuixuan",
+    "full_decode_pass": true,
+    "original_hash_unchanged": true,
+    "loudness_spread_lu": 0.01,
+    "warnings": {
+      "01_before_matched.wav": [],
+      "02_F1_light.wav": [],
+      "03_F1_strong.wav": []
+    }
+  },
+  {
+    "id": "web_gaobai",
+    "full_decode_pass": true,
+    "original_hash_unchanged": true,
+    "loudness_spread_lu": 0.02,
+    "warnings": {
+      "01_before_matched.wav": [],
+      "02_F1_light.wav": [],
+      "03_F1_strong.wav": []
+    }
+  }
+]

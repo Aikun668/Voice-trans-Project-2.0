@@ -1,0 +1,83 @@
+{
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav",
+  "source_sha256": "14e01ae944d173ce96fbd2ee58a1e14bb8b76c19e99bb55f1c548bfe886849ca",
+  "span_seconds": [
+    4.272,
+    5.422
+  ],
+  "injection": {
+    "engine": "FFmpeg rubberband (tempo=1, formant=preserved, pitchq=quality)",
+    "ffmpeg_version": "ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "shift_cents": 100
+  },
+  "restore": {
+    "engine": "F2_R1_TRAIN_2026-11-07_v003/r1_pipeline.py:corrected_audio",
+    "parselmouth_version": "0.4.7",
+    "shift_cents": -100,
+    "model_used": false
+  },
+  "common_gain_db": -2.1,
+  "file_levels": {
+    "original.wav": {
+      "samples": 632832,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -4.4,
+      "peak": 0.60141,
+      "sha256": "64170ede6314303f85327194a763d7b6e30a099519186dc1d4471209dd33af33"
+    },
+    "raised.wav": {
+      "samples": 632832,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -4.4,
+      "peak": 0.60141,
+      "sha256": "ebff2a05869be3e91e83c9f7b3042a61d3d6fbc94f24fd6d0acb1caf29afaeb3"
+    },
+    "restored.wav": {
+      "samples": 632832,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -4.4,
+      "peak": 0.60141,
+      "sha256": "1f085d6f2f350671e0ec4089eb176e9df6959567de2fb1a65518dc01ed77cafe"
+    }
+  },
+  "pitch": {
+    "core_seconds": [
+      4.42,
+      5.28
+    ],
+    "core_voiced_frames": 43,
+    "core_f0_hz": [
+      238.25,
+      252.17,
+      238.02
+    ],
+    "core_raise_vs_original_cents": 100.089,
+    "core_restore_vs_raised_cents": -99.765,
+    "core_restore_vs_original_cents": 0.245,
+    "full_span_restore_vs_original_cents": 0.521,
+    "full_span_p90_absolute_residual_cents": 9.198,
+    "voiced_overlap_vs_original": [
+      0.9981515711645101,
+      1.0
+    ]
+  },
+  "outside_splice_sample_equality": {
+    "raised_vs_anchor_outside_injection": true,
+    "restored_vs_raised_outside_correction": true,
+    "restored_vs_anchor_outside_both": true
+  },
+  "checks": {
+    "source_unchanged": true,
+    "length_and_rate": true,
+    "finite_and_no_clipping": true,
+    "loudness_and_true_peak": true,
+    "unchanged_outside_splices": true,
+    "voiced_overlap_at_least_0_95": true,
+    "median_pitch_errors_under_5_cents": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

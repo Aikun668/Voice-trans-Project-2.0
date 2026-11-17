@@ -1,0 +1,14 @@
+{
+  "technical_pass": true,
+  "listening": "not_performed",
+  "reference_withdrawn": true,
+  "original_and_model_play": true,
+  "wrong_reference_http_status": 404,
+  "unsafe_exporter_disabled": true,
+  "protected_hashes_unchanged": true,
+  "confirmed_pairs_match_export": 17,
+  "confirmed_unique_source_hashes_match": 14,
+  "experiment_instances": 157,
+  "bulk_archival_performed": false,
+  "report": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\版本与引用核查_2026-11-14.md"
+}

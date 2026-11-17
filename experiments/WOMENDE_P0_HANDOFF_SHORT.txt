@@ -1,0 +1,1 @@
+﻿接 P0《我们的歌》薄音版：仓库 https://github.com/Aikun668/Voice-trans-Project-2.0，规则看 docs/ROADMAP.md；最新轮 experiments/WOMENDE_FOCUS_2026-11-04_v005，完整交接见 experiments/WOMENDE_P0_HANDLE.md（本机 D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\WOMENDE_P0_HANDLE.md）。第5轮原话：③听得出但空旷差不多且仍空、有不稳定带电；④空旷好像少一点点但约11–12秒有电；按 ROADMAP §7 诊断后开 v006，勿覆盖旧轮、勿削250Hz以下。

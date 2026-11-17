@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>所有变量一次听</title>
+<style>body{margin:0;background:#f4f6fa;color:#172337;font:17px/1.7 system-ui}.w{max-width:1100px;margin:20px auto;padding:0 18px;display:grid;grid-template-columns:1.1fr 1fr;gap:18px;align-items:start}h1{font-size:24px;margin:0 0 6px}section{background:#fff;border:1px solid #d9e1eb;border-radius:12px;padding:14px 18px;margin-bottom:12px}button{font:inherit;padding:7px 12px;margin:3px;border:1px solid #b8c5d5;border-radius:8px;background:#fff;cursor:pointer}button[aria-pressed=true]{background:#2357a4;color:#fff}audio{width:100%;margin:8px 0}.n{color:#536177;font-size:14px}table{border-collapse:collapse;width:100%}td{padding:4px 6px;border-top:1px solid #eef1f6;font-size:15px}select{font:inherit;padding:3px;max-width:100%}textarea{width:100%;min-height:80px;font:inherit;box-sizing:border-box}.s{position:sticky;top:10px}@media(max-width:900px){.w{grid-template-columns:1fr}.s{position:static}}</style>
+<div class="w"><div style="grid-column:1/-1"><h1>剩下的变量，一次全部听</h1><p class="n">每个版本只比“新版整段”多改了<b>一个</b>条件，其余完全一样（同样的音高修复、倾斜还原）。响度已对齐。先听“原音”，再听“新版整段”，再逐个听其他版本，在右边标出哪一个<b>明显更好</b>。</p></div>
+<div><section><p id="cl"></p><p id="vs"></p><p><b>当前：</b><span id="cur"></span> · <span id="now">0:00.0</span></p><audio id="p" controls preload="auto"></audio>
+<p class="n">切换版本接续播放位置，方便在同一处来回听。</p></section>
+<section><b>各版本改了什么</b><table id="legend"></table></section></div>
+<div class="s"><section><b>你的判断（相对“新版整段”）</b><table id="fb"></table>
+<p><b>备注</b><textarea id="nt"></textarea></p><p><button id="cp">复制反馈</button> <span id="m" class="n"></span></p></section></div></div>
+<script>
+const C={shige:'SHIGE',zuixuan:'zuixuan'};
+const V={orig:['原音','你的原始录音'],old:['旧版美化','你之前听过的版本'],whole:['新版整段','基准：上一轮的新版 A'],
+ quiet:['① 输入降 10 dB','你的录音比官网样例响约 10 dB，降到同一电平再处理'],lp8k:['② 只留 8 kHz 以下','官网样例几乎没有 8 kHz 以上的内容，先滤掉'],
+ nomap:['③ 不用音色映射','关掉模型里把业余音色“映射”成专业音色的那一步'],a2a:['④ 只做重建','模型只重建，完全不做美化映射'],combo:['⑤ 以上 ①②③ 合起来','降电平 + 滤 8 kHz + 不用映射']};
+const ORD=Object.keys(V);let c='shige',v='orig';const p=document.getElementById('p'),cur=document.getElementById('cur'),now=document.getElementById('now');
+const fmt=t=>Math.floor(t/60)+':'+(t%60).toFixed(1).padStart(4,'0');
+for(const k in C){const b=document.createElement('button');b.textContent=C[k];b.dataset.c=k;b.onclick=()=>{c=k;go(false);fb()};document.getElementById('cl').appendChild(b)}
+for(const k of ORD){const b=document.createElement('button');b.textContent=V[k][0];b.dataset.v=k;b.onclick=()=>{v=k;go(false)};document.getElementById('vs').appendChild(b)}
+document.getElementById('legend').innerHTML=ORD.map(k=>'<tr><td><b>'+V[k][0]+'</b></td><td>'+V[k][1]+'</td></tr>').join('');
+function go(r0){const t=r0?0:p.currentTime,r=!p.paused;p.src='audio/'+c+'_'+v+'.wav';p.onloadedmetadata=()=>{p.currentTime=Math.min(t,p.duration-.05);if(r)p.play()};
+ cur.textContent=C[c]+' · '+V[v][0];document.querySelectorAll('[data-c]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===c));document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v))}
+p.addEventListener('timeupdate',()=>now.textContent=fmt(p.currentTime));
+const KEY='f1_variants_v1';let S={};try{S=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const OPT=['未答','明显更好','略好','一样','更差'];
+function fb(){const t=document.getElementById('fb');t.innerHTML='<tr><td colspan=2 class="n">当前：'+C[c]+'</td></tr>'+['quiet','lp8k','nomap','a2a','combo'].map(k=>'<tr><td>'+V[k][0]+'</td><td><select data-k="'+c+'_'+k+'">'+OPT.map(o=>'<option>'+o+'</option>').join('')+'</select></td></tr>').join('');
+ t.querySelectorAll('select').forEach(s=>{s.value=S[s.dataset.k]||'未答';s.onchange=()=>{S[s.dataset.k]=s.value;S.nt=nt.value;localStorage.setItem(KEY,JSON.stringify(S))}})}
+const nt=document.getElementById('nt');nt.value=S.nt||'';nt.oninput=()=>{S.nt=nt.value;localStorage.setItem(KEY,JSON.stringify(S))};
+document.getElementById('cp').onclick=async()=>{const L=['【所有变量试听反馈（相对新版整段）】'];for(const cc in C)for(const k of ['quiet','lp8k','nomap','a2a','combo'])L.push(C[cc]+' '+V[k][0]+'：'+(S[cc+'_'+k]||'未答'));L.push('备注：'+nt.value);try{await navigator.clipboard.writeText(L.join('\n'));m.textContent='已复制'}catch(e){m.textContent='复制失败'}};
+go(true);fb();
+</script>

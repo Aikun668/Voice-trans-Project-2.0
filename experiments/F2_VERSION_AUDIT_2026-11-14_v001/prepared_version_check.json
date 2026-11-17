@@ -1,0 +1,104 @@
+{
+  "active_legacy_pointer": {
+    "status": "experimental",
+    "schema": "f2-confirmed-frames-v1",
+    "weights": "experiments/F2_CONFIRMED_RETRAIN_2026-11-09_v001/results/model.pkl",
+    "sha256": "08e8d7e9f9d58c93784bd8ee85dbd429a0f1f879db21a41b2702e217fb16dd1f",
+    "prepared": "experiments/F2_CONFIRMED_RETRAIN_2026-11-09_v001/prepared_v003",
+    "verification": "experiments/F2_CONFIRMED_RETRAIN_2026-11-09_v001/results/verification.json",
+    "legacy_archive": "experiments/F2_CONFIRMED_RETRAIN_2026-11-09_v001/archive/inventory.json",
+    "listening": "pending_jade"
+  },
+  "prepared_samples_sha256": "9948c0322af84788a4d2688ad3d2d8283cd7e0b9bbc60a98c26db97f4fd77e0f",
+  "matches_old_train_report": true,
+  "versions": [
+    {
+      "name": "prepared",
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\prepared\\samples.csv",
+      "rows": 155,
+      "sha256": "9948c0322af84788a4d2688ad3d2d8283cd7e0b9bbc60a98c26db97f4fd77e0f"
+    },
+    {
+      "name": "prepared_v002",
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\prepared_v002\\samples.csv",
+      "rows": 106,
+      "sha256": "0f34d75a576ef0e419411ba805e5878d7478e825bf2e798c5263a74544679d31"
+    },
+    {
+      "name": "prepared_v003",
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\prepared_v003\\samples.csv",
+      "rows": 155,
+      "sha256": "9948c0322af84788a4d2688ad3d2d8283cd7e0b9bbc60a98c26db97f4fd77e0f"
+    }
+  ],
+  "confirmed_table_matches_latest_17_export": [
+    {
+      "id": 1,
+      "matches_user_export": true
+    },
+    {
+      "id": 2,
+      "matches_user_export": true
+    },
+    {
+      "id": 3,
+      "matches_user_export": true
+    },
+    {
+      "id": 4,
+      "matches_user_export": true
+    },
+    {
+      "id": 5,
+      "matches_user_export": true
+    },
+    {
+      "id": 6,
+      "matches_user_export": true
+    },
+    {
+      "id": 7,
+      "matches_user_export": true
+    },
+    {
+      "id": 8,
+      "matches_user_export": true
+    },
+    {
+      "id": 9,
+      "matches_user_export": true
+    },
+    {
+      "id": 10,
+      "matches_user_export": true
+    },
+    {
+      "id": 11,
+      "matches_user_export": true
+    },
+    {
+      "id": 12,
+      "matches_user_export": true
+    },
+    {
+      "id": 13,
+      "matches_user_export": true
+    },
+    {
+      "id": 14,
+      "matches_user_export": true
+    },
+    {
+      "id": 15,
+      "matches_user_export": true
+    },
+    {
+      "id": 16,
+      "matches_user_export": true
+    },
+    {
+      "id": 17,
+      "matches_user_export": true
+    }
+  ]
+}

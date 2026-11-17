@@ -1,0 +1,7 @@
+{
+  "clip": "shige_normal", "experiment": "F1_neuralsvb_pitch_fix_v001", "listening_status": "jade_feedback_received",
+  "answers": {"A_16.5-17.4s": "听不出区别", "B_沙哑": "没有变化", "C_变嗲": "没有变化", "D_美化收益": "说不清", "E_仅声码器沙哑": "没有变化", "F_最愿选": "都一样"},
+  "verbatim_notes": "这一段根本没有跳变，也没有任何不好的情况，我们锚定就锚定错掉了。我们改前完整美化版其实有很多地方有问题，就比如这个地方0:03.2，“是谁在唱歌”之后带一个呱的声音，其他地方没什么特别离谱的。整段给人的感觉就是鼻子在发音，听的很难受，最新美化后的版本一样的。",
+  "status": "changed_not_audible -> no_clear_benefit; pitch-input hypothesis (16.65s) excluded for SHIGE",
+  "new_clues": ["0:03.2 'quack' after '是谁在唱歌'", "whole-file nasal timbre in both base and fix"]
+}

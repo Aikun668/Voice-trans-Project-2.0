@@ -1,0 +1,6 @@
+{
+  "reason": "Validation gains remained negligible and predictions close to zero; stop further CPU training, preserve logs. No neural audio delivery claimed.",
+  "completed_epochs": 7,
+  "best_validation": 57.19985008679582,
+  "checkpoint_written": false
+}

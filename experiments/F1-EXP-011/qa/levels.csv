@@ -1,0 +1,5 @@
+﻿version,richness_k2_12_db,richness_k9_12_db,h1_minus_h2_db,centroid_hz,boost_fraction,matched_lufs,matched_tp
+baseline(原音),-10.21,-39.23,-11.26,294,,
+target(A02正常版),-4.01,-32.09,-5.2,403,,
+上轮B(V2锚点),-4.15,-39.24,-5.36,385,,-19.36,-3.2
+修订版(V3),-4.53,-32.77,-5.74,388.0,0.842,-19.35,-3.26

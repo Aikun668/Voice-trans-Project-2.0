@@ -1,0 +1,11 @@
+created_utc: 2026-11-01T02:09:21.844157+00:00
+experiment: F1-EXP-002
+phase: F1-P2.1
+python: 3.12.7
+platform: Windows-11-10.0.26200-SP0
+ffmpeg: ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+test: A01, A02, A05, B01
+sealed: A03, A04, A06, B02, B03, C01, C02, C03
+target_lufs: -21.400000000000002
+technical_pass: True
+note: original inputs not modified; holdout not processed

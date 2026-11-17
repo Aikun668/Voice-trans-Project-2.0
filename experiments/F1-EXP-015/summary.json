@@ -1,0 +1,23 @@
+{
+  "experiment": "F1-EXP-015",
+  "phase": "F1-P4B-fix",
+  "status": "weak_positive_escalate",
+  "fix_of": "F1-EXP-014",
+  "sample_id": "A01",
+  "versions": ["X1", "X2"],
+  "deliverable": ["X1", "X2"],
+  "hard_failed": [],
+  "diag_marked": ["X1", "X2"],
+  "target_lufs": -19.26,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "next_rule": "仍只有一点点 → 频谱路线确定性收工（方案C）；明确改善 → A05 复验",
+  "listening_result": "X1/X2 均判'更饱满或更清晰'但需认真听才可辨；A(X1)与B(X2)不可分辨。方向对、强度不足",
+  "jade_verbatim": "确实更饱满或者更清晰，但是还是要稍微认真听一下才能听出来；AB都一样，我OK",
+  "classification": "weak_positive_escalate：首次'更饱满'正向反馈；未达一听可辨",
+  "requirement_shift": "用户明示目标升级：从'调出效果'改为'把效果调明显、一听就能听出来'",
+  "centroid_hypothesis_rejected": "X1 重心 404 已等于正常版 403；X1/X2 重心差 43Hz 用户不可分辨 → 重心非感知瓶颈",
+  "next_action": "F1-EXP-016：X1 基线 + 宽带 2-8kHz 频谱强调（按实测剩余缺口曲线，60%/100% 两档），vocal effort 文献主线索"
+}

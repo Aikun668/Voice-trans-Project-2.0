@@ -1,0 +1,245 @@
+{
+  "model": "D:\\My_Grand_Projects2026\\Videos-Master-Project\\Qwen3-ForcedAligner-0.6B",
+  "inputs": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a"
+  },
+  "results": {
+    "take": [
+      {
+        "search_window_seconds": [
+          0.0,
+          6.4
+        ],
+        "words": [
+          {
+            "text": "我",
+            "start": 0.72,
+            "end": 0.72
+          },
+          {
+            "text": "学",
+            "start": 0.72,
+            "end": 1.04
+          },
+          {
+            "text": "着",
+            "start": 1.04,
+            "end": 1.36
+          },
+          {
+            "text": "不",
+            "start": 1.36,
+            "end": 1.6
+          },
+          {
+            "text": "去",
+            "start": 1.6,
+            "end": 1.84
+          },
+          {
+            "text": "担",
+            "start": 1.84,
+            "end": 2.08
+          },
+          {
+            "text": "心",
+            "start": 2.08,
+            "end": 2.4
+          },
+          {
+            "text": "得",
+            "start": 2.4,
+            "end": 2.56
+          },
+          {
+            "text": "太",
+            "start": 2.56,
+            "end": 2.96
+          },
+          {
+            "text": "远",
+            "start": 2.96,
+            "end": 3.76
+          }
+        ]
+      },
+      {
+        "search_window_seconds": [
+          0.08,
+          7.6
+        ],
+        "words": [
+          {
+            "text": "我",
+            "start": 0.72,
+            "end": 0.72
+          },
+          {
+            "text": "学",
+            "start": 0.72,
+            "end": 1.04
+          },
+          {
+            "text": "着",
+            "start": 1.04,
+            "end": 1.36
+          },
+          {
+            "text": "不",
+            "start": 1.36,
+            "end": 1.6
+          },
+          {
+            "text": "去",
+            "start": 1.6,
+            "end": 1.84
+          },
+          {
+            "text": "担",
+            "start": 1.84,
+            "end": 2.08
+          },
+          {
+            "text": "心",
+            "start": 2.08,
+            "end": 2.4
+          },
+          {
+            "text": "得",
+            "start": 2.4,
+            "end": 2.56
+          },
+          {
+            "text": "太",
+            "start": 2.56,
+            "end": 2.96
+          },
+          {
+            "text": "远",
+            "start": 2.96,
+            "end": 3.76
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "search_window_seconds": [
+          111.9,
+          119.8
+        ],
+        "words": [
+          {
+            "text": "我",
+            "start": 113.66,
+            "end": 113.9
+          },
+          {
+            "text": "学",
+            "start": 113.9,
+            "end": 114.22
+          },
+          {
+            "text": "着",
+            "start": 114.22,
+            "end": 114.38
+          },
+          {
+            "text": "不",
+            "start": 114.38,
+            "end": 114.62
+          },
+          {
+            "text": "去",
+            "start": 114.62,
+            "end": 114.94
+          },
+          {
+            "text": "担",
+            "start": 114.94,
+            "end": 115.34
+          },
+          {
+            "text": "心",
+            "start": 115.34,
+            "end": 115.74
+          },
+          {
+            "text": "得",
+            "start": 115.74,
+            "end": 116.14
+          },
+          {
+            "text": "太",
+            "start": 116.14,
+            "end": 116.46
+          },
+          {
+            "text": "远",
+            "start": 116.46,
+            "end": 117.1
+          }
+        ]
+      },
+      {
+        "search_window_seconds": [
+          112.4,
+          120.2
+        ],
+        "words": [
+          {
+            "text": "我",
+            "start": 113.68,
+            "end": 113.92
+          },
+          {
+            "text": "学",
+            "start": 113.92,
+            "end": 114.16
+          },
+          {
+            "text": "着",
+            "start": 114.16,
+            "end": 114.4
+          },
+          {
+            "text": "不",
+            "start": 114.4,
+            "end": 114.64
+          },
+          {
+            "text": "去",
+            "start": 114.64,
+            "end": 114.88
+          },
+          {
+            "text": "担",
+            "start": 114.88,
+            "end": 115.36
+          },
+          {
+            "text": "心",
+            "start": 115.36,
+            "end": 115.68
+          },
+          {
+            "text": "得",
+            "start": 115.68,
+            "end": 116.08
+          },
+          {
+            "text": "太",
+            "start": 116.08,
+            "end": 116.48
+          },
+          {
+            "text": "远",
+            "start": 116.48,
+            "end": 117.12
+          }
+        ]
+      }
+    ]
+  }
+}

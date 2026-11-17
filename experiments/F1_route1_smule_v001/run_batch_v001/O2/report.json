@@ -1,0 +1,81 @@
+{
+  "clip": "O2",
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_pitch_target_v001\\official_all\\Chinese\\gt_a\\9.wav",
+  "source_sha256": "5fde54c986d0c8163ea41b1dc97aa839d2d2d5819ee5dfe1c429d3173183fc15",
+  "sample_rate": 22050,
+  "target_lufs": -18.0,
+  "native_smule_sha256": "253783f36d7063013813b8d78d4a107d10efb1d857feacbfa5fd9e8c8203b93a",
+  "resampled_pad_samples": 780,
+  "resampled_truncated_samples": 0,
+  "listening_status": "pending_jade",
+  "thresholds": {
+    "pitch_median_cents": 10,
+    "pitch_p95_cents": 35,
+    "true_peak_dbtp": -3.0,
+    "loudness_diff_lu": 0.2,
+    "gain_spread_db": 8,
+    "min_gain_db": -12,
+    "jump_ratio": 2.5
+  },
+  "praat_second_opinion": "omitted: NeuralSVB 专属依赖，不在本隔离环境引入；音高用项目估计器单源检查",
+  "outputs": {
+    "original_matched": {
+      "file": "O2__original_matched.wav",
+      "sha256": "096eeb0fce38e3d8be74ed31d598a01df76d158f6801d5a234d2c039825d74af",
+      "samples": {
+        "sample_rate": 22050,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 126848,
+        "duration_seconds": 5.752743764172336,
+        "sample_peak_dbfs": -7.24184926953488,
+        "rms_dbfs": -19.94433493483881,
+        "clipped_samples": 0,
+        "dc_offset": -8.970312586225246e-05
+      },
+      "full_decode_pass": true,
+      "loudness": {
+        "integrated_lufs": -18.01,
+        "true_peak_dbtp": -7.16,
+        "loudness_range_lu": 5.3
+      },
+      "technical_pass": true,
+      "errors": []
+    },
+    "smule_matched": {
+      "file": "O2__smule_matched.wav",
+      "sha256": "b387238c4e972c248ea5932b805a48521a7bf2ee163af7c0cdd699bca274442b",
+      "samples": {
+        "sample_rate": 22050,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "frames": 126848,
+        "duration_seconds": 5.752743764172336,
+        "sample_peak_dbfs": -4.579869304254701,
+        "rms_dbfs": -18.647861332909702,
+        "clipped_samples": 0,
+        "dc_offset": -0.0022044706296487724
+      },
+      "full_decode_pass": true,
+      "loudness": {
+        "integrated_lufs": -18.0,
+        "true_peak_dbtp": -4.58,
+        "loudness_range_lu": 1.9
+      },
+      "active_gain": {
+        "spread_db": 9.637641011703028,
+        "min_db": -6.305078557839417
+      },
+      "max_sample_jump_ratio": 1.595595241682677,
+      "pitch_vs_original": {
+        "comparable_frames": 223,
+        "median_abs_cents": 1.2600644969839145,
+        "p95_abs_cents": 13.702893456632438
+      },
+      "technical_pass": false,
+      "errors": [
+        "dynamic change / dropout in active singing"
+      ]
+    }
+  }
+}

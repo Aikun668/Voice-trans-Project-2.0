@@ -1,0 +1,128 @@
+[
+  {
+    "a": "500miles",
+    "b": "fivehundredmiles",
+    "common_long_lines": 13,
+    "containment": 1.0
+  },
+  {
+    "a": "alwaysrememberusthisway",
+    "b": "alwaysrememberusthiswayladygaga",
+    "common_long_lines": 17,
+    "containment": 0.7391304347826086
+  },
+  {
+    "a": "autumleaves",
+    "b": "autumnleavesericclapton",
+    "common_long_lines": 7,
+    "containment": 0.875
+  },
+  {
+    "a": "blackspace",
+    "b": "blankspace",
+    "common_long_lines": 39,
+    "containment": 1.0
+  },
+  {
+    "a": "cheapthrills",
+    "b": "cheepthrills",
+    "common_long_lines": 16,
+    "containment": 1.0
+  },
+  {
+    "a": "cityofstars",
+    "b": "cityofstarsryangoslingemmastone",
+    "common_long_lines": 20,
+    "containment": 1.0
+  },
+  {
+    "a": "diamond",
+    "b": "diamonds",
+    "common_long_lines": 17,
+    "containment": 1.0
+  },
+  {
+    "a": "dontletmedoun",
+    "b": "dontletmedown",
+    "common_long_lines": 15,
+    "containment": 1.0
+  },
+  {
+    "a": "fadad",
+    "b": "faded",
+    "common_long_lines": 11,
+    "containment": 1.0
+  },
+  {
+    "a": "farawayformhome",
+    "b": "farawayfromhome",
+    "common_long_lines": 20,
+    "containment": 1.0
+  },
+  {
+    "a": "idontwangbeyouanymorebillieeilish",
+    "b": "idontwannabeyouanymore",
+    "common_long_lines": 18,
+    "containment": 1.0
+  },
+  {
+    "a": "loveyourself",
+    "b": "loveyourselt",
+    "common_long_lines": 27,
+    "containment": 1.0
+  },
+  {
+    "a": "millionreasons",
+    "b": "millionreasonsladygaga",
+    "common_long_lines": 26,
+    "containment": 0.9285714285714286
+  },
+  {
+    "a": "myheartaillgoon",
+    "b": "myheartwillgoon",
+    "common_long_lines": 17,
+    "containment": 1.0
+  },
+  {
+    "a": "shallow",
+    "b": "shollow",
+    "common_long_lines": 13,
+    "containment": 0.9285714285714286
+  },
+  {
+    "a": "troubieisafriend",
+    "b": "troubleisafriend",
+    "common_long_lines": 11,
+    "containment": 0.8461538461538461
+  },
+  {
+    "a": "wildestdream",
+    "b": "wildestdreams",
+    "common_long_lines": 13,
+    "containment": 0.8125
+  },
+  {
+    "a": "youraisemeup",
+    "b": "youricemeup",
+    "common_long_lines": 11,
+    "containment": 1.0
+  },
+  {
+    "a": "youraisemeup",
+    "b": "yourisemeup",
+    "common_long_lines": 11,
+    "containment": 1.0
+  },
+  {
+    "a": "youraisemeup",
+    "b": "yourrisemeup",
+    "common_long_lines": 8,
+    "containment": 1.0
+  },
+  {
+    "a": "youricemeup",
+    "b": "yourisemeup",
+    "common_long_lines": 11,
+    "containment": 1.0
+  }
+]

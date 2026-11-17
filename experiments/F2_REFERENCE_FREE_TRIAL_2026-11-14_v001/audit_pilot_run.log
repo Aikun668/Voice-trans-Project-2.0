@@ -1,0 +1,8 @@
+{"done": 20, "total": 128, "statuses": {"quarantine": 8, "verified_candidate": 12}, "seconds": 8.4}
+{"done": 40, "total": 128, "statuses": {"quarantine": 10, "verified_candidate": 30}, "seconds": 12.1}
+{"done": 60, "total": 128, "statuses": {"quarantine": 14, "verified_candidate": 46}, "seconds": 15.5}
+{"done": 80, "total": 128, "statuses": {"quarantine": 18, "verified_candidate": 62}, "seconds": 19.3}
+{"done": 100, "total": 128, "statuses": {"quarantine": 21, "verified_candidate": 79}, "seconds": 22.0}
+{"done": 120, "total": 128, "statuses": {"quarantine": 28, "verified_candidate": 92}, "seconds": 25.0}
+{"done": 128, "total": 128, "statuses": {"quarantine": 28, "verified_candidate": 100}, "seconds": 26.3}
+{"processed_pairs": 128, "statuses": {"quarantine": 28, "verified_candidate": 100}, "reasons": {"pitch_or_voicing_uncertain": 15, "independent_alignment_disagrees": 16}, "verified_songs": 78, "verified_by_split": {"train": 82, "test": 10, "validation": 8}, "frame_counts": {"train": {"frames": 10532, "raw_large_delta_frames": 5952}, "test": {"frames": 1111, "raw_large_delta_frames": 559}, "validation": {"frames": 1045, "raw_large_delta_frames": 451}}, "human_pitch_truth_verified": false}

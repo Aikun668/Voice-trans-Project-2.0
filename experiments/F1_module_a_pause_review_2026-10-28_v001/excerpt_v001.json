@@ -1,0 +1,19 @@
+{
+  "source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_medium.wav",
+  "source_sha256": "4f6775a7738a76cee694d92ed8459b13cd1cb15dba2568fd8e79c1b1b749122e",
+  "excerpt": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_module_a_pause_review_2026-10-28_v001\\shige_medium_10s-12.5s_original.wav",
+  "excerpt_sha256": "4ca2b2fb0978361c0bee0aca28f187582ad71689180a4bda6eabca8081e31fd9",
+  "source_start_seconds": 10.0,
+  "source_end_seconds": 12.5,
+  "candidate_source_seconds": [
+    11.03,
+    11.23
+  ],
+  "candidate_excerpt_seconds": [
+    1.03,
+    1.23
+  ],
+  "operation": "one continuous PCM excerpt; no gain, processing, reordering or stitching",
+  "pcm_samples_match_source": true,
+  "human_label": "pending_jade"
+}

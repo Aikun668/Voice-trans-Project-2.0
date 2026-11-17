@@ -1,0 +1,10 @@
+created_utc: 2026-11-01T04:01:52.707007+00:00
+experiment: F1-EXP-006
+phase: F1-P3A-3
+test: A01, A05
+sealed: A02, A03, A04, A06, B01, B02, B03, C01, C02, C03
+drive: 3.0
+wets: {'Wet50': 0.5, 'Wet60': 0.6, 'Wet70': 0.7}
+target_lufs: -18.549999999999997
+technical_pass: True
+note: original inputs not modified; Holdout not processed; wet=0.5/0.7 reused, wet=0.6 generated

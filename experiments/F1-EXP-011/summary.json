@@ -1,0 +1,37 @@
+{
+  "experiment": "F1-EXP-011",
+  "phase": "F1-P4A-rev1",
+  "status": "route_A_terminated",
+  "sample_id": "A01",
+  "version": "V3(H2-H12)",
+  "anchor": "EXP-010 V2 (prev B)",
+  "hard_failed": false,
+  "diag_marked": true,
+  "target_lufs": -19.36,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "deliverables": [
+    "original.wav",
+    "prev_B.wav",
+    "revision.wav"
+  ],
+  "next_rule": "修订版明显更好→A05复验；仍一点点→方案A终止转C",
+  "listening_result": "修订版与原音相比被感知为'只是音量加了一点点'，非饱满度改善",
+  "jade_verbatim": "倒是好了一点点，但是相对原音来说，总体两个我感觉只是这个音量加了一点点",
+  "classification": "changed_not_better（只变亮/变响不算通过）",
+  "objective_explanation": {
+    "loudness_matched": "LUFS -19.37/-19.36/-19.35，RMS 差 0.01dB —— 实际音量未变",
+    "band_shift_revision_vs_original_db": {
+      "fundamental_120_250Hz": -1.73,
+      "low_mid_250_500Hz": 3.77,
+      "mid_500_1000Hz": 4.18,
+      "high_mid_1000_2000Hz": 5.08,
+      "full_band_80_8000Hz": 0.01
+    },
+    "centroid_hz": {"original": 294, "prev_B": 385, "revision": 388},
+    "mechanism": "抬升 H2-H12 后总能量上升，响度匹配的 makeup 使整段压低，基频区净降 1.73dB；全带总能量不变，频谱重心上移 32% → 感知为更亮/更响，而非更厚",
+    "root_cause": "响度匹配框架下，静态频率重分配只能表现为音色倾斜，不能表现为体积/密度增加；指标(H1-H2)达成不等于感知达成"
+  },
+  "decision": "方案A终止：修订次数用尽且无正向收益；不扩谐波范围、不调强度、不改掩膜参数",
+  "next_action": "频域/电平域路线（EQ/饱和/压缩/谐波重分配）全部用尽；建议下一轮做'周期内部能量分布'时域指纹对照诊断（薄音vs正常4对），确认是否存在后期可模仿的时域特征；若不可模仿则按方案C接受边界"
+}

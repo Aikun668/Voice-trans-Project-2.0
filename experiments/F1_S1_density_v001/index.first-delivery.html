@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,"><title>Jade · F1 S1 单项密度实验</title>
+<style>body{font:16px/1.7 system-ui;background:#f4f5f7;color:#202530;max-width:780px;margin:32px auto;padding:0 20px}section{background:white;border:1px solid #dce0e6;border-radius:12px;padding:22px;margin:20px 0}h1{font-size:26px}h2{font-size:20px}audio{width:100%}a{color:#2953a6}.note{color:#596579}li{margin:6px 0}</style>
+<h1>第一步：只验证饱满度／声音密度</h1>
+<p>素材：本人《是谁在唱歌》中度跑调版。复用 Spotify Pedalboard 的谐波处理模块；不叠加 EQ、压缩、去齿音、混响或修音高。</p>
+<p>只判断声音是否更充实、是否仍自然像本人。较明显档也可能更毛、更硬；更强不代表更好。工程检查通过，听感等待 Jade。</p>
+<p><a href="feature-map.html">查看功能锚定图与后续顺序</a> · <a href="qa_report.json">检查数据</a></p>
+<section><h2>先听同一句：原音 → 温和 → 较明显</h2>
+<p>取同一段 12.50–15.50 秒，每段 3 秒，中间停顿 0.35 秒。</p>
+<audio controls preload="metadata" data-montage="true" src="04_phrase_compare.wav"></audio></section>
+<section><h2>01 原音（仅匹配音量）</h2><audio controls preload="metadata" src="01_before_matched.wav"></audio><p><a href="01_before_matched.wav" download>保存 WAV</a> · -18.00 LUFS</p></section><section><h2>02 温和密度处理</h2><audio controls preload="metadata" src="02_density_mild.wav"></audio><p><a href="02_density_mild.wav" download>保存 WAV</a> · -17.99 LUFS</p></section><section><h2>03 较明显密度处理</h2><audio controls preload="metadata" src="03_density_strong.wav"></audio><p><a href="03_density_strong.wav" download>保存 WAV</a> · -17.98 LUFS</p></section>
+<section><h2>你反馈后怎么走</h2><ul>
+<li>更充实、自然：保留本档，再换另一条本人录音复验；此时才考虑下一功能。</li>
+<li>有改善，但毛／硬／闷／压住：保留基准，只改同一模块一个控制量，最多修订一次。</li>
+<li>无区别或没有更好：先核验播放与实际文件；最多一次有依据的修订，再无收益就暂停此候选。</li>
+<li>明显更差或不像本人：不进入组合，定位原因；不能低成本修复就换候选。</li>
+</ul><p>回复：更喜欢 01／02／03／无区别；更充实还是更毛、更硬；问题时间点（有则提供）。</p></section>
+<script>let active=null;document.querySelectorAll('audio').forEach(p=>p.addEventListener('play',()=>{if(active&&active!==p){const t=active.ended||active.dataset.montage||p.dataset.montage?0:active.currentTime;active.pause();p.currentTime=Math.min(t,p.duration||t);}active=p;}));</script></html>

@@ -1,0 +1,37 @@
+{
+  "experiment": "F1-EXP-002",
+  "phase": "F1-P2.1",
+  "status": "negative_no_stable_effect",
+  "test_count": 4,
+  "target_lufs": -21.400000000000002,
+  "technical_pass": true,
+  "frequency_response_pass": true,
+  "ab_mapping_pass": true,
+  "a01_onset": {
+    "first2_hf_fraction": 0.003242389320667687,
+    "rest_hf_fraction": 0.008319031085714456,
+    "first2_rms_dbfs": -19.07894806374238,
+    "rest_rms_dbfs": -19.375203889310715,
+    "first2_peak_dbfs": -6.483332682824045,
+    "first_sample": 0.0,
+    "last_sample": 0.003936767578125,
+    "filter_decay_ms": {
+      "E2_1p5": 0.3541666666666667,
+      "E2_4p0": 0.47916666666666663
+    },
+    "E2_1p5": {
+      "hf_gain_first2_db": 1.4078270766988306,
+      "hf_gain_rest_db": 1.3933054033258405
+    },
+    "E2_4p0": {
+      "hf_gain_first2_db": 3.752556948206438,
+      "hf_gain_rest_db": 3.715052675178991
+    }
+  },
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw",
+  "linearity_pass": true,
+  "listening_result": "8 processed comparisons: 7 no audible difference; A02 E2 +1.5 slight only; no stable fullness improvement",
+  "decision": "stop_current_high_shelf_direction"
+}

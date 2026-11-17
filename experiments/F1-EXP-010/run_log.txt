@@ -1,0 +1,8 @@
+created_utc: 2026-11-01T07:35:09.611113+00:00
+experiment: F1-EXP-010
+phase: F1-P4A
+sample: A01; target profile ref: A_self_02 (read-only)
+sealed: A04, A06, B03, C01, C02, C03
+target_lufs: -19.36
+technical_pass: True
+note: single harmonic-selective mechanism; no limiter; originals untouched

@@ -1,0 +1,70 @@
+{
+  "experiment": "F1-EXP-008",
+  "phase": "F1-P3B",
+  "question": "薄音能否通过动态压缩与并行混合获得可听、自然的密度改善（不做广度随机扫描）",
+  "single_module": true,
+  "no_stacking": true,
+  "samples": [
+    "A01"
+  ],
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "compressor": {
+    "topology": "feed-forward",
+    "detector": "dual-branch one-pole RMS on mean-square: attack branch tau=15ms, release branch tau=120ms, per-sample max (classic RMS ballistics envelope); level=10*log10(envelope)",
+    "curve": "soft knee width 6.0dB centered at threshold (quadratic), above: GR=0.75*(L-T)",
+    "ratio": 4.0,
+    "attack_ms": 15.0,
+    "release_ms": 120.0,
+    "time_constant_convention": "63% step response in the power (mean-square) domain; no extra detector window; no lookahead",
+    "gr_definition": "frame-mean smoothed GR over active 40ms frames; target=P90",
+    "active_definition": "40ms frame RMS within 35.0dB of max frame",
+    "mix": "out = (1-wet)*dry + wet*compressed_branch, branch loudness-matched to dry by constant makeup gain before mixing"
+  },
+  "versions": [
+    {
+      "id": "P1",
+      "target_gr_p90_active_db": 4.0,
+      "wet": 0.5
+    },
+    {
+      "id": "P2",
+      "target_gr_p90_active_db": 8.0,
+      "wet": 0.5
+    },
+    {
+      "id": "P3",
+      "target_gr_p90_active_db": 4.0,
+      "wet": 1.0
+    },
+    {
+      "id": "P4",
+      "target_gr_p90_active_db": 8.0,
+      "wet": 1.0
+    }
+  ],
+  "gr_target_definition": "P90 of frame-mean gain reduction over active 40ms frames; threshold auto-calibrated per target (max 6 iterations, tol 0.2dB)",
+  "p4_purpose": "观察强压缩边界，不预设更好听；若触发持续过压缩标记仍保留供诊断",
+  "listening_target_lufs": -18.0,
+  "loudness_tolerance_lu": 0.3,
+  "references": {
+    "A_AES2022_attack_release_audibility": "https://aes.org/publications/elibrary/elibrary-page/?id=21958 — 不把精力放在细小 Attack/Release 扫描",
+    "B_MDPI2020_aggressive_descriptor": "https://www.mdpi.com/2076-3417/10/7/2350 — 强压缩可能带来攻击性/粗糙感，故设 8dB 上界与诊断标记",
+    "C_JAES2014_perceptual_compression": "https://aes.org/publications/elibrary/elibrary-page/?id=17084 — 压缩未必改善主观音质，全部响度匹配后盲听",
+    "D_SMM2019_glottal_source": "https://www.isca-archive.org/smm_2019/cabral19_smm.html — 若压缩失效，后续转向声源/发声特性诊断而非继续调参",
+    "disclaimer": "以上参数为工程实验设计，并非上述论文验证过的最佳组合"
+  },
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "ffmpeg": "winget links"
+  },
+  "blind_seed": 20261101
+}

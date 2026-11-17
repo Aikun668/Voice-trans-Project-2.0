@@ -1,0 +1,16 @@
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\librosa\util\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\nn\utils\weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+| load HifiGAN:  checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt
+Removing weight norm...
+| Loaded model parameters from checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt.
+| HifiGAN device: cpu.
+Loaded the voice encoder model on cpu in 0.11 seconds.
+f0 norm proxy F0Norm(mean=386.90602069027926, std=116.32606009865852)
+done 1
+done 2
+done 3
+done 4
+done 5
+FINISHED

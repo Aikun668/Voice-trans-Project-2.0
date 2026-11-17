@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F1-P8 薄B局部下陷诊断</title>
+<style>body{font:15px/1.6 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:1080px;margin:26px auto;padding:0 18px}
+h1{font-size:23px}h2{font-size:18px;margin-top:26px}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px}
+th,td{border:1px solid #dce0e6;padding:6px 8px;text-align:center}th{background:#eef1f5}
+img{width:100%;border:1px solid #dce0e6;border-radius:8px;margin:10px 0;background:#fff}
+.note{background:#fff8e6;border:1px solid #ead9a6;border-radius:8px;padding:12px}</style>
+<h1>F1-P8 · 薄 B 局部动态下陷诊断（只读）</h1>
+<div class="note">判定标准：下陷 = 相对"所在处浊音帧 P75 基准"低 3dB 以上、持续 ≥100ms；已排除静音/换气/清辅音/句尾渐弱；疑似刻意弱唱（&gt;12dB 或 &gt;1.5s）单列不计入主统计。<br>
+红色阴影 = 合格的下陷事件。请重点看：<b>薄音版的红块是不是更多、更深、更集中在句中</b>。</div>
+<h2>配对统计（两尺度）</h2>
+<table><tr><th rowspan="2">曲目</th><th rowspan="2">尺度</th><th colspan="3">中等下陷频率（次/分）</th><th colspan="3">深度下陷频率（次/分，&gt;12dB）</th><th colspan="3">下陷时间占比</th><th colspan="3">浊音帧下陷 P90（dB）</th><th rowspan="2">对齐相关</th></tr>
+<tr><th>薄</th><th>正常</th><th>差</th><th>薄</th><th>正常</th><th>差</th><th>薄</th><th>正常</th><th>差</th><th>薄</th><th>正常</th><th>差</th></tr>
+<tr><td>平凡之路</td><td>local</td>
+<td>5.91</td><td>12.23</td><td>-6.32</td>
+<td>35.43</td><td>12.23</td><td>+23.2</td>
+<td>0.109</td><td>0.071</td><td>+0.04</td>
+<td>13.63</td><td>11.33</td><td>+2.3</td>
+<td>0.993</td></tr><tr><td>平凡之路</td><td>phrase</td>
+<td>11.81</td><td>0.0</td><td>+11.81</td>
+<td>35.43</td><td>18.35</td><td>+17.08</td>
+<td>0.133</td><td>0.058</td><td>+0.08</td>
+<td>14.36</td><td>11.79</td><td>+2.57</td>
+<td>0.993</td></tr><tr><td>我们的歌</td><td>local</td>
+<td>0.0</td><td>12.11</td><td>-12.11</td>
+<td>49.88</td><td>30.27</td><td>+19.61</td>
+<td>0.141</td><td>0.129</td><td>+0.01</td>
+<td>17.06</td><td>21.22</td><td>-4.16</td>
+<td>0.987</td></tr><tr><td>我们的歌</td><td>phrase</td>
+<td>0.0</td><td>12.11</td><td>-12.11</td>
+<td>49.88</td><td>30.27</td><td>+19.61</td>
+<td>0.15</td><td>0.129</td><td>+0.02</td>
+<td>17.14</td><td>22.22</td><td>-5.08</td>
+<td>0.987</td></tr><tr><td>雅俗共赏</td><td>local</td>
+<td>4.71</td><td>15.45</td><td>-10.74</td>
+<td>61.18</td><td>25.75</td><td>+35.43</td>
+<td>0.18</td><td>0.156</td><td>+0.02</td>
+<td>16.43</td><td>8.22</td><td>+8.21</td>
+<td>0.951</td></tr><tr><td>雅俗共赏</td><td>phrase</td>
+<td>9.41</td><td>25.75</td><td>-16.34</td>
+<td>61.18</td><td>30.9</td><td>+30.28</td>
+<td>0.227</td><td>0.212</td><td>+0.02</td>
+<td>16.59</td><td>8.22</td><td>+8.37</td>
+<td>0.951</td></tr><tr><td>因为刚好遇见你</td><td>local</td>
+<td>15.9</td><td>32.23</td><td>-16.33</td>
+<td>58.3</td><td>37.6</td><td>+20.7</td>
+<td>0.256</td><td>0.201</td><td>+0.05</td>
+<td>22.55</td><td>21.78</td><td>+0.77</td>
+<td>0.991</td></tr><tr><td>因为刚好遇见你</td><td>phrase</td>
+<td>21.2</td><td>26.86</td><td>-5.66</td>
+<td>58.3</td><td>37.6</td><td>+20.7</td>
+<td>0.246</td><td>0.246</td><td>+0.0</td>
+<td>22.15</td><td>22.02</td><td>+0.13</td>
+<td>0.991</td></tr></table>
+<h2>四对同向性</h2>
+<h3>尺度：local</h3><table><tr><th>指标</th><th>同向对数</th><th>中位差值（薄−正常）</th><th>正/负</th></tr><tr><td>events_per_min</td><td>4/4</td><td>-11.43</td><td>0/4</td></tr><tr><td>deep_dip_count_per_min</td><td>4/4</td><td>+21.95</td><td>4/0</td></tr><tr><td>dip_event_max_median_db</td><td>2/3</td><td>-0.7</td><td>1/2</td></tr><tr><td>dip_event_max_p90_db</td><td>3/3</td><td>-1.2</td><td>0/3</td></tr><tr><td>dip_time_fraction</td><td>4/4</td><td>+0.03</td><td>4/0</td></tr><tr><td>dip_mean_all_voiced_db</td><td>3/4</td><td>+0.3</td><td>3/1</td></tr><tr><td>dip_p90_all_voiced_db</td><td>3/4</td><td>+1.53</td><td>3/1</td></tr><tr><td>voiced_energy_sd_db</td><td>3/4</td><td>-0.1</td><td>1/3</td></tr></table><h3>尺度：phrase</h3><table><tr><th>指标</th><th>同向对数</th><th>中位差值（薄−正常）</th><th>正/负</th></tr><tr><td>events_per_min</td><td>3/4</td><td>-8.88</td><td>1/3</td></tr><tr><td>deep_dip_count_per_min</td><td>4/4</td><td>+20.16</td><td>4/0</td></tr><tr><td>dip_event_max_median_db</td><td>2/2</td><td>-1.65</td><td>0/2</td></tr><tr><td>dip_event_max_p90_db</td><td>1/2</td><td>-1.9</td><td>1/1</td></tr><tr><td>dip_time_fraction</td><td>3/4</td><td>+0.02</td><td>3/0</td></tr><tr><td>dip_mean_all_voiced_db</td><td>3/4</td><td>+0.23</td><td>3/1</td></tr><tr><td>dip_p90_all_voiced_db</td><td>3/4</td><td>+1.35</td><td>3/1</td></tr><tr><td>voiced_energy_sd_db</td><td>3/4</td><td>-0.1</td><td>1/3</td></tr></table>
+<h2>可视化（红块=合格下陷事件）</h2>
+<img src="qa/plots/平凡之路.png" alt="平凡之路"><img src="qa/plots/我们的歌.png" alt="我们的歌"><img src="qa/plots/雅俗共赏.png" alt="雅俗共赏"><img src="qa/plots/因为刚好遇见你.png" alt="因为刚好遇见你">
+</html>

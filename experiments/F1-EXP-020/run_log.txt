@@ -1,0 +1,7 @@
+created_utc: 2026-11-02T09:03:38.401253+00:00
+experiment: F1-EXP-020
+phase: F1-P6
+F1 shift via LPC pole rotation on EXP-016 M2; +20/+45 Hz; F0/time untouched; vowels only
+sealed untouched: A04, A06, B03, C01, C02, C03
+target_lufs: -19.97
+technical_pass: True

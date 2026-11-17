@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>分句处理对比</title>
+<style>body{max-width:680px;margin:28px auto;padding:0 18px;font:18px/1.8 system-ui;background:#f4f6fa;color:#172337}button{font:inherit;padding:9px 14px;margin:4px;border:1px solid #b8c5d5;border-radius:8px;background:#fff;cursor:pointer}button[aria-pressed=true]{background:#2357a4;color:#fff}audio{width:100%;margin:10px 0}.n{color:#536177;font-size:15px}select{font:inherit;padding:4px}.q{border-top:1px solid #e3e8ef;padding:8px 0}textarea{width:100%;min-height:70px;font:inherit;box-sizing:border-box}</style>
+<h2>整段处理 vs 分成短句处理</h2><p class="n">只改了一件事：<b>整段一次处理</b> 对比 <b>切成 3–6 秒短句分别处理再拼起来</b>。其余完全一样，响度已对齐。</p>
+<p id="cl"></p><p id="vs"></p><audio id="p" controls></audio>
+<div class="q"><b>SHIGE：分句版 比 整段版</b><br><select id="a"><option value="">未答</option><option>明显好转</option><option>略好一点</option><option>没区别</option><option>更差</option></select></div>
+<div class="q"><b>zuixuan：分句版 比 整段版</b><br><select id="b"><option value="">未答</option><option>明显好转</option><option>略好一点</option><option>没区别</option><option>更差</option></select></div>
+<div class="q"><b>备注</b><textarea id="nt"></textarea></div><p><button id="cp">复制反馈</button> <span id="m" class="n"></span></p>
+<script>
+const C={shige:'SHIGE',zuixuan:'zuixuan'},V={original:'原音',old:'旧版美化',whole:'新版·整段',chunked:'新版·分句'};let c='shige',v='original';const p=document.getElementById('p');
+for(const k in C){const b=document.createElement('button');b.textContent=C[k];b.dataset.c=k;b.onclick=()=>{c=k;go(true)};document.getElementById('cl').appendChild(b)}
+for(const k in V){const b=document.createElement('button');b.textContent=V[k];b.dataset.v=k;b.onclick=()=>{v=k;go(false)};document.getElementById('vs').appendChild(b)}
+function go(r0){const t=r0?0:p.currentTime,r=!p.paused;p.src='audio/'+c+'_'+v+'.wav';p.onloadedmetadata=()=>{p.currentTime=Math.min(t,p.duration-.05);if(r)p.play()};document.querySelectorAll('[data-c]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===c));document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v))}
+document.getElementById('cp').onclick=async()=>{const t='【分句处理对比反馈】\nSHIGE 分句 vs 整段：'+(a.value||'未答')+'\nzuixuan 分句 vs 整段：'+(b2.value||'未答')+'\n备注：'+nt.value;try{await navigator.clipboard.writeText(t);m.textContent='已复制'}catch(e){m.textContent='复制失败'}};
+const b2=document.getElementById('b');go(true);
+</script>

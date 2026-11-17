@@ -1,0 +1,22 @@
+{
+  "experiment": "F1-EXP-020",
+  "phase": "F1-P6",
+  "approved_scope": "只做 F1 位置上移 +20/+45Hz",
+  "baseline": "EXP-016 M2（原样引用）",
+  "target": "A_self_01",
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "listening_target_lufs": -19.97,
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "blind_seed": 20261109
+}

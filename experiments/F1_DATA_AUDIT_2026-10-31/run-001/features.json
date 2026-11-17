@@ -1,0 +1,2257 @@
+[
+  {
+    "sample_id": "A11",
+    "dataset_id": "A_gt_01",
+    "category": "A_thin",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "女（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\raw\\女A-001.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\wav\\女A-001.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 7.34,
+    "trimmed": false,
+    "duration_s": 7.34,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -23.83,
+      "true_peak_dbtp": -10.11,
+      "loudness_range_lu": 2.9
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 352320,
+      "duration_seconds": 7.34,
+      "sample_peak_dbfs": -10.161725612948791,
+      "rms_dbfs": -22.87476581331216,
+      "clipped_samples": 0,
+      "dc_offset": -6.139116001389007e-06
+    },
+    "spectral": {
+      "centroid_hz": 428.9943387104765,
+      "flatness": 0.0248154488203322,
+      "rolloff85_hz": 585.9375
+    },
+    "bands": {
+      "sub_20_80": 0.012520304403154466,
+      "body_80_500": 0.8097694398903069,
+      "mid_500_3000": 0.16821084432203987,
+      "presence_3000_5000": 0.006085321388017983,
+      "high_5000_8000": 0.003414089996480666
+    },
+    "activity": {
+      "active_seconds": 7.34,
+      "low_level_seconds": 0.0,
+      "dynamic_range_db": 17.326782035827637,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.0,
+      "gaps": [],
+      "digital_silence_s": 0.00014583333333333335,
+      "noise_floor_dbfs": -36.03130326672498,
+      "estimated_snr_db": 13.015580446249153
+    },
+    "pitch": {
+      "median_hz": 290.13694855017843,
+      "p10_hz": 268.77776692823267,
+      "p90_hz": 328.2415663410544,
+      "voiced_frames": 302,
+      "total_frames": 364,
+      "voiced_fraction": 0.8296703296703297,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "duration_lt_8s",
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留",
+      "源片段长度不足 8 s，未补长",
+      "质量提示：duration_lt_8s, noise_review"
+    ]
+  },
+  {
+    "sample_id": "A05",
+    "dataset_id": "A_gt_02",
+    "category": "A_thin",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "女（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\raw\\女A-002.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\wav\\女A-002.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 11.92,
+    "trimmed": false,
+    "duration_s": 11.92,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -21.24,
+      "true_peak_dbtp": -5.89,
+      "loudness_range_lu": 5.3
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 572160,
+      "duration_seconds": 11.92,
+      "sample_peak_dbfs": -5.897946301867437,
+      "rms_dbfs": -20.18184544524868,
+      "clipped_samples": 0,
+      "dc_offset": -6.99272091756731e-05
+    },
+    "spectral": {
+      "centroid_hz": 461.9063662830984,
+      "flatness": 0.016843410639269352,
+      "rolloff85_hz": 773.4375
+    },
+    "bands": {
+      "sub_20_80": 0.019520198702984947,
+      "body_80_500": 0.7250800983649179,
+      "mid_500_3000": 0.25011038278574177,
+      "presence_3000_5000": 0.003306235305087677,
+      "high_5000_8000": 0.0019830848412677043
+    },
+    "activity": {
+      "active_seconds": 11.91,
+      "low_level_seconds": 0.01,
+      "dynamic_range_db": 21.362177801132198,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.0,
+      "gaps": [
+        0.0
+      ],
+      "digital_silence_s": 6.25e-05,
+      "noise_floor_dbfs": -35.875694205971946,
+      "estimated_snr_db": 13.989733744084457
+    },
+    "pitch": {
+      "median_hz": 289.97370832304233,
+      "p10_hz": 258.6299236363852,
+      "p90_hz": 335.40827279933893,
+      "voiced_frames": 475,
+      "total_frames": 593,
+      "voiced_fraction": 0.8010118043844857,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "dev",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留",
+      "质量提示：noise_review"
+    ],
+    "preview": {
+      "file": "previews\\A05.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 0.9200000000000017,
+      "lufs": -20.32,
+      "true_peak_dbtp": -4.97
+    }
+  },
+  {
+    "sample_id": "A06",
+    "dataset_id": "A_gt_03",
+    "category": "A_thin",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "男（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\raw\\男A-001.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\wav\\男A-001.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 10.245,
+    "trimmed": false,
+    "duration_s": 10.245,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -24.18,
+      "true_peak_dbtp": -12.86,
+      "loudness_range_lu": 2.6
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 491760,
+      "duration_seconds": 10.245,
+      "sample_peak_dbfs": -12.862376274589346,
+      "rms_dbfs": -23.783963405194413,
+      "clipped_samples": 0,
+      "dc_offset": -1.849057675571544e-05
+    },
+    "spectral": {
+      "centroid_hz": 275.9295144938074,
+      "flatness": 0.01291254078576902,
+      "rolloff85_hz": 246.09375
+    },
+    "bands": {
+      "sub_20_80": 0.00051607281502276,
+      "body_80_500": 0.9518695073568957,
+      "mid_500_3000": 0.042681637046154575,
+      "presence_3000_5000": 0.0029190016980590386,
+      "high_5000_8000": 0.0020137810838679747
+    },
+    "activity": {
+      "active_seconds": 10.21,
+      "low_level_seconds": 0.03,
+      "dynamic_range_db": 24.75084781646729,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.0,
+      "gaps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "digital_silence_s": 0.00014583333333333335,
+      "noise_floor_dbfs": -45.664678665354494,
+      "estimated_snr_db": 22.228561600471274
+    },
+    "pitch": {
+      "median_hz": 222.25193980079518,
+      "p10_hz": 170.84350883191175,
+      "p90_hz": 246.45531245380286,
+      "voiced_frames": 414,
+      "total_frames": 509,
+      "voiced_fraction": 0.8133595284872298,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "holdout",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留"
+    ],
+    "preview": {
+      "file": "previews\\A06.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 3.860000000000003,
+      "lufs": -20.32,
+      "true_peak_dbtp": -9.0
+    }
+  },
+  {
+    "sample_id": "A12",
+    "dataset_id": "A_gt_04",
+    "category": "A_thin",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "男（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\raw\\男A-002.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\gtsinger\\wav\\男A-002.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 9.93,
+    "trimmed": false,
+    "duration_s": 9.93,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -24.35,
+      "true_peak_dbtp": -9.11,
+      "loudness_range_lu": 5.2
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 476640,
+      "duration_seconds": 9.93,
+      "sample_peak_dbfs": -9.11394481500838,
+      "rms_dbfs": -23.216487386687973,
+      "clipped_samples": 0,
+      "dc_offset": -6.7351367818544915e-06
+    },
+    "spectral": {
+      "centroid_hz": 333.9713182861933,
+      "flatness": 0.007854022895878523,
+      "rolloff85_hz": 339.84375
+    },
+    "bands": {
+      "sub_20_80": 0.008024920818731044,
+      "body_80_500": 0.8871112385655179,
+      "mid_500_3000": 0.10287810267369862,
+      "presence_3000_5000": 0.0013228820400143517,
+      "high_5000_8000": 0.0006628559020381532
+    },
+    "activity": {
+      "active_seconds": 9.67,
+      "low_level_seconds": 0.26,
+      "dynamic_range_db": 27.00695638656616,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.08000000000000007,
+      "gaps": [
+        0.020000000000000018,
+        0.040000000000000036,
+        0.0,
+        0.0,
+        0.040000000000000036,
+        0.08000000000000007,
+        0.009999999999999787
+      ],
+      "digital_silence_s": 0.00014583333333333335,
+      "noise_floor_dbfs": -46.82146452268448,
+      "estimated_snr_db": 22.40180579578211
+    },
+    "pitch": {
+      "median_hz": 226.02059492014956,
+      "p10_hz": 167.99846537111858,
+      "p90_hz": 303.72313477457624,
+      "voiced_frames": 400,
+      "total_frames": 493,
+      "voiced_fraction": 0.8113590263691683,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留"
+    ]
+  },
+  {
+    "sample_id": "A01",
+    "dataset_id": "A_self_01",
+    "category": "A_thin",
+    "source": "Self",
+    "source_type": "self",
+    "singer_id": "Self_User",
+    "singer_label": "用户本人",
+    "song": "平凡之路",
+    "variant": "薄音版",
+    "technique": "自录版本：薄音版",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\平凡之路薄音版.m4a",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\平凡之路薄音版.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 13.141333333333334,
+    "trimmed": false,
+    "duration_s": 13.141333333333334,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -19.24,
+      "true_peak_dbtp": -6.41,
+      "loudness_range_lu": 4.1
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 630784,
+      "duration_seconds": 13.141333333333334,
+      "sample_peak_dbfs": -6.415937260135678,
+      "rms_dbfs": -19.328791729206902,
+      "clipped_samples": 0,
+      "dc_offset": -1.517692943672081e-06
+    },
+    "spectral": {
+      "centroid_hz": 293.7995749286146,
+      "flatness": 0.019288856647257706,
+      "rolloff85_hz": 304.6875
+    },
+    "bands": {
+      "sub_20_80": 3.5017488922137206e-05,
+      "body_80_500": 0.9238635756443739,
+      "mid_500_3000": 0.06855939578013519,
+      "presence_3000_5000": 0.0028386194184869193,
+      "high_5000_8000": 0.004703391668081994
+    },
+    "activity": {
+      "active_seconds": 12.33,
+      "low_level_seconds": 0.78,
+      "dynamic_range_db": 26.818542480468746,
+      "leading_gap_s": 0.05,
+      "trailing_gap_s": 0.12133333333333418,
+      "longest_gap_s": 0.12133333333333418,
+      "gaps": [
+        0.0,
+        0.0,
+        0.01999999999999999,
+        0.020000000000000018,
+        0.03999999999999998,
+        0.03999999999999998,
+        0.12,
+        0.010000000000000231,
+        0.009999999999999787,
+        0.010000000000000675,
+        0.040000000000000036,
+        0.03000000000000025,
+        0.0,
+        0.009999999999999787,
+        0.049999999999998934,
+        0.05999999999999872,
+        0.0
+      ],
+      "digital_silence_s": 0.03277083333333333,
+      "noise_floor_dbfs": -49.38710658969095,
+      "estimated_snr_db": 29.51690274071742
+    },
+    "pitch": {
+      "median_hz": 175.93030107891497,
+      "p10_hz": 129.54195579804048,
+      "p90_hz": 206.05624796967732,
+      "voiced_frames": 510,
+      "total_frames": 654,
+      "voiced_fraction": 0.7798165137614679,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "unconfirmed_user_recording",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "dev",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "原始 m4a 为 48k 立体声 AAC；wav 为 48k 单声道 PCM16"
+    ],
+    "preview": {
+      "file": "previews\\A01.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": -1.0799999999999983,
+      "lufs": -20.32,
+      "true_peak_dbtp": -7.49
+    }
+  },
+  {
+    "sample_id": "A07",
+    "dataset_id": "A_self_02",
+    "category": "A_thin",
+    "source": "Self",
+    "source_type": "self",
+    "singer_id": "Self_User",
+    "singer_label": "用户本人",
+    "song": "平凡之路",
+    "variant": "正常版",
+    "technique": "自录版本：正常版",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\平凡之路正常版.m4a",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\平凡之路正常版.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 13.352,
+    "trimmed": false,
+    "duration_s": 13.352,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -17.52,
+      "true_peak_dbtp": -3.49,
+      "loudness_range_lu": 2.1
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 640896,
+      "duration_seconds": 13.352,
+      "sample_peak_dbfs": -3.489018248565519,
+      "rms_dbfs": -17.641229905643556,
+      "clipped_samples": 0,
+      "dc_offset": 5.823517836137806e-06
+    },
+    "spectral": {
+      "centroid_hz": 403.4769551837961,
+      "flatness": 0.03437377003146441,
+      "rolloff85_hz": 515.625
+    },
+    "bands": {
+      "sub_20_80": 8.001590496130375e-05,
+      "body_80_500": 0.830943513220757,
+      "mid_500_3000": 0.1575102016133873,
+      "presence_3000_5000": 0.0035000537873150373,
+      "high_5000_8000": 0.007966215473579487
+    },
+    "activity": {
+      "active_seconds": 12.55,
+      "low_level_seconds": 0.77,
+      "dynamic_range_db": 29.004348850250246,
+      "leading_gap_s": 0.08,
+      "trailing_gap_s": 0.10200000000000031,
+      "longest_gap_s": 0.14000000000000057,
+      "gaps": [
+        0.09999999999999999,
+        0.03999999999999998,
+        0.010000000000000009,
+        0.0,
+        0.010000000000000009,
+        0.0,
+        0.019999999999999574,
+        0.07000000000000028,
+        0.0,
+        0.05000000000000071,
+        0.05000000000000071,
+        0.14000000000000057
+      ],
+      "digital_silence_s": 0.033166666666666664,
+      "noise_floor_dbfs": -48.85346225359941,
+      "estimated_snr_db": 31.498270384268274
+    },
+    "pitch": {
+      "median_hz": 171.72072223375108,
+      "p10_hz": 128.87463887695836,
+      "p90_hz": 205.89164976381986,
+      "voiced_frames": 495,
+      "total_frames": 664,
+      "voiced_fraction": 0.7454819277108434,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "unconfirmed_user_recording",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "原始 m4a 为 48k 立体声 AAC；wav 为 48k 单声道 PCM16"
+    ]
+  },
+  {
+    "sample_id": "A02",
+    "dataset_id": "A_self_03",
+    "category": "A_thin",
+    "source": "Self",
+    "source_type": "self",
+    "singer_id": "Self_User",
+    "singer_label": "用户本人",
+    "song": "我们的歌",
+    "variant": "薄音版",
+    "technique": "自录版本：薄音版",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\我们的歌-薄音版.m4a",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\我们的歌-薄音版.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 13.952,
+    "trimmed": false,
+    "duration_s": 13.952,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -25.07,
+      "true_peak_dbtp": -8.8,
+      "loudness_range_lu": 3.6
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 669696,
+      "duration_seconds": 13.952,
+      "sample_peak_dbfs": -8.802440015929186,
+      "rms_dbfs": -24.560468559904432,
+      "clipped_samples": 0,
+      "dc_offset": 8.359688137649396e-07
+    },
+    "spectral": {
+      "centroid_hz": 248.02359020208385,
+      "flatness": 0.01633706502829831,
+      "rolloff85_hz": 292.96875
+    },
+    "bands": {
+      "sub_20_80": 0.00012889942322427144,
+      "body_80_500": 0.9648349365377492,
+      "mid_500_3000": 0.029943937342000793,
+      "presence_3000_5000": 0.002023032896834592,
+      "high_5000_8000": 0.0030691938001908706
+    },
+    "activity": {
+      "active_seconds": 13.86,
+      "low_level_seconds": 0.06,
+      "dynamic_range_db": 32.5664701461792,
+      "leading_gap_s": 0.05,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.05,
+      "gaps": [
+        0.03000000000000025
+      ],
+      "digital_silence_s": 0.029354166666666667,
+      "noise_floor_dbfs": -52.730337824660815,
+      "estimated_snr_db": 26.828094404684116
+    },
+    "pitch": {
+      "median_hz": 136.38162777036823,
+      "p10_hz": 113.5893049082545,
+      "p90_hz": 152.9688613372365,
+      "voiced_frames": 465,
+      "total_frames": 694,
+      "voiced_fraction": 0.670028818443804,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "unconfirmed_user_recording",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "dev",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "原始 m4a 为 48k 立体声 AAC；wav 为 48k 单声道 PCM16"
+    ],
+    "preview": {
+      "file": "previews\\A02.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 4.7500000000000036,
+      "lufs": -20.32,
+      "true_peak_dbtp": -4.05
+    }
+  },
+  {
+    "sample_id": "A08",
+    "dataset_id": "A_self_04",
+    "category": "A_thin",
+    "source": "Self",
+    "source_type": "self",
+    "singer_id": "Self_User",
+    "singer_label": "用户本人",
+    "song": "我们的歌",
+    "variant": "正常版",
+    "technique": "自录版本：正常版",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\我们的歌正常版.m4a",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\我们的歌正常版.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 14.032,
+    "trimmed": false,
+    "duration_s": 14.032,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -17.69,
+      "true_peak_dbtp": -4.36,
+      "loudness_range_lu": 2.5
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 673536,
+      "duration_seconds": 14.032,
+      "sample_peak_dbfs": -4.3875473719976545,
+      "rms_dbfs": -17.889529137603454,
+      "clipped_samples": 0,
+      "dc_offset": -8.240619660873732e-06
+    },
+    "spectral": {
+      "centroid_hz": 509.2700065182628,
+      "flatness": 0.08703867008346197,
+      "rolloff85_hz": 468.75
+    },
+    "bands": {
+      "sub_20_80": 0.0003308932085884892,
+      "body_80_500": 0.8574504614675362,
+      "mid_500_3000": 0.11165428332908765,
+      "presence_3000_5000": 0.010681675182270457,
+      "high_5000_8000": 0.019882686812517446
+    },
+    "activity": {
+      "active_seconds": 12.75,
+      "low_level_seconds": 1.25,
+      "dynamic_range_db": 35.00611476898193,
+      "leading_gap_s": 0.05,
+      "trailing_gap_s": 0.002000000000000668,
+      "longest_gap_s": 0.22000000000000008,
+      "gaps": [
+        0.03,
+        0.06,
+        0.0,
+        0.22000000000000008,
+        0.1999999999999993,
+        0.0,
+        0.040000000000000036,
+        0.13000000000000078,
+        0.1200000000000001,
+        0.0,
+        0.0,
+        0.02000000000000135,
+        0.009999999999999787,
+        0.019999999999999574,
+        0.009999999999999787,
+        0.009999999999999787,
+        0.06999999999999851,
+        0.09999999999999964
+      ],
+      "digital_silence_s": 0.026708333333333334,
+      "noise_floor_dbfs": -50.83925367537609,
+      "estimated_snr_db": 32.66230443447445
+    },
+    "pitch": {
+      "median_hz": 158.53093539216184,
+      "p10_hz": 134.65888904567535,
+      "p90_hz": 183.1680991582725,
+      "voiced_frames": 453,
+      "total_frames": 698,
+      "voiced_fraction": 0.6489971346704871,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "unconfirmed_user_recording",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "原始 m4a 为 48k 立体声 AAC；wav 为 48k 单声道 PCM16"
+    ]
+  },
+  {
+    "sample_id": "A03",
+    "dataset_id": "A_self_05",
+    "category": "A_thin",
+    "source": "Self",
+    "source_type": "self",
+    "singer_id": "Self_User",
+    "singer_label": "用户本人",
+    "song": "雅俗共赏",
+    "variant": "清唱版",
+    "technique": "自录版本：清唱版",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\雅俗共赏-清唱版.m4a",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\雅俗共赏-清唱版.wav",
+    "clip_start_s": 0.8,
+    "clip_end_s": 15.8,
+    "trimmed": true,
+    "duration_s": 15.0,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -20.57,
+      "true_peak_dbtp": -5.94,
+      "loudness_range_lu": 5.5
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 720000,
+      "duration_seconds": 15.0,
+      "sample_peak_dbfs": -5.9398641711848486,
+      "rms_dbfs": -19.530904111931164,
+      "clipped_samples": 0,
+      "dc_offset": -6.521648830837674e-06
+    },
+    "spectral": {
+      "centroid_hz": 327.4724995144549,
+      "flatness": 0.01633717095971938,
+      "rolloff85_hz": 363.28125
+    },
+    "bands": {
+      "sub_20_80": 2.149661527778216e-05,
+      "body_80_500": 0.8830077567803608,
+      "mid_500_3000": 0.1124580935476527,
+      "presence_3000_5000": 0.001482205036245655,
+      "high_5000_8000": 0.0030304480204630018
+    },
+    "activity": {
+      "active_seconds": 14.93,
+      "low_level_seconds": 0.07,
+      "dynamic_range_db": 22.87232437133789,
+      "leading_gap_s": 0.01,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.03000000000000025,
+      "gaps": [
+        0.03000000000000025,
+        0.009999999999999787
+      ],
+      "digital_silence_s": 4.1666666666666665e-05,
+      "noise_floor_dbfs": -37.33906260977494,
+      "estimated_snr_db": 16.647462076264276
+    },
+    "pitch": {
+      "median_hz": 187.05529290002224,
+      "p10_hz": 137.24982289058107,
+      "p90_hz": 296.7937633700336,
+      "voiced_frames": 652,
+      "total_frames": 747,
+      "voiced_fraction": 0.8728246318607764,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "noise_review"
+      ],
+      "acapella_status": "unconfirmed_user_recording",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "dev",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "原始 m4a 为 48k 立体声 AAC；wav 为 48k 单声道 PCM16",
+      "wav 截取 0.8-15.8 s；原始文件保留",
+      "质量提示：noise_review"
+    ],
+    "preview": {
+      "file": "previews\\A03.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 0.25000000000000355,
+      "lufs": -20.33,
+      "true_peak_dbtp": -5.69
+    }
+  },
+  {
+    "sample_id": "A09",
+    "dataset_id": "A_self_06",
+    "category": "A_thin",
+    "source": "Self",
+    "source_type": "self",
+    "singer_id": "Self_User",
+    "singer_label": "用户本人",
+    "song": "雅俗共赏",
+    "variant": "正常版",
+    "technique": "自录版本：正常版",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\雅俗共赏-正常版.m4a",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\雅俗共赏-正常版.wav",
+    "clip_start_s": 0.2,
+    "clip_end_s": 15.2,
+    "trimmed": true,
+    "duration_s": 15.0,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -17.66,
+      "true_peak_dbtp": -4.7,
+      "loudness_range_lu": 5.3
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 720000,
+      "duration_seconds": 15.0,
+      "sample_peak_dbfs": -4.746278564884803,
+      "rms_dbfs": -16.952572222653405,
+      "clipped_samples": 0,
+      "dc_offset": -3.435092502170139e-06
+    },
+    "spectral": {
+      "centroid_hz": 494.4761924808439,
+      "flatness": 0.06239384590330553,
+      "rolloff85_hz": 609.375
+    },
+    "bands": {
+      "sub_20_80": 3.3003806231276695e-05,
+      "body_80_500": 0.8041065201336122,
+      "mid_500_3000": 0.1730819361792937,
+      "presence_3000_5000": 0.0043991199057932225,
+      "high_5000_8000": 0.018379419975069495
+    },
+    "activity": {
+      "active_seconds": 14.09,
+      "low_level_seconds": 0.91,
+      "dynamic_range_db": 18.363893890380858,
+      "leading_gap_s": 0.01,
+      "trailing_gap_s": 0.23000000000000043,
+      "longest_gap_s": 0.47000000000000003,
+      "gaps": [
+        0.47000000000000003,
+        0.04999999999999982,
+        0.08999999999999986,
+        0.009999999999999787
+      ],
+      "digital_silence_s": 4.1666666666666665e-05,
+      "noise_floor_dbfs": -38.676962678443346,
+      "estimated_snr_db": 20.966715384952195
+    },
+    "pitch": {
+      "median_hz": 187.74431782433825,
+      "p10_hz": 133.9701414636724,
+      "p90_hz": 303.42403107202307,
+      "voiced_frames": 604,
+      "total_frames": 747,
+      "voiced_fraction": 0.8085676037483266,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "unconfirmed_user_recording",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "原始 m4a 为 48k 立体声 AAC；wav 为 48k 单声道 PCM16",
+      "wav 截取 0.2-15.2 s；原始文件保留"
+    ]
+  },
+  {
+    "sample_id": "A04",
+    "dataset_id": "A_self_07",
+    "category": "A_thin",
+    "source": "Self",
+    "source_type": "self",
+    "singer_id": "Self_User",
+    "singer_label": "用户本人",
+    "song": "因为刚好遇见你",
+    "variant": "清唱版",
+    "technique": "自录版本：清唱版",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\因为刚好遇见你-清唱版.m4a",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\因为刚好遇见你-清唱版.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 13.610666666666667,
+    "trimmed": false,
+    "duration_s": 13.610666666666667,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -20.64,
+      "true_peak_dbtp": -6.16,
+      "loudness_range_lu": 1.9
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 653312,
+      "duration_seconds": 13.610666666666667,
+      "sample_peak_dbfs": -6.162236793427231,
+      "rms_dbfs": -20.224778341858705,
+      "clipped_samples": 0,
+      "dc_offset": 3.82749638213633e-06
+    },
+    "spectral": {
+      "centroid_hz": 303.8140109903317,
+      "flatness": 0.011341727383389122,
+      "rolloff85_hz": 328.125
+    },
+    "bands": {
+      "sub_20_80": 5.3085316952311955e-05,
+      "body_80_500": 0.9577904761203533,
+      "mid_500_3000": 0.03741295473753646,
+      "presence_3000_5000": 0.0008123788823523818,
+      "high_5000_8000": 0.003931104942805796
+    },
+    "activity": {
+      "active_seconds": 12.39,
+      "low_level_seconds": 1.19,
+      "dynamic_range_db": 26.094786548614493,
+      "leading_gap_s": 0.13,
+      "trailing_gap_s": 0.010666666666667268,
+      "longest_gap_s": 0.53,
+      "gaps": [
+        0.06,
+        0.53,
+        0.08999999999999986,
+        0.009999999999999787,
+        0.3299999999999983
+      ],
+      "digital_silence_s": 0.0289375,
+      "noise_floor_dbfs": -47.597763218592846,
+      "estimated_snr_db": 27.228799421372607
+    },
+    "pitch": {
+      "median_hz": 201.69703682492218,
+      "p10_hz": 152.3788463937201,
+      "p90_hz": 326.3778672383645,
+      "voiced_frames": 531,
+      "total_frames": 677,
+      "voiced_fraction": 0.7843426883308715,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "unconfirmed_user_recording",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "holdout",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "原始 m4a 为 48k 立体声 AAC；wav 为 48k 单声道 PCM16"
+    ],
+    "preview": {
+      "file": "previews\\A04.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 0.32000000000000384,
+      "lufs": -20.32,
+      "true_peak_dbtp": -5.84
+    }
+  },
+  {
+    "sample_id": "A10",
+    "dataset_id": "A_self_08",
+    "category": "A_thin",
+    "source": "Self",
+    "source_type": "self",
+    "singer_id": "Self_User",
+    "singer_label": "用户本人",
+    "song": "因为刚好遇见你",
+    "variant": "原版",
+    "technique": "自录版本：原版",
+    "original_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\raw\\因为刚好遇见你-原版.m4a",
+    "wav_file": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\因为刚好遇见你-原版.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 13.972,
+    "trimmed": false,
+    "duration_s": 13.972,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -15.47,
+      "true_peak_dbtp": -2.24,
+      "loudness_range_lu": 1.4
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 670656,
+      "duration_seconds": 13.972,
+      "sample_peak_dbfs": -2.244528625119861,
+      "rms_dbfs": -15.55021606462424,
+      "clipped_samples": 0,
+      "dc_offset": 1.3684894260712646e-06
+    },
+    "spectral": {
+      "centroid_hz": 435.36575026803183,
+      "flatness": 0.03985182734350887,
+      "rolloff85_hz": 433.59375
+    },
+    "bands": {
+      "sub_20_80": 2.7560066985888286e-05,
+      "body_80_500": 0.8603609146462156,
+      "mid_500_3000": 0.12690137196609708,
+      "presence_3000_5000": 0.002954160735024337,
+      "high_5000_8000": 0.009755992585677001
+    },
+    "activity": {
+      "active_seconds": 11.95,
+      "low_level_seconds": 1.99,
+      "dynamic_range_db": 24.16311998367309,
+      "leading_gap_s": 1.35,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 1.35,
+      "gaps": [
+        0.009999999999999787,
+        0.03000000000000025,
+        0.08999999999999986,
+        0.08999999999999986,
+        0.0,
+        0.3899999999999988
+      ],
+      "digital_silence_s": 0.0310625,
+      "noise_floor_dbfs": -52.04173928487532,
+      "estimated_snr_db": 36.83811526066823
+    },
+    "pitch": {
+      "median_hz": 226.21328168049166,
+      "p10_hz": 165.49359668110367,
+      "p90_hz": 350.9667727600926,
+      "voiced_frames": 548,
+      "total_frames": 695,
+      "voiced_fraction": 0.7884892086330936,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "warn",
+      "flags": [
+        "low_level_gap_gt_1s"
+      ],
+      "acapella_status": "unconfirmed_user_recording",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "原始 m4a 为 48k 立体声 AAC；wav 为 48k 单声道 PCM16",
+      "质量提示：low_level_gap_gt_1s"
+    ]
+  },
+  {
+    "sample_id": "B04",
+    "dataset_id": "B_gt_01",
+    "category": "B_full",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "女（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\raw\\女B-001.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\wav\\女B-001.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 7.97,
+    "trimmed": false,
+    "duration_s": 7.97,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -22.61,
+      "true_peak_dbtp": -7.41,
+      "loudness_range_lu": 2.3
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 382560,
+      "duration_seconds": 7.97,
+      "sample_peak_dbfs": -7.448702694112457,
+      "rms_dbfs": -21.84276399552155,
+      "clipped_samples": 0,
+      "dc_offset": -2.1551603654696322e-05
+    },
+    "spectral": {
+      "centroid_hz": 461.1356343478877,
+      "flatness": 0.029633407775133565,
+      "rolloff85_hz": 750.0
+    },
+    "bands": {
+      "sub_20_80": 0.040692931443650236,
+      "body_80_500": 0.7108639580754295,
+      "mid_500_3000": 0.23810279768124043,
+      "presence_3000_5000": 0.008660203672826428,
+      "high_5000_8000": 0.0016801091268536942
+    },
+    "activity": {
+      "active_seconds": 7.89,
+      "low_level_seconds": 0.08,
+      "dynamic_range_db": 16.55722494125366,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.010000000000000675,
+      "gaps": [
+        0.009999999999999995,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.010000000000000675
+      ],
+      "digital_silence_s": 8.333333333333333e-05,
+      "noise_floor_dbfs": -35.4007824402884,
+      "estimated_snr_db": 13.351703474959152
+    },
+    "pitch": {
+      "median_hz": 238.8152940560808,
+      "p10_hz": 194.0829996709956,
+      "p90_hz": 270.521736777859,
+      "voiced_frames": 349,
+      "total_frames": 395,
+      "voiced_fraction": 0.8835443037974684,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "duration_lt_8s",
+        "noise_review",
+        "low_freq_content_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留",
+      "源片段长度不足 8 s，未补长",
+      "质量提示：duration_lt_8s, noise_review, low_freq_content_review"
+    ]
+  },
+  {
+    "sample_id": "B01",
+    "dataset_id": "B_gt_02",
+    "category": "B_full",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "女（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\raw\\女B-002.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\wav\\女B-002.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 8.91,
+    "trimmed": false,
+    "duration_s": 8.91,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -23.61,
+      "true_peak_dbtp": -6.93,
+      "loudness_range_lu": 2.9
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 427680,
+      "duration_seconds": 8.91,
+      "sample_peak_dbfs": -6.982765086002524,
+      "rms_dbfs": -23.326401832178906,
+      "clipped_samples": 0,
+      "dc_offset": -1.912700340536441e-05
+    },
+    "spectral": {
+      "centroid_hz": 381.03131068835,
+      "flatness": 0.032981145418263975,
+      "rolloff85_hz": 480.46875
+    },
+    "bands": {
+      "sub_20_80": 0.005591213592355935,
+      "body_80_500": 0.8629405536914153,
+      "mid_500_3000": 0.12182511677487345,
+      "presence_3000_5000": 0.004314629935746709,
+      "high_5000_8000": 0.005328486005608594
+    },
+    "activity": {
+      "active_seconds": 8.35,
+      "low_level_seconds": 0.56,
+      "dynamic_range_db": 26.475650310516357,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.1200000000000001,
+      "gaps": [
+        0.0,
+        0.03000000000000025,
+        0.010000000000000231,
+        0.040000000000000036,
+        0.0,
+        0.020000000000000018,
+        0.020000000000000018,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999999999787,
+        0.1200000000000001,
+        0.009999999999999787,
+        0.09999999999999964,
+        0.019999999999999574,
+        0.019999999999999574
+      ],
+      "digital_silence_s": 0.00025,
+      "noise_floor_dbfs": -54.256927808237926,
+      "estimated_snr_db": 30.174120396841488
+    },
+    "pitch": {
+      "median_hz": 203.16060103506544,
+      "p10_hz": 182.4722074220718,
+      "p90_hz": 247.28002265367275,
+      "voiced_frames": 337,
+      "total_frames": 442,
+      "voiced_fraction": 0.7624434389140271,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "dev",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留"
+    ],
+    "preview": {
+      "file": "previews\\B01.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 3.2900000000000027,
+      "lufs": -20.33,
+      "true_peak_dbtp": -3.64
+    }
+  },
+  {
+    "sample_id": "B03",
+    "dataset_id": "B_gt_03",
+    "category": "B_full",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "女（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\raw\\女B-003.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\wav\\女B-003.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 10.39,
+    "trimmed": false,
+    "duration_s": 10.39,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -21.86,
+      "true_peak_dbtp": -6.71,
+      "loudness_range_lu": 3.6
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 498720,
+      "duration_seconds": 10.39,
+      "sample_peak_dbfs": -6.708776318040007,
+      "rms_dbfs": -21.226384524627804,
+      "clipped_samples": 0,
+      "dc_offset": -1.729770008095725e-05
+    },
+    "spectral": {
+      "centroid_hz": 485.9476205506094,
+      "flatness": 0.04395348456375276,
+      "rolloff85_hz": 609.375
+    },
+    "bands": {
+      "sub_20_80": 0.00955856692966023,
+      "body_80_500": 0.7212998964300119,
+      "mid_500_3000": 0.25407429249216223,
+      "presence_3000_5000": 0.009507402764678602,
+      "high_5000_8000": 0.005559841383487266
+    },
+    "activity": {
+      "active_seconds": 10.38,
+      "low_level_seconds": 0.01,
+      "dynamic_range_db": 11.76945934295654,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.0,
+      "gaps": [
+        0.0
+      ],
+      "digital_silence_s": 0.00010416666666666667,
+      "noise_floor_dbfs": -29.226652790888938,
+      "estimated_snr_db": 7.2723803961811235
+    },
+    "pitch": {
+      "median_hz": 263.88948711240073,
+      "p10_hz": 223.92557271897664,
+      "p90_hz": 312.82344026215605,
+      "voiced_frames": 452,
+      "total_frames": 516,
+      "voiced_fraction": 0.875968992248062,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "holdout",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留",
+      "质量提示：noise_review"
+    ],
+    "preview": {
+      "file": "previews\\B03.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 1.5400000000000027,
+      "lufs": -20.32,
+      "true_peak_dbtp": -5.17
+    }
+  },
+  {
+    "sample_id": "B05",
+    "dataset_id": "B_gt_04",
+    "category": "B_full",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "男（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\raw\\男B-001.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\wav\\男B-001.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 7.51,
+    "trimmed": false,
+    "duration_s": 7.51,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -24.58,
+      "true_peak_dbtp": -10.93,
+      "loudness_range_lu": 1.0
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 360480,
+      "duration_seconds": 7.51,
+      "sample_peak_dbfs": -10.939339728115655,
+      "rms_dbfs": -24.17462974855902,
+      "clipped_samples": 0,
+      "dc_offset": 1.3561562014536175e-05
+    },
+    "spectral": {
+      "centroid_hz": 466.7810051450034,
+      "flatness": 0.04967760519042415,
+      "rolloff85_hz": 679.6875
+    },
+    "bands": {
+      "sub_20_80": 0.006232417930240367,
+      "body_80_500": 0.7681590329878081,
+      "mid_500_3000": 0.21309306713496892,
+      "presence_3000_5000": 0.008052045099945315,
+      "high_5000_8000": 0.004463436847037176
+    },
+    "activity": {
+      "active_seconds": 7.51,
+      "low_level_seconds": 0.0,
+      "dynamic_range_db": 16.348880577087403,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.0,
+      "gaps": [],
+      "digital_silence_s": 0.00010416666666666667,
+      "noise_floor_dbfs": -37.78619316777799,
+      "estimated_snr_db": 13.570654375641098
+    },
+    "pitch": {
+      "median_hz": 199.1763888232229,
+      "p10_hz": 183.80987458983893,
+      "p90_hz": 258.4178033014831,
+      "voiced_frames": 318,
+      "total_frames": 372,
+      "voiced_fraction": 0.8548387096774194,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "duration_lt_8s",
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留",
+      "源片段长度不足 8 s，未补长",
+      "质量提示：duration_lt_8s, noise_review"
+    ]
+  },
+  {
+    "sample_id": "B06",
+    "dataset_id": "B_gt_05",
+    "category": "B_full",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "男（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\raw\\男B-002.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\wav\\男B-002.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 6.11,
+    "trimmed": false,
+    "duration_s": 6.11,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -20.37,
+      "true_peak_dbtp": -7.05,
+      "loudness_range_lu": 2.0
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 293280,
+      "duration_seconds": 6.11,
+      "sample_peak_dbfs": -7.058307968207239,
+      "rms_dbfs": -19.463553855179228,
+      "clipped_samples": 0,
+      "dc_offset": 6.864269899658603e-06
+    },
+    "spectral": {
+      "centroid_hz": 370.9259286061346,
+      "flatness": 0.014463589024440528,
+      "rolloff85_hz": 539.0625
+    },
+    "bands": {
+      "sub_20_80": 0.0013127623064025657,
+      "body_80_500": 0.8217328456075554,
+      "mid_500_3000": 0.1729540454630208,
+      "presence_3000_5000": 0.0030417480252230822,
+      "high_5000_8000": 0.0009585985977981712
+    },
+    "activity": {
+      "active_seconds": 6.11,
+      "low_level_seconds": 0.0,
+      "dynamic_range_db": 13.14693622589111,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.0,
+      "gaps": [],
+      "digital_silence_s": 6.25e-05,
+      "noise_floor_dbfs": -30.57917567045308,
+      "estimated_snr_db": 10.976604670403553
+    },
+    "pitch": {
+      "median_hz": 234.3984697182869,
+      "p10_hz": 192.66659074320398,
+      "p90_hz": 276.114691445402,
+      "voiced_frames": 282,
+      "total_frames": 302,
+      "voiced_fraction": 0.9337748344370861,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "duration_lt_8s",
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留",
+      "源片段长度不足 8 s，未补长",
+      "质量提示：duration_lt_8s, noise_review"
+    ]
+  },
+  {
+    "sample_id": "B02",
+    "dataset_id": "B_gt_06",
+    "category": "B_full",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "unknown",
+    "singer_label": "男（文件名标签）",
+    "song": "",
+    "variant": "",
+    "technique": "未知；仅有男/女标签",
+    "original_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\raw\\男B-003.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\B_full\\gtsinger\\wav\\男B-003.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 13.62,
+    "trimmed": false,
+    "duration_s": 13.62,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -24.38,
+      "true_peak_dbtp": -10.26,
+      "loudness_range_lu": 7.5
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 653760,
+      "duration_seconds": 13.62,
+      "sample_peak_dbfs": -10.264813239434066,
+      "rms_dbfs": -24.207275416440034,
+      "clipped_samples": 0,
+      "dc_offset": 2.169690759988375e-06
+    },
+    "spectral": {
+      "centroid_hz": 450.49420023091943,
+      "flatness": 0.03507820373094053,
+      "rolloff85_hz": 703.125
+    },
+    "bands": {
+      "sub_20_80": 0.00014125872688959716,
+      "body_80_500": 0.7886740222148314,
+      "mid_500_3000": 0.20022114421029208,
+      "presence_3000_5000": 0.007667453167423313,
+      "high_5000_8000": 0.0032961216805635868
+    },
+    "activity": {
+      "active_seconds": 12.6,
+      "low_level_seconds": 1.02,
+      "dynamic_range_db": 22.228048801422116,
+      "leading_gap_s": 0.01,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.16999999999999993,
+      "gaps": [
+        0.020000000000000462,
+        0.0,
+        0.019999999999999574,
+        0.040000000000000036,
+        0.0,
+        0.10999999999999943,
+        0.10999999999999943,
+        0.019999999999999574,
+        0.009999999999999787,
+        0.0,
+        0.04999999999999982,
+        0.0600000000000005,
+        0.019999999999999574,
+        0.08000000000000007,
+        0.16999999999999993,
+        0.03000000000000025,
+        0.019999999999999574,
+        0.0699999999999994
+      ],
+      "digital_silence_s": 0.00016666666666666666,
+      "noise_floor_dbfs": -55.74437833142927,
+      "estimated_snr_db": 31.0057666334086
+    },
+    "pitch": {
+      "median_hz": 231.75328039093364,
+      "p10_hz": 170.93424722102026,
+      "p90_hz": 308.9645994943865,
+      "voiced_frames": 528,
+      "total_frames": 678,
+      "voiced_fraction": 0.7787610619469026,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "dev",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger A/B 原始歌曲/歌手 ID 未在文件名中保留"
+    ],
+    "preview": {
+      "file": "previews\\B02.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 4.060000000000002,
+      "lufs": -20.33,
+      "true_peak_dbtp": -6.2
+    }
+  },
+  {
+    "sample_id": "C01",
+    "dataset_id": "C_gt_01",
+    "category": "C_observe",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "ZH-Alto-1",
+    "singer_label": "ZH-Alto-1",
+    "song": "十年",
+    "variant": "Mixed_Voice",
+    "technique": "Mixed_Voice；音区 medium",
+    "original_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\raw\\C01_alto_mixed_十年_0003.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\wav\\C01_alto_mixed_十年_0003.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 11.87,
+    "trimmed": false,
+    "duration_s": 11.87,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -19.97,
+      "true_peak_dbtp": -2.85,
+      "loudness_range_lu": 8.2
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 569760,
+      "duration_seconds": 11.87,
+      "sample_peak_dbfs": -2.8452397009399837,
+      "rms_dbfs": -19.199850208444555,
+      "clipped_samples": 0,
+      "dc_offset": -2.368406377726477e-05
+    },
+    "spectral": {
+      "centroid_hz": 716.1837312910653,
+      "flatness": 0.02393069524138222,
+      "rolloff85_hz": 937.5
+    },
+    "bands": {
+      "sub_20_80": 0.0013362880028001288,
+      "body_80_500": 0.3636199657220351,
+      "mid_500_3000": 0.6250037927468581,
+      "presence_3000_5000": 0.007909595865315321,
+      "high_5000_8000": 0.002130357662991344
+    },
+    "activity": {
+      "active_seconds": 11.83,
+      "low_level_seconds": 0.04,
+      "dynamic_range_db": 15.568139553070067,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.009999999999999787,
+      "gaps": [
+        0.009999999999999787,
+        0.009999999999999787
+      ],
+      "digital_silence_s": 4.1666666666666665e-05,
+      "noise_floor_dbfs": -29.564437437040816,
+      "estimated_snr_db": 7.715218692330616
+    },
+    "pitch": {
+      "median_hz": 277.27873750853644,
+      "p10_hz": 264.0486549455191,
+      "p90_hz": 355.8530481125996,
+      "voiced_frames": 537,
+      "total_frames": 590,
+      "voiced_fraction": 0.9101694915254237,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "dev",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger 精确路径：Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/十年/Mixed_Voice_Group/0003",
+      "C 类仅作条件变化观察，不是跨歌手泛化",
+      "质量提示：noise_review"
+    ],
+    "preview": {
+      "file": "previews\\C01.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": -0.34999999999999787,
+      "lufs": -20.31,
+      "true_peak_dbtp": -3.2
+    }
+  },
+  {
+    "sample_id": "C03",
+    "dataset_id": "C_gt_02",
+    "category": "C_observe",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "ZH-Alto-1",
+    "singer_label": "ZH-Alto-1",
+    "song": "十年",
+    "variant": "Falsetto",
+    "technique": "Falsetto；音区 high",
+    "original_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\raw\\C02_alto_falsetto_十年_0003.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\wav\\C02_alto_falsetto_十年_0003.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 11.2,
+    "trimmed": false,
+    "duration_s": 11.2,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -23.37,
+      "true_peak_dbtp": -7.41,
+      "loudness_range_lu": 5.2
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 537600,
+      "duration_seconds": 11.2,
+      "sample_peak_dbfs": -7.434342236420511,
+      "rms_dbfs": -22.557643302831867,
+      "clipped_samples": 0,
+      "dc_offset": -2.1610487075079056e-05
+    },
+    "spectral": {
+      "centroid_hz": 540.3883347375855,
+      "flatness": 0.015012802456916344,
+      "rolloff85_hz": 878.90625
+    },
+    "bands": {
+      "sub_20_80": 0.009755623644843543,
+      "body_80_500": 0.644510979393944,
+      "mid_500_3000": 0.34112561859339746,
+      "presence_3000_5000": 0.0036780190815453116,
+      "high_5000_8000": 0.000929759286269591
+    },
+    "activity": {
+      "active_seconds": 11.15,
+      "low_level_seconds": 0.05,
+      "dynamic_range_db": 17.115929412841794,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.03999999999999915,
+      "gaps": [
+        0.03999999999999915
+      ],
+      "digital_silence_s": 0.00010416666666666667,
+      "noise_floor_dbfs": -36.28137416258382,
+      "estimated_snr_db": 12.499990259086417
+    },
+    "pitch": {
+      "median_hz": 292.3921116405698,
+      "p10_hz": 272.10634610562096,
+      "p90_hz": 370.9693895677183,
+      "voiced_frames": 493,
+      "total_frames": 557,
+      "voiced_fraction": 0.8850987432675045,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "holdout",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger 精确路径：Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/十年/Falsetto_Group/0003",
+      "C 类仅作条件变化观察，不是跨歌手泛化",
+      "质量提示：noise_review"
+    ],
+    "preview": {
+      "file": "previews\\C03.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 3.0500000000000043,
+      "lufs": -20.29,
+      "true_peak_dbtp": -4.36
+    }
+  },
+  {
+    "sample_id": "C04",
+    "dataset_id": "C_gt_03",
+    "category": "C_observe",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "ZH-Alto-1",
+    "singer_label": "ZH-Alto-1",
+    "song": "我们的明天",
+    "variant": "Mixed_Voice",
+    "technique": "Mixed_Voice；音区 high",
+    "original_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\raw\\C03_alto_mixed_我们的明天_0006.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\wav\\C03_alto_mixed_我们的明天_0006.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 8.3,
+    "trimmed": false,
+    "duration_s": 8.3,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -18.95,
+      "true_peak_dbtp": -4.92,
+      "loudness_range_lu": 3.1
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 398400,
+      "duration_seconds": 8.3,
+      "sample_peak_dbfs": -4.92014087776964,
+      "rms_dbfs": -19.006878705187752,
+      "clipped_samples": 0,
+      "dc_offset": -1.5624785519029243e-05
+    },
+    "spectral": {
+      "centroid_hz": 671.0713625789537,
+      "flatness": 0.06551568848165845,
+      "rolloff85_hz": 820.3125
+    },
+    "bands": {
+      "sub_20_80": 0.008591982076313115,
+      "body_80_500": 0.608575571218573,
+      "mid_500_3000": 0.3584638190932946,
+      "presence_3000_5000": 0.01667295397471061,
+      "high_5000_8000": 0.007695673637108567
+    },
+    "activity": {
+      "active_seconds": 8.27,
+      "low_level_seconds": 0.03,
+      "dynamic_range_db": 17.29136824607849,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.009999999999999787,
+      "gaps": [
+        0.0,
+        0.009999999999999787
+      ],
+      "digital_silence_s": 6.25e-05,
+      "noise_floor_dbfs": -31.836633497189545,
+      "estimated_snr_db": 12.060439622941725
+    },
+    "pitch": {
+      "median_hz": 338.7768923189042,
+      "p10_hz": 276.41469717194514,
+      "p90_hz": 415.3979751874139,
+      "voiced_frames": 333,
+      "total_frames": 412,
+      "voiced_fraction": 0.808252427184466,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger 精确路径：Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/我们的明天/Mixed_Voice_Group/0006",
+      "C 类仅作条件变化观察，不是跨歌手泛化",
+      "质量提示：noise_review"
+    ]
+  },
+  {
+    "sample_id": "C05",
+    "dataset_id": "C_gt_04",
+    "category": "C_observe",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "ZH-Tenor-1",
+    "singer_label": "ZH-Tenor-1",
+    "song": "曹操",
+    "variant": "Mixed_Voice",
+    "technique": "Mixed_Voice；音区 medium",
+    "original_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\raw\\C04_tenor_mixed_曹操_0007.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\wav\\C04_tenor_mixed_曹操_0007.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 12.87,
+    "trimmed": false,
+    "duration_s": 12.87,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -20.84,
+      "true_peak_dbtp": -8.54,
+      "loudness_range_lu": 4.7
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 617760,
+      "duration_seconds": 12.87,
+      "sample_peak_dbfs": -8.579666473762709,
+      "rms_dbfs": -20.952537484317766,
+      "clipped_samples": 0,
+      "dc_offset": -2.845738471959175e-05
+    },
+    "spectral": {
+      "centroid_hz": 480.55564013250927,
+      "flatness": 0.010868408316924767,
+      "rolloff85_hz": 703.125
+    },
+    "bands": {
+      "sub_20_80": 0.0006181877007891705,
+      "body_80_500": 0.6138353578803294,
+      "mid_500_3000": 0.3823390742144214,
+      "presence_3000_5000": 0.002554241784484277,
+      "high_5000_8000": 0.0006531384199752968
+    },
+    "activity": {
+      "active_seconds": 12.77,
+      "low_level_seconds": 0.1,
+      "dynamic_range_db": 23.013893604278557,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.009999999999999787,
+      "longest_gap_s": 0.029999999999999805,
+      "gaps": [
+        0.0,
+        0.010000000000000009,
+        0.0,
+        0.029999999999999805
+      ],
+      "digital_silence_s": 0.000125,
+      "noise_floor_dbfs": -40.15650458003547,
+      "estimated_snr_db": 18.306197587217824
+    },
+    "pitch": {
+      "median_hz": 253.07926669225273,
+      "p10_hz": 237.65199262163122,
+      "p90_hz": 298.84859948345326,
+      "voiced_frames": 575,
+      "total_frames": 640,
+      "voiced_fraction": 0.8984375,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "review",
+      "flags": [
+        "noise_review"
+      ],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger 精确路径：Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/曹操/Mixed_Voice_Group/0007",
+      "C 类仅作条件变化观察，不是跨歌手泛化",
+      "质量提示：noise_review"
+    ]
+  },
+  {
+    "sample_id": "C02",
+    "dataset_id": "C_gt_05",
+    "category": "C_observe",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "ZH-Tenor-1",
+    "singer_label": "ZH-Tenor-1",
+    "song": "曹操",
+    "variant": "Falsetto",
+    "technique": "Falsetto；音区 medium",
+    "original_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\raw\\C05_tenor_falsetto_曹操_0007.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\wav\\C05_tenor_falsetto_曹操_0007.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 12.830020833333334,
+    "trimmed": false,
+    "duration_s": 12.830020833333334,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -26.31,
+      "true_peak_dbtp": -13.98,
+      "loudness_range_lu": 1.8
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 615841,
+      "duration_seconds": 12.830020833333334,
+      "sample_peak_dbfs": -14.001428999875998,
+      "rms_dbfs": -25.882755648703224,
+      "clipped_samples": 0,
+      "dc_offset": -9.394556352233165e-06
+    },
+    "spectral": {
+      "centroid_hz": 414.06912540443807,
+      "flatness": 0.012270609960815932,
+      "rolloff85_hz": 632.8125
+    },
+    "bands": {
+      "sub_20_80": 0.00019480015788375947,
+      "body_80_500": 0.8075775927794014,
+      "mid_500_3000": 0.1891312687850374,
+      "presence_3000_5000": 0.0010850017778896834,
+      "high_5000_8000": 0.00201133649978801
+    },
+    "activity": {
+      "active_seconds": 12.76,
+      "low_level_seconds": 0.07,
+      "dynamic_range_db": 22.681398391723633,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 2.0833333334024928e-05,
+      "longest_gap_s": 0.040000000000000036,
+      "gaps": [
+        0.040000000000000036,
+        0.010000000000000675
+      ],
+      "digital_silence_s": 0.00010416666666666667,
+      "noise_floor_dbfs": -45.37896494670096,
+      "estimated_snr_db": 19.410403168409243
+    },
+    "pitch": {
+      "median_hz": 283.40412682043745,
+      "p10_hz": 266.6775517831582,
+      "p90_hz": 338.4277168258393,
+      "voiced_frames": 560,
+      "total_frames": 638,
+      "voiced_fraction": 0.877742946708464,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "dev",
+    "in_first_batch": true,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger 精确路径：Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/曹操/Falsetto_Group/0007",
+      "C 类仅作条件变化观察，不是跨歌手泛化"
+    ],
+    "preview": {
+      "file": "previews\\C02.wav",
+      "target_lufs": -20.319999999999997,
+      "gain_db": 5.990000000000002,
+      "lufs": -20.32,
+      "true_peak_dbtp": -7.99
+    }
+  },
+  {
+    "sample_id": "C06",
+    "dataset_id": "C_gt_06",
+    "category": "C_observe",
+    "source": "GTSinger",
+    "source_type": "gtsinger",
+    "singer_id": "ZH-Tenor-1",
+    "singer_label": "ZH-Tenor-1",
+    "song": "青花瓷",
+    "variant": "Falsetto",
+    "technique": "Falsetto；音区 medium",
+    "original_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\raw\\C06_tenor_falsetto_青花瓷_0011.wav",
+    "wav_file": "test_dataset\\f1_dataset_v2\\C_observe\\gtsinger\\wav\\C06_tenor_falsetto_青花瓷_0011.wav",
+    "clip_start_s": 0.0,
+    "clip_end_s": 13.57,
+    "trimmed": false,
+    "duration_s": 13.57,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "loudness": {
+      "integrated_lufs": -25.83,
+      "true_peak_dbtp": -14.77,
+      "loudness_range_lu": 2.6
+    },
+    "level": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "frames": 651360,
+      "duration_seconds": 13.57,
+      "sample_peak_dbfs": -14.76916700206626,
+      "rms_dbfs": -25.42832806648415,
+      "clipped_samples": 0,
+      "dc_offset": -1.8502734153108498e-05
+    },
+    "spectral": {
+      "centroid_hz": 315.42586457039727,
+      "flatness": 0.009887853229985451,
+      "rolloff85_hz": 328.125
+    },
+    "bands": {
+      "sub_20_80": 0.002124856675351214,
+      "body_80_500": 0.9429433727779097,
+      "mid_500_3000": 0.0525146218576702,
+      "presence_3000_5000": 0.0013565679414266228,
+      "high_5000_8000": 0.0010605807476423946
+    },
+    "activity": {
+      "active_seconds": 13.54,
+      "low_level_seconds": 0.03,
+      "dynamic_range_db": 24.28755025863647,
+      "leading_gap_s": 0.0,
+      "trailing_gap_s": 0.0,
+      "longest_gap_s": 0.020000000000000462,
+      "gaps": [
+        0.020000000000000462
+      ],
+      "digital_silence_s": 8.333333333333333e-05,
+      "noise_floor_dbfs": -45.893543209881685,
+      "estimated_snr_db": 20.197334648907244
+    },
+    "pitch": {
+      "median_hz": 265.95047488298627,
+      "p10_hz": 217.7168472862997,
+      "p90_hz": 345.5412478609213,
+      "voiced_frames": 574,
+      "total_frames": 675,
+      "voiced_fraction": 0.8503703703703703,
+      "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+    },
+    "quality": {
+      "status": "ok",
+      "flags": [],
+      "acapella_status": "dataset_declared_acapella",
+      "distortion_note": "no clipping/full-scale detected; AAC source is lossy; not a full distortion analysis"
+    },
+    "split": "pending",
+    "in_first_batch": false,
+    "listening_judgement": "",
+    "notes": [
+      "GTSinger 精确路径：Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/青花瓷/Falsetto_Group/0011",
+      "C 类仅作条件变化观察，不是跨歌手泛化"
+    ]
+  }
+]

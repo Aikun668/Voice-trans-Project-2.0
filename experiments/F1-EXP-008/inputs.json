@@ -1,0 +1,29 @@
+{
+  "experiment": "F1-EXP-008",
+  "phase": "F1-P3B",
+  "sample_id": "A01",
+  "dataset_id": "A_self_01",
+  "source": "Self",
+  "display": "平凡之路 / 薄音版",
+  "wav_file": "test_dataset/f1_dataset_v2/A_thin/self/wav/平凡之路薄音版.wav",
+  "raw_file": "test_dataset/f1_dataset_v2/A_thin/self/raw/平凡之路薄音版.m4a",
+  "wav_sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+  "raw_sha256": "cbb3ddfabf7a71b809d54d784e306b5ecf61823022aa02140a54791dfd122b72",
+  "frames": 630784,
+  "sample_rate": 48000,
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "listening_contract": {
+    "原音问题登记": "A01 为用户自评薄音版（单薄、不够充实）；本轮只针对该问题验证压缩机制",
+    "素材与片段": "A01 全长 13.14s（满足 8~15s 典型片段要求），不截取",
+    "预期可听变化": "元音与整句更充实、小声部分更实；大声不突兀；轻重对比仍在（S1 饱满度方向）",
+    "否决副作用": "每个字一样重、情绪消失、抽吸(pumping)、气声/尾音异常放大、闷糊、被压住、失真、只变响或只变闷不算通过",
+    "若原音无此问题": "记 not_applicable，本轮机制验证作废，不强行制造差异"
+  }
+}

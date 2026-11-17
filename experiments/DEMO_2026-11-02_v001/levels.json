@@ -1,0 +1,160 @@
+[
+  {
+    "file": "f1_gyjyn_orig.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\gyjyn_orig.wav",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_gyjyn_v1.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\gyjyn_v1.wav",
+    "lufs": -13.0,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_gyjyn_v2.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\gyjyn_v2.wav",
+    "lufs": -13.0,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_pingfan_orig.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\pingfan_orig.wav",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_pingfan_v1.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\pingfan_v1.wav",
+    "lufs": -13.0,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_pingfan_v2.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\pingfan_v2.wav",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_womende_orig.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\womende_orig.wav",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_womende_v1.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\womende_v1.wav",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_womende_v2.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\womende_v2.wav",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_yasu_orig.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\yasu_orig.wav",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_yasu_v1.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\yasu_v1.wav",
+    "lufs": -13.0,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f1_yasu_v2.wav",
+    "source": "experiments\\F1_demo_chain_2026-11-02_v001\\audio\\yasu_v2.wav",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3
+  },
+  {
+    "file": "f2_real_orig.wav",
+    "source": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\因为刚好遇见你-清唱版.wav",
+    "source_sha16": "ca7da7dde00afa28",
+    "gain_db": 4.5,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.7,
+    "samples": 653312,
+    "note": ""
+  },
+  {
+    "file": "f2_real_p3e_old.wav",
+    "source": "f2\\outputs\\phase3e_gyjyn_v002\\02_corrected.wav",
+    "source_sha16": "ac8a2a1e514971e0",
+    "gain_db": 1.3,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.7,
+    "samples": 653312,
+    "note": ""
+  },
+  {
+    "file": "f2_real_p4_new.wav",
+    "source": "f2\\outputs\\phase4_gyjyn_v002\\02_corrected.wav",
+    "source_sha16": "d3ad3fc0ded1cec5",
+    "gain_db": 1.4,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.6,
+    "samples": 653312,
+    "note": ""
+  },
+  {
+    "file": "f2_inj_orig.wav",
+    "source": "test_dataset\\f1_dataset_v2\\A_thin\\self\\wav\\因为刚好遇见你-清唱版.wav",
+    "source_sha16": "ca7da7dde00afa28",
+    "gain_db": 4.5,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.7,
+    "samples": 653312,
+    "note": ""
+  },
+  {
+    "file": "f2_inj_detuned.wav",
+    "source": "f2\\outputs\\phase4_gyjyn_inject_v001\\input_detuned.wav",
+    "source_sha16": "053f481be1af33a2",
+    "gain_db": 4.6,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.6,
+    "samples": 653312,
+    "note": ""
+  },
+  {
+    "file": "f2_inj_repaired.wav",
+    "source": "f2\\outputs\\phase4_gyjyn_inject_v001\\repair\\02_corrected.wav",
+    "source_sha16": "32a62a7a7fba3f9e",
+    "gain_db": 1.5,
+    "lufs": -16.0,
+    "true_peak_dbtp": -1.5,
+    "samples": 653312,
+    "note": ""
+  },
+  {
+    "file": "f2_reference.wav",
+    "source": "f2\\outputs\\phase4_gyjyn_v002\\03_reference_matched_segment.wav",
+    "source_sha16": "baf921d494ce3391",
+    "gain_db": -0.3,
+    "lufs": -16.0,
+    "true_peak_dbtp": -3.3,
+    "samples": 590941,
+    "note": ""
+  },
+  {
+    "file": "combo_gyjyn_f2_f1v1.wav",
+    "source": "phase4_gyjyn_v002/02_corrected.wav -> F1 v1",
+    "lufs": -13.0,
+    "true_peak_dbtp": -1.3,
+    "samples": 653312,
+    "samples_match": true
+  },
+  {
+    "file": "combo_gyjyn_f2_f1v2.wav",
+    "source": "phase4_gyjyn_v002/02_corrected.wav -> F1 v2",
+    "lufs": -13.1,
+    "true_peak_dbtp": -1.3,
+    "samples": 653312,
+    "samples_match": true
+  }
+]

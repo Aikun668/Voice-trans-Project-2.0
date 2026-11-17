@@ -1,0 +1,41 @@
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\librosa\util\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+zh 1 off   -25.2 | resid med|.|   13.0 slow   19.6 fast  14.0 | vib-ish a/p   6.3/  7.5 | gaps a 0/444 p 12/463
+zh 2 off    52.7 | resid med|.|   29.8 slow   42.7 fast  23.2 | vib-ish a/p   5.8/  8.5 | gaps a 22/739 p 29/711
+zh 3 off    52.5 | resid med|.|   30.5 slow   48.5 fast  37.9 | vib-ish a/p   4.8/  6.2 | gaps a 42/705 p 13/693
+zh 4 off    10.5 | resid med|.|   23.0 slow   28.5 fast  24.1 | vib-ish a/p   4.6/  7.4 | gaps a 0/448 p 7/437
+zh 5 off   -82.3 | resid med|.|   23.5 slow   41.9 fast  33.6 | vib-ish a/p  19.8/ 21.4 | gaps a 0/488 p 0/459
+zh 6 off    -2.7 | resid med|.|   14.1 slow   30.3 fast  14.9 | vib-ish a/p   8.7/  9.0 | gaps a 0/426 p 0/430
+zh 7 off    40.2 | resid med|.|   20.0 slow   23.9 fast  16.7 | vib-ish a/p  10.9/ 12.8 | gaps a 11/416 p 18/432
+zh 8 off    40.0 | resid med|.|   49.0 slow   57.3 fast  18.9 | vib-ish a/p   8.2/  8.5 | gaps a 0/546 p 0/537
+zh 9 off   -40.3 | resid med|.|   22.1 slow   25.5 fast  26.3 | vib-ish a/p  17.8/ 16.6 | gaps a 14/756 p 19/750
+zh10 off    10.3 | resid med|.|   18.6 slow   55.9 fast  24.3 | vib-ish a/p   8.7/ 14.0 | gaps a 12/589 p 11/584
+zh11 off  -137.1 | resid med|.|   17.0 slow   83.7 fast  75.5 | vib-ish a/p  10.8/ 13.0 | gaps a 11/438 p 3/461
+zh12 off    68.6 | resid med|.|   20.4 slow   28.7 fast  15.1 | vib-ish a/p  13.0/ 10.3 | gaps a 0/544 p 11/550
+zh13 off    43.7 | resid med|.|   43.8 slow   63.1 fast  29.6 | vib-ish a/p  14.9/ 15.6 | gaps a 8/474 p 0/441
+zh14 off    40.2 | resid med|.|   20.0 slow   23.9 fast  16.7 | vib-ish a/p  10.9/ 12.8 | gaps a 11/416 p 18/432
+zh15 off    -7.5 | resid med|.|   14.7 slow   15.6 fast  19.8 | vib-ish a/p   6.6/  8.8 | gaps a 11/208 p 9/209
+zh16 off    60.6 | resid med|.|   13.6 slow   23.1 fast  16.3 | vib-ish a/p  10.6/  7.3 | gaps a 20/946 p 10/997
+zh17 off    48.3 | resid med|.|   29.9 slow   41.6 fast  22.3 | vib-ish a/p  12.9/ 15.3 | gaps a 20/999 p 15/1031
+zh18 off    50.3 | resid med|.|   17.1 slow   22.5 fast  20.5 | vib-ish a/p  17.8/  4.1 | gaps a 5/503 p 10/530
+zh19 off    12.8 | resid med|.|   27.8 slow   44.1 fast  27.5 | vib-ish a/p  13.2/  9.7 | gaps a 18/456 p 23/439
+zh21 off  -142.2 | resid med|.|   22.3 slow   28.1 fast  25.2 | vib-ish a/p   9.1/  8.7 | gaps a 43/359 p 11/373
+zh22 off  -124.4 | resid med|.|   21.7 slow   89.7 fast  95.9 | vib-ish a/p  12.9/  7.8 | gaps a 3/449 p 7/482
+en 1 off    61.4 | resid med|.|   39.5 slow   53.2 fast  33.8 | vib-ish a/p  12.2/ 13.6 | gaps a 0/392 p 0/397
+en 2 off    -0.1 | resid med|.|   15.2 slow   29.5 fast  38.6 | vib-ish a/p   8.4/ 10.3 | gaps a 0/357 p 0/401
+en 3 off    54.1 | resid med|.|   27.7 slow   62.3 fast  33.4 | vib-ish a/p   7.6/ 13.3 | gaps a 7/401 p 9/461
+en 4 off    31.8 | resid med|.|   28.2 slow  111.8 fast  51.4 | vib-ish a/p  23.3/ 15.7 | gaps a 5/371 p 7/448
+en 5 off   -70.3 | resid med|.|   30.6 slow   67.6 fast  72.2 | vib-ish a/p   8.6/ 18.6 | gaps a 0/614 p 3/590
+en 6 off     2.9 | resid med|.|   34.1 slow   61.8 fast  48.3 | vib-ish a/p  17.4/ 11.9 | gaps a 0/467 p 0/433
+en 7 off    60.5 | resid med|.|   29.3 slow   60.5 fast  34.6 | vib-ish a/p  17.4/ 27.7 | gaps a 4/582 p 10/588
+en 8 off   -19.8 | resid med|.|   20.1 slow   24.2 fast  17.8 | vib-ish a/p   6.7/  8.4 | gaps a 0/496 p 0/440
+en 9 off    56.4 | resid med|.|   23.2 slow   34.6 fast  27.2 | vib-ish a/p   8.3/ 26.4 | gaps a 10/533 p 0/496
+en10 off    13.4 | resid med|.|   19.4 slow  130.6 fast  81.2 | vib-ish a/p   9.9/ 10.0 | gaps a 5/376 p 11/307
+en11 off    15.8 | resid med|.|   26.2 slow   33.2 fast  33.0 | vib-ish a/p  19.6/ 15.7 | gaps a 3/451 p 6/425
+en12 off     8.8 | resid med|.|   25.7 slow   58.2 fast  27.2 | vib-ish a/p  14.6/ 28.6 | gaps a 31/509 p 12/505
+en13 off    40.3 | resid med|.|   22.6 slow   43.7 fast  52.4 | vib-ish a/p  12.3/ 14.1 | gaps a 10/296 p 0/284
+en14 off    29.1 | resid med|.|   35.5 slow  108.1 fast  42.1 | vib-ish a/p  14.3/ 12.9 | gaps a 0/579 p 21/565
+en15 off   -10.3 | resid med|.|   40.2 slow   76.3 fast  53.3 | vib-ish a/p  12.8/ 12.8 | gaps a 4/637 p 0/893
+en20 off     2.9 | resid med|.|   23.2 slow  160.0 fast  98.0 | vib-ish a/p   5.1/  8.0 | gaps a 0/319 p 2/390
+en21 off    92.4 | resid med|.|   27.8 slow   29.1 fast  18.8 | vib-ish a/p  14.3/ 10.9 | gaps a 0/317 p 0/333
+SUMMARY {"key_offset_cents": 8.9, "median_abs_after_offset": 25.3, "slow_std": 52.2, "fast_std": 35.8, "amateur_fast_level": 11.6, "pro_fast_level": 12.7, "amateur_gap_rate": 0.0173, "pro_gap_rate": 0.0158}

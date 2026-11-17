@@ -1,0 +1,157 @@
+{
+  "experiment": "F1-EXP-022",
+  "phase": "F1-P8",
+  "status": "diagnosis_only",
+  "pairs": [
+    "平凡之路",
+    "我们的歌",
+    "雅俗共赏",
+    "因为刚好遇见你"
+  ],
+  "scales": [
+    "local",
+    "phrase"
+  ],
+  "direction_summary": {
+    "local": {
+      "events_per_min": {
+        "n": 4,
+        "positive_pairs": 0,
+        "negative_pairs": 4,
+        "same_sign": 4,
+        "median_delta": -11.43
+      },
+      "deep_dip_count_per_min": {
+        "n": 4,
+        "positive_pairs": 4,
+        "negative_pairs": 0,
+        "same_sign": 4,
+        "median_delta": 21.95
+      },
+      "dip_event_max_median_db": {
+        "n": 3,
+        "positive_pairs": 1,
+        "negative_pairs": 2,
+        "same_sign": 2,
+        "median_delta": -0.7
+      },
+      "dip_event_max_p90_db": {
+        "n": 3,
+        "positive_pairs": 0,
+        "negative_pairs": 3,
+        "same_sign": 3,
+        "median_delta": -1.2
+      },
+      "dip_time_fraction": {
+        "n": 4,
+        "positive_pairs": 4,
+        "negative_pairs": 0,
+        "same_sign": 4,
+        "median_delta": 0.03
+      },
+      "dip_mean_all_voiced_db": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 1,
+        "same_sign": 3,
+        "median_delta": 0.3
+      },
+      "dip_p90_all_voiced_db": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 1,
+        "same_sign": 3,
+        "median_delta": 1.53
+      },
+      "voiced_energy_sd_db": {
+        "n": 4,
+        "positive_pairs": 1,
+        "negative_pairs": 3,
+        "same_sign": 3,
+        "median_delta": -0.1
+      }
+    },
+    "phrase": {
+      "events_per_min": {
+        "n": 4,
+        "positive_pairs": 1,
+        "negative_pairs": 3,
+        "same_sign": 3,
+        "median_delta": -8.88
+      },
+      "deep_dip_count_per_min": {
+        "n": 4,
+        "positive_pairs": 4,
+        "negative_pairs": 0,
+        "same_sign": 4,
+        "median_delta": 20.16
+      },
+      "dip_event_max_median_db": {
+        "n": 2,
+        "positive_pairs": 0,
+        "negative_pairs": 2,
+        "same_sign": 2,
+        "median_delta": -1.65
+      },
+      "dip_event_max_p90_db": {
+        "n": 2,
+        "positive_pairs": 1,
+        "negative_pairs": 1,
+        "same_sign": 1,
+        "median_delta": -1.9
+      },
+      "dip_time_fraction": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 0,
+        "same_sign": 3,
+        "median_delta": 0.02
+      },
+      "dip_mean_all_voiced_db": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 1,
+        "same_sign": 3,
+        "median_delta": 0.23
+      },
+      "dip_p90_all_voiced_db": {
+        "n": 4,
+        "positive_pairs": 3,
+        "negative_pairs": 1,
+        "same_sign": 3,
+        "median_delta": 1.35
+      },
+      "voiced_energy_sd_db": {
+        "n": 4,
+        "positive_pairs": 1,
+        "negative_pairs": 3,
+        "same_sign": 3,
+        "median_delta": -0.1
+      }
+    }
+  },
+  "consistency": {
+    "local": {
+      "keys_all_four_same_sign": 3,
+      "keys_at_least_three_same_sign": 7,
+      "keys_tested": 8
+    },
+    "phrase": {
+      "keys_all_four_same_sign": 1,
+      "keys_at_least_three_same_sign": 6,
+      "keys_tested": 8
+    }
+  },
+  "report_page": "report.html",
+  "diagnostics": "qa/diagnostics.json",
+  "pairs_csv": "qa/pairs.csv",
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "no_processing": "只读诊断，未生成任何处理音频，未修改现有处理主线"
+}

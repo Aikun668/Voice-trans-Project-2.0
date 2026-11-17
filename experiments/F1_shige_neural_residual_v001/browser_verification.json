@@ -1,0 +1,23 @@
+{
+  "delivery_tracks": 3,
+  "checks": [
+    {
+      "id": "original",
+      "sha256_matches": true,
+      "frames": 757286
+    },
+    {
+      "id": "beautify_gentle",
+      "sha256_matches": true,
+      "frames": 757286
+    },
+    {
+      "id": "beautify_standard",
+      "sha256_matches": true,
+      "frames": 757286
+    }
+  ],
+  "all_played_to_end_muted_8x": true,
+  "same_time_switch_pass": true,
+  "subjective_listening": false
+}

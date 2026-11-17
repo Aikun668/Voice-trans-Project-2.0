@@ -1,0 +1,16 @@
+{
+  "experiment": "F1-EXP-009",
+  "phase": "F1-DIAG-1",
+  "status": "analysis_complete",
+  "sample_count": 8,
+  "pairs": [
+    "平凡之路",
+    "我们的歌",
+    "雅俗共赏",
+    "因为刚好遇见你"
+  ],
+  "read_only": true,
+  "audio_generated": false,
+  "report": "RESULT.md",
+  "full_data": "qa/analysis.json"
+}

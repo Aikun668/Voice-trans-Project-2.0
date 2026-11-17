@@ -1,0 +1,34 @@
+[
+  {
+    "pair_id": "04b5561214c51caf3694",
+    "amateur_feature_frames": 28,
+    "professional_feature_frames": 56,
+    "maximum_slope_two_path_reachable": false,
+    "cause": "Frame endpoint differences exceed allowed 2:1 DTW slope, although rounded waveform duration ratio is on the boundary.",
+    "action": "Preserve as quarantined failure; do not relax steps or force a label."
+  },
+  {
+    "pair_id": "1e60b87ffd94303ac06f",
+    "amateur_feature_frames": 182,
+    "professional_feature_frames": 91,
+    "maximum_slope_two_path_reachable": false,
+    "cause": "Frame endpoint differences exceed allowed 2:1 DTW slope, although rounded waveform duration ratio is on the boundary.",
+    "action": "Preserve as quarantined failure; do not relax steps or force a label."
+  },
+  {
+    "pair_id": "b067d390458548816515",
+    "amateur_feature_frames": 270,
+    "professional_feature_frames": 135,
+    "maximum_slope_two_path_reachable": false,
+    "cause": "Frame endpoint differences exceed allowed 2:1 DTW slope, although rounded waveform duration ratio is on the boundary.",
+    "action": "Preserve as quarantined failure; do not relax steps or force a label."
+  },
+  {
+    "pair_id": "3843f9f75543cf94825c",
+    "amateur_feature_frames": 237,
+    "professional_feature_frames": 474,
+    "maximum_slope_two_path_reachable": false,
+    "cause": "Frame endpoint differences exceed allowed 2:1 DTW slope, although rounded waveform duration ratio is on the boundary.",
+    "action": "Preserve as quarantined failure; do not relax steps or force a label."
+  }
+]

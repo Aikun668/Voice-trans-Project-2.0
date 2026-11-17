@@ -1,0 +1,110 @@
+[
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\README.md",
+    "snapshot": "before\\main\\README.md",
+    "sha256": "b51adfc816faaff0fef0e7bb297fe6722a9339aaf6bcde3206063fae75be7d60"
+  },
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\AGENTS.md",
+    "snapshot": "before\\main\\AGENTS.md",
+    "sha256": "8acffa51f3209fc98f041c555de7b46732a6131c2857df8c39712a32a3fde5bd"
+  },
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\ROADMAP.md",
+    "snapshot": "before\\main\\docs\\ROADMAP.md",
+    "sha256": "4150006421d59777014ea4edee978f0d523423f88d9b74cad016784717f5787d"
+  },
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\FILE_INDEX.md",
+    "snapshot": "before\\main\\docs\\FILE_INDEX.md",
+    "sha256": "97247ad89d7072b699d24b65604c4adc32d03cad551c47e1ab5869f99aa1da1a"
+  },
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\开发日志_有参考修音.md",
+    "snapshot": "before\\main\\docs\\开发日志_有参考修音.md",
+    "sha256": "449a7f85c00b875c19e2c5166f3d81cb08d25ae3f85b7c1d4ad5b976645d743b"
+  },
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\版本与引用核查_2026-11-14.md",
+    "snapshot": "before\\main\\docs\\版本与引用核查_2026-11-14.md",
+    "sha256": "3d3410b29cc82382bb70c51a4a90a9def73405b8837ac820b385aa9b65fb51f6"
+  },
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\新阶段_前三项任务初步计划.md",
+    "snapshot": "before\\main\\docs\\新阶段_前三项任务初步计划.md",
+    "sha256": "b78d33d4373e540b65f4a8f75749248c6b066c81eb1253b329ed0e768495da1f"
+  },
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\F2_第一轮有参考修音_训练计划书_给第三方Agent.md",
+    "snapshot": "before\\main\\docs\\F2_第一轮有参考修音_训练计划书_给第三方Agent.md",
+    "sha256": "9d5724f8ede62af1e7dee072678425c11856b8caa51f7d7727b6eb0e209f37b8"
+  },
+  {
+    "checkout": "main",
+    "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\docs\\TEAM_COLLABORATION_DRAFT.md",
+    "snapshot": "before\\main\\docs\\TEAM_COLLABORATION_DRAFT.md",
+    "sha256": "d5448632021b053a9ff0ce6f995b1b22efa7acca0e0a331bc8f7ff661b664a4f"
+  },
+  {
+    "checkout": "handoff",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\README.md",
+    "snapshot": "before\\handoff\\README.md",
+    "sha256": "d71b5dce046d4f71e98940a81d1b72bf81ea4dc9e766e1d7ec4db90f81cd2f9e"
+  },
+  {
+    "checkout": "handoff",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\AGENTS.md",
+    "snapshot": "before\\handoff\\AGENTS.md",
+    "sha256": "09870244c8d7361d66897fb61cbdda0783690996103ca71d85b4deea51b5a90b"
+  },
+  {
+    "checkout": "handoff",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\ROADMAP.md",
+    "snapshot": "before\\handoff\\docs\\ROADMAP.md",
+    "sha256": "1d74fea92b81ffadfb777b946336392c1387c5518419e57927713690640f5833"
+  },
+  {
+    "checkout": "handoff",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\F2_TEAM_HANDOFF.md",
+    "snapshot": "before\\handoff\\docs\\F2_TEAM_HANDOFF.md",
+    "sha256": "8ab54e364ef3b49dedb1a4d69dd2f7216525ff0579441c01ea9a8e4b18458235"
+  },
+  {
+    "checkout": "initial",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\README.md",
+    "snapshot": "before\\initial\\README.md",
+    "sha256": "d71b5dce046d4f71e98940a81d1b72bf81ea4dc9e766e1d7ec4db90f81cd2f9e"
+  },
+  {
+    "checkout": "initial",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\AGENTS.md",
+    "snapshot": "before\\initial\\AGENTS.md",
+    "sha256": "09870244c8d7361d66897fb61cbdda0783690996103ca71d85b4deea51b5a90b"
+  },
+  {
+    "checkout": "initial",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\ROADMAP.md",
+    "snapshot": "before\\initial\\docs\\ROADMAP.md",
+    "sha256": "fda72b3c529a22e523a68fe3260851b99708c83bf35b0cb5a51a55f89ec40c19"
+  },
+  {
+    "checkout": "handoff",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\docs\\开发日志_有参考修音.md",
+    "snapshot": "before\\handoff\\docs\\开发日志_有参考修音.md",
+    "sha256": "2cc7d190edf9f16b708795fc66a9593cc7652fefda0c395edecdec6a695319c6"
+  },
+  {
+    "checkout": "initial",
+    "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-initial-plan\\Voice-trans-Project-2.0\\docs\\开发日志_有参考修音.md",
+    "snapshot": "before\\initial\\docs\\开发日志_有参考修音.md",
+    "sha256": "b4fa1ebfbb92e428c0d83066466ecd7425a516550f34f8b9c872bbc6a857b7c5"
+  }
+]

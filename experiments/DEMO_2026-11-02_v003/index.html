@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>F1 / F2 demo v003 · 2026-11-02</title>
+<style>
+body{font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif;background:#f4f5f7;color:#1f2430;max-width:940px;margin:24px auto;padding:0 18px}
+h1{font-size:24px;margin-bottom:4px}h2{font-size:20px;margin:32px 0 8px;border-left:5px solid #3a6ff7;padding-left:10px}
+.sub{color:#667085;font-size:14px}
+.card{background:#fff;border:1px solid #dde1e8;border-radius:10px;padding:16px 18px;margin:14px 0}
+.warn{background:#fff7e6;border-color:#f3cf86}.info{background:#eef4ff;border-color:#bcd0fb}
+.q{font-weight:650;margin:10px 0 6px}
+.switch{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.switch button{border:1px solid #b8c2d4;background:#f7f9fc;border-radius:7px;padding:7px 12px;font-size:14px;cursor:pointer}
+.switch button.on{background:#3a6ff7;color:#fff;border-color:#3a6ff7}
+.desc{font-size:13.5px;color:#4a5466;margin:4px 0 0}
+.opts label{display:inline-block;margin:3px 14px 3px 0;font-size:14.5px;cursor:pointer}
+textarea{width:100%;box-sizing:border-box;min-height:44px;border:1px solid #cfd5df;border-radius:6px;padding:6px;font:14px system-ui}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #dde1e8;padding:6px 8px;text-align:left;vertical-align:top}th{background:#eef1f6}
+#export{width:100%;min-height:150px;font-family:Consolas,monospace;font-size:13px}
+.big{font-size:16px;padding:10px 18px;background:#3a6ff7;color:#fff;border:0;border-radius:8px;cursor:pointer}
+audio{width:100%;margin-top:6px}
+</style>
+</head>
+<body>
+<h1>F1 / F2 demo v003</h1>
+<p class="sub">2026-11-02 · experiments/DEMO_2026-11-02_v003 · 所有版本都标了名字 · 听感：pending_jade（我没法直接听音频）</p>
+
+<div class="card warn">
+<b>怎么听</b>：戴耳机，先把音量调好，之后不要再动。点按钮会从当前位置无缝切换。
+F1 和组合版在 -13 LUFS，F2 单独比较在 -16 LUFS。听完点最底下"生成答案"。<br>
+<b>建议顺序</b>：先在"F1 单独"里听平凡之路和我们的歌，从 V1 切到 A，确认空旷感有没有少；再从 A 切到 B，看力度有没有起来。
+</div>
+
+<div class="card info">
+<b>这一版改了什么</b>
+<table>
+<tr><th style="width:12%"></th><th>做法与依据</th></tr>
+<tr><td><b>空旷/回音</b></td><td>
+<b>找到了真正的原因</b>：压缩器在每个字唱完后马上把音量回弹上来，把字尾的房间余音放大了约 3 倍。V1/V3 的字尾比原音高 +6~+8 dB，而响的地方只高 +1 dB。
+这发生在句子里面，所以上一轮压句间底噪没用。<br>
+新的 <b>A</b>：EQ 保持你两次都选的 V1 不变；压缩改成字唱完后不急着回弹（释放 80 → 350 ms），起音不再压扁（5 → 25 ms，保留每个字的冲击）；再加"字尾守护"，字尾最多只比原音高 3 dB。
+实测字尾抬升从 +6~+8 dB 降到 +2.6~+3.2 dB。</td></tr>
+<tr><td><b>力度</b></td><td>
+<b>B</b> = A + 第一共振峰上移 70 Hz。这是之前 S45 的核心处理（S45 是唯一一版你说"饱满度 OK、清晰度 OK、像本人"的）。这次不再需要你的正常版做参考，4 首都能用。
+共振峰上移相当于"嘴张得更开、更用力"时的口腔共鸣。代码是从 S45 原样拆出来的，能逐个采样复现 S45。</td></tr>
+<tr><td><b>F2 拖音</b></td><td>
+<b>发现</b>：3 条跑调录音里有 37–49% 的演唱时间（拖音、尾音变口型、吼的段落），上一版完全没进入判断，所以几乎没修。<br>
+新版：① 对齐允许你"拖得比原唱长"；② 拖音按 0.24 秒一段跟着修，慢慢跑偏的部分会慢慢拉回，颤音保留；③ 相邻两个被修的音之间平滑过渡，不再先回到原音高再跳走。轻度版 16–19 秒的电音，很可能就是那种来回跳造成的。<br>
+④ 为了不引入电音，有 3 种情况<b>不修</b>：两种对齐方法给出的偏差不一致；音短于 0.25 秒；原唱那里本身就是滑音。所以严重版里你故意吼、故意变口型的尾音，很多会保持原样。</td></tr>
+</table>
+</div>
+
+<h2>一、F1 单独：4 首薄音版</h2>
+<div id="f1songs"></div>
+
+<h2>二、F2 单独：只改音高（等响）</h2>
+<div id="f2songs"></div>
+
+<h2>三、组合：F2 修音 → F1</h2>
+<div id="combos"></div>
+
+<div class="card">
+<div class="q">总的来说</div>
+<div class="opts" data-q="总评 能否拿给老师">
+ <label><input type="radio" name="tot" value="可以，挑最好的一两首给老师">可以，挑最好的一两首给老师</label>
+ <label><input type="radio" name="tot" value="F1可以，F2还不行">F1 可以，F2 还不行</label>
+ <label><input type="radio" name="tot" value="F2可以，F1还不行">F2 可以，F1 还不行</label>
+ <label><input type="radio" name="tot" value="都还不行">都还不行</label>
+</div>
+<textarea data-q="其他想说的" placeholder="其他：比如某版本几秒处有问题、哪首最适合给老师"></textarea>
+<p><button class="big" id="gen">生成答案</button></p>
+<textarea id="export" readonly></textarea>
+</div>
+
+<script>
+const PROBLEMS=["空旷/回音/录音机感","底噪/沙沙声","发闷/糊","太亮/刺耳/齿音","毛/沙/失真","压得太平","不像本人","电音/某个字变怪","力度还不够","没问题"];
+function probs(q){return `<div class="opts" data-q="${q}" data-multi="1"><b>你选的那版还有什么问题（可多选）：</b>`+PROBLEMS.map(p=>`<label><input type="checkbox" value="${p}">${p}</label>`).join('')+`</div>`;}
+function pick(q,name,opts){return `<div class="opts" data-q="${q}"><b>选：</b>`+opts.map(o=>`<label><input type="radio" name="${name}" value="${o}">${o}</label>`).join('')+`</div>`;}
+function card(title,pid,btns,extra){return `<div class="card"><div class="q">${title}</div><div class="switch" data-player="${pid}">`+
+  btns.map(([src,label,desc])=>`<button data-src="${src}" data-desc="${desc}">${label}</button>`).join('')+
+  `</div><audio id="${pid}" controls preload="metadata"></audio><p class="desc" id="${pid}d"></p>${extra}</div>`;}
+
+const F1S=[["pingfan","平凡之路·薄音版"],["womende","我们的歌·薄音版"],["yasu","雅俗共赏·清唱版"],["gyjyn","因为刚好遇见你·清唱版"]];
+const f1=document.getElementById('f1songs');
+F1S.forEach(([k,n],i)=>f1.insertAdjacentHTML('beforeend',card(`F1-${i+1}：${n}`,`f${k}`,[
+ [`audio/f1_${k}_orig.wav`,"① 原音·同样响","原音，只调响度到 -13 LUFS"],
+ [`audio/f1_${k}_v1.wav`,"② V1（你上轮选的）","上一轮的唱片链，你说空旷"],
+ [`audio/f1_${k}_a.wav`,"③ A 去空响","V1 的 EQ + 不回弹的压缩 + 字尾守护"],
+ [`audio/f1_${k}_b.wav`,"④ B 去空响+力度","A + 第一共振峰上移 70 Hz（S45 的核心处理）"],
+],pick(`F1-${i+1} ${n} 选哪版`,`fp${k}`,["B最好","A最好","V1最好","原音最好","差不多"])+probs(`F1-${i+1} ${n} 所选版本问题`))));
+
+const F2S=[
+ ["zuixuan_mild","最炫民族风·轻度跑调","修了 7 段：3.3–3.9、9.4–10.0、10.2–10.6、11.0–11.6、13.3–13.6、16.4–17.0、17.7–18.2 秒，每段 60–130 音分。你上次说有电音的 16–19 秒：17.0–17.2 秒那个 +186 音分的短音这次不修了，另外两段改成平滑过渡"],
+ ["shige_severe","自由飞翔·严重跑调","修了 4 段：4.8–5.2、9.6–10.5（拖音，从 −70 慢慢收到 −17）、13.2–13.7（拖音，+74 → +129）、17.7–18.0 秒"],
+ ["zuixuan_severe","最炫民族风·严重跑调","只修了 2 段：7.2–7.4、18.3–18.6 秒。其余吼、变口型的地方，要么两种对齐结果不一致，要么太短，都保持原样"],
+];
+const f2=document.getElementById('f2songs');
+F2S.forEach(([k,n,fx],i)=>f2.insertAdjacentHTML('beforeend',card(`F2-${i+1}：${n}`,`s${k}`,[
+ [`audio/f2_${k}_orig.wav`,"① 原音","原音，-16 LUFS"],
+ [`audio/f2_${k}_4b.wav`,"② 上一版","上一轮的 F2"],
+ [`audio/f2_${k}_4c.wav`,"③ 新版","拖音跟随 + 平滑衔接。"+fx],
+ [`audio/f2_${k}_reference.wav`,"④ 原唱对应段","凤凰传奇原唱人声里对齐上的那一段。调和语速都不同，按位置切换时对不上是正常的"],
+],pick(`F2-${i+1} ${n} 新版效果`,`sp${k}`,["修回来了，自然","修回来了但有电音/怪声","听不出变化","比上一版差"])+
+ `<textarea data-q="F2-${i+1} ${n} 补充" placeholder="补充：哪几秒还跑，或者哪几秒有电音"></textarea>`)));
+
+const CB=[["zuixuan_mild","最炫民族风·轻度跑调"],["shige_severe","自由飞翔·严重跑调"],["zuixuan_severe","最炫民族风·严重跑调"],["gyjyn","因为刚好遇见你·清唱版（不跑调，F2 没有改动，等于只看 F1）"]];
+const ch=document.getElementById('combos');
+CB.forEach(([k,n],i)=>ch.insertAdjacentHTML('beforeend',card(`组合-${i+1}：${n}`,`c${k}`,[
+ [`audio/combo_${k}_orig.wav`,"① 原音·同样响","原音，只调响度到 -13 LUFS"],
+ [`audio/combo_${k}_f2a.wav`,"② F2 + A","新版修音 → F1 A（去空响）"],
+ [`audio/combo_${k}_f2b.wav`,"③ F2 + B","新版修音 → F1 B（去空响 + 力度）"],
+],pick(`组合-${i+1} ${n.split('（')[0]} 选哪版`,`cp${k}`,["③最好","②最好","原音最好","差不多"])+probs(`组合-${i+1} ${n.split('（')[0]} 所选版本问题`))));
+
+document.querySelectorAll('.switch').forEach(sw=>{
+  const a=document.getElementById(sw.dataset.player), d=document.getElementById(sw.dataset.player+'d');
+  const btns=[...sw.querySelectorAll('button')];
+  const go=(b,keep)=>{
+    const t=a.currentTime||0, playing=!a.paused;
+    btns.forEach(x=>x.classList.toggle('on',x===b));
+    a.src=b.dataset.src; d.textContent=b.dataset.desc;
+    if(keep){a.addEventListener('loadedmetadata',()=>{a.currentTime=Math.min(t,Math.max(a.duration-0.05,0));if(playing)a.play();},{once:true});}
+  };
+  btns.forEach(b=>b.addEventListener('click',()=>go(b,true)));
+  go(btns[0],false);
+});
+document.getElementById('gen').addEventListener('click',()=>{
+  const out=['【demo v003 反馈 2026-11-02】'];
+  document.querySelectorAll('[data-q]').forEach(el=>{
+    const v=el.tagName==='TEXTAREA'?el.value.trim():[...el.querySelectorAll('input:checked')].map(i=>i.value).join('；');
+    out.push(el.dataset.q+'：'+(v||'（未答）'));
+  });
+  const ex=document.getElementById('export'); ex.value=out.join('\n'); ex.select();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "experiment": "F1-EXP-023",
+  "phase": "F1-P9",
+  "approved_scope": "选择性弱段抬升；大跨度两档（温和 ratio 0.35/GMAX 6dB，激进 ratio 1.0/GMAX 20dB）",
+  "baseline": "EXP-020 S45（原样引用）",
+  "target": "A_self_01",
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "listening_target_lufs": -19.97,
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "blind_seed": 20261111
+}

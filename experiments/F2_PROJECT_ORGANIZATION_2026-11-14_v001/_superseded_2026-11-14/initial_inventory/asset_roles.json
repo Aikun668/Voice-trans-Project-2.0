@@ -1,0 +1,47 @@
+{
+  "assets": [
+    {
+      "role": "confirmed_cut_authority",
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\confirmed_pairs.json",
+      "sha256": "3f6add2cc689e207c8b4f549fabc1c734124deded9f7017b87ff06684e810ba8",
+      "state": "17对已确认",
+      "formal_default_model": false
+    },
+    {
+      "role": "legacy_reference_pointer",
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\f2\\active_pitch_model.json",
+      "sha256": "0af8eb13d3f894fe9336c475e256e92f8cefbcbf2b8f2a4bbacaf5fd48cdce0b",
+      "state": "仅旧有参考实验",
+      "formal_default_model": false
+    },
+    {
+      "role": "legacy_reference_weights",
+      "path": "C:\\Users\\杨玉璋\\.codex\\worktrees\\f2-collaboration-handoff\\Voice-trans-Project-2.0\\experiments\\F2_CONFIRMED_RETRAIN_2026-11-09_v001\\results\\model.pkl",
+      "sha256": "08e8d7e9f9d58c93784bd8ee85dbd429a0f1f879db21a41b2702e217fb16dd1f",
+      "state": "历史基线",
+      "formal_default_model": false
+    },
+    {
+      "role": "mainline_failed_weights",
+      "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\practice_training_v001\\model.pt",
+      "sha256": "d63eea5b0dea900aa4fb100fbb0159c0e4cba3177821d24ac6e20ceebdca955d",
+      "state": "jade_rejected",
+      "formal_default_model": false
+    },
+    {
+      "role": "sideline_frozen_weights",
+      "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_MUSICBERT_FROZEN_2026-11-14_v001\\assets\\checkpoint_last_musicbert_small.pt",
+      "sha256": "f5bb685afe128bc9e0e445be51b5333b98be6a5456df850bd9c9f2cc80bb7275",
+      "state": "effectiveness_gate_failed; pending_jade",
+      "formal_default_model": false
+    },
+    {
+      "role": "mainline_label_manifest",
+      "path": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\\data_v001\\label_manifest.json",
+      "sha256": "70498788a6ef797974c947b34ce1b970ee103f01cd06e6f8ef7e82fe0849b609",
+      "state": "机器监督与本轮划分",
+      "formal_default_model": false
+    }
+  ],
+  "global_default_model": null
+}

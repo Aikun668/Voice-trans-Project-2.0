@@ -1,0 +1,23 @@
+{
+  "target_lufs": -18.549999999999997,
+  "samples": [
+    {
+      "sample_id": "A01",
+      "source": "Self",
+      "display": "平凡之路 / 薄音版",
+      "original": "experiments\\F1-EXP-004\\listening\\audio\\A01_original.wav",
+      "A": "experiments\\F1-EXP-004\\listening\\audio\\A01_A.wav",
+      "B": "experiments\\F1-EXP-004\\listening\\audio\\A01_B.wav",
+      "C": "experiments\\F1-EXP-004\\listening\\audio\\A01_C.wav"
+    },
+    {
+      "sample_id": "A05",
+      "source": "GTSinger",
+      "display": "女A-002（来源未保留）",
+      "original": "experiments\\F1-EXP-004\\listening\\audio\\A05_original.wav",
+      "A": "experiments\\F1-EXP-004\\listening\\audio\\A05_A.wav",
+      "B": "experiments\\F1-EXP-004\\listening\\audio\\A05_B.wav",
+      "C": "experiments\\F1-EXP-004\\listening\\audio\\A05_C.wav"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "m0",
+    "kind": "suspect",
+    "segment": "莫问归期01-轻度跑调",
+    "t0": 0.48100000000000004,
+    "t1": 0.641,
+    "note": "E3",
+    "ref_note": "F4",
+    "dev": -60.2,
+    "model_shift": 0.0,
+    "dur": 0.16,
+    "ref_spread": 200.6,
+    "self_clip_s": [
+      0.0,
+      1.84
+    ],
+    "ref_clip_s": [
+      30.46,
+      32.24
+    ]
+  },
+  {
+    "id": "m1",
+    "kind": "suspect",
+    "segment": "莫问归期01-轻度跑调",
+    "t0": 4.111,
+    "t1": 4.491,
+    "note": "G3",
+    "ref_note": "G#4",
+    "dev": -110.2,
+    "model_shift": 0.0,
+    "dur": 0.38,
+    "ref_spread": 184.3,
+    "self_clip_s": [
+      2.91,
+      5.69
+    ],
+    "ref_clip_s": [
+      33.92,
+      36.06
+    ]
+  },
+  {
+    "id": "m2",
+    "kind": "suspect",
+    "segment": "莫问归期01-轻度跑调",
+    "t0": 4.951,
+    "t1": 5.241,
+    "note": "B3",
+    "ref_note": "A4",
+    "dev": 258.4,
+    "model_shift": 0.0,
+    "dur": 0.29,
+    "ref_spread": 128.3,
+    "self_clip_s": [
+      3.75,
+      6.44
+    ],
+    "ref_clip_s": [
+      34.9,
+      37.06
+    ]
+  },
+  {
+    "id": "m3",
+    "kind": "suspect",
+    "segment": "莫问归期01-轻度跑调",
+    "t0": 5.351,
+    "t1": 5.861,
+    "note": "E3",
+    "ref_note": "G4",
+    "dev": -207.0,
+    "model_shift": 0.0,
+    "dur": 0.51,
+    "ref_spread": 223.9,
+    "self_clip_s": [
+      4.15,
+      7.06
+    ],
+    "ref_clip_s": [
+      35.6,
+      37.46
+    ]
+  },
+  {
+    "id": "m4",
+    "kind": "suspect",
+    "segment": "莫问归期01-轻度跑调",
+    "t0": 10.371,
+    "t1": 10.541,
+    "note": "A#3",
+    "ref_note": "C#5",
+    "dev": -279.1,
+    "model_shift": 0.0,
+    "dur": 0.17,
+    "ref_spread": 42.7,
+    "self_clip_s": [
+      9.17,
+      11.74
+    ],
+    "ref_clip_s": [
+      39.82,
+      41.5
+    ]
+  },
+  {
+    "id": "m5",
+    "kind": "suspect",
+    "segment": "莫问归期02-轻度跑调",
+    "t0": 4.053999999999999,
+    "t1": 4.933999999999999,
+    "note": "A3",
+    "ref_note": "G4",
+    "dev": 163.2,
+    "model_shift": 0.0,
+    "dur": 0.88,
+    "ref_spread": 189.2,
+    "self_clip_s": [
+      2.85,
+      6.13
+    ],
+    "ref_clip_s": [
+      136.58,
+      139.42
+    ]
+  },
+  {
+    "id": "m6",
+    "kind": "suspect",
+    "segment": "莫问归期02-轻度跑调",
+    "t0": 8.203999999999999,
+    "t1": 8.373999999999999,
+    "note": "E3",
+    "ref_note": "D3",
+    "dev": 162.2,
+    "model_shift": 0.0,
+    "dur": 0.17,
+    "ref_spread": 34.0,
+    "self_clip_s": [
+      7.0,
+      9.57
+    ],
+    "ref_clip_s": [
+      140.54,
+      142.5
+    ]
+  },
+  {
+    "id": "m7",
+    "kind": "suspect",
+    "segment": "莫问归期02-轻度跑调",
+    "t0": 8.473999999999998,
+    "t1": 8.924,
+    "note": "F#3",
+    "ref_note": "F3",
+    "dev": 75.4,
+    "model_shift": 0.0,
+    "dur": 0.45,
+    "ref_spread": 151.6,
+    "self_clip_s": [
+      7.27,
+      10.12
+    ],
+    "ref_clip_s": [
+      141.1,
+      143.14
+    ]
+  },
+  {
+    "id": "m8",
+    "kind": "suspect",
+    "segment": "莫问归期02-轻度跑调",
+    "t0": 9.244,
+    "t1": 9.703999999999999,
+    "note": "A#3",
+    "ref_note": "A3",
+    "dev": 73.9,
+    "model_shift": 0.0,
+    "dur": 0.46,
+    "ref_spread": 163.8,
+    "self_clip_s": [
+      8.04,
+      10.9
+    ],
+    "ref_clip_s": [
+      141.88,
+      143.92
+    ]
+  },
+  {
+    "id": "m9",
+    "kind": "suspect",
+    "segment": "莫问归期02-轻度跑调",
+    "t0": 9.703999999999999,
+    "t1": 10.043999999999999,
+    "note": "C#4",
+    "ref_note": "C4",
+    "dev": 116.8,
+    "model_shift": 0.0,
+    "dur": 0.34,
+    "ref_spread": 128.1,
+    "self_clip_s": [
+      8.5,
+      11.24
+    ],
+    "ref_clip_s": [
+      142.32,
+      144.46
+    ]
+  },
+  {
+    "id": "m10",
+    "kind": "suspect",
+    "segment": "莫问归期02-轻度跑调",
+    "t0": 10.474,
+    "t1": 10.873999999999999,
+    "note": "G#3",
+    "ref_note": "G3",
+    "dev": 113.7,
+    "model_shift": 0.0,
+    "dur": 0.4,
+    "ref_spread": 210.9,
+    "self_clip_s": [
+      9.27,
+      12.07
+    ],
+    "ref_clip_s": [
+      143.18,
+      145.46
+    ]
+  },
+  {
+    "id": "m11",
+    "kind": "underfix",
+    "segment": "莫问归期02-轻度跑调",
+    "t0": 11.793999999999999,
+    "t1": 12.133999999999999,
+    "note": "B2",
+    "ref_note": "C3",
+    "dev": -76.9,
+    "model_shift": -41.6,
+    "dur": 0.34,
+    "ref_spread": 43.2,
+    "self_clip_s": [
+      10.59,
+      12.93
+    ],
+    "ref_clip_s": [
+      144.64,
+      146.4
+    ]
+  }
+]

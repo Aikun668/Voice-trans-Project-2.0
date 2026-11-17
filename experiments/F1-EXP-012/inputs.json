@@ -1,0 +1,73 @@
+{
+  "experiment": "F1-EXP-012",
+  "phase": "F1-DIAG-2",
+  "purpose": "时域/相位/共振峰三项对照诊断（只读），判断剩余维度是否真正区分薄音与正常版",
+  "hypotheses": {
+    "H1_时域": "薄音每周期能量更集中前段（脉冲式），正常版更均匀",
+    "H2_相位": "薄音谐波相位更散乱，正常版更同相（脉冲锁定）",
+    "H3_共振峰": "薄音 F1/F2 带宽更宽（阻尼/共鸣不足）"
+  },
+  "items": [
+    {
+      "dataset_id": "A_self_01",
+      "song": "平凡之路",
+      "role": "薄音版"
+    },
+    {
+      "dataset_id": "A_self_02",
+      "song": "平凡之路",
+      "role": "正常版"
+    },
+    {
+      "dataset_id": "A_self_03",
+      "song": "我们的歌",
+      "role": "薄音版"
+    },
+    {
+      "dataset_id": "A_self_04",
+      "song": "我们的歌",
+      "role": "正常版"
+    },
+    {
+      "dataset_id": "A_self_05",
+      "song": "雅俗共赏",
+      "role": "清唱版(薄)"
+    },
+    {
+      "dataset_id": "A_self_06",
+      "song": "雅俗共赏",
+      "role": "正常版"
+    },
+    {
+      "dataset_id": "A_self_07",
+      "song": "因为刚好遇见你",
+      "role": "清唱版(薄)"
+    },
+    {
+      "dataset_id": "A_self_08",
+      "song": "因为刚好遇见你",
+      "role": "原版(正常)"
+    }
+  ],
+  "config": {
+    "f0_search_hz": [
+      90.0,
+      450.0
+    ],
+    "win_s": 0.06,
+    "hop_s": 0.02,
+    "periodicity_gate": 0.35,
+    "active_floor_db": 40.0,
+    "cycle_points": 64,
+    "phase_kmax": 10,
+    "formant_sr": 16000,
+    "lpc_order": 14
+  },
+  "method_notes": [
+    "周期能量分布：按 F0 周期折叠平均，以最大绝对值点为相位原点（近似声门冲击点）",
+    "相位相干性：angle(H_k) − k·angle(H_1) 的幅度加权平均单位复数模长；1=脉冲锁定，0=散乱",
+    "共振峰：16kHz 整段下采样 + 预加重 + LPC(14) + Levinson-Durbin，取 F1/F2 频率与带宽",
+    "全部为自实现，未与 Praat 校验；仅用于同一录音链内的成对相对比较",
+    "薄/正常标签由用户指定；Agent 未听音；本报告为结构差异描述，非听感结论"
+  ]
+}

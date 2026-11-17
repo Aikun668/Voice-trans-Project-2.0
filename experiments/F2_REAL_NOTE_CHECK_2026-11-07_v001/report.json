@@ -1,0 +1,133 @@
+{
+  "source": "离开我的依赖01-轻度跑调",
+  "source_in_first_round_training": true,
+  "source_and_reference_sha256": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\离开我的依赖01-轻度跑调.wav": "3861f9938869f26af95c846bf995bd77fad4c4f7a3188a0534224f4fae10e09d",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\离开我的依赖_王艳薇_vocals.wav": "6a7ed12e1eb4b0bbe3a4aebfc531631f1e6a4d65b772a6f6a6be7432f8c06e43",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F2_R1_TRAIN_2026-11-07_v003\\results\\model.pkl": "9c7dd3d48099bb2775b676e2939dda1bd3d0a1526471cf2a82561b55b66ce975"
+  },
+  "alignment": {
+    "method": "Qwen3-ForcedAligner-0.6B + Jade's prior '当你' label + stable voiced windows",
+    "lyrics_source": "https://www.youtube.com/watch?v=p13tH7Etlzc",
+    "reference_search_window": [
+      53,
+      70
+    ],
+    "rejected_reference_window": [
+      23,
+      39
+    ],
+    "source_word_seconds": [
+      8.4,
+      9.12
+    ],
+    "reference_word_seconds": [
+      62.68,
+      62.92
+    ],
+    "source_pitch_core_seconds": [
+      8.64,
+      9.02
+    ],
+    "reference_pitch_core_seconds": [
+      62.8,
+      62.92
+    ],
+    "key_offset_cents": 38.061,
+    "anchors": [
+      {
+        "word": "你（前一句）",
+        "source_seconds": [
+          6.24,
+          6.7
+        ],
+        "reference_seconds": [
+          61.13,
+          61.39
+        ],
+        "offset_cents": 21.879
+      },
+      {
+        "word": "身",
+        "source_seconds": [
+          7.14,
+          7.5
+        ],
+        "reference_seconds": [
+          61.8,
+          62.2
+        ],
+        "offset_cents": 61.179
+      },
+      {
+        "word": "旁",
+        "source_seconds": [
+          7.62,
+          8.15
+        ],
+        "reference_seconds": [
+          62.32,
+          62.56
+        ],
+        "offset_cents": 38.061
+      }
+    ]
+  },
+  "preview_seconds_from_source": [
+    7.05,
+    11.05
+  ],
+  "optional_reference_preview_seconds": [
+    61.55,
+    65.55
+  ],
+  "edit_seconds_in_source": [
+    8.49,
+    9.2
+  ],
+  "passes": 1,
+  "target_is_candidate_pending_listening": true,
+  "direct_correction_cents": -215.9,
+  "raw_model_correction_cents": -32.872,
+  "model_features": {
+    "dur": 0.66,
+    "sung_cents": -2049.1805175526474,
+    "ref_c_global": -1064.9671556912888,
+    "ref_spread": 22.362344138937942,
+    "ref_voiced": 1.0,
+    "t0": 8.581000000000001
+  },
+  "measured_correction_cents": -216.161,
+  "voiced_overlap": 0.9974160206718347,
+  "levels": {
+    "original.wav": {
+      "samples": 192000,
+      "sample_rate": 48000,
+      "lufs": -16.6,
+      "dbtp": -3.8
+    },
+    "corrected.wav": {
+      "samples": 192000,
+      "sample_rate": 48000,
+      "lufs": -16.7,
+      "dbtp": -3.8
+    },
+    "reference.wav": {
+      "samples": 176400,
+      "sample_rate": 44100,
+      "lufs": -16.1,
+      "dbtp": -5.9
+    }
+  },
+  "checks": {
+    "input_hashes_unchanged": true,
+    "output_length_and_rate": true,
+    "outside_splice_identical": true,
+    "no_clipping_and_true_peak": true,
+    "matched_loudness": true,
+    "voiced_overlap_at_least_0_95": true,
+    "measured_shift_within_5_cents": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

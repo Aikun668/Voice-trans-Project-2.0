@@ -1,0 +1,11 @@
+{
+  "experiment": "F1-EXP-006",
+  "phase": "F1-P3A-3",
+  "status": "terminated_no_valid_interval",
+  "test_count": 2,
+  "target_lufs": -18.549999999999997,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "listening_result": "A01 Wet60 slightly muffled; Wet50/Wet70 no difference; A05 all no difference; no valid interval; tanh implementation terminated"
+}

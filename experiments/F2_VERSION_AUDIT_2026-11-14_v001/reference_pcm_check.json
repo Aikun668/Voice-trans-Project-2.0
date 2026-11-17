@@ -1,0 +1,83 @@
+[
+  {
+    "checkout": "main",
+    "name": "心墙_郭静_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 10249193,
+    "pcm_sha256": "a9cfab508888da7703489fac8968bbc0143122594daf41e7f08505277f81870b"
+  },
+  {
+    "checkout": "main",
+    "name": "离开我的依赖_王艳薇_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 10646529,
+    "pcm_sha256": "97494c673de246b6ea8080c6f4c9f498207769c43273a696c0e6c3f27970ae7f"
+  },
+  {
+    "checkout": "main",
+    "name": "莫问归期_蒋雪儿_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 9573360,
+    "pcm_sha256": "6618fead2ae811cbdbe34624f4c3585b0102cfdb4644ddf63f992a3aab605386"
+  },
+  {
+    "checkout": "handoff",
+    "name": "心墙_郭静_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 10249216,
+    "pcm_sha256": "f142b20e1b1fa96eedee8fe67177c3c74731d1f76ff2a6f5237d7fe74008fdfd"
+  },
+  {
+    "checkout": "handoff",
+    "name": "离开我的依赖_王艳薇_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 10647552,
+    "pcm_sha256": "bcd117a2bdd5caa59bd9672a823754b83f0fe142012d6ec9d67a1ef089ce37c8"
+  },
+  {
+    "checkout": "handoff",
+    "name": "莫问归期_蒋雪儿_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 9573376,
+    "pcm_sha256": "430a483c9f71c801e1d13ec722d3fc5b4579dfc5efabcab2709688975e221fe3"
+  },
+  {
+    "checkout": "initial",
+    "name": "心墙_郭静_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 10249216,
+    "pcm_sha256": "f142b20e1b1fa96eedee8fe67177c3c74731d1f76ff2a6f5237d7fe74008fdfd"
+  },
+  {
+    "checkout": "initial",
+    "name": "离开我的依赖_王艳薇_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 10647552,
+    "pcm_sha256": "bcd117a2bdd5caa59bd9672a823754b83f0fe142012d6ec9d67a1ef089ce37c8"
+  },
+  {
+    "checkout": "initial",
+    "name": "莫问归期_蒋雪儿_vocals.wav",
+    "rate": 44100,
+    "channels": 1,
+    "sample_width": 2,
+    "frames": 9573376,
+    "pcm_sha256": "430a483c9f71c801e1d13ec722d3fc5b4579dfc5efabcab2709688975e221fe3"
+  }
+]

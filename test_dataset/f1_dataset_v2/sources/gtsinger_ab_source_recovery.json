@@ -1,0 +1,94 @@
+﻿{
+    "attempted":  true,
+    "date":  "2026-10-31",
+    "method":  "Re-hashed the 10 raw WAVs and attempted to match size/SHA256 against the official GTSinger Chinese file tree and existing local index; filenames only contain gender + user A/B label.",
+    "files_checked":  10,
+    "matches":  [
+
+                ],
+    "unmatched":  [
+                      {
+                          "dataset_id":  "A_gt_01",
+                          "raw_file":  "A_thin\\gtsinger\\raw\\女A-001.wav",
+                          "bytes":  1057004,
+                          "sha256":  "8a7a3da29d224f8a3d66e28a9e725733c6574555408336eac5fe83d9622ea843",
+                          "gender_label":  "女",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "A_gt_02",
+                          "raw_file":  "A_thin\\gtsinger\\raw\\女A-002.wav",
+                          "bytes":  1716524,
+                          "sha256":  "5a1397ae3dce49b9c32f9244cea499e819e653ab0c7acad90420908d587fa266",
+                          "gender_label":  "女",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "A_gt_03",
+                          "raw_file":  "A_thin\\gtsinger\\raw\\男A-001.wav",
+                          "bytes":  1475324,
+                          "sha256":  "7b65dd3799b8cfc9b40d43d9c45e18e725cde1f8fba821db4be988b4b694b3fd",
+                          "gender_label":  "男",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "A_gt_04",
+                          "raw_file":  "A_thin\\gtsinger\\raw\\男A-002.wav",
+                          "bytes":  1429964,
+                          "sha256":  "c131da89789897497af0a4a71db90c04e8aef92edf48f6fb39ed82bdbab27a67",
+                          "gender_label":  "男",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "B_gt_01",
+                          "raw_file":  "B_full\\gtsinger\\raw\\女B-001.wav",
+                          "bytes":  1147724,
+                          "sha256":  "2d5e90dc9538bb119191d9fd3ef730c3b1e5f96da0b3f7b94593e3808e696714",
+                          "gender_label":  "女",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "B_gt_02",
+                          "raw_file":  "B_full\\gtsinger\\raw\\女B-002.wav",
+                          "bytes":  1283084,
+                          "sha256":  "5912870c9b4496459d97276059aa8e9f175ce088d90cdac26340b91d39c228ab",
+                          "gender_label":  "女",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "B_gt_03",
+                          "raw_file":  "B_full\\gtsinger\\raw\\女B-003.wav",
+                          "bytes":  1496204,
+                          "sha256":  "bf838289636e95ae13d2d3af6f51fa0389252ccbfb16ce1b0287f7d34a454ece",
+                          "gender_label":  "女",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "B_gt_04",
+                          "raw_file":  "B_full\\gtsinger\\raw\\男B-001.wav",
+                          "bytes":  1081484,
+                          "sha256":  "656941eb71fee8957e3b24aa2824cd87aa13d184af1ac67008d1371a47858d22",
+                          "gender_label":  "男",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "B_gt_05",
+                          "raw_file":  "B_full\\gtsinger\\raw\\男B-002.wav",
+                          "bytes":  879884,
+                          "sha256":  "473c1c20c5ca23400f7d8c19abc16ae4b57a9491d1fc755c0565b8bc6b2ac352",
+                          "gender_label":  "男",
+                          "status":  "UNKNOWN"
+                      },
+                      {
+                          "dataset_id":  "B_gt_06",
+                          "raw_file":  "B_full\\gtsinger\\raw\\男B-003.wav",
+                          "bytes":  1961324,
+                          "sha256":  "3e08725e6665551fb38a73368ae62a9fb9fa2aecb68ecf1dacbdbd8d1b5c32c1",
+                          "gender_label":  "男",
+                          "status":  "UNKNOWN"
+                      }
+                  ],
+    "conclusion":  "UNKNOWN: original HF path, song, and singer ID could not be recovered reliably from the current bytes/metadata.",
+    "impact":  "Does not block F1-EXP-001; must be resolved before formal dataset archive or provenance-dependent claims.",
+    "next_action":  "User can supply original filenames or re-download; do not invent source."
+}

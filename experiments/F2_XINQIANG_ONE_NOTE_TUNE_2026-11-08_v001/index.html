@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>心墙 · “着”一键对比</title>
+<style>
+  body { max-width: 40rem; margin: 2.5rem auto; padding: 0 1rem; color: #202530; font: 1rem/1.65 system-ui, sans-serif; }
+  button, textarea { font: inherit; }
+  button { padding: .35rem .65rem; margin: .2rem .3rem .2rem 0; cursor: pointer; }
+  #compare { background: #204d76; color: white; border: 1px solid #204d76; }
+  audio, textarea { width: 100%; box-sizing: border-box; margin-top: .6rem; }
+  label { display: block; margin-top: .25rem; }
+  fieldset { margin: 1rem 0; border: 1px solid #bcc4ce; }
+</style>
+<main>
+  <h1>《心墙》听“着”的前后区别</h1>
+  <p>沿用你确认的“学着”切口。先听原音，再听只修了“着”的版本。戴耳机、固定音量。两段用同一个固定增益，实测响度相差 0.2 LU。Agent 不能听音，音准和自然度由你判断。</p>
+  <button type="button" id="compare" data-audio="compare.wav">一键连听 · 原音 → 修正版</button>
+  <audio controls id="player" preload="metadata" src="audio/compare.wav"></audio>
+  <div>
+    <button type="button" data-audio="original.wav">① 单听原音·同样响</button>
+    <button type="button" data-audio="corrected.wav">② 单听修正版</button>
+  </div>
+  <form>
+    <fieldset>
+      <legend>后半段的“着”听起来怎样？</legend>
+      <label><input type="radio" name="verdict" value="更准，也自然" required> 更准，也自然</label>
+      <label><input type="radio" name="verdict" value="更准，但有跳变或电音"> 更准，但有跳变或电音</label>
+      <label><input type="radio" name="verdict" value="差不多／拿不准"> 差不多／拿不准</label>
+      <label><input type="radio" name="verdict" value="原音更准"> 原音更准</label>
+    </fieldset>
+    <label>补充（可不填）<textarea id="notes" rows="2"></textarea></label>
+    <button>生成答案</button>
+    <textarea id="answer" aria-label="复制这行回聊天" rows="2" readonly hidden></textarea>
+  </form>
+</main>
+<script>
+  const player = document.querySelector("#player");
+  for (const button of document.querySelectorAll("[data-audio]")) {
+    button.addEventListener("click", () => {
+      const source = "audio/" + button.dataset.audio;
+      if (player.getAttribute("src") !== source) player.src = source;
+      else player.currentTime = 0;
+      player.play().catch(() => {});
+    });
+  }
+  document.querySelector("form").addEventListener("submit", event => {
+    event.preventDefault();
+    const answer = document.querySelector("#answer");
+    const notes = document.querySelector("#notes").value.trim();
+    answer.value = "《心墙》“着”修音对比：" + new FormData(event.target).get("verdict")
+      + (notes ? "\n补充：" + notes : "");
+    answer.hidden = false;
+    answer.select();
+  });
+</script>
+</html>

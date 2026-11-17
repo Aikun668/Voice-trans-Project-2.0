@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-14",
+  "checkpoint_sha256": "d63eea5b0dea900aa4fb100fbb0159c0e4cba3177821d24ac6e20ceebdca955d",
+  "listening": "jade_rejected",
+  "own_recordings_in_training": 0,
+  "training_architecture": "HistGradientBoostingRegressor, 56 own-pitch contextual features",
+  "evidence": {
+    "real_test": {
+      "frames": 42680,
+      "zero_mae": 59.05570983886719,
+      "model_mae": 75.91689310580865,
+      "error_frames": 16005,
+      "error_zero_mae": 112.81173706054688,
+      "error_model_mae": 116.70919697111566,
+      "normal_over_50_rate": 0.28291787735127694,
+      "prediction_abs_median": 8.493893270036793
+    },
+    "controlled_perturbation_test": {
+      "frames": 98091,
+      "zero_mae": 34.38612365722656,
+      "model_mae": 55.41896699058933,
+      "error_frames": 16990,
+      "error_zero_mae": 198.5267333984375,
+      "error_model_mae": 141.8195429486529,
+      "normal_over_50_rate": 0.27053920420216765,
+      "prediction_abs_median": 11.568064562500524
+    }
+  },
+  "conclusion": "No useful listening improvement. English holdout also did not improve. Data scale, domain transfer, target quality and model capacity remain possible factors; scale alone is not established as the remedy.",
+  "current_scope": "Discussion only; no retraining.",
+  "verification": {
+    "original_and_model_hashes_unchanged": {
+      "original": true,
+      "model": true
+    },
+    "source_hash_unchanged": true,
+    "withdrawn_reference_stays_absent_from_live_page": true,
+    "retired_exporter_still_disabled": true,
+    "generator_syntax_valid": true
+  },
+  "historical_manifest_note": "delivery.json retains its original three-version files snapshot; current page inline files exclude the withdrawn reference."
+}

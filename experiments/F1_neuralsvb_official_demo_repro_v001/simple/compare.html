@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>修正后对比</title>
+<style>body{max-width:640px;margin:30px auto;padding:0 18px;font:18px/1.8 system-ui;background:#f4f6fa;color:#172337}button{font:inherit;padding:10px 16px;margin:5px;border:1px solid #b8c5d5;border-radius:8px;background:#fff;cursor:pointer}button[aria-pressed=true]{background:#2357a4;color:#fff}audio{width:100%;margin:12px 0}.n{color:#536177;font-size:15px}</style>
+<h2>修正后：像不像官网的？</h2><p class="n">只比三个：<b>官网的</b>（作者的结果）、<b>我们修正后</b>、<b>我们修正前</b>（发颤的那个）。同一句，响度一致。</p>
+<p id="cl"></p><p><button data-v="official" aria-pressed="true">官网的</button><button data-v="fixed" aria-pressed="false">我们·修正后</button><button data-v="old" aria-pressed="false">我们·修正前</button></p><audio id="p" controls></audio>
+<script>const C=['en1','en2','en3','zh1','zh2'],N={en1:'英文第1句',en2:'英文第2句',en3:'英文第3句',zh1:'中文第1句',zh2:'中文第2句'};let c='en1',v='official';const p=document.getElementById('p'),cl=document.getElementById('cl');
+C.forEach(x=>{const b=document.createElement('button');b.textContent=N[x];b.dataset.c=x;b.onclick=()=>{c=x;p.currentTime=0;go()};cl.appendChild(b)});
+function go(){const t=p.currentTime,r=!p.paused;p.src=c+'_'+v+'.wav';p.onloadedmetadata=()=>{p.currentTime=Math.min(t,p.duration-.05);if(r)p.play()};document.querySelectorAll('[data-c]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===c));document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v))}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{v=b.dataset.v;go()});go();</script>

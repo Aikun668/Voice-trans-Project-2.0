@@ -1,0 +1,86 @@
+{
+  "schema_version": "f1.features.v0",
+  "sample_rate": 48000,
+  "samples": 292320,
+  "duration_seconds": 6.09,
+  "frame_ms": 20,
+  "hop_ms": 10,
+  "activity_gate_dbfs": -58.79286642074585,
+  "activity_method": "relative_rms_gate_not_vocal_detection",
+  "active_seconds": 6.07,
+  "active_intervals": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 4.84
+    },
+    {
+      "start_seconds": 4.84,
+      "end_seconds": 6.09
+    }
+  ],
+  "rms_dbfs": {
+    "p10": -40.19599227905273,
+    "p50": -21.505720138549805,
+    "p90": -19.78928909301758,
+    "p95": -18.78826580047608,
+    "p99": -15.701464405059854
+  },
+  "dynamic_range_db": 21.407726478576652,
+  "frame_peak_dbfs_p90": -11.80564671034866,
+  "sample_peak_dbfs": -6.050338865034077,
+  "full_scale_samples": 0,
+  "longest_loud_event_seconds": 0.29000000000000004,
+  "band_energy": {
+    "body": {
+      "range_hz": [
+        80,
+        500
+      ],
+      "median_energy_fraction": 0.7845703658434217
+    },
+    "mid": {
+      "range_hz": [
+        500,
+        3000
+      ],
+      "median_energy_fraction": 0.19245819483076085
+    },
+    "presence": {
+      "range_hz": [
+        3000,
+        5000
+      ],
+      "median_energy_fraction": 0.0068039655074284625
+    },
+    "high": {
+      "range_hz": [
+        5000,
+        8000
+      ],
+      "median_energy_fraction": 0.00015043009179402584
+    }
+  },
+  "tonal_quality": {
+    "status": "unknown",
+    "reason": "No perceptual calibration; spectral balance may be natural timbre."
+  },
+  "sibilance": {
+    "status": "unknown",
+    "candidate_intervals": [
+      {
+        "start_seconds": 0.0,
+        "end_seconds": 0.1
+      },
+      {
+        "start_seconds": 1.14,
+        "end_seconds": 1.21
+      },
+      {
+        "start_seconds": 4.19,
+        "end_seconds": 4.21
+      }
+    ],
+    "candidate_frame_fraction": 0.026359143327841845,
+    "reason": "High-frequency bursts can be consonants, breath or natural timbre; not confirmed defects."
+  }
+}

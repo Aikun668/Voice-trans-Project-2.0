@@ -1,0 +1,26 @@
+=== attempt 1 23:25:30
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\librosa\util\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+D:\My_Grand_Projects2026\Voice-trans-Project-2.0\third_party_neuralsvb\venv\lib\site-packages\torch\nn\utils\weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+| load HifiGAN:  checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt
+Removing weight norm...
+| Loaded model parameters from checkpoints/1012_hifigan_all_songs_nsf/model_ckpt_steps_1170000.ckpt.
+| HifiGAN device: cpu.
+Loaded the voice encoder model on cpu in 0.01 seconds.
+shige cuts (s): [0.0, 5.97, 11.0, 17.18]
+  chunk 0.00-5.97 s ok, octave frames 0
+  chunk 5.97-11.00 s ok, octave frames 0
+  chunk 11.00-17.18 s ok, octave frames 0
+shige whole   {"worst_drop_db": -17.0, "hnr_median_db": 24.8, "shimmer": 0.0318, "p95_dev_cents": 18.7} 
+   chunked {"worst_drop_db": -18.9, "hnr_median_db": 24.4, "shimmer": 0.0327, "p95_dev_cents": 21.7}
+zuixuan cuts (s): [0.0, 4.39, 7.76, 12.18, 15.82, 19.57, 23.57]
+  chunk 0.00-4.39 s ok, octave frames 62
+  chunk 4.39-7.76 s ok, octave frames 0
+  chunk 7.76-12.18 s ok, octave frames 0
+  chunk 12.18-15.82 s ok, octave frames 0
+  chunk 15.82-19.57 s ok, octave frames 27
+  chunk 19.57-23.57 s ok, octave frames 0
+zuixuan whole   {"worst_drop_db": -11.2, "hnr_median_db": 20.3, "shimmer": 0.0385, "p95_dev_cents": 49.3} 
+   chunked {"worst_drop_db": -8.4, "hnr_median_db": 20.7, "shimmer": 0.0358, "p95_dev_cents": 52.3}
+DONE

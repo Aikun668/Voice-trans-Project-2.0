@@ -1,0 +1,145 @@
+{
+  "take": "心墙01-对照微微跑调",
+  "phrase": "学着",
+  "mark_source": "F2_R1_MARK_2026-11-07_v001/jade_fragments_原话.md, #3",
+  "marked_span_seconds": [
+    0.785,
+    1.216
+  ],
+  "marked_overlap_seconds": 0.43099999999999994,
+  "anchors": {
+    "take": {
+      "word_probes": [
+        [
+          {
+            "text": "学",
+            "start": 0.72,
+            "end": 1.04
+          },
+          {
+            "text": "着",
+            "start": 1.04,
+            "end": 1.36
+          }
+        ],
+        [
+          {
+            "text": "学",
+            "start": 0.72,
+            "end": 1.04
+          },
+          {
+            "text": "着",
+            "start": 1.04,
+            "end": 1.36
+          }
+        ]
+      ],
+      "phrase_seconds": [
+        0.72,
+        1.36
+      ],
+      "anchor_seconds": 0.72
+    },
+    "reference": {
+      "word_probes": [
+        [
+          {
+            "text": "学",
+            "start": 113.9,
+            "end": 114.22
+          },
+          {
+            "text": "着",
+            "start": 114.22,
+            "end": 114.38
+          }
+        ],
+        [
+          {
+            "text": "学",
+            "start": 113.92,
+            "end": 114.16
+          },
+          {
+            "text": "着",
+            "start": 114.16,
+            "end": 114.4
+          }
+        ]
+      ],
+      "phrase_seconds": [
+        113.9,
+        114.4
+      ],
+      "anchor_seconds": 113.91
+    }
+  },
+  "take_preview": {
+    "source_seconds": [
+      0.22,
+      2.22
+    ],
+    "relative_anchor_seconds": 0.5
+  },
+  "reference_preview": {
+    "source_seconds": [
+      113.41,
+      115.41
+    ],
+    "relative_anchor_seconds": 0.5
+  },
+  "compare_split_seconds": 2.0,
+  "audio_operations": "trim, 8 ms edge fades, fixed gain; reference preview resampled from 44.1 kHz to 48 kHz; concatenate",
+  "preview_gain_db": {
+    "take.wav": -4.9,
+    "reference.wav": 2.8999999999999986
+  },
+  "levels": {
+    "take.wav": {
+      "samples": 96000,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -7.3,
+      "sha256": "65c8f6419094b4f543180dfd56c9161400f721d508aae5b5f0c8a395684fddfe"
+    },
+    "reference.wav": {
+      "samples": 96000,
+      "sample_rate": 48000,
+      "lufs": -18.5,
+      "dbtp": -6.5,
+      "sha256": "c42cc8339178be95d175ecbd8c549a8f69bd14ef5a0c0edc8705af8af572b9a2"
+    },
+    "compare.wav": {
+      "samples": 192000,
+      "sample_rate": 48000,
+      "lufs": -18.8,
+      "dbtp": -6.5,
+      "sha256": "7381e702c25ebef7005d33c371e446c2a081bff7f19b3bb46011279def1a73d9"
+    }
+  },
+  "pitch_readback": {
+    "take.wav": {
+      "median_shift_cents": -7.668981129427266e-05,
+      "voiced_overlap": 1.0
+    },
+    "reference.wav": {
+      "median_shift_cents": 3.849931346167068e-05,
+      "voiced_overlap": 1.0
+    }
+  },
+  "inputs": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\心墙01-对照微微跑调.wav": "e7ef76cb38ef6b66deb4f2867285e00f5c6322177ad4f7f7350570c4a40cd248",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\心墙_郭静_vocals.wav": "3e98a6b09a6e2567652a74f2d6add1291ee3cdbd87e48fc01a9b8221530d036a"
+  },
+  "checks": {
+    "inputs_unchanged": true,
+    "anchor_match_within_input_sample": true,
+    "exact_take_then_reference": true,
+    "same_loudness_within_half_lu": true,
+    "true_peak_at_most_minus_1_dbtp": true,
+    "pitch_preserved": true
+  },
+  "engineering": "technical_pass",
+  "listening": "pending_jade"
+}

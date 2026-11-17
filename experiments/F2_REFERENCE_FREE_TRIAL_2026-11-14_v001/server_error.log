@@ -1,0 +1,208 @@
+127.0.0.1 - - [14/Nov/2026 01:22:37] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:22:37] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:22:37] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:23:11] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 01:23:12] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:23:12] code 404, message File not found
+127.0.0.1 - - [14/Nov/2026 01:23:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [14/Nov/2026 01:25:41] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:25:41] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:25:41] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:26:15] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [14/Nov/2026 01:26:15] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:26:17] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:26:17] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:26:17] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:26:39] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 01:26:39] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:26:39] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:26:41] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:26:41] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:49] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:49] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:49] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:49] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:49] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [14/Nov/2026 01:27:50] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 01:37:35] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 02:40:00] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 02:40:00] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:40:15] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:40:21] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:40:21] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:40:22] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:40:22] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:57:27] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:57:28] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:57:36] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 02:57:36] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:16:51] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 03:19:59] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:09] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:09] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:09] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:10] "GET /audio/original.wav HTTP/1.1" 206 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 65519)
+Traceback (most recent call last):
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 747, in __init__
+    self.handle()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 433, in handle
+    self.handle_one_request()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 421, in handle_one_request
+    method()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 675, in do_GET
+    self.copyfile(f, self.wfile)
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\serve.py", line 32, in copyfile
+    outputfile.write(block);remaining-=len(block)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+127.0.0.1 - - [14/Nov/2026 03:20:16] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:16] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:17] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:22] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:23] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:24] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:27] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:27] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:28] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:20:31] "GET /audio/model.wav HTTP/1.1" 206 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59581)
+Traceback (most recent call last):
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 747, in __init__
+    self.handle()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 433, in handle
+    self.handle_one_request()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 421, in handle_one_request
+    method()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 675, in do_GET
+    self.copyfile(f, self.wfile)
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\serve.py", line 32, in copyfile
+    outputfile.write(block);remaining-=len(block)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+127.0.0.1 - - [14/Nov/2026 03:20:31] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:44] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:47] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:47] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:48] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:52] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:52] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:52] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:53] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:22:53] "GET /audio/model.wav HTTP/1.1" 206 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58113)
+Traceback (most recent call last):
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 747, in __init__
+    self.handle()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 433, in handle
+    self.handle_one_request()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 421, in handle_one_request
+    method()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 675, in do_GET
+    self.copyfile(f, self.wfile)
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\serve.py", line 32, in copyfile
+    outputfile.write(block);remaining-=len(block)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+127.0.0.1 - - [14/Nov/2026 03:22:54] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:23:01] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:23:01] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:23:12] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:23:12] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:23:13] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:23:14] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:23:14] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:24:18] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:24:18] "GET /audio/reference.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:29:25] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:29:25] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:29:34] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:29:34] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:29:35] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:36:54] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 03:36:54] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:36:55] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:38:37] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:38:38] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:38:38] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:38:38] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:38:38] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:38:38] code 404, message File not found
+127.0.0.1 - - [14/Nov/2026 03:38:38] "GET /audio/reference.wav HTTP/1.1" 404 -
+127.0.0.1 - - [14/Nov/2026 03:39:19] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 03:39:19] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:39:25] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [14/Nov/2026 03:39:25] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:40:39] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 03:40:39] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:40:40] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [14/Nov/2026 03:40:40] "GET /audio/original.wav HTTP/1.1" 206 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59226)
+Traceback (most recent call last):
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 747, in __init__
+    self.handle()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 433, in handle
+    self.handle_one_request()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 421, in handle_one_request
+    method()
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\http\server.py", line 675, in do_GET
+    self.copyfile(f, self.wfile)
+  File "D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F2_REFERENCE_FREE_TRIAL_2026-11-14_v001\serve.py", line 32, in copyfile
+    outputfile.write(block);remaining-=len(block)
+  File "C:\Users\杨玉璋\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\lib\socketserver.py", line 826, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+----------------------------------------
+127.0.0.1 - - [14/Nov/2026 03:40:40] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:46:49] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 03:46:50] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:46:50] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [14/Nov/2026 03:46:50] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:59:51] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 03:59:51] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:59:51] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:59:52] "GET /audio/model.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:59:54] "GET /audio/original.wav HTTP/1.1" 206 -
+127.0.0.1 - - [14/Nov/2026 03:59:55] "GET /audio/model.wav HTTP/1.1" 206 -

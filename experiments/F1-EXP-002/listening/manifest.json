@@ -1,0 +1,37 @@
+{
+  "target_lufs": -21.400000000000002,
+  "samples": [
+    {
+      "sample_id": "A01",
+      "source": "Self",
+      "display": "平凡之路 / 薄音版",
+      "original": "experiments\\F1-EXP-002\\listening\\audio\\A01_original.wav",
+      "A": "experiments\\F1-EXP-002\\listening\\audio\\A01_A.wav",
+      "B": "experiments\\F1-EXP-002\\listening\\audio\\A01_B.wav"
+    },
+    {
+      "sample_id": "A02",
+      "source": "Self",
+      "display": "我们的歌 / 薄音版",
+      "original": "experiments\\F1-EXP-002\\listening\\audio\\A02_original.wav",
+      "A": "experiments\\F1-EXP-002\\listening\\audio\\A02_A.wav",
+      "B": "experiments\\F1-EXP-002\\listening\\audio\\A02_B.wav"
+    },
+    {
+      "sample_id": "A05",
+      "source": "GTSinger",
+      "display": "女A-002（来源未保留）",
+      "original": "experiments\\F1-EXP-002\\listening\\audio\\A05_original.wav",
+      "A": "experiments\\F1-EXP-002\\listening\\audio\\A05_A.wav",
+      "B": "experiments\\F1-EXP-002\\listening\\audio\\A05_B.wav"
+    },
+    {
+      "sample_id": "B01",
+      "source": "GTSinger",
+      "display": "女B-002（来源未保留）",
+      "original": "experiments\\F1-EXP-002\\listening\\audio\\B01_original.wav",
+      "A": "experiments\\F1-EXP-002\\listening\\audio\\B01_A.wav",
+      "B": "experiments\\F1-EXP-002\\listening\\audio\\B01_B.wav"
+    }
+  ]
+}

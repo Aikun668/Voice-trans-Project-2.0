@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>莫问归期 · 对齐核对</title>
+<style>
+  body { max-width: 40rem; margin: 2.5rem auto; padding: 0 1rem; color: #202530; font: 1rem/1.65 system-ui, sans-serif; }
+  button, textarea { font: inherit; }
+  button { padding: .35rem .65rem; margin: .2rem .3rem .2rem 0; cursor: pointer; }
+  #compare { background: #204d76; color: white; border: 1px solid #204d76; }
+  audio, textarea { width: 100%; box-sizing: border-box; margin-top: .6rem; }
+  label { display: block; margin-top: .25rem; }
+  fieldset { margin: 1rem 0; border: 1px solid #bcc4ce; }
+</style>
+<main>
+  <h1>《莫问归期》对齐核对</h1>
+  <p>先听你唱的，再听原唱。两段各 2 秒，“时”字的持续唱音放在相同的相对位置。音高和唱速保留录音原样，试听响度用固定增益调到同一水平。戴耳机、固定音量。Agent 不能听音，对应关系由你确认。</p>
+  <button type="button" id="compare" data-audio="compare.wav">一键连听 · 本人 2 秒 → 原唱 2 秒</button>
+  <audio controls id="player" preload="metadata" src="audio/compare.wav"></audio>
+  <div>
+    <button type="button" data-audio="take.wav">单听本人</button>
+    <button type="button" data-audio="reference.wav">单听原唱</button>
+  </div>
+  <form>
+    <fieldset>
+      <legend>两段的“沉默有时”，尤其是“时”，对应得对吗？</legend>
+      <label><input type="radio" name="verdict" value="对，是同一句同一个“时”" required> 对，是同一句同一个“时”</label>
+      <label><input type="radio" name="verdict" value="是同一句，但“时”没对上"> 是同一句，但“时”没对上</label>
+      <label><input type="radio" name="verdict" value="两段不像是同一句"> 两段不像是同一句</label>
+      <label><input type="radio" name="verdict" value="拿不准"> 拿不准</label>
+    </fieldset>
+    <label>补充（可不填）<textarea id="notes" rows="2"></textarea></label>
+    <button>生成答案</button>
+    <textarea id="answer" aria-label="复制这行回聊天" rows="2" readonly hidden></textarea>
+  </form>
+</main>
+<script>
+  const player = document.querySelector("#player");
+  for (const button of document.querySelectorAll("[data-audio]")) {
+    button.addEventListener("click", () => {
+      const source = "audio/" + button.dataset.audio;
+      if (player.getAttribute("src") !== source) player.src = source;
+      else player.currentTime = 0;
+      player.play().catch(() => {});
+    });
+  }
+  document.querySelector("form").addEventListener("submit", event => {
+    event.preventDefault();
+    const answer = document.querySelector("#answer");
+    const notes = document.querySelector("#notes").value.trim();
+    answer.value = "《莫问归期》对齐核对：" + new FormData(event.target).get("verdict")
+      + (notes ? "\n补充：" + notes : "");
+    answer.hidden = false;
+    answer.select();
+  });
+</script>
+</html>

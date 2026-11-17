@@ -1,0 +1,337 @@
+{
+  "experiment": "F1-EXP-008",
+  "phase": "F1-P3B",
+  "status": "pending_jade",
+  "sample_id": "A01",
+  "sample_display": "平凡之路 / 薄音版",
+  "original": {
+    "sample_rate": 48000,
+    "channels": 1,
+    "bits_per_sample": 16,
+    "frames": 630784,
+    "duration_seconds": 13.141333333333334,
+    "sample_peak_dbfs": -6.415937260135678,
+    "rms_dbfs": -19.328791729206902,
+    "clipped_samples": 0,
+    "dc_offset": -1.517692943672081e-06,
+    "lufs": {
+      "integrated_lufs": -19.24,
+      "true_peak_dbtp": -6.41,
+      "loudness_range_lu": 4.1
+    },
+    "spectral": {
+      "centroid_hz": 293.7995749286146,
+      "flatness": 0.019288856647257706
+    },
+    "pitch_median_hz": 175.93030107891497
+  },
+  "original_dynamics": {
+    "window_ms": 40.0,
+    "active_floor_db": 35.0,
+    "frames_total": 328,
+    "frames_active": 293,
+    "active_fraction": 0.8932926829268293,
+    "frame_db_p10": -36.873639776384564,
+    "frame_db_p50": -19.561839557206284,
+    "frame_db_p90": -15.37168206563342,
+    "short_term_dynamic_range_db_p90_p10": 21.501957710751142
+  },
+  "target_lufs": -18.0,
+  "compressor": {
+    "topology": "feed-forward",
+    "detector": "dual-branch one-pole RMS on mean-square: attack branch tau=15ms, release branch tau=120ms, per-sample max (classic RMS ballistics envelope); level=10*log10(envelope)",
+    "curve": "soft knee width 6.0dB centered at threshold (quadratic), above: GR=0.75*(L-T)",
+    "ratio": 4.0,
+    "attack_ms": 15.0,
+    "release_ms": 120.0,
+    "time_constant_convention": "63% step response in the power (mean-square) domain; no extra detector window; no lookahead",
+    "gr_definition": "frame-mean smoothed GR over active 40ms frames; target=P90",
+    "active_definition": "40ms frame RMS within 35.0dB of max frame",
+    "mix": "out = (1-wet)*dry + wet*compressed_branch, branch loudness-matched to dry by constant makeup gain before mixing"
+  },
+  "branches": {
+    "4.0": {
+      "threshold_db": -20.705015398966754,
+      "converged": true,
+      "calibration_history": [
+        {
+          "threshold_db": -20.705015398966754,
+          "gr_p90_active": 3.9793794558620155
+        }
+      ],
+      "achieved_gr_p90": 3.9793794558620155,
+      "gr_median_active": 1.3959620841182698,
+      "gr_p90_active": 3.9793794558620155,
+      "gr_min_active": 0.0,
+      "gr_max_active": 5.5775999198649995,
+      "gr_max_full": 6.264962244474805,
+      "frac_gr_gt_1db_active": 0.5972696245733788,
+      "gr_at_quiet_p10": 0.0,
+      "wet_dyn_db": 17.52353523388635,
+      "wet_lufs": -22.34,
+      "makeup_db": 3.1000000000000014,
+      "spectral": {
+        "centroid_hz": 317.43885981192915,
+        "flatness": 0.02598270183174333
+      }
+    },
+    "8.0": {
+      "threshold_db": -26.038348732300086,
+      "converged": true,
+      "calibration_history": [
+        {
+          "threshold_db": -26.038348732300086,
+          "gr_p90_active": 7.979379455862015
+        }
+      ],
+      "achieved_gr_p90": 7.979379455862015,
+      "gr_median_active": 5.29274170308801,
+      "gr_p90_active": 7.979379455862015,
+      "gr_min_active": 0.0,
+      "gr_max_active": 9.577599919865,
+      "gr_max_full": 10.264962244474805,
+      "frac_gr_gt_1db_active": 0.9146757679180887,
+      "gr_at_quiet_p10": 0.41960906746364035,
+      "wet_dyn_db": 15.093089062724424,
+      "wet_lufs": -26.18,
+      "makeup_db": 6.940000000000001,
+      "spectral": {
+        "centroid_hz": 325.4485529680942,
+        "flatness": 0.029605548302942077
+      }
+    }
+  },
+  "versions": [
+    {
+      "id": "P1",
+      "target_gr_db": 4.0,
+      "wet": 0.5,
+      "threshold_db": -20.705015398966754,
+      "makeup_db": 3.1000000000000014,
+      "calibration_converged": true,
+      "calibration_history": [
+        {
+          "threshold_db": -20.705015398966754,
+          "gr_p90_active": 3.9793794558620155
+        }
+      ],
+      "achieved_gr_p90": 3.9793794558620155,
+      "gr_median_active": 1.3959620841182698,
+      "gr_min_active": 0.0,
+      "gr_max_active": 5.5775999198649995,
+      "gr_max_full": 6.264962244474805,
+      "frac_gr_gt_1db_active": 0.5972696245733788,
+      "gr_at_quiet_p10": 0.0,
+      "wet_dyn_db": 17.52353523388635,
+      "dyn_change_wet_db": 3.978422476864793,
+      "mix_dyn_db": 19.35183308800304,
+      "dyn_change_mix_db": 2.150124622748102,
+      "quiet_boost_db": 1.6875711795395745,
+      "crest_drop_db": -0.18856151065495652,
+      "centroid_ratio": 1.0398916317879,
+      "flatness": 0.022656738380992174,
+      "lag_samples": 0,
+      "jump_ratio": 1.176425316986739,
+      "pitch_median_hz": 176.09178801152032,
+      "raw_export_guard_db": 0.0,
+      "raw_file": "experiments/F1-EXP-008/outputs/processed_raw/P1.wav",
+      "raw_sha256": "94f7600bbe1fd5f9755921e77933f9f31c1fb9bc9bfc6f9ad9ea11ec199f2006",
+      "raw_frames": 630784,
+      "raw_peak_dbfs": -6.084984940293796,
+      "raw_rms_dbfs": -19.186400920019977,
+      "raw_lufs": -19.29,
+      "raw_true_peak_dbtp": -6.07,
+      "raw_lra": 2.7,
+      "raw_clipped_samples": 0,
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": 1.2899999999999991,
+        "lufs": -17.99,
+        "true_peak_dbtp": -4.78,
+        "frames": 630784,
+        "sha256": "319cf0654198645ab7849c315bfaa0b11ecee29b9ca575a5c23bc7a25500cc0b"
+      }
+    },
+    {
+      "id": "P2",
+      "target_gr_db": 8.0,
+      "wet": 0.5,
+      "threshold_db": -26.038348732300086,
+      "makeup_db": 6.940000000000001,
+      "calibration_converged": true,
+      "calibration_history": [
+        {
+          "threshold_db": -26.038348732300086,
+          "gr_p90_active": 7.979379455862015
+        }
+      ],
+      "achieved_gr_p90": 7.979379455862015,
+      "gr_median_active": 5.29274170308801,
+      "gr_min_active": 0.0,
+      "gr_max_active": 9.577599919865,
+      "gr_max_full": 10.264962244474805,
+      "frac_gr_gt_1db_active": 0.9146757679180887,
+      "gr_at_quiet_p10": 0.41960906746364035,
+      "wet_dyn_db": 15.093089062724424,
+      "dyn_change_wet_db": 6.4088686480267185,
+      "mix_dyn_db": 17.71533281242997,
+      "dyn_change_mix_db": 3.786624898321172,
+      "quiet_boost_db": 3.8236232220291555,
+      "crest_drop_db": -0.07436711903568849,
+      "centroid_ratio": 1.0526189817918243,
+      "flatness": 0.024369292743144505,
+      "lag_samples": 0,
+      "jump_ratio": 1.225227651525996,
+      "pitch_median_hz": 176.22849366436168,
+      "raw_export_guard_db": 0.0,
+      "raw_file": "experiments/F1-EXP-008/outputs/processed_raw/P2.wav",
+      "raw_sha256": "d078b8e0b749b58ac2556165f19f2ae18362527f1805db7384e9fef3e6a9d2ab",
+      "raw_frames": 630784,
+      "raw_peak_dbfs": -6.167250293725004,
+      "raw_rms_dbfs": -19.154471881831917,
+      "raw_lufs": -19.3,
+      "raw_true_peak_dbtp": -6.16,
+      "raw_lra": 2.4,
+      "raw_clipped_samples": 0,
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": 1.3000000000000007,
+        "lufs": -18.0,
+        "true_peak_dbtp": -4.86,
+        "frames": 630784,
+        "sha256": "3ac72b9718c01248df6ec02e85628e015ec5b44e774447e7fa6899173654c999"
+      }
+    },
+    {
+      "id": "P3",
+      "target_gr_db": 4.0,
+      "wet": 1.0,
+      "threshold_db": -20.705015398966754,
+      "makeup_db": 3.1000000000000014,
+      "calibration_converged": true,
+      "calibration_history": [
+        {
+          "threshold_db": -20.705015398966754,
+          "gr_p90_active": 3.9793794558620155
+        }
+      ],
+      "achieved_gr_p90": 3.9793794558620155,
+      "gr_median_active": 1.3959620841182698,
+      "gr_min_active": 0.0,
+      "gr_max_active": 5.5775999198649995,
+      "gr_max_full": 6.264962244474805,
+      "frac_gr_gt_1db_active": 0.5972696245733788,
+      "gr_at_quiet_p10": 0.0,
+      "wet_dyn_db": 17.52353523388635,
+      "dyn_change_wet_db": 3.978422476864793,
+      "mix_dyn_db": 17.52353523388635,
+      "dyn_change_mix_db": 3.978422476864793,
+      "quiet_boost_db": 3.0999999999999943,
+      "crest_drop_db": -0.5128470219630721,
+      "centroid_ratio": 1.0804605823172417,
+      "flatness": 0.025982701831743324,
+      "lag_samples": 0,
+      "jump_ratio": 1.3582959176551919,
+      "pitch_median_hz": 176.25722551738718,
+      "raw_export_guard_db": 0.0,
+      "raw_file": "experiments/F1-EXP-008/outputs/processed_raw/P3.wav",
+      "raw_sha256": "60ce7c7139f28027f2e37e3e0193036134cccb29e1eba04d647a08f8740ba88c",
+      "raw_frames": 630784,
+      "raw_peak_dbfs": -5.563968137701835,
+      "raw_rms_dbfs": -18.98966962873613,
+      "raw_lufs": -19.24,
+      "raw_true_peak_dbtp": -5.56,
+      "raw_lra": 1.3,
+      "raw_clipped_samples": 0,
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": 1.2399999999999984,
+        "lufs": -18.0,
+        "true_peak_dbtp": -4.32,
+        "frames": 630784,
+        "sha256": "b113538c962f208ae5414ec5bc2ff60938400e0ea45c8654c6db2bf17c56139c"
+      }
+    },
+    {
+      "id": "P4",
+      "target_gr_db": 8.0,
+      "wet": 1.0,
+      "threshold_db": -26.038348732300086,
+      "makeup_db": 6.940000000000001,
+      "calibration_converged": true,
+      "calibration_history": [
+        {
+          "threshold_db": -26.038348732300086,
+          "gr_p90_active": 7.979379455862015
+        }
+      ],
+      "achieved_gr_p90": 7.979379455862015,
+      "gr_median_active": 5.29274170308801,
+      "gr_min_active": 0.0,
+      "gr_max_active": 9.577599919865,
+      "gr_max_full": 10.264962244474805,
+      "frac_gr_gt_1db_active": 0.9146757679180887,
+      "gr_at_quiet_p10": 0.41960906746364035,
+      "wet_dyn_db": 15.093089062724424,
+      "dyn_change_wet_db": 6.4088686480267185,
+      "mix_dyn_db": 15.093089062724431,
+      "dyn_change_mix_db": 6.408868648026711,
+      "quiet_boost_db": 6.469502800568396,
+      "crest_drop_db": -0.5434533000871724,
+      "centroid_ratio": 1.107723021883777,
+      "flatness": 0.02960554830294195,
+      "lag_samples": 0,
+      "jump_ratio": 1.455900586733707,
+      "pitch_median_hz": 176.2993613094148,
+      "raw_export_guard_db": 0.0,
+      "raw_file": "experiments/F1-EXP-008/outputs/processed_raw/P4.wav",
+      "raw_sha256": "1fc53e604a4638ada82984347ebd57fbb21ec3b060679bb96f94606deaa4e142",
+      "raw_frames": 630784,
+      "raw_peak_dbfs": -5.4333379149690595,
+      "raw_rms_dbfs": -18.889645684127455,
+      "raw_lufs": -19.24,
+      "raw_true_peak_dbtp": -5.43,
+      "raw_lra": 0.8,
+      "raw_clipped_samples": 0,
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": 1.2399999999999984,
+        "lufs": -18.01,
+        "true_peak_dbtp": -4.19,
+        "frames": 630784,
+        "sha256": "113cac96f7220e65192bbb2bcb52327735ae8c73b1cf034f63c4b51e8bd0de83"
+      }
+    }
+  ],
+  "screen_rules": {
+    "hard": [
+      "|GR_P90 - target| > 0.75dB",
+      "|lag| > 1 sample",
+      "|Δpitch median| > 2Hz",
+      "nonfinite",
+      "jump_ratio outside [0.1,10]",
+      "silent active frames",
+      "export clipping"
+    ],
+    "diag_flags": {
+      "persistent_over_compression": "GR>1dB on >95% active frames AND quiet-region GR>3dB",
+      "wet_dyn_change_lt_1db": "compressed branch short-term dynamics changed <1dB",
+      "quiet_boost_gt_10db": "median boost on quietest 10% active frames > +10dB",
+      "centroid_outside_0.75_1.33": "unexpected spectral coloration"
+    },
+    "listening_loudness": "constant gain only, no limiter; all files within 0.3 LU of target"
+  },
+  "note": "客观变化（动态、GR、LUFS）不代表听感改善；听感结论由 Jade 判定"
+}

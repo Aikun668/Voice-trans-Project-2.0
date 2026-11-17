@@ -1,0 +1,53 @@
+[
+  {
+    "id": "shige_medium",
+    "title": "本人 · 是谁在唱歌 · 中度跑调",
+    "original_source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_medium.wav",
+    "original_sha256": "4f6775a7738a76cee694d92ed8459b13cd1cb15dba2568fd8e79c1b1b749122e",
+    "converted_copy": false,
+    "technical_pass": true,
+    "errors": [],
+    "subjective_result": "pending_jade",
+    "dataset": "offpitch",
+    "profile": "v5_transfer",
+    "phrase_seconds": [
+      12.5,
+      15.5
+    ],
+    "duration_seconds": 21.461337868480726
+  },
+  {
+    "id": "shige_severe",
+    "title": "本人 · 是谁在唱歌 · 严重跑调",
+    "original_source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_severe.wav",
+    "original_sha256": "8d5beb822e60ca2be0970ab43579cbce102cc6aea1c674d8421bee3c024d66d8",
+    "converted_copy": false,
+    "technical_pass": true,
+    "errors": [],
+    "subjective_result": "pending_jade",
+    "dataset": "offpitch",
+    "profile": "v5_transfer",
+    "phrase_seconds": [
+      2.5,
+      5.5
+    ],
+    "duration_seconds": 24.97201814058957
+  },
+  {
+    "id": "web_shinian",
+    "title": "网络 · 十年（女中音，新片段）",
+    "original_source": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\web_singing\\gtsinger_alto_control\\十年_normal.wav",
+    "original_sha256": "9de25ec7124aaf7c93970922c4a49a767737528dcb1ed8256abb4cde0eabdc51",
+    "converted_copy": true,
+    "technical_pass": true,
+    "errors": [],
+    "subjective_result": "pending_jade",
+    "dataset": "offpitch",
+    "profile": "v5_transfer",
+    "phrase_seconds": [
+      0.75,
+      3.75
+    ],
+    "duration_seconds": 8.18
+  }
+]

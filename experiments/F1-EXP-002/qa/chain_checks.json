@@ -1,0 +1,188 @@
+{
+  "experiment": "F1-EXP-002",
+  "phase": "F1-P2.1",
+  "frequency_response": {
+    "E2_1p5": {
+      "frequency_response_db": {
+        "100": 3.433013334601743e-05,
+        "500": 0.0019318463893508474,
+        "1000": 0.02075748788499753,
+        "2000": 0.24967735296082916,
+        "3000": 0.7499979088723794,
+        "4000": 1.1430975333254376,
+        "6000": 1.4179639964785746,
+        "8000": 1.4755900106883653,
+        "12000": 1.4964386694714347,
+        "16000": 1.4993339450345675
+      },
+      "impulse_peak": 1.1606616973876953,
+      "decay_ms": 0.3541666666666667,
+      "length": 96000
+    },
+    "E2_4p0": {
+      "frequency_response_db": {
+        "100": 8.191138152204739e-05,
+        "500": 0.005248121150681736,
+        "1000": 0.056771983298896225,
+        "2000": 0.6765104563538515,
+        "3000": 2.0000002038915,
+        "4000": 3.0372725942048726,
+        "6000": 3.7760012545684747,
+        "8000": 3.933229309179964,
+        "12000": 3.990289761096975,
+        "16000": 3.99819496900112
+      },
+      "impulse_peak": 1.4876704216003418,
+      "decay_ms": 0.47916666666666663,
+      "length": 96000
+    }
+  },
+  "linearity": {
+    "E2_1p5": {
+      "scale_max_abs_error": 0.0,
+      "additivity_max_abs_error": 5.066394805908203e-07,
+      "negation_max_abs_error": 0.0,
+      "pass": true
+    },
+    "E2_4p0": {
+      "scale_max_abs_error": 0.0,
+      "additivity_max_abs_error": 6.48200511932373e-07,
+      "negation_max_abs_error": 0.0,
+      "pass": true
+    }
+  },
+  "matched_eq_preservation": [
+    {
+      "sample_id": "A01",
+      "scheme": "E2_1p5",
+      "raw_tilt_db": 1.393756427910028,
+      "matched_tilt_db": 1.3937509677221807,
+      "difference_db": -5.460187847416975e-06,
+      "pass": true
+    },
+    {
+      "sample_id": "A01",
+      "scheme": "E2_4p0",
+      "raw_tilt_db": 3.7161701346972564,
+      "matched_tilt_db": 3.716153069467982,
+      "difference_db": -1.7065229274582094e-05,
+      "pass": true
+    },
+    {
+      "sample_id": "A02",
+      "scheme": "E2_1p5",
+      "raw_tilt_db": 1.393514474588678,
+      "matched_tilt_db": 1.3934802708452547,
+      "difference_db": -3.420374342333332e-05,
+      "pass": true
+    },
+    {
+      "sample_id": "A02",
+      "scheme": "E2_4p0",
+      "raw_tilt_db": 3.714717822359668,
+      "matched_tilt_db": 3.7146974830772455,
+      "difference_db": -2.0339282422732197e-05,
+      "pass": true
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "E2_1p5",
+      "raw_tilt_db": 1.348113315157836,
+      "matched_tilt_db": 1.348097538500101,
+      "difference_db": -1.5776657734889454e-05,
+      "pass": true
+    },
+    {
+      "sample_id": "A05",
+      "scheme": "E2_4p0",
+      "raw_tilt_db": 3.592359564272666,
+      "matched_tilt_db": 3.5923431398565913,
+      "difference_db": -1.6424416074745096e-05,
+      "pass": true
+    },
+    {
+      "sample_id": "B01",
+      "scheme": "E2_1p5",
+      "raw_tilt_db": 1.3950331748773912,
+      "matched_tilt_db": 1.3950458350472195,
+      "difference_db": 1.2660169828260237e-05,
+      "pass": true
+    },
+    {
+      "sample_id": "B01",
+      "scheme": "E2_4p0",
+      "raw_tilt_db": 3.7182976081672443,
+      "matched_tilt_db": 3.718304514696222,
+      "difference_db": 6.90652897761268e-06,
+      "pass": true
+    }
+  ],
+  "ab_mapping": [
+    {
+      "sample_id": "A01",
+      "A_scheme": "E2_4p0",
+      "B_scheme": "E2_1p5",
+      "A_high_gain_db": 3.5867261334857057,
+      "B_high_gain_db": 1.3739652609438644,
+      "rank_pass": true
+    },
+    {
+      "sample_id": "A02",
+      "A_scheme": "E2_4p0",
+      "B_scheme": "E2_1p5",
+      "A_high_gain_db": 3.655312279048222,
+      "B_high_gain_db": 1.3937131563195355,
+      "rank_pass": true
+    },
+    {
+      "sample_id": "A05",
+      "A_scheme": "E2_1p5",
+      "B_scheme": "E2_4p0",
+      "A_high_gain_db": 1.318580233487768,
+      "B_high_gain_db": 3.5336544324042896,
+      "rank_pass": true
+    },
+    {
+      "sample_id": "B01",
+      "A_scheme": "E2_1p5",
+      "B_scheme": "E2_4p0",
+      "A_high_gain_db": 1.2554041277274977,
+      "B_high_gain_db": 3.1992823428547283,
+      "rank_pass": true
+    }
+  ],
+  "a01_onset": {
+    "first2_hf_fraction": 0.003242389320667687,
+    "rest_hf_fraction": 0.008319031085714456,
+    "first2_rms_dbfs": -19.07894806374238,
+    "rest_rms_dbfs": -19.375203889310715,
+    "first2_peak_dbfs": -6.483332682824045,
+    "first_sample": 0.0,
+    "last_sample": 0.003936767578125,
+    "filter_decay_ms": {
+      "E2_1p5": 0.3541666666666667,
+      "E2_4p0": 0.47916666666666663
+    },
+    "E2_1p5": {
+      "hf_gain_first2_db": 1.4078270766988306,
+      "hf_gain_rest_db": 1.3933054033258405
+    },
+    "E2_4p0": {
+      "hf_gain_first2_db": 3.752556948206438,
+      "hf_gain_rest_db": 3.715052675178991
+    }
+  },
+  "technical_pass": true,
+  "no_holdout_processed": [
+    "A03",
+    "A04",
+    "A06",
+    "B02",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "frequency_response_pass": true,
+  "frequency_response_note": "E2_1p5: 8k/16k ~1.48/1.50 dB; E2_4p0: ~3.93/4.00 dB; 100-1000 Hz ~0 dB; impulse decay <0.5 ms."
+}

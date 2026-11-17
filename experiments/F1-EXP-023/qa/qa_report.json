@@ -1,0 +1,133 @@
+{
+  "experiment": "F1-EXP-023",
+  "phase": "F1-P9",
+  "status": "pending_jade",
+  "question": "选择性弱段抬升能否带来可听的发声力度提升",
+  "method": "向上压缩：R=浊音帧P75；D=max(0,R-3-L)；g=min(GMAX,0.6D)；非浊音帧0；attack20ms/release60ms",
+  "baseline": {
+    "id": "EXP-020 S45",
+    "sha256": "ce7281324af8dc84b0e35e119d53ca492ed68c2d0a73923080830bd887b9865c"
+  },
+  "target_lufs": -19.97,
+  "exports": [
+    {
+      "tag": "original",
+      "file": "experiments/F1-EXP-023/listening/audio/original.wav",
+      "lufs": -19.97,
+      "true_peak_dbtp": -7.14,
+      "sha256": "793cdd991d63895c03f3d18049698459b69659aee470176f0884dc6ecc927129"
+    },
+    {
+      "tag": "baseline",
+      "file": "experiments/F1-EXP-023/listening/audio/baseline.wav",
+      "lufs": -19.97,
+      "true_peak_dbtp": -3.2,
+      "sha256": "9c4278340a320d28de37d5b83978f4779047abc85ed65f50b5a2718f2cde0df9"
+    }
+  ],
+  "versions": [
+    {
+      "id": "U1",
+      "gmax_db": 6.0,
+      "ratio_up": 0.35,
+      "proc": {
+        "ref_level_db": -17.84,
+        "frames": 1312,
+        "voiced_frames": 1006,
+        "frames_boosted_ge1db": 154884,
+        "boosted_frame_fraction_ge1db": 0.246,
+        "gain_median_when_active_db": 2.31,
+        "gain_max_db": 6.0,
+        "gain_p90_db": 2.76
+      },
+      "regions": {
+        "weak_frames": 404,
+        "weak_median_db": 1.25,
+        "weak_p90_db": 5.5,
+        "mid_frames": 441,
+        "mid_median_db": 0.01,
+        "strong_frames": 161,
+        "strong_median_db": 0.03
+      },
+      "pitch_hz": 176.39,
+      "pitch_base_hz": 175.84,
+      "peak_dbfs": -3.52,
+      "crest_db": 16.73,
+      "frames": 630784,
+      "clipped": 0,
+      "raw_lufs": -20.19,
+      "raw_true_peak_dbtp": -3.52,
+      "raw_file": "experiments/F1-EXP-023/outputs/processed_raw/U1.wav",
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": 0.22,
+        "lufs": -19.97,
+        "true_peak_dbtp": -3.3,
+        "sha256": "2c230264c97a3331838d854f3703b79fd520f4c1c4787695e3df34ef1b573a93"
+      }
+    },
+    {
+      "id": "U2",
+      "gmax_db": 20.0,
+      "ratio_up": 1.0,
+      "proc": {
+        "ref_level_db": -17.84,
+        "frames": 1312,
+        "voiced_frames": 1006,
+        "frames_boosted_ge1db": 248910,
+        "boosted_frame_fraction_ge1db": 0.395,
+        "gain_median_when_active_db": 3.88,
+        "gain_max_db": 19.99,
+        "gain_p90_db": 8.16
+      },
+      "regions": {
+        "weak_frames": 404,
+        "weak_median_db": 3.63,
+        "weak_p90_db": 17.4,
+        "mid_frames": 441,
+        "mid_median_db": 0.02,
+        "strong_frames": 161,
+        "strong_median_db": 0.09
+      },
+      "pitch_hz": 176.76,
+      "pitch_base_hz": 175.84,
+      "peak_dbfs": -3.39,
+      "crest_db": 16.28,
+      "frames": 630784,
+      "clipped": 0,
+      "raw_lufs": -19.83,
+      "raw_true_peak_dbtp": -3.36,
+      "raw_file": "experiments/F1-EXP-023/outputs/processed_raw/U2.wav",
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": -0.14,
+        "lufs": -19.96,
+        "true_peak_dbtp": -3.5,
+        "sha256": "c1944601230fc4fe550b196988db73ea63ac5ddb6985d2a2ce50b2057222b325"
+      }
+    }
+  ],
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "difference_vs_previous": "EXP-008 为向下压缩（压强的），本轮为向上压缩（抬弱的），方向相反",
+  "no_other_modules": "只做弱段抬升；未改 F0、未加 EQ/饱和/谐波模块",
+  "stop_condition": "两档均无正向改善，或破坏强弱起伏/抬起气声 → 停止本方向",
+  "limitations": [
+    "参考电平用浊音帧 P75，属工程近似，不等于真实'应该有多响'",
+    "只处理浊音帧，浊/清边界靠 20ms 平滑过渡",
+    "抬升会把弱段中的气声比例一并放大（无法区分'虚'与'弱'）",
+    "自实现机制未与外部工具校验；Agent 未听音"
+  ]
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Jade · F1 茉莉花试听 v0.5</title>
+<style>
+body{font:16px/1.7 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:740px;margin:32px auto;padding:0 20px}
+h1{font-size:26px}h2{font-size:19px;margin:0 0 12px}section{background:white;border:1px solid #dce0e6;border-radius:12px;padding:20px;margin:16px 0}
+audio{width:100%}a{color:#2953a6}.note{color:#525d70}p{margin:8px 0}
+</style>
+<h1>Jade · F1 茉莉花试听 v0.5</h1>
+<p>02 明显处理、03 强处理：突出清晰度，不再整体压暗。04 保留 v0.3 基准。响度一致；请判断是否变清楚，还是更尖、更薄。</p>
+<p class="note">请用同一副耳机、固定音量。切换播放时会接着同一时间点。重点判断：是否更容易听见改善，以及有无新副作用。</p>
+<section><h2>01 · 原音（只匹配音量）</h2><audio controls preload="metadata" src="01_before_matched.wav"></audio><p><a href="01_before_matched.wav" download>保存 WAV</a> · -18.00 LUFS</p></section>
+<section><h2>02 · 明显处理（清晰方向）</h2><audio controls preload="metadata" src="02_v05_clear.wav"></audio><p><a href="02_v05_clear.wav" download>保存 WAV</a> · -18.00 LUFS</p></section>
+<section><h2>03 · 强处理（清晰方向）</h2><audio controls preload="metadata" src="03_v05_strong.wav"></audio><p><a href="03_v05_strong.wav" download>保存 WAV</a> · -18.00 LUFS</p></section>
+<section><h2>04 · v0.3 基准（此前反馈略闷）</h2><audio controls preload="metadata" src="04_v03_light_baseline.wav"></audio><p><a href="04_v03_light_baseline.wav" download>保存 WAV</a> · -18.00 LUFS</p></section>
+<section><h2>同一句：原音 → v0.3 基准 → 明显处理 → 强处理</h2><audio controls preload="metadata" src="05_same_phrase.wav" data-montage="true"></audio></section><script>
+let active = null;
+document.querySelectorAll('audio').forEach(player => {
+  player.addEventListener('play', () => {
+    if (active && active !== player) {
+      const position = active.ended || active.dataset.montage || player.dataset.montage ? 0 : active.currentTime;
+      active.pause();
+      player.currentTime = Math.min(position, player.duration || position);
+    }
+    active = player;
+  });
+});
+</script></html>

@@ -1,0 +1,41 @@
+{
+  "architecture": "HistGradientBoostingRegressor on 56 own-pitch context features",
+  "best_trees": 120,
+  "checkpoint_sha256": "53eed74291c16977ad6922f420d58f27756b465db4dd48dfbec17682f1071994",
+  "dataset_sha256": "56a31d8a3b953210103f4c6fe4ab9a994cd5678b97a1496e78e8820e4d94d142",
+  "input_features": 56,
+  "reference_input": false,
+  "synthetic_training_examples": 0,
+  "song_counts": {
+    "train": 220,
+    "test": 20,
+    "validation": 28
+  },
+  "validation": {
+    "frames": 51310,
+    "nonzero_target_frames": 17799,
+    "zero_mae": 57.81421661376953,
+    "model_mae": 57.84673621997249,
+    "error_subset_zero_mae": 116.41676330566406,
+    "error_subset_model_mae": 116.14111853872761,
+    "normal_over_50_cents_rate": 0.0,
+    "professional_identity_over_50_rate": 0.0,
+    "prediction_abs_median": 1.4251785820013096
+  },
+  "test": {
+    "frames": 42680,
+    "nonzero_target_frames": 16005,
+    "zero_mae": 59.05570983886719,
+    "model_mae": 58.70363243254862,
+    "error_subset_zero_mae": 112.81173706054688,
+    "error_subset_model_mae": 111.7384272818028,
+    "normal_over_50_cents_rate": 0.0003058571647040832,
+    "professional_identity_over_50_rate": 0.0,
+    "prediction_abs_median": 1.35663939415546
+  },
+  "sklearn": "1.7.2",
+  "seconds": 57.6,
+  "checkpoint_reload_prediction_matches_selected_validation": true,
+  "listening": "pending_jade",
+  "validation_improved_over_zero": false
+}

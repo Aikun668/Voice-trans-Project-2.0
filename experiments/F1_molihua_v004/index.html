@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Jade · F1 茉莉花试听 v0.4</title>
+<style>
+body{font:16px/1.7 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:740px;margin:32px auto;padding:0 20px}
+h1{font-size:26px}h2{font-size:19px;margin:0 0 12px}section{background:white;border:1px solid #dce0e6;border-radius:12px;padding:20px;margin:16px 0}
+audio{width:100%}a{color:#2953a6}.note{color:#525d70}p{margin:8px 0}
+</style>
+<h1>Jade · F1 茉莉花试听 v0.4</h1>
+<p>全部文件响度已匹配。02/03 是回收“发闷”的候选，04 是 v0.3 轻档基准，05–08 是消融（每个只开一项处理）。</p>
+<p class="note">请用同一副耳机、固定音量。切换播放时会接着同一时间点。重点判断：哪项带来美化，哪项带来闷。</p>
+<section><h2>01 · 原音（只匹配音量）</h2><audio controls preload="metadata" src="01_before_matched.wav"></audio><p><a href="01_before_matched.wav" download>保存 WAV</a> · -18.45 LUFS</p></section>
+<section><h2>02 · v04_candidate_A_narrow900</h2><audio controls preload="metadata" src="02_v04_candidate_A_narrow900.wav"></audio><p><a href="02_v04_candidate_A_narrow900.wav" download>保存 WAV</a> · -18.46 LUFS</p></section>
+<section><h2>03 · v04_candidate_B_cut450</h2><audio controls preload="metadata" src="03_v04_candidate_B_cut450.wav"></audio><p><a href="03_v04_candidate_B_cut450.wav" download>保存 WAV</a> · -18.45 LUFS</p></section>
+<section><h2>04 · v03_light_baseline</h2><audio controls preload="metadata" src="04_v03_light_baseline.wav"></audio><p><a href="04_v03_light_baseline.wav" download>保存 WAV</a> · -18.44 LUFS</p></section>
+<section><h2>05 · ablation_only_lowshelf</h2><audio controls preload="metadata" src="05_ablation_only_lowshelf.wav"></audio><p><a href="05_ablation_only_lowshelf.wav" download>保存 WAV</a> · -18.45 LUFS</p></section>
+<section><h2>06 · ablation_only_cut900</h2><audio controls preload="metadata" src="06_ablation_only_cut900.wav"></audio><p><a href="06_ablation_only_cut900.wav" download>保存 WAV</a> · -18.45 LUFS</p></section>
+<section><h2>07 · ablation_only_highshelf</h2><audio controls preload="metadata" src="07_ablation_only_highshelf.wav"></audio><p><a href="07_ablation_only_highshelf.wav" download>保存 WAV</a> · -18.45 LUFS</p></section>
+<section><h2>08 · ablation_only_compressor</h2><audio controls preload="metadata" src="08_ablation_only_compressor.wav"></audio><p><a href="08_ablation_only_compressor.wav" download>保存 WAV</a> · -18.46 LUFS</p></section>
+<script>
+let active = null;
+document.querySelectorAll('audio').forEach(player => {
+  player.addEventListener('play', () => {
+    if (active && active !== player) {
+      const position = active.ended ? 0 : active.currentTime;
+      active.pause();
+      player.currentTime = Math.min(position, player.duration || position);
+    }
+    active = player;
+  });
+});
+</script></html>

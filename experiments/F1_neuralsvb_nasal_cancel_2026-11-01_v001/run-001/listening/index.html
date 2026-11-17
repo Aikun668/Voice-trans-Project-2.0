@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>A01 鼻音反向校准测试</title><style>body{font:16px/1.6 system-ui,sans-serif;background:#f4f5f7;color:#202530;max-width:860px;margin:28px auto;padding:0 18px}h1{font-size:24px}.card{background:#fff;border:1px solid #dce0e6;border-radius:10px;padding:16px;margin:14px 0}h3{font-size:17px;margin:0 0 8px}.meta{color:#596579;margin:4px 0;font-size:14px}.row{display:grid;grid-template-columns:200px 1fr;gap:10px;align-items:center;margin:8px 0}label{color:#596579;font-size:14px}audio{width:100%}.note{background:#fff8e6;border:1px solid #ead9a6;border-radius:8px;padding:12px;margin-bottom:14px;font-size:14px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid #dce0e6;padding:5px 7px;text-align:right}th{background:#eef1f5;text-align:center}td:first-child{text-align:left}</style>
+<h1>A01 鼻音反向校准测试 · 100% / 50%</h1>
+<div class="note"><b>这是单条小测试，不是 8 条批量。</b>原音、a2p、仅声码器沿用上一轮；新增两个版本 = 在 a2p 上做反向长期频谱校准。<br>
+<b>假设：</b>a2p 相对原音，低频 <0.5k 约 −3.4 dB、4–8k 约 −5.0 dB、0.5–1.5k 约 +1.1 dB；用既有 colour_match 把这层倾斜抵消。<br>
+<b>不处理：</b>A03 的“词粘连”。已测到它是模型的时间包络/辅音层（2–8Hz 调制 0.30→0.17，噪声型辅音帧 253→127），EQ 不会修这一层。<br>
+<b>预期：</b>100% 最能减鼻音/闷音，但可能把模型的中频抬升一起削掉，声音变薄或变亮；50% 是折中。<br>
+<b>请听：</b>先听 8.7–10.7s（A01 倾斜最强的段），再听整条。重点判断：鼻音有没有减轻、有没有变薄/变亮/换人感。如果两个都听不出，说明 A01 的鼻音不是这条倾斜单独造成，下一步换 A06 或查其他层。<br>
+<b>工程：</b>全部统一到 -18.29 LUFS；EQ 版本沿用原阈值检查（见下表）。Agent 无听音能力，技术通过不等于变好听，听感 pending_jade。</div>
+<div class="card"><h3>A01 平凡之路 · 薄音版（13.14s）</h3>
+<p class="meta">重点听 8.7–10.7s（a2p 中频强调 +7.8 dB）；候选 2 7.7–9.7s（+7.5）；候选 3 2.5–4.5s（+6.3）；弱对照 6.6–8.6s（−0.2）。</p>
+<div class="row"><label>原音（48kHz）</label><audio controls preload="metadata" src="audio/A01_original.wav"></audio></div>
+<div class="row"><label>NeuralSVB a2p（22.05kHz）</label><audio controls preload="metadata" src="audio/A01_a2p.wav"></audio></div>
+<div class="row"><label>a2p + 反向校准 100%<br><span style="font-size:12px">低频/0.5–1.5k/1.5–4k/4–8k 增益: +2.9 / +0.4 / +0.8 / +5.6 dB</span></label><audio controls preload="metadata" src="audio/A01_eq100.wav"></audio></div>
+<div class="row"><label>a2p + 反向校准 50%<br><span style="font-size:12px">低频/0.5–1.5k/1.5–4k/4–8k 增益: +1.4 / +0.2 / +0.4 / +2.8 dB</span></label><audio controls preload="metadata" src="audio/A01_eq50.wav"></audio></div>
+<div class="row"><label>仅声码器对照（22.05kHz）<br><span style="font-size:12px">不是候选；只说明重建本身的影响</span></label><audio controls preload="metadata" src="audio/A01_vocoder_only.wav"></audio></div>
+<div class="row"><label>同曲正常版参考（A02 原音）<br><span style="font-size:12px">不同一次演唱，仅作音色参考</span></label><audio controls preload="metadata" src="audio/A01_normal.wav"></audio></div>
+</div>
+<div class="card"><h3>工程检查（原阈值，未放宽）</h3>
+<table><tr><th>版本</th><th>响度 LUFS</th><th>真峰值 dBTP</th><th>削波</th><th>时长差 s</th><th>音高中位/P95 音分</th><th>结果</th></tr>
+<tr><td>a2p</td><td>-18.28</td><td>-3.48</td><td>0</td><td>0.0012</td><td>9.8 / 67.3</td><td>未通过</td></tr><tr><td>eq100</td><td>-18.30</td><td>-5.75</td><td>0</td><td>0.0000</td><td>9.8 / 72.8</td><td>未通过</td></tr><tr><td>eq50</td><td>-18.29</td><td>-4.82</td><td>0</td><td>0.0000</td><td>9.7 / 71.8</td><td>未通过</td></tr><tr><td>vocoder_only</td><td>-18.29</td><td>-3.10</td><td>0</td><td>0.0012</td><td>8.7 / 74.1</td><td>未通过</td></tr></table>
+<p class="meta">音高诊断未通过是上一轮已记录的声码器重建抖动，不是本轮 EQ 新增；EQ 版本没有削波、时长不变。技术未通过不等于不能试听，但也不能算通过。</p></div>
+<p class="meta">原始素材未改动；详细记录见 report.json。</p></html>

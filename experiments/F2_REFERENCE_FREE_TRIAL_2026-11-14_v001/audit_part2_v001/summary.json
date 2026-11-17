@@ -1,0 +1,33 @@
+{
+  "processed_pairs": 2757,
+  "statuses": {
+    "verified_candidate": 2280,
+    "quarantine": 477
+  },
+  "reasons": {
+    "pitch_or_voicing_uncertain": 253,
+    "independent_alignment_disagrees": 241,
+    "too_few_valid_frames": 7
+  },
+  "verified_songs": 282,
+  "verified_by_split": {
+    "test": 173,
+    "train": 1875,
+    "validation": 232
+  },
+  "frame_counts": {
+    "test": {
+      "frames": 23834,
+      "raw_large_delta_frames": 12972
+    },
+    "train": {
+      "frames": 220785,
+      "raw_large_delta_frames": 113230
+    },
+    "validation": {
+      "frames": 28082,
+      "raw_large_delta_frames": 14096
+    }
+  },
+  "human_pitch_truth_verified": false
+}

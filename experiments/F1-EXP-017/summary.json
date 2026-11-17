@@ -1,0 +1,25 @@
+{
+  "experiment": "F1-EXP-017",
+  "phase": "F1-P4",
+  "status": "pending_jade",
+  "reference_dependency": {
+    "X1": true,
+    "M2": true,
+    "overridden_by_template": true
+  },
+  "can_run_without_paired_reference": true,
+  "target": {
+    "id": "A05",
+    "f0_hz": 290.7
+  },
+  "deliverable": [
+    "X1",
+    "X1_M2"
+  ],
+  "hard_failed": [],
+  "target_lufs": -19.77,
+  "technical_pass": true,
+  "preview_page": "listening/index.html",
+  "blind_key": "qa/blind_key.json",
+  "raw_outputs": "outputs/processed_raw"
+}

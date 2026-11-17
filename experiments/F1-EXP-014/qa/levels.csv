@@ -1,0 +1,3 @@
+﻿id,h1_adjustable,h1_minus_h2_db,target_h1_h2,rich_2_23_db,target_rich,rich_13_23_db,centroid_hz,orig_centroid,target_centroid,band_2_4k_rel,orig_2_4k,target_2_4k,process_fraction,max_up,max_down,pitch,lag,raw_lufs,raw_tp,hard,flags,matched_lufs
+W1,True,6.35,5.38,-19.28,-19.45,-49.25,300.0,294.0,403.0,-26.37,-27.1,-23.8,0.842,9.0,-6.0,176.0,0,-18.91,-4.19,,增益触顶 +9.0dB，金属感风险; 衰减触底 -6.0dB，空洞/闷风险,-18.0
+W2,False,6.49,5.38,-19.35,-19.45,-49.26,300.0,294.0,403.0,-26.43,-27.1,-23.8,0.842,9.0,-6.0,175.9,0,-18.77,-5.62,,增益触顶 +9.0dB，金属感风险; 衰减触底 -6.0dB，空洞/闷风险,-18.03

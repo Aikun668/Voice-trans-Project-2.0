@@ -1,0 +1,25 @@
+{
+  "experiment": "F1-EXP-019",
+  "phase": "F1-P5",
+  "question": "同歌手跨歌曲参考能否美化目标单薄版",
+  "target": "A_self_01",
+  "reference": "A_self_06",
+  "excluded_from_fitting": "A_self_02",
+  "same_song_best_reused": "F1-EXP-016 M2.wav（未重算，仅对照）",
+  "mechanism_unchanged": "X1 谐波剖面整段增益 + M2 包络整形（与 EXP-015/016 相同）",
+  "no_new_modules": true,
+  "sealed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "listening_target_lufs": -18.86,
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  }
+}

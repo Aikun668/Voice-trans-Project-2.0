@@ -1,0 +1,49 @@
+{
+  "duration": 8.612,
+  "files": {
+    "original": "audio/original.wav",
+    "model": "audio/model.wav"
+  },
+  "common_lufs": -18.5,
+  "checkpoint_sha256": "f5bb685afe128bc9e0e445be51b5333b98be6a5456df850bd9c9f2cc80bb7275",
+  "input_sha256": "9fb9c2d365355715cb1a425e98be8695bc67628108efeb28af8098ad5eb15faa",
+  "audio_checks": {
+    "original": {
+      "sha256": "bb1e86c768e3b1b6199fc53d2b88735ea23b3589e2a46f05fe5b3284d95b87d1",
+      "samples": 413376,
+      "sample_rate": 48000,
+      "peak_absolute": 0.6603525876998901,
+      "clipping_samples": 0,
+      "fixed_gain_db": -0.6000000000000014,
+      "lufs": -18.5,
+      "true_peak_dbtp": -3.6
+    },
+    "model": {
+      "sha256": "d1ae3c0ed0642f97e673f3cd114e27e8467735a273194a0eade5124a3c25d4fc",
+      "samples": 413376,
+      "sample_rate": 48000,
+      "peak_absolute": 0.6679990291595459,
+      "clipping_samples": 0,
+      "fixed_gain_db": -0.4999999999999999,
+      "lufs": -18.5,
+      "true_peak_dbtp": -3.5
+    }
+  },
+  "pitch_checks": {
+    "voiced_overlap": 0.9984544049459042,
+    "changed_pitch_frames": 111,
+    "command_error_median_cents": 0.7557935534123317,
+    "command_error_p90_cents": 2.8769268051948984,
+    "actual_shift_range_cents": [
+      -128.4545475935431,
+      108.96513117237055
+    ],
+    "pitch_technical_pass": true
+  },
+  "technical_pass": true,
+  "fine_tuning_steps": 0,
+  "outside_mask_raw_samples_exact": true,
+  "rendering_has_no_limiter": true,
+  "effectiveness_gate_pass": false,
+  "listening": "pending_jade"
+}

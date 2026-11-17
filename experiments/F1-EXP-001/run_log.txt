@@ -1,0 +1,12 @@
+created_utc: 2026-10-31T14:52:29.610621+00:00
+experiment: F1-EXP-001
+phase: F1-P2
+python: 3.12.7
+platform: Windows-11-10.0.26200-SP0
+ffmpeg: ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+dev: A01, A02, A03, A05, B01, B02
+sealed: A04, A06, B03, C03, C01, C02
+schemes: {"E1": {"type": "LowShelfFilter", "cutoff_hz": 220, "gain_db": 2.0, "q": 0.7}, "E2": {"type": "HighShelfFilter", "cutoff_hz": 3000, "gain_db": 1.5, "q": 0.7}}
+target_lufs: -19.88
+technical_pass: True
+note: original inputs not modified; holdout not processed

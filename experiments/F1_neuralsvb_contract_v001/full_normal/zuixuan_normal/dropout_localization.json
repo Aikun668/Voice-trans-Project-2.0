@@ -1,0 +1,246 @@
+{
+  "vocoder": {
+    "events": [],
+    "count_frames": 0,
+    "f0_unvoiced_at_dropout_frame_center": 0,
+    "engineering": {
+      "spread_db": 3.148962500889893,
+      "min_db": -11.459159995584054
+    }
+  },
+  "a2a": {
+    "events": [
+      {
+        "start_s": 2.24,
+        "end_s": 2.26,
+        "min_db": -12.3
+      },
+      {
+        "start_s": 2.28,
+        "end_s": 2.3,
+        "min_db": -12.37
+      },
+      {
+        "start_s": 7.16,
+        "end_s": 7.18,
+        "min_db": -12.74
+      },
+      {
+        "start_s": 8.16,
+        "end_s": 8.18,
+        "min_db": -12.4
+      },
+      {
+        "start_s": 19.44,
+        "end_s": 19.52,
+        "min_db": -20.4
+      },
+      {
+        "start_s": 20.5,
+        "end_s": 20.52,
+        "min_db": -16.42
+      },
+      {
+        "start_s": 23.14,
+        "end_s": 23.16,
+        "min_db": -12.93
+      },
+      {
+        "start_s": 23.34,
+        "end_s": 23.36,
+        "min_db": -18.88
+      },
+      {
+        "start_s": 23.38,
+        "end_s": 23.4,
+        "min_db": -13.06
+      }
+    ],
+    "count_frames": 12,
+    "f0_unvoiced_at_dropout_frame_center": 12,
+    "engineering": {
+      "spread_db": 12.840488660159405,
+      "min_db": -20.397308505598666
+    }
+  },
+  "a2p": {
+    "events": [
+      {
+        "start_s": 2.24,
+        "end_s": 2.26,
+        "min_db": -12.23
+      },
+      {
+        "start_s": 7.16,
+        "end_s": 7.18,
+        "min_db": -14.93
+      },
+      {
+        "start_s": 7.8,
+        "end_s": 7.88,
+        "min_db": -18.2
+      },
+      {
+        "start_s": 8.02,
+        "end_s": 8.12,
+        "min_db": -16.63
+      },
+      {
+        "start_s": 8.14,
+        "end_s": 8.2,
+        "min_db": -15.94
+      },
+      {
+        "start_s": 9.48,
+        "end_s": 9.5,
+        "min_db": -14.9
+      },
+      {
+        "start_s": 9.56,
+        "end_s": 9.62,
+        "min_db": -13.56
+      },
+      {
+        "start_s": 12.02,
+        "end_s": 12.04,
+        "min_db": -17.02
+      },
+      {
+        "start_s": 19.34,
+        "end_s": 19.42,
+        "min_db": -14.36
+      },
+      {
+        "start_s": 19.44,
+        "end_s": 19.52,
+        "min_db": -23.53
+      },
+      {
+        "start_s": 20.5,
+        "end_s": 20.52,
+        "min_db": -13.63
+      },
+      {
+        "start_s": 23.1,
+        "end_s": 23.16,
+        "min_db": -15.13
+      },
+      {
+        "start_s": 23.28,
+        "end_s": 23.3,
+        "min_db": -12.66
+      },
+      {
+        "start_s": 23.34,
+        "end_s": 23.36,
+        "min_db": -19.55
+      },
+      {
+        "start_s": 23.38,
+        "end_s": 23.4,
+        "min_db": -14.35
+      },
+      {
+        "start_s": 23.44,
+        "end_s": 23.46,
+        "min_db": -12.45
+      }
+    ],
+    "count_frames": 35,
+    "f0_unvoiced_at_dropout_frame_center": 33,
+    "engineering": {
+      "spread_db": 16.236987091262677,
+      "min_db": -23.52242063170234
+    }
+  },
+  "a2p_mean": {
+    "events": [
+      {
+        "start_s": 2.24,
+        "end_s": 2.26,
+        "min_db": -12.27
+      },
+      {
+        "start_s": 7.16,
+        "end_s": 7.18,
+        "min_db": -15.24
+      },
+      {
+        "start_s": 7.8,
+        "end_s": 7.88,
+        "min_db": -18.2
+      },
+      {
+        "start_s": 8.02,
+        "end_s": 8.12,
+        "min_db": -16.38
+      },
+      {
+        "start_s": 8.14,
+        "end_s": 8.2,
+        "min_db": -15.96
+      },
+      {
+        "start_s": 9.48,
+        "end_s": 9.5,
+        "min_db": -14.81
+      },
+      {
+        "start_s": 9.56,
+        "end_s": 9.62,
+        "min_db": -13.61
+      },
+      {
+        "start_s": 12.02,
+        "end_s": 12.04,
+        "min_db": -17.2
+      },
+      {
+        "start_s": 19.34,
+        "end_s": 19.42,
+        "min_db": -14.4
+      },
+      {
+        "start_s": 19.44,
+        "end_s": 19.52,
+        "min_db": -23.54
+      },
+      {
+        "start_s": 20.5,
+        "end_s": 20.52,
+        "min_db": -13.78
+      },
+      {
+        "start_s": 23.1,
+        "end_s": 23.16,
+        "min_db": -15.17
+      },
+      {
+        "start_s": 23.28,
+        "end_s": 23.3,
+        "min_db": -12.64
+      },
+      {
+        "start_s": 23.34,
+        "end_s": 23.36,
+        "min_db": -19.74
+      },
+      {
+        "start_s": 23.38,
+        "end_s": 23.4,
+        "min_db": -14.37
+      },
+      {
+        "start_s": 23.44,
+        "end_s": 23.46,
+        "min_db": -12.41
+      }
+    ],
+    "count_frames": 35,
+    "f0_unvoiced_at_dropout_frame_center": 33,
+    "engineering": {
+      "spread_db": 16.230592406699763,
+      "min_db": -23.540124733113025
+    }
+  }
+}

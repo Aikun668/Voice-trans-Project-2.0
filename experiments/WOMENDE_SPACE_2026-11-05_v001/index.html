@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>我们的歌 · 空旷调整</title>
+<style>body{font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif;max-width:780px;margin:25px auto;padding:0 16px;background:#f4f6fa;color:#202638}section{background:white;border-radius:10px;padding:16px;margin:14px 0}button{font:inherit;padding:8px 12px;margin:4px;cursor:pointer}button[aria-pressed=true]{background:#305ec4;color:white}audio,textarea{width:100%;box-sizing:border-box}textarea{min-height:95px}label{display:block}</style></head>
+<body><h1>我们的歌 · 空旷调整</h1>
+<section><p>用耳机，音量保持不变。每段约 14 秒，切换版本从当前进度接着听。各版响度约 −13 LUFS，都使用限幅。我不能听音，效果由你判断。</p>
+<button type="button" data-src="audio/anchor.wav">① 原音·同样响</button>
+<button type="button" data-src="audio/base.wav">② 你选的 B</button>
+<button type="button" data-src="audio/reduce.wav">③ 中低音轻收</button>
+<button type="button" data-src="audio/add.wav">④ 中低音轻补</button>
+<audio id="player" controls preload="metadata"></audio>
+<p id="description"></p><p>③④以②为底，只调整唱声中低频的两种方向，用来判断空旷来自哪种比例。原有补谐波和升调保留。</p></section>
+<section><p><b>1. ③或④比②空旷少了吗？</b></p>
+<div data-q="空旷"><label><input type="radio" name="space" value="③少了">③少了</label><label><input type="radio" name="space" value="④少了">④少了</label><label><input type="radio" name="space" value="都少了">都少了</label><label><input type="radio" name="space" value="差不多">差不多</label><label><input type="radio" name="space" value="更空了">更空了</label></div>
+<p><b>2. 空旷较少的版本，原来的力度还在吗？</b></p>
+<div data-q="力度"><label><input type="radio" name="strength" value="力度还在">力度还在</label><label><input type="radio" name="strength" value="力度弱了">力度弱了</label><label><input type="radio" name="strength" value="听不准">听不准</label></div>
+<p><b>3. 哪版有电感、发闷或其他不舒服？</b></p>
+<div data-q="副作用"><label><input type="radio" name="artifact" value="③有问题">③有问题</label><label><input type="radio" name="artifact" value="④有问题">④有问题</label><label><input type="radio" name="artifact" value="③④都有问题">③④都有问题</label><label><input type="radio" name="artifact" value="没听到">没听到</label><label><input type="radio" name="artifact" value="拿不准">拿不准</label></div>
+<p>补充（可以写版本、秒数和感觉）</p><textarea id="notes"></textarea><p><button id="generate" type="button">生成答案</button></p><textarea id="answer" readonly placeholder="生成后复制结果发回"></textarea></section>
+<script>
+const player=document.querySelector('#player'), buttons=[...document.querySelectorAll('[data-src]')],description=document.querySelector('#description');
+let current=0,serial=0,loading=false,position=0,playing=false;
+function select(i){
+ if(!loading){position=player.currentTime||0;playing=!player.paused}
+ loading=true;const id=++serial;current=i;
+ buttons.forEach((b,j)=>b.setAttribute('aria-pressed',String(i===j)));
+ description.textContent=buttons[i].textContent;
+ player.addEventListener('loadedmetadata',()=>{if(id!==serial)return;player.currentTime=Math.min(position,Math.max(0,player.duration-.05));loading=false;if(playing)player.play().catch(()=>{});},{once:true});
+ player.src=buttons[i].dataset.src;
+}
+buttons.forEach((b,i)=>b.addEventListener('click',()=>{if(i!==current)select(i)}));select(0);
+document.querySelector('#generate').onclick=()=>{const lines=['【我们的歌 空旷调整 v001】'];document.querySelectorAll('[data-q]').forEach(el=>{const checked=el.querySelector('input:checked');lines.push(el.dataset.q+'：'+(checked?checked.value:'未答'))});lines.push('补充：'+(document.querySelector('#notes').value.trim()||'未答'));const a=document.querySelector('#answer');a.value=lines.join('\n');a.focus();a.select()};
+</script></body></html>

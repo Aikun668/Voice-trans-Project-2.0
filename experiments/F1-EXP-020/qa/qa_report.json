@@ -1,0 +1,121 @@
+{
+  "experiment": "F1-EXP-020",
+  "phase": "F1-P6",
+  "status": "pending_jade",
+  "question": "F1 位置上移能否带来可听正向改善（补'未测就排除'的欠账）",
+  "method": "LPC 极点旋转；保持|z|不变只改角度；包络增益施于 STFT 幅度谱（相位保留）",
+  "vowel_gate": "仅 r≥0.5 且能量≥最响帧-40.0dB 的帧",
+  "f0_invariance": "相位保留 + 谐波位置不动",
+  "baseline": {
+    "id": "EXP-016 M2",
+    "sha256": "f793fd06b87d8ba96469ab6160e73d92cec58ea8f5991a6982b9af2a5d0bcb16",
+    "f1_hz": 269.7,
+    "f1_frames": 438
+  },
+  "original": {
+    "id": "A_self_01",
+    "f1_hz": 226.9,
+    "f1_frames": 438
+  },
+  "target_lufs": -19.97,
+  "exports": [
+    {
+      "tag": "original",
+      "file": "experiments/F1-EXP-020/listening/audio/original.wav",
+      "lufs": -19.97,
+      "true_peak_dbtp": -7.14,
+      "sha256": "793cdd991d63895c03f3d18049698459b69659aee470176f0884dc6ecc927129"
+    },
+    {
+      "tag": "baseline",
+      "file": "experiments/F1-EXP-020/listening/audio/baseline.wav",
+      "lufs": -19.98,
+      "true_peak_dbtp": -4.31,
+      "sha256": "565dda53fe389b495f19cbcc3f5d8e165ffcebd29eabdf8a96b19bc9126ea82a"
+    }
+  ],
+  "versions": [
+    {
+      "id": "S20",
+      "target_shift_hz": 20.0,
+      "actual_f1_shift_hz": 25.1,
+      "f1_before_hz": 269.7,
+      "f1_after_hz": 294.9,
+      "proc": {
+        "frames_total": 1237,
+        "vowel_frames": 812,
+        "vowel_fraction": 0.656,
+        "lpc_failures": 170,
+        "f1_source_median_hz": 270.3,
+        "max_gain_db": 5.53
+      },
+      "pitch_hz": 175.67,
+      "pitch_base_hz": 175.67,
+      "peak_dbfs": -3.56,
+      "frames": 630784,
+      "clipped": 0,
+      "raw_lufs": -19.89,
+      "raw_true_peak_dbtp": -3.56,
+      "raw_file": "experiments/F1-EXP-020/outputs/processed_raw/S20.wav",
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": -0.08,
+        "lufs": -19.97,
+        "true_peak_dbtp": -3.64,
+        "sha256": "963b140062d5db46e66830338c8739e87fba76106dc16aeb19c451412c1874c5"
+      }
+    },
+    {
+      "id": "S45",
+      "target_shift_hz": 45.0,
+      "actual_f1_shift_hz": 59.6,
+      "f1_before_hz": 269.7,
+      "f1_after_hz": 329.4,
+      "proc": {
+        "frames_total": 1237,
+        "vowel_frames": 812,
+        "vowel_fraction": 0.656,
+        "lpc_failures": 170,
+        "f1_source_median_hz": 270.3,
+        "max_gain_db": 10.42
+      },
+      "pitch_hz": 175.84,
+      "pitch_base_hz": 175.67,
+      "peak_dbfs": -3.57,
+      "frames": 630784,
+      "clipped": 0,
+      "raw_lufs": -20.34,
+      "raw_true_peak_dbtp": -3.57,
+      "raw_file": "experiments/F1-EXP-020/outputs/processed_raw/S45.wav",
+      "hard_fail": [],
+      "flags": [],
+      "deliverable": true,
+      "diag_mark": false,
+      "matched": {
+        "gain_db": 0.37,
+        "lufs": -19.97,
+        "true_peak_dbtp": -3.2,
+        "sha256": "9c4278340a320d28de37d5b83978f4779047abc85ed65f50b5a2718f2cde0df9"
+      }
+    }
+  ],
+  "sealed_not_processed": [
+    "A04",
+    "A06",
+    "B03",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "no_new_modules": "只加 F1 位置；未做共振峰增益/逐帧包络轨迹/F0 活跃度",
+  "stop_condition": "两档均无正向改善或伤咬字/自然度 → 停止，不加大位移",
+  "limitations": [
+    "A01 F0≈176Hz 与 F1≈230Hz 间隔较近，F1 极点可能受基频影响",
+    "LPC(14)@16kHz 覆盖到 8kHz，F3+ 未单独控制",
+    "仅处理浊音帧，浊/清边界已做帧平滑",
+    "自实现机制未与外部工具校验；Agent 未听音"
+  ]
+}

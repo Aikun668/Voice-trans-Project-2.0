@@ -1,0 +1,1645 @@
+{
+  "schema_version": "f1.dataset.v2",
+  "created_utc": "2026-10-31T09:04:19.739750+00:00",
+  "purpose": "F1 thin-vocal dataset organization only; no beautification, EQ, compression, trimming beyond noted 15 s clips, or loudness normalization applied",
+  "counts": {
+    "A_thin": {
+      "target": {
+        "self": 8,
+        "gtsinger": 4,
+        "total": 12
+      },
+      "actual": {
+        "self": 8,
+        "gtsinger": 4,
+        "total": 12
+      }
+    },
+    "B_full": {
+      "target": {
+        "self": 0,
+        "gtsinger": 6,
+        "total": 6
+      },
+      "actual": {
+        "self": 0,
+        "gtsinger": 6,
+        "total": 6
+      }
+    },
+    "C_observe": {
+      "target": {
+        "self": 0,
+        "gtsinger": 6,
+        "total": 6
+      },
+      "actual": {
+        "self": 0,
+        "gtsinger": 6,
+        "total": 6
+      }
+    },
+    "total": {
+      "target": 24,
+      "actual": 24
+    }
+  },
+  "category_rules": {
+    "A_thin": "核心集。自录8条为主要测试对象；GTSinger 4条只作补充。分类为用户初步指定，未由本工具听感复核。",
+    "B_full": "保护集。GTSinger 6条自然唱法，用于检查过度处理副作用；不是A类反例。",
+    "C_observe": "条件变化观察集。全部来自 Mixed_Voice_and_Falsetto：3段混声 + 3段假声。ZH-Alto-1 3段（2混声+1假声），ZH-Tenor-1 3段（1混声+2假声）。同曲对照：Alto《十年》0003混声/假声，Tenor《曹操》0007混声/假声。不能当作充分跨歌手泛化测试。"
+  },
+  "sources": {
+    "gtsinger": {
+      "dataset": "GTSinger/GTSinger",
+      "hf_url": "https://huggingface.co/datasets/GTSinger/GTSinger",
+      "github": "https://github.com/AaronZ345/GTSinger",
+      "license_file": "sources\\GTSinger_dataset_license.md",
+      "license_url": "https://github.com/AaronZ345/GTSinger/blob/master/dataset_license.md",
+      "chinese_singers": [
+        "ZH-Alto-1",
+        "ZH-Tenor-1"
+      ],
+      "note": "The 10 A/B GTSinger files were user-selected and renamed; exact original HF paths were not retained. All 6 C files were downloaded by this run from Mixed_Voice_and_Falsetto and keep exact HF paths."
+    },
+    "self": {
+      "note": "8 m4a files copied from D:\\QQ聊天缓存 (QQ chat records, dated 2026-10-31); originals preserved in raw/."
+    }
+  },
+  "items": [
+    {
+      "id": "A_self_01",
+      "category": "A_thin",
+      "source_type": "self",
+      "song": "平凡之路",
+      "variant": "薄音版",
+      "raw": {
+        "path": "A_thin\\self\\raw\\平凡之路薄音版.m4a",
+        "sha256": "cbb3ddfabf7a71b809d54d784e306b5ecf61823022aa02140a54791dfd122b72",
+        "codec_name": "aac",
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_seconds": 13.152,
+        "bytes": 218300,
+        "bit_rate": 132785
+      },
+      "wav": {
+        "path": "A_thin\\self\\wav\\平凡之路薄音版.wav",
+        "sha256": "4065672a5adb486f4bcbcc1ba16558fca8d1a0fb1a0b1100d5bf01d49104625a",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 630784,
+        "duration_seconds": 13.141333333333334,
+        "peak_dbfs": -6.415937260135678,
+        "rms_dbfs": -19.328791729206902,
+        "clipped_samples": 0,
+        "active_seconds": 12.33,
+        "dynamic_range_db": 26.818542480468746,
+        "band_fractions": {
+          "sub_20_80": 3.994142663511691e-05,
+          "body_80_500": 0.9239971609518058,
+          "mid_500_3000": 0.06829410322429127,
+          "presence_3000_5000": 0.002949715965050849,
+          "high_5000_8000": 0.004719078432216946
+        },
+        "f0_diagnostic": {
+          "median_hz": 175.93030107891497,
+          "p10_hz": 129.54195579804048,
+          "p90_hz": 206.05624796967732,
+          "voiced_frames": 510,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 13.141333333333334,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "variant_label_from_filename": true
+      },
+      "notes": [
+        "raw m4a preserved; wav is mono PCM16 48 kHz standardized copy",
+        "agent did not listen; A/thin label is user-assigned and not acoustically verified"
+      ]
+    },
+    {
+      "id": "A_self_02",
+      "category": "A_thin",
+      "source_type": "self",
+      "song": "平凡之路",
+      "variant": "正常版",
+      "raw": {
+        "path": "A_thin\\self\\raw\\平凡之路正常版.m4a",
+        "sha256": "727fc267e6b1dfb09439a57e1d3150a025d35418a15b587793f95f656084dd50",
+        "codec_name": "aac",
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_seconds": 13.36,
+        "bytes": 221962,
+        "bit_rate": 132911
+      },
+      "wav": {
+        "path": "A_thin\\self\\wav\\平凡之路正常版.wav",
+        "sha256": "44b7f3dce397ef32b2ec0dd0e8a129b3d1818d26073d103696cd8cd0318b8c88",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 640896,
+        "duration_seconds": 13.352,
+        "peak_dbfs": -3.489018248565519,
+        "rms_dbfs": -17.641229905643556,
+        "clipped_samples": 0,
+        "active_seconds": 12.55,
+        "dynamic_range_db": 29.004348850250246,
+        "band_fractions": {
+          "sub_20_80": 9.340458940658679e-05,
+          "body_80_500": 0.8309283561314251,
+          "mid_500_3000": 0.15791214766548428,
+          "presence_3000_5000": 0.003311284926107665,
+          "high_5000_8000": 0.007754806687576254
+        },
+        "f0_diagnostic": {
+          "median_hz": 171.72072223375108,
+          "p10_hz": 128.87463887695836,
+          "p90_hz": 205.89164976381986,
+          "voiced_frames": 495,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 13.352,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "variant_label_from_filename": true
+      },
+      "notes": [
+        "raw m4a preserved; wav is mono PCM16 48 kHz standardized copy",
+        "agent did not listen; A/thin label is user-assigned and not acoustically verified"
+      ]
+    },
+    {
+      "id": "A_self_03",
+      "category": "A_thin",
+      "source_type": "self",
+      "song": "我们的歌",
+      "variant": "薄音版",
+      "raw": {
+        "path": "A_thin\\self\\raw\\我们的歌-薄音版.m4a",
+        "sha256": "d2d8f0364e3a1ac75424ff037ce33ddd266f35f032d963453f19d3fa10fa8848",
+        "codec_name": "aac",
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_seconds": 13.973333,
+        "bytes": 231692,
+        "bit_rate": 132648
+      },
+      "wav": {
+        "path": "A_thin\\self\\wav\\我们的歌-薄音版.wav",
+        "sha256": "6923e1e390604a804d07df4ff1e80e4c49324bf4beb86f361c3eab2ad271c4e8",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 669696,
+        "duration_seconds": 13.952,
+        "peak_dbfs": -8.802440015929186,
+        "rms_dbfs": -24.560468559904432,
+        "clipped_samples": 0,
+        "active_seconds": 13.86,
+        "dynamic_range_db": 32.5664701461792,
+        "band_fractions": {
+          "sub_20_80": 0.00013361425486228256,
+          "body_80_500": 0.9647528447514465,
+          "mid_500_3000": 0.02983397930541652,
+          "presence_3000_5000": 0.001975639255362982,
+          "high_5000_8000": 0.003303922432911681
+        },
+        "f0_diagnostic": {
+          "median_hz": 136.38162777036823,
+          "p10_hz": 113.5893049082545,
+          "p90_hz": 152.9688613372365,
+          "voiced_frames": 465,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 13.952,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "variant_label_from_filename": true
+      },
+      "notes": [
+        "raw m4a preserved; wav is mono PCM16 48 kHz standardized copy",
+        "agent did not listen; A/thin label is user-assigned and not acoustically verified"
+      ]
+    },
+    {
+      "id": "A_self_04",
+      "category": "A_thin",
+      "source_type": "self",
+      "song": "我们的歌",
+      "variant": "正常版",
+      "raw": {
+        "path": "A_thin\\self\\raw\\我们的歌正常版.m4a",
+        "sha256": "c5e07817511197ee9c54aedc8ea68823f7fdf0684c9c7cbaab41b8ab97b457f6",
+        "codec_name": "aac",
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_seconds": 14.037333,
+        "bytes": 232988,
+        "bit_rate": 132781
+      },
+      "wav": {
+        "path": "A_thin\\self\\wav\\我们的歌正常版.wav",
+        "sha256": "ced2ec03981059267deccafbdfb3747c691492d493393c036544df4ffa46dff4",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 673536,
+        "duration_seconds": 14.032,
+        "peak_dbfs": -4.3875473719976545,
+        "rms_dbfs": -17.889529137603454,
+        "clipped_samples": 0,
+        "active_seconds": 12.75,
+        "dynamic_range_db": 35.00611476898193,
+        "band_fractions": {
+          "sub_20_80": 0.00032984683704230663,
+          "body_80_500": 0.8583041283244399,
+          "mid_500_3000": 0.11119780321627176,
+          "presence_3000_5000": 0.01019698440346434,
+          "high_5000_8000": 0.019971237218781652
+        },
+        "f0_diagnostic": {
+          "median_hz": 158.53093539216184,
+          "p10_hz": 134.65888904567535,
+          "p90_hz": 183.1680991582725,
+          "voiced_frames": 453,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 14.032,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "variant_label_from_filename": true
+      },
+      "notes": [
+        "raw m4a preserved; wav is mono PCM16 48 kHz standardized copy",
+        "agent did not listen; A/thin label is user-assigned and not acoustically verified"
+      ]
+    },
+    {
+      "id": "A_self_05",
+      "category": "A_thin",
+      "source_type": "self",
+      "song": "雅俗共赏",
+      "variant": "清唱版",
+      "raw": {
+        "path": "A_thin\\self\\raw\\雅俗共赏-清唱版.m4a",
+        "sha256": "2264803dd8ea7f3853decb8772f38ffb0fec0433721b964e5ac288227a9d4ee3",
+        "codec_name": "aac",
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_seconds": 16.213333,
+        "bytes": 268015,
+        "bit_rate": 132244
+      },
+      "wav": {
+        "path": "A_thin\\self\\wav\\雅俗共赏-清唱版.wav",
+        "sha256": "a9fad650bd690d4826a55e7ac69fed87569aa9e73896413611d75a70a135b401",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "peak_dbfs": -5.9398641711848486,
+        "rms_dbfs": -19.530904111931164,
+        "clipped_samples": 0,
+        "active_seconds": 14.93,
+        "dynamic_range_db": 22.87232437133789,
+        "band_fractions": {
+          "sub_20_80": 2.2912110971146118e-05,
+          "body_80_500": 0.8842016567154876,
+          "mid_500_3000": 0.11137930081576607,
+          "presence_3000_5000": 0.00143128530724061,
+          "high_5000_8000": 0.0029648450505344558
+        },
+        "f0_diagnostic": {
+          "median_hz": 187.05529290002224,
+          "p10_hz": 137.24982289058107,
+          "p90_hz": 296.7937633700336,
+          "voiced_frames": 652,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.8,
+        "end_seconds": 15.8,
+        "trimmed": true
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "variant_label_from_filename": true
+      },
+      "notes": [
+        "raw m4a preserved; wav is mono PCM16 48 kHz standardized copy",
+        "agent did not listen; A/thin label is user-assigned and not acoustically verified",
+        "raw recording longer than 15 s; wav is a 15 s max-RMS window; raw preserved"
+      ]
+    },
+    {
+      "id": "A_self_06",
+      "category": "A_thin",
+      "source_type": "self",
+      "song": "雅俗共赏",
+      "variant": "正常版",
+      "raw": {
+        "path": "A_thin\\self\\raw\\雅俗共赏-正常版.m4a",
+        "sha256": "6800783ae6bbd8de80632af886341bda7b8d7e56253020fbf6d73000814c3d44",
+        "codec_name": "aac",
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_seconds": 15.432,
+        "bytes": 255211,
+        "bit_rate": 132302
+      },
+      "wav": {
+        "path": "A_thin\\self\\wav\\雅俗共赏-正常版.wav",
+        "sha256": "4a20ddbbd7cf56e3da809e1e5c7a351d3a42c990f698f2e20c972392a3b83eae",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 720000,
+        "duration_seconds": 15.0,
+        "peak_dbfs": -4.746278564884803,
+        "rms_dbfs": -16.952572222653405,
+        "clipped_samples": 0,
+        "active_seconds": 14.09,
+        "dynamic_range_db": 18.363893890380858,
+        "band_fractions": {
+          "sub_20_80": 3.724785010534727e-05,
+          "body_80_500": 0.8035125551083838,
+          "mid_500_3000": 0.17371981460308356,
+          "presence_3000_5000": 0.004227853676221781,
+          "high_5000_8000": 0.018502528762205366
+        },
+        "f0_diagnostic": {
+          "median_hz": 187.74431782433825,
+          "p10_hz": 133.9701414636724,
+          "p90_hz": 303.42403107202307,
+          "voiced_frames": 604,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.2,
+        "end_seconds": 15.2,
+        "trimmed": true
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "variant_label_from_filename": true
+      },
+      "notes": [
+        "raw m4a preserved; wav is mono PCM16 48 kHz standardized copy",
+        "agent did not listen; A/thin label is user-assigned and not acoustically verified",
+        "raw recording longer than 15 s; wav is a 15 s max-RMS window; raw preserved"
+      ]
+    },
+    {
+      "id": "A_self_07",
+      "category": "A_thin",
+      "source_type": "self",
+      "song": "因为刚好遇见你",
+      "variant": "清唱版",
+      "raw": {
+        "path": "A_thin\\self\\raw\\因为刚好遇见你-清唱版.m4a",
+        "sha256": "f4f78295a74740e0566f9440d321f00b8256ef1ec79ab800822d8ac96973472a",
+        "codec_name": "aac",
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_seconds": 13.634667,
+        "bytes": 226105,
+        "bit_rate": 132664
+      },
+      "wav": {
+        "path": "A_thin\\self\\wav\\因为刚好遇见你-清唱版.wav",
+        "sha256": "ca7da7dde00afa28489f1ae6c6ce4f2e95f03766d33aa42458f2a41099901ce0",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 653312,
+        "duration_seconds": 13.610666666666667,
+        "peak_dbfs": -6.162236793427231,
+        "rms_dbfs": -20.224778341858705,
+        "clipped_samples": 0,
+        "active_seconds": 12.39,
+        "dynamic_range_db": 26.094786548614493,
+        "band_fractions": {
+          "sub_20_80": 5.847027006740281e-05,
+          "body_80_500": 0.9591272457366022,
+          "mid_500_3000": 0.03626296112274296,
+          "presence_3000_5000": 0.0007903146019105807,
+          "high_5000_8000": 0.003761008268676709
+        },
+        "f0_diagnostic": {
+          "median_hz": 201.69703682492218,
+          "p10_hz": 152.3788463937201,
+          "p90_hz": 326.3778672383645,
+          "voiced_frames": 531,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 13.610666666666667,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "variant_label_from_filename": true
+      },
+      "notes": [
+        "raw m4a preserved; wav is mono PCM16 48 kHz standardized copy",
+        "agent did not listen; A/thin label is user-assigned and not acoustically verified"
+      ]
+    },
+    {
+      "id": "A_self_08",
+      "category": "A_thin",
+      "source_type": "self",
+      "song": "因为刚好遇见你",
+      "variant": "原版",
+      "raw": {
+        "path": "A_thin\\self\\raw\\因为刚好遇见你-原版.m4a",
+        "sha256": "521f23e0926ef5c8b1067b931f2d40296f2fa0257e78b2b534778d219920bcde",
+        "codec_name": "aac",
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_seconds": 13.981333,
+        "bytes": 231924,
+        "bit_rate": 132704
+      },
+      "wav": {
+        "path": "A_thin\\self\\wav\\因为刚好遇见你-原版.wav",
+        "sha256": "3103b758271c657008d544ddd6f4cb89b01a39c5ad59d1ae854f8ee0f6ce2b00",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 670656,
+        "duration_seconds": 13.972,
+        "peak_dbfs": -2.244528625119861,
+        "rms_dbfs": -15.55021606462424,
+        "clipped_samples": 0,
+        "active_seconds": 11.95,
+        "dynamic_range_db": 24.16311998367309,
+        "band_fractions": {
+          "sub_20_80": 3.1880963707951575e-05,
+          "body_80_500": 0.8614971203961296,
+          "mid_500_3000": 0.12542153418152033,
+          "presence_3000_5000": 0.0029921726081412665,
+          "high_5000_8000": 0.010057291850500832
+        },
+        "f0_diagnostic": {
+          "median_hz": 226.21328168049166,
+          "p10_hz": 165.49359668110367,
+          "p90_hz": 350.9667727600926,
+          "voiced_frames": 548,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 13.972,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "variant_label_from_filename": true
+      },
+      "notes": [
+        "raw m4a preserved; wav is mono PCM16 48 kHz standardized copy",
+        "agent did not listen; A/thin label is user-assigned and not acoustically verified"
+      ]
+    },
+    {
+      "id": "A_gt_01",
+      "category": "A_thin",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "女",
+      "raw": {
+        "path": "A_thin\\gtsinger\\raw\\女A-001.wav",
+        "sha256": "8a7a3da29d224f8a3d66e28a9e725733c6574555408336eac5fe83d9622ea843",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 352320,
+        "duration_seconds": 7.34,
+        "bytes": 1057004
+      },
+      "wav": {
+        "path": "A_thin\\gtsinger\\wav\\女A-001.wav",
+        "sha256": "c062531e6b38389d027d27bae956d408d57f6883cc8e0d3a4909675b8177dc54",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 352320,
+        "duration_seconds": 7.34,
+        "peak_dbfs": -10.161725612948791,
+        "rms_dbfs": -22.87476581331216,
+        "clipped_samples": 0,
+        "active_seconds": 7.34,
+        "dynamic_range_db": 17.326782035827637,
+        "band_fractions": {
+          "sub_20_80": 0.011699351102062987,
+          "body_80_500": 0.8095210218775782,
+          "mid_500_3000": 0.16953023786660498,
+          "presence_3000_5000": 0.005790780634207172,
+          "high_5000_8000": 0.003458608519546749
+        },
+        "f0_diagnostic": {
+          "median_hz": 290.13694855017843,
+          "p10_hz": 268.77776692823267,
+          "p90_hz": 328.2415663410544,
+          "voiced_frames": 302,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 7.34,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "A_gt_02",
+      "category": "A_thin",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "女",
+      "raw": {
+        "path": "A_thin\\gtsinger\\raw\\女A-002.wav",
+        "sha256": "5a1397ae3dce49b9c32f9244cea499e819e653ab0c7acad90420908d587fa266",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 572160,
+        "duration_seconds": 11.92,
+        "bytes": 1716524
+      },
+      "wav": {
+        "path": "A_thin\\gtsinger\\wav\\女A-002.wav",
+        "sha256": "1f2b63c251ee2f8a30f8a6117a64b9d5a161b71e1fead0cd8b523e26ad7e205c",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 572160,
+        "duration_seconds": 11.92,
+        "peak_dbfs": -5.897946301867437,
+        "rms_dbfs": -20.18184544524868,
+        "clipped_samples": 0,
+        "active_seconds": 11.91,
+        "dynamic_range_db": 21.362177801132198,
+        "band_fractions": {
+          "sub_20_80": 0.017210572992571296,
+          "body_80_500": 0.7273808712863042,
+          "mid_500_3000": 0.2500683579740901,
+          "presence_3000_5000": 0.003323747593310894,
+          "high_5000_8000": 0.0020164501537236106
+        },
+        "f0_diagnostic": {
+          "median_hz": 289.97370832304233,
+          "p10_hz": 258.6299236363852,
+          "p90_hz": 335.40827279933893,
+          "voiced_frames": 475,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 11.92,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "A_gt_03",
+      "category": "A_thin",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "男",
+      "raw": {
+        "path": "A_thin\\gtsinger\\raw\\男A-001.wav",
+        "sha256": "7b65dd3799b8cfc9b40d43d9c45e18e725cde1f8fba821db4be988b4b694b3fd",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 491760,
+        "duration_seconds": 10.245,
+        "bytes": 1475324
+      },
+      "wav": {
+        "path": "A_thin\\gtsinger\\wav\\男A-001.wav",
+        "sha256": "dae79e57d4cf3a0ecbdd2872aa1ce00b260fa31ee136e855efb02a0b733619d2",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 491760,
+        "duration_seconds": 10.245,
+        "peak_dbfs": -12.862376274589346,
+        "rms_dbfs": -23.783963405194413,
+        "clipped_samples": 0,
+        "active_seconds": 10.21,
+        "dynamic_range_db": 24.75084781646729,
+        "band_fractions": {
+          "sub_20_80": 0.00026409246927985435,
+          "body_80_500": 0.9524957453574278,
+          "mid_500_3000": 0.04240298200661182,
+          "presence_3000_5000": 0.002796029487985537,
+          "high_5000_8000": 0.0020411506786949004
+        },
+        "f0_diagnostic": {
+          "median_hz": 222.25193980079518,
+          "p10_hz": 170.84350883191175,
+          "p90_hz": 246.45531245380286,
+          "voiced_frames": 414,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 10.245,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "A_gt_04",
+      "category": "A_thin",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "男",
+      "raw": {
+        "path": "A_thin\\gtsinger\\raw\\男A-002.wav",
+        "sha256": "c131da89789897497af0a4a71db90c04e8aef92edf48f6fb39ed82bdbab27a67",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 476640,
+        "duration_seconds": 9.93,
+        "bytes": 1429964
+      },
+      "wav": {
+        "path": "A_thin\\gtsinger\\wav\\男A-002.wav",
+        "sha256": "b0e2403a86c0df2a215f9cb8c114a5ecb28048c9e4551d2e03a07963f5a92110",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 476640,
+        "duration_seconds": 9.93,
+        "peak_dbfs": -9.11394481500838,
+        "rms_dbfs": -23.216487386687973,
+        "clipped_samples": 0,
+        "active_seconds": 9.67,
+        "dynamic_range_db": 27.00695638656616,
+        "band_fractions": {
+          "sub_20_80": 0.007608489112724342,
+          "body_80_500": 0.8883040312827337,
+          "mid_500_3000": 0.10216185796315545,
+          "presence_3000_5000": 0.0012809042101578408,
+          "high_5000_8000": 0.0006447174312288427
+        },
+        "f0_diagnostic": {
+          "median_hz": 226.02059492014956,
+          "p10_hz": 167.99846537111858,
+          "p90_hz": 303.72313477457624,
+          "voiced_frames": 400,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 9.93,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_A_thin_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "B_gt_01",
+      "category": "B_full",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "女",
+      "raw": {
+        "path": "B_full\\gtsinger\\raw\\女B-001.wav",
+        "sha256": "2d5e90dc9538bb119191d9fd3ef730c3b1e5f96da0b3f7b94593e3808e696714",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 382560,
+        "duration_seconds": 7.97,
+        "bytes": 1147724
+      },
+      "wav": {
+        "path": "B_full\\gtsinger\\wav\\女B-001.wav",
+        "sha256": "b4531299dab454fbf6d7e6217ea269c7de619946666d7d18e43002c097e5cbbd",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 382560,
+        "duration_seconds": 7.97,
+        "peak_dbfs": -7.448702694112457,
+        "rms_dbfs": -21.84276399552155,
+        "clipped_samples": 0,
+        "active_seconds": 7.89,
+        "dynamic_range_db": 16.55722494125366,
+        "band_fractions": {
+          "sub_20_80": 0.027468225503535594,
+          "body_80_500": 0.7232602032369042,
+          "mid_500_3000": 0.23825714075583057,
+          "presence_3000_5000": 0.009186060939510791,
+          "high_5000_8000": 0.001828369564219154
+        },
+        "f0_diagnostic": {
+          "median_hz": 238.8152940560808,
+          "p10_hz": 194.0829996709956,
+          "p90_hz": 270.521736777859,
+          "voiced_frames": 349,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 7.97,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_B_full_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "B_gt_02",
+      "category": "B_full",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "女",
+      "raw": {
+        "path": "B_full\\gtsinger\\raw\\女B-002.wav",
+        "sha256": "5912870c9b4496459d97276059aa8e9f175ce088d90cdac26340b91d39c228ab",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 427680,
+        "duration_seconds": 8.91,
+        "bytes": 1283084
+      },
+      "wav": {
+        "path": "B_full\\gtsinger\\wav\\女B-002.wav",
+        "sha256": "1d8a9ef70a2df3a084469ae3ed91900847c4ee51b46f3659fe58530a693fe513",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 427680,
+        "duration_seconds": 8.91,
+        "peak_dbfs": -6.982765086002524,
+        "rms_dbfs": -23.326401832178906,
+        "clipped_samples": 0,
+        "active_seconds": 8.35,
+        "dynamic_range_db": 26.475650310516357,
+        "band_fractions": {
+          "sub_20_80": 0.004573476570401001,
+          "body_80_500": 0.8652668404888127,
+          "mid_500_3000": 0.12004015570508446,
+          "presence_3000_5000": 0.004399643051226966,
+          "high_5000_8000": 0.0057198841844748926
+        },
+        "f0_diagnostic": {
+          "median_hz": 203.16060103506544,
+          "p10_hz": 182.4722074220718,
+          "p90_hz": 247.28002265367275,
+          "voiced_frames": 337,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 8.91,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_B_full_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "B_gt_03",
+      "category": "B_full",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "女",
+      "raw": {
+        "path": "B_full\\gtsinger\\raw\\女B-003.wav",
+        "sha256": "bf838289636e95ae13d2d3af6f51fa0389252ccbfb16ce1b0287f7d34a454ece",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 498720,
+        "duration_seconds": 10.39,
+        "bytes": 1496204
+      },
+      "wav": {
+        "path": "B_full\\gtsinger\\wav\\女B-003.wav",
+        "sha256": "923563aa88db335f11443c66cf12e9438f60430ba7f27bde078e913d02a5731c",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 498720,
+        "duration_seconds": 10.39,
+        "peak_dbfs": -6.708776318040007,
+        "rms_dbfs": -21.226384524627804,
+        "clipped_samples": 0,
+        "active_seconds": 10.38,
+        "dynamic_range_db": 11.76945934295654,
+        "band_fractions": {
+          "sub_20_80": 0.005307248043630612,
+          "body_80_500": 0.719639037592369,
+          "mid_500_3000": 0.259357996135669,
+          "presence_3000_5000": 0.009859960416350734,
+          "high_5000_8000": 0.005835757811980445
+        },
+        "f0_diagnostic": {
+          "median_hz": 263.88948711240073,
+          "p10_hz": 223.92557271897664,
+          "p90_hz": 312.82344026215605,
+          "voiced_frames": 452,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 10.39,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_B_full_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "B_gt_04",
+      "category": "B_full",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "男",
+      "raw": {
+        "path": "B_full\\gtsinger\\raw\\男B-001.wav",
+        "sha256": "656941eb71fee8957e3b24aa2824cd87aa13d184af1ac67008d1371a47858d22",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 360480,
+        "duration_seconds": 7.51,
+        "bytes": 1081484
+      },
+      "wav": {
+        "path": "B_full\\gtsinger\\wav\\男B-001.wav",
+        "sha256": "cced254aa12bd015d2b4330161e44594e8b0887a33b2401fb3fb0fd1594376c4",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 360480,
+        "duration_seconds": 7.51,
+        "peak_dbfs": -10.939339728115655,
+        "rms_dbfs": -24.17462974855902,
+        "clipped_samples": 0,
+        "active_seconds": 7.51,
+        "dynamic_range_db": 16.348880577087403,
+        "band_fractions": {
+          "sub_20_80": 0.0051603879814817915,
+          "body_80_500": 0.769681239300035,
+          "mid_500_3000": 0.2126687675768773,
+          "presence_3000_5000": 0.00811093519770562,
+          "high_5000_8000": 0.0043786699439001524
+        },
+        "f0_diagnostic": {
+          "median_hz": 199.1763888232229,
+          "p10_hz": 183.80987458983893,
+          "p90_hz": 258.4178033014831,
+          "voiced_frames": 318,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 7.51,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_B_full_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "B_gt_05",
+      "category": "B_full",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "男",
+      "raw": {
+        "path": "B_full\\gtsinger\\raw\\男B-002.wav",
+        "sha256": "473c1c20c5ca23400f7d8c19abc16ae4b57a9491d1fc755c0565b8bc6b2ac352",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 293280,
+        "duration_seconds": 6.11,
+        "bytes": 879884
+      },
+      "wav": {
+        "path": "B_full\\gtsinger\\wav\\男B-002.wav",
+        "sha256": "e0f5fe3e220b88cb63c3d2d412201f8020205da3bf2cc8665e1bc4a9a42dddf3",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 293280,
+        "duration_seconds": 6.11,
+        "peak_dbfs": -7.058307968207239,
+        "rms_dbfs": -19.463553855179228,
+        "clipped_samples": 0,
+        "active_seconds": 6.11,
+        "dynamic_range_db": 13.14693622589111,
+        "band_fractions": {
+          "sub_20_80": 0.0012641709193636907,
+          "body_80_500": 0.821126083970382,
+          "mid_500_3000": 0.17363116329704406,
+          "presence_3000_5000": 0.0030202724494784623,
+          "high_5000_8000": 0.0009583093637317078
+        },
+        "f0_diagnostic": {
+          "median_hz": 234.3984697182869,
+          "p10_hz": 192.66659074320398,
+          "p90_hz": 276.114691445402,
+          "voiced_frames": 282,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 6.11,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_B_full_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "B_gt_06",
+      "category": "B_full",
+      "source_type": "gtsinger",
+      "gender_label_from_filename": "男",
+      "raw": {
+        "path": "B_full\\gtsinger\\raw\\男B-003.wav",
+        "sha256": "3e08725e6665551fb38a73368ae62a9fb9fa2aecb68ecf1dacbdbd8d1b5c32c1",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 653760,
+        "duration_seconds": 13.62,
+        "bytes": 1961324
+      },
+      "wav": {
+        "path": "B_full\\gtsinger\\wav\\男B-003.wav",
+        "sha256": "67626595f92f5ecfe82278f8f0e41262a6ea203aad92041ba20a51a2ca43e4dc",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 653760,
+        "duration_seconds": 13.62,
+        "peak_dbfs": -10.264813239434066,
+        "rms_dbfs": -24.207275416440034,
+        "clipped_samples": 0,
+        "active_seconds": 12.6,
+        "dynamic_range_db": 22.228048801422116,
+        "band_fractions": {
+          "sub_20_80": 0.00010571227513317466,
+          "body_80_500": 0.7898439160071602,
+          "mid_500_3000": 0.19927202961841908,
+          "presence_3000_5000": 0.007493431833874892,
+          "high_5000_8000": 0.003284910265412781
+        },
+        "f0_diagnostic": {
+          "median_hz": 231.75328039093364,
+          "p10_hz": 170.93424722102026,
+          "p90_hz": 308.9645994943865,
+          "voiced_frames": 528,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 13.62,
+        "trimmed": false
+      },
+      "tags": {
+        "category_assignment": "user_assigned_B_full_not_listened_by_agent",
+        "original_hf_path_retained": false
+      },
+      "notes": [
+        "user-selected GTSinger clip; original HF path/song/singer ID not retained in filename",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing"
+      ]
+    },
+    {
+      "id": "C_gt_01",
+      "category": "C_observe",
+      "source_type": "gtsinger",
+      "singer": "ZH-Alto-1",
+      "parent_directory": "Mixed_Voice_and_Falsetto",
+      "technique_group": "Mixed_Voice",
+      "song": "十年",
+      "group_folder": "Mixed_Voice_Group",
+      "segment": "0003",
+      "raw": {
+        "path": "C_observe\\gtsinger\\raw\\C01_alto_mixed_十年_0003.wav",
+        "sha256": "c68dc3d5edda8c8d8490014d7b97a25a14ac65afab0b137f0715c4a9b6dbbfe7",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 569760,
+        "duration_seconds": 11.87,
+        "bytes": 1709324
+      },
+      "wav": {
+        "path": "C_observe\\gtsinger\\wav\\C01_alto_mixed_十年_0003.wav",
+        "sha256": "933fd1e9d11cd78ae38f963704b9eb17c7a691b18f545ea7485cd88fd2703351",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 569760,
+        "duration_seconds": 11.87,
+        "peak_dbfs": -2.8452397009399837,
+        "rms_dbfs": -19.199850208444555,
+        "clipped_samples": 0,
+        "active_seconds": 11.83,
+        "dynamic_range_db": 15.568139553070067,
+        "band_fractions": {
+          "sub_20_80": 0.0013902973506851666,
+          "body_80_500": 0.36555220210503975,
+          "mid_500_3000": 0.6229382208314329,
+          "presence_3000_5000": 0.007885726839204668,
+          "high_5000_8000": 0.0022335528736373853
+        },
+        "f0_diagnostic": {
+          "median_hz": 277.27873750853644,
+          "p10_hz": 264.0486549455191,
+          "p90_hz": 355.8530481125996,
+          "voiced_frames": 537,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 11.87,
+        "trimmed": false
+      },
+      "source": {
+        "dataset": "GTSinger/GTSinger",
+        "hf_path": "Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/十年/Mixed_Voice_Group/0003",
+        "url": "https://huggingface.co/datasets/GTSinger/GTSinger/resolve/main/Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/%E5%8D%81%E5%B9%B4/Mixed_Voice_Group/0003.wav",
+        "annotation_file": "C_observe\\gtsinger\\annotations\\C01_alto_mixed_十年_0003.json"
+      },
+      "technique_annotation": {
+        "target_flag": "mix",
+        "target_flag_fraction": 0.8918918918918919,
+        "word_entries": 22,
+        "time_span_seconds": 11.87,
+        "global_labels": {
+          "tech": "1",
+          "pace": "fast",
+          "range": "medium",
+          "singing_method": "pop",
+          "emotion": "sad"
+        },
+        "note": "per-phoneme flags are descriptive; Mixed_Voice_Group / Falsetto_Group membership is the selection criterion"
+      },
+      "tags": {
+        "role": "condition_change_observation_not_generalization",
+        "pair_id": "十年_0003_mixed_vs_falsetto"
+      },
+      "notes": [
+        "C class selected only from GTSinger Mixed_Voice_and_Falsetto",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing",
+        "condition-change observation, not a cross-singer generalization test",
+        "paired same-song comparison: 十年_0003_mixed_vs_falsetto"
+      ]
+    },
+    {
+      "id": "C_gt_02",
+      "category": "C_observe",
+      "source_type": "gtsinger",
+      "singer": "ZH-Alto-1",
+      "parent_directory": "Mixed_Voice_and_Falsetto",
+      "technique_group": "Falsetto",
+      "song": "十年",
+      "group_folder": "Falsetto_Group",
+      "segment": "0003",
+      "raw": {
+        "path": "C_observe\\gtsinger\\raw\\C02_alto_falsetto_十年_0003.wav",
+        "sha256": "76d525766e3674caac6fe0d78ce66640a483cf3c15f0a5ca71283f01085e8301",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 537600,
+        "duration_seconds": 11.2,
+        "bytes": 1612844
+      },
+      "wav": {
+        "path": "C_observe\\gtsinger\\wav\\C02_alto_falsetto_十年_0003.wav",
+        "sha256": "b054114cc990549a885db32311ea2e61fdaa8189bdd725a6b5c1ad2b00ead159",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 537600,
+        "duration_seconds": 11.2,
+        "peak_dbfs": -7.434342236420511,
+        "rms_dbfs": -22.557643302831867,
+        "clipped_samples": 0,
+        "active_seconds": 11.15,
+        "dynamic_range_db": 17.115929412841794,
+        "band_fractions": {
+          "sub_20_80": 0.009060030267155447,
+          "body_80_500": 0.6471208782258294,
+          "mid_500_3000": 0.3392203809342036,
+          "presence_3000_5000": 0.0036681767365931432,
+          "high_5000_8000": 0.0009305338362185026
+        },
+        "f0_diagnostic": {
+          "median_hz": 292.3921116405698,
+          "p10_hz": 272.10634610562096,
+          "p90_hz": 370.9693895677183,
+          "voiced_frames": 493,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 11.2,
+        "trimmed": false
+      },
+      "source": {
+        "dataset": "GTSinger/GTSinger",
+        "hf_path": "Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/十年/Falsetto_Group/0003",
+        "url": "https://huggingface.co/datasets/GTSinger/GTSinger/resolve/main/Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/%E5%8D%81%E5%B9%B4/Falsetto_Group/0003.wav",
+        "annotation_file": "C_observe\\gtsinger\\annotations\\C02_alto_falsetto_十年_0003.json"
+      },
+      "technique_annotation": {
+        "target_flag": "falsetto",
+        "target_flag_fraction": 0.9459459459459459,
+        "word_entries": 22,
+        "time_span_seconds": 11.2,
+        "global_labels": {
+          "tech": "2",
+          "pace": "fast",
+          "range": "high",
+          "singing_method": "pop",
+          "emotion": "sad"
+        },
+        "note": "per-phoneme flags are descriptive; Mixed_Voice_Group / Falsetto_Group membership is the selection criterion"
+      },
+      "tags": {
+        "role": "condition_change_observation_not_generalization",
+        "pair_id": "十年_0003_mixed_vs_falsetto"
+      },
+      "notes": [
+        "C class selected only from GTSinger Mixed_Voice_and_Falsetto",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing",
+        "condition-change observation, not a cross-singer generalization test",
+        "paired same-song comparison: 十年_0003_mixed_vs_falsetto"
+      ]
+    },
+    {
+      "id": "C_gt_03",
+      "category": "C_observe",
+      "source_type": "gtsinger",
+      "singer": "ZH-Alto-1",
+      "parent_directory": "Mixed_Voice_and_Falsetto",
+      "technique_group": "Mixed_Voice",
+      "song": "我们的明天",
+      "group_folder": "Mixed_Voice_Group",
+      "segment": "0006",
+      "raw": {
+        "path": "C_observe\\gtsinger\\raw\\C03_alto_mixed_我们的明天_0006.wav",
+        "sha256": "4398bb1e485cfed7ca4e6cfd4daa2e9e76980f3e7db5b5741c63de95529035ff",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 398400,
+        "duration_seconds": 8.3,
+        "bytes": 1195244
+      },
+      "wav": {
+        "path": "C_observe\\gtsinger\\wav\\C03_alto_mixed_我们的明天_0006.wav",
+        "sha256": "06fde7c7dae813e9f6a40750f8f83aec2269650b67a08d5c9624de0ddf18451e",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 398400,
+        "duration_seconds": 8.3,
+        "peak_dbfs": -4.92014087776964,
+        "rms_dbfs": -19.006878705187752,
+        "clipped_samples": 0,
+        "active_seconds": 8.27,
+        "dynamic_range_db": 17.29136824607849,
+        "band_fractions": {
+          "sub_20_80": 0.0074560228305033446,
+          "body_80_500": 0.609720733696863,
+          "mid_500_3000": 0.3586734074301742,
+          "presence_3000_5000": 0.016680259109000818,
+          "high_5000_8000": 0.0074695769334586146
+        },
+        "f0_diagnostic": {
+          "median_hz": 338.7768923189042,
+          "p10_hz": 276.41469717194514,
+          "p90_hz": 415.3979751874139,
+          "voiced_frames": 333,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 8.3,
+        "trimmed": false
+      },
+      "source": {
+        "dataset": "GTSinger/GTSinger",
+        "hf_path": "Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/我们的明天/Mixed_Voice_Group/0006",
+        "url": "https://huggingface.co/datasets/GTSinger/GTSinger/resolve/main/Chinese/ZH-Alto-1/Mixed_Voice_and_Falsetto/%E6%88%91%E4%BB%AC%E7%9A%84%E6%98%8E%E5%A4%A9/Mixed_Voice_Group/0006.wav",
+        "annotation_file": "C_observe\\gtsinger\\annotations\\C03_alto_mixed_我们的明天_0006.json"
+      },
+      "technique_annotation": {
+        "target_flag": "mix",
+        "target_flag_fraction": 0.9333333333333333,
+        "word_entries": 17,
+        "time_span_seconds": 8.3,
+        "global_labels": {
+          "tech": "1",
+          "pace": "fast",
+          "range": "high",
+          "singing_method": "pop",
+          "emotion": "sad"
+        },
+        "note": "per-phoneme flags are descriptive; Mixed_Voice_Group / Falsetto_Group membership is the selection criterion"
+      },
+      "tags": {
+        "role": "condition_change_observation_not_generalization",
+        "pair_id": null
+      },
+      "notes": [
+        "C class selected only from GTSinger Mixed_Voice_and_Falsetto",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing",
+        "condition-change observation, not a cross-singer generalization test"
+      ]
+    },
+    {
+      "id": "C_gt_04",
+      "category": "C_observe",
+      "source_type": "gtsinger",
+      "singer": "ZH-Tenor-1",
+      "parent_directory": "Mixed_Voice_and_Falsetto",
+      "technique_group": "Mixed_Voice",
+      "song": "曹操",
+      "group_folder": "Mixed_Voice_Group",
+      "segment": "0007",
+      "raw": {
+        "path": "C_observe\\gtsinger\\raw\\C04_tenor_mixed_曹操_0007.wav",
+        "sha256": "ed5c602be4dd89e7269dfc98e23fa4e3b06852da08b5723aaced0bca320b4374",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 617760,
+        "duration_seconds": 12.87,
+        "bytes": 1853324
+      },
+      "wav": {
+        "path": "C_observe\\gtsinger\\wav\\C04_tenor_mixed_曹操_0007.wav",
+        "sha256": "d9ea05d57d49f703b4b946f329e68a1a076ca51b3a3c3016f991d963f626a1be",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 617760,
+        "duration_seconds": 12.87,
+        "peak_dbfs": -8.579666473762709,
+        "rms_dbfs": -20.952537484317766,
+        "clipped_samples": 0,
+        "active_seconds": 12.77,
+        "dynamic_range_db": 23.013893604278557,
+        "band_fractions": {
+          "sub_20_80": 0.0004074367536464235,
+          "body_80_500": 0.6181844440132858,
+          "mid_500_3000": 0.37816683010813,
+          "presence_3000_5000": 0.0025952210631286334,
+          "high_5000_8000": 0.0006460680618091664
+        },
+        "f0_diagnostic": {
+          "median_hz": 253.07926669225273,
+          "p10_hz": 237.65199262163122,
+          "p90_hz": 298.84859948345326,
+          "voiced_frames": 575,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 12.87,
+        "trimmed": false
+      },
+      "source": {
+        "dataset": "GTSinger/GTSinger",
+        "hf_path": "Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/曹操/Mixed_Voice_Group/0007",
+        "url": "https://huggingface.co/datasets/GTSinger/GTSinger/resolve/main/Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/%E6%9B%B9%E6%93%8D/Mixed_Voice_Group/0007.wav",
+        "annotation_file": "C_observe\\gtsinger\\annotations\\C04_tenor_mixed_曹操_0007.json"
+      },
+      "technique_annotation": {
+        "target_flag": "mix",
+        "target_flag_fraction": 0.9375,
+        "word_entries": 38,
+        "time_span_seconds": 12.87,
+        "global_labels": {
+          "tech": "1",
+          "pace": "fast",
+          "range": "medium",
+          "singing_method": "pop",
+          "emotion": "happy"
+        },
+        "note": "per-phoneme flags are descriptive; Mixed_Voice_Group / Falsetto_Group membership is the selection criterion"
+      },
+      "tags": {
+        "role": "condition_change_observation_not_generalization",
+        "pair_id": "曹操_0007_mixed_vs_falsetto"
+      },
+      "notes": [
+        "C class selected only from GTSinger Mixed_Voice_and_Falsetto",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing",
+        "condition-change observation, not a cross-singer generalization test",
+        "paired same-song comparison: 曹操_0007_mixed_vs_falsetto"
+      ]
+    },
+    {
+      "id": "C_gt_05",
+      "category": "C_observe",
+      "source_type": "gtsinger",
+      "singer": "ZH-Tenor-1",
+      "parent_directory": "Mixed_Voice_and_Falsetto",
+      "technique_group": "Falsetto",
+      "song": "曹操",
+      "group_folder": "Falsetto_Group",
+      "segment": "0007",
+      "raw": {
+        "path": "C_observe\\gtsinger\\raw\\C05_tenor_falsetto_曹操_0007.wav",
+        "sha256": "046b7875166d7dc65d3f04a7c97be1b1c8b8c41e5884b7c991dfb39e66e88c1e",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 615841,
+        "duration_seconds": 12.830020833333334,
+        "bytes": 1847568
+      },
+      "wav": {
+        "path": "C_observe\\gtsinger\\wav\\C05_tenor_falsetto_曹操_0007.wav",
+        "sha256": "1b43e4741b0e37385ec992c528eb9ce244dca65e86eb0398c562d3786af70e5b",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 615841,
+        "duration_seconds": 12.830020833333334,
+        "peak_dbfs": -14.001428999875998,
+        "rms_dbfs": -25.882755648703224,
+        "clipped_samples": 0,
+        "active_seconds": 12.76,
+        "dynamic_range_db": 22.681398391723633,
+        "band_fractions": {
+          "sub_20_80": 0.0001396623089003663,
+          "body_80_500": 0.807185662131235,
+          "mid_500_3000": 0.18967437665588857,
+          "presence_3000_5000": 0.0010321769252943343,
+          "high_5000_8000": 0.0019681219786814278
+        },
+        "f0_diagnostic": {
+          "median_hz": 283.40412682043745,
+          "p10_hz": 266.6775517831582,
+          "p90_hz": 338.4277168258393,
+          "voiced_frames": 560,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 12.830020833333334,
+        "trimmed": false
+      },
+      "source": {
+        "dataset": "GTSinger/GTSinger",
+        "hf_path": "Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/曹操/Falsetto_Group/0007",
+        "url": "https://huggingface.co/datasets/GTSinger/GTSinger/resolve/main/Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/%E6%9B%B9%E6%93%8D/Falsetto_Group/0007.wav",
+        "annotation_file": "C_observe\\gtsinger\\annotations\\C05_tenor_falsetto_曹操_0007.json"
+      },
+      "technique_annotation": {
+        "target_flag": "falsetto",
+        "target_flag_fraction": 0.9375,
+        "word_entries": 38,
+        "time_span_seconds": 12.83,
+        "global_labels": {
+          "tech": "2",
+          "pace": "fast",
+          "range": "medium",
+          "singing_method": "pop",
+          "emotion": "happy"
+        },
+        "note": "per-phoneme flags are descriptive; Mixed_Voice_Group / Falsetto_Group membership is the selection criterion"
+      },
+      "tags": {
+        "role": "condition_change_observation_not_generalization",
+        "pair_id": "曹操_0007_mixed_vs_falsetto"
+      },
+      "notes": [
+        "C class selected only from GTSinger Mixed_Voice_and_Falsetto",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing",
+        "condition-change observation, not a cross-singer generalization test",
+        "paired same-song comparison: 曹操_0007_mixed_vs_falsetto"
+      ]
+    },
+    {
+      "id": "C_gt_06",
+      "category": "C_observe",
+      "source_type": "gtsinger",
+      "singer": "ZH-Tenor-1",
+      "parent_directory": "Mixed_Voice_and_Falsetto",
+      "technique_group": "Falsetto",
+      "song": "青花瓷",
+      "group_folder": "Falsetto_Group",
+      "segment": "0011",
+      "raw": {
+        "path": "C_observe\\gtsinger\\raw\\C06_tenor_falsetto_青花瓷_0011.wav",
+        "sha256": "6ee8e14c0f577266d2e16cf2e96f46afc20fded4b17b94ede7a035be311c5f8d",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_24",
+        "frames": 651360,
+        "duration_seconds": 13.57,
+        "bytes": 1954124
+      },
+      "wav": {
+        "path": "C_observe\\gtsinger\\wav\\C06_tenor_falsetto_青花瓷_0011.wav",
+        "sha256": "daec97afab915699505adbc06b60ec05313ac6a6dd7c8eb88237796d2c05afb0",
+        "sample_rate": 48000,
+        "channels": 1,
+        "subtype": "PCM_16",
+        "frames": 651360,
+        "duration_seconds": 13.57,
+        "peak_dbfs": -14.76916700206626,
+        "rms_dbfs": -25.42832806648415,
+        "clipped_samples": 0,
+        "active_seconds": 13.54,
+        "dynamic_range_db": 24.28755025863647,
+        "band_fractions": {
+          "sub_20_80": 0.0018229895714269172,
+          "body_80_500": 0.9434670503698389,
+          "mid_500_3000": 0.052352768319823606,
+          "presence_3000_5000": 0.0012953071291499235,
+          "high_5000_8000": 0.001061884609760704
+        },
+        "f0_diagnostic": {
+          "median_hz": 265.95047488298627,
+          "p10_hz": 217.7168472862997,
+          "p90_hz": 345.5412478609213,
+          "voiced_frames": 574,
+          "limit": "legacy autocorrelation 60-500 Hz; not a full-range pitch guarantee"
+        }
+      },
+      "clip": {
+        "start_seconds": 0.0,
+        "end_seconds": 13.57,
+        "trimmed": false
+      },
+      "source": {
+        "dataset": "GTSinger/GTSinger",
+        "hf_path": "Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/青花瓷/Falsetto_Group/0011",
+        "url": "https://huggingface.co/datasets/GTSinger/GTSinger/resolve/main/Chinese/ZH-Tenor-1/Mixed_Voice_and_Falsetto/%E9%9D%92%E8%8A%B1%E7%93%B7/Falsetto_Group/0011.wav",
+        "annotation_file": "C_observe\\gtsinger\\annotations\\C06_tenor_falsetto_青花瓷_0011.json"
+      },
+      "technique_annotation": {
+        "target_flag": "falsetto",
+        "target_flag_fraction": 0.8636363636363636,
+        "word_entries": 36,
+        "time_span_seconds": 13.57,
+        "global_labels": {
+          "tech": "2",
+          "pace": "moderate",
+          "range": "medium",
+          "singing_method": "pop",
+          "emotion": "happy"
+        },
+        "note": "per-phoneme flags are descriptive; Mixed_Voice_Group / Falsetto_Group membership is the selection criterion"
+      },
+      "tags": {
+        "role": "condition_change_observation_not_generalization",
+        "pair_id": null
+      },
+      "notes": [
+        "C class selected only from GTSinger Mixed_Voice_and_Falsetto",
+        "raw PCM24 preserved; wav is PCM16 copy; no signal processing",
+        "condition-change observation, not a cross-singer generalization test"
+      ]
+    }
+  ],
+  "gaps_and_warnings": [
+    "4 GTSinger A/B clips are slightly shorter than 8 s: 女A-001 7.34 s, 女B-001 7.97 s, 男B-001 7.51 s, 男B-002 6.11 s. Source-limited; not padded or extended.",
+    "2 self clips were trimmed to 15.0 s: 雅俗共赏-清唱版 (0.8-15.8 s) and 雅俗共赏-正常版 (0.2-15.2 s). Raw m4a files preserve the full recordings.",
+    "GTSinger A/B original song, singer ID, and HF path are not retained in the user-supplied filenames. If exact provenance is required, re-download or provide the original filenames.",
+    "A/thin and B/full labels are user-assigned; the agent cannot listen and has not acoustically verified thinness or fullness.",
+    "Self variant labels ('原版', '正常版', '清唱版') are user naming. '原版/正常版' a cappella status is not acoustically proven; all self files show very low sub-80 Hz energy (<0.04%), but this is not proof of no accompaniment.",
+    "F0 values are legacy 60-500 Hz autocorrelation diagnostics, not a full-range pitch guarantee and not a substitute for F2.",
+    "No loudness matching was applied in this dataset. Self file RMS spans about -24.6 to -15.6 dBFS; A/B listening must match loudness in the processing stage.",
+    "No F2 data is included and the F1/F2 interface contract is unchanged.",
+    "C_observe was rebuilt as requested: only Mixed_Voice_and_Falsetto, 3 mixed voice + 3 falsetto; the previous Breathy/Vibrato/Pharyngeal/Glissando C set was removed.",
+    "C01/C02 are the same song and segment (十年 0003) in mixed voice vs falsetto; C04/C05 are the same song and segment (曹操 0007) in mixed voice vs falsetto. Treat them as paired conditions, not four independent songs.",
+    "All 6 C clips are 8.30-13.57 s and have 0 clipped samples (C03 我们的明天 mixed 0006 is 8.30 s; C06 青花瓷 falsetto 0011 is 13.57 s).",
+    "Alto 我们的明天 mixed segments 0005 and 0002 were rejected for near-full-scale peaks (-0.05 and -0.00 dBFS); final C03 uses 0006 (peak -4.92 dBFS)."
+  ],
+  "comparison_pairs": [
+    {
+      "pair_id": "十年_0003_mixed_vs_falsetto",
+      "singer": "ZH-Alto-1",
+      "items": [
+        "C_gt_01",
+        "C_gt_02"
+      ],
+      "note": "same song/segment; mixed voice vs falsetto"
+    },
+    {
+      "pair_id": "曹操_0007_mixed_vs_falsetto",
+      "singer": "ZH-Tenor-1",
+      "items": [
+        "C_gt_04",
+        "C_gt_05"
+      ],
+      "note": "same song/segment; mixed voice vs falsetto"
+    }
+  ],
+  "updated_utc": "2026-10-31T10:31:38.127138+00:00",
+  "revision_note": "C_observe replaced on 2026-10-31 with 6 segments from Mixed_Voice_and_Falsetto; A/B items unchanged."
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "thin_time_s": [
+      1.56,
+      1.96
+    ],
+    "normal_time_s": [
+      1.8,
+      2.14
+    ],
+    "hnr_db": {
+      "thin": 24.88,
+      "normal": 23.99,
+      "current": 26.31
+    }
+  },
+  {
+    "thin_time_s": [
+      4.5,
+      4.9
+    ],
+    "normal_time_s": [
+      4.5,
+      4.8
+    ],
+    "hnr_db": {
+      "thin": 25.18,
+      "normal": 20.09,
+      "current": 27.21
+    }
+  },
+  {
+    "thin_time_s": [
+      10.14,
+      10.54
+    ],
+    "normal_time_s": [
+      9.94,
+      10.34
+    ],
+    "hnr_db": {
+      "thin": 23.72,
+      "normal": 19.74,
+      "current": 23.31
+    }
+  }
+]

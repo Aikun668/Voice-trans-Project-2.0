@@ -1,0 +1,75 @@
+{
+  "architecture": "HistGradientBoostingRegressor, 56 own-pitch contextual features",
+  "best_trees": 40,
+  "checkpoint_sha256": "d63eea5b0dea900aa4fb100fbb0159c0e4cba3177821d24ac6e20ceebdca955d",
+  "reference_input": false,
+  "input_features": 56,
+  "selection": "only synthetic validation-song known-inverse MAE; real validation reported separately, no Chinese tuning",
+  "counts": {
+    "train": {
+      "perturbed_sequences": 7078,
+      "known_error_frames": 177518,
+      "normal_sequences": 266
+    },
+    "test": {
+      "perturbed_sequences": 676,
+      "known_error_frames": 16990,
+      "normal_sequences": 21
+    },
+    "validation": {
+      "perturbed_sequences": 824,
+      "known_error_frames": 19977,
+      "normal_sequences": 30
+    }
+  },
+  "validation": {
+    "real": {
+      "frames": 51310,
+      "zero_mae": 57.81421661376953,
+      "model_mae": 72.55031126994878,
+      "error_frames": 17799,
+      "error_zero_mae": 116.41676330566406,
+      "error_model_mae": 119.36524359595846,
+      "normal_over_50_rate": 0.24429829853988175,
+      "prediction_abs_median": 6.678143063313584
+    },
+    "practice": {
+      "frames": 117164,
+      "zero_mae": 34.330440521240234,
+      "model_mae": 53.131315987618834,
+      "error_frames": 19977,
+      "error_zero_mae": 201.3461456298828,
+      "error_model_mae": 144.71544813150388,
+      "normal_over_50_rate": 0.25049646557667177,
+      "prediction_abs_median": 8.694174867778857
+    }
+  },
+  "test": {
+    "real": {
+      "frames": 42680,
+      "zero_mae": 59.05570983886719,
+      "model_mae": 75.91689310580865,
+      "error_frames": 16005,
+      "error_zero_mae": 112.81173706054688,
+      "error_model_mae": 116.70919697111566,
+      "normal_over_50_rate": 0.28291787735127694,
+      "prediction_abs_median": 8.493893270036793
+    },
+    "practice": {
+      "frames": 98091,
+      "zero_mae": 34.38612365722656,
+      "model_mae": 55.41896699058933,
+      "error_frames": 16990,
+      "error_zero_mae": 198.5267333984375,
+      "error_model_mae": 141.8195429486529,
+      "normal_over_50_rate": 0.27053920420216765,
+      "prediction_abs_median": 11.568064562500524
+    }
+  },
+  "checkpoint_reload_exact": true,
+  "sklearn": "1.7.2",
+  "seconds": 102.9,
+  "listening": "pending_jade",
+  "limitation": "Artificial note shifts are not natural human errors. Their success does not prove real pitch correction.",
+  "real_validation_improved_over_zero": false
+}

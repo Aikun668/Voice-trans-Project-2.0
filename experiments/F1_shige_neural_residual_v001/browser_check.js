@@ -1,0 +1,29 @@
+async page => {
+  return await page.evaluate(async()=>{
+    const manifest=await(await fetch('delivery_manifest.json')).json();
+    if(manifest.length!==3 || manifest.some(x=>x.file.includes('vocoder')))throw Error('Delivery is not original plus full beautification');
+    const context=new AudioContext({sampleRate:44100});const checks=[];
+    for(const entry of manifest){
+      const bytes=await(await fetch(entry.file)).arrayBuffer();
+      const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');
+      if(hash!==entry.sha256)throw Error('Wrong served audio');
+      const decoded=await context.decodeAudioData(bytes.slice(0));
+      if(decoded.length!==entry.frames || decoded.sampleRate!==44100 || decoded.numberOfChannels!==1)throw Error('Decoded contract mismatch');
+      checks.push({id:entry.id,sha256_matches:true,frames:decoded.length});
+    }
+    await context.close();const player=document.getElementById('player');
+    for(const entry of manifest){
+      await window.selectVersion(entry.id);player.muted=true;player.playbackRate=8;player.currentTime=0;
+      const done=new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('Playback timeout')),10000);player.addEventListener('ended',()=>{clearTimeout(timer);resolve()},{once:true})});
+      await player.play();await done;
+    }
+    await window.selectVersion('original');player.currentTime=5;player.playbackRate=1;await player.play();
+    await window.selectVersion('beautify_gentle');
+    if(player.paused || Math.abs(player.currentTime-5)>.5)throw Error('Same-time playing switch failed');
+    await window.selectVersion('beautify_standard');
+    if(player.paused || Math.abs(player.currentTime-5)>.75)throw Error('Second switch failed');
+    player.pause();player.currentTime=0;await window.selectVersion('original');player.muted=false;player.playbackRate=1;
+    const result={delivery_tracks:3,checks,all_played_to_end_muted_8x:true,same_time_switch_pass:true,subjective_listening:false};
+    window.browserVerification=result;return result;
+  });
+}

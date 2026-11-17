@@ -1,0 +1,303 @@
+{
+  "model": "D:\\My_Grand_Projects2026\\Videos-Master-Project\\Qwen3-ForcedAligner-0.6B",
+  "inputs": {
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\wav\\莫问归期02-对照微微跑调.wav": "14e01ae944d173ce96fbd2ee58a1e14bb8b76c19e99bb55f1c548bfe886849ca",
+    "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\rerecord_2026-11-04_f2\\ref_vocals\\莫问归期_蒋雪儿_vocals.wav": "ae69a7a4c21acd4ff405917b7ba1214bb24976cf9fdff8d9163a5dd9f905f1b5"
+  },
+  "results": {
+    "take": [
+      {
+        "search_window_seconds": [
+          0.0,
+          5.57
+        ],
+        "words": [
+          {
+            "text": "沉",
+            "start": 0.56,
+            "end": 0.88
+          },
+          {
+            "text": "默",
+            "start": 0.88,
+            "end": 1.44
+          },
+          {
+            "text": "有",
+            "start": 1.44,
+            "end": 1.76
+          },
+          {
+            "text": "时",
+            "start": 1.76,
+            "end": 2.4
+          },
+          {
+            "text": "念",
+            "start": 2.88,
+            "end": 3.2
+          },
+          {
+            "text": "想",
+            "start": 3.2,
+            "end": 3.28
+          },
+          {
+            "text": "有",
+            "start": 3.28,
+            "end": 3.6
+          },
+          {
+            "text": "时",
+            "start": 3.6,
+            "end": 5.44
+          }
+        ]
+      },
+      {
+        "search_window_seconds": [
+          0.26,
+          5.49
+        ],
+        "words": [
+          {
+            "text": "沉",
+            "start": 0.58,
+            "end": 0.9
+          },
+          {
+            "text": "默",
+            "start": 0.9,
+            "end": 1.46
+          },
+          {
+            "text": "有",
+            "start": 1.46,
+            "end": 1.78
+          },
+          {
+            "text": "时",
+            "start": 1.78,
+            "end": 2.42
+          },
+          {
+            "text": "念",
+            "start": 2.9,
+            "end": 3.3
+          },
+          {
+            "text": "想",
+            "start": 3.3,
+            "end": 3.3
+          },
+          {
+            "text": "有",
+            "start": 3.3,
+            "end": 3.62
+          },
+          {
+            "text": "时",
+            "start": 3.62,
+            "end": 5.14
+          }
+        ]
+      }
+    ],
+    "original_early": [
+      {
+        "search_window_seconds": [
+          50.6,
+          56.85
+        ],
+        "words": [
+          {
+            "text": "沉",
+            "start": 51.8,
+            "end": 51.96
+          },
+          {
+            "text": "默",
+            "start": 51.96,
+            "end": 52.6
+          },
+          {
+            "text": "有",
+            "start": 52.6,
+            "end": 52.84
+          },
+          {
+            "text": "时",
+            "start": 52.84,
+            "end": 53.24
+          },
+          {
+            "text": "念",
+            "start": 53.48,
+            "end": 53.88
+          },
+          {
+            "text": "想",
+            "start": 53.88,
+            "end": 54.04
+          },
+          {
+            "text": "有",
+            "start": 54.36,
+            "end": 54.68
+          },
+          {
+            "text": "时",
+            "start": 54.68,
+            "end": 54.92
+          }
+        ]
+      },
+      {
+        "search_window_seconds": [
+          51.1,
+          56.7
+        ],
+        "words": [
+          {
+            "text": "沉",
+            "start": 51.74,
+            "end": 52.22
+          },
+          {
+            "text": "默",
+            "start": 52.22,
+            "end": 52.54
+          },
+          {
+            "text": "有",
+            "start": 52.54,
+            "end": 52.86
+          },
+          {
+            "text": "时",
+            "start": 52.86,
+            "end": 53.26
+          },
+          {
+            "text": "念",
+            "start": 53.5,
+            "end": 53.9
+          },
+          {
+            "text": "想",
+            "start": 53.9,
+            "end": 54.06
+          },
+          {
+            "text": "有",
+            "start": 54.3,
+            "end": 54.7
+          },
+          {
+            "text": "时",
+            "start": 54.7,
+            "end": 55.1
+          }
+        ]
+      }
+    ],
+    "original_late": [
+      {
+        "search_window_seconds": [
+          132.9,
+          139.03
+        ],
+        "words": [
+          {
+            "text": "沉",
+            "start": 134.02,
+            "end": 134.26
+          },
+          {
+            "text": "默",
+            "start": 134.26,
+            "end": 134.82
+          },
+          {
+            "text": "有",
+            "start": 134.82,
+            "end": 135.14
+          },
+          {
+            "text": "时",
+            "start": 135.14,
+            "end": 135.54
+          },
+          {
+            "text": "念",
+            "start": 135.78,
+            "end": 136.18
+          },
+          {
+            "text": "想",
+            "start": 136.18,
+            "end": 136.34
+          },
+          {
+            "text": "有",
+            "start": 136.58,
+            "end": 136.98
+          },
+          {
+            "text": "时",
+            "start": 136.98,
+            "end": 137.22
+          }
+        ]
+      },
+      {
+        "search_window_seconds": [
+          133.4,
+          138.99
+        ],
+        "words": [
+          {
+            "text": "沉",
+            "start": 134.04,
+            "end": 134.52
+          },
+          {
+            "text": "默",
+            "start": 134.52,
+            "end": 134.84
+          },
+          {
+            "text": "有",
+            "start": 134.84,
+            "end": 135.16
+          },
+          {
+            "text": "时",
+            "start": 135.16,
+            "end": 135.48
+          },
+          {
+            "text": "念",
+            "start": 135.8,
+            "end": 136.12
+          },
+          {
+            "text": "想",
+            "start": 136.12,
+            "end": 136.6
+          },
+          {
+            "text": "有",
+            "start": 136.6,
+            "end": 137.0
+          },
+          {
+            "text": "时",
+            "start": 137.0,
+            "end": 137.24
+          }
+        ]
+      }
+    ]
+  }
+}

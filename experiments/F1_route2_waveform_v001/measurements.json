@@ -1,0 +1,501 @@
+{
+  "M1_molihua_normal": {
+    "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\molihua_normal.wav",
+    "format": {
+      "sample_rate": 44100,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "container_duration_s": 13.012018
+    },
+    "decoded_seconds": 13.012,
+    "loudness": {
+      "integrated_lufs": -11.59,
+      "true_peak_dbtp": -1.18,
+      "loudness_range_lu": 2.9
+    },
+    "dynamics": {
+      "frame_rms_p95_dbfs": -8.3169878158615,
+      "frame_rms_p50_dbfs": -10.81056612556715,
+      "frame_rms_p10_dbfs": -15.526204514141513,
+      "active_spread_p95_p10_db": 7.209216698280013,
+      "sample_peak_dbfs": -1.2005280267747878,
+      "crest_factor_db": 10.367391603040469
+    },
+    "spectral": {
+      "band_levels_db": {
+        "body_80_500": -1.1450226956130125,
+        "mid_500_3000": -6.405209010522492,
+        "presence_3000_8000": -25.307082828567612
+      },
+      "sibilance_band_5k_plus_ratio_db": -28.167287582536645,
+      "tilt_db_per_octave_300_6k": -8.95039845360678
+    },
+    "sibilance": {
+      "sibilance_frame_ratio": 0.0677,
+      "candidate_segments_top5": [
+        {
+          "start_s": 12.51,
+          "end_s": 12.85,
+          "max_hi_mid_ratio_db": 5.3
+        },
+        {
+          "start_s": 11.48,
+          "end_s": 11.55,
+          "max_hi_mid_ratio_db": 1.4
+        },
+        {
+          "start_s": 12.87,
+          "end_s": 12.97,
+          "max_hi_mid_ratio_db": -2.0
+        },
+        {
+          "start_s": 0.18,
+          "end_s": 0.25,
+          "max_hi_mid_ratio_db": -3.2
+        },
+        {
+          "start_s": 0.08,
+          "end_s": 0.16,
+          "max_hi_mid_ratio_db": -3.3
+        }
+      ],
+      "candidate_segment_count": 7
+    }
+  },
+  "M2_shige_normal": {
+    "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\shige_normal.wav",
+    "format": {
+      "sample_rate": 44100,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "container_duration_s": 17.172018
+    },
+    "decoded_seconds": 17.172,
+    "loudness": {
+      "integrated_lufs": -11.29,
+      "true_peak_dbtp": -0.99,
+      "loudness_range_lu": 2.1
+    },
+    "dynamics": {
+      "frame_rms_p95_dbfs": -8.092759390166943,
+      "frame_rms_p50_dbfs": -11.268560259532098,
+      "frame_rms_p10_dbfs": -27.799749080922645,
+      "active_spread_p95_p10_db": 19.7069896907557,
+      "sample_peak_dbfs": -0.9956917306877534,
+      "crest_factor_db": 10.916757796302498
+    },
+    "spectral": {
+      "band_levels_db": {
+        "body_80_500": -2.769961278971091,
+        "mid_500_3000": -3.334526312463692,
+        "presence_3000_8000": -21.238608669142927
+      },
+      "sibilance_band_5k_plus_ratio_db": -23.33676052741414,
+      "tilt_db_per_octave_300_6k": -9.781878864826897
+    },
+    "sibilance": {
+      "sibilance_frame_ratio": 0.0758,
+      "candidate_segments_top5": [
+        {
+          "start_s": 11.61,
+          "end_s": 11.7,
+          "max_hi_mid_ratio_db": 24.5
+        },
+        {
+          "start_s": 1.37,
+          "end_s": 1.47,
+          "max_hi_mid_ratio_db": 11.4
+        },
+        {
+          "start_s": 2.05,
+          "end_s": 2.12,
+          "max_hi_mid_ratio_db": 11.4
+        },
+        {
+          "start_s": 12.57,
+          "end_s": 12.7,
+          "max_hi_mid_ratio_db": 9.2
+        },
+        {
+          "start_s": 4.65,
+          "end_s": 4.79,
+          "max_hi_mid_ratio_db": 9.0
+        }
+      ],
+      "candidate_segment_count": 11
+    }
+  },
+  "M3_zuixuan_normal": {
+    "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\my_singing\\zuixuan_normal.wav",
+    "format": {
+      "sample_rate": 44100,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "container_duration_s": 23.572018
+    },
+    "decoded_seconds": 23.572,
+    "loudness": {
+      "integrated_lufs": -12.06,
+      "true_peak_dbtp": -0.81,
+      "loudness_range_lu": 1.9
+    },
+    "dynamics": {
+      "frame_rms_p95_dbfs": -8.440530380162944,
+      "frame_rms_p50_dbfs": -12.17839257275054,
+      "frame_rms_p10_dbfs": -22.304246527190305,
+      "active_spread_p95_p10_db": 13.863716147027361,
+      "sample_peak_dbfs": -0.8518227746863312,
+      "crest_factor_db": 11.235025139585769
+    },
+    "spectral": {
+      "band_levels_db": {
+        "body_80_500": -2.5259175393493782,
+        "mid_500_3000": -3.7688595440872867,
+        "presence_3000_8000": -16.749904013126397
+      },
+      "sibilance_band_5k_plus_ratio_db": -17.26764566516703,
+      "tilt_db_per_octave_300_6k": -8.429203402086904
+    },
+    "sibilance": {
+      "sibilance_frame_ratio": 0.1176,
+      "candidate_segments_top5": [
+        {
+          "start_s": 4.33,
+          "end_s": 4.6,
+          "max_hi_mid_ratio_db": 23.6
+        },
+        {
+          "start_s": 2.85,
+          "end_s": 3.02,
+          "max_hi_mid_ratio_db": 20.6
+        },
+        {
+          "start_s": 16.2,
+          "end_s": 16.46,
+          "max_hi_mid_ratio_db": 19.7
+        },
+        {
+          "start_s": 16.79,
+          "end_s": 16.95,
+          "max_hi_mid_ratio_db": 17.2
+        },
+        {
+          "start_s": 13.81,
+          "end_s": 13.9,
+          "max_hi_mid_ratio_db": 14.9
+        }
+      ],
+      "candidate_segment_count": 28
+    }
+  },
+  "O1_chinese_gt_a_3": {
+    "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_pitch_target_v001\\official_all\\Chinese\\gt_a\\3.wav",
+    "format": {
+      "sample_rate": 22050,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "container_duration_s": 5.619229
+    },
+    "decoded_seconds": 5.619,
+    "loudness": {
+      "integrated_lufs": -22.26,
+      "true_peak_dbtp": -8.75,
+      "loudness_range_lu": 1.8
+    },
+    "dynamics": {
+      "frame_rms_p95_dbfs": -17.9059281157876,
+      "frame_rms_p50_dbfs": -29.843972600564694,
+      "frame_rms_p10_dbfs": -39.102448927493285,
+      "active_spread_p95_p10_db": 21.196520811705685,
+      "sample_peak_dbfs": -8.82291181916566,
+      "crest_factor_db": 15.09071430825628
+    },
+    "spectral": {
+      "band_levels_db": {
+        "body_80_500": -9.474472051408615,
+        "mid_500_3000": -0.5570064659968574,
+        "presence_3000_8000": -21.244721101660062
+      },
+      "sibilance_band_5k_plus_ratio_db": -31.122687899572945,
+      "tilt_db_per_octave_300_6k": -8.232889656501222
+    },
+    "sibilance": {
+      "sibilance_frame_ratio": 0.1304,
+      "candidate_segments_top5": [
+        {
+          "start_s": 0.11,
+          "end_s": 0.25,
+          "max_hi_mid_ratio_db": 15.9
+        },
+        {
+          "start_s": 5.27,
+          "end_s": 5.48,
+          "max_hi_mid_ratio_db": 8.6
+        },
+        {
+          "start_s": 2.58,
+          "end_s": 2.73,
+          "max_hi_mid_ratio_db": 5.8
+        },
+        {
+          "start_s": 0.89,
+          "end_s": 0.93,
+          "max_hi_mid_ratio_db": 5.2
+        },
+        {
+          "start_s": 3.88,
+          "end_s": 3.97,
+          "max_hi_mid_ratio_db": 4.0
+        }
+      ],
+      "candidate_segment_count": 6
+    }
+  },
+  "O2_chinese_gt_a_9": {
+    "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_pitch_target_v001\\official_all\\Chinese\\gt_a\\9.wav",
+    "format": {
+      "sample_rate": 22050,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "container_duration_s": 5.752744
+    },
+    "decoded_seconds": 5.753,
+    "loudness": {
+      "integrated_lufs": -17.23,
+      "true_peak_dbtp": -6.39,
+      "loudness_range_lu": 5.3
+    },
+    "dynamics": {
+      "frame_rms_p95_dbfs": -13.86123872339146,
+      "frame_rms_p50_dbfs": -20.43800328549667,
+      "frame_rms_p10_dbfs": -30.30610495544139,
+      "active_spread_p95_p10_db": 16.444866232049932,
+      "sample_peak_dbfs": -6.471598390299914,
+      "crest_factor_db": 12.702735796627465
+    },
+    "spectral": {
+      "band_levels_db": {
+        "body_80_500": -7.249856308530677,
+        "mid_500_3000": -1.0079577287244859,
+        "presence_3000_8000": -17.268883377543997
+      },
+      "sibilance_band_5k_plus_ratio_db": -29.040647053744337,
+      "tilt_db_per_octave_300_6k": -8.088752645646855
+    },
+    "sibilance": {
+      "sibilance_frame_ratio": 0.1324,
+      "candidate_segments_top5": [
+        {
+          "start_s": 0.76,
+          "end_s": 0.89,
+          "max_hi_mid_ratio_db": 26.6
+        },
+        {
+          "start_s": 3.77,
+          "end_s": 3.83,
+          "max_hi_mid_ratio_db": 18.3
+        },
+        {
+          "start_s": 5.58,
+          "end_s": 5.72,
+          "max_hi_mid_ratio_db": 6.7
+        },
+        {
+          "start_s": 1.69,
+          "end_s": 1.83,
+          "max_hi_mid_ratio_db": 6.6
+        },
+        {
+          "start_s": 5.37,
+          "end_s": 5.52,
+          "max_hi_mid_ratio_db": 4.3
+        }
+      ],
+      "candidate_segment_count": 6
+    }
+  },
+  "O3_english_gt_a_6": {
+    "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\experiments\\F1_neuralsvb_pitch_target_v001\\official_all\\English\\gt_a\\6.wav",
+    "format": {
+      "sample_rate": 22050,
+      "channels": 1,
+      "bits_per_sample": 16,
+      "container_duration_s": 3.993832
+    },
+    "decoded_seconds": 3.994,
+    "loudness": {
+      "integrated_lufs": -18.74,
+      "true_peak_dbtp": -2.47,
+      "loudness_range_lu": 2.1
+    },
+    "dynamics": {
+      "frame_rms_p95_dbfs": -12.292216028272337,
+      "frame_rms_p50_dbfs": -21.27479527500022,
+      "frame_rms_p10_dbfs": -35.64303904745474,
+      "active_spread_p95_p10_db": 23.350823019182407,
+      "sample_peak_dbfs": -2.5708189294035266,
+      "crest_factor_db": 16.162259515372092
+    },
+    "spectral": {
+      "band_levels_db": {
+        "body_80_500": -3.7219095592159763,
+        "mid_500_3000": -2.681950423694631,
+        "presence_3000_8000": -14.401087472674202
+      },
+      "sibilance_band_5k_plus_ratio_db": -21.885470309292113,
+      "tilt_db_per_octave_300_6k": -5.773792142752119
+    },
+    "sibilance": {
+      "sibilance_frame_ratio": 0.1734,
+      "candidate_segments_top5": [
+        {
+          "start_s": 2.68,
+          "end_s": 2.89,
+          "max_hi_mid_ratio_db": 25.0
+        },
+        {
+          "start_s": 0.64,
+          "end_s": 0.78,
+          "max_hi_mid_ratio_db": 11.8
+        },
+        {
+          "start_s": 0.0,
+          "end_s": 0.08,
+          "max_hi_mid_ratio_db": 4.2
+        },
+        {
+          "start_s": 1.28,
+          "end_s": 1.34,
+          "max_hi_mid_ratio_db": 3.6
+        },
+        {
+          "start_s": 1.4,
+          "end_s": 1.46,
+          "max_hi_mid_ratio_db": 1.0
+        }
+      ],
+      "candidate_segment_count": 7
+    }
+  },
+  "G1_qinghuaci": {
+    "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\web_singing\\gtsinger_alto_control\\青花瓷_normal.wav",
+    "format": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 24,
+      "container_duration_s": 8.61
+    },
+    "decoded_seconds": 8.61,
+    "loudness": {
+      "integrated_lufs": -23.27,
+      "true_peak_dbtp": -0.52,
+      "loudness_range_lu": 3.5
+    },
+    "dynamics": {
+      "frame_rms_p95_dbfs": -17.610517334109733,
+      "frame_rms_p50_dbfs": -23.831898288583865,
+      "frame_rms_p10_dbfs": -34.53792975036639,
+      "active_spread_p95_p10_db": 16.927412416256654,
+      "sample_peak_dbfs": -0.5253032075943959,
+      "crest_factor_db": 22.014374446736472
+    },
+    "spectral": {
+      "band_levels_db": {
+        "body_80_500": -1.5953303743543596,
+        "mid_500_3000": -5.246196690747002,
+        "presence_3000_8000": -20.642440071853567
+      },
+      "sibilance_band_5k_plus_ratio_db": -22.21894710663795,
+      "tilt_db_per_octave_300_6k": -5.876158533490733
+    },
+    "sibilance": {
+      "sibilance_frame_ratio": 0.0991,
+      "candidate_segments_top5": [
+        {
+          "start_s": 0.0,
+          "end_s": 0.11,
+          "max_hi_mid_ratio_db": 25.1
+        },
+        {
+          "start_s": 1.68,
+          "end_s": 1.78,
+          "max_hi_mid_ratio_db": 12.9
+        },
+        {
+          "start_s": 4.78,
+          "end_s": 4.87,
+          "max_hi_mid_ratio_db": 7.5
+        },
+        {
+          "start_s": 3.4,
+          "end_s": 3.45,
+          "max_hi_mid_ratio_db": 5.9
+        },
+        {
+          "start_s": 7.85,
+          "end_s": 7.91,
+          "max_hi_mid_ratio_db": 4.6
+        }
+      ],
+      "candidate_segment_count": 9
+    }
+  },
+  "G2_beijiaer": {
+    "file": "D:\\My_Grand_Projects2026\\Voice-trans-Project-2.0\\test_dataset\\web_singing\\gtsinger_alto_control\\贝加尔湖畔_normal.wav",
+    "format": {
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits_per_sample": 24,
+      "container_duration_s": 8.738
+    },
+    "decoded_seconds": 8.738,
+    "loudness": {
+      "integrated_lufs": -21.87,
+      "true_peak_dbtp": -7.37,
+      "loudness_range_lu": 2.3
+    },
+    "dynamics": {
+      "frame_rms_p95_dbfs": -18.69958233668601,
+      "frame_rms_p50_dbfs": -21.437960671382427,
+      "frame_rms_p10_dbfs": -30.726318876061814,
+      "active_spread_p95_p10_db": 12.026736539375804,
+      "sample_peak_dbfs": -7.377756436043226,
+      "crest_factor_db": 14.245733526581466
+    },
+    "spectral": {
+      "band_levels_db": {
+        "body_80_500": -1.008249063455013,
+        "mid_500_3000": -7.02198966176538,
+        "presence_3000_8000": -20.62453444106588
+      },
+      "sibilance_band_5k_plus_ratio_db": -29.594031454014257,
+      "tilt_db_per_octave_300_6k": -8.705902368426722
+    },
+    "sibilance": {
+      "sibilance_frame_ratio": 0.0436,
+      "candidate_segments_top5": [
+        {
+          "start_s": 0.0,
+          "end_s": 0.13,
+          "max_hi_mid_ratio_db": 20.9
+        },
+        {
+          "start_s": 4.62,
+          "end_s": 4.71,
+          "max_hi_mid_ratio_db": 19.5
+        },
+        {
+          "start_s": 4.57,
+          "end_s": 4.61,
+          "max_hi_mid_ratio_db": 5.9
+        },
+        {
+          "start_s": 1.19,
+          "end_s": 1.25,
+          "max_hi_mid_ratio_db": -1.5
+        }
+      ],
+      "candidate_segment_count": 4
+    }
+  }
+}

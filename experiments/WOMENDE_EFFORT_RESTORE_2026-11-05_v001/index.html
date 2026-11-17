@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>我们的歌 · 力度微调</title>
+<style>body{font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif;max-width:780px;margin:25px auto;padding:0 16px;background:#f4f6fa;color:#202638}section{background:white;border-radius:10px;padding:16px;margin:14px 0}button{font:inherit;padding:8px 12px;margin:4px;cursor:pointer}button[aria-pressed=true]{background:#305ec4;color:white}audio,textarea{width:100%;box-sizing:border-box}textarea{min-height:95px}label{display:block}</style></head>
+<body><h1>我们的歌 · 力度微调</h1>
+<section><p>请戴耳机，固定音量。每版约 14 秒，切换时从当前进度继续。四版均约 −13 LUFS，使用限幅。Agent 不能听音，结果由你判断。</p>
+<button type="button" data-src="audio/anchor.wav">① 原音·同样响</button>
+<button type="button" data-src="audio/previous.wav">② 上次乱震较少版</button>
+<button type="button" data-src="audio/medium.wav">③ 力度微补</button>
+<button type="button" data-src="audio/strong.wav">④ 力度多补一点</button>
+<audio id="player" controls preload="metadata"></audio><p id="description"></p>
+<p>③④在②的基础上尝试补回持续唱声的一部分中高频能量，④比③补得多。请先听力度，再听乱震。</p></section>
+<section><p><b>1. 与②相比，哪一版唱得更有力？</b></p>
+<div data-q="力度"><label><input type="radio" name="strength" value="③更有力">③更有力</label><label><input type="radio" name="strength" value="④更有力">④更有力</label><label><input type="radio" name="strength" value="③④都更有力">③④都更有力</label><label><input type="radio" name="strength" value="差不多">差不多</label><label><input type="radio" name="strength" value="拿不准">拿不准</label></div>
+<p><b>2. ③④与②相比，乱震感怎样？</b></p>
+<div data-q="乱震"><label><input type="radio" name="vibration" value="差不多">差不多</label><label><input type="radio" name="vibration" value="③更明显">③更明显</label><label><input type="radio" name="vibration" value="④更明显">④更明显</label><label><input type="radio" name="vibration" value="③④都更明显">③④都更明显</label><label><input type="radio" name="vibration" value="减少了">减少了</label><label><input type="radio" name="vibration" value="拿不准">拿不准</label></div>
+<p><b>3. 这次你更愿意留下哪版？</b></p>
+<div data-q="选择"><label><input type="radio" name="pick" value="②">②</label><label><input type="radio" name="pick" value="③">③</label><label><input type="radio" name="pick" value="④">④</label><label><input type="radio" name="pick" value="都不满意">都不满意</label><label><input type="radio" name="pick" value="拿不准">拿不准</label></div>
+<p>补充：具体哪句话、有什么不同，都可以写。</p><textarea id="notes"></textarea><p><button id="generate" type="button">生成答案</button></p><textarea id="answer" readonly placeholder="生成后复制结果发回"></textarea></section>
+<script>
+const player=document.querySelector('#player'), buttons=[...document.querySelectorAll('[data-src]')],description=document.querySelector('#description');
+let current=0,serial=0,loading=false,position=0,playing=false;
+function select(i){
+ if(!loading){position=player.currentTime||0;playing=!player.paused}
+ loading=true;const id=++serial;current=i;
+ buttons.forEach((b,j)=>b.setAttribute('aria-pressed',String(i===j)));
+ description.textContent=buttons[i].textContent;
+ player.addEventListener('loadedmetadata',()=>{if(id!==serial)return;player.currentTime=Math.min(position,Math.max(0,player.duration-.05));loading=false;if(playing)player.play().catch(()=>{});},{once:true});
+ player.src=buttons[i].dataset.src;
+}
+buttons.forEach((b,i)=>b.addEventListener('click',()=>{if(i!==current)select(i)}));select(0);
+document.querySelector('#generate').onclick=()=>{const lines=['【我们的歌 力度微调 v001】'];document.querySelectorAll('[data-q]').forEach(el=>{const checked=el.querySelector('input:checked');lines.push(el.dataset.q+'：'+(checked?checked.value:'未答'))});lines.push('补充：'+(document.querySelector('#notes').value.trim()||'未答'));const a=document.querySelector('#answer');a.value=lines.join('\n');a.focus();a.select()};
+</script></body></html>

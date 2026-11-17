@@ -1,0 +1,66 @@
+START zuixuan_normal stage=probe profile=pwg
+{"clip": "zuixuan_normal", "time_alignment": {"first_praat_center_seconds": 0.02031746031746112, "feature_frame_offset_seconds": 0.0, "max_nearest_time_error_seconds": 0.0029024943310673734, "outside_praat_support_frames": 6, "pitch_correction_applied": false, "unvoiced_interpolated": false}}
+{"clip": "zuixuan_normal", "variant": "vocoder", "pass": true, "errors": [], "pitch": {"comparable_frames": 870, "median_abs_cents": 4.44452871634469, "p95_abs_cents": 33.17079298401873}, "praat": {"comparable_frames": 3061, "median_abs_cents": 5.528936925411891, "p95_abs_cents": 35.23768866060576}}
+FINISHED D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F1_neuralsvb_contract_v001\probe_time_aligned
+START molihua_normal stage=full profile=pwg
+{"clip": "molihua_normal", "time_alignment": {"first_praat_center_seconds": 0.02031746031746112, "feature_frame_offset_seconds": 0.0, "max_nearest_time_error_seconds": 0.0029024943310673734, "outside_praat_support_frames": 7, "pitch_correction_applied": false, "unvoiced_interpolated": false}}
+GENERATED molihua_normal vocoder
+GENERATED molihua_normal a2a
+GENERATED molihua_normal a2p
+GENERATED molihua_normal a2a_mean
+GENERATED molihua_normal a2p_mean
+{"clip": "molihua_normal", "variant": "vocoder", "pass": true, "errors": [], "pitch": {"comparable_frames": 526, "median_abs_cents": 2.125005932702841, "p95_abs_cents": 13.702556292848907}, "praat": {"comparable_frames": 1819, "median_abs_cents": 2.6102490598286145, "p95_abs_cents": 17.770956175325676}}
+{"clip": "molihua_normal", "variant": "a2a", "pass": true, "errors": [], "pitch": {"comparable_frames": 529, "median_abs_cents": 2.1012155359396902, "p95_abs_cents": 16.028012744579705}, "praat": {"comparable_frames": 1818, "median_abs_cents": 2.7650232771333236, "p95_abs_cents": 22.663241834752277}}
+{"clip": "molihua_normal", "variant": "a2p", "pass": true, "errors": [], "pitch": {"comparable_frames": 529, "median_abs_cents": 2.0600923358019645, "p95_abs_cents": 16.79962535682441}, "praat": {"comparable_frames": 1818, "median_abs_cents": 2.731845897039265, "p95_abs_cents": 21.566638138496028}}
+{"clip": "molihua_normal", "variant": "a2a_mean", "pass": true, "errors": [], "pitch": {"comparable_frames": 529, "median_abs_cents": 2.1028806496103507, "p95_abs_cents": 15.543805480190125}, "praat": {"comparable_frames": 1818, "median_abs_cents": 2.7443234991266428, "p95_abs_cents": 22.49680057292981}}
+{"clip": "molihua_normal", "variant": "a2p_mean", "pass": true, "errors": [], "pitch": {"comparable_frames": 529, "median_abs_cents": 2.036050581887759, "p95_abs_cents": 16.80099020124711}, "praat": {"comparable_frames": 1818, "median_abs_cents": 2.7323017274914054, "p95_abs_cents": 21.705918037731625}}
+START shige_normal stage=full profile=pwg
+{"clip": "shige_normal", "time_alignment": {"first_praat_center_seconds": 0.02031746031746112, "feature_frame_offset_seconds": 0.0, "max_nearest_time_error_seconds": 0.0029024943310673734, "outside_praat_support_frames": 6, "pitch_correction_applied": false, "unvoiced_interpolated": false}}
+GENERATED shige_normal vocoder
+GENERATED shige_normal a2a
+GENERATED shige_normal a2p
+GENERATED shige_normal a2a_mean
+GENERATED shige_normal a2p_mean
+{"clip": "shige_normal", "variant": "vocoder", "pass": true, "errors": [], "pitch": {"comparable_frames": 601, "median_abs_cents": 3.207971183019423, "p95_abs_cents": 18.60637089875667}, "praat": {"comparable_frames": 2123, "median_abs_cents": 4.3114345829080225, "p95_abs_cents": 22.702459198387444}}
+{"clip": "shige_normal", "variant": "a2a", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 605, "median_abs_cents": 3.328539901521352, "p95_abs_cents": 26.317058732283034}, "praat": {"comparable_frames": 2131, "median_abs_cents": 4.251649964940351, "p95_abs_cents": 29.14457129672096}}
+{"clip": "shige_normal", "variant": "a2p", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 603, "median_abs_cents": 3.3401399757240156, "p95_abs_cents": 24.981621154082227}, "praat": {"comparable_frames": 2130, "median_abs_cents": 4.221023817668692, "p95_abs_cents": 29.762284971660648}}
+{"clip": "shige_normal", "variant": "a2a_mean", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 605, "median_abs_cents": 3.3036965049041855, "p95_abs_cents": 26.330136411565217}, "praat": {"comparable_frames": 2133, "median_abs_cents": 4.20927470276615, "p95_abs_cents": 29.30627163828676}}
+{"clip": "shige_normal", "variant": "a2p_mean", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 603, "median_abs_cents": 3.3257210817380694, "p95_abs_cents": 24.669876673086254}, "praat": {"comparable_frames": 2131, "median_abs_cents": 4.198099941150689, "p95_abs_cents": 30.264647803185984}}
+START zuixuan_normal stage=full profile=pwg
+{"clip": "zuixuan_normal", "time_alignment": {"first_praat_center_seconds": 0.02031746031746112, "feature_frame_offset_seconds": 0.0, "max_nearest_time_error_seconds": 0.0029024943310673734, "outside_praat_support_frames": 6, "pitch_correction_applied": false, "unvoiced_interpolated": false}}
+GENERATED zuixuan_normal vocoder
+GENERATED zuixuan_normal a2a
+GENERATED zuixuan_normal a2p
+GENERATED zuixuan_normal a2a_mean
+GENERATED zuixuan_normal a2p_mean
+{"clip": "zuixuan_normal", "variant": "vocoder", "pass": true, "errors": [], "pitch": {"comparable_frames": 870, "median_abs_cents": 4.44452871634469, "p95_abs_cents": 33.17079298401873}, "praat": {"comparable_frames": 3061, "median_abs_cents": 5.528936925411891, "p95_abs_cents": 35.23768866060576}}
+{"clip": "zuixuan_normal", "variant": "a2a", "pass": false, "errors": ["dynamic change / dropout in active singing", "pitch diagnostic changed (manual check required)"], "pitch": {"comparable_frames": 871, "median_abs_cents": 4.8574355017180215, "p95_abs_cents": 66.60533093529267}, "praat": {"comparable_frames": 3050, "median_abs_cents": 5.546199159223029, "p95_abs_cents": 42.11131590345948}}
+{"clip": "zuixuan_normal", "variant": "a2p", "pass": false, "errors": ["dynamic change / dropout in active singing", "pitch diagnostic changed (manual check required)"], "pitch": {"comparable_frames": 870, "median_abs_cents": 4.768185999430601, "p95_abs_cents": 98.8086299335934}, "praat": {"comparable_frames": 3040, "median_abs_cents": 5.350485181229654, "p95_abs_cents": 42.29097013520106}}
+{"clip": "zuixuan_normal", "variant": "a2a_mean", "pass": false, "errors": ["dynamic change / dropout in active singing", "pitch diagnostic changed (manual check required)"], "pitch": {"comparable_frames": 871, "median_abs_cents": 4.8183353001033, "p95_abs_cents": 63.77831787118181}, "praat": {"comparable_frames": 3050, "median_abs_cents": 5.564623157427034, "p95_abs_cents": 42.75035605167831}}
+{"clip": "zuixuan_normal", "variant": "a2p_mean", "pass": false, "errors": ["dynamic change / dropout in active singing", "pitch diagnostic changed (manual check required)"], "pitch": {"comparable_frames": 870, "median_abs_cents": 4.76177092078822, "p95_abs_cents": 98.97717804024117}, "praat": {"comparable_frames": 3041, "median_abs_cents": 5.320701149415143, "p95_abs_cents": 42.02138180931197}}
+FINISHED D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F1_neuralsvb_contract_v001\full_normal
+START shige_medium stage=full profile=pwg
+{"clip": "shige_medium", "time_alignment": {"first_praat_center_seconds": 0.02031746031746112, "feature_frame_offset_seconds": 0.0, "max_nearest_time_error_seconds": 0.0029024943310673734, "outside_praat_support_frames": 6, "pitch_correction_applied": false, "unvoiced_interpolated": false}}
+GENERATED shige_medium vocoder
+GENERATED shige_medium a2a
+GENERATED shige_medium a2p
+GENERATED shige_medium a2a_mean
+GENERATED shige_medium a2p_mean
+{"clip": "shige_medium", "variant": "vocoder", "pass": true, "errors": [], "pitch": {"comparable_frames": 821, "median_abs_cents": 4.066596485611214, "p95_abs_cents": 22.5615352063152}, "praat": {"comparable_frames": 2908, "median_abs_cents": 4.849059601912426, "p95_abs_cents": 29.18130632219129}}
+{"clip": "shige_medium", "variant": "a2a", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 821, "median_abs_cents": 4.402561669761595, "p95_abs_cents": 32.94165544729346}, "praat": {"comparable_frames": 2899, "median_abs_cents": 5.11270995127442, "p95_abs_cents": 37.56262286798572}}
+{"clip": "shige_medium", "variant": "a2p", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 821, "median_abs_cents": 4.3046140212925215, "p95_abs_cents": 33.45900604912977}, "praat": {"comparable_frames": 2897, "median_abs_cents": 5.036951409584716, "p95_abs_cents": 38.48052356776252}}
+{"clip": "shige_medium", "variant": "a2a_mean", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 821, "median_abs_cents": 4.361507795390546, "p95_abs_cents": 32.79720252714951}, "praat": {"comparable_frames": 2898, "median_abs_cents": 5.077462908253005, "p95_abs_cents": 37.78781722330924}}
+{"clip": "shige_medium", "variant": "a2p_mean", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 821, "median_abs_cents": 4.343745506422864, "p95_abs_cents": 33.44451348801583}, "praat": {"comparable_frames": 2897, "median_abs_cents": 4.9956211918690645, "p95_abs_cents": 38.13470898210972}}
+START shige_severe stage=full profile=pwg
+{"clip": "shige_severe", "time_alignment": {"first_praat_center_seconds": 0.02031746031746112, "feature_frame_offset_seconds": 0.0, "max_nearest_time_error_seconds": 0.0029024943310673734, "outside_praat_support_frames": 6, "pitch_correction_applied": false, "unvoiced_interpolated": false}}
+GENERATED shige_severe vocoder
+GENERATED shige_severe a2a
+GENERATED shige_severe a2p
+GENERATED shige_severe a2a_mean
+GENERATED shige_severe a2p_mean
+{"clip": "shige_severe", "variant": "vocoder", "pass": true, "errors": [], "pitch": {"comparable_frames": 864, "median_abs_cents": 4.062024214882092, "p95_abs_cents": 24.915111076491577}, "praat": {"comparable_frames": 3002, "median_abs_cents": 4.8579600390594075, "p95_abs_cents": 40.13740481112355}}
+{"clip": "shige_severe", "variant": "a2a", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 866, "median_abs_cents": 4.339317318137887, "p95_abs_cents": 33.169490384937376}, "praat": {"comparable_frames": 3010, "median_abs_cents": 5.079869708752098, "p95_abs_cents": 38.683509636489966}}
+{"clip": "shige_severe", "variant": "a2p", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 866, "median_abs_cents": 4.326473323934147, "p95_abs_cents": 32.470625631251934}, "praat": {"comparable_frames": 3008, "median_abs_cents": 5.0285347138688525, "p95_abs_cents": 40.18916493526278}}
+{"clip": "shige_severe", "variant": "a2a_mean", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 866, "median_abs_cents": 4.253830728082102, "p95_abs_cents": 33.45359693023816}, "praat": {"comparable_frames": 3012, "median_abs_cents": 5.052075776499752, "p95_abs_cents": 39.041748340642044}}
+{"clip": "shige_severe", "variant": "a2p_mean", "pass": false, "errors": ["dynamic change / dropout in active singing"], "pitch": {"comparable_frames": 866, "median_abs_cents": 4.310138681415056, "p95_abs_cents": 32.79063953606404}, "praat": {"comparable_frames": 3008, "median_abs_cents": 5.046015086977112, "p95_abs_cents": 40.07455925868187}}
+FINISHED D:\My_Grand_Projects2026\Voice-trans-Project-2.0\experiments\F1_neuralsvb_contract_v001\full_severity
